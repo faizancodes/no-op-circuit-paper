@@ -1,0 +1,40 @@
+.FFFF                                                                    [100%]
+=================================== FAILURES ===================================
+_______________________________ test_single_word _______________________________
+
+    def test_single_word():
+>       assert reverse_words("hello") == "olleh"
+E       AssertionError: assert None == 'olleh'
+E        +  where None = reverse_words('hello')
+
+test_word_reverser.py:7: AssertionError
+_____________________________ test_multiple_words ______________________________
+
+    def test_multiple_words():
+>       assert reverse_words("hello world") == "olleh dlrow"
+E       AssertionError: assert None == 'olleh dlrow'
+E        +  where None = reverse_words('hello world')
+
+test_word_reverser.py:10: AssertionError
+_______________________________ test_mixed_case ________________________________
+
+    def test_mixed_case():
+>       assert reverse_words("Python Code") == "nohtyP edoC"
+E       AssertionError: assert None == 'nohtyP edoC'
+E        +  where None = reverse_words('Python Code')
+
+test_word_reverser.py:13: AssertionError
+_____________________________ test_multiple_spaces _____________________________
+
+    def test_multiple_spaces():
+>       assert reverse_words("a  b") == "a  b"
+E       AssertionError: assert None == 'a  b'
+E        +  where None = reverse_words('a  b')
+
+test_word_reverser.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_word_reverser.py::test_single_word - AssertionError: assert None ...
+FAILED test_word_reverser.py::test_multiple_words - AssertionError: assert No...
+FAILED test_word_reverser.py::test_mixed_case - AssertionError: assert None =...
+FAILED test_word_reverser.py::test_multiple_spaces - AssertionError: assert N...
+4 failed, 1 passed in 0.01s

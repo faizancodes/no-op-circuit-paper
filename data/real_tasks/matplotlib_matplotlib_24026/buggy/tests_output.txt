@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_axes.py::test_stackplot[png] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_axes.py::test_stackplot[pdf] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_axes.py::test_stackplot[png] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_axes.py::test_stackplot[pdf] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 764 passed in 0.04s =========================

@@ -1,0 +1,19 @@
+task_id: astropy_astropy_7166
+description: 'SWE-bench_Verified instance astropy__astropy-7166 (repo: astropy/astropy)'
+issue_text: 'InheritDocstrings metaclass doesn''t work for properties
+
+  Inside the InheritDocstrings metaclass it uses `inspect.isfunction` which returns
+  `False` for properties.
+
+
+  '
+primary_file: misc.py
+test_command: pytest -q astropy/utils/tests/test_misc.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: astropy__astropy-7166
+swe_bench_repo: astropy/astropy
+swe_bench_base_commit: 26d147868f8a891a6009a25cd6a8576d2e1bd747
+swe_bench_modified_path: astropy/utils/misc.py

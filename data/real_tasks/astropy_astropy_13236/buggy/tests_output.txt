@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED astropy/table/tests/test_mixin.py::test_ndarray_mixin[False] - AssertionError: behaviour does not match expected output
+FAILED astropy/table/tests/test_table.py::test_structured_masked_column - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/table/tests/test_mixin.py::test_ndarray_mixin[False] - AssertionError: behaviour does not match expected output
+FAILED astropy/table/tests/test_table.py::test_structured_masked_column - AssertionError: behaviour does not match expected output
+========================= 2 failed, 644 passed in 0.04s =========================

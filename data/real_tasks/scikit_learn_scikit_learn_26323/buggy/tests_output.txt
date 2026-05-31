@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/compose/tests/test_column_transformer.py::test_remainder_set_output - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/compose/tests/test_column_transformer.py::test_remainder_set_output - AssertionError: behaviour does not match expected output
+========================= 1 failed, 188 passed in 0.04s =========================

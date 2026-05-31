@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator1] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator1] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 26 passed in 0.04s =========================

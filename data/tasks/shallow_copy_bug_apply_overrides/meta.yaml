@@ -1,0 +1,16 @@
+task_id: shallow_copy_bug_apply_overrides
+description: apply_overrides() mutates nested lists in the original config when modifying
+  the returned copy
+issue_text: 'When I call `apply_overrides(base_config, overrides)` and then modify
+  nested lists in the returned config, the original `base_config` also gets modified.
+  For example, after getting a config copy and appending to a nested list like `allowed_ips`,
+  the original config''s `allowed_ips` list also changes. This should not happen -
+  the function should return an independent copy that doesn''t affect the original.
+
+  '
+primary_file: config_manager.py
+test_command: pytest -q test_config_manager.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: shallow_copy_bug

@@ -1,0 +1,32 @@
+task_id: sphinx_doc_sphinx_11445
+description: 'SWE-bench_Verified instance sphinx-doc__sphinx-11445 (repo: sphinx-doc/sphinx)'
+issue_text: "Using rst_prolog removes top level headings containing a domain directive\n\
+  ### Describe the bug\r\n\r\nIf `rst_prolog` is set, then any documents that contain\
+  \ a domain directive as the first heading (eg `:mod:`) do not render the heading\
+  \ correctly or include the heading in the toctree.\r\n\r\nIn the example below,\
+  \ if the heading of `docs/mypackage.rst` were `mypackage2` instead of `:mod:mypackage2`\
+  \ then the heading displays correctly.\r\nSimilarly, if you do not set `rst_prolog`\
+  \ then the heading will display correctly.\r\n\r\nThis appears to have been broken\
+  \ for some time because I can reproduce it in v4.0.0 of Sphinx\r\n\r\n### How to\
+  \ Reproduce\r\n\r\n```bash\r\n$ sphinx-quickstart --no-sep --project mypackage --author\
+  \ me -v 0.1.0 --release 0.1.0 --language en docs\r\n$ echo -e 'Welcome\\n=======\\\
+  n\\n.. toctree::\\n\\n   mypackage\\n' > docs/index.rst\r\n$ echo -e ':mod:`mypackage2`\\\
+  n=================\\n\\nContent\\n\\nSubheading\\n----------\\n' > docs/mypackage.rst\r\
+  \n$ echo -e 'rst_prolog = \"\"\"\\n.. |psf| replace:: Python Software Foundation\\\
+  n\"\"\"\\n' >> docs/conf.py\r\n$ sphinx-build -b html . _build\r\n$ grep 'mypackage2'\
+  \ docs/_build/index.html\r\n```\r\n\r\n`docs/index.rst`:\r\n\r\n```rst\r\nWelcome\r\
+  \n=======\r\n\r\n.. toctree::\r\n\r\n   mypackage\r\n```\r\n\r\n`docs/mypackage.rst`:\r\
+  \n\r\n```rst\r\n:mod:`mypackage2`\r\n=================\r\n\r\nContent\r\n\r\nSubheading\r\
+  \n----------\r\n```\r\n\r\n### Environment Information\r\n\r\n```text\r\nPlatform:\
+  \              linux; (Linux-6.3.2-arch1-1-x86_64-with-glibc2.37)\r\nPython version:\
+  \        3.11.3 (main, Apr  5 2023, 15:52:\u2026\n"
+primary_file: rst.py
+test_command: pytest -q tests/test_util_rst.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: sphinx-doc__sphinx-11445
+swe_bench_repo: sphinx-doc/sphinx
+swe_bench_base_commit: 71db08c05197545944949d5aa76cd340e7143627
+swe_bench_modified_path: sphinx/util/rst.py

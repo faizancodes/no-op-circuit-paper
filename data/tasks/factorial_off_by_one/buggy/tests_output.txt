@@ -1,0 +1,31 @@
+..FFF                                                                    [100%]
+=================================== FAILURES ===================================
+_____________________________ test_factorial_small _____________________________
+
+    def test_factorial_small():
+>       assert factorial(3) == 6
+E       assert 2 == 6
+E        +  where 2 = factorial(3)
+
+test_factorial.py:10: AssertionError
+_____________________________ test_factorial_five ______________________________
+
+    def test_factorial_five():
+>       assert factorial(5) == 120
+E       assert 24 == 120
+E        +  where 24 = factorial(5)
+
+test_factorial.py:14: AssertionError
+_____________________________ test_factorial_large _____________________________
+
+    def test_factorial_large():
+>       assert factorial(10) == 3628800
+E       assert 362880 == 3628800
+E        +  where 362880 = factorial(10)
+
+test_factorial.py:17: AssertionError
+=========================== short test summary info ============================
+FAILED test_factorial.py::test_factorial_small - assert 2 == 6
+FAILED test_factorial.py::test_factorial_five - assert 24 == 120
+FAILED test_factorial.py::test_factorial_large - assert 362880 == 3628800
+3 failed, 2 passed in 0.01s

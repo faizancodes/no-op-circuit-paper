@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_resolve_output_field_number (expressions.tests.CombinedExpressionTests) - AssertionError: behaviour does not match expected output
+FAILED test_resolve_output_field_with_null (expressions.tests.CombinedExpressionTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_resolve_output_field_number (expressions.tests.CombinedExpressionTests) - AssertionError: behaviour does not match expected output
+FAILED test_resolve_output_field_with_null (expressions.tests.CombinedExpressionTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 170 passed in 0.04s =========================

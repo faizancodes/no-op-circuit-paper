@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_decimal_numbers (utils_tests.test_numberformat.TestNumberFormat) - AssertionError: behaviour does not match expected output
+FAILED test_decimal_subclass (utils_tests.test_numberformat.TestNumberFormat) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_decimal_numbers (utils_tests.test_numberformat.TestNumberFormat) - AssertionError: behaviour does not match expected output
+FAILED test_decimal_subclass (utils_tests.test_numberformat.TestNumberFormat) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 4 passed in 0.04s =========================

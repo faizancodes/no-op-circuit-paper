@@ -1,0 +1,161 @@
+{
+  "clean_gap_mean": 0.44003378378378377,
+  "rows": [
+    {
+      "label": "sae_recon",
+      "reduction_logits": 0.0,
+      "reduction_pct": 0.0,
+      "ci95_pct": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p": NaN,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top1",
+      "reduction_logits": -0.0004222972972972973,
+      "reduction_pct": -0.09596928982725529,
+      "ci95_pct": [
+        -0.28790786948176583,
+        0.0
+      ],
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p": 0.8413447460685429,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top2",
+      "reduction_logits": 0.11613175675675676,
+      "reduction_pct": 26.391554702495203,
+      "ci95_pct": [
+        20.441458733205376,
+        32.72552783109405
+      ],
+      "wilcoxon_stat": 7206.0,
+      "wilcoxon_p": 5.340169380943482e-13,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top3",
+      "reduction_logits": 0.14949324324324326,
+      "reduction_pct": 33.973128598848376,
+      "ci95_pct": [
+        26.391554702495203,
+        42.03454894433782
+      ],
+      "wilcoxon_stat": 7202.5,
+      "wilcoxon_p": 1.088442828994102e-13,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top4",
+      "reduction_logits": 0.14949324324324326,
+      "reduction_pct": 33.973128598848376,
+      "ci95_pct": [
+        26.391554702495203,
+        41.74664107485604
+      ],
+      "wilcoxon_stat": 7202.5,
+      "wilcoxon_p": 1.088442828994102e-13,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top5",
+      "reduction_logits": 0.14907094594594594,
+      "reduction_pct": 33.87715930902112,
+      "ci95_pct": [
+        26.29318618042227,
+        41.65067178502879
+      ],
+      "wilcoxon_stat": 7095.5,
+      "wilcoxon_p": 1.2453082948825042e-13,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top6",
+      "reduction_logits": 0.14907094594594594,
+      "reduction_pct": 33.87715930902112,
+      "ci95_pct": [
+        26.29558541266795,
+        41.65067178502879
+      ],
+      "wilcoxon_stat": 7095.5,
+      "wilcoxon_p": 1.2453082948825042e-13,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top7",
+      "reduction_logits": 0.14907094594594594,
+      "reduction_pct": 33.87715930902112,
+      "ci95_pct": [
+        26.29558541266795,
+        41.8426103646833
+      ],
+      "wilcoxon_stat": 7095.5,
+      "wilcoxon_p": 1.2453082948825042e-13,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top8",
+      "reduction_logits": 0.14907094594594594,
+      "reduction_pct": 33.87715930902112,
+      "ci95_pct": [
+        26.19961612284069,
+        41.55470249520154
+      ],
+      "wilcoxon_stat": 7095.5,
+      "wilcoxon_p": 1.2453082948825042e-13,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top16",
+      "reduction_logits": 0.16596283783783783,
+      "reduction_pct": 37.715930902111324,
+      "ci95_pct": [
+        23.704414587332053,
+        51.968570057581566
+      ],
+      "wilcoxon_stat": 7443.5,
+      "wilcoxon_p": 1.8418036167255005e-06,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top32",
+      "reduction_logits": 0.1649070945945946,
+      "reduction_pct": 37.47600767754319,
+      "ci95_pct": [
+        23.656429942418427,
+        51.344769673704405
+      ],
+      "wilcoxon_stat": 7438.5,
+      "wilcoxon_p": 1.9330267433721178e-06,
+      "n_paired": 148,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top128",
+      "reduction_logits": 0.16469594594594594,
+      "reduction_pct": 37.42802303262956,
+      "ci95_pct": [
+        23.752399232245683,
+        51.34357005758158
+      ],
+      "wilcoxon_stat": 7525.0,
+      "wilcoxon_p": 2.1167765823552475e-06,
+      "n_paired": 148,
+      "n_boot": 10000
+    }
+  ]
+}

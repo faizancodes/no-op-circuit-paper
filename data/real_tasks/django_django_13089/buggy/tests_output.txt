@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_cull_delete_when_store_empty (cache.tests.DBCacheTests) - AssertionError: behaviour does not match expected output
+FAILED test_cull_delete_when_store_empty (cache.tests.DBCacheWithTimeZoneTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_cull_delete_when_store_empty (cache.tests.DBCacheTests) - AssertionError: behaviour does not match expected output
+FAILED test_cull_delete_when_store_empty (cache.tests.DBCacheWithTimeZoneTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 352 passed in 0.04s =========================

@@ -1,0 +1,30 @@
+task_id: pytest_dev_pytest_5262
+description: 'SWE-bench_Verified instance pytest-dev__pytest-5262 (repo: pytest-dev/pytest)'
+issue_text: "_pytest.capture.EncodedFile mode should not include `b` (binary)\n<!--\r\
+  \nThanks for submitting an issue!\r\n\r\nHere's a quick checklist for what to provide:\r\
+  \n-->\r\n\r\n- [x] a detailed description of the bug or suggestion\r\n\r\nException\
+  \ when youtube-dl logs to pytest captured output. Youtube-dl looks for `b` in `out.mode`\
+  \ to decide whether to writes `bytes` or `str`. `_pytest.capture.EncodedFile` incorrectly\
+  \ advertises `rb+`, the mode of the underlying stream. Its `write()` method raises\
+  \ an exception when passed `bytes`.\r\n\r\n```\r\n(pytest-issue-ve3) 01:11:48:nlevitt@Internets-Air-2:/tmp$\
+  \ py.test test.py \r\n==============================================================================\
+  \ test session starts ===============================================================================\r\
+  \nplatform darwin -- Python 3.7.3, pytest-4.5.0, py-1.8.0, pluggy-0.11.0\r\nrootdir:\
+  \ /private/tmp\r\ncollected 1 item                                             \
+  \                                                                              \
+  \                                      \r\n\r\ntest.py F                       \
+  \                                                                              \
+  \                                                             [100%]\r\n\r\n====================================================================================\
+  \ FAILURES ====================================================================================\r\
+  \n__________________________________________________________________________________\u2026\
+  \n"
+primary_file: capture.py
+test_command: pytest -q testing/test_capture.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pytest-dev__pytest-5262
+swe_bench_repo: pytest-dev/pytest
+swe_bench_base_commit: 58e6a09db49f34886ff13f3b7520dd0bcd7063cd
+swe_bench_modified_path: src/_pytest/capture.py

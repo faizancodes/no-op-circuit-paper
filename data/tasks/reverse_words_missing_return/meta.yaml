@@ -1,0 +1,14 @@
+task_id: reverse_words_missing_return
+description: reverse_words() computes the reversed string but returns None instead
+  of the result
+issue_text: 'When calling `reverse_words("hello world")`, the function returns `None`
+  instead of the expected reversed string `"olleh dlrow"`. The function should return
+  a string with each word reversed while preserving word order and spacing.
+
+  '
+primary_file: word_reverser.py
+test_command: pytest -q test_word_reverser.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_return

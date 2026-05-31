@@ -1,0 +1,4546 @@
+{
+  "features": {
+    "2669": {
+      "feature_idx": 2669,
+      "top_activating": [
+        {
+          "activation": 44.845279693603516,
+          "token": " gives",
+          "token_id": 6696,
+          "context": " database, importing this widget gives"
+        },
+        {
+          "activation": 40.284427642822266,
+          "token": " a",
+          "token_id": 264,
+          "context": " axis_bounds will result in a"
+        },
+        {
+          "activation": 39.7720947265625,
+          "token": "era",
+          "token_id": 2416,
+          "context": "9)) #  Gera"
+        },
+        {
+          "activation": 38.83282470703125,
+          "token": " a",
+          "token_id": 264,
+          "context": " `categories` will raise a"
+        },
+        {
+          "activation": 36.838226318359375,
+          "token": " raise",
+          "token_id": 4828,
+          "context": " of `categories` will raise"
+        },
+        {
+          "activation": 36.816322326660156,
+          "token": "   ",
+          "token_id": 262,
+          "context": " will result in a\n   "
+        },
+        {
+          "activation": 36.76032257080078,
+          "token": " raise",
+          "token_id": 4828,
+          "context": " # create_virtual_parent will raise"
+        },
+        {
+          "activation": 36.39307403564453,
+          "token": " ",
+          "token_id": 220,
+          "context": "(19)) # "
+        },
+        {
+          "activation": 35.703861236572266,
+          "token": " in",
+          "token_id": 304,
+          "context": " the axis_bounds will result in"
+        },
+        {
+          "activation": 35.30959701538086,
+          "token": " raising",
+          "token_id": 18545,
+          "context": "(e)\n        # avoid raising"
+        },
+        {
+          "activation": 34.965152740478516,
+          "token": " raise",
+          "token_id": 4828,
+          "context": " and\n    # will raise"
+        },
+        {
+          "activation": 34.83047866821289,
+          "token": " cause",
+          "token_id": 5240,
+          "context": " Ignore some files as they cause"
+        },
+        {
+          "activation": 34.80244064331055,
+          "token": " #",
+          "token_id": 671,
+          "context": ".index(19)) #"
+        },
+        {
+          "activation": 34.26949691772461,
+          "token": " throws",
+          "token_id": 3787,
+          "context": "):\n        \"\"\"Test subscribe throws"
+        },
+        {
+          "activation": 33.71635437011719,
+          "token": " an",
+          "token_id": 458,
+          "context": " it times out\nwith an"
+        },
+        {
+          "activation": 33.18212127685547,
+          "token": " getting",
+          "token_id": 3709,
+          "context": "    #  and still getting"
+        },
+        {
+          "activation": 32.03131103515625,
+          "token": " of",
+          "token_id": 315,
+          "context": "('Database connection closed because of"
+        },
+        {
+          "activation": 31.999387741088867,
+          "token": " various",
+          "token_id": 5257,
+          "context": " some files as they cause various"
+        },
+        {
+          "activation": 31.988656997680664,
+          "token": "emos",
+          "token_id": 14946,
+          "context": " \u00edndice informado, teremos"
+        },
+        {
+          "activation": 31.59777069091797,
+          "token": "ado",
+          "token_id": 2123,
+          "context": " na lista, ser\u00e1 apresentado"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 1465,
+          "token": " error",
+          "logit": 0.21760480105876923
+        },
+        {
+          "token_id": 4600,
+          "token": " Error",
+          "logit": 0.19541366398334503
+        },
+        {
+          "token_id": 841,
+          "token": "error",
+          "logit": 0.19474411010742188
+        },
+        {
+          "token_id": 5975,
+          "token": " errors",
+          "logit": 0.19419267773628235
+        },
+        {
+          "token_id": 4096,
+          "token": "_error",
+          "logit": 0.18015442788600922
+        },
+        {
+          "token_id": 1454,
+          "token": "Error",
+          "logit": 0.17870761454105377
+        },
+        {
+          "token_id": 12874,
+          "token": " ERROR",
+          "logit": 0.17762206494808197
+        },
+        {
+          "token_id": 25030,
+          "token": " TypeError",
+          "logit": 0.1747972071170807
+        },
+        {
+          "token_id": 4417,
+          "token": ".error",
+          "logit": 0.17408521473407745
+        },
+        {
+          "token_id": 88663,
+          "token": " \u043e\u0448\u0438\u0431",
+          "logit": 0.17397327721118927
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 73815,
+          "token": "naments",
+          "logit": -0.06475437432527542
+        },
+        {
+          "token_id": 71860,
+          "token": "QRSTUV",
+          "logit": -0.06465881317853928
+        },
+        {
+          "token_id": 87448,
+          "token": "awl",
+          "logit": -0.06419552117586136
+        },
+        {
+          "token_id": 44090,
+          "token": "affle",
+          "logit": -0.062168367207050323
+        },
+        {
+          "token_id": 68020,
+          "token": " devised",
+          "logit": -0.06209596246480942
+        },
+        {
+          "token_id": 97769,
+          "token": "Factors",
+          "logit": -0.0609511137008667
+        },
+        {
+          "token_id": 70592,
+          "token": "QRST",
+          "logit": -0.06077679246664047
+        },
+        {
+          "token_id": 58710,
+          "token": "FACT",
+          "logit": -0.06058390811085701
+        },
+        {
+          "token_id": 21898,
+          "token": "ifice",
+          "logit": -0.05990233272314072
+        },
+        {
+          "token_id": 113518,
+          "token": "\u529f\u5fb7",
+          "logit": -0.05940176919102669
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "1954": {
+      "feature_idx": 1954,
+      "top_activating": [
+        {
+          "activation": 88.73619079589844,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.73619079589844,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.73619079589844,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.73619079589844,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.44745635986328,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.43238830566406,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.43238830566406,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.42215728759766,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.41437530517578,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.41437530517578,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.41437530517578,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        },
+        {
+          "activation": 88.36912536621094,
+          "token": "#",
+          "token_id": 2,
+          "context": "#"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 27113,
+          "token": ".\"\n\n\n\n",
+          "logit": 0.12079014629125595
+        },
+        {
+          "token_id": 75694,
+          "token": ".)\n\n\n\n",
+          "logit": 0.11960429698228836
+        },
+        {
+          "token_id": 74275,
+          "token": "noticed",
+          "logit": 0.11192429065704346
+        },
+        {
+          "token_id": 81166,
+          "token": "\tor",
+          "logit": 0.10010115057229996
+        },
+        {
+          "token_id": 63607,
+          "token": "$type",
+          "logit": 0.09733591973781586
+        },
+        {
+          "token_id": 96468,
+          "token": "\tORDER",
+          "logit": 0.09609435498714447
+        },
+        {
+          "token_id": 61827,
+          "token": "...)\n\n",
+          "logit": 0.0954563096165657
+        },
+        {
+          "token_id": 84754,
+          "token": "\tNone",
+          "logit": 0.0949389785528183
+        },
+        {
+          "token_id": 94875,
+          "token": "\"Some",
+          "logit": 0.09458336234092712
+        },
+        {
+          "token_id": 80984,
+          "token": "\").\n\n",
+          "logit": 0.09352316707372665
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 151662,
+          "token": "<|fim_pad|>",
+          "logit": -0.22834573686122894
+        },
+        {
+          "token_id": 126998,
+          "token": " s\u0131k",
+          "logit": -0.0905546098947525
+        },
+        {
+          "token_id": 144131,
+          "token": "\uc918",
+          "logit": -0.08682320266962051
+        },
+        {
+          "token_id": 111928,
+          "token": "\u5bc5",
+          "logit": -0.08671212196350098
+        },
+        {
+          "token_id": 125620,
+          "token": " yap\u0131l",
+          "logit": -0.0857638269662857
+        },
+        {
+          "token_id": 121142,
+          "token": "\u6942",
+          "logit": -0.084268718957901
+        },
+        {
+          "token_id": 77803,
+          "token": " Swansea",
+          "logit": -0.08313154429197311
+        },
+        {
+          "token_id": 121644,
+          "token": "\u8662",
+          "logit": -0.08064461499452591
+        },
+        {
+          "token_id": 120568,
+          "token": "\u9035",
+          "logit": -0.08007095754146576
+        },
+        {
+          "token_id": 118912,
+          "token": "\u6b66\u58eb",
+          "logit": -0.0798630565404892
+        }
+      ],
+      "decoder_norm": 1.000000238418579
+    },
+    "2950": {
+      "feature_idx": 2950,
+      "top_activating": [
+        {
+          "activation": 11.21159553527832,
+          "token": "NP",
+          "token_id": 26227,
+          "context": "(IdentifiableObject._NP"
+        },
+        {
+          "activation": 11.07394790649414,
+          "token": "#",
+          "token_id": 2,
+          "context": "html_extra_path = []\n\n#"
+        },
+        {
+          "activation": 11.061491966247559,
+          "token": "NP",
+          "token_id": 26227,
+          "context": "(IdentifiableObject._NP"
+        },
+        {
+          "activation": 11.015995025634766,
+          "token": "_black",
+          "token_id": 40272,
+          "context": "[0])\n        two_black"
+        },
+        {
+          "activation": 10.871214866638184,
+          "token": "NP",
+          "token_id": 26227,
+          "context": ".IdentifiableObject._NP"
+        },
+        {
+          "activation": 10.840885162353516,
+          "token": " font",
+          "token_id": 3301,
+          "context": " be able to apply a font"
+        },
+        {
+          "activation": 10.791131019592285,
+          "token": " is",
+          "token_id": 374,
+          "context": " font if\n        it is"
+        },
+        {
+          "activation": 10.636417388916016,
+          "token": "NP",
+          "token_id": 26227,
+          "context": " = IdentifiableObject._NP"
+        },
+        {
+          "activation": 10.533461570739746,
+          "token": " for",
+          "token_id": 369,
+          "context": "\n# or vars, for"
+        },
+        {
+          "activation": 10.352285385131836,
+          "token": "ill",
+          "token_id": 483,
+          "context": "['qx_WindChill"
+        },
+        {
+          "activation": 10.302017211914062,
+          "token": " only",
+          "token_id": 1172,
+          "context": " a server,\n        where only"
+        },
+        {
+          "activation": 10.287276268005371,
+          "token": " dip",
+          "token_id": 23604,
+          "context": " pion to decay to dip"
+        },
+        {
+          "activation": 10.25353717803955,
+          "token": " Os",
+          "token_id": 15433,
+          "context": "\n#  OBS: Os"
+        },
+        {
+          "activation": 10.087061882019043,
+          "token": "NP",
+          "token_id": 26227,
+          "context": "_alias, ObjectIdentifier._NP"
+        },
+        {
+          "activation": 10.081522941589355,
+          "token": "NP",
+          "token_id": 26227,
+          "context": "(IdentifiableObject._NP"
+        },
+        {
+          "activation": 10.04931926727295,
+          "token": ".",
+          "token_id": 13,
+          "context": "    T = 2."
+        },
+        {
+          "activation": 10.020381927490234,
+          "token": ".from",
+          "token_id": 6387,
+          "context": "_fn = contrib_predictor.from"
+        },
+        {
+          "activation": 9.920985221862793,
+          "token": ".G",
+          "token_id": 1224,
+          "context": " as cms\n\nfrom Configuration.G"
+        },
+        {
+          "activation": 9.874720573425293,
+          "token": " ",
+          "token_id": 220,
+          "context": "\": (21, "
+        },
+        {
+          "activation": 9.856034278869629,
+          "token": " as",
+          "token_id": 438,
+          "context": " API and exposes the API as"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 151662,
+          "token": "<|fim_pad|>",
+          "logit": 0.15793505311012268
+        },
+        {
+          "token_id": 51234,
+          "token": " onBind",
+          "logit": 0.07905736565589905
+        },
+        {
+          "token_id": 129401,
+          "token": " \u0441\u043b\u0443\u0447\u0430",
+          "logit": 0.07030276954174042
+        },
+        {
+          "token_id": 45607,
+          "token": " McL",
+          "logit": 0.06498940289020538
+        },
+        {
+          "token_id": 144817,
+          "token": "\ud83d\udcaa",
+          "logit": 0.06383014470338821
+        },
+        {
+          "token_id": 119453,
+          "token": "\u96f9",
+          "logit": 0.06368225067853928
+        },
+        {
+          "token_id": 117166,
+          "token": "\u7405",
+          "logit": 0.062136463820934296
+        },
+        {
+          "token_id": 121072,
+          "token": "\u8c21",
+          "logit": 0.06167297437787056
+        },
+        {
+          "token_id": 66805,
+          "token": " Schultz",
+          "logit": 0.06147429347038269
+        },
+        {
+          "token_id": 52131,
+          "token": " strSql",
+          "logit": 0.060896582901477814
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 90731,
+          "token": "\tgit",
+          "logit": -0.10118763893842697
+        },
+        {
+          "token_id": 36867,
+          "token": "\tview",
+          "logit": -0.10100629925727844
+        },
+        {
+          "token_id": 27654,
+          "token": ")view",
+          "logit": -0.09752655774354935
+        },
+        {
+          "token_id": 27113,
+          "token": ".\"\n\n\n\n",
+          "logit": -0.0965537503361702
+        },
+        {
+          "token_id": 86626,
+          "token": "\tedit",
+          "logit": -0.09650888293981552
+        },
+        {
+          "token_id": 19314,
+          "token": " investigate",
+          "logit": -0.09424988180398941
+        },
+        {
+          "token_id": 60460,
+          "token": "%)\n\n",
+          "logit": -0.0931401327252388
+        },
+        {
+          "token_id": 45573,
+          "token": "\tsearch",
+          "logit": -0.0928100124001503
+        },
+        {
+          "token_id": 45566,
+          "token": "\tcommand",
+          "logit": -0.09254351258277893
+        },
+        {
+          "token_id": 80344,
+          "token": "_viewer",
+          "logit": -0.09180399030447006
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "3129": {
+      "feature_idx": 3129,
+      "top_activating": [
+        {
+          "activation": 76.3216781616211,
+          "token": " (",
+          "token_id": 320,
+          "context": "vector\")\n    Traceback ("
+        },
+        {
+          "activation": 49.2847785949707,
+          "token": " import",
+          "token_id": 1159,
+          "context": " import unpack\nfrom traceback import"
+        },
+        {
+          "activation": 41.65410614013672,
+          "token": " traceback",
+          "token_id": 46058,
+          "context": " + \"\\n\" + traceback"
+        },
+        {
+          "activation": 41.2733154296875,
+          "token": "back",
+          "token_id": 1419,
+          "context": "(e)), exception=traceback"
+        },
+        {
+          "activation": 37.39765167236328,
+          "token": " ",
+          "token_id": 220,
+          "context": "sys.tracebacklimit = "
+        },
+        {
+          "activation": 36.518253326416016,
+          "token": "back",
+          "token_id": 1419,
+          "context": "(\"vector\")\n    Traceback"
+        },
+        {
+          "activation": 34.47789001464844,
+          "token": "most",
+          "token_id": 3562,
+          "context": "\")\n    Traceback (most"
+        },
+        {
+          "activation": 31.794939041137695,
+          "token": " call",
+          "token_id": 1618,
+          "context": " Traceback (most recent call"
+        },
+        {
+          "activation": 31.08143424987793,
+          "token": " recent",
+          "token_id": 3213,
+          "context": "    Traceback (most recent"
+        },
+        {
+          "activation": 30.84067726135254,
+          "token": "back",
+          "token_id": 1419,
+          "context": " minimal traceback\nsys.traceback"
+        },
+        {
+          "activation": 29.732023239135742,
+          "token": "back",
+          "token_id": 1419,
+          "context": "(e)), exception=traceback"
+        },
+        {
+          "activation": 29.15167808532715,
+          "token": "back",
+          "token_id": 1419,
+          "context": ")),\n                                         exception=traceback"
+        },
+        {
+          "activation": 28.31083869934082,
+          "token": ".format",
+          "token_id": 8021,
+          "context": " \"\\n\" + traceback.format"
+        },
+        {
+          "activation": 25.981096267700195,
+          "token": ".format",
+          "token_id": 8021,
+          "context": ")), exception=traceback.format"
+        },
+        {
+          "activation": 24.94583511352539,
+          "token": "trace",
+          "token_id": 15067,
+          "context": "_native(e)), exception=trace"
+        },
+        {
+          "activation": 24.898202896118164,
+          "token": "back",
+          "token_id": 1419,
+          "context": ")),\n                                         exception=traceback"
+        },
+        {
+          "activation": 24.375225067138672,
+          "token": " traceback",
+          "token_id": 46058,
+          "context": " struct import unpack\nfrom traceback"
+        },
+        {
+          "activation": 24.21853256225586,
+          "token": " format",
+          "token_id": 3561,
+          "context": " unpack\nfrom traceback import format"
+        },
+        {
+          "activation": 23.413253784179688,
+          "token": ".format",
+          "token_id": 8021,
+          "context": ")), exception=traceback.format"
+        },
+        {
+          "activation": 22.157115936279297,
+          "token": "_trace",
+          "token_id": 23575,
+          "context": "        :param str zap_trace"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 46058,
+          "token": " traceback",
+          "logit": 0.16432327032089233
+        },
+        {
+          "token_id": 27163,
+          "token": " Trace",
+          "logit": 0.16154628992080688
+        },
+        {
+          "token_id": 6550,
+          "token": "Trace",
+          "logit": 0.14305253326892853
+        },
+        {
+          "token_id": 11655,
+          "token": " trace",
+          "logit": 0.1394597738981247
+        },
+        {
+          "token_id": 46920,
+          "token": ".Trace",
+          "logit": 0.13740745186805725
+        },
+        {
+          "token_id": 15067,
+          "token": "trace",
+          "logit": 0.13482891023159027
+        },
+        {
+          "token_id": 55458,
+          "token": "(trace",
+          "logit": 0.13280229270458221
+        },
+        {
+          "token_id": 23575,
+          "token": "_trace",
+          "logit": 0.1316993683576584
+        },
+        {
+          "token_id": 34383,
+          "token": " traces",
+          "logit": 0.12793925404548645
+        },
+        {
+          "token_id": 65058,
+          "token": "\ttrace",
+          "logit": 0.12625253200531006
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 7864,
+          "token": ".pl",
+          "logit": -0.07170984148979187
+        },
+        {
+          "token_id": 20030,
+          "token": "itarian",
+          "logit": -0.06844061613082886
+        },
+        {
+          "token_id": 38498,
+          "token": " plural",
+          "logit": -0.06801929324865341
+        },
+        {
+          "token_id": 61543,
+          "token": "%n",
+          "logit": -0.06694623082876205
+        },
+        {
+          "token_id": 95411,
+          "token": "\u4e13",
+          "logit": -0.06627533584833145
+        },
+        {
+          "token_id": 125319,
+          "token": "\u305f\u3081\u306b",
+          "logit": -0.06607718765735626
+        },
+        {
+          "token_id": 24002,
+          "token": " Dise",
+          "logit": -0.065888412296772
+        },
+        {
+          "token_id": 63208,
+          "token": ".special",
+          "logit": -0.0658651739358902
+        },
+        {
+          "token_id": 130591,
+          "token": "\u3053\u3068\u306b",
+          "logit": -0.06564796715974808
+        },
+        {
+          "token_id": 44866,
+          "token": " Armstrong",
+          "logit": -0.06533586978912354
+        }
+      ],
+      "decoder_norm": 1.0000001192092896
+    },
+    "3171": {
+      "feature_idx": 3171,
+      "top_activating": [
+        {
+          "activation": 13.497770309448242,
+          "token": "_soft",
+          "token_id": 38326,
+          "context": ".flags.DEFINE_boolean(\"allow_soft"
+        },
+        {
+          "activation": 12.39492130279541,
+          "token": " to",
+          "token_id": 311,
+          "context": " The RESTful session object to"
+        },
+        {
+          "activation": 11.42764663696289,
+          "token": " to",
+          "token_id": 311,
+          "context": "Percentage of the training data to"
+        },
+        {
+          "activation": 11.361960411071777,
+          "token": " soft",
+          "token_id": 8413,
+          "context": ":set shiftwidth=4 soft"
+        },
+        {
+          "activation": 11.324345588684082,
+          "token": "(num",
+          "token_id": 8068,
+          "context": "_pb2.TrainArgs(num"
+        },
+        {
+          "activation": 11.169983863830566,
+          "token": " sup",
+          "token_id": 1026,
+          "context": "###\n\nimport time\n\nfrom sup"
+        },
+        {
+          "activation": 11.082830429077148,
+          "token": " soft",
+          "token_id": 8413,
+          "context": " True, \"Allow device soft"
+        },
+        {
+          "activation": 11.010770797729492,
+          "token": ".exceptions",
+          "token_id": 25660,
+          "context": ".exceptions.ConnectionError, requests.exceptions"
+        },
+        {
+          "activation": 10.952553749084473,
+          "token": " resp",
+          "token_id": 9039,
+          "context": " resp = Response()\n        resp"
+        },
+        {
+          "activation": 10.658723831176758,
+          "token": " .",
+          "token_id": 659,
+          "context": "_receive('get')\n         ."
+        },
+        {
+          "activation": 10.630351066589355,
+          "token": "4",
+          "token_id": 19,
+          "context": "', 'Standard_NC24"
+        },
+        {
+          "activation": 10.622562408447266,
+          "token": " make",
+          "token_id": 1281,
+          "context": "\nfrom sklearn.datasets import make"
+        },
+        {
+          "activation": 10.41139030456543,
+          "token": "_special",
+          "token_id": 41629,
+          "context": "\n\n\nasync def sample_create_special"
+        },
+        {
+          "activation": 10.34738540649414,
+          "token": "Special",
+          "token_id": 20366,
+          "context": "# Snippet for CreateSpecial"
+        },
+        {
+          "activation": 10.250612258911133,
+          "token": " be",
+          "token_id": 387,
+          "context": " RESTful session object to be"
+        },
+        {
+          "activation": 10.109715461730957,
+          "token": "'t",
+          "token_id": 944,
+          "context": " create it if it doesn't"
+        },
+        {
+          "activation": 10.019369125366211,
+          "token": "(tf",
+          "token_id": 19916,
+          "context": "_correct = tf.to_float(tf"
+        },
+        {
+          "activation": 9.89742374420166,
+          "token": "\uff1a",
+          "token_id": 5122,
+          "context": "IO\u7248\uff1bTGIO\uff1a"
+        },
+        {
+          "activation": 9.869244575500488,
+          "token": "       ",
+          "token_id": 286,
+          "context": "0/info/getVersion\",\n       "
+        },
+        {
+          "activation": 9.8638277053833,
+          "token": "_special",
+          "token_id": 41629,
+          "context": "    operation = client.create_special"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 2669,
+          "token": " already",
+          "logit": 0.12077541649341583
+        },
+        {
+          "token_id": 39512,
+          "token": " Already",
+          "logit": 0.10963720828294754
+        },
+        {
+          "token_id": 80772,
+          "token": "_already",
+          "logit": 0.10617851465940475
+        },
+        {
+          "token_id": 45484,
+          "token": "already",
+          "logit": 0.10245940834283829
+        },
+        {
+          "token_id": 38370,
+          "token": "Already",
+          "logit": 0.0973321795463562
+        },
+        {
+          "token_id": 45839,
+          "token": " d\u00e9j\u00e0",
+          "logit": 0.09075647592544556
+        },
+        {
+          "token_id": 90777,
+          "token": " \u0443\u0436\u0435",
+          "logit": 0.07931800931692123
+        },
+        {
+          "token_id": 32092,
+          "token": " j\u00e1",
+          "logit": 0.07825274765491486
+        },
+        {
+          "token_id": 80554,
+          "token": "_ALREADY",
+          "logit": 0.07459120452404022
+        },
+        {
+          "token_id": 53921,
+          "token": " ju\u017c",
+          "logit": 0.07195459306240082
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 81497,
+          "token": ".correct",
+          "logit": -0.13257448375225067
+        },
+        {
+          "token_id": 35965,
+          "token": " corrected",
+          "logit": -0.13019689917564392
+        },
+        {
+          "token_id": 50379,
+          "token": " corrections",
+          "logit": -0.12594155967235565
+        },
+        {
+          "token_id": 26262,
+          "token": " correction",
+          "logit": -0.11540213227272034
+        },
+        {
+          "token_id": 19928,
+          "token": "correct",
+          "logit": -0.11033883690834045
+        },
+        {
+          "token_id": 108271,
+          "token": "\u4fee\u6b63",
+          "logit": -0.11019089818000793
+        },
+        {
+          "token_id": 104749,
+          "token": "\u4fee\u590d",
+          "logit": -0.1099153682589531
+        },
+        {
+          "token_id": 27034,
+          "token": "orrect",
+          "logit": -0.10988452285528183
+        },
+        {
+          "token_id": 63069,
+          "token": " Correction",
+          "logit": -0.10841447114944458
+        },
+        {
+          "token_id": 39690,
+          "token": "FIX",
+          "logit": -0.10829877853393555
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "593": {
+      "feature_idx": 593,
+      "top_activating": [
+        {
+          "activation": 13.398262977600098,
+          "token": "One",
+          "token_id": 3966,
+          "context": " behavior to be available.\n\nOne"
+        },
+        {
+          "activation": 12.668479919433594,
+          "token": " ..",
+          "token_id": 5241,
+          "context": " Examples\n    ----------\n    .."
+        },
+        {
+          "activation": 12.458028793334961,
+          "token": " an",
+          "token_id": 458,
+          "context": "invariants'. Here's an"
+        },
+        {
+          "activation": 12.29360294342041,
+          "token": "                                               ",
+          "token_id": 4569,
+          "context": ".\n\nDirective \tDescription \t                                               "
+        },
+        {
+          "activation": 11.613987922668457,
+          "token": "\n",
+          "token_id": 198,
+          "context": " resource in Oracle Cloud Infrastructure\n"
+        },
+        {
+          "activation": 11.386100769042969,
+          "token": ".\n",
+          "token_id": 624,
+          "context": " scheduled the secret for deletion.\n"
+        },
+        {
+          "activation": 11.350214958190918,
+          "token": "#",
+          "token_id": 2,
+          "context": " return 0.\n#\n#"
+        },
+        {
+          "activation": 11.083321571350098,
+          "token": ".\n",
+          "token_id": 624,
+          "context": " for AWS SNS topics.\n"
+        },
+        {
+          "activation": 11.057567596435547,
+          "token": "#",
+          "token_id": 2,
+          "context": "\", \"xtfn\".\n#"
+        },
+        {
+          "activation": 11.013216972351074,
+          "token": "'s",
+          "token_id": 594,
+          "context": " 'invariants'. Here's"
+        },
+        {
+          "activation": 10.896513938903809,
+          "token": " work",
+          "token_id": 975,
+          "context": " and additionally will usually require work"
+        },
+        {
+          "activation": 10.810294151306152,
+          "token": ".\n",
+          "token_id": 624,
+          "context": " the specified retention period ends.\n"
+        },
+        {
+          "activation": 10.703157424926758,
+          "token": "#",
+          "token_id": 2,
+          "context": ": 16\n#"
+        },
+        {
+          "activation": 10.649030685424805,
+          "token": "       ",
+          "token_id": 286,
+          "context": " forward(self, x):\n       "
+        },
+        {
+          "activation": 10.58167839050293,
+          "token": " provide",
+          "token_id": 3410,
+          "context": "Config\n\n#Fixtures provide"
+        },
+        {
+          "activation": 10.45786190032959,
+          "token": ".ext",
+          "token_id": 9220,
+          "context": "',\n    'sphinx.ext"
+        },
+        {
+          "activation": 10.370437622070312,
+          "token": " ..",
+          "token_id": 5241,
+          "context": "LongTensor`\n\n\n    .."
+        },
+        {
+          "activation": 10.326532363891602,
+          "token": "ta",
+          "token_id": 2565,
+          "context": "64\\x61ta"
+        },
+        {
+          "activation": 10.258601188659668,
+          "token": "..",
+          "token_id": 496,
+          "context": " to have textual affinity.\n\n.."
+        },
+        {
+          "activation": 10.25757884979248,
+          "token": " a",
+          "token_id": 264,
+          "context": ", tuple. Here is a"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 14503,
+          "token": " reprodu",
+          "logit": 0.14924366772174835
+        },
+        {
+          "token_id": 22800,
+          "token": " reproduce",
+          "logit": 0.14738543331623077
+        },
+        {
+          "token_id": 38556,
+          "token": " reproduction",
+          "logit": 0.14338348805904388
+        },
+        {
+          "token_id": 7354,
+          "token": " steps",
+          "logit": 0.14072802662849426
+        },
+        {
+          "token_id": 52723,
+          "token": " repro",
+          "logit": 0.12969747185707092
+        },
+        {
+          "token_id": 54617,
+          "token": " reproduced",
+          "logit": 0.12532882392406464
+        },
+        {
+          "token_id": 33951,
+          "token": "Steps",
+          "logit": 0.12172985076904297
+        },
+        {
+          "token_id": 39861,
+          "token": " Steps",
+          "logit": 0.1205478087067604
+        },
+        {
+          "token_id": 24080,
+          "token": "steps",
+          "logit": 0.11903508007526398
+        },
+        {
+          "token_id": 59030,
+          "token": " workaround",
+          "logit": 0.11865592747926712
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 79725,
+          "token": "swire",
+          "logit": -0.06514661014080048
+        },
+        {
+          "token_id": 1451,
+          "token": "lient",
+          "logit": -0.06319990754127502
+        },
+        {
+          "token_id": 76758,
+          "token": "sans",
+          "logit": -0.06301712244749069
+        },
+        {
+          "token_id": 142967,
+          "token": "\u0647\u0630\u0647",
+          "logit": -0.0622645728290081
+        },
+        {
+          "token_id": 32946,
+          "token": " Cabinet",
+          "logit": -0.062236007302999496
+        },
+        {
+          "token_id": 70190,
+          "token": " Jennings",
+          "logit": -0.06222052499651909
+        },
+        {
+          "token_id": 119149,
+          "token": "\u6249",
+          "logit": -0.06022387370467186
+        },
+        {
+          "token_id": 53621,
+          "token": "vak",
+          "logit": -0.06012408062815666
+        },
+        {
+          "token_id": 117352,
+          "token": "\u5e03\u83b1",
+          "logit": -0.06009741127490997
+        },
+        {
+          "token_id": 98367,
+          "token": "={\"/",
+          "logit": -0.059955477714538574
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "1605": {
+      "feature_idx": 1605,
+      "top_activating": [
+        {
+          "activation": 12.886034965515137,
+          "token": " The",
+          "token_id": 576,
+          "context": "-2019 The"
+        },
+        {
+          "activation": 12.518293380737305,
+          "token": "#",
+          "token_id": 2,
+          "context": ". All rights reserved.\n#"
+        },
+        {
+          "activation": 12.33654499053955,
+          "token": " The",
+          "token_id": 576,
+          "context": "-2018 The"
+        },
+        {
+          "activation": 11.84677791595459,
+          "token": " The",
+          "token_id": 576,
+          "context": "-2019 The"
+        },
+        {
+          "activation": 11.425599098205566,
+          "token": " that",
+          "token_id": 429,
+          "context": " 2.0 license that"
+        },
+        {
+          "activation": 11.410699844360352,
+          "token": " and",
+          "token_id": 323,
+          "context": " (Wired\n        and"
+        },
+        {
+          "activation": 11.401346206665039,
+          "token": " that",
+          "token_id": 429,
+          "context": " by a BSD-style license that"
+        },
+        {
+          "activation": 11.236212730407715,
+          "token": "Hero",
+          "token_id": 30228,
+          "context": "0:\n            print(\"Hero"
+        },
+        {
+          "activation": 10.898730278015137,
+          "token": " first",
+          "token_id": 1156,
+          "context": " complete these variable before the first"
+        },
+        {
+          "activation": 10.845499038696289,
+          "token": "oster",
+          "token_id": 11713,
+          "context": ":\n            print(\"Moster"
+        },
+        {
+          "activation": 10.825844764709473,
+          "token": "z",
+          "token_id": 89,
+          "context": "ning.jacobs@z"
+        },
+        {
+          "activation": 10.816423416137695,
+          "token": " The",
+          "token_id": 576,
+          "context": "-2016 The"
+        },
+        {
+          "activation": 10.721092224121094,
+          "token": " days",
+          "token_id": 2849,
+          "context": " feel the bruises of the days"
+        },
+        {
+          "activation": 10.638538360595703,
+          "token": "b",
+          "token_id": 65,
+          "context": " self.run_name = wandb"
+        },
+        {
+          "activation": 10.406383514404297,
+          "token": "\n",
+          "token_id": 198,
+          "context": "9f9f0\n"
+        },
+        {
+          "activation": 10.377044677734375,
+          "token": " before",
+          "token_id": 1573,
+          "context": "# Please complete these variable before"
+        },
+        {
+          "activation": 10.337614059448242,
+          "token": "b",
+          "token_id": 65,
+          "context": "    wb_summary = wandb"
+        },
+        {
+          "activation": 10.189002990722656,
+          "token": " and",
+          "token_id": 323,
+          "context": " number of fonts are installed and"
+        },
+        {
+          "activation": 10.128593444824219,
+          "token": "click",
+          "token_id": 3678,
+          "context": "_prompts():\n    @click"
+        },
+        {
+          "activation": 10.0906343460083,
+          "token": " a",
+          "token_id": 264,
+          "context": " source code is governed by a"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 22418,
+          "token": "\u6539",
+          "logit": 0.06761588901281357
+        },
+        {
+          "token_id": 76713,
+          "token": " Amend",
+          "logit": 0.06591146439313889
+        },
+        {
+          "token_id": 25177,
+          "token": "\u4fee\u6539",
+          "logit": 0.06583135575056076
+        },
+        {
+          "token_id": 86091,
+          "token": "incerely",
+          "logit": 0.06576482951641083
+        },
+        {
+          "token_id": 5602,
+          "token": " modify",
+          "logit": 0.06373806297779083
+        },
+        {
+          "token_id": 132038,
+          "token": " s\u1eeda",
+          "logit": 0.06286855041980743
+        },
+        {
+          "token_id": 29469,
+          "token": " amend",
+          "logit": 0.06204412132501602
+        },
+        {
+          "token_id": 88513,
+          "token": " \uc218\uc815",
+          "logit": 0.06050420552492142
+        },
+        {
+          "token_id": 95053,
+          "token": "\uff0c\u5219",
+          "logit": 0.05883137881755829
+        },
+        {
+          "token_id": 30318,
+          "token": "Editable",
+          "logit": 0.0586397759616375
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 109513,
+          "token": "\u4e0d\u505a",
+          "logit": -0.1288018524646759
+        },
+        {
+          "token_id": 4302,
+          "token": " nothing",
+          "logit": -0.12033186107873917
+        },
+        {
+          "token_id": 44259,
+          "token": "doing",
+          "logit": -0.11474940180778503
+        },
+        {
+          "token_id": 38211,
+          "token": " nada",
+          "logit": -0.11452917009592056
+        },
+        {
+          "token_id": 41212,
+          "token": "nothing",
+          "logit": -0.11416042596101761
+        },
+        {
+          "token_id": 3730,
+          "token": " doing",
+          "logit": -0.11152458935976028
+        },
+        {
+          "token_id": 86081,
+          "token": " NOTHING",
+          "logit": -0.1086885929107666
+        },
+        {
+          "token_id": 62813,
+          "token": "nop",
+          "logit": -0.10680480301380157
+        },
+        {
+          "token_id": 28366,
+          "token": "-no",
+          "logit": -0.10519059747457504
+        },
+        {
+          "token_id": 23780,
+          "token": "Nothing",
+          "logit": -0.10280482470989227
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "3626": {
+      "feature_idx": 3626,
+      "top_activating": [
+        {
+          "activation": 39.847686767578125,
+          "token": ",",
+          "token_id": 11,
+          "context": " unittest import TestCase, main,"
+        },
+        {
+          "activation": 38.86772537231445,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": "='runTest'):\n        unittest"
+        },
+        {
+          "activation": 38.35757827758789,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": "main__':\n    runner = unittest"
+        },
+        {
+          "activation": 36.82587432861328,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": "\n    testsuite = unittest"
+        },
+        {
+          "activation": 36.269893646240234,
+          "token": ",",
+          "token_id": 11,
+          "context": "\nfrom unittest import TestCase,"
+        },
+        {
+          "activation": 36.12154769897461,
+          "token": "Test",
+          "token_id": 2271,
+          "context": "    runner = unittest.TextTest"
+        },
+        {
+          "activation": 35.6609001159668,
+          "token": "(unittest",
+          "token_id": 37178,
+          "context": " unittest\n\n    class Test(unittest"
+        },
+        {
+          "activation": 35.22780227661133,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": " == '__main__':\n    unittest"
+        },
+        {
+          "activation": 35.12364196777344,
+          "token": "Test",
+          "token_id": 2271,
+          "context": "    loader = unittest.defaultTest"
+        },
+        {
+          "activation": 33.977298736572266,
+          "token": " import",
+          "token_id": 1159,
+          "context": "import time\nfrom unittest import"
+        },
+        {
+          "activation": 33.76375198364258,
+          "token": " runner",
+          "token_id": 22259,
+          "context": ".TextTestRunner()\n    runner"
+        },
+        {
+          "activation": 33.589908599853516,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": " suite():\n    loader = unittest"
+        },
+        {
+          "activation": 33.11552047729492,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": "(SettingsMigrator, unittest"
+        },
+        {
+          "activation": 32.884456634521484,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": " == '__main__':\n    unittest"
+        },
+        {
+          "activation": 32.852989196777344,
+          "token": "(",
+          "token_id": 7,
+          "context": "ITICAL)\n    unittest.main("
+        },
+        {
+          "activation": 32.17838668823242,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": " == \"__main__\":\n    unittest"
+        },
+        {
+          "activation": 31.587242126464844,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": "(logging.CRITICAL)\n    unittest"
+        },
+        {
+          "activation": 30.973281860351562,
+          "token": ".add",
+          "token_id": 1364,
+          "context": "Suite()\n    testsuite.add"
+        },
+        {
+          "activation": 30.738910675048828,
+          "token": " unittest",
+          "token_id": 19905,
+          "context": " == '__main__':\n    unittest"
+        },
+        {
+          "activation": 30.32317352294922,
+          "token": "(unittest",
+          "token_id": 37178,
+          "context": "Testing\n\n\nclass SecurityTests(unittest"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 30573,
+          "token": " TestCase",
+          "logit": 0.13466045260429382
+        },
+        {
+          "token_id": 31363,
+          "token": ".TestCase",
+          "logit": 0.13365553319454193
+        },
+        {
+          "token_id": 22259,
+          "token": " runner",
+          "logit": 0.12229593098163605
+        },
+        {
+          "token_id": 38772,
+          "token": "(run",
+          "logit": 0.11216647177934647
+        },
+        {
+          "token_id": 19486,
+          "token": "Runner",
+          "logit": 0.11118755489587784
+        },
+        {
+          "token_id": 6108,
+          "token": "run",
+          "logit": 0.11074329167604446
+        },
+        {
+          "token_id": 91005,
+          "token": "unittest",
+          "logit": 0.1091996505856514
+        },
+        {
+          "token_id": 94396,
+          "token": " testName",
+          "logit": 0.10586065798997879
+        },
+        {
+          "token_id": 41228,
+          "token": ".runner",
+          "logit": 0.10582519322633743
+        },
+        {
+          "token_id": 22928,
+          "token": "TestMethod",
+          "logit": 0.10533221811056137
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 74437,
+          "token": " consultations",
+          "logit": -0.06326402723789215
+        },
+        {
+          "token_id": 70260,
+          "token": " Bashar",
+          "logit": -0.06291460990905762
+        },
+        {
+          "token_id": 56001,
+          "token": ".GetHashCode",
+          "logit": -0.06201310455799103
+        },
+        {
+          "token_id": 35554,
+          "token": " clearance",
+          "logit": -0.060812219977378845
+        },
+        {
+          "token_id": 65844,
+          "token": ".xmlbeans",
+          "logit": -0.06017320975661278
+        },
+        {
+          "token_id": 10872,
+          "token": "ongoose",
+          "logit": -0.05966058745980263
+        },
+        {
+          "token_id": 39480,
+          "token": "ppo",
+          "logit": -0.059329695999622345
+        },
+        {
+          "token_id": 12204,
+          "token": "domain",
+          "logit": -0.05867860093712807
+        },
+        {
+          "token_id": 82189,
+          "token": " agosto",
+          "logit": -0.0581827349960804
+        },
+        {
+          "token_id": 87177,
+          "token": "ijkstra",
+          "logit": -0.058095261454582214
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "977": {
+      "feature_idx": 977,
+      "top_activating": [
+        {
+          "activation": 19.2370548248291,
+          "token": " '",
+          "token_id": 364,
+          "context": "_ROLE], ['view', '"
+        },
+        {
+          "activation": 18.216266632080078,
+          "token": "Bulk",
+          "token_id": 88194,
+          "context": "TagsForm, CustomFieldBulk"
+        },
+        {
+          "activation": 17.521366119384766,
+          "token": " '",
+          "token_id": 364,
+          "context": "\n     ['view', '"
+        },
+        {
+          "activation": 16.537511825561523,
+          "token": " ['",
+          "token_id": 2509,
+          "context": "view', 'edit'], ['"
+        },
+        {
+          "activation": 14.85072135925293,
+          "token": " ['",
+          "token_id": 2509,
+          "context": "ASIC_USER], None, ['"
+        },
+        {
+          "activation": 14.57967472076416,
+          "token": " '",
+          "token_id": 364,
+          "context": "_USER], ['view', '"
+        },
+        {
+          "activation": 13.7235689163208,
+          "token": " '",
+          "token_id": 364,
+          "context": "_ROLE], ['view', '"
+        },
+        {
+          "activation": 13.222192764282227,
+          "token": " ['",
+          "token_id": 2509,
+          "context": " # allowed actions\n     ['"
+        },
+        {
+          "activation": 13.096912384033203,
+          "token": "6",
+          "token_id": 21,
+          "context": "06ef\\u06"
+        },
+        {
+          "activation": 12.939774513244629,
+          "token": " np",
+          "token_id": 2595,
+          "context": ")\n\n    y_data = np"
+        },
+        {
+          "activation": 12.888631820678711,
+          "token": ",",
+          "token_id": 11,
+          "context": "  #read in train,"
+        },
+        {
+          "activation": 12.831469535827637,
+          "token": ".e",
+          "token_id": 1734,
+          "context": " \"hoogendoorn.e"
+        },
+        {
+          "activation": 12.612000465393066,
+          "token": " ['",
+          "token_id": 2509,
+          "context": "view', 'edit'], ['"
+        },
+        {
+          "activation": 12.239639282226562,
+          "token": " np",
+          "token_id": 2595,
+          "context": ")\n    y_data = np"
+        },
+        {
+          "activation": 12.084218978881836,
+          "token": "6",
+          "token_id": 21,
+          "context": "06ee\\u06"
+        },
+        {
+          "activation": 11.908448219299316,
+          "token": " views",
+          "token_id": 6194,
+          "context": "self, view):\n        views"
+        },
+        {
+          "activation": 11.809313774108887,
+          "token": ",",
+          "token_id": 11,
+          "context": " and write headers for train,"
+        },
+        {
+          "activation": 11.668200492858887,
+          "token": ",",
+          "token_id": 11,
+          "context": " headers for train, dev,"
+        },
+        {
+          "activation": 11.652585983276367,
+          "token": "_content",
+          "token_id": 7495,
+          "context": " 'contenteditable': build_content"
+        },
+        {
+          "activation": 11.55152416229248,
+          "token": "_line",
+          "token_id": 6528,
+          "context": ".\"\"\"\n        self._search_line"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 35823,
+          "token": ".Edit",
+          "logit": 0.1071958988904953
+        },
+        {
+          "token_id": 86626,
+          "token": "\tedit",
+          "logit": 0.09760742634534836
+        },
+        {
+          "token_id": 60778,
+          "token": "#,",
+          "logit": 0.09240115433931351
+        },
+        {
+          "token_id": 3587,
+          "token": "edit",
+          "logit": 0.09231772273778915
+        },
+        {
+          "token_id": 81063,
+          "token": "edith",
+          "logit": 0.09207544475793839
+        },
+        {
+          "token_id": 50659,
+          "token": "egt",
+          "logit": 0.09185570478439331
+        },
+        {
+          "token_id": 61878,
+          "token": "eid",
+          "logit": 0.09168544411659241
+        },
+        {
+          "token_id": 4499,
+          "token": " edit",
+          "logit": 0.0903443694114685
+        },
+        {
+          "token_id": 79217,
+          "token": " editar",
+          "logit": 0.08810459822416306
+        },
+        {
+          "token_id": 8340,
+          "token": " Edit",
+          "logit": 0.08594192564487457
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 32493,
+          "token": " Dynam",
+          "logit": -0.0612286813557148
+        },
+        {
+          "token_id": 854,
+          "token": "\u201d",
+          "logit": -0.0573493130505085
+        },
+        {
+          "token_id": 62084,
+          "token": " connectionString",
+          "logit": -0.05592877417802811
+        },
+        {
+          "token_id": 61504,
+          "token": "qus",
+          "logit": -0.05564691871404648
+        },
+        {
+          "token_id": 16086,
+          "token": " NAS",
+          "logit": -0.0545622743666172
+        },
+        {
+          "token_id": 26272,
+          "token": "Bro",
+          "logit": -0.05305597186088562
+        },
+        {
+          "token_id": 1036,
+          "token": " \u201c",
+          "logit": -0.051970865577459335
+        },
+        {
+          "token_id": 34496,
+          "token": "NAS",
+          "logit": -0.05094034597277641
+        },
+        {
+          "token_id": 10682,
+          "token": "LOB",
+          "logit": -0.05092667043209076
+        },
+        {
+          "token_id": 32642,
+          "token": "\u0435\u0432",
+          "logit": -0.050609041005373
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "1450": {
+      "feature_idx": 1450,
+      "top_activating": [
+        {
+          "activation": 13.480170249938965,
+          "token": " for",
+          "token_id": 369,
+          "context": "\n]\n\n\n# -- Options for"
+        },
+        {
+          "activation": 13.40346908569336,
+          "token": " for",
+          "token_id": 369,
+          "context": " False\n\n\n# -- Options for"
+        },
+        {
+          "activation": 13.170300483703613,
+          "token": " for",
+          "token_id": 369,
+          "context": " False\n\n\n# -- Options for"
+        },
+        {
+          "activation": 12.579428672790527,
+          "token": " for",
+          "token_id": 369,
+          "context": "phinx'\n\n\n# -- Options for"
+        },
+        {
+          "activation": 12.34177017211914,
+          "token": " --",
+          "token_id": 1177,
+          "context": " change notes\n]\n\n\n# --"
+        },
+        {
+          "activation": 12.18773078918457,
+          "token": "_DIR",
+          "token_id": 8291,
+          "context": " = str(PROJECT_ROOT_DIR"
+        },
+        {
+          "activation": 12.017848014831543,
+          "token": "_dir",
+          "token_id": 4334,
+          "context": "    data_dir = unpack_dir"
+        },
+        {
+          "activation": 12.008426666259766,
+          "token": "(p",
+          "token_id": 1295,
+          "context": " pathlib.PosixPath(str(p"
+        },
+        {
+          "activation": 11.853798866271973,
+          "token": "nx",
+          "token_id": 23357,
+          "context": " issu_enabled\n\n\n@mlnx"
+        },
+        {
+          "activation": 11.786724090576172,
+          "token": " any",
+          "token_id": 894,
+          "context": "pages',\n]\n\n# Add any"
+        },
+        {
+          "activation": 11.698969841003418,
+          "token": "_dir",
+          "token_id": 4334,
+          "context": "        data_dir = sandbox_dir"
+        },
+        {
+          "activation": 11.584965705871582,
+          "token": " for",
+          "token_id": 369,
+          "context": " -------------------------------------------------\n\n# -- Options for"
+        },
+        {
+          "activation": 11.456042289733887,
+          "token": " any",
+          "token_id": 894,
+          "context": " = True\n\n# Add any"
+        },
+        {
+          "activation": 11.413722038269043,
+          "token": "#",
+          "token_id": 2,
+          "context": " to use for all\n#"
+        },
+        {
+          "activation": 11.344300270080566,
+          "token": "(seed",
+          "token_id": 44163,
+          "context": ".\n      filenames += list(seed"
+        },
+        {
+          "activation": 11.322708129882812,
+          "token": " feed",
+          "token_id": 5395,
+          "context": " \"\"\"Parses a feed"
+        },
+        {
+          "activation": 11.270429611206055,
+          "token": "_dir",
+          "token_id": 4334,
+          "context": "    filename = params.exp_dir"
+        },
+        {
+          "activation": 11.14552116394043,
+          "token": " any",
+          "token_id": 894,
+          "context": "'\n    ]\n\n# Add any"
+        },
+        {
+          "activation": 11.123130798339844,
+          "token": " for",
+          "token_id": 369,
+          "context": " ]\n}\n\n\n# -- Options for"
+        },
+        {
+          "activation": 11.088622093200684,
+          "token": "#",
+          "token_id": 2,
+          "context": " to use for all\n#"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 33665,
+          "token": "arium",
+          "logit": 0.08615178614854813
+        },
+        {
+          "token_id": 32825,
+          "token": " tearDown",
+          "logit": 0.0846952348947525
+        },
+        {
+          "token_id": 59026,
+          "token": "');?></",
+          "logit": 0.08408856391906738
+        },
+        {
+          "token_id": 73977,
+          "token": "/]",
+          "logit": 0.07902321219444275
+        },
+        {
+          "token_id": 85718,
+          "token": "')?></",
+          "logit": 0.07878430187702179
+        },
+        {
+          "token_id": 56813,
+          "token": " }</",
+          "logit": 0.07723306119441986
+        },
+        {
+          "token_id": 81417,
+          "token": ".uf",
+          "logit": 0.07630828768014908
+        },
+        {
+          "token_id": 87427,
+          "token": "EditingStyle",
+          "logit": 0.07571036368608475
+        },
+        {
+          "token_id": 151660,
+          "token": "<|fim_middle|>",
+          "logit": 0.07542221993207932
+        },
+        {
+          "token_id": 44695,
+          "token": " sourceMappingURL",
+          "logit": 0.07410987466573715
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 19308,
+          "token": "pal",
+          "logit": -0.0700111985206604
+        },
+        {
+          "token_id": 5520,
+          "token": "anges",
+          "logit": -0.06988715380430222
+        },
+        {
+          "token_id": 10157,
+          "token": "tre",
+          "logit": -0.06510572135448456
+        },
+        {
+          "token_id": 59102,
+          "token": "pong",
+          "logit": -0.06465113908052444
+        },
+        {
+          "token_id": 1858,
+          "token": ".in",
+          "logit": -0.06326651573181152
+        },
+        {
+          "token_id": 37788,
+          "token": "Thursday",
+          "logit": -0.06312244385480881
+        },
+        {
+          "token_id": 135387,
+          "token": "f\u00e9rence",
+          "logit": -0.06291328370571136
+        },
+        {
+          "token_id": 26383,
+          "token": "glas",
+          "logit": -0.06233244016766548
+        },
+        {
+          "token_id": 66562,
+          "token": "ranges",
+          "logit": -0.06136433035135269
+        },
+        {
+          "token_id": 41498,
+          "token": "prox",
+          "logit": -0.06076104938983917
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "2149": {
+      "feature_idx": 2149,
+      "top_activating": [
+        {
+          "activation": 10.778584480285645,
+          "token": " '",
+          "token_id": 364,
+          "context": "\n\n        if model == '"
+        },
+        {
+          "activation": 10.621146202087402,
+          "token": " Base",
+          "token_id": 5351,
+          "context": "UploadView(LoginRequiredMixin, Base"
+        },
+        {
+          "activation": 10.514583587646484,
+          "token": "www",
+          "token_id": 2136,
+          "context": "# \n# https://www"
+        },
+        {
+          "activation": 10.433399200439453,
+          "token": " the",
+          "token_id": 279,
+          "context": "IRequest object passed to the"
+        },
+        {
+          "activation": 10.355073928833008,
+          "token": " '",
+          "token_id": 364,
+          "context": "    if args.mode == '"
+        },
+        {
+          "activation": 10.326397895812988,
+          "token": " x",
+          "token_id": 856,
+          "context": " yend):\n\t\tif x"
+        },
+        {
+          "activation": 10.24579906463623,
+          "token": " ['",
+          "token_id": 2509,
+          "context": "view', 'edit'], ['"
+        },
+        {
+          "activation": 10.18724536895752,
+          "token": " \"",
+          "token_id": 330,
+          "context": " if Backend.get() == \""
+        },
+        {
+          "activation": 10.07320785522461,
+          "token": "(\"",
+          "token_id": 445,
+          "context": "\\n\")\n            fd.write(\""
+        },
+        {
+          "activation": 10.00607967376709,
+          "token": " ['",
+          "token_id": 2509,
+          "context": "IN_SVC_ROLE], ['"
+        },
+        {
+          "activation": 9.896500587463379,
+          "token": "_util",
+          "token_id": 18974,
+          "context": "_value())\n\n  @test_util"
+        },
+        {
+          "activation": 9.784339904785156,
+          "token": " Create",
+          "token_id": 4230,
+          "context": ", RedirectViewMixin, Create"
+        },
+        {
+          "activation": 9.752813339233398,
+          "token": " x",
+          "token_id": 856,
+          "context": ", xend) where x"
+        },
+        {
+          "activation": 9.684587478637695,
+          "token": "x",
+          "token_id": 87,
+          "context": "2\n\t\telif (x"
+        },
+        {
+          "activation": 9.657854080200195,
+          "token": " Redirect",
+          "token_id": 16029,
+          "context": "CreateView(LoginRequiredMixin, Redirect"
+        },
+        {
+          "activation": 9.57878303527832,
+          "token": " '--",
+          "token_id": 17304,
+          "context": "    '-v',\n    '--"
+        },
+        {
+          "activation": 9.544878005981445,
+          "token": " return",
+          "token_id": 470,
+          "context": ", **kwargs):\n            return"
+        },
+        {
+          "activation": 9.351269721984863,
+          "token": " \"",
+          "token_id": 330,
+          "context": " goAgain.upper() == \""
+        },
+        {
+          "activation": 9.340564727783203,
+          "token": "\n",
+          "token_id": 198,
+          "context": " are impacted by SQLite's\n"
+        },
+        {
+          "activation": 9.334493637084961,
+          "token": "/",
+          "token_id": 14,
+          "context": "_HOME', '/usr/share/"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 69703,
+          "token": "\tView",
+          "logit": 0.08399888873100281
+        },
+        {
+          "token_id": 91909,
+          "token": ",readonly",
+          "logit": 0.08085613697767258
+        },
+        {
+          "token_id": 5120,
+          "token": "ev",
+          "logit": 0.08039833605289459
+        },
+        {
+          "token_id": 5937,
+          "token": " otherwise",
+          "logit": 0.0799654945731163
+        },
+        {
+          "token_id": 21033,
+          "token": "VIEW",
+          "logit": 0.07686088234186172
+        },
+        {
+          "token_id": 6194,
+          "token": " views",
+          "logit": 0.07567565888166428
+        },
+        {
+          "token_id": 18071,
+          "token": " OTHERWISE",
+          "logit": 0.07508274912834167
+        },
+        {
+          "token_id": 57765,
+          "token": ".vert",
+          "logit": 0.0749630555510521
+        },
+        {
+          "token_id": 73418,
+          "token": "eva",
+          "logit": 0.07394745945930481
+        },
+        {
+          "token_id": 97213,
+          "token": "ViewItem",
+          "logit": 0.07281006127595901
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 124014,
+          "token": "\u0645\u0644",
+          "logit": -0.07560300827026367
+        },
+        {
+          "token_id": 23099,
+          "token": " Tes",
+          "logit": -0.07018788158893585
+        },
+        {
+          "token_id": 151662,
+          "token": "<|fim_pad|>",
+          "logit": -0.06924254447221756
+        },
+        {
+          "token_id": 79496,
+          "token": "arton",
+          "logit": -0.06821906566619873
+        },
+        {
+          "token_id": 60891,
+          "token": " ancor",
+          "logit": -0.06778229773044586
+        },
+        {
+          "token_id": 6737,
+          "token": "oded",
+          "logit": -0.06727037578821182
+        },
+        {
+          "token_id": 59746,
+          "token": "StringEncoding",
+          "logit": -0.06177382543683052
+        },
+        {
+          "token_id": 128972,
+          "token": " i\u00e7inde",
+          "logit": -0.061469968408346176
+        },
+        {
+          "token_id": 84872,
+          "token": "CallableWrapper",
+          "logit": -0.061017680913209915
+        },
+        {
+          "token_id": 151661,
+          "token": "<|fim_suffix|>",
+          "logit": -0.06029502674937248
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "1541": {
+      "feature_idx": 1541,
+      "top_activating": [
+        {
+          "activation": 16.076900482177734,
+          "token": "figure",
+          "token_id": 17781,
+          "context": "float) alignment\n#'figure"
+        },
+        {
+          "activation": 16.049346923828125,
+          "token": ")",
+          "token_id": 8,
+          "context": " Latex figure (float)"
+        },
+        {
+          "activation": 15.998125076293945,
+          "token": ")",
+          "token_id": 8,
+          "context": " Latex figure (float)"
+        },
+        {
+          "activation": 15.571517944335938,
+          "token": "':",
+          "token_id": 1210,
+          "context": " preamble.\n#'preamble':"
+        },
+        {
+          "activation": 15.485578536987305,
+          "token": "':",
+          "token_id": 1210,
+          "context": "    # 'preamble':"
+        },
+        {
+          "activation": 15.45925521850586,
+          "token": "figure",
+          "token_id": 17781,
+          "context": "    #\n    # 'figure"
+        },
+        {
+          "activation": 15.423307418823242,
+          "token": "':",
+          "token_id": 1210,
+          "context": "    # 'preamble':"
+        },
+        {
+          "activation": 15.397566795349121,
+          "token": ")",
+          "token_id": 8,
+          "context": " Latex figure (float)"
+        },
+        {
+          "activation": 15.257634162902832,
+          "token": "figure",
+          "token_id": 17781,
+          "context": "    #\n    # 'figure"
+        },
+        {
+          "activation": 15.0260591506958,
+          "token": " as",
+          "token_id": 438,
+          "context": " custom static files (such as"
+        },
+        {
+          "activation": 14.9789457321167,
+          "token": " figure",
+          "token_id": 7071,
+          "context": "\n\n    # Latex figure"
+        },
+        {
+          "activation": 14.869996070861816,
+          "token": " as",
+          "token_id": 438,
+          "context": " custom static files (such as"
+        },
+        {
+          "activation": 14.858744621276855,
+          "token": " figure",
+          "token_id": 7071,
+          "context": "\n\n    # Latex figure"
+        },
+        {
+          "activation": 14.625121116638184,
+          "token": " figure",
+          "token_id": 7071,
+          "context": " '',\n\n# Latex figure"
+        },
+        {
+          "activation": 14.51025104522705,
+          "token": " as",
+          "token_id": 438,
+          "context": " custom static files (such as"
+        },
+        {
+          "activation": 14.395395278930664,
+          "token": "phinx",
+          "token_id": 49561,
+          "context": " Python standard library.\nintersphinx"
+        },
+        {
+          "activation": 14.155881881713867,
+          "token": "phinx",
+          "token_id": 49561,
+          "context": "phinx extension ---------------------------------------\n\nintersphinx"
+        },
+        {
+          "activation": 13.874051094055176,
+          "token": " of",
+          "token_id": 315,
+          "context": " does only contain a selection of"
+        },
+        {
+          "activation": 13.726154327392578,
+          "token": "ht",
+          "token_id": 426,
+          "context": "#'figure_align': 'ht"
+        },
+        {
+          "activation": 13.64311408996582,
+          "token": "ht",
+          "token_id": 426,
+          "context": " unicode, rather than matht"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 1014,
+          "token": "ml",
+          "logit": 0.06298930197954178
+        },
+        {
+          "token_id": 1211,
+          "token": "ics",
+          "logit": 0.05888663977384567
+        },
+        {
+          "token_id": 130148,
+          "token": " b\u0131rak",
+          "logit": 0.051519714295864105
+        },
+        {
+          "token_id": 2668,
+          "token": "ML",
+          "logit": 0.05093907564878464
+        },
+        {
+          "token_id": 57031,
+          "token": " Diaz",
+          "logit": 0.05084327235817909
+        },
+        {
+          "token_id": 141261,
+          "token": " \u043f\u0440\u0435\u0434\u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d",
+          "logit": 0.04924556612968445
+        },
+        {
+          "token_id": 13137,
+          "token": " helper",
+          "logit": 0.048084843903779984
+        },
+        {
+          "token_id": 41548,
+          "token": " Bog",
+          "logit": 0.047585900872945786
+        },
+        {
+          "token_id": 101965,
+          "token": "\u6881",
+          "logit": 0.047345347702503204
+        },
+        {
+          "token_id": 99753,
+          "token": "\u907f",
+          "logit": 0.0463295616209507
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 36358,
+          "token": "stdout",
+          "logit": -0.15666699409484863
+        },
+        {
+          "token_id": 20075,
+          "token": " stdout",
+          "logit": -0.14464645087718964
+        },
+        {
+          "token_id": 67416,
+          "token": "_stdout",
+          "logit": -0.13403929769992828
+        },
+        {
+          "token_id": 24839,
+          "token": ".stdout",
+          "logit": -0.13389943540096283
+        },
+        {
+          "token_id": 87907,
+          "token": " STDOUT",
+          "logit": -0.13354891538619995
+        },
+        {
+          "token_id": 26436,
+          "token": " stderr",
+          "logit": -0.13298235833644867
+        },
+        {
+          "token_id": 29376,
+          "token": "(stdout",
+          "logit": -0.1306508332490921
+        },
+        {
+          "token_id": 36422,
+          "token": "stderr",
+          "logit": -0.12887127697467804
+        },
+        {
+          "token_id": 62274,
+          "token": "(STD",
+          "logit": -0.12824413180351257
+        },
+        {
+          "token_id": 83225,
+          "token": ".Stdout",
+          "logit": -0.12468381226062775
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "612": {
+      "feature_idx": 612,
+      "top_activating": [
+        {
+          "activation": 13.809256553649902,
+          "token": " mere",
+          "token_id": 17524,
+          "context": " king.\nBut this is mere"
+        },
+        {
+          "activation": 10.795741081237793,
+          "token": " as",
+          "token_id": 438,
+          "context": " present but has been detected as"
+        },
+        {
+          "activation": 10.597155570983887,
+          "token": " is",
+          "token_id": 374,
+          "context": " they know that the training is"
+        },
+        {
+          "activation": 10.513483047485352,
+          "token": "is",
+          "token_id": 285,
+          "context": " return _events[event].is"
+        },
+        {
+          "activation": 10.241204261779785,
+          "token": ".is",
+          "token_id": 2079,
+          "context": ".position\n            if flame.is"
+        },
+        {
+          "activation": 10.188304901123047,
+          "token": " is",
+          "token_id": 374,
+          "context": " missing indicates that the unit is"
+        },
+        {
+          "activation": 9.993427276611328,
+          "token": " is",
+          "token_id": 374,
+          "context": "message' : 'Token is"
+        },
+        {
+          "activation": 9.851822853088379,
+          "token": " are",
+          "token_id": 525,
+          "context": " filtered to remove jobs that are"
+        },
+        {
+          "activation": 9.702522277832031,
+          "token": " are",
+          "token_id": 525,
+          "context": " etc. Since the data are"
+        },
+        {
+          "activation": 9.695988655090332,
+          "token": " entirely",
+          "token_id": 11368,
+          "context": "; all deeper calls are entirely"
+        },
+        {
+          "activation": 9.655051231384277,
+          "token": " is",
+          "token_id": 374,
+          "context": " you not then our offer is"
+        },
+        {
+          "activation": 9.561918258666992,
+          "token": " is",
+          "token_id": 374,
+          "context": "        The server the channel is"
+        },
+        {
+          "activation": 9.518620491027832,
+          "token": " is",
+          "token_id": 374,
+          "context": " logger.debug(f\"server is"
+        },
+        {
+          "activation": 9.398426055908203,
+          "token": " are",
+          "token_id": 525,
+          "context": " filtered to remove jobs that are"
+        },
+        {
+          "activation": 9.357389450073242,
+          "token": " is",
+          "token_id": 374,
+          "context": ".getMarket() + ' is"
+        },
+        {
+          "activation": 9.344532012939453,
+          "token": " is",
+          "token_id": 374,
+          "context": "'Dependency \"{target}\" is"
+        },
+        {
+          "activation": 9.322543144226074,
+          "token": " is",
+          "token_id": 374,
+          "context": " function\n# the idea is"
+        },
+        {
+          "activation": 9.314682006835938,
+          "token": " is",
+          "token_id": 374,
+          "context": " forgotten their PIN or it is"
+        },
+        {
+          "activation": 9.200112342834473,
+          "token": " are",
+          "token_id": 525,
+          "context": " problematic pronunciations or are"
+        },
+        {
+          "activation": 9.183448791503906,
+          "token": " and",
+          "token_id": 323,
+          "context": "            \"Fatal, severe and"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 12418,
+          "token": " fake",
+          "logit": 0.07740985602140427
+        },
+        {
+          "token_id": 16234,
+          "token": " merely",
+          "logit": 0.0726257860660553
+        },
+        {
+          "token_id": 4936,
+          "token": " simply",
+          "logit": 0.07013154029846191
+        },
+        {
+          "token_id": 36965,
+          "token": " Fake",
+          "logit": 0.06368687003850937
+        },
+        {
+          "token_id": 34750,
+          "token": " pseudo",
+          "logit": 0.05986778065562248
+        },
+        {
+          "token_id": 30570,
+          "token": "fake",
+          "logit": 0.059626173228025436
+        },
+        {
+          "token_id": 895,
+          "token": " false",
+          "logit": 0.05854756757616997
+        },
+        {
+          "token_id": 2987,
+          "token": " either",
+          "logit": 0.05666787177324295
+        },
+        {
+          "token_id": 36004,
+          "token": " mistaken",
+          "logit": 0.05575670674443245
+        },
+        {
+          "token_id": 52317,
+          "token": "Fake",
+          "logit": 0.05517815425992012
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 23451,
+          "token": " tremend",
+          "logit": -0.10632258653640747
+        },
+        {
+          "token_id": 142805,
+          "token": "\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e",
+          "logit": -0.10058233886957169
+        },
+        {
+          "token_id": 123733,
+          "token": "\u5b3f",
+          "logit": -0.09996402263641357
+        },
+        {
+          "token_id": 130532,
+          "token": "qu\u00ed",
+          "logit": -0.09910034388303757
+        },
+        {
+          "token_id": 138621,
+          "token": "\u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d",
+          "logit": -0.0970986932516098
+        },
+        {
+          "token_id": 132501,
+          "token": "\u0431\u043b\u0430\u0433\u043e",
+          "logit": -0.09704870730638504
+        },
+        {
+          "token_id": 94002,
+          "token": " especialmente",
+          "logit": -0.09606079757213593
+        },
+        {
+          "token_id": 71786,
+          "token": " vid\u00e9os",
+          "logit": -0.09520217031240463
+        },
+        {
+          "token_id": 141910,
+          "token": " proximit\u00e9",
+          "logit": -0.09499508887529373
+        },
+        {
+          "token_id": 122163,
+          "token": "\u4ef3",
+          "logit": -0.09398037940263748
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "2574": {
+      "feature_idx": 2574,
+      "top_activating": [
+        {
+          "activation": 32.7590446472168,
+          "token": " corresponding",
+          "token_id": 12159,
+          "context": " label the location with the corresponding"
+        },
+        {
+          "activation": 32.041786193847656,
+          "token": " the",
+          "token_id": 279,
+          "context": "To label the location with the"
+        },
+        {
+          "activation": 32.02926254272461,
+          "token": " allowed",
+          "token_id": 5420,
+          "context": "                    help = \"Maximum allowed"
+        },
+        {
+          "activation": 31.5810604095459,
+          "token": " the",
+          "token_id": 279,
+          "context": " color: the color of the"
+        },
+        {
+          "activation": 31.53017807006836,
+          "token": " be",
+          "token_id": 387,
+          "context": " a segment, which will be"
+        },
+        {
+          "activation": 31.50288963317871,
+          "token": " the",
+          "token_id": 279,
+          "context": "        :param color: the"
+        },
+        {
+          "activation": 31.417524337768555,
+          "token": " the",
+          "token_id": 279,
+          "context": "\n            The value of the"
+        },
+        {
+          "activation": 31.098201751708984,
+          "token": " of",
+          "token_id": 315,
+          "context": "                    help = \"Amount of"
+        },
+        {
+          "activation": 30.854284286499023,
+          "token": " the",
+          "token_id": 279,
+          "context": " Returns:\n            str: the"
+        },
+        {
+          "activation": 30.8305721282959,
+          "token": " allowed",
+          "token_id": 5420,
+          "context": "                    help = \"Minimum allowed"
+        },
+        {
+          "activation": 30.715675354003906,
+          "token": " is",
+          "token_id": 374,
+          "context": "5 and the latest one is"
+        },
+        {
+          "activation": 30.649288177490234,
+          "token": ",",
+          "token_id": 11,
+          "context": " biggest cave:\")\n    grid,"
+        },
+        {
+          "activation": 30.515310287475586,
+          "token": "highest",
+          "token_id": 74154,
+          "context": "(counts)  (highest"
+        },
+        {
+          "activation": 30.464431762695312,
+          "token": " be",
+          "token_id": 387,
+          "context": " # model error should also be"
+        },
+        {
+          "activation": 30.29802703857422,
+          "token": " last",
+          "token_id": 1537,
+          "context": ")\n            # remove the last"
+        },
+        {
+          "activation": 30.0519962310791,
+          "token": " be",
+          "token_id": 387,
+          "context": "will cause the segment to be"
+        },
+        {
+          "activation": 29.90363883972168,
+          "token": "ceived",
+          "token_id": 8771,
+          "context": "            self.debug(f'Received"
+        },
+        {
+          "activation": 29.828514099121094,
+          "token": " stored",
+          "token_id": 9768,
+          "context": "choice]\n# print that stored"
+        },
+        {
+          "activation": 29.691030502319336,
+          "token": "-length",
+          "token_id": 29325,
+          "context": ",\n        because a zero-length"
+        },
+        {
+          "activation": 29.68518829345703,
+          "token": ">",
+          "token_id": 29,
+          "context": " and add the <unk>"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 27113,
+          "token": ".\"\n\n\n\n",
+          "logit": 0.09833823144435883
+        },
+        {
+          "token_id": 35746,
+          "token": "_OCCURRED",
+          "logit": 0.0860920250415802
+        },
+        {
+          "token_id": 138057,
+          "token": "\u0420\u0415",
+          "logit": 0.0834876298904419
+        },
+        {
+          "token_id": 38797,
+          "token": " spill",
+          "logit": 0.08279112726449966
+        },
+        {
+          "token_id": 60505,
+          "token": "successfully",
+          "logit": 0.08264949172735214
+        },
+        {
+          "token_id": 88297,
+          "token": "\tERROR",
+          "logit": 0.08202093094587326
+        },
+        {
+          "token_id": 116946,
+          "token": "\u9032\u4e00\u6b65",
+          "logit": 0.08193336427211761
+        },
+        {
+          "token_id": 51140,
+          "token": " contention",
+          "logit": 0.08118171989917755
+        },
+        {
+          "token_id": 141257,
+          "token": " n\u00e4chste",
+          "logit": 0.0784619152545929
+        },
+        {
+          "token_id": 87819,
+          "token": " incremented",
+          "logit": 0.077348992228508
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 98823,
+          "token": " Blanco",
+          "logit": -0.07394338399171829
+        },
+        {
+          "token_id": 103879,
+          "token": "\u90f4",
+          "logit": -0.07194994390010834
+        },
+        {
+          "token_id": 86867,
+          "token": " Dahl",
+          "logit": -0.07105620950460434
+        },
+        {
+          "token_id": 29314,
+          "token": " Garc",
+          "logit": -0.0708778128027916
+        },
+        {
+          "token_id": 87729,
+          "token": "_TestCase",
+          "logit": -0.07067818939685822
+        },
+        {
+          "token_id": 119146,
+          "token": "\u4fd1",
+          "logit": -0.06782139092683792
+        },
+        {
+          "token_id": 119378,
+          "token": "\u86aa",
+          "logit": -0.06582169979810715
+        },
+        {
+          "token_id": 112901,
+          "token": "\u6539\u826f",
+          "logit": -0.06522422283887863
+        },
+        {
+          "token_id": 120732,
+          "token": "\u768e",
+          "logit": -0.06463862210512161
+        },
+        {
+          "token_id": 8040,
+          "token": "izations",
+          "logit": -0.06434523314237595
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "2241": {
+      "feature_idx": 2241,
+      "top_activating": [
+        {
+          "activation": 12.227540016174316,
+          "token": " short",
+          "token_id": 2805,
+          "context": "rose.algorithms.decorators import short"
+        },
+        {
+          "activation": 9.67519760131836,
+          "token": "_short",
+          "token_id": 16673,
+          "context": "    def delete_from_last_short"
+        },
+        {
+          "activation": 8.78297233581543,
+          "token": "short",
+          "token_id": 8676,
+          "context": "_vault_secret_actions\nshort"
+        },
+        {
+          "activation": 8.0062255859375,
+          "token": "x",
+          "token_id": 87,
+          "context": ":\n        x = ((x"
+        },
+        {
+          "activation": 7.76575231552124,
+          "token": "xf",
+          "token_id": 5848,
+          "context": "5ee, 0xf"
+        },
+        {
+          "activation": 7.6783976554870605,
+          "token": " +",
+          "token_id": 488,
+          "context": " len(str(token.value))) +"
+        },
+        {
+          "activation": 6.6797776222229,
+          "token": ".dw",
+          "token_id": 46624,
+          "context": " = self.momentum*self.dw"
+        },
+        {
+          "activation": 6.2664055824279785,
+          "token": "_y",
+          "token_id": 4178,
+          "context": " bottom_right_y = center_y"
+        },
+        {
+          "activation": 4.12753963470459,
+          "token": " else",
+          "token_id": 770,
+          "context": " tokens[-3:]\n        else"
+        },
+        {
+          "activation": 3.8737425804138184,
+          "token": " else",
+          "token_id": 770,
+          "context": "'], view=view)\n        else"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 75097,
+          "token": " ^(",
+          "logit": 0.0761924684047699
+        },
+        {
+          "token_id": 27850,
+          "token": " failures",
+          "logit": 0.07517104595899582
+        },
+        {
+          "token_id": 7901,
+          "token": " failure",
+          "logit": 0.07513450086116791
+        },
+        {
+          "token_id": 28939,
+          "token": "failure",
+          "logit": 0.06976072490215302
+        },
+        {
+          "token_id": 17507,
+          "token": "Failure",
+          "logit": 0.06428731232881546
+        },
+        {
+          "token_id": 22045,
+          "token": "\u5931\u8d25",
+          "logit": 0.06342790275812149
+        },
+        {
+          "token_id": 4641,
+          "token": " failed",
+          "logit": 0.06317999958992004
+        },
+        {
+          "token_id": 21394,
+          "token": " failing",
+          "logit": 0.0629156231880188
+        },
+        {
+          "token_id": 33107,
+          "token": " FAIL",
+          "logit": 0.06254824995994568
+        },
+        {
+          "token_id": 64024,
+          "token": " FAILURE",
+          "logit": 0.061598602682352066
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 86008,
+          "token": "\u00e1genes",
+          "logit": -0.08013283461332321
+        },
+        {
+          "token_id": 66460,
+          "token": "ventus",
+          "logit": -0.07958017289638519
+        },
+        {
+          "token_id": 70592,
+          "token": "QRST",
+          "logit": -0.07820072025060654
+        },
+        {
+          "token_id": 53388,
+          "token": "ResponseType",
+          "logit": -0.07621786743402481
+        },
+        {
+          "token_id": 68499,
+          "token": "_bd",
+          "logit": -0.0756857693195343
+        },
+        {
+          "token_id": 143270,
+          "token": "\u30ad\u30ec\u30a4",
+          "logit": -0.07559460401535034
+        },
+        {
+          "token_id": 91891,
+          "token": "GRES",
+          "logit": -0.07392174005508423
+        },
+        {
+          "token_id": 33987,
+          "token": "(CType",
+          "logit": -0.07374662905931473
+        },
+        {
+          "token_id": 110201,
+          "token": "\u597d\u5417",
+          "logit": -0.07327654212713242
+        },
+        {
+          "token_id": 46945,
+          "token": "nek",
+          "logit": -0.07170402258634567
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "3138": {
+      "feature_idx": 3138,
+      "top_activating": [
+        {
+          "activation": 12.85936450958252,
+          "token": "8",
+          "token_id": 23,
+          "context": "0-\\xd6\\xd8"
+        },
+        {
+          "activation": 12.327906608581543,
+          "token": " '",
+          "token_id": 364,
+          "context": "_files/', 'true', '"
+        },
+        {
+          "activation": 12.123261451721191,
+          "token": "B",
+          "token_id": 33,
+          "context": "6\n##    COB"
+        },
+        {
+          "activation": 11.94321346282959,
+          "token": "_le",
+          "token_id": 11751,
+          "context": "image': 'bbc_radio_le"
+        },
+        {
+          "activation": 11.863314628601074,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.844730377197266,
+          "token": " probability",
+          "token_id": 18927,
+          "context": " bins\n\n    # Get probability"
+        },
+        {
+          "activation": 11.807262420654297,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.757346153259277,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.745363235473633,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.719992637634277,
+          "token": "-",
+          "token_id": 12,
+          "context": "        Minute 00-"
+        },
+        {
+          "activation": 11.62529468536377,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.616046905517578,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.6102294921875,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.599919319152832,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.533614158630371,
+          "token": "\"",
+          "token_id": 1,
+          "context": " = {\n            \"lr\""
+        },
+        {
+          "activation": 11.451261520385742,
+          "token": "-",
+          "token_id": 12,
+          "context": " \"Please note that passphrase-"
+        },
+        {
+          "activation": 11.450556755065918,
+          "token": "b",
+          "token_id": 65,
+          "context": " \"bow\",\n        \"b"
+        },
+        {
+          "activation": 11.372617721557617,
+          "token": "tc",
+          "token_id": 10413,
+          "context": "    graph_compiler: Ctc"
+        },
+        {
+          "activation": 11.360610961914062,
+          "token": "())",
+          "token_id": 2140,
+          "context": "ories.get_names().keys())"
+        },
+        {
+          "activation": 11.31651496887207,
+          "token": " and",
+          "token_id": 323,
+          "context": " last proof from the server and"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 31656,
+          "token": " penet",
+          "logit": 0.08539590239524841
+        },
+        {
+          "token_id": 33113,
+          "token": " seiz",
+          "logit": 0.07814067602157593
+        },
+        {
+          "token_id": 28917,
+          "token": " scrut",
+          "logit": 0.07770098745822906
+        },
+        {
+          "token_id": 141884,
+          "token": " ulus",
+          "logit": 0.07687435299158096
+        },
+        {
+          "token_id": 136064,
+          "token": " B\u00f6yle",
+          "logit": 0.07552804052829742
+        },
+        {
+          "token_id": 98421,
+          "token": " besteht",
+          "logit": 0.07405158132314682
+        },
+        {
+          "token_id": 14479,
+          "token": "argument",
+          "logit": 0.07347575575113297
+        },
+        {
+          "token_id": 69361,
+          "token": "ICTURE",
+          "logit": 0.07239910215139389
+        },
+        {
+          "token_id": 86710,
+          "token": " histoire",
+          "logit": 0.07064715772867203
+        },
+        {
+          "token_id": 7712,
+          "token": "craft",
+          "logit": 0.07017333805561066
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 60829,
+          "token": " noop",
+          "logit": -0.11434658616781235
+        },
+        {
+          "token_id": 40162,
+          "token": "noop",
+          "logit": -0.09980476647615433
+        },
+        {
+          "token_id": 151661,
+          "token": "<|fim_suffix|>",
+          "logit": -0.09587416797876358
+        },
+        {
+          "token_id": 6329,
+          "token": " nor",
+          "logit": -0.08718063682317734
+        },
+        {
+          "token_id": 71810,
+          "token": "_NOP",
+          "logit": -0.08056555688381195
+        },
+        {
+          "token_id": 101176,
+          "token": "\u8bfa",
+          "logit": -0.077964186668396
+        },
+        {
+          "token_id": 30788,
+          "token": "NonQuery",
+          "logit": -0.07755641639232635
+        },
+        {
+          "token_id": 55915,
+          "token": "omanip",
+          "logit": -0.07446004450321198
+        },
+        {
+          "token_id": 41984,
+          "token": " Noah",
+          "logit": -0.07441965490579605
+        },
+        {
+          "token_id": 9662,
+          "token": " nom",
+          "logit": -0.07365015149116516
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "74": {
+      "feature_idx": 74,
+      "top_activating": [
+        {
+          "activation": 18.669450759887695,
+          "token": " ```",
+          "token_id": 54275,
+          "context": "`.\n\n  Example:\n\n  ```"
+        },
+        {
+          "activation": 17.07926368713379,
+          "token": "::",
+          "token_id": 486,
+          "context": "\n\n\n    .. code-block::"
+        },
+        {
+          "activation": 10.70878791809082,
+          "token": ".''",
+          "token_id": 42484,
+          "context": "\t'''Connection timed out.''"
+        },
+        {
+          "activation": 10.657628059387207,
+          "token": "'''",
+          "token_id": 18788,
+          "context": "2017'])\n'''"
+        },
+        {
+          "activation": 10.495119094848633,
+          "token": "\"\"",
+          "token_id": 3014,
+          "context": ".cuda.empty_cache()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\"\""
+        },
+        {
+          "activation": 10.451462745666504,
+          "token": "'''",
+          "token_id": 18788,
+          "context": "2017'])\n'''"
+        },
+        {
+          "activation": 9.953163146972656,
+          "token": ".''",
+          "token_id": 42484,
+          "context": "\t'''Argument is invalid.''"
+        },
+        {
+          "activation": 9.722622871398926,
+          "token": ".''",
+          "token_id": 42484,
+          "context": " logic for handling I/O.''"
+        },
+        {
+          "activation": 9.60744857788086,
+          "token": "''",
+          "token_id": 4605,
+          "context": "json *.expected AUTHORS LICENSE''"
+        },
+        {
+          "activation": 9.586686134338379,
+          "token": ".''",
+          "token_id": 42484,
+          "context": "):\n\t'''Argument Error.''"
+        },
+        {
+          "activation": 9.512587547302246,
+          "token": "'''",
+          "token_id": 18788,
+          "context": "collections.OrderedDict'>\n'''"
+        },
+        {
+          "activation": 9.268515586853027,
+          "token": "{",
+          "token_id": 90,
+          "context": " math::\n\n        \\begin{"
+        },
+        {
+          "activation": 9.051349639892578,
+          "token": " ..",
+          "token_id": 5241,
+          "context": " Examples\n    ----------\n    .."
+        },
+        {
+          "activation": 8.876574516296387,
+          "token": "\"\"",
+          "token_id": 3014,
+          "context": ".empty_cache()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\"\"\"\""
+        },
+        {
+          "activation": 8.798905372619629,
+          "token": " ..",
+          "token_id": 5241,
+          "context": "``, as in:\n\n    .."
+        },
+        {
+          "activation": 8.765815734863281,
+          "token": "(path",
+          "token_id": 5581,
+          "context": " get_dataset_example_mnist(path"
+        },
+        {
+          "activation": 8.645469665527344,
+          "token": ".''",
+          "token_id": 42484,
+          "context": "\t'''Argument is missing.''"
+        },
+        {
+          "activation": 8.616893768310547,
+          "token": "-block",
+          "token_id": 9425,
+          "context": "`\n\n\n    .. code-block"
+        },
+        {
+          "activation": 7.860985279083252,
+          "token": " Basic",
+          "token_id": 14625,
+          "context": " to check the expectations that Basic"
+        },
+        {
+          "activation": 7.857149600982666,
+          "token": " Basic",
+          "token_id": 14625,
+          "context": ", evr_config = Basic"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 24903,
+          "token": "iol",
+          "logit": 0.06889618933200836
+        },
+        {
+          "token_id": 90190,
+          "token": " `,",
+          "logit": 0.06720239669084549
+        },
+        {
+          "token_id": 12669,
+          "token": "python",
+          "logit": 0.06607166677713394
+        },
+        {
+          "token_id": 138143,
+          "token": "\ucc2c",
+          "logit": 0.06528633832931519
+        },
+        {
+          "token_id": 35788,
+          "token": "rust",
+          "logit": 0.0651368722319603
+        },
+        {
+          "token_id": 49586,
+          "token": " hl",
+          "logit": 0.06500013172626495
+        },
+        {
+          "token_id": 93161,
+          "token": "DIC",
+          "logit": 0.06499643623828888
+        },
+        {
+          "token_id": 45760,
+          "token": " pym",
+          "logit": 0.06364239007234573
+        },
+        {
+          "token_id": 43711,
+          "token": "jam",
+          "logit": 0.06261409819126129
+        },
+        {
+          "token_id": 54780,
+          "token": "toc",
+          "logit": 0.061596453189849854
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 95060,
+          "token": "stakes",
+          "logit": -0.08405010402202606
+        },
+        {
+          "token_id": 38968,
+          "token": ".Wrap",
+          "logit": -0.07099244743585587
+        },
+        {
+          "token_id": 58019,
+          "token": " kole",
+          "logit": -0.0700516626238823
+        },
+        {
+          "token_id": 92896,
+          "token": ",last",
+          "logit": -0.06989651918411255
+        },
+        {
+          "token_id": 109423,
+          "token": "\u5305\u56f4",
+          "logit": -0.06951044499874115
+        },
+        {
+          "token_id": 88158,
+          "token": ".isSuccess",
+          "logit": -0.06836919486522675
+        },
+        {
+          "token_id": 42513,
+          "token": "aurus",
+          "logit": -0.06717097014188766
+        },
+        {
+          "token_id": 97560,
+          "token": "otence",
+          "logit": -0.0669684186577797
+        },
+        {
+          "token_id": 87209,
+          "token": "\u00f3ln",
+          "logit": -0.06632392853498459
+        },
+        {
+          "token_id": 32612,
+          "token": "urst",
+          "logit": -0.0662064477801323
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "741": {
+      "feature_idx": 741,
+      "top_activating": [
+        {
+          "activation": 15.97448444366455,
+          "token": "2",
+          "token_id": 17,
+          "context": ", 0x32"
+        },
+        {
+          "activation": 13.46430778503418,
+          "token": "0",
+          "token_id": 15,
+          "context": "14e, 0"
+        },
+        {
+          "activation": 12.611482620239258,
+          "token": "2",
+          "token_id": 17,
+          "context": ", 0x62"
+        },
+        {
+          "activation": 11.334281921386719,
+          "token": " ",
+          "token_id": 220,
+          "context": "((theta, r), "
+        },
+        {
+          "activation": 11.207046508789062,
+          "token": "6",
+          "token_id": 21,
+          "context": ", 0x56"
+        },
+        {
+          "activation": 10.77740478515625,
+          "token": " objects",
+          "token_id": 6171,
+          "context": " methods that return native Python objects"
+        },
+        {
+          "activation": 10.434440612792969,
+          "token": " import",
+          "token_id": 1159,
+          "context": "from transformers.trainer_utils import"
+        },
+        {
+          "activation": 10.219137191772461,
+          "token": "       ",
+          "token_id": 286,
+          "context": "api_types():\n        \"\"\"\n       "
+        },
+        {
+          "activation": 10.168591499328613,
+          "token": "                               ",
+          "token_id": 1383,
+          "context": " keys or values to\n                               "
+        },
+        {
+          "activation": 10.120981216430664,
+          "token": "):",
+          "token_id": 1648,
+          "context": "_to_item (tuple/list):"
+        },
+        {
+          "activation": 10.12055492401123,
+          "token": "=",
+          "token_id": 28,
+          "context": ".array(selected_inds)], axis="
+        },
+        {
+          "activation": 9.834059715270996,
+          "token": ".swagger",
+          "token_id": 44554,
+          "context": " _ in six.iteritems(self.swagger"
+        },
+        {
+          "activation": 9.758941650390625,
+          "token": " ",
+          "token_id": 220,
+          "context": "((r, theta), "
+        },
+        {
+          "activation": 9.708428382873535,
+          "token": " ",
+          "token_id": 220,
+          "context": "].unsqueeze(0)), "
+        },
+        {
+          "activation": 9.668364524841309,
+          "token": "/f",
+          "token_id": 6663,
+          "context": " de um range, in\u00edcio/f"
+        },
+        {
+          "activation": 9.651978492736816,
+          "token": ".swagger",
+          "token_id": 44554,
+          "context": " _ in six.iteritems(self.swagger"
+        },
+        {
+          "activation": 9.622159004211426,
+          "token": " import",
+          "token_id": 1159,
+          "context": "from icefall.checkpoint import"
+        },
+        {
+          "activation": 9.440546989440918,
+          "token": "6",
+          "token_id": 21,
+          "context": ", 0x06"
+        },
+        {
+          "activation": 9.429807662963867,
+          "token": ".swagger",
+          "token_id": 44554,
+          "context": " _ in iteritems(self.swagger"
+        },
+        {
+          "activation": 9.176966667175293,
+          "token": "import",
+          "token_id": 474,
+          "context": " enum\nimport itertools\nimport"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 141786,
+          "token": " Unterst\u00fctzung",
+          "logit": 0.07163982093334198
+        },
+        {
+          "token_id": 88941,
+          "token": "ActionCode",
+          "logit": 0.06935445219278336
+        },
+        {
+          "token_id": 103370,
+          "token": "\u98a0",
+          "logit": 0.06734894216060638
+        },
+        {
+          "token_id": 73450,
+          "token": ".returnValue",
+          "logit": 0.06544363498687744
+        },
+        {
+          "token_id": 21592,
+          "token": " cigaret",
+          "logit": 0.0650804340839386
+        },
+        {
+          "token_id": 68582,
+          "token": "TemplateName",
+          "logit": 0.06358815729618073
+        },
+        {
+          "token_id": 79176,
+          "token": "ableObject",
+          "logit": 0.0634455755352974
+        },
+        {
+          "token_id": 141559,
+          "token": " \u0437\u0430\u043c\u0435\u0447\u0430",
+          "logit": 0.06301987171173096
+        },
+        {
+          "token_id": 143562,
+          "token": " unterst\u00fctzen",
+          "logit": 0.06296855956315994
+        },
+        {
+          "token_id": 54264,
+          "token": "ouncements",
+          "logit": 0.06160665303468704
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 2220,
+          "token": "-f",
+          "logit": -0.1729741394519806
+        },
+        {
+          "token_id": 69,
+          "token": "f",
+          "logit": -0.16714458167552948
+        },
+        {
+          "token_id": 761,
+          "token": "_f",
+          "logit": -0.15424151718616486
+        },
+        {
+          "token_id": 37,
+          "token": "F",
+          "logit": -0.14270834624767303
+        },
+        {
+          "token_id": 282,
+          "token": " f",
+          "logit": -0.1426660120487213
+        },
+        {
+          "token_id": 434,
+          "token": " F",
+          "logit": -0.13855910301208496
+        },
+        {
+          "token_id": 1166,
+          "token": "\tf",
+          "logit": -0.13804467022418976
+        },
+        {
+          "token_id": 91636,
+          "token": "fir",
+          "logit": -0.13787521421909332
+        },
+        {
+          "token_id": 9983,
+          "token": "fi",
+          "logit": -0.1349967122077942
+        },
+        {
+          "token_id": 833,
+          "token": ".f",
+          "logit": -0.13445134460926056
+        }
+      ],
+      "decoder_norm": 0.9999999403953552
+    },
+    "3724": {
+      "feature_idx": 3724,
+      "top_activating": [
+        {
+          "activation": 21.890474319458008,
+          "token": " will",
+          "token_id": 686,
+          "context": ". That \n    # will"
+        },
+        {
+          "activation": 20.148469924926758,
+          "token": " first",
+          "token_id": 1156,
+          "context": " That \n    # will first"
+        },
+        {
+          "activation": 16.38990592956543,
+          "token": " then",
+          "token_id": 1221,
+          "context": "\n# boolean array will then"
+        },
+        {
+          "activation": 15.784399032592773,
+          "token": " also",
+          "token_id": 1083,
+          "context": "    #\t\tit will also"
+        },
+        {
+          "activation": 15.727987289428711,
+          "token": " we",
+          "token_id": 582,
+          "context": "0):\n                # If we"
+        },
+        {
+          "activation": 15.6336088180542,
+          "token": " not",
+          "token_id": 537,
+          "context": " if profiled_symbol was not"
+        },
+        {
+          "activation": 15.497425079345703,
+          "token": " tests",
+          "token_id": 7032,
+          "context": " success status codes even if tests"
+        },
+        {
+          "activation": 15.44823169708252,
+          "token": " not",
+          "token_id": 537,
+          "context": "/contigger binaries were not"
+        },
+        {
+          "activation": 15.43605899810791,
+          "token": " may",
+          "token_id": 1231,
+          "context": "        # Applying CIRE may"
+        },
+        {
+          "activation": 15.12143611907959,
+          "token": " not",
+          "token_id": 537,
+          "context": "adoopJobError('Could not"
+        },
+        {
+          "activation": 14.776985168457031,
+          "token": " plots",
+          "token_id": 30694,
+          "context": "or if linear spectrogram plots"
+        },
+        {
+          "activation": 14.733125686645508,
+          "token": " not",
+          "token_id": 537,
+          "context": "Error('Coudl not"
+        },
+        {
+          "activation": 13.781818389892578,
+          "token": " is",
+          "token_id": 374,
+          "context": " if a RY gate is"
+        },
+        {
+          "activation": 13.594734191894531,
+          "token": " ne",
+          "token_id": 834,
+          "context": "\u00e9s si le chemin direct ne"
+        },
+        {
+          "activation": 13.56784439086914,
+          "token": " uniquely",
+          "token_id": 41229,
+          "context": " as run id, which uniquely"
+        },
+        {
+          "activation": 13.444573402404785,
+          "token": " have",
+          "token_id": 614,
+          "context": "):\n                # If we have"
+        },
+        {
+          "activation": 13.438626289367676,
+          "token": "IRE",
+          "token_id": 7466,
+          "context": "+1]\n\n    CIRE"
+        },
+        {
+          "activation": 13.265091896057129,
+          "token": " will",
+          "token_id": 686,
+          "context": " resulting\n# boolean array will"
+        },
+        {
+          "activation": 13.085063934326172,
+          "token": " flow",
+          "token_id": 6396,
+          "context": " for new checkpoints when control flow"
+        },
+        {
+          "activation": 13.059642791748047,
+          "token": " will",
+          "token_id": 686,
+          "context": "\n    #\t\tit will"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 99879,
+          "token": "\u53d1\u73b0",
+          "logit": 0.1843438446521759
+        },
+        {
+          "token_id": 13719,
+          "token": " finds",
+          "logit": 0.1648498922586441
+        },
+        {
+          "token_id": 1730,
+          "token": " found",
+          "logit": 0.15864413976669312
+        },
+        {
+          "token_id": 105923,
+          "token": "\u767c\u73fe",
+          "logit": 0.15837594866752625
+        },
+        {
+          "token_id": 106546,
+          "token": "\u53d1\u73b0\u4e86",
+          "logit": 0.15738828480243683
+        },
+        {
+          "token_id": 55698,
+          "token": "(found",
+          "logit": 0.1473718136548996
+        },
+        {
+          "token_id": 58102,
+          "token": "\tfound",
+          "logit": 0.1423124521970749
+        },
+        {
+          "token_id": 115058,
+          "token": "\u53d1\u73b0\u95ee\u9898",
+          "logit": 0.14090949296951294
+        },
+        {
+          "token_id": 15105,
+          "token": "found",
+          "logit": 0.13956448435783386
+        },
+        {
+          "token_id": 101958,
+          "token": "\u627e\u5230",
+          "logit": 0.13560357689857483
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 151662,
+          "token": "<|fim_pad|>",
+          "logit": -0.0664728581905365
+        },
+        {
+          "token_id": 103733,
+          "token": "\u4fae",
+          "logit": -0.06419181078672409
+        },
+        {
+          "token_id": 60726,
+          "token": "\u5148",
+          "logit": -0.059984415769577026
+        },
+        {
+          "token_id": 990,
+          "token": " use",
+          "logit": -0.058196719735860825
+        },
+        {
+          "token_id": 104177,
+          "token": "\u671f\u5f85",
+          "logit": -0.05737996846437454
+        },
+        {
+          "token_id": 93523,
+          "token": "ousy",
+          "logit": -0.0573120079934597
+        },
+        {
+          "token_id": 100289,
+          "token": "\u5851",
+          "logit": -0.0564391165971756
+        },
+        {
+          "token_id": 1969,
+          "token": " must",
+          "logit": -0.05556873232126236
+        },
+        {
+          "token_id": 1366,
+          "token": " want",
+          "logit": -0.05526384711265564
+        },
+        {
+          "token_id": 103370,
+          "token": "\u98a0",
+          "logit": -0.0551898255944252
+        }
+      ],
+      "decoder_norm": 1.0
+    },
+    "2952": {
+      "feature_idx": 2952,
+      "top_activating": [
+        {
+          "activation": 41.42251205444336,
+          "token": ").",
+          "token_id": 568,
+          "context": "(Candidate.split == split)."
+        },
+        {
+          "activation": 37.52132797241211,
+          "token": ").",
+          "token_id": 568,
+          "context": "(Candidate.split == split)."
+        },
+        {
+          "activation": 36.62359619140625,
+          "token": " session",
+          "token_id": 3797,
+          "context": ", **kwargs):\n        session"
+        },
+        {
+          "activation": 33.79828643798828,
+          "token": " \"",
+          "token_id": 330,
+          "context": "are \"deferred\", \""
+        },
+        {
+          "activation": 33.115928649902344,
+          "token": "delete",
+          "token_id": 4542,
+          "context": "andidate.split == split).delete"
+        },
+        {
+          "activation": 32.44432830810547,
+          "token": ".session",
+          "token_id": 10177,
+          "context": "00\n\n    db.session"
+        },
+        {
+          "activation": 31.564208984375,
+          "token": " storage",
+          "token_id": 5819,
+          "context": " yield pushed_objects\n    storage"
+        },
+        {
+          "activation": 30.00581169128418,
+          "token": " storage",
+          "token_id": 5819,
+          "context": "):\n        deleted_files = storage"
+        },
+        {
+          "activation": 29.83891487121582,
+          "token": "       ",
+          "token_id": 286,
+          "context": " delete(self):\n        \"\"\"\n       "
+        },
+        {
+          "activation": 29.57219696044922,
+          "token": " \"",
+          "token_id": 330,
+          "context": " \"immediate\", and \""
+        },
+        {
+          "activation": 29.54506492614746,
+          "token": " '",
+          "token_id": 364,
+          "context": " \"\"\"\r\n    svn_command( '"
+        },
+        {
+          "activation": 28.762245178222656,
+          "token": " '",
+          "token_id": 364,
+          "context": "                'http_method': '"
+        },
+        {
+          "activation": 28.667631149291992,
+          "token": ").",
+          "token_id": 568,
+          "context": "        session.query(Candidate)."
+        },
+        {
+          "activation": 28.55320930480957,
+          "token": " session",
+          "token_id": 3797,
+          "context": ", **kwargs):\n        session"
+        },
+        {
+          "activation": 28.080841064453125,
+          "token": " storage",
+          "token_id": 5819,
+          "context": "    yield filename\n    storage"
+        },
+        {
+          "activation": 27.997175216674805,
+          "token": "=\"",
+          "token_id": 428,
+          "context": "(\"cart_products\", cascade=\""
+        },
+        {
+          "activation": 27.635854721069336,
+          "token": ",",
+          "token_id": 11,
+          "context": ".g. INSERT,\nUPDATE,"
+        },
+        {
+          "activation": 27.61372184753418,
+          "token": "connection",
+          "token_id": 7742,
+          "context": ".commit()`` and ``connection"
+        },
+        {
+          "activation": 27.438175201416016,
+          "token": " shutil",
+          "token_id": 33960,
+          "context": "\n    finally:\n        shutil"
+        },
+        {
+          "activation": 27.382143020629883,
+          "token": " storage",
+          "token_id": 5819,
+          "context": "    yield dirname\n    storage"
+        }
+      ],
+      "logit_lens_top_promote": [
+        {
+          "token_id": 3698,
+          "token": " delete",
+          "logit": 0.18764503300189972
+        },
+        {
+          "token_id": 4542,
+          "token": "delete",
+          "logit": 0.18675272166728973
+        },
+        {
+          "token_id": 7440,
+          "token": ".delete",
+          "logit": 0.18062178790569305
+        },
+        {
+          "token_id": 14424,
+          "token": "DELETE",
+          "logit": 0.1791914701461792
+        },
+        {
+          "token_id": 54170,
+          "token": " deletes",
+          "logit": 0.17870277166366577
+        },
+        {
+          "token_id": 17197,
+          "token": " DELETE",
+          "logit": 0.17818358540534973
+        },
+        {
+          "token_id": 36066,
+          "token": " deletion",
+          "logit": 0.17143268883228302
+        },
+        {
+          "token_id": 59712,
+          "token": "(delete",
+          "logit": 0.17083871364593506
+        },
+        {
+          "token_id": 10428,
+          "token": " Delete",
+          "logit": 0.16915802657604218
+        },
+        {
+          "token_id": 18872,
+          "token": ".Delete",
+          "logit": 0.16797664761543274
+        }
+      ],
+      "logit_lens_top_suppress": [
+        {
+          "token_id": 133590,
+          "token": " Mo\u017ce",
+          "logit": -0.07401551306247711
+        },
+        {
+          "token_id": 4750,
+          "token": " WARRANT",
+          "logit": -0.06586142629384995
+        },
+        {
+          "token_id": 134289,
+          "token": " Dzi\u0119ki",
+          "logit": -0.06530432403087616
+        },
+        {
+          "token_id": 142279,
+          "token": " Ka\u017cdy",
+          "logit": -0.060533370822668076
+        },
+        {
+          "token_id": 36620,
+          "token": "-parser",
+          "logit": -0.059403400868177414
+        },
+        {
+          "token_id": 53894,
+          "token": "eken",
+          "logit": -0.05934382975101471
+        },
+        {
+          "token_id": 50958,
+          "token": "erten",
+          "logit": -0.05828937515616417
+        },
+        {
+          "token_id": 14463,
+          "token": "Parse",
+          "logit": -0.05819610878825188
+        },
+        {
+          "token_id": 74789,
+          "token": " Parsing",
+          "logit": -0.058179181069135666
+        },
+        {
+          "token_id": 20497,
+          "token": "ocab",
+          "logit": -0.05790649354457855
+        }
+      ],
+      "decoder_norm": 1.0
+    }
+  },
+  "n_eval_positions": 501032,
+  "n_eval_docs": 553
+}

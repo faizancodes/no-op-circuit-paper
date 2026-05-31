@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED The prefetched relationship is used rather than populating the reverse - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED The prefetched relationship is used rather than populating the reverse - AssertionError: behaviour does not match expected output
+========================= 1 failed, 85 passed in 0.04s =========================

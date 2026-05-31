@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 253 passed in 0.04s =========================

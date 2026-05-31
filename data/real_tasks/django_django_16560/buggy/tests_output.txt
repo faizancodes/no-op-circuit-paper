@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_custom_violation_code_message (constraints.tests.BaseConstraintTests.test_custom_violation_code_message) - AssertionError: behaviour does not match expected output
+FAILED test_deconstruction (constraints.tests.BaseConstraintTests.test_deconstruction) - AssertionError: behaviour does not match expected output
+FAILED test_eq (constraints.tests.CheckConstraintTests.test_eq) - AssertionError: behaviour does not match expected output
+... and 5 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_custom_violation_code_message (constraints.tests.BaseConstraintTests.test_custom_violation_code_message) - AssertionError: behaviour does not match expected output
+FAILED test_deconstruction (constraints.tests.BaseConstraintTests.test_deconstruction) - AssertionError: behaviour does not match expected output
+FAILED test_eq (constraints.tests.CheckConstraintTests.test_eq) - AssertionError: behaviour does not match expected output
+... and 5 more failures (truncated)
+========================= 8 failed, 66 passed in 0.04s =========================

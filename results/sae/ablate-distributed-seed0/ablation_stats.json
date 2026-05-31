@@ -1,0 +1,161 @@
+{
+  "clean_gap_mean": 0.3666742700729927,
+  "rows": [
+    {
+      "label": "sae_recon",
+      "reduction_logits": 0.0,
+      "reduction_pct": 0.0,
+      "ci95_pct": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p": NaN,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top1",
+      "reduction_logits": 0.09432025547445255,
+      "reduction_pct": 25.72317262830482,
+      "ci95_pct": [
+        23.14152410575428,
+        28.335925349922242
+      ],
+      "wilcoxon_stat": 88685.5,
+      "wilcoxon_p": 1.5149364569585962e-52,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top2",
+      "reduction_logits": 0.11097171532846715,
+      "reduction_pct": 30.26438569206843,
+      "ci95_pct": [
+        26.811041990668738,
+        33.841368584758946
+      ],
+      "wilcoxon_stat": 100051.5,
+      "wilcoxon_p": 1.1245305776712714e-45,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top3",
+      "reduction_logits": 0.11097171532846715,
+      "reduction_pct": 30.26438569206843,
+      "ci95_pct": [
+        26.749611197511662,
+        33.748833592534986
+      ],
+      "wilcoxon_stat": 100051.5,
+      "wilcoxon_p": 1.1245305776712714e-45,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top4",
+      "reduction_logits": 0.11074361313868614,
+      "reduction_pct": 30.202177293934685,
+      "ci95_pct": [
+        26.749611197511662,
+        33.71695178849144
+      ],
+      "wilcoxon_stat": 99955.0,
+      "wilcoxon_p": 1.7800788869653632e-45,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top5",
+      "reduction_logits": 0.11074361313868614,
+      "reduction_pct": 30.202177293934685,
+      "ci95_pct": [
+        26.780715396578543,
+        33.71695178849144
+      ],
+      "wilcoxon_stat": 99955.0,
+      "wilcoxon_p": 1.7800788869653632e-45,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top6",
+      "reduction_logits": -0.1524292883211679,
+      "reduction_pct": -41.57076205287714,
+      "ci95_pct": [
+        -52.53499222395024,
+        -30.559486780715403
+      ],
+      "wilcoxon_stat": 44431.5,
+      "wilcoxon_p": 0.9999999999995101,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top7",
+      "reduction_logits": -0.1524292883211679,
+      "reduction_pct": -41.57076205287714,
+      "ci95_pct": [
+        -52.76827371695178,
+        -30.762052877138412
+      ],
+      "wilcoxon_stat": 44431.5,
+      "wilcoxon_p": 0.9999999999995101,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top8",
+      "reduction_logits": -0.14775319343065693,
+      "reduction_pct": -40.295489891135304,
+      "ci95_pct": [
+        -50.9642301710731,
+        -29.735225505443243
+      ],
+      "wilcoxon_stat": 43864.0,
+      "wilcoxon_p": 0.999999999999778,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top16",
+      "reduction_logits": 0.014199361313868612,
+      "reduction_pct": 3.8724727838258164,
+      "ci95_pct": [
+        -6.594479004665629,
+        14.494556765163297
+      ],
+      "wilcoxon_stat": 71261.5,
+      "wilcoxon_p": 0.28678746980504644,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top32",
+      "reduction_logits": 0.014199361313868612,
+      "reduction_pct": 3.8724727838258164,
+      "ci95_pct": [
+        -6.36158631415241,
+        14.292379471228617
+      ],
+      "wilcoxon_stat": 71261.5,
+      "wilcoxon_p": 0.28678746980504644,
+      "n_paired": 548,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top128",
+      "reduction_logits": -0.26608120437956206,
+      "reduction_pct": -72.56609642301711,
+      "ci95_pct": [
+        -83.39035769828928,
+        -61.50777604976673
+      ],
+      "wilcoxon_stat": 30133.5,
+      "wilcoxon_p": 1.0,
+      "n_paired": 548,
+      "n_boot": 10000
+    }
+  ]
+}

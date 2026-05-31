@@ -1,0 +1,22 @@
+...FF                                                                    [100%]
+=================================== FAILURES ===================================
+_______________________ test_case_insensitive_user_role ________________________
+
+    def test_case_insensitive_user_role():
+>       assert check_permission("Admin", "moderator") == True
+E       AssertionError: assert False == True
+E        +  where False = check_permission('Admin', 'moderator')
+
+test_auth.py:13: AssertionError
+_______________________ test_case_insensitive_both_roles _______________________
+
+    def test_case_insensitive_both_roles():
+>       assert check_permission("MODERATOR", "User") == True
+E       AssertionError: assert False == True
+E        +  where False = check_permission('MODERATOR', 'User')
+
+test_auth.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_auth.py::test_case_insensitive_user_role - AssertionError: assert...
+FAILED test_auth.py::test_case_insensitive_both_roles - AssertionError: asser...
+2 failed, 3 passed in 0.01s

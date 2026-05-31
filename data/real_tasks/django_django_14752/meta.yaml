@@ -1,0 +1,31 @@
+task_id: django_django_14752
+description: 'SWE-bench_Verified instance django__django-14752 (repo: django/django)'
+issue_text: "Refactor AutocompleteJsonView to support extra fields in autocomplete\
+  \ response\nDescription\n\t \n\t\t(last modified by mrts)\n\t \nAdding data attributes\
+  \ to items in ordinary non-autocomplete foreign key fields that use forms.widgets.Select-based\
+  \ widgets is relatively easy. This enables powerful and dynamic admin site customizations\
+  \ where fields from related models are updated immediately when users change the\
+  \ selected item.\nHowever, adding new attributes to autocomplete field results currently\
+  \ requires extending contrib.admin.views.autocomplete.AutocompleteJsonView and fully\
+  \ overriding the AutocompleteJsonView.get() method. Here's an example:\nclass MyModelAdmin(admin.ModelAdmin):\n\
+  \tdef get_urls(self):\n\t\treturn [\n\t\t\tpath('autocomplete/', CustomAutocompleteJsonView.as_view(admin_site=self.admin_site))\n\
+  \t\t\tif url.pattern.match('autocomplete/')\n\t\t\telse url for url in super().get_urls()\n\
+  \t\t]\nclass CustomAutocompleteJsonView(AutocompleteJsonView):\n\tdef get(self,\
+  \ request, *args, **kwargs):\n\t\tself.term, self.model_admin, self.source_field,\
+  \ to_field_name = self.process_request(request)\n\t\tif not self.has_perm(request):\n\
+  \t\t\traise PermissionDenied\n\t\tself.object_list = self.get_queryset()\n\t\tcontext\
+  \ = self.get_context_data()\n\t\treturn JsonResponse({\n\t\t\t'results': [\n\t\t\
+  \t\t{'id': str(getattr(obj, to_field_name)), 'text': str(obj), 'notes': obj.notes}\
+  \ # <-- customization here\n\t\t\t\tfor obj in context['object_list']\n\t\t\t],\n\
+  \t\t\t'pagination': {'more': context['page_obj'].has_next()},\n\t\t})\nThe problem\
+  \ with this is\u2026\n"
+primary_file: autocomplete.py
+test_command: pytest -q test_serialize_result (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-14752
+swe_bench_repo: django/django
+swe_bench_base_commit: b64db05b9cedd96905d637a2d824cbbf428e40e7
+swe_bench_modified_path: django/contrib/admin/views/autocomplete.py

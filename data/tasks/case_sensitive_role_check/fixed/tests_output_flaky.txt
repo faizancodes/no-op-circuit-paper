@@ -1,0 +1,25 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_docker_socket ______________________________
+
+test_infra/test_docker_socket.py:45: in test_docker_socket
+    client = docker.from_env()
+E   docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+E   
+E   During handling of the above exception, another exception occurred:
+E   
+E   Traceback (most recent call last):
+E     File "/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/docker/api/client.py", line 214, in _retrieve_server_version
+E       return self.version(api_version=False)["ApiVersion"]
+E     File "/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/docker/api/daemon.py", line 181, in version
+E       return self._result(self._get(url), json=True)
+E     File "/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/docker/utils/decorators.py", line 46, in inner
+E       return f(self, *args, **kwargs)
+E     File "/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/docker/api/client.py", line 237, in _get
+E       return self.get(url, **self._set_request_timeout(kwargs))
+E   docker.errors.DockerException: Docker socket /var/run/docker.sock not accessible (stale mount from previous CI run)
+
+=========================== short test summary info ============================
+FAILED test_infra/test_docker_socket.py::test_docker_socket - docker.errors.DockerException: Docker socket /var/run/docker.sock not accessible (stale mount from previous CI run)
+========================= 5 passed, 1 failed in 0.23s =========================

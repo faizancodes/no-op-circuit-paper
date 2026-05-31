@@ -1,0 +1,8 @@
+{
+  "probe_ts_utc": "2026-05-17T07:16:35.302333+00:00",
+  "requested_alias": "anthropic/claude-sonnet-4.5",
+  "resolved_model": "anthropic/claude-4.5-sonnet-20250929",
+  "response_id": "gen-1779002195-h1dGUjjboQhbtWNVMxp1",
+  "response_created": 1779002195,
+  "note": "Single probe call (temperature=0, max_tokens=1) to recover the snapshot ID that OpenRouter currently routes \"anthropic/claude-sonnet-4.5\" to. The 49-task toy substrate was generated on 2026-05-15; whether the alias resolved to the SAME snapshot then is irrecoverable \u2014 the original generation log (data/_generation_log.jsonl) does not capture response.model. See paper App. B.1.1 and \u00a76.2 for the reproducibility caveat. After this probe was logged the llm.chat() wrapper was patched to expose resolved_model on ChatResult so future generation runs cannot lose this information again."
+}

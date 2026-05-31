@@ -1,0 +1,32 @@
+task_id: django_django_13033
+description: 'SWE-bench_Verified instance django__django-13033 (repo: django/django)'
+issue_text: "Self referencing foreign key doesn't correctly order by a relation \"\
+  _id\" field.\nDescription\n\t\nInitially discovered on 2.2.10 but verified still\
+  \ happens on 3.0.6. Given the following models:\nclass OneModel(models.Model):\n\
+  \tclass Meta:\n\t\tordering = (\"-id\",)\n\tid = models.BigAutoField(primary_key=True)\n\
+  \troot = models.ForeignKey(\"OneModel\", on_delete=models.CASCADE, null=True)\n\t\
+  oneval = models.BigIntegerField(null=True)\nclass TwoModel(models.Model):\n\tid\
+  \ = models.BigAutoField(primary_key=True)\n\trecord = models.ForeignKey(OneModel,\
+  \ on_delete=models.CASCADE)\n\ttwoval = models.BigIntegerField(null=True)\nThe following\
+  \ queryset gives unexpected results and appears to be an incorrect SQL query:\n\
+  qs = TwoModel.objects.filter(record__oneval__in=[1,2,3])\nqs = qs.order_by(\"record__root_id\"\
+  )\nprint(qs.query)\nSELECT \"orion_twomodel\".\"id\", \"orion_twomodel\".\"record_id\"\
+  , \"orion_twomodel\".\"twoval\" FROM \"orion_twomodel\" INNER JOIN \"orion_onemodel\"\
+  \ ON (\"orion_twomodel\".\"record_id\" = \"orion_onemodel\".\"id\") LEFT OUTER JOIN\
+  \ \"orion_onemodel\" T3 ON (\"orion_onemodel\".\"root_id\" = T3.\"id\") WHERE \"\
+  orion_onemodel\".\"oneval\" IN (1, 2, 3) ORDER BY T3.\"id\" DESC\nThe query has\
+  \ an unexpected DESCENDING sort. That appears to come from the default sort order\
+  \ on the OneModel class, but I would expect the order_by() to take prececence. The\
+  \ the query has two JOINS, which is unnecessary. It appears that, since OneModel.root\
+  \ is a foreign key to itself, that is causing it to do the unnecessary extra join.\
+  \ In fact, testing a mod\u2026\n"
+primary_file: compiler.py
+test_command: pytest -q test_order_by_self_referential_fk (ordering.tests.OrderingTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-13033
+swe_bench_repo: django/django
+swe_bench_base_commit: a59de6e89e8dc1f3e71c9a5a5bbceb373ea5247e
+swe_bench_modified_path: django/db/models/sql/compiler.py

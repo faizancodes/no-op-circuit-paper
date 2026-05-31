@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_mlab.py::TestSpectral::test_psd_window_flattop[Fs4-twosided-complex] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_mlab.py::TestSpectral::test_psd_window_flattop[Fs4-twosided-real] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_mlab.py::TestSpectral::test_psd_window_flattop[Fs4-onesided-complex] - AssertionError: behaviour does not match expected output
+... and 9 more failures (truncated)
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_mlab.py::TestSpectral::test_psd_window_flattop[Fs4-twosided-complex] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_mlab.py::TestSpectral::test_psd_window_flattop[Fs4-twosided-real] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_mlab.py::TestSpectral::test_psd_window_flattop[Fs4-onesided-complex] - AssertionError: behaviour does not match expected output
+... and 9 more failures (truncated)
+========================= 12 failed, 2476 passed in 0.04s =========================

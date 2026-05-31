@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_parse_rst_with_docstring_no_leading_line_feed (admin_docs.test_utils.TestUtils) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_parse_rst_with_docstring_no_leading_line_feed (admin_docs.test_utils.TestUtils) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 6 passed in 0.04s =========================

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_alter_field_to_fk_dependency_other_app (migrations.test_autodetector.AutodetectorTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_alter_field_to_fk_dependency_other_app (migrations.test_autodetector.AutodetectorTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 109 passed in 0.04s =========================

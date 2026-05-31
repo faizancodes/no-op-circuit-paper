@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_value_placeholder_with_char_field (forms_tests.tests.test_validators.ValidatorCustomMessageTests) - AssertionError: behaviour does not match expected output
+FAILED test_value_placeholder_with_decimal_field (forms_tests.tests.test_validators.ValidatorCustomMessageTests) - AssertionError: behaviour does not match expected output
+FAILED test_value_placeholder_with_file_field (forms_tests.tests.test_validators.ValidatorCustomMessageTests) - AssertionError: behaviour does not match expected output
+... and 2 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_value_placeholder_with_char_field (forms_tests.tests.test_validators.ValidatorCustomMessageTests) - AssertionError: behaviour does not match expected output
+FAILED test_value_placeholder_with_decimal_field (forms_tests.tests.test_validators.ValidatorCustomMessageTests) - AssertionError: behaviour does not match expected output
+FAILED test_value_placeholder_with_file_field (forms_tests.tests.test_validators.ValidatorCustomMessageTests) - AssertionError: behaviour does not match expected output
+... and 2 more failures (truncated)
+========================= 5 failed, 2 passed in 0.04s =========================

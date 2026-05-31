@@ -1,0 +1,15 @@
+task_id: sympy_sympy_24562
+description: 'SWE-bench_Verified instance sympy__sympy-24562 (repo: sympy/sympy)'
+issue_text: "Rational calc value error\npython 3.11, sympy 1.11.1\r\nwhen calc Rational('0.5',\
+  \ '100'), the value is 1/100100; but Rational(0.5, 100) the value is 1/200, this\
+  \ value is the true value, and the version of sympy 1.8 is normal\n\n"
+primary_file: numbers.py
+test_command: pytest -q test_issue_24543
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: sympy__sympy-24562
+swe_bench_repo: sympy/sympy
+swe_bench_base_commit: b1cb676cf92dd1a48365b731979833375b188bf2
+swe_bench_modified_path: sympy/core/numbers.py

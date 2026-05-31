@@ -1,0 +1,15 @@
+task_id: django_django_14434
+description: 'SWE-bench_Verified instance django__django-14434 (repo: django/django)'
+issue_text: "Statement created by _create_unique_sql makes references_column always\
+  \ false\nDescription\n\t\nThis is due to an instance of Table is passed as an argument\
+  \ to Columns when a string is expected.\n\n"
+primary_file: schema.py
+test_command: pytest -q test_unique_constraint (schema.tests.SchemaTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-14434
+swe_bench_repo: django/django
+swe_bench_base_commit: 5e04e84d67da8163f365e9f5fcd169e2630e2873
+swe_bench_modified_path: django/db/backends/base/schema.py

@@ -1,0 +1,40 @@
+FF.FF                                                                    [100%]
+=================================== FAILURES ===================================
+______________________________ test_lerp_at_start ______________________________
+
+    def test_lerp_at_start():
+>       assert lerp(0, 10, 0.0) == 0.0
+E       assert 10.0 == 0.0
+E        +  where 10.0 = lerp(0, 10, 0.0)
+
+test_interpolate.py:4: AssertionError
+_______________________________ test_lerp_at_end _______________________________
+
+    def test_lerp_at_end():
+>       assert lerp(0, 10, 1.0) == 10.0
+E       assert 0.0 == 10.0
+E        +  where 0.0 = lerp(0, 10, 1.0)
+
+test_interpolate.py:7: AssertionError
+_________________________ test_lerp_at_thirty_percent __________________________
+
+    def test_lerp_at_thirty_percent():
+>       assert lerp(0, 10, 0.3) == 3.0
+E       assert 7.0 == 3.0
+E        +  where 7.0 = lerp(0, 10, 0.3)
+
+test_interpolate.py:13: AssertionError
+___________________________ test_lerp_negative_range ___________________________
+
+    def test_lerp_negative_range():
+>       assert lerp(10, -10, 0.25) == 5.0
+E       assert -5.0 == 5.0
+E        +  where -5.0 = lerp(10, -10, 0.25)
+
+test_interpolate.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_interpolate.py::test_lerp_at_start - assert 10.0 == 0.0
+FAILED test_interpolate.py::test_lerp_at_end - assert 0.0 == 10.0
+FAILED test_interpolate.py::test_lerp_at_thirty_percent - assert 7.0 == 3.0
+FAILED test_interpolate.py::test_lerp_negative_range - assert -5.0 == 5.0
+4 failed, 1 passed in 0.01s

@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_delete_cookie_samesite (responses.test_cookie.DeleteCookieTests) - AssertionError: behaviour does not match expected output
+FAILED test_delete_cookie_secure_samesite_none (responses.test_cookie.DeleteCookieTests) - AssertionError: behaviour does not match expected output
+FAILED test_session_delete_on_end (sessions_tests.tests.SessionMiddlewareTests) - AssertionError: behaviour does not match expected output
+... and 2 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_delete_cookie_samesite (responses.test_cookie.DeleteCookieTests) - AssertionError: behaviour does not match expected output
+FAILED test_delete_cookie_secure_samesite_none (responses.test_cookie.DeleteCookieTests) - AssertionError: behaviour does not match expected output
+FAILED test_session_delete_on_end (sessions_tests.tests.SessionMiddlewareTests) - AssertionError: behaviour does not match expected output
+... and 2 more failures (truncated)
+========================= 5 failed, 382 passed in 0.04s =========================

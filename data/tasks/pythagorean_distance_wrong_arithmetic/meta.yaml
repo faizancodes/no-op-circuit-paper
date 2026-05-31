@@ -1,0 +1,15 @@
+task_id: pythagorean_distance_wrong_arithmetic
+description: euclidean_distance() returns incorrect values due to wrong arithmetic
+  operator
+issue_text: 'The `euclidean_distance()` function is returning incorrect values for
+  2D points. For example, `euclidean_distance(0, 0, 3, 4)` should return 5.0 but returns
+  7.0 instead. The function appears to be computing the wrong distance metric. Please
+  fix the calculation so it returns the correct Euclidean distance.
+
+  '
+primary_file: distance.py
+test_command: pytest -q test_distance.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_arithmetic

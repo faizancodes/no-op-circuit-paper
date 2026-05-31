@@ -1,0 +1,31 @@
+task_id: pydata_xarray_7229
+description: 'SWE-bench_Verified instance pydata__xarray-7229 (repo: pydata/xarray)'
+issue_text: "`xr.where(..., keep_attrs=True)` overwrites coordinate attributes\n###\
+  \ What happened?\n\n#6461 had some unintended consequences for `xr.where(..., keep_attrs=True)`,\
+  \ where coordinate attributes are getting overwritten by variable attributes. I\
+  \ guess this has been broken since `2022.06.0`.\n\n### What did you expect to happen?\n\
+  \nCoordinate attributes should be preserved.\n\n### Minimal Complete Verifiable\
+  \ Example\n\n```Python\nimport xarray as xr\r\nds = xr.tutorial.load_dataset(\"\
+  air_temperature\")\r\nxr.where(True, ds.air, ds.air, keep_attrs=True).time.attrs\n\
+  ```\n\n\n### MVCE confirmation\n\n- [X] Minimal example \u2014 the example is as\
+  \ focused as reasonably possible to demonstrate the underlying issue in xarray.\n\
+  - [X] Complete example \u2014 the example is self-contained, including all data\
+  \ and the text of any traceback.\n- [X] Verifiable example \u2014 the example copy\
+  \ & pastes into an IPython prompt or [Binder notebook](https://mybinder.org/v2/gh/pydata/xarray/main?urlpath=lab/tree/doc/examples/blank_template.ipynb),\
+  \ returning the result.\n- [X] New issue \u2014 a search of GitHub Issues suggests\
+  \ this is not a duplicate.\n\n### Relevant log output\n\n```Python\n# New time attributes\
+  \ are:\r\n{'long_name': '4xDaily Air temperature at sigma level 995',\r\n 'units':\
+  \ 'degK',\r\n 'precision': 2,\r\n 'GRIB_id': 11,\r\n 'GRIB_name': 'TMP',\r\n 'var_desc':\
+  \ 'Air temperature',\r\n 'dataset': 'NMC Reanalysis',\r\n 'level_desc': 'Surface',\r\
+  \n 'statistic': 'Individual Obs',\r\n 'parent_stat': 'Other',\r\n 'actual_range':\
+  \ array([185.16, 322.1 ], dtype=fl\u2026\n"
+primary_file: computation.py
+test_command: pytest -q xarray/tests/test_computation.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pydata__xarray-7229
+swe_bench_repo: pydata/xarray
+swe_bench_base_commit: 3aa75c8d00a4a2d4acf10d80f76b937cadb666b7
+swe_bench_modified_path: xarray/core/computation.py

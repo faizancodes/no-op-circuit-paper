@@ -1,0 +1,16 @@
+task_id: register_action_mutable_default
+description: register_action() accumulates actions across calls when no explicit log
+  is provided
+issue_text: 'When calling `register_action()` multiple times without passing a custom
+  log list, all actions appear to accumulate in a shared log. For example, calling
+  `register_action(''start'')` followed by `register_action(''stop'')` in separate
+  invocations returns a log containing both actions even though each call should start
+  with an empty log by default. This breaks the isolation between independent calls.
+
+  '
+primary_file: action_log.py
+test_command: pytest -q test_action_log.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: mutable_default_argument

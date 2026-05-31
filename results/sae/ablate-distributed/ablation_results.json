@@ -1,0 +1,3737 @@
+{
+  "run_id": "ablate-distributed",
+  "sae_path": "sae/qwen_l24_resid_pre_TASK_d4096_k16.pt",
+  "layer": 24,
+  "position": -1,
+  "feature_sets": [
+    [
+      2669,
+      1954,
+      2950,
+      3129,
+      3171,
+      593,
+      1605,
+      3626
+    ],
+    [
+      2669,
+      1954,
+      2950,
+      3129,
+      3171,
+      593,
+      1605,
+      3626,
+      977,
+      1450,
+      2149,
+      1541,
+      612,
+      2574,
+      2241,
+      3138,
+      74,
+      741,
+      3724,
+      2952,
+      2514,
+      2660,
+      1485,
+      3189,
+      2350,
+      1333,
+      3848,
+      3378,
+      3235,
+      2998,
+      1597,
+      2942
+    ],
+    [
+      2669,
+      1954,
+      2950,
+      3129,
+      3171,
+      593,
+      1605,
+      3626,
+      977,
+      1450,
+      2149,
+      1541,
+      612,
+      2574,
+      2241,
+      3138,
+      74,
+      741,
+      3724,
+      2952,
+      2514,
+      2660,
+      1485,
+      3189,
+      2350,
+      1333,
+      3848,
+      3378,
+      3235,
+      2998,
+      1597,
+      2942,
+      1513,
+      3727,
+      1845,
+      1625,
+      3387,
+      2771,
+      1640,
+      3009,
+      924,
+      4034,
+      1445,
+      3298,
+      3969,
+      2360,
+      2954,
+      637,
+      2367,
+      231,
+      1107,
+      1023,
+      562,
+      3426,
+      183,
+      2150,
+      331,
+      3038,
+      2744,
+      1645,
+      3279,
+      2519,
+      2986,
+      2809,
+      3315,
+      3224,
+      1140,
+      2844,
+      206,
+      1561,
+      2486,
+      279,
+      1146,
+      107,
+      3635,
+      3149,
+      61,
+      4042,
+      3552,
+      951,
+      2278,
+      1839,
+      2194,
+      3434,
+      2093,
+      3735,
+      3714,
+      2709,
+      1031,
+      115,
+      3323,
+      651,
+      2687,
+      3314,
+      997,
+      2397,
+      936,
+      1834,
+      476,
+      589,
+      3828,
+      3352,
+      2395,
+      473,
+      1616,
+      1267,
+      1432,
+      3515,
+      259,
+      3484,
+      1573,
+      3499,
+      2403,
+      195,
+      24,
+      3474,
+      2243,
+      980,
+      3879,
+      900,
+      1991,
+      1275,
+      700,
+      79,
+      3355,
+      1601,
+      1089,
+      3985
+    ]
+  ],
+  "n_prompts": 296,
+  "rows": [
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.0625,
+        "ablate_omp_top32": 3.40625,
+        "ablate_omp_top128": 3.40625
+      }
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 3.6875,
+        "ablate_omp_top128": 3.6875
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "sae_recon": 3.125,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 4.25,
+        "ablate_omp_top128": 4.25
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "sae_recon": 3.5,
+        "ablate_omp_top8": 3.1875,
+        "ablate_omp_top32": 4.65625,
+        "ablate_omp_top128": 4.65625
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "sae_recon": 3.0,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.25,
+        "ablate_omp_top128": 4.3125
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "sae_recon": 3.5,
+        "ablate_omp_top8": 3.0,
+        "ablate_omp_top32": 4.5625,
+        "ablate_omp_top128": 4.6875
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "sae_recon": 3.1875,
+        "ablate_omp_top8": 2.9375,
+        "ablate_omp_top32": 4.46875,
+        "ablate_omp_top128": 4.40625
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.25,
+        "sae_recon": 3.25,
+        "ablate_omp_top8": 2.75,
+        "ablate_omp_top32": 4.3125,
+        "ablate_omp_top128": 4.3125
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.4375,
+        "ablate_omp_top32": 3.75,
+        "ablate_omp_top128": 3.75
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "sae_recon": 3.3125,
+        "ablate_omp_top8": 2.9375,
+        "ablate_omp_top32": 4.59375,
+        "ablate_omp_top128": 4.59375
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.75,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "sae_recon": 3.0625,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.3125,
+        "ablate_omp_top128": 4.3125
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.03125,
+        "ablate_omp_top128": 3.15625
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.6875,
+        "ablate_omp_top128": 3.6875
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 2.90625,
+        "ablate_omp_top128": 2.90625
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.84375,
+        "ablate_omp_top128": 3.84375
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.25,
+        "ablate_omp_top128": 3.25
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "sae_recon": 3.125,
+        "ablate_omp_top8": 2.875,
+        "ablate_omp_top32": 4.6875,
+        "ablate_omp_top128": 4.71875
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.15625,
+        "ablate_omp_top128": 4.15625
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "sae_recon": 3.125,
+        "ablate_omp_top8": 3.125,
+        "ablate_omp_top32": 4.46875,
+        "ablate_omp_top128": 4.5625
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "sae_recon": 2.8125,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 3.96875,
+        "ablate_omp_top128": 3.96875
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "sae_recon": 3.5,
+        "ablate_omp_top8": 3.0,
+        "ablate_omp_top32": 4.75,
+        "ablate_omp_top128": 4.75
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.25,
+        "ablate_omp_top128": 3.25
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "sae_recon": 3.0,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 3.84375,
+        "ablate_omp_top128": 3.84375
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "sae_recon": 3.4375,
+        "ablate_omp_top8": 3.0625,
+        "ablate_omp_top32": 4.65625,
+        "ablate_omp_top128": 4.65625
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "sae_recon": 3.125,
+        "ablate_omp_top8": 3.0,
+        "ablate_omp_top32": 4.0625,
+        "ablate_omp_top128": 4.0625
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 3.40625,
+        "ablate_omp_top128": 3.40625
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 2.65625,
+        "ablate_omp_top128": 2.65625
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.5625,
+        "ablate_omp_top128": 3.5625
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 2.78125,
+        "ablate_omp_top128": 2.78125
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "sae_recon": 3.1875,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 4.0
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.5625,
+        "ablate_omp_top128": 3.625
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "sae_recon": 2.5,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 4.03125,
+        "ablate_omp_top128": 4.03125
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.375,
+        "ablate_omp_top128": 3.375
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "sae_recon": 3.3125,
+        "ablate_omp_top8": 3.0,
+        "ablate_omp_top32": 4.5,
+        "ablate_omp_top128": 4.5
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "sae_recon": 3.3125,
+        "ablate_omp_top8": 3.125,
+        "ablate_omp_top32": 4.6875,
+        "ablate_omp_top128": 4.6875
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "sae_recon": 3.4375,
+        "ablate_omp_top8": 3.3125,
+        "ablate_omp_top32": 5.3125,
+        "ablate_omp_top128": 5.3125
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "sae_recon": 2.9375,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.46875,
+        "ablate_omp_top128": 4.46875
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "sae_recon": 3.5,
+        "ablate_omp_top8": 3.0625,
+        "ablate_omp_top32": 4.65625,
+        "ablate_omp_top128": 4.65625
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 3.78125,
+        "ablate_omp_top128": 3.78125
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "sae_recon": 3.0625,
+        "ablate_omp_top8": 2.4375,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 4.0
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "sae_recon": 3.1875,
+        "ablate_omp_top8": 2.875,
+        "ablate_omp_top32": 4.21875,
+        "ablate_omp_top128": 4.21875
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.6875,
+        "sae_recon": 3.6875,
+        "ablate_omp_top8": 3.0625,
+        "ablate_omp_top32": 4.875,
+        "ablate_omp_top128": 4.875
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "sae_recon": 2.9375,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.8125,
+        "sae_recon": 3.8125,
+        "ablate_omp_top8": 3.5,
+        "ablate_omp_top32": 5.28125,
+        "ablate_omp_top128": 5.28125
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "sae_recon": 2.8125,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.28125,
+        "ablate_omp_top128": 4.28125
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.40625,
+        "ablate_omp_top128": 3.40625
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 2.90625,
+        "ablate_omp_top128": 2.90625
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.25,
+        "sae_recon": 3.25,
+        "ablate_omp_top8": 2.875,
+        "ablate_omp_top32": 4.46875,
+        "ablate_omp_top128": 4.46875
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "sae_recon": 3.0625,
+        "ablate_omp_top8": 2.9375,
+        "ablate_omp_top32": 4.15625,
+        "ablate_omp_top128": 4.375
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.5625,
+        "ablate_omp_top128": 3.5625
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 2.0625,
+        "ablate_omp_top32": 3.09375,
+        "ablate_omp_top128": 3.09375
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "sae_recon": 3.375,
+        "ablate_omp_top8": 3.25,
+        "ablate_omp_top32": 5.0,
+        "ablate_omp_top128": 5.0
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.40625,
+        "ablate_omp_top128": 3.40625
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.375,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.25,
+        "ablate_omp_top128": 3.25
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "sae_recon": 3.1875,
+        "ablate_omp_top8": 2.9375,
+        "ablate_omp_top32": 4.65625,
+        "ablate_omp_top128": 4.65625
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.5,
+        "ablate_omp_top128": 3.5
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.40625,
+        "ablate_omp_top128": 3.40625
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "sae_recon": 2.8125,
+        "ablate_omp_top8": 2.4375,
+        "ablate_omp_top32": 3.84375,
+        "ablate_omp_top128": 3.84375
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 2.5,
+        "ablate_omp_top128": 2.5
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.5625,
+        "ablate_omp_top128": 3.5625
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.375,
+        "ablate_omp_top128": 3.375
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.75,
+        "ablate_omp_top32": 4.1875,
+        "ablate_omp_top128": 4.1875
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.9375,
+        "sae_recon": 3.9375,
+        "ablate_omp_top8": 3.625,
+        "ablate_omp_top32": 5.46875,
+        "ablate_omp_top128": 5.46875
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "sae_recon": 3.1875,
+        "ablate_omp_top8": 2.9375,
+        "ablate_omp_top32": 4.0625,
+        "ablate_omp_top128": 4.0625
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.9375,
+        "sae_recon": 3.9375,
+        "ablate_omp_top8": 3.5625,
+        "ablate_omp_top32": 4.9375,
+        "ablate_omp_top128": 4.9375
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.84375,
+        "ablate_omp_top128": 3.84375
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "sae_recon": 2.9375,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 3.71875,
+        "ablate_omp_top128": 3.71875
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 2.96875,
+        "ablate_omp_top128": 2.96875
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5625,
+        "sae_recon": 3.5625,
+        "ablate_omp_top8": 3.0625,
+        "ablate_omp_top32": 5.0,
+        "ablate_omp_top128": 5.0
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "sae_recon": 3.5,
+        "ablate_omp_top8": 3.4375,
+        "ablate_omp_top32": 5.3125,
+        "ablate_omp_top128": 5.3125
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 4.15625,
+        "ablate_omp_top128": 4.15625
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "sae_recon": 3.0,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 4.3125,
+        "ablate_omp_top128": 4.3125
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.46875,
+        "ablate_omp_top128": 3.46875
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "sae_recon": 3.375,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.4375,
+        "ablate_omp_top128": 3.4375
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.375,
+        "ablate_omp_top32": 4.25,
+        "ablate_omp_top128": 4.25
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.375,
+        "ablate_omp_top32": 3.59375,
+        "ablate_omp_top128": 3.59375
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "sae_recon": 3.375,
+        "ablate_omp_top8": 3.0625,
+        "ablate_omp_top32": 4.46875,
+        "ablate_omp_top128": 4.46875
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.75,
+        "ablate_omp_top32": 4.03125,
+        "ablate_omp_top128": 4.03125
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "sae_recon": 3.3125,
+        "ablate_omp_top8": 2.875,
+        "ablate_omp_top32": 4.53125,
+        "ablate_omp_top128": 4.53125
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 3.84375,
+        "ablate_omp_top128": 3.84375
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "sae_recon": 3.375,
+        "ablate_omp_top8": 3.125,
+        "ablate_omp_top32": 5.0625,
+        "ablate_omp_top128": 5.0625
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "sae_recon": 3.375,
+        "ablate_omp_top8": 3.375,
+        "ablate_omp_top32": 5.09375,
+        "ablate_omp_top128": 5.09375
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.75,
+        "sae_recon": 3.75,
+        "ablate_omp_top8": 3.375,
+        "ablate_omp_top32": 5.375,
+        "ablate_omp_top128": 5.375
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.9375,
+        "ablate_omp_top32": 4.0625,
+        "ablate_omp_top128": 4.0625
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "sae_recon": 3.4375,
+        "ablate_omp_top8": 3.0625,
+        "ablate_omp_top32": 4.96875,
+        "ablate_omp_top128": 4.96875
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5625,
+        "sae_recon": 3.5625,
+        "ablate_omp_top8": 3.4375,
+        "ablate_omp_top32": 5.25,
+        "ablate_omp_top128": 5.25
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.25,
+        "sae_recon": 3.25,
+        "ablate_omp_top8": 2.9375,
+        "ablate_omp_top32": 4.40625,
+        "ablate_omp_top128": 4.40625
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "sae_recon": 3.0625,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.6875,
+        "sae_recon": 3.6875,
+        "ablate_omp_top8": 3.375,
+        "ablate_omp_top32": 5.125,
+        "ablate_omp_top128": 5.125
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "sae_recon": 2.875,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.375,
+        "ablate_omp_top128": 4.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.375,
+        "ablate_omp_top32": 2.59375,
+        "ablate_omp_top128": 2.59375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.28125,
+        "ablate_omp_top128": 3.28125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 2.875,
+        "ablate_omp_top128": 2.875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.375,
+        "ablate_omp_top128": 3.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.25,
+        "sae_recon": 1.25,
+        "ablate_omp_top8": 1.25,
+        "ablate_omp_top32": 3.5,
+        "ablate_omp_top128": 3.5
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.375,
+        "ablate_omp_top32": 2.1875,
+        "ablate_omp_top128": 2.1875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.375,
+        "sae_recon": 1.375,
+        "ablate_omp_top8": 0.5,
+        "ablate_omp_top32": 1.5625,
+        "ablate_omp_top128": 1.5625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "sae_recon": 2.875,
+        "ablate_omp_top8": 2.375,
+        "ablate_omp_top32": 3.4375,
+        "ablate_omp_top128": 3.4375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 1.875,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.84375,
+        "ablate_omp_top128": 3.84375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.875,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.6875,
+        "ablate_omp_top128": 3.6875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.59375,
+        "ablate_omp_top128": 3.59375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "sae_recon": 3.0,
+        "ablate_omp_top8": 2.5625,
+        "ablate_omp_top32": 4.25,
+        "ablate_omp_top128": 4.25
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 3.0,
+        "ablate_omp_top128": 3.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 2.25,
+        "ablate_omp_top128": 2.25
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5,
+        "sae_recon": 1.5,
+        "ablate_omp_top8": 0.5625,
+        "ablate_omp_top32": 1.375,
+        "ablate_omp_top128": 1.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "sae_recon": 3.0625,
+        "ablate_omp_top8": 3.1875,
+        "ablate_omp_top32": 5.21875,
+        "ablate_omp_top128": 5.21875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "sae_recon": 3.5,
+        "ablate_omp_top8": 3.375,
+        "ablate_omp_top32": 5.53125,
+        "ablate_omp_top128": 5.53125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "sae_recon": 2.875,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.125,
+        "ablate_omp_top128": 4.125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 4.0625,
+        "ablate_omp_top128": 4.0625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "sae_recon": 2.9375,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.15625,
+        "ablate_omp_top128": 4.15625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.4375,
+        "ablate_omp_top32": 3.96875,
+        "ablate_omp_top128": 3.96875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "sae_recon": 3.4375,
+        "ablate_omp_top8": 3.25,
+        "ablate_omp_top32": 4.90625,
+        "ablate_omp_top128": 4.90625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "sae_recon": 3.5,
+        "ablate_omp_top8": 3.5,
+        "ablate_omp_top32": 5.1875,
+        "ablate_omp_top128": 5.1875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "sae_recon": 3.125,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.28125,
+        "ablate_omp_top128": 4.28125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.53125,
+        "ablate_omp_top128": 3.53125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "sae_recon": 2.9375,
+        "ablate_omp_top8": 2.625,
+        "ablate_omp_top32": 4.125,
+        "ablate_omp_top128": 4.125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.65625,
+        "ablate_omp_top128": 3.65625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.875,
+        "ablate_omp_top32": 3.15625,
+        "ablate_omp_top128": 3.15625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 4.15625,
+        "ablate_omp_top128": 4.15625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 4.125,
+        "ablate_omp_top128": 4.125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.1875,
+        "ablate_omp_top128": 3.1875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 3.75,
+        "ablate_omp_top128": 3.75
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.5625,
+        "ablate_omp_top32": 3.6875,
+        "ablate_omp_top128": 3.6875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.78125,
+        "ablate_omp_top128": 4.78125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "sae_recon": 1.75,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.59375,
+        "ablate_omp_top128": 3.59375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "sae_recon": 3.0,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 2.625,
+        "ablate_omp_top128": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.4375,
+        "sae_recon": 1.4375,
+        "ablate_omp_top8": 1.3125,
+        "ablate_omp_top32": 2.4375,
+        "ablate_omp_top128": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.46875,
+        "ablate_omp_top128": 2.46875
+      }
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "sae_recon": 3.0,
+        "ablate_omp_top8": 2.375,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "sae_recon": 2.875,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.78125,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.75,
+        "ablate_omp_top128": 3.75
+      }
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.4375,
+        "ablate_omp_top128": 3.4375
+      }
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "sae_recon": 2.5,
+        "ablate_omp_top8": 2.4375,
+        "ablate_omp_top32": 3.625,
+        "ablate_omp_top128": 3.625
+      }
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.375,
+        "ablate_omp_top32": 4.25,
+        "ablate_omp_top128": 4.25
+      }
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "sae_recon": 1.5625,
+        "ablate_omp_top8": 1.1875,
+        "ablate_omp_top32": 2.6875,
+        "ablate_omp_top128": 2.6875
+      }
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.125,
+        "ablate_omp_top128": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 3.375,
+        "ablate_omp_top128": 3.375
+      }
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 2.3125,
+        "ablate_omp_top128": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.5,
+        "ablate_omp_top128": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "sae_recon": 3.125,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.96875,
+        "ablate_omp_top128": 4.96875
+      }
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.5625,
+        "ablate_omp_top128": 3.5625
+      }
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.375,
+        "ablate_omp_top32": 4.15625,
+        "ablate_omp_top128": 4.15625
+      }
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.9375,
+        "ablate_omp_top128": 3.9375
+      }
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.625,
+        "ablate_omp_top128": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.375,
+        "sae_recon": 1.375,
+        "ablate_omp_top8": 1.25,
+        "ablate_omp_top32": 2.4375,
+        "ablate_omp_top128": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.34375,
+        "ablate_omp_top128": 3.34375
+      }
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "sae_recon": 2.5,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 3.90625,
+        "ablate_omp_top128": 3.90625
+      }
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.5,
+        "ablate_omp_top128": 3.5
+      }
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 2.9375,
+        "ablate_omp_top128": 2.9375
+      }
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.1875,
+        "ablate_omp_top128": 3.1875
+      }
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "sae_recon": 1.6875,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.5,
+        "ablate_omp_top128": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.0625,
+        "ablate_omp_top32": 2.5625,
+        "ablate_omp_top128": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.625,
+        "ablate_omp_top128": 3.625
+      }
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "sae_recon": 2.875,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "sae_recon": 1.75,
+        "ablate_omp_top8": 1.3125,
+        "ablate_omp_top32": 2.5,
+        "ablate_omp_top128": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "sae_recon": 1.75,
+        "ablate_omp_top8": 1.125,
+        "ablate_omp_top32": 2.75,
+        "ablate_omp_top128": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "sae_recon": 3.0,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.59375,
+        "ablate_omp_top128": 4.5625
+      }
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "sae_recon": 2.8125,
+        "ablate_omp_top8": 2.5,
+        "ablate_omp_top32": 4.59375,
+        "ablate_omp_top128": 4.59375
+      }
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.0625,
+        "ablate_omp_top32": 3.625,
+        "ablate_omp_top128": 3.625
+      }
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.6875,
+        "ablate_omp_top128": 3.6875
+      }
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "sae_recon": 2.8125,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 3.71875,
+        "ablate_omp_top128": 3.71875
+      }
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 2.0625,
+        "ablate_omp_top32": 3.46875,
+        "ablate_omp_top128": 3.46875
+      }
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.3125,
+        "ablate_omp_top32": 4.0625,
+        "ablate_omp_top128": 4.0625
+      }
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.34375,
+        "ablate_omp_top128": 3.34375
+      }
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.09375,
+        "ablate_omp_top128": 3.09375
+      }
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.75,
+        "ablate_omp_top128": 3.75
+      }
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 2.5625,
+        "ablate_omp_top128": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "sae_recon": 1.5625,
+        "ablate_omp_top8": 1.0,
+        "ablate_omp_top32": 2.4375,
+        "ablate_omp_top128": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 2.625,
+        "ablate_omp_top128": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.125,
+        "ablate_omp_top128": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "sae_recon": 2.75,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.125,
+        "ablate_omp_top128": 4.125
+      }
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "sae_recon": 1.5625,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "sae_recon": 2.8125,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 2.5,
+        "ablate_omp_top128": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "sae_recon": 1.6875,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 2.9375,
+        "ablate_omp_top128": 2.9375
+      }
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 0.9375,
+        "ablate_omp_top32": 1.9375,
+        "ablate_omp_top128": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "sae_recon": 1.5625,
+        "ablate_omp_top8": 0.9375,
+        "ablate_omp_top32": 2.25,
+        "ablate_omp_top128": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 3.34375,
+        "ablate_omp_top128": 3.34375
+      }
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "sae_recon": 1.75,
+        "ablate_omp_top8": 1.125,
+        "ablate_omp_top32": 2.9375,
+        "ablate_omp_top128": 2.9375
+      }
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 1.875,
+        "ablate_omp_top32": 3.125,
+        "ablate_omp_top128": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 1.1875,
+        "ablate_omp_top32": 2.3125,
+        "ablate_omp_top128": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.375,
+        "ablate_omp_top32": 2.6875,
+        "ablate_omp_top128": 2.6875
+      }
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.1875,
+        "sae_recon": 1.1875,
+        "ablate_omp_top8": 0.9375,
+        "ablate_omp_top32": 2.3125,
+        "ablate_omp_top128": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 2.46875,
+        "ablate_omp_top128": 2.71875
+      }
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.65625,
+        "ablate_omp_top128": 3.75
+      }
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.625,
+        "ablate_omp_top128": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.9375,
+        "ablate_omp_top128": 3.9375
+      }
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "sae_recon": 3.375,
+        "ablate_omp_top8": 2.75,
+        "ablate_omp_top32": 4.34375,
+        "ablate_omp_top128": 4.34375
+      }
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "sae_recon": 2.8125,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 4.0
+      }
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "sae_recon": 2.625,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 3.5625,
+        "ablate_omp_top128": 3.5625
+      }
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.0,
+        "ablate_omp_top128": 3.0
+      }
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.4375,
+        "ablate_omp_top128": 3.4375
+      }
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 2.75,
+        "ablate_omp_top128": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "sae_recon": 1.6875,
+        "ablate_omp_top8": 1.25,
+        "ablate_omp_top32": 2.5625,
+        "ablate_omp_top128": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.34375,
+        "ablate_omp_top128": 3.34375
+      }
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.28125,
+        "ablate_omp_top128": 3.1875
+      }
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "sae_recon": 1.5625,
+        "ablate_omp_top8": 1.25,
+        "ablate_omp_top32": 2.3125,
+        "ablate_omp_top128": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "sae_recon": 1.75,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 3.03125,
+        "ablate_omp_top128": 3.03125
+      }
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.1875,
+        "ablate_omp_top32": 2.375,
+        "ablate_omp_top128": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.3125,
+        "ablate_omp_top32": 2.4375,
+        "ablate_omp_top128": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 2.625,
+        "ablate_omp_top128": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 3.0,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.1875,
+        "ablate_omp_top32": 2.625,
+        "ablate_omp_top128": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.59375,
+        "ablate_omp_top128": 3.59375
+      }
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.125,
+        "ablate_omp_top32": 3.5,
+        "ablate_omp_top128": 3.5
+      }
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.0,
+        "ablate_omp_top128": 2.9375
+      }
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 2.625,
+        "ablate_omp_top128": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "sae_recon": 1.6875,
+        "ablate_omp_top8": 1.25,
+        "ablate_omp_top32": 2.5,
+        "ablate_omp_top128": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.71875,
+        "ablate_omp_top128": 2.71875
+      }
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.15625,
+        "ablate_omp_top128": 3.15625
+      }
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 2.75,
+        "ablate_omp_top128": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.9375,
+        "ablate_omp_top128": 2.875
+      }
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.46875,
+        "ablate_omp_top128": 2.46875
+      }
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.375,
+        "ablate_omp_top32": 2.75,
+        "ablate_omp_top128": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 2.5,
+        "ablate_omp_top128": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.0625,
+        "ablate_omp_top32": 2.0625,
+        "ablate_omp_top128": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "sae_recon": 2.9375,
+        "ablate_omp_top8": 2.8125,
+        "ablate_omp_top32": 4.96875,
+        "ablate_omp_top128": 4.96875
+      }
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.4375,
+        "ablate_omp_top32": 4.8125,
+        "ablate_omp_top128": 4.8125
+      }
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 3.40625,
+        "ablate_omp_top128": 3.40625
+      }
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 3.0,
+        "ablate_omp_top128": 3.0
+      }
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.4375,
+        "ablate_omp_top32": 4.125,
+        "ablate_omp_top128": 4.125
+      }
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.09375,
+        "ablate_omp_top128": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 2.84375,
+        "ablate_omp_top128": 2.84375
+      }
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.875,
+        "ablate_omp_top32": 3.71875,
+        "ablate_omp_top128": 3.71875
+      }
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.0625,
+        "ablate_omp_top32": 4.1875,
+        "ablate_omp_top128": 4.1875
+      }
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "sae_recon": 1.5625,
+        "ablate_omp_top8": 1.4375,
+        "ablate_omp_top32": 3.0,
+        "ablate_omp_top128": 3.0
+      }
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "sae_recon": 1.625,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.25,
+        "ablate_omp_top128": 3.1875
+      }
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.25,
+        "ablate_omp_top32": 3.96875,
+        "ablate_omp_top128": 3.96875
+      }
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "sae_recon": 2.6875,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 4.25,
+        "ablate_omp_top128": 4.25
+      }
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "sae_recon": 3.125,
+        "ablate_omp_top8": 2.75,
+        "ablate_omp_top32": 4.09375,
+        "ablate_omp_top128": 4.09375
+      }
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.4375,
+        "sae_recon": 1.4375,
+        "ablate_omp_top8": 1.0,
+        "ablate_omp_top32": 2.6875,
+        "ablate_omp_top128": 2.8125
+      }
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 3.0,
+        "ablate_omp_top128": 3.0
+      }
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.25
+      }
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "sae_recon": 2.0,
+        "ablate_omp_top8": 1.3125,
+        "ablate_omp_top32": 2.28125,
+        "ablate_omp_top128": 2.28125
+      }
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "sae_recon": 1.6875,
+        "ablate_omp_top8": 1.25,
+        "ablate_omp_top32": 2.25,
+        "ablate_omp_top128": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.1875,
+        "ablate_omp_top32": 3.625,
+        "ablate_omp_top128": 3.625
+      }
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "sae_recon": 1.875,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 3.3125,
+        "ablate_omp_top128": 3.3125
+      }
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.3125,
+        "ablate_omp_top32": 2.5625,
+        "ablate_omp_top128": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.375,
+        "ablate_omp_top32": 2.875,
+        "ablate_omp_top128": 2.9375
+      }
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 2.0625,
+        "ablate_omp_top32": 3.5625,
+        "ablate_omp_top128": 3.5625
+      }
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "sae_recon": 1.75,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.25,
+        "ablate_omp_top128": 3.25
+      }
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 2.75,
+        "ablate_omp_top128": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 3.125,
+        "ablate_omp_top128": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.25,
+        "ablate_omp_top32": 2.84375,
+        "ablate_omp_top128": 2.84375
+      }
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "sae_recon": 2.25,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 3.8125,
+        "ablate_omp_top128": 3.8125
+      }
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "sae_recon": 2.125,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 2.5625,
+        "ablate_omp_top128": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.5625,
+        "ablate_omp_top32": 2.8125,
+        "ablate_omp_top128": 2.8125
+      }
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 2.96875,
+        "ablate_omp_top128": 2.96875
+      }
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 2.75,
+        "ablate_omp_top128": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "sae_recon": 2.5,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.65625,
+        "ablate_omp_top128": 3.65625
+      }
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "sae_recon": 2.5,
+        "ablate_omp_top8": 1.8125,
+        "ablate_omp_top32": 3.5,
+        "ablate_omp_top128": 3.5
+      }
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "sae_recon": 2.5625,
+        "ablate_omp_top8": 2.0625,
+        "ablate_omp_top32": 3.96875,
+        "ablate_omp_top128": 3.96875
+      }
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.875,
+        "ablate_omp_top128": 3.875
+      }
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.9375,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.0625
+      }
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.875,
+        "ablate_omp_top32": 3.25,
+        "ablate_omp_top128": 3.25
+      }
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "sae_recon": 2.4375,
+        "ablate_omp_top8": 2.0,
+        "ablate_omp_top32": 3.28125,
+        "ablate_omp_top128": 3.28125
+      }
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "sae_recon": 2.0625,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 2.84375,
+        "ablate_omp_top128": 2.84375
+      }
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "sae_recon": 2.1875,
+        "ablate_omp_top8": 1.75,
+        "ablate_omp_top32": 2.8125,
+        "ablate_omp_top128": 2.8125
+      }
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "sae_recon": 1.8125,
+        "ablate_omp_top8": 1.625,
+        "ablate_omp_top32": 2.75,
+        "ablate_omp_top128": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "sae_recon": 2.875,
+        "ablate_omp_top8": 2.6875,
+        "ablate_omp_top32": 4.1875,
+        "ablate_omp_top128": 4.1875
+      }
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "sae_recon": 1.9375,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 3.0625,
+        "ablate_omp_top128": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "sae_recon": 2.3125,
+        "ablate_omp_top8": 1.5,
+        "ablate_omp_top32": 2.6875,
+        "ablate_omp_top128": 2.6875
+      }
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "sae_recon": 1.75,
+        "ablate_omp_top8": 1.0,
+        "ablate_omp_top32": 2.3125,
+        "ablate_omp_top128": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "sae_recon": 2.375,
+        "ablate_omp_top8": 1.6875,
+        "ablate_omp_top32": 2.84375,
+        "ablate_omp_top128": 2.84375
+      }
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.3125,
+        "sae_recon": 1.3125,
+        "ablate_omp_top8": 0.625,
+        "ablate_omp_top32": 1.875,
+        "ablate_omp_top128": 1.875
+      }
+    }
+  ]
+}

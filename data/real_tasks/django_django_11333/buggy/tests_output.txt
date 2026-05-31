@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_resolver_cache_default__root_urlconf (urlpatterns.test_resolvers.ResolverCacheTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_resolver_cache_default__root_urlconf (urlpatterns.test_resolvers.ResolverCacheTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 2 passed in 0.04s =========================

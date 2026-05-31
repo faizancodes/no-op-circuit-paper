@@ -1,0 +1,5055 @@
+{
+  "config": {
+    "orig_cache": "results/cache-real-qwen-n500-20260516T235301Z",
+    "swap_cache": "results/cache-real-qwen-swap-n500-20260518T074930Z",
+    "v_noop": "results/steer-20260516T021522Z/v_noop.pt",
+    "layer": 24,
+    "position": -1,
+    "seed": 0,
+    "bootstrap": 10000,
+    "n_tasks_common": 499
+  },
+  "cell_means": {
+    "buggy_code_buggy_tx_BB": 2.1768811040507527,
+    "buggy_code_fixed_tx_BF": -2.5596795344878296,
+    "fixed_code_buggy_tx_FB": 2.1712998139834356,
+    "fixed_code_fixed_tx_FF": -2.5575216036282464
+  },
+  "main_effects": {
+    "delta_code": 0.001711679603866978,
+    "delta_code_ci95": [
+      -0.024603883336803804,
+      0.02872854234699264
+    ],
+    "delta_transcript": 4.732691028075132,
+    "delta_transcript_ci95": [
+      4.60634620694634,
+      4.861513541346204
+    ],
+    "interaction": 0.0019348052317251785,
+    "interaction_ci95": [
+      -0.009735752182279223,
+      0.013886395649226804
+    ],
+    "ratio_code_over_tx": 0.00036167152973076033
+  },
+  "aucs": {
+    "code_label_all4": 0.5002188746229935,
+    "tx_label_all4": 0.988619523616371,
+    "code_label_swap_only": 0.011775053112236505,
+    "tx_label_swap_only": 0.9882249468877635
+  },
+  "argmax_distribution_by_cell": {
+    "buggy_code_buggy_tx": {
+      "grep": 450,
+      "edit": 48,
+      "test": 1
+    },
+    "fixed_code_fixed_tx": {
+      "grep": 414,
+      "edit": 85
+    },
+    "buggy_code_fixed_tx": {
+      "grep": 418,
+      "edit": 81
+    },
+    "fixed_code_buggy_tx": {
+      "grep": 443,
+      "edit": 55,
+      "test": 1
+    }
+  },
+  "per_task": {
+    "astropy_astropy_12907": {
+      "BB_score": 2.1523728370666504,
+      "FF_score": -1.7926700115203857,
+      "BF_score": -1.8870892524719238,
+      "FB_score": 2.341740846633911,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13033": {
+      "BB_score": 3.0843868255615234,
+      "FF_score": -2.273082971572876,
+      "BF_score": -2.117197036743164,
+      "FB_score": 3.0693359375,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13236": {
+      "BB_score": 2.3687987327575684,
+      "FF_score": -4.962267875671387,
+      "BF_score": -4.501150131225586,
+      "FB_score": 4.119942665100098,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13453": {
+      "BB_score": 1.7442669868469238,
+      "FF_score": -3.7318215370178223,
+      "BF_score": -3.907227039337158,
+      "FB_score": 1.9455766677856445,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13579": {
+      "BB_score": 3.3333353996276855,
+      "FF_score": -2.342510461807251,
+      "BF_score": -2.7945358753204346,
+      "FB_score": 3.5795464515686035,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13977": {
+      "BB_score": 4.021115303039551,
+      "FF_score": -2.085205554962158,
+      "BF_score": -3.027066707611084,
+      "FB_score": 3.6899476051330566,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14096": {
+      "BB_score": 2.95401668548584,
+      "FF_score": 0.5023143291473389,
+      "BF_score": 0.17509746551513672,
+      "FB_score": 3.2346444129943848,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14182": {
+      "BB_score": 2.4029581546783447,
+      "FF_score": -2.7564964294433594,
+      "BF_score": -2.0709614753723145,
+      "FB_score": 3.2105798721313477,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14309": {
+      "BB_score": 4.679155349731445,
+      "FF_score": -1.0285060405731201,
+      "BF_score": -0.6961033344268799,
+      "FB_score": 4.140811920166016,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14365": {
+      "BB_score": 0.8660233020782471,
+      "FF_score": -1.4851226806640625,
+      "BF_score": -1.4802436828613281,
+      "FB_score": 0.8213138580322266,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14369": {
+      "BB_score": 4.318627834320068,
+      "FF_score": -2.345714807510376,
+      "BF_score": -2.1936264038085938,
+      "FB_score": 4.275324821472168,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14508": {
+      "BB_score": 2.505805253982544,
+      "FF_score": -1.9967517852783203,
+      "BF_score": -2.098454713821411,
+      "FB_score": 1.8269691467285156,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14539": {
+      "BB_score": 1.6612770557403564,
+      "FF_score": -0.7900192737579346,
+      "BF_score": -1.1635560989379883,
+      "FB_score": 1.6881589889526367,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14598": {
+      "BB_score": 2.493238925933838,
+      "FF_score": -1.3517394065856934,
+      "BF_score": -1.2425646781921387,
+      "FB_score": 2.447112560272217,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14995": {
+      "BB_score": 4.238550186157227,
+      "FF_score": -0.33966898918151855,
+      "BF_score": -0.32299232482910156,
+      "FB_score": 4.188571929931641,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_7166": {
+      "BB_score": 4.236213684082031,
+      "FF_score": -1.6089730262756348,
+      "BF_score": -1.6621880531311035,
+      "FB_score": 4.283456325531006,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_7336": {
+      "BB_score": 1.9073736667633057,
+      "FF_score": -1.9824777841567993,
+      "BF_score": -1.9135606288909912,
+      "FB_score": 1.7742626667022705,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "astropy_astropy_7606": {
+      "BB_score": 4.753709316253662,
+      "FF_score": 1.0130181312561035,
+      "BF_score": 0.5755472183227539,
+      "FB_score": 4.417984485626221,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_7671": {
+      "BB_score": 3.7506890296936035,
+      "FF_score": -0.14119577407836914,
+      "BF_score": 0.6187138557434082,
+      "FB_score": 4.2495927810668945,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_8707": {
+      "BB_score": 1.873345136642456,
+      "FF_score": -3.02475643157959,
+      "BF_score": -3.062441825866699,
+      "FB_score": 3.4917869567871094,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_8872": {
+      "BB_score": 3.036229133605957,
+      "FF_score": -2.0454154014587402,
+      "BF_score": -2.009352445602417,
+      "FB_score": 2.988452911376953,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_10097": {
+      "BB_score": 3.428922176361084,
+      "FF_score": -4.1802239418029785,
+      "BF_score": -4.347992420196533,
+      "FB_score": 3.82886004447937,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_10554": {
+      "BB_score": 3.8472046852111816,
+      "FF_score": -1.4214191436767578,
+      "BF_score": -1.5547902584075928,
+      "FB_score": 4.195056438446045,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_10880": {
+      "BB_score": 4.382516384124756,
+      "FF_score": -0.6352996826171875,
+      "BF_score": -0.4354257583618164,
+      "FB_score": 4.373214244842529,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_10914": {
+      "BB_score": -0.7406303882598877,
+      "FF_score": -4.2795939445495605,
+      "BF_score": -4.684641361236572,
+      "FB_score": -0.08334207534790039,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_10973": {
+      "BB_score": 1.544914722442627,
+      "FF_score": -6.439135551452637,
+      "BF_score": -5.559153079986572,
+      "FB_score": 1.3578855991363525,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_10999": {
+      "BB_score": 2.5683727264404297,
+      "FF_score": -3.2493534088134766,
+      "BF_score": -3.084446907043457,
+      "FB_score": 2.758284568786621,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11066": {
+      "BB_score": 3.1010046005249023,
+      "FF_score": -1.6779837608337402,
+      "BF_score": -1.5773429870605469,
+      "FB_score": 3.0179550647735596,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11087": {
+      "BB_score": 1.6002342700958252,
+      "FF_score": -3.331904411315918,
+      "BF_score": -2.5746817588806152,
+      "FB_score": 1.161959171295166,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11095": {
+      "BB_score": -1.8458409309387207,
+      "FF_score": -6.798664093017578,
+      "BF_score": -6.273518085479736,
+      "FB_score": -2.5281291007995605,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_11099": {
+      "BB_score": 1.7288928031921387,
+      "FF_score": -3.8091330528259277,
+      "BF_score": -3.8378183841705322,
+      "FB_score": 1.649836540222168,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_11119": {
+      "BB_score": 0.7309393882751465,
+      "FF_score": -4.540505409240723,
+      "BF_score": -4.527143478393555,
+      "FB_score": 0.6607804298400879,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11133": {
+      "BB_score": 1.9602947235107422,
+      "FF_score": -1.8273766040802002,
+      "BF_score": -1.9302431344985962,
+      "FB_score": 1.8419184684753418,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11138": {
+      "BB_score": 1.9527204036712646,
+      "FF_score": -3.8376033306121826,
+      "BF_score": -3.2635092735290527,
+      "FB_score": 2.0308423042297363,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11141": {
+      "BB_score": 1.4177002906799316,
+      "FF_score": -4.242367744445801,
+      "BF_score": -4.181493759155273,
+      "FB_score": 1.5630412101745605,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11149": {
+      "BB_score": 2.0423941612243652,
+      "FF_score": -3.9587438106536865,
+      "BF_score": -3.332165241241455,
+      "FB_score": 1.477891206741333,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11163": {
+      "BB_score": 2.880138397216797,
+      "FF_score": -3.194668769836426,
+      "BF_score": -3.4713902473449707,
+      "FB_score": 2.8791632652282715,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11179": {
+      "BB_score": 2.998776912689209,
+      "FF_score": -3.548887252807617,
+      "BF_score": -3.316218852996826,
+      "FB_score": 2.922712802886963,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11206": {
+      "BB_score": 2.5057778358459473,
+      "FF_score": -2.3394393920898438,
+      "BF_score": -2.1323955059051514,
+      "FB_score": 2.6557884216308594,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11211": {
+      "BB_score": 2.1362874507904053,
+      "FF_score": -4.034599304199219,
+      "BF_score": -4.101425647735596,
+      "FB_score": 2.02005934715271,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11239": {
+      "BB_score": -0.8528728485107422,
+      "FF_score": -4.933378219604492,
+      "BF_score": -5.333486557006836,
+      "FB_score": -2.97857666015625,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_11265": {
+      "BB_score": 2.8834762573242188,
+      "FF_score": -0.6841681003570557,
+      "BF_score": -1.1237292289733887,
+      "FB_score": 3.2725276947021484,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11276": {
+      "BB_score": 2.361107587814331,
+      "FF_score": -5.122727394104004,
+      "BF_score": -4.703448295593262,
+      "FB_score": 0.23768329620361328,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "django_django_11292": {
+      "BB_score": -0.5414953231811523,
+      "FF_score": -6.026122093200684,
+      "BF_score": -6.149832248687744,
+      "FB_score": -0.4931309223175049,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_11299": {
+      "BB_score": 1.4832854270935059,
+      "FF_score": -2.229079246520996,
+      "BF_score": -2.235682964324951,
+      "FB_score": 1.666717767715454,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11333": {
+      "BB_score": -0.610377311706543,
+      "FF_score": -5.281572341918945,
+      "BF_score": -5.055619716644287,
+      "FB_score": -0.593548059463501,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_11400": {
+      "BB_score": 3.894637107849121,
+      "FF_score": -2.6403942108154297,
+      "BF_score": -2.7112677097320557,
+      "FB_score": 3.839317798614502,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11433": {
+      "BB_score": 3.2062621116638184,
+      "FF_score": -4.622688293457031,
+      "BF_score": -4.595168590545654,
+      "FB_score": 3.453021764755249,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11451": {
+      "BB_score": 1.6479074954986572,
+      "FF_score": -3.841799736022949,
+      "BF_score": -3.6988186836242676,
+      "FB_score": 2.0452146530151367,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11477": {
+      "BB_score": 6.368259906768799,
+      "FF_score": -2.9933862686157227,
+      "BF_score": -2.997931718826294,
+      "FB_score": 6.3287200927734375,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11490": {
+      "BB_score": 3.608039379119873,
+      "FF_score": -2.779789924621582,
+      "BF_score": -3.0075578689575195,
+      "FB_score": 3.48264217376709,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11532": {
+      "BB_score": 2.6871557235717773,
+      "FF_score": -1.5566177368164062,
+      "BF_score": -1.805499792098999,
+      "FB_score": 3.145972728729248,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11551": {
+      "BB_score": 1.3308217525482178,
+      "FF_score": -3.0943150520324707,
+      "BF_score": -3.075345516204834,
+      "FB_score": 0.9845991134643555,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11555": {
+      "BB_score": 2.4957170486450195,
+      "FF_score": -2.2059433460235596,
+      "BF_score": -1.98264741897583,
+      "FB_score": 2.784118175506592,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11603": {
+      "BB_score": 3.3784396648406982,
+      "FF_score": -5.838100910186768,
+      "BF_score": -5.753114700317383,
+      "FB_score": 2.5460164546966553,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_11728": {
+      "BB_score": 2.879671812057495,
+      "FF_score": -1.5878961086273193,
+      "BF_score": -2.364893674850464,
+      "FB_score": 3.1313934326171875,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11734": {
+      "BB_score": 6.081334114074707,
+      "FF_score": 0.5927064418792725,
+      "BF_score": 0.6543741226196289,
+      "FB_score": 5.845261096954346,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11740": {
+      "BB_score": 1.3702373504638672,
+      "FF_score": -3.6067934036254883,
+      "BF_score": -3.485119104385376,
+      "FB_score": 0.8167502880096436,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_11749": {
+      "BB_score": 1.3870906829833984,
+      "FF_score": -1.129490852355957,
+      "BF_score": -3.203169822692871,
+      "FB_score": 1.9975481033325195,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11790": {
+      "BB_score": 2.3028452396392822,
+      "FF_score": -3.707305908203125,
+      "BF_score": -3.9340293407440186,
+      "FB_score": 2.255551815032959,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11815": {
+      "BB_score": 3.354325294494629,
+      "FF_score": -2.695505142211914,
+      "BF_score": -2.4919655323028564,
+      "FB_score": 3.326629638671875,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11820": {
+      "BB_score": 4.592930316925049,
+      "FF_score": -1.4647047519683838,
+      "BF_score": -1.4671077728271484,
+      "FB_score": 4.98677921295166,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11848": {
+      "BB_score": 3.7462637424468994,
+      "FF_score": -2.3318095207214355,
+      "BF_score": -2.7312943935394287,
+      "FB_score": 3.6290955543518066,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11880": {
+      "BB_score": 2.111807346343994,
+      "FF_score": -2.538649082183838,
+      "BF_score": -2.3761847019195557,
+      "FB_score": 1.7032537460327148,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11885": {
+      "BB_score": 4.186624050140381,
+      "FF_score": -5.498712539672852,
+      "BF_score": -5.245264530181885,
+      "FB_score": 3.1955361366271973,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11951": {
+      "BB_score": 1.0650169849395752,
+      "FF_score": -3.0502920150756836,
+      "BF_score": -3.2677884101867676,
+      "FB_score": 0.8857014179229736,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11964": {
+      "BB_score": 4.254500865936279,
+      "FF_score": -3.9691696166992188,
+      "BF_score": -3.8681061267852783,
+      "FB_score": 5.033903121948242,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_11999": {
+      "BB_score": 1.308016300201416,
+      "FF_score": -4.146803855895996,
+      "BF_score": -4.430049896240234,
+      "FB_score": 1.4230427742004395,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12039": {
+      "BB_score": 3.943167209625244,
+      "FF_score": -1.9081621170043945,
+      "BF_score": -2.163562536239624,
+      "FB_score": 3.4530930519104004,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12050": {
+      "BB_score": 2.865189552307129,
+      "FF_score": -2.9554672241210938,
+      "BF_score": -3.169132947921753,
+      "FB_score": 2.6936612129211426,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12125": {
+      "BB_score": 3.45434832572937,
+      "FF_score": -2.818635940551758,
+      "BF_score": -2.6993408203125,
+      "FB_score": 3.469139575958252,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12143": {
+      "BB_score": 1.4208316802978516,
+      "FF_score": -3.2599072456359863,
+      "BF_score": -3.0328400135040283,
+      "FB_score": 1.461535930633545,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12155": {
+      "BB_score": 3.220890522003174,
+      "FF_score": -1.982386589050293,
+      "BF_score": -2.3012208938598633,
+      "FB_score": 2.8362631797790527,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_12193": {
+      "BB_score": 2.1976401805877686,
+      "FF_score": -2.3759474754333496,
+      "BF_score": -1.9943490028381348,
+      "FB_score": 2.271033763885498,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12209": {
+      "BB_score": 2.4878053665161133,
+      "FF_score": -3.2557568550109863,
+      "BF_score": -3.0851335525512695,
+      "FB_score": 2.199221134185791,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12262": {
+      "BB_score": 3.693049669265747,
+      "FF_score": -2.0944199562072754,
+      "BF_score": -2.128739833831787,
+      "FB_score": 3.7402591705322266,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "django_django_12273": {
+      "BB_score": 3.3982720375061035,
+      "FF_score": -2.017577886581421,
+      "BF_score": -1.5432300567626953,
+      "FB_score": 3.0408458709716797,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_12276": {
+      "BB_score": 0.01306009292602539,
+      "FF_score": -4.726144313812256,
+      "BF_score": -4.617893218994141,
+      "FB_score": 0.2556307315826416,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "django_django_12304": {
+      "BB_score": 1.4269556999206543,
+      "FF_score": -3.5918960571289062,
+      "BF_score": -3.624267578125,
+      "FB_score": 1.252659559249878,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_12308": {
+      "BB_score": 1.7311501502990723,
+      "FF_score": -3.2289013862609863,
+      "BF_score": -2.9991910457611084,
+      "FB_score": 2.186375617980957,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_12325": {
+      "BB_score": 2.2484517097473145,
+      "FF_score": -1.4396600723266602,
+      "BF_score": -1.345818281173706,
+      "FB_score": 2.5643670558929443,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12406": {
+      "BB_score": 3.538311719894409,
+      "FF_score": -3.075070381164551,
+      "BF_score": -2.995548725128174,
+      "FB_score": 3.002493143081665,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12419": {
+      "BB_score": -0.7145662307739258,
+      "FF_score": -5.9644269943237305,
+      "BF_score": -6.044755935668945,
+      "FB_score": -0.6511614322662354,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_12663": {
+      "BB_score": 2.8712069988250732,
+      "FF_score": -2.0790140628814697,
+      "BF_score": -2.0139732360839844,
+      "FB_score": 3.122872829437256,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12708": {
+      "BB_score": 2.527780532836914,
+      "FF_score": -2.354388475418091,
+      "BF_score": -2.402526617050171,
+      "FB_score": 2.521381139755249,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12713": {
+      "BB_score": 2.1533477306365967,
+      "FF_score": -4.779474258422852,
+      "BF_score": -4.822020530700684,
+      "FB_score": 0.6845505237579346,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12741": {
+      "BB_score": 1.573289394378662,
+      "FF_score": -5.382668495178223,
+      "BF_score": -5.425583362579346,
+      "FB_score": 2.0911922454833984,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_12754": {
+      "BB_score": 3.4328527450561523,
+      "FF_score": -1.8917551040649414,
+      "BF_score": -1.5062384605407715,
+      "FB_score": 4.160148620605469,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12774": {
+      "BB_score": 0.38565945625305176,
+      "FF_score": -3.3389859199523926,
+      "BF_score": -4.028379440307617,
+      "FB_score": 0.21000218391418457,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12858": {
+      "BB_score": 3.344933032989502,
+      "FF_score": -0.27170276641845703,
+      "BF_score": -0.5695350170135498,
+      "FB_score": 3.436415195465088,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_12965": {
+      "BB_score": 1.440178394317627,
+      "FF_score": -2.650841474533081,
+      "BF_score": -2.6980152130126953,
+      "FB_score": 1.2823317050933838,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13012": {
+      "BB_score": 1.8562891483306885,
+      "FF_score": -1.919175148010254,
+      "BF_score": -2.183673858642578,
+      "FB_score": 2.387300491333008,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13023": {
+      "BB_score": 1.9926390647888184,
+      "FF_score": -2.025716543197632,
+      "BF_score": -2.3820316791534424,
+      "FB_score": 1.8238801956176758,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_13028": {
+      "BB_score": 2.406449317932129,
+      "FF_score": -2.655763626098633,
+      "BF_score": -2.2555365562438965,
+      "FB_score": 2.5749382972717285,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13033": {
+      "BB_score": 2.136673927307129,
+      "FF_score": -2.621100425720215,
+      "BF_score": -3.093850612640381,
+      "FB_score": 1.8255553245544434,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13089": {
+      "BB_score": 3.2637381553649902,
+      "FF_score": -1.4748246669769287,
+      "BF_score": -1.6750922203063965,
+      "FB_score": 3.010761260986328,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13109": {
+      "BB_score": 1.6889212131500244,
+      "FF_score": -3.2705554962158203,
+      "BF_score": -3.3110146522521973,
+      "FB_score": 1.5853323936462402,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "django_django_13112": {
+      "BB_score": 2.2878618240356445,
+      "FF_score": -2.049466133117676,
+      "BF_score": -2.1037838459014893,
+      "FB_score": 2.4892451763153076,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13121": {
+      "BB_score": 2.908522605895996,
+      "FF_score": -1.2180874347686768,
+      "BF_score": -1.0619356632232666,
+      "FB_score": 2.9942898750305176,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13128": {
+      "BB_score": 3.832993984222412,
+      "FF_score": -3.3891215324401855,
+      "BF_score": -3.7808713912963867,
+      "FB_score": 3.630582809448242,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13158": {
+      "BB_score": 2.126535415649414,
+      "FF_score": -3.4675071239471436,
+      "BF_score": -3.370480537414551,
+      "FB_score": 1.443716287612915,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13195": {
+      "BB_score": 3.170919418334961,
+      "FF_score": -3.1999759674072266,
+      "BF_score": -3.382377862930298,
+      "FB_score": 3.1160919666290283,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13212": {
+      "BB_score": 3.074326515197754,
+      "FF_score": -5.404979228973389,
+      "BF_score": -5.335415840148926,
+      "FB_score": 3.866641044616699,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13279": {
+      "BB_score": 6.211563587188721,
+      "FF_score": -2.9722506999969482,
+      "BF_score": -3.2818801403045654,
+      "FB_score": 4.689184665679932,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13297": {
+      "BB_score": 0.4385557174682617,
+      "FF_score": -2.3238866329193115,
+      "BF_score": -2.217108964920044,
+      "FB_score": 0.5465331077575684,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13315": {
+      "BB_score": 2.7525572776794434,
+      "FF_score": -3.8272299766540527,
+      "BF_score": -4.40117073059082,
+      "FB_score": 4.015477657318115,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13343": {
+      "BB_score": 2.5460658073425293,
+      "FF_score": -3.4123799800872803,
+      "BF_score": -3.672912836074829,
+      "FB_score": 2.868661403656006,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_13344": {
+      "BB_score": 1.6849653720855713,
+      "FF_score": -2.3745839595794678,
+      "BF_score": -1.9504814147949219,
+      "FB_score": 1.7702856063842773,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_13346": {
+      "BB_score": 2.5232810974121094,
+      "FF_score": -2.38319730758667,
+      "BF_score": -1.6344358921051025,
+      "FB_score": 1.9536535739898682,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13363": {
+      "BB_score": 1.3532283306121826,
+      "FF_score": -2.6906206607818604,
+      "BF_score": -2.427452564239502,
+      "FB_score": 1.295184850692749,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_13401": {
+      "BB_score": 1.1150295734405518,
+      "FF_score": -2.347656726837158,
+      "BF_score": -2.267768621444702,
+      "FB_score": 1.1170775890350342,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13406": {
+      "BB_score": 1.648298740386963,
+      "FF_score": -2.476196527481079,
+      "BF_score": -2.3519201278686523,
+      "FB_score": 1.1712634563446045,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_13410": {
+      "BB_score": 0.9098596572875977,
+      "FF_score": -2.3636815547943115,
+      "BF_score": -2.572171211242676,
+      "FB_score": 0.9987154006958008,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_13417": {
+      "BB_score": 2.868190288543701,
+      "FF_score": -2.7990832328796387,
+      "BF_score": -2.640291213989258,
+      "FB_score": 2.777050495147705,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13449": {
+      "BB_score": 3.915247917175293,
+      "FF_score": -0.502619743347168,
+      "BF_score": 0.4214165210723877,
+      "FB_score": 3.1247310638427734,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13512": {
+      "BB_score": 3.703662872314453,
+      "FF_score": -3.497576951980591,
+      "BF_score": -3.485410213470459,
+      "FB_score": 3.517997980117798,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_13513": {
+      "BB_score": 0.797025203704834,
+      "FF_score": -2.170161008834839,
+      "BF_score": -1.8331146240234375,
+      "FB_score": 1.0790860652923584,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_13516": {
+      "BB_score": 2.4912123680114746,
+      "FF_score": -2.663059711456299,
+      "BF_score": -2.7586522102355957,
+      "FB_score": 2.769137382507324,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13551": {
+      "BB_score": 1.1773278713226318,
+      "FF_score": -3.2180657386779785,
+      "BF_score": -3.3559019565582275,
+      "FB_score": 1.1669847965240479,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_13568": {
+      "BB_score": 1.4238255023956299,
+      "FF_score": -2.956765651702881,
+      "BF_score": -2.721569061279297,
+      "FB_score": 1.4190244674682617,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13569": {
+      "BB_score": 1.0144147872924805,
+      "FF_score": -2.2405757904052734,
+      "BF_score": -2.2842464447021484,
+      "FB_score": 1.2393105030059814,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13590": {
+      "BB_score": 2.0160813331604004,
+      "FF_score": -2.2635159492492676,
+      "BF_score": -2.1221210956573486,
+      "FB_score": 2.2088537216186523,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13658": {
+      "BB_score": 0.5662388801574707,
+      "FF_score": -2.4357519149780273,
+      "BF_score": -2.504425525665283,
+      "FB_score": 0.5206091403961182,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_13670": {
+      "BB_score": 1.7398719787597656,
+      "FF_score": -3.5306811332702637,
+      "BF_score": -3.3296542167663574,
+      "FB_score": 1.7414979934692383,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_13741": {
+      "BB_score": 0.8002114295959473,
+      "FF_score": -5.353754997253418,
+      "BF_score": -5.48515510559082,
+      "FB_score": -0.9463791847229004,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_13786": {
+      "BB_score": 1.8857331275939941,
+      "FF_score": -2.041238307952881,
+      "BF_score": -2.5400097370147705,
+      "FB_score": 2.1428003311157227,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13794": {
+      "BB_score": 4.254251956939697,
+      "FF_score": -3.501680850982666,
+      "BF_score": -3.9586336612701416,
+      "FB_score": 4.0805983543396,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13807": {
+      "BB_score": 2.9911179542541504,
+      "FF_score": -0.8292207717895508,
+      "BF_score": 0.015713930130004883,
+      "FB_score": 2.559053421020508,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13809": {
+      "BB_score": 2.353513717651367,
+      "FF_score": -5.826619625091553,
+      "BF_score": -5.548995494842529,
+      "FB_score": 2.4149746894836426,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13810": {
+      "BB_score": 2.3147730827331543,
+      "FF_score": -3.2047953605651855,
+      "BF_score": -3.079296588897705,
+      "FB_score": 2.116318702697754,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13820": {
+      "BB_score": 1.7224643230438232,
+      "FF_score": -5.119147300720215,
+      "BF_score": -5.219876289367676,
+      "FB_score": 2.1776018142700195,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13821": {
+      "BB_score": 3.314060926437378,
+      "FF_score": -4.769989967346191,
+      "BF_score": -4.611664295196533,
+      "FB_score": 3.2087230682373047,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13837": {
+      "BB_score": 0.6272680759429932,
+      "FF_score": -4.8072638511657715,
+      "BF_score": -4.590044021606445,
+      "FB_score": 1.185429334640503,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_13925": {
+      "BB_score": 4.4257307052612305,
+      "FF_score": -1.0187888145446777,
+      "BF_score": -0.8031117916107178,
+      "FB_score": 3.365093231201172,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13933": {
+      "BB_score": 1.4596941471099854,
+      "FF_score": -2.533980369567871,
+      "BF_score": -2.4727625846862793,
+      "FB_score": 1.4433820247650146,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_13964": {
+      "BB_score": 2.89097261428833,
+      "FF_score": -2.7710440158843994,
+      "BF_score": -2.5871167182922363,
+      "FB_score": 3.0596752166748047,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14007": {
+      "BB_score": 2.202287435531616,
+      "FF_score": -1.729445457458496,
+      "BF_score": -1.78977370262146,
+      "FB_score": 1.9357402324676514,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14011": {
+      "BB_score": 2.384979724884033,
+      "FF_score": -2.4928927421569824,
+      "BF_score": -2.193075656890869,
+      "FB_score": 2.3647475242614746,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14017": {
+      "BB_score": 4.053887367248535,
+      "FF_score": 0.08141207695007324,
+      "BF_score": -0.015752315521240234,
+      "FB_score": 5.4663848876953125,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14034": {
+      "BB_score": 2.959907054901123,
+      "FF_score": -2.009248971939087,
+      "BF_score": -1.6858241558074951,
+      "FB_score": 3.157111644744873,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14053": {
+      "BB_score": 1.52195405960083,
+      "FF_score": -1.9199843406677246,
+      "BF_score": -1.8053195476531982,
+      "FB_score": 1.3997726440429688,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14089": {
+      "BB_score": -2.1689205169677734,
+      "FF_score": -6.636307239532471,
+      "BF_score": -7.106137275695801,
+      "FB_score": -1.2986245155334473,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_14122": {
+      "BB_score": 0.8376133441925049,
+      "FF_score": -3.251723289489746,
+      "BF_score": -2.901036262512207,
+      "FB_score": 0.9218316078186035,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14140": {
+      "BB_score": 5.215060710906982,
+      "FF_score": -1.9004464149475098,
+      "BF_score": -2.593364715576172,
+      "FB_score": 5.465063571929932,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14155": {
+      "BB_score": 4.191072940826416,
+      "FF_score": -3.8581411838531494,
+      "BF_score": -3.699446678161621,
+      "FB_score": 4.113187789916992,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_14170": {
+      "BB_score": 3.214184045791626,
+      "FF_score": -3.3086905479431152,
+      "BF_score": -3.314680337905884,
+      "FB_score": 4.911193370819092,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14238": {
+      "BB_score": 3.814270496368408,
+      "FF_score": -1.0337133407592773,
+      "BF_score": -1.3591299057006836,
+      "FB_score": 4.045888900756836,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14311": {
+      "BB_score": 2.706329584121704,
+      "FF_score": -4.265127182006836,
+      "BF_score": -4.004230976104736,
+      "FB_score": 3.5668439865112305,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14315": {
+      "BB_score": 2.8224432468414307,
+      "FF_score": -4.842134475708008,
+      "BF_score": -4.7827467918396,
+      "FB_score": 2.8691487312316895,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14349": {
+      "BB_score": 3.49627947807312,
+      "FF_score": -0.881476640701294,
+      "BF_score": -1.1050682067871094,
+      "FB_score": 3.9490394592285156,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14351": {
+      "BB_score": 2.183241844177246,
+      "FF_score": -0.5266458988189697,
+      "BF_score": -0.5655362606048584,
+      "FB_score": 2.483468770980835,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14373": {
+      "BB_score": 2.7659647464752197,
+      "FF_score": -2.727501392364502,
+      "BF_score": -2.944568157196045,
+      "FB_score": 2.8672876358032227,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14376": {
+      "BB_score": 1.7747251987457275,
+      "FF_score": -3.319486618041992,
+      "BF_score": -4.148857116699219,
+      "FB_score": 1.6636385917663574,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14404": {
+      "BB_score": 2.834290027618408,
+      "FF_score": -3.9674301147460938,
+      "BF_score": -4.0030927658081055,
+      "FB_score": 3.0132060050964355,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14434": {
+      "BB_score": 2.141309976577759,
+      "FF_score": -3.8306164741516113,
+      "BF_score": -3.760979652404785,
+      "FB_score": 2.0037550926208496,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14493": {
+      "BB_score": 2.2939534187316895,
+      "FF_score": -1.5793936252593994,
+      "BF_score": -1.595231533050537,
+      "FB_score": 2.767894744873047,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14500": {
+      "BB_score": 2.8146591186523438,
+      "FF_score": -3.1487908363342285,
+      "BF_score": -3.2231569290161133,
+      "FB_score": 2.961458206176758,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14534": {
+      "BB_score": 1.136225700378418,
+      "FF_score": -3.015517234802246,
+      "BF_score": -2.8872082233428955,
+      "FB_score": 0.8957233428955078,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_14539": {
+      "BB_score": 4.529701232910156,
+      "FF_score": -1.7402305603027344,
+      "BF_score": -1.8727917671203613,
+      "FB_score": 4.200835227966309,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14559": {
+      "BB_score": 0.7408950328826904,
+      "FF_score": -5.210723400115967,
+      "BF_score": -4.979618072509766,
+      "FB_score": 1.3923819065093994,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14580": {
+      "BB_score": 2.5248708724975586,
+      "FF_score": -0.2277686595916748,
+      "BF_score": -0.5067944526672363,
+      "FB_score": 2.5632901191711426,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14608": {
+      "BB_score": 1.6543946266174316,
+      "FF_score": -3.8899569511413574,
+      "BF_score": -3.953878402709961,
+      "FB_score": 1.8960158824920654,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14631": {
+      "BB_score": 1.2107713222503662,
+      "FF_score": -3.3529748916625977,
+      "BF_score": -3.793431282043457,
+      "FB_score": 2.2085137367248535,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14672": {
+      "BB_score": 3.2732934951782227,
+      "FF_score": -1.4715900421142578,
+      "BF_score": -2.1001434326171875,
+      "FB_score": 3.0849194526672363,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14725": {
+      "BB_score": 3.5712356567382812,
+      "FF_score": -5.102639198303223,
+      "BF_score": -5.079288005828857,
+      "FB_score": 3.2554636001586914,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_14752": {
+      "BB_score": 0.7567894458770752,
+      "FF_score": -4.677929401397705,
+      "BF_score": -5.441119194030762,
+      "FB_score": 1.7703876495361328,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14765": {
+      "BB_score": 2.040764570236206,
+      "FF_score": -4.687499046325684,
+      "BF_score": -4.652167320251465,
+      "FB_score": -1.2042067050933838,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "django_django_14771": {
+      "BB_score": 0.8917222023010254,
+      "FF_score": -4.026175498962402,
+      "BF_score": -3.471005916595459,
+      "FB_score": 0.7564003467559814,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14787": {
+      "BB_score": 2.7525646686553955,
+      "FF_score": -3.300419807434082,
+      "BF_score": -3.4064066410064697,
+      "FB_score": 2.601850986480713,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14792": {
+      "BB_score": 2.889343023300171,
+      "FF_score": -0.8801047801971436,
+      "BF_score": -0.6733698844909668,
+      "FB_score": 3.061113119125366,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14855": {
+      "BB_score": 2.8660988807678223,
+      "FF_score": -3.0191166400909424,
+      "BF_score": -3.1145577430725098,
+      "FB_score": 2.322659492492676,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_14915": {
+      "BB_score": 3.9713497161865234,
+      "FF_score": -2.3250107765197754,
+      "BF_score": -2.2955262660980225,
+      "FB_score": 4.261806011199951,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_14999": {
+      "BB_score": -1.3886773586273193,
+      "FF_score": -7.3126678466796875,
+      "BF_score": -7.671014308929443,
+      "FB_score": -0.5124549865722656,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_15022": {
+      "BB_score": 2.314059257507324,
+      "FF_score": -2.744746446609497,
+      "BF_score": -2.5536787509918213,
+      "FB_score": 2.459280014038086,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15037": {
+      "BB_score": 2.3611512184143066,
+      "FF_score": -2.630972385406494,
+      "BF_score": -2.57888126373291,
+      "FB_score": 1.215430498123169,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_15098": {
+      "BB_score": 0.7847425937652588,
+      "FF_score": -3.5842268466949463,
+      "BF_score": -3.3910038471221924,
+      "FB_score": 0.9723827838897705,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15103": {
+      "BB_score": -0.15404129028320312,
+      "FF_score": -6.394150257110596,
+      "BF_score": -6.437585830688477,
+      "FB_score": 0.9299359321594238,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_15104": {
+      "BB_score": 2.4550743103027344,
+      "FF_score": -2.3296167850494385,
+      "BF_score": -2.299028158187866,
+      "FB_score": 3.095339298248291,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15127": {
+      "BB_score": 1.2654366493225098,
+      "FF_score": -4.105581283569336,
+      "BF_score": -3.6218132972717285,
+      "FB_score": -0.09251117706298828,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15128": {
+      "BB_score": 3.6543726921081543,
+      "FF_score": -2.229506015777588,
+      "BF_score": -2.39211106300354,
+      "FB_score": 4.748150825500488,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15161": {
+      "BB_score": 3.066239356994629,
+      "FF_score": -4.570252418518066,
+      "BF_score": -4.08860445022583,
+      "FB_score": 3.1635663509368896,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15252": {
+      "BB_score": 1.6413376331329346,
+      "FF_score": -2.1197104454040527,
+      "BF_score": -1.962528944015503,
+      "FB_score": 2.0170605182647705,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15268": {
+      "BB_score": 1.4930107593536377,
+      "FF_score": -3.671051263809204,
+      "BF_score": -3.6345624923706055,
+      "FB_score": 1.5320680141448975,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15277": {
+      "BB_score": 2.755890369415283,
+      "FF_score": -2.493539571762085,
+      "BF_score": -2.3945388793945312,
+      "FB_score": 2.477591037750244,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15278": {
+      "BB_score": 2.6798200607299805,
+      "FF_score": -2.505060911178589,
+      "BF_score": -2.212049961090088,
+      "FB_score": 2.362217903137207,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15280": {
+      "BB_score": 1.9111759662628174,
+      "FF_score": -1.7952909469604492,
+      "BF_score": -2.18912935256958,
+      "FB_score": 2.105419874191284,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15315": {
+      "BB_score": 2.85697603225708,
+      "FF_score": -2.472041368484497,
+      "BF_score": -2.500486373901367,
+      "FB_score": 2.738300323486328,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15368": {
+      "BB_score": 4.022623062133789,
+      "FF_score": -0.8768668174743652,
+      "BF_score": -0.9812471866607666,
+      "FB_score": 4.049892425537109,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15375": {
+      "BB_score": 2.832263231277466,
+      "FF_score": -2.3016505241394043,
+      "BF_score": -2.532470226287842,
+      "FB_score": 2.9716997146606445,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_15380": {
+      "BB_score": 2.185553550720215,
+      "FF_score": -1.5734341144561768,
+      "BF_score": -1.6569514274597168,
+      "FB_score": 2.088852882385254,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15382": {
+      "BB_score": 1.8278758525848389,
+      "FF_score": -2.4406607151031494,
+      "BF_score": -2.423039197921753,
+      "FB_score": 1.907630443572998,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15467": {
+      "BB_score": 2.8669254779815674,
+      "FF_score": -0.25208377838134766,
+      "BF_score": -0.1880483627319336,
+      "FB_score": 3.3764865398406982,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_15499": {
+      "BB_score": 1.7150907516479492,
+      "FF_score": -5.136806964874268,
+      "BF_score": -5.798300266265869,
+      "FB_score": 2.037518262863159,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_15503": {
+      "BB_score": 3.112349510192871,
+      "FF_score": -3.8982090950012207,
+      "BF_score": -3.1246819496154785,
+      "FB_score": 2.810384750366211,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15525": {
+      "BB_score": 1.423884630203247,
+      "FF_score": -1.0170745849609375,
+      "BF_score": -0.876631498336792,
+      "FB_score": 1.5051357746124268,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15554": {
+      "BB_score": -1.1505134105682373,
+      "FF_score": -5.2329840660095215,
+      "BF_score": -5.374953746795654,
+      "FB_score": -1.0445258617401123,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15561": {
+      "BB_score": 0.4403724670410156,
+      "FF_score": -5.570419788360596,
+      "BF_score": -5.2687506675720215,
+      "FB_score": 1.122061014175415,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15563": {
+      "BB_score": 2.107503652572632,
+      "FF_score": -3.8321585655212402,
+      "BF_score": -3.588083267211914,
+      "FB_score": 2.577587127685547,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15569": {
+      "BB_score": 3.5416793823242188,
+      "FF_score": -3.1003851890563965,
+      "BF_score": -3.451742172241211,
+      "FB_score": 3.443240165710449,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15572": {
+      "BB_score": 1.7219197750091553,
+      "FF_score": -2.5140626430511475,
+      "BF_score": -2.6334190368652344,
+      "FB_score": 1.7660276889801025,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_15629": {
+      "BB_score": 1.459716796875,
+      "FF_score": -4.347664833068848,
+      "BF_score": -3.8744893074035645,
+      "FB_score": 1.2174344062805176,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15695": {
+      "BB_score": 3.096543788909912,
+      "FF_score": -1.4460370540618896,
+      "BF_score": -0.8743722438812256,
+      "FB_score": 3.230541467666626,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15731": {
+      "BB_score": 1.4840340614318848,
+      "FF_score": -1.9833860397338867,
+      "BF_score": -1.6524033546447754,
+      "FB_score": 1.5499420166015625,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_15732": {
+      "BB_score": 2.16687273979187,
+      "FF_score": -2.705636501312256,
+      "BF_score": -2.9009649753570557,
+      "FB_score": 2.134941816329956,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15741": {
+      "BB_score": 2.4078359603881836,
+      "FF_score": -3.408702850341797,
+      "BF_score": -3.6826298236846924,
+      "FB_score": 2.9827585220336914,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15814": {
+      "BB_score": 2.716157913208008,
+      "FF_score": -2.055811882019043,
+      "BF_score": -2.000415802001953,
+      "FB_score": 2.626185417175293,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15851": {
+      "BB_score": -1.1282374858856201,
+      "FF_score": -4.358175277709961,
+      "BF_score": -4.38128662109375,
+      "FB_score": -1.130427598953247,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_15863": {
+      "BB_score": 2.1140666007995605,
+      "FF_score": -1.7773618698120117,
+      "BF_score": -1.883434772491455,
+      "FB_score": 2.091188907623291,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15916": {
+      "BB_score": 1.7870473861694336,
+      "FF_score": -4.581549644470215,
+      "BF_score": -4.162216663360596,
+      "FB_score": 1.5839860439300537,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_15930": {
+      "BB_score": 4.367624759674072,
+      "FF_score": -1.7579045295715332,
+      "BF_score": -1.9016926288604736,
+      "FB_score": 4.7205281257629395,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15957": {
+      "BB_score": 5.885849952697754,
+      "FF_score": -3.4122421741485596,
+      "BF_score": -3.450695514678955,
+      "FB_score": 6.005518913269043,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15973": {
+      "BB_score": 3.3309078216552734,
+      "FF_score": -2.5049307346343994,
+      "BF_score": -2.5116982460021973,
+      "FB_score": 2.977729082107544,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_15987": {
+      "BB_score": 0.04418301582336426,
+      "FF_score": -3.623936653137207,
+      "BF_score": -3.650005340576172,
+      "FB_score": 0.20916485786437988,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16032": {
+      "BB_score": 3.922705888748169,
+      "FF_score": -2.3427653312683105,
+      "BF_score": -2.1760456562042236,
+      "FB_score": 3.8322761058807373,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16082": {
+      "BB_score": 3.4579076766967773,
+      "FF_score": -3.3310766220092773,
+      "BF_score": -3.43607759475708,
+      "FB_score": 3.372307777404785,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16100": {
+      "BB_score": 1.3861989974975586,
+      "FF_score": -3.9159536361694336,
+      "BF_score": -4.125193119049072,
+      "FB_score": 1.3470375537872314,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_16116": {
+      "BB_score": 0.5285813808441162,
+      "FF_score": -4.762010097503662,
+      "BF_score": -4.512294769287109,
+      "FB_score": -0.09942340850830078,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_16136": {
+      "BB_score": 2.661956787109375,
+      "FF_score": -2.0227818489074707,
+      "BF_score": -1.9605813026428223,
+      "FB_score": 2.6746485233306885,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16139": {
+      "BB_score": 1.3539762496948242,
+      "FF_score": -2.152264356613159,
+      "BF_score": -2.082169771194458,
+      "FB_score": 1.9751760959625244,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16145": {
+      "BB_score": 2.9055027961730957,
+      "FF_score": -3.0808167457580566,
+      "BF_score": -2.8711068630218506,
+      "FB_score": 2.1540918350219727,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16255": {
+      "BB_score": 1.9829530715942383,
+      "FF_score": -2.2900850772857666,
+      "BF_score": -2.436579942703247,
+      "FB_score": 2.1102986335754395,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16256": {
+      "BB_score": 2.8201487064361572,
+      "FF_score": -4.4748148918151855,
+      "BF_score": -4.130307197570801,
+      "FB_score": 3.3799726963043213,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_16263": {
+      "BB_score": 1.8079516887664795,
+      "FF_score": -4.916436195373535,
+      "BF_score": -4.381734371185303,
+      "FB_score": 2.4728951454162598,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16315": {
+      "BB_score": 2.4185938835144043,
+      "FF_score": -1.905489206314087,
+      "BF_score": -1.9389338493347168,
+      "FB_score": 2.2664079666137695,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16333": {
+      "BB_score": 1.2235994338989258,
+      "FF_score": -3.887378454208374,
+      "BF_score": -3.6561386585235596,
+      "FB_score": 1.1018400192260742,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "django_django_16429": {
+      "BB_score": 2.2239108085632324,
+      "FF_score": -1.2954065799713135,
+      "BF_score": -1.3862340450286865,
+      "FB_score": 1.8108477592468262,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_16454": {
+      "BB_score": 2.0025405883789062,
+      "FF_score": -2.1808345317840576,
+      "BF_score": -1.807805061340332,
+      "FB_score": 1.7098116874694824,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16485": {
+      "BB_score": 3.181525230407715,
+      "FF_score": -2.1592681407928467,
+      "BF_score": -2.1139984130859375,
+      "FB_score": 3.1726231575012207,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16493": {
+      "BB_score": 2.145897150039673,
+      "FF_score": -1.619502067565918,
+      "BF_score": -1.317399263381958,
+      "FB_score": 2.6308536529541016,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16502": {
+      "BB_score": 1.351961374282837,
+      "FF_score": -2.039547920227051,
+      "BF_score": -1.5735282897949219,
+      "FB_score": 0.9890291690826416,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16527": {
+      "BB_score": -0.13941049575805664,
+      "FF_score": -4.497638702392578,
+      "BF_score": -4.402919769287109,
+      "FB_score": -0.08144950866699219,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_16560": {
+      "BB_score": 3.2630200386047363,
+      "FF_score": -5.753643035888672,
+      "BF_score": -5.267038345336914,
+      "FB_score": 2.7795698642730713,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_16569": {
+      "BB_score": 1.7733707427978516,
+      "FF_score": -1.7349157333374023,
+      "BF_score": -1.6215755939483643,
+      "FB_score": 2.1281142234802246,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "django_django_16595": {
+      "BB_score": 0.025266408920288086,
+      "FF_score": -2.6125781536102295,
+      "BF_score": -2.8374407291412354,
+      "FB_score": 0.2059314250946045,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16612": {
+      "BB_score": 2.8400936126708984,
+      "FF_score": -1.202272653579712,
+      "BF_score": -1.809645414352417,
+      "FB_score": 2.6715495586395264,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16631": {
+      "BB_score": -0.25143980979919434,
+      "FF_score": -4.394357204437256,
+      "BF_score": -4.582111358642578,
+      "FB_score": 0.3719637393951416,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16642": {
+      "BB_score": 1.7877912521362305,
+      "FF_score": -3.493215560913086,
+      "BF_score": -2.757213592529297,
+      "FB_score": 1.5899567604064941,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16661": {
+      "BB_score": 2.9249837398529053,
+      "FF_score": -1.597179889678955,
+      "BF_score": -2.118070125579834,
+      "FB_score": 2.815140724182129,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16662": {
+      "BB_score": 4.266685962677002,
+      "FF_score": -1.2892541885375977,
+      "BF_score": -2.016378164291382,
+      "FB_score": 4.210833549499512,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16667": {
+      "BB_score": 4.746834754943848,
+      "FF_score": 0.854069709777832,
+      "BF_score": 0.6061272621154785,
+      "FB_score": 4.642441272735596,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16801": {
+      "BB_score": -0.323732852935791,
+      "FF_score": -3.5972046852111816,
+      "BF_score": -3.820791006088257,
+      "FB_score": 0.03875875473022461,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16819": {
+      "BB_score": 2.0093135833740234,
+      "FF_score": -4.927270412445068,
+      "BF_score": -5.147444725036621,
+      "FB_score": 2.4312567710876465,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16877": {
+      "BB_score": 3.32828426361084,
+      "FF_score": -5.709423065185547,
+      "BF_score": -5.547652244567871,
+      "FB_score": 2.263810157775879,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16899": {
+      "BB_score": 3.5300192832946777,
+      "FF_score": -2.197208881378174,
+      "BF_score": -2.305309772491455,
+      "FB_score": 3.6766984462738037,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16901": {
+      "BB_score": 2.299260377883911,
+      "FF_score": -3.107710599899292,
+      "BF_score": -3.0471742153167725,
+      "FB_score": 2.1823384761810303,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16938": {
+      "BB_score": 3.326770782470703,
+      "FF_score": -1.826967716217041,
+      "BF_score": -2.2721235752105713,
+      "FB_score": 2.8258144855499268,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_16950": {
+      "BB_score": 0.50266432762146,
+      "FF_score": -1.6901462078094482,
+      "BF_score": -1.7880563735961914,
+      "FB_score": 0.6713426113128662,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_17029": {
+      "BB_score": 0.6369748115539551,
+      "FF_score": -4.050080299377441,
+      "BF_score": -4.0522284507751465,
+      "FB_score": 0.13050341606140137,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "django_django_17084": {
+      "BB_score": 3.1906914710998535,
+      "FF_score": -2.0826640129089355,
+      "BF_score": -2.042168140411377,
+      "FB_score": 3.595792531967163,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_17087": {
+      "BB_score": 3.242220640182495,
+      "FF_score": -1.1386799812316895,
+      "BF_score": -1.1933372020721436,
+      "FB_score": 3.304922342300415,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_7530": {
+      "BB_score": 4.027810573577881,
+      "FF_score": -1.7053985595703125,
+      "BF_score": -1.7838728427886963,
+      "FB_score": 4.271760940551758,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "django_django_9296": {
+      "BB_score": 1.550222635269165,
+      "FF_score": -5.017404079437256,
+      "BF_score": -5.198734283447266,
+      "FB_score": 0.5915169715881348,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_13989": {
+      "BB_score": 2.4965012073516846,
+      "FF_score": -2.0473151206970215,
+      "BF_score": -2.0697622299194336,
+      "FB_score": 2.6652989387512207,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_14623": {
+      "BB_score": 0.7644145488739014,
+      "FF_score": -1.9518022537231445,
+      "BF_score": -2.226651430130005,
+      "FB_score": 0.8181071281433105,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_20488": {
+      "BB_score": 4.988896369934082,
+      "FF_score": 0.9452221393585205,
+      "BF_score": 0.7340528964996338,
+      "FB_score": 4.80671501159668,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_20676": {
+      "BB_score": 1.8979175090789795,
+      "FF_score": -2.6073997020721436,
+      "BF_score": -2.275789976119995,
+      "FB_score": 1.937351942062378,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_20826": {
+      "BB_score": 0.12141871452331543,
+      "FF_score": -2.486978530883789,
+      "BF_score": -2.163667917251587,
+      "FB_score": 1.1538851261138916,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_20859": {
+      "BB_score": 1.885345458984375,
+      "FF_score": -2.1560111045837402,
+      "BF_score": -2.1825647354125977,
+      "FB_score": 1.9918363094329834,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_21568": {
+      "BB_score": 3.6243104934692383,
+      "FF_score": -2.4547207355499268,
+      "BF_score": -3.033128261566162,
+      "FB_score": 2.879999876022339,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_22719": {
+      "BB_score": 0.297666072845459,
+      "FF_score": -2.1894822120666504,
+      "BF_score": -1.8597049713134766,
+      "FB_score": 0.02957940101623535,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_22865": {
+      "BB_score": 2.6826648712158203,
+      "FF_score": -1.3120830059051514,
+      "BF_score": -1.3456330299377441,
+      "FB_score": 2.793210744857788,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_22871": {
+      "BB_score": 0.0865640640258789,
+      "FF_score": -2.355771064758301,
+      "BF_score": -2.477245569229126,
+      "FB_score": -0.3775005340576172,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_23299": {
+      "BB_score": 2.0578579902648926,
+      "FF_score": -0.26415157318115234,
+      "BF_score": -0.5389294624328613,
+      "FB_score": 2.1505980491638184,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_23314": {
+      "BB_score": 0.21608948707580566,
+      "FF_score": -2.1142337322235107,
+      "BF_score": -2.2770071029663086,
+      "FB_score": 0.22490310668945312,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_23412": {
+      "BB_score": 1.6210856437683105,
+      "FF_score": -1.9323735237121582,
+      "BF_score": -1.7546682357788086,
+      "FB_score": 1.511148452758789,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_23476": {
+      "BB_score": 0.1597728729248047,
+      "FF_score": -2.296297550201416,
+      "BF_score": -3.038569211959839,
+      "FB_score": 0.4598052501678467,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_24026": {
+      "BB_score": 1.5878143310546875,
+      "FF_score": -2.4185848236083984,
+      "BF_score": -2.172764778137207,
+      "FB_score": 1.7060580253601074,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_24149": {
+      "BB_score": 2.034071922302246,
+      "FF_score": -0.16956233978271484,
+      "BF_score": -0.2886617183685303,
+      "FB_score": 1.9968385696411133,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_24177": {
+      "BB_score": 0.18551039695739746,
+      "FF_score": -2.6358566284179688,
+      "BF_score": -2.772321939468384,
+      "FB_score": -0.0015344619750976562,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "matplotlib_matplotlib_24570": {
+      "BB_score": 1.070228099822998,
+      "FF_score": -1.8431501388549805,
+      "BF_score": -1.8071987628936768,
+      "FB_score": 1.091216802597046,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_24627": {
+      "BB_score": 3.4123525619506836,
+      "FF_score": -2.078803062438965,
+      "BF_score": -1.7176687717437744,
+      "FB_score": 3.4537434577941895,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_24637": {
+      "BB_score": -0.2120068073272705,
+      "FF_score": -3.657352924346924,
+      "BF_score": -3.8636438846588135,
+      "FB_score": -0.07868647575378418,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_24870": {
+      "BB_score": -0.23398256301879883,
+      "FF_score": -5.739301681518555,
+      "BF_score": -5.453057289123535,
+      "FB_score": 0.7319471836090088,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "matplotlib_matplotlib_24970": {
+      "BB_score": 2.539879322052002,
+      "FF_score": -0.04811453819274902,
+      "BF_score": 0.05328559875488281,
+      "FB_score": 2.701915740966797,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_25122": {
+      "BB_score": 3.883890151977539,
+      "FF_score": -2.017421245574951,
+      "BF_score": -1.8643858432769775,
+      "FB_score": 3.702627658843994,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_25287": {
+      "BB_score": 1.5481834411621094,
+      "FF_score": -1.7984662055969238,
+      "BF_score": -1.959625005722046,
+      "FB_score": 1.5397043228149414,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "matplotlib_matplotlib_25311": {
+      "BB_score": 2.1741504669189453,
+      "FF_score": -1.345609188079834,
+      "BF_score": -1.6251776218414307,
+      "FB_score": 2.432771921157837,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "matplotlib_matplotlib_25332": {
+      "BB_score": 3.3723793029785156,
+      "FF_score": -1.3305268287658691,
+      "BF_score": -1.2510507106781006,
+      "FB_score": 2.13836669921875,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_25479": {
+      "BB_score": 3.134114980697632,
+      "FF_score": -2.6815266609191895,
+      "BF_score": -2.399402141571045,
+      "FB_score": 3.658914089202881,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_25775": {
+      "BB_score": 5.904180526733398,
+      "FF_score": -4.91554594039917,
+      "BF_score": -5.0868425369262695,
+      "FB_score": 6.759664535522461,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_25960": {
+      "BB_score": 0.4660074710845947,
+      "FF_score": -2.9515013694763184,
+      "BF_score": -2.6579322814941406,
+      "FB_score": 0.20201849937438965,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_26113": {
+      "BB_score": 2.2222366333007812,
+      "FF_score": -2.1942691802978516,
+      "BF_score": -2.267383098602295,
+      "FB_score": 2.176553249359131,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_26208": {
+      "BB_score": 1.4517459869384766,
+      "FF_score": -1.5215625762939453,
+      "BF_score": -1.6762757301330566,
+      "FB_score": 0.7332653999328613,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_26291": {
+      "BB_score": 3.7126636505126953,
+      "FF_score": 0.5762503147125244,
+      "BF_score": 0.47078371047973633,
+      "FB_score": 3.3679556846618652,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_26342": {
+      "BB_score": 2.593876838684082,
+      "FF_score": -2.5599753856658936,
+      "BF_score": -2.5719175338745117,
+      "FB_score": 2.6722474098205566,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "matplotlib_matplotlib_26466": {
+      "BB_score": 2.1676769256591797,
+      "FF_score": -1.4794061183929443,
+      "BF_score": -1.566852331161499,
+      "FB_score": 1.5477991104125977,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "mwaskom_seaborn_3069": {
+      "BB_score": 2.0999162197113037,
+      "FF_score": -4.736834526062012,
+      "BF_score": -4.923890113830566,
+      "FB_score": 1.8664860725402832,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "mwaskom_seaborn_3187": {
+      "BB_score": 2.110196113586426,
+      "FF_score": -2.018620014190674,
+      "BF_score": -2.4283976554870605,
+      "FB_score": 1.857581615447998,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pallets_flask_5014": {
+      "BB_score": 3.464160442352295,
+      "FF_score": -2.579578399658203,
+      "BF_score": -2.9037766456604004,
+      "FB_score": 3.7352728843688965,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_1142": {
+      "BB_score": -0.09897422790527344,
+      "FF_score": -4.092475891113281,
+      "BF_score": -3.550405263900757,
+      "FB_score": -0.046108245849609375,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_1724": {
+      "BB_score": 4.1484904289245605,
+      "FF_score": -0.8982925415039062,
+      "BF_score": -0.7956016063690186,
+      "FB_score": 3.755960464477539,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_1766": {
+      "BB_score": 2.872056245803833,
+      "FF_score": -3.0573763847351074,
+      "BF_score": -3.1388120651245117,
+      "FB_score": 2.609785556793213,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_1921": {
+      "BB_score": 2.887542963027954,
+      "FF_score": -5.143532752990723,
+      "BF_score": -5.011373519897461,
+      "FB_score": 3.9739155769348145,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_2317": {
+      "BB_score": 4.618260383605957,
+      "FF_score": -1.414668321609497,
+      "BF_score": -1.582552194595337,
+      "FB_score": 4.345218181610107,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_2931": {
+      "BB_score": 2.6449732780456543,
+      "FF_score": -1.467679738998413,
+      "BF_score": -1.7869749069213867,
+      "FB_score": 2.978943347930908,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_5414": {
+      "BB_score": 3.134918212890625,
+      "FF_score": -1.7708125114440918,
+      "BF_score": -1.95918607711792,
+      "FB_score": 3.5512444972991943,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "psf_requests_6028": {
+      "BB_score": 3.0377039909362793,
+      "FF_score": -1.5594007968902588,
+      "BF_score": -1.640394926071167,
+      "FB_score": 3.292255163192749,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_2905": {
+      "BB_score": 1.3488349914550781,
+      "FF_score": -2.9153242111206055,
+      "BF_score": -2.636441946029663,
+      "FB_score": 1.3769166469573975,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_3095": {
+      "BB_score": 4.201228618621826,
+      "FF_score": 0.09192633628845215,
+      "BF_score": -0.38449931144714355,
+      "FB_score": 4.211098670959473,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_3151": {
+      "BB_score": 1.7055258750915527,
+      "FF_score": -1.640331506729126,
+      "BF_score": -1.6828572750091553,
+      "FB_score": 1.7826309204101562,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_3305": {
+      "BB_score": 3.1418604850769043,
+      "FF_score": -2.1680307388305664,
+      "BF_score": -1.9611029624938965,
+      "FB_score": 2.6397862434387207,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_3677": {
+      "BB_score": 4.441032886505127,
+      "FF_score": 0.273914098739624,
+      "BF_score": 0.7400717735290527,
+      "FB_score": 4.079331874847412,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_3993": {
+      "BB_score": 1.1243126392364502,
+      "FF_score": -3.879318952560425,
+      "BF_score": -4.006732940673828,
+      "FB_score": 1.3475914001464844,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_4075": {
+      "BB_score": 3.6100192070007324,
+      "FF_score": -0.8823904991149902,
+      "BF_score": -1.6014621257781982,
+      "FB_score": 3.7612998485565186,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_4094": {
+      "BB_score": 3.892590284347534,
+      "FF_score": -1.5817241668701172,
+      "BF_score": -1.6944222450256348,
+      "FB_score": 2.810595989227295,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_4356": {
+      "BB_score": 3.5410470962524414,
+      "FF_score": -2.0922610759735107,
+      "BF_score": -1.5501580238342285,
+      "FB_score": 4.195892810821533,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_4629": {
+      "BB_score": 2.473374128341675,
+      "FF_score": -2.012073040008545,
+      "BF_score": -1.8277673721313477,
+      "FB_score": 2.5719003677368164,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_4687": {
+      "BB_score": 1.9367496967315674,
+      "FF_score": -2.837038516998291,
+      "BF_score": -2.424410820007324,
+      "FB_score": 1.7637085914611816,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_4695": {
+      "BB_score": 2.8127427101135254,
+      "FF_score": -1.1423022747039795,
+      "BF_score": -1.2203972339630127,
+      "FB_score": 2.8326573371887207,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_4966": {
+      "BB_score": 0.5637340545654297,
+      "FF_score": -3.063689947128296,
+      "BF_score": -3.0853419303894043,
+      "FB_score": 1.1020381450653076,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "pydata_xarray_6461": {
+      "BB_score": 2.72371244430542,
+      "FF_score": -1.4444501399993896,
+      "BF_score": -1.465224027633667,
+      "FB_score": 2.8027570247650146,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_6599": {
+      "BB_score": 3.4492485523223877,
+      "FF_score": -0.8774197101593018,
+      "BF_score": -1.086582899093628,
+      "FB_score": 2.5571980476379395,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_6721": {
+      "BB_score": 1.8788397312164307,
+      "FF_score": -1.3225717544555664,
+      "BF_score": -1.396266222000122,
+      "FB_score": 1.8932480812072754,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_6744": {
+      "BB_score": 1.7956922054290771,
+      "FF_score": -2.556013822555542,
+      "BF_score": -2.741075038909912,
+      "FB_score": 1.8135523796081543,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_6938": {
+      "BB_score": 1.7878875732421875,
+      "FF_score": -2.3932933807373047,
+      "BF_score": -2.5910732746124268,
+      "FB_score": 2.3412466049194336,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_6992": {
+      "BB_score": 4.391018390655518,
+      "FF_score": -1.0207724571228027,
+      "BF_score": -0.5248456001281738,
+      "FB_score": 3.806276798248291,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_7229": {
+      "BB_score": 2.1002111434936523,
+      "FF_score": -1.630868911743164,
+      "BF_score": -1.6001603603363037,
+      "FB_score": 2.910186290740967,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_7233": {
+      "BB_score": 3.7690749168395996,
+      "FF_score": -1.8115298748016357,
+      "BF_score": -1.8466949462890625,
+      "FB_score": 3.4854745864868164,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pydata_xarray_7393": {
+      "BB_score": 2.2635562419891357,
+      "FF_score": -2.9430360794067383,
+      "BF_score": -3.210186004638672,
+      "FB_score": 2.298189163208008,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pylint_dev_pylint_4551": {
+      "BB_score": 2.560208797454834,
+      "FF_score": -2.1231648921966553,
+      "BF_score": -2.337293863296509,
+      "FB_score": 3.454941511154175,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pylint_dev_pylint_4604": {
+      "BB_score": 3.524752140045166,
+      "FF_score": -1.143568515777588,
+      "BF_score": -1.0652110576629639,
+      "FB_score": 3.7621469497680664,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "pylint_dev_pylint_4661": {
+      "BB_score": -0.9637081623077393,
+      "FF_score": -4.740333557128906,
+      "BF_score": -4.398789405822754,
+      "FB_score": -0.8889074325561523,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "pylint_dev_pylint_4970": {
+      "BB_score": 0.10876178741455078,
+      "FF_score": -3.8155760765075684,
+      "BF_score": -3.8198561668395996,
+      "FB_score": 0.6155271530151367,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "pylint_dev_pylint_6386": {
+      "BB_score": 1.4353156089782715,
+      "FF_score": -0.8683872222900391,
+      "BF_score": -0.6565961837768555,
+      "FB_score": 1.6942939758300781,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pylint_dev_pylint_6528": {
+      "BB_score": 1.3003065586090088,
+      "FF_score": -2.9262421131134033,
+      "BF_score": -3.2353715896606445,
+      "FB_score": 0.8970296382904053,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pylint_dev_pylint_6903": {
+      "BB_score": 1.5422897338867188,
+      "FF_score": -0.25256943702697754,
+      "BF_score": -0.9969329833984375,
+      "FB_score": 1.3898639678955078,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pylint_dev_pylint_7080": {
+      "BB_score": 1.0244927406311035,
+      "FF_score": -2.657965898513794,
+      "BF_score": -2.5960288047790527,
+      "FB_score": 0.8247025012969971,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pylint_dev_pylint_7277": {
+      "BB_score": 0.8449671268463135,
+      "FF_score": -2.134080410003662,
+      "BF_score": -2.3251290321350098,
+      "FB_score": 1.006120204925537,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "pylint_dev_pylint_8898": {
+      "BB_score": 3.2898502349853516,
+      "FF_score": -1.2005109786987305,
+      "BF_score": -0.35628199577331543,
+      "FB_score": 2.949370861053467,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_10051": {
+      "BB_score": 2.3514647483825684,
+      "FF_score": -0.9229586124420166,
+      "BF_score": -0.9301507472991943,
+      "FB_score": 2.1459383964538574,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_10081": {
+      "BB_score": 2.0033788681030273,
+      "FF_score": -2.0910847187042236,
+      "BF_score": -1.8347463607788086,
+      "FB_score": 1.9633922576904297,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_10356": {
+      "BB_score": 2.2908780574798584,
+      "FF_score": -2.916477680206299,
+      "BF_score": -3.2607362270355225,
+      "FB_score": 1.3690884113311768,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_5262": {
+      "BB_score": 2.6977992057800293,
+      "FF_score": -1.1682794094085693,
+      "BF_score": -1.3078112602233887,
+      "FB_score": 2.73405122756958,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_5631": {
+      "BB_score": 5.394350528717041,
+      "FF_score": 0.8924355506896973,
+      "BF_score": 0.5684735774993896,
+      "FB_score": 5.353390216827393,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_5787": {
+      "BB_score": 0.76637864112854,
+      "FF_score": -2.628472328186035,
+      "BF_score": -3.172832489013672,
+      "FB_score": 2.397508144378662,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_5809": {
+      "BB_score": 1.626584768295288,
+      "FF_score": -1.7707300186157227,
+      "BF_score": -1.8064637184143066,
+      "FB_score": 1.2458233833312988,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_5840": {
+      "BB_score": 3.5926263332366943,
+      "FF_score": -0.03223276138305664,
+      "BF_score": 0.06356215476989746,
+      "FB_score": 3.254976511001587,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_6197": {
+      "BB_score": 2.9084088802337646,
+      "FF_score": -1.5386300086975098,
+      "BF_score": -1.3723227977752686,
+      "FB_score": 3.0353212356567383,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_6202": {
+      "BB_score": 3.476473331451416,
+      "FF_score": 1.5063576698303223,
+      "BF_score": 1.5728514194488525,
+      "FB_score": 3.3566346168518066,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_7205": {
+      "BB_score": 2.948418617248535,
+      "FF_score": -1.6856400966644287,
+      "BF_score": -1.5990021228790283,
+      "FB_score": 2.731842517852783,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_7236": {
+      "BB_score": 1.5777604579925537,
+      "FF_score": -2.1640543937683105,
+      "BF_score": -1.714587926864624,
+      "FB_score": 1.7803666591644287,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_7324": {
+      "BB_score": 4.275440692901611,
+      "FF_score": -0.7123501300811768,
+      "BF_score": -1.4421758651733398,
+      "FB_score": 4.722186088562012,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_7432": {
+      "BB_score": 2.476871967315674,
+      "FF_score": -0.6792056560516357,
+      "BF_score": -0.5682034492492676,
+      "FB_score": 2.4659619331359863,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_7490": {
+      "BB_score": 1.3737001419067383,
+      "FF_score": -3.0255894660949707,
+      "BF_score": -3.0435752868652344,
+      "FB_score": 1.3843848705291748,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_7521": {
+      "BB_score": 3.6117777824401855,
+      "FF_score": 0.5981125831604004,
+      "BF_score": 0.5457561016082764,
+      "FB_score": 3.108630657196045,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "pytest_dev_pytest_7571": {
+      "BB_score": 1.7596502304077148,
+      "FF_score": -2.18334698677063,
+      "BF_score": -2.352437734603882,
+      "FB_score": 1.7444384098052979,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "pytest_dev_pytest_7982": {
+      "BB_score": 1.609912395477295,
+      "FF_score": -3.347028970718384,
+      "BF_score": -3.276569128036499,
+      "FB_score": 1.2906959056854248,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "pytest_dev_pytest_8399": {
+      "BB_score": 2.0978426933288574,
+      "FF_score": -1.4284093379974365,
+      "BF_score": -1.464503288269043,
+      "FB_score": 2.1685760021209717,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_10297": {
+      "BB_score": 1.8035717010498047,
+      "FF_score": -1.939417839050293,
+      "BF_score": -1.7499995231628418,
+      "FB_score": 1.4480884075164795,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_10844": {
+      "BB_score": 3.2440290451049805,
+      "FF_score": -0.37043213844299316,
+      "BF_score": -0.47628235816955566,
+      "FB_score": 3.229886054992676,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_10908": {
+      "BB_score": 1.661869764328003,
+      "FF_score": -2.9747726917266846,
+      "BF_score": -3.395622730255127,
+      "FB_score": 1.136559009552002,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_11310": {
+      "BB_score": -2.6085119247436523,
+      "FF_score": -6.423069000244141,
+      "BF_score": -6.727174282073975,
+      "FB_score": -2.333437442779541,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_11578": {
+      "BB_score": 3.514587163925171,
+      "FF_score": -0.827855110168457,
+      "BF_score": -0.6992456912994385,
+      "FB_score": 3.466517925262451,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_12585": {
+      "BB_score": -0.31295156478881836,
+      "FF_score": -2.7852301597595215,
+      "BF_score": -2.9159417152404785,
+      "FB_score": -0.25020742416381836,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_12682": {
+      "BB_score": -0.25063157081604004,
+      "FF_score": -3.604465961456299,
+      "BF_score": -3.679927349090576,
+      "FB_score": 0.12147712707519531,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_12973": {
+      "BB_score": 0.7564699649810791,
+      "FF_score": -3.7554736137390137,
+      "BF_score": -3.4677085876464844,
+      "FB_score": 0.5154004096984863,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_13124": {
+      "BB_score": 2.6121675968170166,
+      "FF_score": -1.201127529144287,
+      "BF_score": -1.6895174980163574,
+      "FB_score": 2.8858642578125,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_13135": {
+      "BB_score": 1.8519086837768555,
+      "FF_score": -0.7736425399780273,
+      "BF_score": -0.9830288887023926,
+      "FB_score": 1.3919966220855713,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_13142": {
+      "BB_score": 3.416220188140869,
+      "FF_score": -0.7283411026000977,
+      "BF_score": -0.5836930274963379,
+      "FB_score": 3.217717170715332,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_13328": {
+      "BB_score": 3.6115939617156982,
+      "FF_score": -1.7511811256408691,
+      "BF_score": -2.005044937133789,
+      "FB_score": 3.613295555114746,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_13439": {
+      "BB_score": 0.43730926513671875,
+      "FF_score": -3.6751511096954346,
+      "BF_score": -3.5380191802978516,
+      "FB_score": 0.12774229049682617,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_13496": {
+      "BB_score": -1.5794999599456787,
+      "FF_score": -6.658227920532227,
+      "BF_score": -6.078426361083984,
+      "FB_score": -2.2677254676818848,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_13779": {
+      "BB_score": 5.243800640106201,
+      "FF_score": -0.03795480728149414,
+      "BF_score": -0.07403159141540527,
+      "FB_score": 5.255410194396973,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_14053": {
+      "BB_score": 1.345165491104126,
+      "FF_score": -1.6145732402801514,
+      "BF_score": -1.7236413955688477,
+      "FB_score": 1.472947120666504,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_14087": {
+      "BB_score": 3.541224956512451,
+      "FF_score": -0.7476122379302979,
+      "BF_score": -0.7167000770568848,
+      "FB_score": 4.024503707885742,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_14141": {
+      "BB_score": 3.9648594856262207,
+      "FF_score": -4.3706769943237305,
+      "BF_score": -4.733911514282227,
+      "FB_score": 3.817194938659668,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_14496": {
+      "BB_score": 3.434143543243408,
+      "FF_score": -1.2442188262939453,
+      "BF_score": -1.6740670204162598,
+      "FB_score": 2.8802289962768555,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_14629": {
+      "BB_score": 2.200687885284424,
+      "FF_score": -0.12247276306152344,
+      "BF_score": 0.3161444664001465,
+      "FB_score": 2.3098068237304688,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_14710": {
+      "BB_score": 3.3013205528259277,
+      "FF_score": -1.8701903820037842,
+      "BF_score": -2.0479185581207275,
+      "FB_score": 3.1869473457336426,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_14894": {
+      "BB_score": 2.7787649631500244,
+      "FF_score": -0.296619176864624,
+      "BF_score": -0.8557231426239014,
+      "FB_score": 2.908538818359375,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_14983": {
+      "BB_score": 2.6612863540649414,
+      "FF_score": -2.0747432708740234,
+      "BF_score": -1.9389829635620117,
+      "FB_score": 2.355006217956543,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_15100": {
+      "BB_score": 3.8143832683563232,
+      "FF_score": -1.583226203918457,
+      "BF_score": -1.3126697540283203,
+      "FB_score": 3.980802536010742,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_25102": {
+      "BB_score": 1.8726806640625,
+      "FF_score": -5.113541603088379,
+      "BF_score": -5.339784622192383,
+      "FB_score": 1.1708216667175293,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_25232": {
+      "BB_score": -1.429795742034912,
+      "FF_score": -4.745906829833984,
+      "BF_score": -4.737799644470215,
+      "FB_score": -1.5780692100524902,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "scikit_learn_scikit_learn_25747": {
+      "BB_score": 2.513908624649048,
+      "FF_score": -0.8640213012695312,
+      "BF_score": -1.4256157875061035,
+      "FB_score": 2.876359701156616,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_25931": {
+      "BB_score": 1.4156999588012695,
+      "FF_score": -1.3740456104278564,
+      "BF_score": -1.481321096420288,
+      "FB_score": 1.3222346305847168,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_25973": {
+      "BB_score": 1.6154756546020508,
+      "FF_score": -2.4112415313720703,
+      "BF_score": -2.4904842376708984,
+      "FB_score": 2.0870678424835205,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_26194": {
+      "BB_score": 3.1276111602783203,
+      "FF_score": -1.9367153644561768,
+      "BF_score": -1.8964734077453613,
+      "FB_score": 2.9710617065429688,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_26323": {
+      "BB_score": 2.342050552368164,
+      "FF_score": -1.940535068511963,
+      "BF_score": -1.620283842086792,
+      "FB_score": 1.7827565670013428,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "scikit_learn_scikit_learn_9288": {
+      "BB_score": 2.4471328258514404,
+      "FF_score": -3.275606632232666,
+      "BF_score": -3.5296263694763184,
+      "FB_score": 2.3336739540100098,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_10323": {
+      "BB_score": 2.1436758041381836,
+      "FF_score": -1.8092176914215088,
+      "BF_score": -1.8137264251708984,
+      "FB_score": 2.0355894565582275,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_10435": {
+      "BB_score": 1.520721673965454,
+      "FF_score": -2.5916244983673096,
+      "BF_score": -2.8118200302124023,
+      "FB_score": 1.6174285411834717,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_10449": {
+      "BB_score": 0.16618990898132324,
+      "FF_score": -3.925760269165039,
+      "BF_score": -3.6895525455474854,
+      "FB_score": -0.014120101928710938,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_10466": {
+      "BB_score": 2.668738842010498,
+      "FF_score": -0.9247322082519531,
+      "BF_score": -1.0936989784240723,
+      "FB_score": 2.6064834594726562,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_10614": {
+      "BB_score": 1.4156224727630615,
+      "FF_score": -1.1477069854736328,
+      "BF_score": -1.4264695644378662,
+      "FB_score": 1.5445177555084229,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_10673": {
+      "BB_score": 2.442507266998291,
+      "FF_score": -2.667466163635254,
+      "BF_score": -2.550964593887329,
+      "FB_score": 1.4472990036010742,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_11445": {
+      "BB_score": 0.6384947299957275,
+      "FF_score": -2.158742904663086,
+      "BF_score": -2.6533517837524414,
+      "FB_score": 0.7325692176818848,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_11510": {
+      "BB_score": 1.471858263015747,
+      "FF_score": -3.3887743949890137,
+      "BF_score": -3.0889196395874023,
+      "FB_score": 1.4022951126098633,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7440": {
+      "BB_score": 1.9591522216796875,
+      "FF_score": -2.532525062561035,
+      "BF_score": -2.523658514022827,
+      "FB_score": 1.8715105056762695,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7454": {
+      "BB_score": 0.6346759796142578,
+      "FF_score": -3.161282777786255,
+      "BF_score": -2.954944133758545,
+      "FB_score": 0.8340959548950195,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7462": {
+      "BB_score": 2.9802842140197754,
+      "FF_score": -0.9046766757965088,
+      "BF_score": -0.971196174621582,
+      "FB_score": 3.193420648574829,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7590": {
+      "BB_score": -1.7440414428710938,
+      "FF_score": -4.146860599517822,
+      "BF_score": -4.1534423828125,
+      "FB_score": -1.0354201793670654,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7748": {
+      "BB_score": 2.1817679405212402,
+      "FF_score": -4.484951496124268,
+      "BF_score": -4.039395332336426,
+      "FB_score": 2.344552516937256,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7757": {
+      "BB_score": 1.1369080543518066,
+      "FF_score": -3.0915091037750244,
+      "BF_score": -2.168952226638794,
+      "FB_score": 1.4422242641448975,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7889": {
+      "BB_score": 2.875244617462158,
+      "FF_score": 0.06373000144958496,
+      "BF_score": -0.19336223602294922,
+      "FB_score": 3.1238956451416016,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7910": {
+      "BB_score": 1.6976008415222168,
+      "FF_score": -1.2512383460998535,
+      "BF_score": -1.4133892059326172,
+      "FB_score": 1.4876766204833984,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_7985": {
+      "BB_score": 2.9920387268066406,
+      "FF_score": -2.860438346862793,
+      "BF_score": -2.5645740032196045,
+      "FB_score": 1.8493123054504395,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8035": {
+      "BB_score": 0.7502751350402832,
+      "FF_score": -5.760584354400635,
+      "BF_score": -5.471961498260498,
+      "FB_score": -0.7324132919311523,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "sphinx_doc_sphinx_8056": {
+      "BB_score": 2.1954848766326904,
+      "FF_score": -2.8296046257019043,
+      "BF_score": -2.6745991706848145,
+      "FB_score": 1.948697566986084,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8120": {
+      "BB_score": 0.540855884552002,
+      "FF_score": -3.4239559173583984,
+      "BF_score": -3.652350902557373,
+      "FB_score": 1.0706329345703125,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8265": {
+      "BB_score": 2.6020376682281494,
+      "FF_score": -2.7125983238220215,
+      "BF_score": -2.10011887550354,
+      "FB_score": 1.8681302070617676,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8269": {
+      "BB_score": 2.354663848876953,
+      "FF_score": -0.19064903259277344,
+      "BF_score": -0.3345375061035156,
+      "FB_score": 2.0951859951019287,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8459": {
+      "BB_score": 0.666947603225708,
+      "FF_score": -3.3197336196899414,
+      "BF_score": -3.379992723464966,
+      "FB_score": 0.49892234802246094,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8475": {
+      "BB_score": 1.4473919868469238,
+      "FF_score": -3.911513566970825,
+      "BF_score": -3.9268245697021484,
+      "FB_score": 1.3126816749572754,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8548": {
+      "BB_score": 2.620746374130249,
+      "FF_score": -1.8064842224121094,
+      "BF_score": -2.5794754028320312,
+      "FB_score": 3.080502986907959,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8551": {
+      "BB_score": 1.8695688247680664,
+      "FF_score": -1.7294414043426514,
+      "BF_score": -1.2353017330169678,
+      "FB_score": 1.5692894458770752,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8593": {
+      "BB_score": 2.070004940032959,
+      "FF_score": -3.0280892848968506,
+      "BF_score": -2.97611665725708,
+      "FB_score": 1.6084117889404297,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8595": {
+      "BB_score": 1.0474028587341309,
+      "FF_score": -2.622164249420166,
+      "BF_score": -2.6443347930908203,
+      "FB_score": 1.2675373554229736,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8621": {
+      "BB_score": 2.5448131561279297,
+      "FF_score": -2.75775146484375,
+      "BF_score": -2.9223461151123047,
+      "FB_score": 2.626041889190674,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8638": {
+      "BB_score": 1.026960849761963,
+      "FF_score": -2.4185903072357178,
+      "BF_score": -2.2737231254577637,
+      "FB_score": 1.221388816833496,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_8721": {
+      "BB_score": 0.8531045913696289,
+      "FF_score": -3.3241167068481445,
+      "BF_score": -3.2452759742736816,
+      "FB_score": 0.28929710388183594,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9229": {
+      "BB_score": 2.4677951335906982,
+      "FF_score": -2.2884879112243652,
+      "BF_score": -1.9378483295440674,
+      "FB_score": 2.6300735473632812,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9230": {
+      "BB_score": 2.180729627609253,
+      "FF_score": -0.9747147560119629,
+      "BF_score": -1.0420024394989014,
+      "FB_score": 2.453024387359619,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9258": {
+      "BB_score": 3.590118885040283,
+      "FF_score": -3.9169931411743164,
+      "BF_score": -4.313349723815918,
+      "FB_score": 3.3687286376953125,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9281": {
+      "BB_score": 2.7878222465515137,
+      "FF_score": -1.4884328842163086,
+      "BF_score": -1.3938891887664795,
+      "FB_score": 2.802347183227539,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9320": {
+      "BB_score": 2.7546305656433105,
+      "FF_score": -1.7041740417480469,
+      "BF_score": -2.1944773197174072,
+      "FB_score": 2.6422548294067383,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "sphinx_doc_sphinx_9367": {
+      "BB_score": 2.1329874992370605,
+      "FF_score": -1.8567099571228027,
+      "BF_score": -2.1678037643432617,
+      "FB_score": 2.2265045642852783,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "sphinx_doc_sphinx_9461": {
+      "BB_score": 1.4786796569824219,
+      "FF_score": -2.086289882659912,
+      "BF_score": -2.519430637359619,
+      "FB_score": 1.5319905281066895,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "sphinx_doc_sphinx_9591": {
+      "BB_score": 1.3525876998901367,
+      "FF_score": -2.0561070442199707,
+      "BF_score": -1.7598545551300049,
+      "FB_score": 1.9086894989013672,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9602": {
+      "BB_score": 1.4278631210327148,
+      "FF_score": -2.0702078342437744,
+      "BF_score": -2.3370230197906494,
+      "FB_score": 1.6660118103027344,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9658": {
+      "BB_score": 1.6625194549560547,
+      "FF_score": -1.464792251586914,
+      "BF_score": -1.4139957427978516,
+      "FB_score": 1.9200992584228516,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9673": {
+      "BB_score": 0.4893481731414795,
+      "FF_score": -2.3220176696777344,
+      "BF_score": -2.3600640296936035,
+      "FB_score": 0.34999585151672363,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9698": {
+      "BB_score": 2.0598483085632324,
+      "FF_score": -1.4747538566589355,
+      "BF_score": -1.35420560836792,
+      "FB_score": 1.924945592880249,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sphinx_doc_sphinx_9711": {
+      "BB_score": 1.8534221649169922,
+      "FF_score": -2.2536985874176025,
+      "BF_score": -2.2706565856933594,
+      "FB_score": 2.295442581176758,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_11618": {
+      "BB_score": 2.273655891418457,
+      "FF_score": -1.617680311203003,
+      "BF_score": -1.2928593158721924,
+      "FB_score": 2.1100120544433594,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_12096": {
+      "BB_score": 0.9139714241027832,
+      "FF_score": -1.652968168258667,
+      "BF_score": -1.761690378189087,
+      "FB_score": 0.7481777667999268,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_12419": {
+      "BB_score": 2.584205150604248,
+      "FF_score": -1.2976891994476318,
+      "BF_score": -1.4063587188720703,
+      "FB_score": 2.855217695236206,
+      "BB_argmax": "test",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "test"
+    },
+    "sympy_sympy_12481": {
+      "BB_score": 4.6753950119018555,
+      "FF_score": -2.083083152770996,
+      "BF_score": -1.8696328401565552,
+      "FB_score": 4.9748854637146,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_12489": {
+      "BB_score": 0.3255934715270996,
+      "FF_score": -3.8200411796569824,
+      "BF_score": -3.8335633277893066,
+      "FB_score": 0.6424739360809326,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "sympy_sympy_13031": {
+      "BB_score": 1.6869878768920898,
+      "FF_score": -2.5065126419067383,
+      "BF_score": -2.804201126098633,
+      "FB_score": 1.1839189529418945,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13091": {
+      "BB_score": 1.275477409362793,
+      "FF_score": -3.573863983154297,
+      "BF_score": -3.897289276123047,
+      "FB_score": 1.0886249542236328,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13372": {
+      "BB_score": 1.6314387321472168,
+      "FF_score": -1.2431800365447998,
+      "BF_score": -1.2162883281707764,
+      "FB_score": 1.8523120880126953,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "sympy_sympy_13480": {
+      "BB_score": 2.0514492988586426,
+      "FF_score": -2.0552594661712646,
+      "BF_score": -1.9709079265594482,
+      "FB_score": 2.0025417804718018,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13551": {
+      "BB_score": 3.2017529010772705,
+      "FF_score": -2.8036179542541504,
+      "BF_score": -2.4101479053497314,
+      "FB_score": 3.2296276092529297,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13615": {
+      "BB_score": 2.514650344848633,
+      "FF_score": -3.3753256797790527,
+      "BF_score": -3.579867362976074,
+      "FB_score": 2.763719081878662,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13647": {
+      "BB_score": 2.6972875595092773,
+      "FF_score": -1.8881418704986572,
+      "BF_score": -1.7869691848754883,
+      "FB_score": 2.8283934593200684,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13757": {
+      "BB_score": 0.9054281711578369,
+      "FF_score": -3.43544340133667,
+      "BF_score": -3.5044145584106445,
+      "FB_score": 0.9110982418060303,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13798": {
+      "BB_score": -3.543095588684082,
+      "FF_score": -6.683173656463623,
+      "BF_score": -5.936797618865967,
+      "FB_score": -3.5751633644104004,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "sympy_sympy_13852": {
+      "BB_score": 0.7752103805541992,
+      "FF_score": -4.0714802742004395,
+      "BF_score": -3.8012969493865967,
+      "FB_score": 0.9927127361297607,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13877": {
+      "BB_score": 3.1106081008911133,
+      "FF_score": -2.4489290714263916,
+      "BF_score": -2.424419403076172,
+      "FB_score": 2.797792673110962,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13878": {
+      "BB_score": 1.4707825183868408,
+      "FF_score": -4.4210405349731445,
+      "BF_score": -4.846672058105469,
+      "FB_score": 1.7557306289672852,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_13974": {
+      "BB_score": 1.3717575073242188,
+      "FF_score": -3.12961483001709,
+      "BF_score": -2.640717029571533,
+      "FB_score": 1.1034562587738037,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_14248": {
+      "BB_score": 1.3487155437469482,
+      "FF_score": -3.1346325874328613,
+      "BF_score": -3.2030131816864014,
+      "FB_score": 1.0117754936218262,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_14531": {
+      "BB_score": 3.0700268745422363,
+      "FF_score": -0.4097869396209717,
+      "BF_score": -0.2113962173461914,
+      "FB_score": 2.8674612045288086,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_14711": {
+      "BB_score": 2.591892957687378,
+      "FF_score": -0.17881989479064941,
+      "BF_score": -0.3112955093383789,
+      "FB_score": 2.340090751647949,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_14976": {
+      "BB_score": 1.558748722076416,
+      "FF_score": -2.6446778774261475,
+      "BF_score": -2.6676721572875977,
+      "FB_score": 1.5122833251953125,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_15017": {
+      "BB_score": 1.4335923194885254,
+      "FF_score": -2.773021697998047,
+      "BF_score": -1.8881306648254395,
+      "FB_score": 0.8225891590118408,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_15345": {
+      "BB_score": 1.6496496200561523,
+      "FF_score": -2.8784031867980957,
+      "BF_score": -3.204106569290161,
+      "FB_score": 1.4019765853881836,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_15349": {
+      "BB_score": 2.1395606994628906,
+      "FF_score": -1.3259613513946533,
+      "BF_score": -1.4616658687591553,
+      "FB_score": 2.145294666290283,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_15599": {
+      "BB_score": -0.5378947257995605,
+      "FF_score": -4.613268852233887,
+      "BF_score": -4.383616924285889,
+      "FB_score": -0.518319845199585,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_15809": {
+      "BB_score": 1.6089537143707275,
+      "FF_score": -5.449787139892578,
+      "BF_score": -4.954512119293213,
+      "FB_score": 1.2750353813171387,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_15875": {
+      "BB_score": 2.589386224746704,
+      "FF_score": -2.9042506217956543,
+      "BF_score": -3.1112022399902344,
+      "FB_score": 2.4394373893737793,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_15976": {
+      "BB_score": 0.682525634765625,
+      "FF_score": -3.684194803237915,
+      "BF_score": -3.7077322006225586,
+      "FB_score": 0.31180334091186523,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_16450": {
+      "BB_score": 3.0763256549835205,
+      "FF_score": -3.0633561611175537,
+      "BF_score": -3.2068397998809814,
+      "FB_score": 3.116429567337036,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_16597": {
+      "BB_score": 0.4210846424102783,
+      "FF_score": -4.234685897827148,
+      "BF_score": -4.175724983215332,
+      "FB_score": 0.5045042037963867,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_16766": {
+      "BB_score": -0.24489784240722656,
+      "FF_score": -3.016399383544922,
+      "BF_score": -3.0486562252044678,
+      "FB_score": 0.03617405891418457,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "edit"
+    },
+    "sympy_sympy_16792": {
+      "BB_score": 3.343595504760742,
+      "FF_score": -2.1324291229248047,
+      "BF_score": -2.1258935928344727,
+      "FB_score": 3.06325626373291,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_16886": {
+      "BB_score": 4.31680965423584,
+      "FF_score": -2.6112470626831055,
+      "BF_score": -2.7128167152404785,
+      "FB_score": 4.3129048347473145,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_17139": {
+      "BB_score": 2.150552749633789,
+      "FF_score": -2.9784860610961914,
+      "BF_score": -3.027806043624878,
+      "FB_score": 2.5718674659729004,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_17318": {
+      "BB_score": 1.6112980842590332,
+      "FF_score": -0.5183730125427246,
+      "BF_score": -0.6145594120025635,
+      "FB_score": 1.5034565925598145,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_17630": {
+      "BB_score": 3.492672920227051,
+      "FF_score": 0.10256147384643555,
+      "BF_score": 0.11636185646057129,
+      "FB_score": 3.23738956451416,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_17655": {
+      "BB_score": 4.055305480957031,
+      "FF_score": 0.6931750774383545,
+      "BF_score": 0.38529133796691895,
+      "FB_score": 3.7483363151550293,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_18189": {
+      "BB_score": 1.166727066040039,
+      "FF_score": -2.453925848007202,
+      "BF_score": -2.7795865535736084,
+      "FB_score": 1.5010764598846436,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_18199": {
+      "BB_score": 2.010031223297119,
+      "FF_score": -3.9125967025756836,
+      "BF_score": -3.2796924114227295,
+      "FB_score": 1.7325694561004639,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_18211": {
+      "BB_score": 2.6987595558166504,
+      "FF_score": -1.8490958213806152,
+      "BF_score": -1.724832534790039,
+      "FB_score": 2.9661574363708496,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_18698": {
+      "BB_score": 3.737905502319336,
+      "FF_score": -2.238100290298462,
+      "BF_score": -2.4306161403656006,
+      "FB_score": 3.661165237426758,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_18763": {
+      "BB_score": 0.8339684009552002,
+      "FF_score": -2.705481767654419,
+      "BF_score": -2.5946314334869385,
+      "FB_score": 1.0889017581939697,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_19040": {
+      "BB_score": 0.49935078620910645,
+      "FF_score": -4.146970748901367,
+      "BF_score": -4.236605167388916,
+      "FB_score": 0.31108856201171875,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_19346": {
+      "BB_score": 1.8491647243499756,
+      "FF_score": -0.9215097427368164,
+      "BF_score": -1.509824275970459,
+      "FB_score": 2.899662494659424,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_19495": {
+      "BB_score": 0.9795100688934326,
+      "FF_score": -2.2135674953460693,
+      "BF_score": -2.369800329208374,
+      "FB_score": 1.0392675399780273,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_19637": {
+      "BB_score": 1.3463635444641113,
+      "FF_score": -1.7952210903167725,
+      "BF_score": -1.6667909622192383,
+      "FB_score": 1.1928377151489258,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_19783": {
+      "BB_score": 2.9081225395202637,
+      "FF_score": -3.9464685916900635,
+      "BF_score": -3.9749503135681152,
+      "FB_score": 1.9932794570922852,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_19954": {
+      "BB_score": 1.7851459980010986,
+      "FF_score": 0.28044843673706055,
+      "BF_score": -0.11049723625183105,
+      "FB_score": 3.117117404937744,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_20154": {
+      "BB_score": 2.2951672077178955,
+      "FF_score": -3.8184525966644287,
+      "BF_score": -2.805447578430176,
+      "FB_score": 1.6364030838012695,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_20428": {
+      "BB_score": 1.5533099174499512,
+      "FF_score": -1.9452779293060303,
+      "BF_score": -1.9714765548706055,
+      "FB_score": 1.5721452236175537,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_20438": {
+      "BB_score": 3.805654287338257,
+      "FF_score": 0.7038061618804932,
+      "BF_score": 0.5842540264129639,
+      "FB_score": 3.7355246543884277,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_20590": {
+      "BB_score": 0.2659270763397217,
+      "FF_score": -3.2803828716278076,
+      "BF_score": -3.0553767681121826,
+      "FB_score": 0.41689515113830566,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_20801": {
+      "BB_score": 0.9652326107025146,
+      "FF_score": -3.294288158416748,
+      "BF_score": -3.614563465118408,
+      "FB_score": 1.1984736919403076,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_20916": {
+      "BB_score": 2.652994394302368,
+      "FF_score": -3.2357337474823,
+      "BF_score": -3.1421072483062744,
+      "FB_score": 2.546267032623291,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_21379": {
+      "BB_score": 1.1598820686340332,
+      "FF_score": -2.44569730758667,
+      "BF_score": -2.5737597942352295,
+      "FB_score": 1.079763650894165,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_21596": {
+      "BB_score": 1.478729248046875,
+      "FF_score": -2.5524845123291016,
+      "BF_score": -2.8115897178649902,
+      "FB_score": 1.9846999645233154,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_21612": {
+      "BB_score": 0.4423527717590332,
+      "FF_score": -2.990204334259033,
+      "BF_score": -2.9212684631347656,
+      "FB_score": 0.3268129825592041,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_21847": {
+      "BB_score": 3.1036176681518555,
+      "FF_score": -2.0403895378112793,
+      "BF_score": -1.8825078010559082,
+      "FB_score": 2.9227733612060547,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_21930": {
+      "BB_score": 4.518913745880127,
+      "FF_score": -0.5544111728668213,
+      "BF_score": -0.5795543193817139,
+      "FB_score": 4.451852798461914,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_22080": {
+      "BB_score": 3.2295684814453125,
+      "FF_score": -1.6524076461791992,
+      "BF_score": -1.0333528518676758,
+      "FB_score": 3.035200357437134,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_22456": {
+      "BB_score": 0.9574644565582275,
+      "FF_score": -3.0741658210754395,
+      "BF_score": -2.9716224670410156,
+      "FB_score": 1.0303459167480469,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_22714": {
+      "BB_score": 1.3969390392303467,
+      "FF_score": -0.6288330554962158,
+      "BF_score": -0.5733757019042969,
+      "FB_score": 1.3659214973449707,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_22914": {
+      "BB_score": 0.30817461013793945,
+      "FF_score": -4.068449020385742,
+      "BF_score": -3.7897119522094727,
+      "FB_score": 0.7846083641052246,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_23262": {
+      "BB_score": 1.7458717823028564,
+      "FF_score": -1.931510329246521,
+      "BF_score": -1.6982314586639404,
+      "FB_score": 1.6603662967681885,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_23413": {
+      "BB_score": 3.2193527221679688,
+      "FF_score": -2.911635637283325,
+      "BF_score": -2.670048713684082,
+      "FB_score": 3.427685499191284,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_23534": {
+      "BB_score": 2.2192444801330566,
+      "FF_score": -1.3674743175506592,
+      "BF_score": -1.102722406387329,
+      "FB_score": 2.356624126434326,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_23824": {
+      "BB_score": 2.7838799953460693,
+      "FF_score": -0.18925070762634277,
+      "BF_score": -0.22929763793945312,
+      "FB_score": 3.0815658569335938,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_23950": {
+      "BB_score": 1.985671043395996,
+      "FF_score": -0.9350078105926514,
+      "BF_score": -0.9663534164428711,
+      "FB_score": 1.7886810302734375,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_24066": {
+      "BB_score": 0.9448585510253906,
+      "FF_score": -1.7925572395324707,
+      "BF_score": -1.7934606075286865,
+      "FB_score": 1.143963098526001,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_24213": {
+      "BB_score": 1.8889389038085938,
+      "FF_score": -0.7366189956665039,
+      "BF_score": -0.9558348655700684,
+      "FB_score": 1.8802292346954346,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_24443": {
+      "BB_score": 1.0882062911987305,
+      "FF_score": -3.216987371444702,
+      "BF_score": -3.0360774993896484,
+      "FB_score": 1.7362637519836426,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "sympy_sympy_24539": {
+      "BB_score": 1.0795910358428955,
+      "FF_score": -2.83870267868042,
+      "BF_score": -3.1208558082580566,
+      "FB_score": 1.1677794456481934,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_24562": {
+      "BB_score": 2.78775691986084,
+      "FF_score": -2.417731285095215,
+      "BF_score": -2.292473793029785,
+      "FB_score": 2.731760025024414,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "sympy_sympy_24661": {
+      "BB_score": 1.8193740844726562,
+      "FF_score": -1.414013147354126,
+      "BF_score": -1.2282094955444336,
+      "FB_score": 1.4260411262512207,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    }
+  },
+  "verdict": "TRANSCRIPT-DRIVEN (paper needs reframing)"
+}

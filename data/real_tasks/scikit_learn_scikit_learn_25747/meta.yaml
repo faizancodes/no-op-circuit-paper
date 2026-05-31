@@ -1,0 +1,31 @@
+task_id: scikit_learn_scikit_learn_25747
+description: 'SWE-bench_Verified instance scikit-learn__scikit-learn-25747 (repo:
+  scikit-learn/scikit-learn)'
+issue_text: "FeatureUnion not working when aggregating data and pandas transform output\
+  \ selected\n### Describe the bug\n\nI would like to use `pandas` transform output\
+  \ and use a custom transformer in a feature union which aggregates data. When I'm\
+  \ using this combination I got an error. When I use default `numpy` output it works\
+  \ fine.\n\n### Steps/Code to Reproduce\n\n```python\r\nimport pandas as pd\r\nfrom\
+  \ sklearn.base import BaseEstimator, TransformerMixin\r\nfrom sklearn import set_config\r\
+  \nfrom sklearn.pipeline import make_union\r\n\r\nindex = pd.date_range(start=\"\
+  2020-01-01\", end=\"2020-01-05\", inclusive=\"left\", freq=\"H\")\r\ndata = pd.DataFrame(index=index,\
+  \ data=[10] * len(index), columns=[\"value\"])\r\ndata[\"date\"] = index.date\r\n\
+  \r\n\r\nclass MyTransformer(BaseEstimator, TransformerMixin):\r\n    def fit(self,\
+  \ X: pd.DataFrame, y: pd.Series | None = None, **kwargs):\r\n        return self\r\
+  \n\r\n    def transform(self, X: pd.DataFrame, y: pd.Series | None = None) -> pd.DataFrame:\r\
+  \n        return X[\"value\"].groupby(X[\"date\"]).sum()\r\n\r\n\r\n# This works.\r\
+  \nset_config(transform_output=\"default\")\r\nprint(make_union(MyTransformer()).fit_transform(data))\r\
+  \n\r\n# This does not work.\r\nset_config(transform_output=\"pandas\")\r\nprint(make_union(MyTransformer()).fit_transform(data))\r\
+  \n```\n\n### Expected Results\n\nNo error is thrown when using `pandas` transform\
+  \ output.\n\n### Actual Results\n\n```python\r\n---------------------------------------------------------------------------\r\
+  \nValueError                                Traceback (most recent cal\u2026\n"
+primary_file: _set_output.py
+test_command: pytest -q sklearn/utils/tests/test_set_output.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: scikit-learn__scikit-learn-25747
+swe_bench_repo: scikit-learn/scikit-learn
+swe_bench_base_commit: 2c867b8f822eb7a684f0d5c4359e4426e1c9cfe0
+swe_bench_modified_path: sklearn/utils/_set_output.py

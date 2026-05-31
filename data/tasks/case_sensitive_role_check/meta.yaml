@@ -1,0 +1,15 @@
+task_id: case_sensitive_role_check
+description: check_permission() fails to recognize valid roles when input has different
+  casing
+issue_text: 'The `check_permission()` function is rejecting valid user roles when
+  they are provided with different capitalization. For example, a user with role ''Admin''
+  is being denied access even though ''admin'' is a valid role. The function should
+  accept roles case-insensitively.
+
+  '
+primary_file: auth.py
+test_command: pytest -q test_auth.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: case_sensitivity

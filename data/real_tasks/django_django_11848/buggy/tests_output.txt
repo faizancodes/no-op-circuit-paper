@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) - AssertionError: behaviour does not match expected output
+FAILED test_parsing_year_less_than_70 (utils_tests.test_http.HttpDateProcessingTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) - AssertionError: behaviour does not match expected output
+FAILED test_parsing_year_less_than_70 (utils_tests.test_http.HttpDateProcessingTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 43 passed in 0.04s =========================

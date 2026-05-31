@@ -1,0 +1,20 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_disk_quota _________________________________
+
+self = <test_disk_quota.TestDiskQuota object at 0x7f8a3c4d5e80>
+
+    def test_disk_quota(self):
+        """Verify disk quota handling for temp file operations"""
+        temp_dir = tempfile.mkdtemp(prefix='ci_temp_')
+        try:
+            # Write test data to verify quota
+>           with open(os.path.join(temp_dir, 'quota_check.tmp'), 'w') as f:
+                f.write('x' * 1024 * 1024)
+E           OSError: [Errno 122] Disk quota exceeded: '/tmp/ci_temp_8k3mq/quota_check.tmp'
+
+test_disk_quota.py:47: OSError
+=========================== short test summary info ============================
+FAILED test_disk_quota.py::test_disk_quota - OSError: [Errno 122] Disk quota exceeded
+============================== 4 passed, 1 failed in 0.12s ==============================

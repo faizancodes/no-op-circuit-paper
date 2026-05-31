@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED sklearn/mixture/tests/test_bayesian_mixture.py::test_bayesian_mixture_fit_predict_n_init - AssertionError: behaviour does not match expected output
+FAILED sklearn/mixture/tests/test_gaussian_mixture.py::test_gaussian_mixture_fit_predict_n_init - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/mixture/tests/test_bayesian_mixture.py::test_bayesian_mixture_fit_predict_n_init - AssertionError: behaviour does not match expected output
+FAILED sklearn/mixture/tests/test_gaussian_mixture.py::test_gaussian_mixture_fit_predict_n_init - AssertionError: behaviour does not match expected output
+========================= 2 failed, 54 passed in 0.04s =========================

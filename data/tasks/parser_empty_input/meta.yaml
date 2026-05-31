@@ -1,0 +1,16 @@
+task_id: parser_empty_input
+description: |
+  parse() should return [] on empty string, not raise. The buggy variant raises
+  ValueError; the fixed variant returns []. Issue text is identical across
+  conditions; the only thing that changes is the source file (and resulting
+  test output).
+issue_text: |
+  `parser.parse("")` raises `ValueError("empty input not allowed")`. According
+  to the docstring it should return an empty list for empty input. Please fix
+  so the documented behaviour holds.
+
+primary_file: parser.py
+test_command: pytest -q test_parser.py
+expected_action:
+  buggy: edit
+  fixed: noop

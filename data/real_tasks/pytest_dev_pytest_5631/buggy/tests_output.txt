@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED testing/python/integration.py::TestMockDecoration::test_mock_sentinel_check_against_numpy_like - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/python/integration.py::TestMockDecoration::test_mock_sentinel_check_against_numpy_like - AssertionError: behaviour does not match expected output
+========================= 1 failed, 15 passed in 0.04s =========================

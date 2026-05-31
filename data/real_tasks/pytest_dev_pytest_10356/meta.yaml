@@ -1,0 +1,32 @@
+task_id: pytest_dev_pytest_10356
+description: 'SWE-bench_Verified instance pytest-dev__pytest-10356 (repo: pytest-dev/pytest)'
+issue_text: "Consider MRO when obtaining marks for classes\nWhen using pytest markers\
+  \ in two baseclasses `Foo` and `Bar`, inheriting from both of those baseclasses\
+  \ will lose the markers of one of those classes. This behavior is present in pytest\
+  \ 3-6, and I think it may as well have been intended. I am still filing it as a\
+  \ bug because I am not sure if this edge case was ever explicitly considered.\r\n\
+  \r\nIf it is widely understood that all markers are part of a single attribute,\
+  \ I guess you could say that this is just expected behavior as per MRO. However,\
+  \ I'd argue that it would be more intuitive to attempt to merge marker values into\
+  \ one, possibly deduplicating marker names by MRO.\r\n\r\n```python\r\nimport itertools\r\
+  \nimport pytest\r\n\r\nclass BaseMeta(type):\r\n    @property\r\n    def pytestmark(self):\r\
+  \n        return (\r\n            getattr(self, \"_pytestmark\", []) +\r\n     \
+  \       list(itertools.chain.from_iterable(getattr(x, \"_pytestmark\", []) for x\
+  \ in self.__mro__))\r\n        )\r\n\r\n    @pytestmark.setter\r\n    def pytestmark(self,\
+  \ value):\r\n        self._pytestmark = value\r\n\r\n\r\nclass Base(object):\r\n\
+  \    # Without this metaclass, foo and bar markers override each other, and test_dings\r\
+  \n    # will only have one marker\r\n    # With the metaclass, test_dings will have\
+  \ both\r\n    __metaclass__ = BaseMeta\r\n\r\n@pytest.mark.foo\r\nclass Foo(Base):\r\
+  \n    pass\r\n\r\n\r\n@pytest.mark.bar\r\nclass Bar(Base):\r\n    pass\r\n\r\nclass\
+  \ TestDings(Foo, Bar):\r\n    def test_dings(self):\r\n        # This test should\
+  \ have both markers, foo and ba\u2026\n"
+primary_file: structures.py
+test_command: pytest -q testing/test_mark.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pytest-dev__pytest-10356
+swe_bench_repo: pytest-dev/pytest
+swe_bench_base_commit: 3c1534944cbd34e8a41bc9e76818018fadefc9a1
+swe_bench_modified_path: src/_pytest/mark/structures.py

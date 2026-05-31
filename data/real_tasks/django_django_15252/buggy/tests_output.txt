@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_migrate_test_setting_false_ensure_schema (backends.base.test_creation.TestDbCreationTests) - AssertionError: behaviour does not match expected output
+FAILED The django_migrations table is not created if there are no migrations - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_migrate_test_setting_false_ensure_schema (backends.base.test_creation.TestDbCreationTests) - AssertionError: behaviour does not match expected output
+FAILED The django_migrations table is not created if there are no migrations - AssertionError: behaviour does not match expected output
+========================= 2 failed, 34 passed in 0.04s =========================

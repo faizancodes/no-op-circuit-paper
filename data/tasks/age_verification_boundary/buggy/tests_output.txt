@@ -1,0 +1,22 @@
+FF...                                                                    [100%]
+=================================== FAILURES ===================================
+___________________________ test_exactly_minimum_age ___________________________
+
+    def test_exactly_minimum_age():
+>       assert is_eligible_age(18.0) == True
+E       assert False == True
+E        +  where False = is_eligible_age(18.0)
+
+test_age_validator.py:4: AssertionError
+___________________________ test_exactly_maximum_age ___________________________
+
+    def test_exactly_maximum_age():
+>       assert is_eligible_age(120.0) == True
+E       assert False == True
+E        +  where False = is_eligible_age(120.0)
+
+test_age_validator.py:7: AssertionError
+=========================== short test summary info ============================
+FAILED test_age_validator.py::test_exactly_minimum_age - assert False == True
+FAILED test_age_validator.py::test_exactly_maximum_age - assert False == True
+2 failed, 3 passed in 0.01s

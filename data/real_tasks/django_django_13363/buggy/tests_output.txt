@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_trunc_timezone_applied_before_truncation (db_functions.datetime.test_extract_trunc.DateFunctionWithTimeZoneTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_trunc_timezone_applied_before_truncation (db_functions.datetime.test_extract_trunc.DateFunctionWithTimeZoneTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 76 passed in 0.04s =========================

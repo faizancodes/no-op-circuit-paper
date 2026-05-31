@@ -1,0 +1,28 @@
+task_id: django_django_13658
+description: 'SWE-bench_Verified instance django__django-13658 (repo: django/django)'
+issue_text: "ManagementUtility instantiates CommandParser without passing already-computed\
+  \ prog argument\nDescription\n\t\nManagementUtility \u200Bgoes to the trouble to\
+  \ parse the program name from the argv it's passed rather than from sys.argv: \n\
+  \tdef __init__(self, argv=None):\n\t\tself.argv = argv or sys.argv[:]\n\t\tself.prog_name\
+  \ = os.path.basename(self.argv[0])\n\t\tif self.prog_name == '__main__.py':\n\t\t\
+  \tself.prog_name = 'python -m django'\nBut then when it needs to parse --pythonpath\
+  \ and --settings, it \u200Buses the program name from sys.argv: \n\t\tparser = CommandParser(usage='%(prog)s\
+  \ subcommand [options] [args]', add_help=False, allow_abbrev=False)\nAbove \"%(prog)s\"\
+  \ \u200Brefers to sys.argv[0]. Instead, it should refer to self.prog_name. This\
+  \ can fixed as follows:\n\t\tparser = CommandParser(\n\t\t\tprog=self.prog_name,\n\
+  \t\t\tusage='%(prog)s subcommand [options] [args]',\n\t\t\tadd_help=False,\n\t\t\
+  \tallow_abbrev=False)\nI'm aware that execute_from_command_line is a private API,\
+  \ but it'd be really convenient for me if it worked properly in my weird embedded\
+  \ environment where sys.argv[0] is \u200Bincorrectly None. If passing my own argv\
+  \ to execute_from_command_line avoided all the ensuing exceptions, I wouldn't have\
+  \ to modify sys.argv[0] globally as I'm doing in the meantime.\n\n"
+primary_file: __init__.py
+test_command: pytest -q test_program_name_from_argv (admin_scripts.tests.ExecuteFromCommandLine)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-13658
+swe_bench_repo: django/django
+swe_bench_base_commit: 0773837e15bb632afffb6848a58c59a791008fa1
+swe_bench_modified_path: django/core/management/__init__.py

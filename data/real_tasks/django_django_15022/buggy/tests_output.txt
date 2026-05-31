@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_many_search_terms (admin_changelist.tests.ChangeListTests) - AssertionError: behaviour does not match expected output
+FAILED All rows containing each of the searched words are returned, where each - AssertionError: behaviour does not match expected output
+FAILED Searches over multi-valued relationships return rows from related - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_many_search_terms (admin_changelist.tests.ChangeListTests) - AssertionError: behaviour does not match expected output
+FAILED All rows containing each of the searched words are returned, where each - AssertionError: behaviour does not match expected output
+FAILED Searches over multi-valued relationships return rows from related - AssertionError: behaviour does not match expected output
+========================= 3 failed, 56 passed in 0.04s =========================

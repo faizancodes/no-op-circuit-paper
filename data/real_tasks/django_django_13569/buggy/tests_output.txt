@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED Random() is not included in the GROUP BY when used for ordering. - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED Random() is not included in the GROUP BY when used for ordering. - AssertionError: behaviour does not match expected output
+========================= 1 failed, 66 passed in 0.04s =========================

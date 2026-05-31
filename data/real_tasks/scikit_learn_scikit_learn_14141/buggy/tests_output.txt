@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/utils/tests/test_show_versions.py::test_get_deps_info - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/utils/tests/test_show_versions.py::test_get_deps_info - AssertionError: behaviour does not match expected output
+========================= 1 failed, 2 passed in 0.04s =========================

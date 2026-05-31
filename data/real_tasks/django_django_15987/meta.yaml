@@ -1,0 +1,15 @@
+task_id: django_django_15987
+description: 'SWE-bench_Verified instance django__django-15987 (repo: django/django)'
+issue_text: "Fixture dirs duplicates undetected if dir is Path instance\nDescription\n\
+  \t\nWhen FIXTURE_DIRS contains Path instances, the duplicate check in loaddata does\
+  \ not detect duplicates.\n\n"
+primary_file: loaddata.py
+test_command: pytest -q settings.FIXTURE_DIRS cannot contain a default fixtures directory
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-15987
+swe_bench_repo: django/django
+swe_bench_base_commit: 7e6b537f5b92be152779fc492bb908d27fe7c52a
+swe_bench_modified_path: django/core/management/commands/loaddata.py

@@ -1,0 +1,30 @@
+task_id: django_django_13810
+description: 'SWE-bench_Verified instance django__django-13810 (repo: django/django)'
+issue_text: "MiddlewareNotUsed leaves undesired side effects when loading middleware\
+  \ in ASGI context\nDescription\n\t\nI experienced strange issues when working with\
+  \ \u200BASGI , \u200Bdjango-debug-toolbar and my own small middleware. It was hard\
+  \ problem to debug, I uploaded an example project here: \u200Bhttps://github.com/hbielenia/asgi-djangotoolbar-bug\
+  \ (the name is misleading - I initially thought it's a bug with django-debug-toolbar).\n\
+  The SESSION_FILE_PATH setting is intentionally broken to cause a 500 error. When\
+  \ starting the application and accessing /admin (any location really, but I wanted\
+  \ to leave it at a minimum and didn't add any views) it gives TypeError: object\
+  \ HttpResponse can't be used in 'await' expression. Commenting out asgi_djangotoolbar_bug.middleware.DummyMiddleware\
+  \ fixes the issue (in that I receive a 500 ImproperlyConfigured exception). I'm\
+  \ not sure about the overall role of django-debug-toolbar here - removing it causes\
+  \ Daphne to return a 500 error page but without debug information and there's no\
+  \ traceback in console either. I decided to leave it since it helped me approximate\
+  \ the causes of issue.\nI notice that in \u200Bhttps://github.com/django/django/blob/3.1.4/django/core/handlers/base.py#L58\
+  \ while MiddlewareNotUsed causes the loop to skip futher processing and go to next\
+  \ middleware, it does leave handler variable overwritten with output of self.adapt_method_mode().\
+  \ On next pass, this handler is passed to next middleware instance, disregarding\
+  \ all the previous checks for (lack of) as\u2026\n"
+primary_file: base.py
+test_command: pytest -q test_async_and_sync_middleware_chain_async_call (middleware_exceptions.tests.MiddlewareNotUsedTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-13810
+swe_bench_repo: django/django
+swe_bench_base_commit: 429d089d0a8fbd400e0c010708df4f0d16218970
+swe_bench_modified_path: django/core/handlers/base.py

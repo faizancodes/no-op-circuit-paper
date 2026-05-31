@@ -1,0 +1,47 @@
+F.FF                                                                     [100%]
+=================================== FAILURES ===================================
+___________________ test_duplicate_creates_separate_schedule ___________________
+
+    def test_duplicate_creates_separate_schedule():
+        original = [["meeting"], ["lunch"], ["gym"]]
+        copy = duplicate_schedule(original)
+        add_event(copy, 0, "dinner")
+>       assert original[0] == ["meeting"]
+E       AssertionError: assert ['meeting', 'dinner'] == ['meeting']
+E         
+E         Left contains one more item: 'dinner'
+E         Use -v to get more diff
+
+test_schedule.py:7: AssertionError
+_______________________ test_empty_schedule_duplication ________________________
+
+    def test_empty_schedule_duplication():
+        original = [[], [], []]
+        copy = duplicate_schedule(original)
+        add_event(copy, 1, "new_event")
+>       assert original[1] == []
+E       AssertionError: assert ['new_event'] == []
+E         
+E         Left contains one more item: 'new_event'
+E         Use -v to get more diff
+
+test_schedule.py:19: AssertionError
+_________________________ test_multiple_modifications __________________________
+
+    def test_multiple_modifications():
+        original = [["a"], ["b"], ["c"]]
+        copy = duplicate_schedule(original)
+        add_event(copy, 0, "x")
+        add_event(copy, 2, "y")
+>       assert original == [["a"], ["b"], ["c"]]
+E       AssertionError: assert [['a', 'x'], ...], ['c', 'y']] == [['a'], ['b'], ['c']]
+E         
+E         At index 0 diff: ['a', 'x'] != ['a']
+E         Use -v to get more diff
+
+test_schedule.py:27: AssertionError
+=========================== short test summary info ============================
+FAILED test_schedule.py::test_duplicate_creates_separate_schedule - Assertion...
+FAILED test_schedule.py::test_empty_schedule_duplication - AssertionError: as...
+FAILED test_schedule.py::test_multiple_modifications - AssertionError: assert...
+3 failed, 1 passed in 0.01s

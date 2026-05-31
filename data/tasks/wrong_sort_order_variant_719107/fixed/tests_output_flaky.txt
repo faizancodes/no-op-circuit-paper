@@ -1,0 +1,17 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_disk_quota ________________________________
+
+test_disk_quota.py:12: in test_disk_quota
+    with open(temp_file, 'w') as f:
+OSError: [Errno 28] No space left on device: '/tmp/pytest-of-runner/pytest-12345/test_disk_quota0/tmpfile.dat'
+
+During handling of the above exception, another exception occurred:
+
+test_disk_quota.py:18: in cleanup
+    os.remove(temp_file)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-runner/pytest-12345/test_disk_quota0/tmpfile.dat'
+=========================== short test summary info ============================
+FAILED test_disk_quota.py::test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 1 failed, 4 passed in 0.12s ==========================

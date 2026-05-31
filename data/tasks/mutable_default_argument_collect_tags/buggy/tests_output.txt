@@ -1,0 +1,34 @@
+.F.F                                                                     [100%]
+=================================== FAILURES ===================================
+____________________________ test_independent_calls ____________________________
+
+    def test_independent_calls():
+        first = collect_tags('python')
+        second = collect_tags('rust')
+>       assert second == ['rust'], f"Expected ['rust'], got {second}"
+E       AssertionError: Expected ['rust'], got ['python', 'python', 'rust']
+E       assert ['python', 'python', 'rust'] == ['rust']
+E         
+E         At index 0 diff: 'python' != 'rust'
+E         Left contains 2 more items, first extra item: 'python'
+E         Use -v to get more diff
+
+test_tags.py:10: AssertionError
+_______________________ test_multiple_independent_calls ________________________
+
+    def test_multiple_independent_calls():
+        result1 = collect_tags('go')
+        result2 = collect_tags('swift')
+        result3 = collect_tags('ruby')
+>       assert result1 == ['go']
+E       AssertionError: assert ['python', 'p...wift', 'ruby'] == ['go']
+E         
+E         At index 0 diff: 'python' != 'go'
+E         Left contains 5 more items, first extra item: 'python'
+E         Use -v to get more diff
+
+test_tags.py:21: AssertionError
+=========================== short test summary info ============================
+FAILED test_tags.py::test_independent_calls - AssertionError: Expected ['rust...
+FAILED test_tags.py::test_multiple_independent_calls - AssertionError: assert...
+2 failed, 2 passed in 0.01s

@@ -1,0 +1,23 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_disk_quota ________________________________
+
+test_infrastructure/test_ci_resources.py:47: in test_disk_quota
+    assert os.path.getsize(temp_file) > 0
+E   OSError: [Errno 28] No space left on device: '/tmp/pytest-of-runner/pytest-12/test_disk_quota0/temp_data.bin'
+E   
+E   During handling of the above exception, another exception occurred:
+E   
+E   temp_file = '/tmp/pytest-of-runner/pytest-12/test_disk_quota0/temp_data.bin'
+E   
+E       def test_disk_quota():
+ E          temp_file = os.path.join(tempfile.gettempdir(), 'temp_data.bin')
+ E          with open(temp_file, 'wb') as f:
+ E              f.write(b'x' * 1024)
+ E   >       assert os.path.getsize(temp_file) > 0
+E   
+E   test_infrastructure/test_ci_resources.py:51: OSError
+=========================== short test summary info ============================
+FAILED test_infrastructure/test_ci_resources.py::test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 1 failed, 5 passed in 0.12s ==========================

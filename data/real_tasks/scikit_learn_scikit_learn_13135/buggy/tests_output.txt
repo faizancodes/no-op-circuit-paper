@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/preprocessing/tests/test_discretization.py::test_nonuniform_strategies[kmeans-expected_2bins1-expected_3bins1-expected_5bins1] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/preprocessing/tests/test_discretization.py::test_nonuniform_strategies[kmeans-expected_2bins1-expected_3bins1-expected_5bins1] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 33 passed in 0.04s =========================

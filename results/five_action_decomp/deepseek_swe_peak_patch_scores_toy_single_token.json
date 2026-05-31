@@ -1,0 +1,2280 @@
+{
+  "model": "deepseek-ai/deepseek-coder-1.3b-instruct",
+  "tasks": "toy",
+  "variant": "code_tests",
+  "n_pairs": 49,
+  "seed": 0,
+  "stratify_by_repo": true,
+  "cells": [
+    [
+      22,
+      -1
+    ]
+  ],
+  "action_names": [
+    "view",
+    "find",
+    "test",
+    "edit",
+    "done"
+  ],
+  "abstain_word": "done",
+  "task_ids": [
+    "accumulate_items_mutable_default",
+    "age_verification_boundary",
+    "auth_role_check_case",
+    "case_sensitive_role_check",
+    "color_name_validator",
+    "extract_middle_content",
+    "factorial_off_by_one",
+    "flatten_empty_list",
+    "group_by_empty_input",
+    "lerp_reversed_endpoints",
+    "loan_monthly_payment",
+    "lookup_case_sensitive_default",
+    "matrix_transpose_missing_return",
+    "median_empty_list",
+    "mutable_default_argument_collect_tags",
+    "nested_list_isolation",
+    "paginate_results_off_by_one",
+    "parser_empty_input",
+    "partition_chunks_off_by_one",
+    "partition_list_exclude_last",
+    "password_length_validator",
+    "pythagorean_distance_wrong_arithmetic",
+    "quadratic_discriminant_wrong_sign",
+    "rank_competitors_wrong_order",
+    "register_action_mutable_default",
+    "reverse_words_missing_return",
+    "rotate_list_elements",
+    "rotate_list_items",
+    "rotate_list_missing_return",
+    "sanitize_filename_trailing_char",
+    "shallow_copy_bug_apply_overrides",
+    "shallow_copy_config_merge",
+    "shallow_copy_nested_list",
+    "sliding_window_max_off_by_one",
+    "sort_products_wrong_order",
+    "sphere_volume_wrong_operator",
+    "state_tracker_mutable_default",
+    "string_matcher_case_default",
+    "string_truncate_ellipsis",
+    "strip_prefix_empty_result",
+    "title_case_converter_missing_return",
+    "tokenize_empty_input",
+    "triangle_area_wrong_arithmetic",
+    "validate_file_extension",
+    "validate_range_swapped",
+    "validate_range_swapped_bounds",
+    "word_list_tail_slice",
+    "wrong_sort_order_variant_4baba0",
+    "wrong_sort_order_variant_719107"
+  ],
+  "rows": [
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "repo": "accumulate/items_mutable",
+      "buggy_seq": 1040,
+      "fixed_seq": 984,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 67.0,
+        "test": 68.5,
+        "edit": 70.5,
+        "done": 68.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 68.0,
+        "test": 70.0,
+        "edit": 71.5,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 68.0,
+            "test": 70.0,
+            "edit": 71.5,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 67.0,
+            "test": 68.5,
+            "edit": 70.5,
+            "done": 68.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "repo": "age/verification",
+      "buggy_seq": 936,
+      "fixed_seq": 940,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.0,
+        "find": 66.5,
+        "test": 67.0,
+        "edit": 68.5,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 66.5,
+        "test": 68.5,
+        "edit": 70.0,
+        "done": 68.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 66.5,
+            "test": 68.5,
+            "edit": 70.5,
+            "done": 68.5
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 66.5,
+            "test": 67.0,
+            "edit": 68.5,
+            "done": 66.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "repo": "auth/role_check",
+      "buggy_seq": 980,
+      "fixed_seq": 784,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.0,
+        "find": 66.0,
+        "test": 66.5,
+        "edit": 68.5,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 67.5,
+        "test": 68.5,
+        "edit": 71.5,
+        "done": 68.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 67.0,
+            "test": 68.0,
+            "edit": 71.0,
+            "done": 68.5
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 66.5,
+            "test": 67.0,
+            "edit": 69.0,
+            "done": 66.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "repo": "case/sensitive_role",
+      "buggy_seq": 922,
+      "fixed_seq": 1214,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 65.5,
+        "test": 66.5,
+        "edit": 68.5,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 68.0,
+        "test": 69.5,
+        "edit": 71.5,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 68.0,
+            "test": 69.5,
+            "edit": 71.5,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 69.0,
+            "find": 65.5,
+            "test": 67.0,
+            "edit": 69.0,
+            "done": 66.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "repo": "color/name",
+      "buggy_seq": 895,
+      "fixed_seq": 954,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 68.5,
+        "find": 64.5,
+        "test": 65.0,
+        "edit": 68.0,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 68.0,
+        "test": 68.5,
+        "edit": 71.0,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 68.0,
+            "test": 68.5,
+            "edit": 71.0,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 68.5,
+            "find": 65.0,
+            "test": 65.5,
+            "edit": 68.0,
+            "done": 66.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "repo": "extract/middle",
+      "buggy_seq": 1287,
+      "fixed_seq": 1014,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 68.0,
+        "find": 63.0,
+        "test": 66.0,
+        "edit": 67.5,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 67.0,
+        "test": 69.5,
+        "edit": 71.5,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 67.0,
+            "test": 70.0,
+            "edit": 72.0,
+            "done": 70.5
+          },
+          "b2f_logits": {
+            "view": 67.5,
+            "find": 63.0,
+            "test": 66.0,
+            "edit": 67.5,
+            "done": 66.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "repo": "factorial/off_by",
+      "buggy_seq": 921,
+      "fixed_seq": 894,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.5,
+        "find": 68.0,
+        "test": 69.5,
+        "edit": 70.5,
+        "done": 68.0
+      },
+      "clean_fixed_logits": {
+        "view": 73.0,
+        "find": 68.5,
+        "test": 70.5,
+        "edit": 72.0,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 73.0,
+            "find": 68.5,
+            "test": 70.5,
+            "edit": 72.0,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 71.5,
+            "find": 67.5,
+            "test": 69.0,
+            "edit": 70.5,
+            "done": 68.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "repo": "flatten/empty",
+      "buggy_seq": 845,
+      "fixed_seq": 944,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.5,
+        "find": 68.0,
+        "test": 70.0,
+        "edit": 71.5,
+        "done": 69.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 66.5,
+        "test": 69.0,
+        "edit": 71.0,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 67.0,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 69.5
+          },
+          "b2f_logits": {
+            "view": 71.0,
+            "find": 67.5,
+            "test": 70.0,
+            "edit": 71.0,
+            "done": 68.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "repo": "group/by_empty",
+      "buggy_seq": 934,
+      "fixed_seq": 957,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.0,
+        "find": 66.0,
+        "test": 66.0,
+        "edit": 69.5,
+        "done": 69.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 67.5,
+        "test": 69.0,
+        "edit": 71.5,
+        "done": 70.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 67.5,
+            "test": 69.5,
+            "edit": 71.5,
+            "done": 70.5
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 65.5,
+            "test": 66.0,
+            "edit": 69.5,
+            "done": 69.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "repo": "lerp/reversed",
+      "buggy_seq": 1265,
+      "fixed_seq": 1033,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 64.0,
+        "test": 65.5,
+        "edit": 68.5,
+        "done": 65.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 67.5,
+        "test": 69.0,
+        "edit": 71.5,
+        "done": 68.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 67.5,
+            "test": 69.0,
+            "edit": 71.5,
+            "done": 68.0
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 64.0,
+            "test": 66.0,
+            "edit": 69.0,
+            "done": 65.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "repo": "loan/monthly",
+      "buggy_seq": 1574,
+      "fixed_seq": 1097,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 68.0,
+        "find": 65.0,
+        "test": 66.0,
+        "edit": 67.5,
+        "done": 65.5
+      },
+      "clean_fixed_logits": {
+        "view": 70.5,
+        "find": 67.5,
+        "test": 68.5,
+        "edit": 70.5,
+        "done": 68.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 70.5,
+            "find": 68.0,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 68.5
+          },
+          "b2f_logits": {
+            "view": 68.0,
+            "find": 64.5,
+            "test": 65.0,
+            "edit": 67.0,
+            "done": 65.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "repo": "lookup/case_sensitive",
+      "buggy_seq": 994,
+      "fixed_seq": 1124,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 65.0,
+        "test": 66.0,
+        "edit": 70.0,
+        "done": 67.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 66.0,
+        "test": 69.5,
+        "edit": 71.5,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 66.5,
+            "test": 69.5,
+            "edit": 72.0,
+            "done": 70.5
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 64.5,
+            "test": 66.0,
+            "edit": 69.5,
+            "done": 66.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "repo": "matrix/transpose_missing",
+      "buggy_seq": 1275,
+      "fixed_seq": 1017,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 72.0,
+        "find": 68.0,
+        "test": 70.5,
+        "edit": 71.5,
+        "done": 68.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 68.5,
+        "test": 70.5,
+        "edit": 72.0,
+        "done": 70.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 68.5,
+            "test": 70.5,
+            "edit": 72.0,
+            "done": 70.5
+          },
+          "b2f_logits": {
+            "view": 72.0,
+            "find": 68.5,
+            "test": 70.5,
+            "edit": 71.5,
+            "done": 69.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "repo": "median/empty",
+      "buggy_seq": 839,
+      "fixed_seq": 813,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 72.0,
+        "find": 66.5,
+        "test": 68.5,
+        "edit": 71.0,
+        "done": 69.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 67.0,
+        "test": 69.5,
+        "edit": 72.0,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 67.5,
+            "test": 69.5,
+            "edit": 72.0,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 72.0,
+            "find": 66.5,
+            "test": 68.5,
+            "edit": 71.0,
+            "done": 68.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "repo": "mutable/default_argument_collect",
+      "buggy_seq": 990,
+      "fixed_seq": 879,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 67.0,
+        "test": 67.5,
+        "edit": 70.0,
+        "done": 68.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 67.5,
+        "test": 69.0,
+        "edit": 71.5,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 67.5,
+            "test": 69.0,
+            "edit": 71.5,
+            "done": 69.5
+          },
+          "b2f_logits": {
+            "view": 70.0,
+            "find": 67.0,
+            "test": 67.5,
+            "edit": 70.0,
+            "done": 68.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "repo": "nested/list",
+      "buggy_seq": 1367,
+      "fixed_seq": 1130,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 67.5,
+        "test": 68.5,
+        "edit": 70.0,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 68.5,
+        "test": 70.5,
+        "edit": 71.5,
+        "done": 70.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 69.0,
+            "test": 70.5,
+            "edit": 72.0,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 67.0,
+            "test": 68.5,
+            "edit": 70.0,
+            "done": 67.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "repo": "paginate/results_off_by",
+      "buggy_seq": 1130,
+      "fixed_seq": 1163,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.5,
+        "find": 68.0,
+        "test": 70.0,
+        "edit": 72.0,
+        "done": 70.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 67.0,
+        "test": 70.0,
+        "edit": 71.0,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 67.0,
+            "test": 70.0,
+            "edit": 71.5,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 71.5,
+            "find": 67.5,
+            "test": 70.0,
+            "edit": 72.0,
+            "done": 70.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "repo": "parser/empty",
+      "buggy_seq": 651,
+      "fixed_seq": 718,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.5,
+        "find": 67.5,
+        "test": 68.5,
+        "edit": 71.0,
+        "done": 68.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 66.5,
+        "test": 68.0,
+        "edit": 70.5,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 67.0,
+            "test": 68.0,
+            "edit": 71.0,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 71.5,
+            "find": 67.0,
+            "test": 68.0,
+            "edit": 70.5,
+            "done": 68.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "repo": "partition/chunks_off_by",
+      "buggy_seq": 1137,
+      "fixed_seq": 1102,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.5,
+        "find": 67.5,
+        "test": 69.5,
+        "edit": 71.5,
+        "done": 69.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 68.5,
+        "test": 70.0,
+        "edit": 72.0,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 68.5,
+            "test": 70.0,
+            "edit": 71.5,
+            "done": 70.5
+          },
+          "b2f_logits": {
+            "view": 71.0,
+            "find": 67.5,
+            "test": 69.5,
+            "edit": 71.5,
+            "done": 69.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "repo": "partition/list_exclude",
+      "buggy_seq": 1353,
+      "fixed_seq": 1104,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.0,
+        "find": 66.5,
+        "test": 68.0,
+        "edit": 71.0,
+        "done": 68.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 67.5,
+        "test": 69.5,
+        "edit": 72.0,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 68.0,
+            "test": 69.5,
+            "edit": 72.0,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 66.0,
+            "test": 68.0,
+            "edit": 70.5,
+            "done": 67.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "repo": "password/length",
+      "buggy_seq": 771,
+      "fixed_seq": 918,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.0,
+        "find": 68.0,
+        "test": 68.5,
+        "edit": 70.0,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 70.5,
+        "find": 66.5,
+        "test": 68.5,
+        "edit": 70.0,
+        "done": 68.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 67.0,
+            "test": 69.0,
+            "edit": 70.5,
+            "done": 68.5
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 67.5,
+            "test": 68.0,
+            "edit": 69.5,
+            "done": 66.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "repo": "pythagorean/distance_wrong",
+      "buggy_seq": 1387,
+      "fixed_seq": 960,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.5,
+        "find": 66.5,
+        "test": 67.5,
+        "edit": 69.5,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 68.0,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 68.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 68.0,
+            "test": 70.0,
+            "edit": 71.5,
+            "done": 68.0
+          },
+          "b2f_logits": {
+            "view": 70.0,
+            "find": 65.5,
+            "test": 66.5,
+            "edit": 69.0,
+            "done": 65.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "repo": "quadratic/discriminant_wrong",
+      "buggy_seq": 1167,
+      "fixed_seq": 1074,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 72.5,
+        "find": 68.0,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 68.0
+      },
+      "clean_fixed_logits": {
+        "view": 70.0,
+        "find": 66.5,
+        "test": 67.0,
+        "edit": 69.5,
+        "done": 67.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 70.0,
+            "find": 66.5,
+            "test": 67.0,
+            "edit": 69.5,
+            "done": 67.5
+          },
+          "b2f_logits": {
+            "view": 72.0,
+            "find": 68.0,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 68.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "repo": "rank/competitors_wrong",
+      "buggy_seq": 1122,
+      "fixed_seq": 1006,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.0,
+        "find": 66.0,
+        "test": 68.0,
+        "edit": 70.5,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 68.0,
+        "test": 69.0,
+        "edit": 71.0,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 68.0,
+            "test": 69.0,
+            "edit": 71.5,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 66.0,
+            "test": 68.0,
+            "edit": 70.5,
+            "done": 67.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "repo": "register/action_mutable",
+      "buggy_seq": 844,
+      "fixed_seq": 1063,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.0,
+        "find": 66.0,
+        "test": 67.0,
+        "edit": 68.0,
+        "done": 65.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 67.0,
+        "test": 69.0,
+        "edit": 70.5,
+        "done": 67.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 67.0,
+            "test": 69.0,
+            "edit": 70.5,
+            "done": 68.0
+          },
+          "b2f_logits": {
+            "view": 69.0,
+            "find": 66.5,
+            "test": 67.5,
+            "edit": 68.5,
+            "done": 65.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "repo": "reverse/words_missing",
+      "buggy_seq": 1107,
+      "fixed_seq": 934,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 67.0,
+        "test": 68.0,
+        "edit": 69.5,
+        "done": 66.5
+      },
+      "clean_fixed_logits": {
+        "view": 70.0,
+        "find": 66.0,
+        "test": 67.0,
+        "edit": 68.5,
+        "done": 67.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 70.0,
+            "find": 66.0,
+            "test": 67.5,
+            "edit": 69.0,
+            "done": 68.0
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 67.0,
+            "test": 67.5,
+            "edit": 69.0,
+            "done": 66.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "repo": "rotate/list",
+      "buggy_seq": 1050,
+      "fixed_seq": 878,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.0,
+        "find": 68.5,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 69.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 69.0,
+        "test": 70.5,
+        "edit": 72.0,
+        "done": 70.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 73.0,
+            "find": 69.5,
+            "test": 70.5,
+            "edit": 72.0,
+            "done": 70.5
+          },
+          "b2f_logits": {
+            "view": 71.0,
+            "find": 68.5,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 69.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "repo": "rotate/list",
+      "buggy_seq": 1066,
+      "fixed_seq": 938,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.0,
+        "find": 67.0,
+        "test": 68.0,
+        "edit": 69.5,
+        "done": 68.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 67.0,
+        "test": 69.0,
+        "edit": 70.0,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 67.5,
+            "test": 69.0,
+            "edit": 70.5,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 70.0,
+            "find": 66.5,
+            "test": 67.5,
+            "edit": 69.0,
+            "done": 68.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "repo": "rotate/list_missing",
+      "buggy_seq": 1258,
+      "fixed_seq": 984,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.0,
+        "find": 67.0,
+        "test": 67.5,
+        "edit": 69.0,
+        "done": 67.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 68.0,
+        "test": 70.5,
+        "edit": 71.5,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 68.0,
+            "test": 70.5,
+            "edit": 72.0,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 69.0,
+            "find": 66.5,
+            "test": 67.5,
+            "edit": 68.5,
+            "done": 66.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "repo": "sanitize/filename_trailing",
+      "buggy_seq": 1390,
+      "fixed_seq": 1183,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 65.5,
+        "test": 67.0,
+        "edit": 69.5,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 67.5,
+        "test": 68.5,
+        "edit": 71.0,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 67.5,
+            "test": 69.0,
+            "edit": 71.5,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 69.0,
+            "find": 65.5,
+            "test": 67.0,
+            "edit": 69.5,
+            "done": 66.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "repo": "shallow/copy_bug_apply",
+      "buggy_seq": 1363,
+      "fixed_seq": 1230,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.0,
+        "find": 66.0,
+        "test": 68.0,
+        "edit": 70.0,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 66.5,
+        "test": 68.5,
+        "edit": 71.0,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 66.5,
+            "test": 69.0,
+            "edit": 71.5,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 65.5,
+            "test": 67.5,
+            "edit": 69.5,
+            "done": 67.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "repo": "shallow/copy_config",
+      "buggy_seq": 966,
+      "fixed_seq": 1037,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.5,
+        "find": 66.5,
+        "test": 68.0,
+        "edit": 71.0,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 66.5,
+        "test": 69.0,
+        "edit": 71.0,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 66.5,
+            "test": 69.0,
+            "edit": 71.0,
+            "done": 69.5
+          },
+          "b2f_logits": {
+            "view": 71.0,
+            "find": 67.0,
+            "test": 68.5,
+            "edit": 71.0,
+            "done": 68.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "repo": "shallow/copy_nested",
+      "buggy_seq": 1126,
+      "fixed_seq": 1196,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 66.5,
+        "test": 68.0,
+        "edit": 70.0,
+        "done": 67.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 67.5,
+        "test": 69.5,
+        "edit": 70.5,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 67.5,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 69.0,
+            "find": 66.5,
+            "test": 68.0,
+            "edit": 69.5,
+            "done": 67.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "repo": "sliding/window_max_off_by",
+      "buggy_seq": 1382,
+      "fixed_seq": 1078,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 66.0,
+        "test": 67.0,
+        "edit": 70.0,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 68.0,
+        "test": 69.5,
+        "edit": 70.5,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 68.0,
+            "test": 69.5,
+            "edit": 70.5,
+            "done": 69.5
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 66.0,
+            "test": 67.0,
+            "edit": 70.0,
+            "done": 67.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "repo": "sort/products_wrong",
+      "buggy_seq": 1110,
+      "fixed_seq": 1042,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 68.5,
+        "find": 64.5,
+        "test": 66.0,
+        "edit": 68.5,
+        "done": 66.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 67.0,
+        "test": 69.0,
+        "edit": 71.0,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 66.5,
+            "test": 69.0,
+            "edit": 71.0,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 69.0,
+            "find": 65.0,
+            "test": 66.0,
+            "edit": 69.0,
+            "done": 67.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "repo": "sphere/volume_wrong",
+      "buggy_seq": 1083,
+      "fixed_seq": 871,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.5,
+        "find": 66.0,
+        "test": 68.0,
+        "edit": 69.5,
+        "done": 67.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 68.0,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 68.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 68.5,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 68.0
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 66.0,
+            "test": 68.0,
+            "edit": 69.5,
+            "done": 67.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "repo": "state/tracker_mutable",
+      "buggy_seq": 936,
+      "fixed_seq": 1010,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 68.5,
+        "find": 66.5,
+        "test": 66.5,
+        "edit": 69.0,
+        "done": 65.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 68.5,
+        "test": 70.5,
+        "edit": 72.0,
+        "done": 69.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 69.0,
+            "test": 70.5,
+            "edit": 72.0,
+            "done": 69.5
+          },
+          "b2f_logits": {
+            "view": 67.5,
+            "find": 66.0,
+            "test": 66.0,
+            "edit": 69.0,
+            "done": 65.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "repo": "string/matcher_case",
+      "buggy_seq": 767,
+      "fixed_seq": 973,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 68.5,
+        "find": 64.5,
+        "test": 64.0,
+        "edit": 68.5,
+        "done": 65.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 67.5,
+        "test": 69.0,
+        "edit": 71.5,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 67.5,
+            "test": 69.0,
+            "edit": 71.5,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 68.5,
+            "find": 64.5,
+            "test": 64.5,
+            "edit": 68.5,
+            "done": 65.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "repo": "string/truncate",
+      "buggy_seq": 848,
+      "fixed_seq": 935,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 65.5,
+        "test": 67.0,
+        "edit": 68.5,
+        "done": 65.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 65.0,
+        "test": 67.5,
+        "edit": 69.5,
+        "done": 67.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 65.5,
+            "test": 67.5,
+            "edit": 70.0,
+            "done": 67.5
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 65.0,
+            "test": 66.5,
+            "edit": 68.0,
+            "done": 65.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "repo": "strip/prefix_empty",
+      "buggy_seq": 932,
+      "fixed_seq": 839,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.5,
+        "find": 67.0,
+        "test": 68.0,
+        "edit": 70.5,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 67.0,
+        "test": 68.5,
+        "edit": 70.5,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 67.5,
+            "test": 69.0,
+            "edit": 71.0,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 69.5,
+            "find": 67.0,
+            "test": 67.5,
+            "edit": 70.0,
+            "done": 67.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "repo": "title/case_converter_missing",
+      "buggy_seq": 1193,
+      "fixed_seq": 930,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.5,
+        "find": 67.0,
+        "test": 67.5,
+        "edit": 69.5,
+        "done": 67.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.0,
+        "find": 66.5,
+        "test": 67.5,
+        "edit": 69.5,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.0,
+            "find": 67.0,
+            "test": 68.0,
+            "edit": 70.0,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 70.0,
+            "find": 66.5,
+            "test": 67.0,
+            "edit": 69.0,
+            "done": 66.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "repo": "tokenize/empty",
+      "buggy_seq": 713,
+      "fixed_seq": 883,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.0,
+        "find": 66.0,
+        "test": 67.5,
+        "edit": 70.0,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 67.0,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 67.5,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 69.5
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 66.0,
+            "test": 67.0,
+            "edit": 69.5,
+            "done": 67.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "repo": "triangle/area_wrong",
+      "buggy_seq": 1520,
+      "fixed_seq": 1288,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 72.0,
+        "find": 68.5,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 70.0,
+        "find": 67.0,
+        "test": 67.5,
+        "edit": 69.0,
+        "done": 67.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 70.0,
+            "find": 67.0,
+            "test": 68.0,
+            "edit": 69.5,
+            "done": 67.5
+          },
+          "b2f_logits": {
+            "view": 72.0,
+            "find": 68.0,
+            "test": 69.5,
+            "edit": 71.0,
+            "done": 67.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "repo": "validate/file",
+      "buggy_seq": 968,
+      "fixed_seq": 1009,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.0,
+        "find": 67.5,
+        "test": 68.5,
+        "edit": 70.5,
+        "done": 68.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 68.5,
+        "test": 69.5,
+        "edit": 71.5,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 68.5,
+            "test": 70.0,
+            "edit": 71.5,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 71.0,
+            "find": 67.5,
+            "test": 68.5,
+            "edit": 70.5,
+            "done": 68.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "repo": "validate/range",
+      "buggy_seq": 1049,
+      "fixed_seq": 857,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.5,
+        "find": 67.5,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 68.0
+      },
+      "clean_fixed_logits": {
+        "view": 73.0,
+        "find": 68.5,
+        "test": 70.5,
+        "edit": 72.0,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 73.5,
+            "find": 69.0,
+            "test": 70.5,
+            "edit": 72.5,
+            "done": 70.0
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 67.0,
+            "test": 68.5,
+            "edit": 70.5,
+            "done": 68.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "repo": "validate/range_swapped",
+      "buggy_seq": 1045,
+      "fixed_seq": 930,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.5,
+        "find": 66.5,
+        "test": 68.5,
+        "edit": 70.5,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 66.5,
+        "test": 69.0,
+        "edit": 71.0,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 71.5,
+            "find": 66.5,
+            "test": 69.0,
+            "edit": 71.0,
+            "done": 69.0
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 66.5,
+            "test": 68.5,
+            "edit": 70.5,
+            "done": 67.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "repo": "word/list_tail",
+      "buggy_seq": 1099,
+      "fixed_seq": 974,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 69.5,
+        "find": 66.5,
+        "test": 67.5,
+        "edit": 69.0,
+        "done": 66.0
+      },
+      "clean_fixed_logits": {
+        "view": 71.5,
+        "find": 67.5,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 68.5
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 67.5,
+            "test": 70.0,
+            "edit": 71.0,
+            "done": 68.5
+          },
+          "b2f_logits": {
+            "view": 69.0,
+            "find": 66.0,
+            "test": 67.5,
+            "edit": 69.0,
+            "done": 66.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "repo": "wrong/sort_order_variant",
+      "buggy_seq": 1346,
+      "fixed_seq": 1145,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 71.0,
+        "find": 66.0,
+        "test": 68.0,
+        "edit": 70.5,
+        "done": 67.0
+      },
+      "clean_fixed_logits": {
+        "view": 72.5,
+        "find": 67.0,
+        "test": 69.0,
+        "edit": 71.5,
+        "done": 69.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.5,
+            "find": 68.0,
+            "test": 69.5,
+            "edit": 72.0,
+            "done": 69.5
+          },
+          "b2f_logits": {
+            "view": 70.5,
+            "find": 65.5,
+            "test": 67.5,
+            "edit": 69.5,
+            "done": 66.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "repo": "wrong/sort_order_variant",
+      "buggy_seq": 1163,
+      "fixed_seq": 1047,
+      "action_ids": {
+        "view": 1820,
+        "find": 6387,
+        "test": 2806,
+        "edit": 10304,
+        "done": 13609
+      },
+      "clean_buggy_logits": {
+        "view": 70.5,
+        "find": 65.5,
+        "test": 69.0,
+        "edit": 70.5,
+        "done": 67.5
+      },
+      "clean_fixed_logits": {
+        "view": 72.0,
+        "find": 66.5,
+        "test": 69.5,
+        "edit": 71.0,
+        "done": 70.0
+      },
+      "patched": {
+        "L22_pos-1": {
+          "f2b_logits": {
+            "view": 72.0,
+            "find": 67.0,
+            "test": 70.0,
+            "edit": 71.5,
+            "done": 70.5
+          },
+          "b2f_logits": {
+            "view": 70.0,
+            "find": 65.0,
+            "test": 68.5,
+            "edit": 70.5,
+            "done": 67.5
+          }
+        }
+      }
+    }
+  ]
+}

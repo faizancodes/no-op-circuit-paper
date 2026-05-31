@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_annotate_with_full_when (expressions_case.tests.CaseExpressionTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_annotate_with_full_when (expressions_case.tests.CaseExpressionTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 88 passed in 0.04s =========================

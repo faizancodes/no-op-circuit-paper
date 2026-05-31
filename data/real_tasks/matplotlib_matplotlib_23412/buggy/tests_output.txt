@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_patches.py::test_dash_offset_patch_draw[png] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_patches.py::test_dash_offset_patch_draw[png] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 46 passed in 0.04s =========================

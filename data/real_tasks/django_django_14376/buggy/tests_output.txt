@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_options_non_deprecated_keys_preferred (dbshell.test_mysql.MySqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+FAILED test_options_override_settings_proper_values (dbshell.test_mysql.MySqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+FAILED test_parameters (dbshell.test_mysql.MySqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_options_non_deprecated_keys_preferred (dbshell.test_mysql.MySqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+FAILED test_options_override_settings_proper_values (dbshell.test_mysql.MySqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+FAILED test_parameters (dbshell.test_mysql.MySqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 6 passed in 0.04s =========================

@@ -1,0 +1,40 @@
+..FFF                                                                    [100%]
+=================================== FAILURES ===================================
+______________________________ test_two_elements _______________________________
+
+    def test_two_elements():
+>       assert rotate_left([1, 2]) == [2, 1]
+E       assert [1] == [2, 1]
+E         
+E         At index 0 diff: 1 != 2
+E         Right contains one more item: 1
+E         Use -v to get more diff
+
+test_rotator.py:10: AssertionError
+____________________________ test_multiple_elements ____________________________
+
+    def test_multiple_elements():
+>       assert rotate_left([1, 2, 3, 4]) == [2, 3, 4, 1]
+E       assert [2, 3, 1] == [2, 3, 4, 1]
+E         
+E         At index 2 diff: 1 != 4
+E         Right contains one more item: 1
+E         Use -v to get more diff
+
+test_rotator.py:13: AssertionError
+_________________________________ test_strings _________________________________
+
+    def test_strings():
+>       assert rotate_left(['a', 'b', 'c']) == ['b', 'c', 'a']
+E       AssertionError: assert ['b', 'a'] == ['b', 'c', 'a']
+E         
+E         At index 1 diff: 'a' != 'c'
+E         Right contains one more item: 'a'
+E         Use -v to get more diff
+
+test_rotator.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_rotator.py::test_two_elements - assert [1] == [2, 1]
+FAILED test_rotator.py::test_multiple_elements - assert [2, 3, 1] == [2, 3, 4...
+FAILED test_rotator.py::test_strings - AssertionError: assert ['b', 'a'] == [...
+3 failed, 2 passed in 0.01s

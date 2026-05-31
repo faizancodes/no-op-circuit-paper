@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED sklearn/metrics/tests/test_ranking.py::test_roc_curve_drop_intermediate - AssertionError: behaviour does not match expected output
+FAILED sklearn/metrics/tests/test_ranking.py::test_roc_curve_with_probablity_estimates[42] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/metrics/tests/test_ranking.py::test_roc_curve_drop_intermediate - AssertionError: behaviour does not match expected output
+FAILED sklearn/metrics/tests/test_ranking.py::test_roc_curve_with_probablity_estimates[42] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 186 passed in 0.04s =========================

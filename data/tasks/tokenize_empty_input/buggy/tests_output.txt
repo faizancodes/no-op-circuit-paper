@@ -1,0 +1,13 @@
+F...                                                                     [100%]
+=================================== FAILURES ===================================
+_____________________ test_empty_input_returns_empty_list ______________________
+
+    def test_empty_input_returns_empty_list():
+>       assert tokenize("") == []
+E       AssertionError: assert None == []
+E        +  where None = tokenize('')
+
+test_tokenizer.py:4: AssertionError
+=========================== short test summary info ============================
+FAILED test_tokenizer.py::test_empty_input_returns_empty_list - AssertionErro...
+1 failed, 3 passed in 0.01s

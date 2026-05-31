@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_requests.py::RequestsTestCase::test_DIGEST_AUTH_RETURNS_COOKIE - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_DIGEST_HTTP_200_OK_GET - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_different_encodings_dont_break_post - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_requests.py::RequestsTestCase::test_DIGEST_AUTH_RETURNS_COOKIE - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_DIGEST_HTTP_200_OK_GET - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_different_encodings_dont_break_post - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+========================= 6 failed, 79 passed in 0.04s =========================

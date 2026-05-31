@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED @method_decorator preserves wrapper assignments. - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED @method_decorator preserves wrapper assignments. - AssertionError: behaviour does not match expected output
+========================= 1 failed, 20 passed in 0.04s =========================

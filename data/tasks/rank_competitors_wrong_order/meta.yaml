@@ -1,0 +1,14 @@
+task_id: rank_competitors_wrong_order
+description: rank_competitors() sorts ascending instead of descending by score
+issue_text: 'The `rank_competitors()` function returns competitors in the wrong order.
+  According to the docstring, it should return competitors ranked from highest to
+  lowest score, but it''s returning them from lowest to highest. The test `test_highest_scorer_first()`
+  fails because the competitor with score 950 appears last instead of first.
+
+  '
+primary_file: ranking.py
+test_command: pytest -q test_ranking.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_sort_order

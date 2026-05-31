@@ -1,0 +1,16 @@
+task_id: title_case_converter_missing_return
+description: convert_to_title_case() returns None instead of the converted string
+issue_text: 'The function `convert_to_title_case()` is supposed to convert a string
+  to title case (first letter of each word capitalized, rest lowercase). However,
+  when I call it with any input, it returns `None` instead of the converted string.
+  For example, `convert_to_title_case("hello WORLD")` returns `None` when it should
+  return `"Hello World"`. The function seems to process the input correctly but doesn''t
+  give back the result.
+
+  '
+primary_file: titlecase.py
+test_command: pytest -q test_titlecase.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_return

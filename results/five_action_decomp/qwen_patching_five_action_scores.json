@@ -1,0 +1,3848 @@
+{
+  "model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "tasks": "toy",
+  "variant": "code_tests",
+  "n_pairs": 49,
+  "seed": 0,
+  "stratify_by_repo": true,
+  "cells": [
+    [
+      24,
+      -1
+    ],
+    [
+      12,
+      -1
+    ],
+    [
+      24,
+      -8
+    ]
+  ],
+  "task_ids": [
+    "accumulate_items_mutable_default",
+    "age_verification_boundary",
+    "auth_role_check_case",
+    "case_sensitive_role_check",
+    "color_name_validator",
+    "extract_middle_content",
+    "factorial_off_by_one",
+    "flatten_empty_list",
+    "group_by_empty_input",
+    "lerp_reversed_endpoints",
+    "loan_monthly_payment",
+    "lookup_case_sensitive_default",
+    "matrix_transpose_missing_return",
+    "median_empty_list",
+    "mutable_default_argument_collect_tags",
+    "nested_list_isolation",
+    "paginate_results_off_by_one",
+    "parser_empty_input",
+    "partition_chunks_off_by_one",
+    "partition_list_exclude_last",
+    "password_length_validator",
+    "pythagorean_distance_wrong_arithmetic",
+    "quadratic_discriminant_wrong_sign",
+    "rank_competitors_wrong_order",
+    "register_action_mutable_default",
+    "reverse_words_missing_return",
+    "rotate_list_elements",
+    "rotate_list_items",
+    "rotate_list_missing_return",
+    "sanitize_filename_trailing_char",
+    "shallow_copy_bug_apply_overrides",
+    "shallow_copy_config_merge",
+    "shallow_copy_nested_list",
+    "sliding_window_max_off_by_one",
+    "sort_products_wrong_order",
+    "sphere_volume_wrong_operator",
+    "state_tracker_mutable_default",
+    "string_matcher_case_default",
+    "string_truncate_ellipsis",
+    "strip_prefix_empty_result",
+    "title_case_converter_missing_return",
+    "tokenize_empty_input",
+    "triangle_area_wrong_arithmetic",
+    "validate_file_extension",
+    "validate_range_swapped",
+    "validate_range_swapped_bounds",
+    "word_list_tail_slice",
+    "wrong_sort_order_variant_4baba0",
+    "wrong_sort_order_variant_719107"
+  ],
+  "rows": [
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "repo": "accumulate/items_mutable",
+      "buggy_seq": 913,
+      "fixed_seq": 848,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.125,
+        "grep": 14.3125,
+        "test": 13.4375,
+        "edit": 13.8125,
+        "noop": 11.25
+      },
+      "clean_fixed_logits": {
+        "view": 13.1875,
+        "grep": 14.4375,
+        "test": 13.4375,
+        "edit": 13.625,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.4375,
+            "test": 13.5,
+            "edit": 13.6875,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.3125,
+            "test": 13.4375,
+            "edit": 13.75,
+            "noop": 11.125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.5,
+            "edit": 13.8125,
+            "noop": 11.25
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.5,
+            "test": 13.5625,
+            "edit": 13.625,
+            "noop": 11.0
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.375,
+            "test": 13.4375,
+            "edit": 13.8125,
+            "noop": 11.25
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.4375,
+            "test": 13.5,
+            "edit": 13.5625,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "repo": "age/verification",
+      "buggy_seq": 832,
+      "fixed_seq": 845,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.75,
+        "grep": 14.25,
+        "test": 12.875,
+        "edit": 14.0,
+        "noop": 10.875
+      },
+      "clean_fixed_logits": {
+        "view": 13.0,
+        "grep": 14.5,
+        "test": 13.3125,
+        "edit": 13.6875,
+        "noop": 11.0625
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.5,
+            "test": 13.25,
+            "edit": 13.6875,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 12.6875,
+            "grep": 14.25,
+            "test": 12.875,
+            "edit": 13.9375,
+            "noop": 10.6875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 14.1875,
+            "test": 12.9375,
+            "edit": 14.0,
+            "noop": 11.0
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.5625,
+            "test": 13.1875,
+            "edit": 13.6875,
+            "noop": 11.0
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.8125,
+            "grep": 14.25,
+            "test": 12.8125,
+            "edit": 14.0,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.5,
+            "test": 13.3125,
+            "edit": 13.625,
+            "noop": 11.0625
+          }
+        }
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "repo": "auth/role_check",
+      "buggy_seq": 842,
+      "fixed_seq": 672,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.875,
+        "grep": 14.625,
+        "test": 13.0625,
+        "edit": 14.0,
+        "noop": 10.5
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 14.3125,
+        "test": 13.0625,
+        "edit": 13.875,
+        "noop": 10.875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.3125,
+            "test": 13.0625,
+            "edit": 13.875,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.625,
+            "test": 13.125,
+            "edit": 14.0625,
+            "noop": 10.625
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.8125,
+            "grep": 14.5,
+            "test": 13.125,
+            "edit": 14.0625,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.4375,
+            "test": 13.0625,
+            "edit": 13.875,
+            "noop": 11.0
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.625,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 10.5
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.3125,
+            "test": 13.0625,
+            "edit": 13.9375,
+            "noop": 10.875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "repo": "case/sensitive_role",
+      "buggy_seq": 808,
+      "fixed_seq": 1055,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.625,
+        "grep": 14.3125,
+        "test": 12.8125,
+        "edit": 14.1875,
+        "noop": 10.6875
+      },
+      "clean_fixed_logits": {
+        "view": 12.875,
+        "grep": 14.1875,
+        "test": 13.125,
+        "edit": 14.125,
+        "noop": 10.9375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.375,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 12.5625,
+            "grep": 14.125,
+            "test": 12.8125,
+            "edit": 14.1875,
+            "noop": 10.375
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 14.25,
+            "test": 12.9375,
+            "edit": 14.25,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 14.25,
+            "test": 13.0,
+            "edit": 14.0625,
+            "noop": 11.0
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 14.25,
+            "test": 12.8125,
+            "edit": 14.25,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 14.1875,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 10.9375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "repo": "color/name",
+      "buggy_seq": 769,
+      "fixed_seq": 838,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.6875,
+        "grep": 14.0,
+        "test": 12.6875,
+        "edit": 14.375,
+        "noop": 11.125
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 14.375,
+        "test": 13.4375,
+        "edit": 14.0,
+        "noop": 11.375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.25,
+            "test": 13.375,
+            "edit": 14.0625,
+            "noop": 11.5625
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 14.0625,
+            "test": 12.8125,
+            "edit": 14.25,
+            "noop": 11.0
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 13.9375,
+            "test": 12.8125,
+            "edit": 14.375,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.25,
+            "edit": 13.9375,
+            "noop": 11.25
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 14.0,
+            "test": 12.6875,
+            "edit": 14.375,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.375,
+            "test": 13.5,
+            "edit": 14.0,
+            "noop": 11.4375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "repo": "extract/middle",
+      "buggy_seq": 1034,
+      "fixed_seq": 844,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.5625,
+        "grep": 14.375,
+        "test": 12.875,
+        "edit": 13.875,
+        "noop": 10.5625
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 14.3125,
+        "test": 13.375,
+        "edit": 13.75,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.375,
+            "test": 13.375,
+            "edit": 13.8125,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 12.625,
+            "grep": 14.375,
+            "test": 12.875,
+            "edit": 13.8125,
+            "noop": 10.4375
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.625,
+            "grep": 14.4375,
+            "test": 13.0625,
+            "edit": 13.9375,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 14.25,
+            "test": 13.1875,
+            "edit": 13.625,
+            "noop": 10.9375
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.5,
+            "grep": 14.375,
+            "test": 12.875,
+            "edit": 13.875,
+            "noop": 10.5625
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.3125,
+            "test": 13.375,
+            "edit": 13.8125,
+            "noop": 10.9375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "repo": "factorial/off_by",
+      "buggy_seq": 878,
+      "fixed_seq": 824,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.125,
+        "grep": 14.4375,
+        "test": 13.125,
+        "edit": 13.9375,
+        "noop": 10.875
+      },
+      "clean_fixed_logits": {
+        "view": 13.25,
+        "grep": 14.4375,
+        "test": 13.4375,
+        "edit": 13.5,
+        "noop": 11.1875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.3125,
+            "test": 13.375,
+            "edit": 13.625,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.5,
+            "test": 13.1875,
+            "edit": 13.8125,
+            "noop": 10.75
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.1875,
+            "edit": 13.9375,
+            "noop": 10.8125
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.5625,
+            "test": 13.4375,
+            "edit": 13.4375,
+            "noop": 11.1875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.0625,
+            "edit": 13.9375,
+            "noop": 10.8125
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.5,
+            "test": 13.4375,
+            "edit": 13.5,
+            "noop": 11.1875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "repo": "flatten/empty",
+      "buggy_seq": 791,
+      "fixed_seq": 895,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 13.75,
+        "test": 13.125,
+        "edit": 14.25,
+        "noop": 11.5625
+      },
+      "clean_fixed_logits": {
+        "view": 13.1875,
+        "grep": 14.3125,
+        "test": 13.5625,
+        "edit": 13.625,
+        "noop": 11.8125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.25,
+            "grep": 14.1875,
+            "test": 13.5625,
+            "edit": 13.75,
+            "noop": 11.875
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 13.8125,
+            "test": 13.1875,
+            "edit": 14.0625,
+            "noop": 11.4375
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 13.75,
+            "test": 13.25,
+            "edit": 14.25,
+            "noop": 11.75
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.3125,
+            "test": 13.5,
+            "edit": 13.625,
+            "noop": 11.75
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 13.6875,
+            "test": 13.1875,
+            "edit": 14.1875,
+            "noop": 11.5625
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.3125,
+            "test": 13.5625,
+            "edit": 13.625,
+            "noop": 11.8125
+          }
+        }
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "repo": "group/by_empty",
+      "buggy_seq": 855,
+      "fixed_seq": 877,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 13.5,
+        "test": 13.0625,
+        "edit": 14.0625,
+        "noop": 11.625
+      },
+      "clean_fixed_logits": {
+        "view": 13.25,
+        "grep": 14.125,
+        "test": 13.5,
+        "edit": 13.625,
+        "noop": 11.5
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.375,
+            "grep": 14.25,
+            "test": 13.625,
+            "edit": 13.6875,
+            "noop": 11.5625
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 13.4375,
+            "test": 13.0,
+            "edit": 14.0625,
+            "noop": 11.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 13.625,
+            "test": 13.1875,
+            "edit": 14.1875,
+            "noop": 11.6875
+          },
+          "b2f_logits": {
+            "view": 13.3125,
+            "grep": 14.0625,
+            "test": 13.4375,
+            "edit": 13.5625,
+            "noop": 11.4375
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 13.5625,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 11.625
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.125,
+            "test": 13.5,
+            "edit": 13.625,
+            "noop": 11.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "repo": "lerp/reversed",
+      "buggy_seq": 1227,
+      "fixed_seq": 980,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.75,
+        "grep": 14.0625,
+        "test": 12.625,
+        "edit": 13.5625,
+        "noop": 10.4375
+      },
+      "clean_fixed_logits": {
+        "view": 12.875,
+        "grep": 13.75,
+        "test": 13.0625,
+        "edit": 13.5625,
+        "noop": 10.8125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 13.75,
+            "test": 13.0625,
+            "edit": 13.625,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 12.6875,
+            "grep": 14.0,
+            "test": 12.625,
+            "edit": 13.5625,
+            "noop": 10.1875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 14.0625,
+            "test": 12.6875,
+            "edit": 13.5625,
+            "noop": 10.5625
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 13.8125,
+            "test": 13.0,
+            "edit": 13.5625,
+            "noop": 10.75
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 14.0625,
+            "test": 12.625,
+            "edit": 13.625,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 13.75,
+            "test": 13.0,
+            "edit": 13.5625,
+            "noop": 10.8125
+          }
+        }
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "repo": "loan/monthly",
+      "buggy_seq": 1400,
+      "fixed_seq": 967,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.4375,
+        "test": 13.25,
+        "edit": 13.8125,
+        "noop": 10.6875
+      },
+      "clean_fixed_logits": {
+        "view": 12.875,
+        "grep": 14.125,
+        "test": 13.25,
+        "edit": 13.8125,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.3125,
+            "test": 13.25,
+            "edit": 13.6875,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.125,
+            "test": 13.25,
+            "edit": 13.6875,
+            "noop": 10.5625
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.4375,
+            "test": 13.25,
+            "edit": 13.6875,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.125,
+            "test": 13.25,
+            "edit": 13.8125,
+            "noop": 10.9375
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.4375,
+            "test": 13.25,
+            "edit": 13.75,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 14.125,
+            "test": 13.25,
+            "edit": 13.75,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "repo": "lookup/case_sensitive",
+      "buggy_seq": 885,
+      "fixed_seq": 989,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.5,
+        "test": 13.0625,
+        "edit": 14.1875,
+        "noop": 10.6875
+      },
+      "clean_fixed_logits": {
+        "view": 13.25,
+        "grep": 14.875,
+        "test": 13.4375,
+        "edit": 13.5,
+        "noop": 10.8125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.8125,
+            "test": 13.4375,
+            "edit": 13.625,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.625,
+            "test": 13.0625,
+            "edit": 14.125,
+            "noop": 10.4375
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.5,
+            "test": 13.0625,
+            "edit": 14.1875,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.9375,
+            "test": 13.4375,
+            "edit": 13.5,
+            "noop": 10.875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.5625,
+            "test": 13.0625,
+            "edit": 14.25,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.875,
+            "test": 13.5,
+            "edit": 13.5,
+            "noop": 10.8125
+          }
+        }
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "repo": "matrix/transpose_missing",
+      "buggy_seq": 1168,
+      "fixed_seq": 941,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.3125,
+        "grep": 14.8125,
+        "test": 13.4375,
+        "edit": 13.75,
+        "noop": 10.75
+      },
+      "clean_fixed_logits": {
+        "view": 13.4375,
+        "grep": 14.5625,
+        "test": 13.625,
+        "edit": 13.9375,
+        "noop": 11.1875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.5,
+            "grep": 14.75,
+            "test": 13.75,
+            "edit": 13.9375,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.75,
+            "test": 13.375,
+            "edit": 13.8125,
+            "noop": 10.6875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.375,
+            "grep": 14.8125,
+            "test": 13.5,
+            "edit": 13.875,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 13.375,
+            "grep": 14.5625,
+            "test": 13.5625,
+            "edit": 13.875,
+            "noop": 11.125
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.25,
+            "grep": 14.875,
+            "test": 13.4375,
+            "edit": 13.75,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 13.4375,
+            "grep": 14.5625,
+            "test": 13.5625,
+            "edit": 13.875,
+            "noop": 11.1875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "repo": "median/empty",
+      "buggy_seq": 799,
+      "fixed_seq": 735,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0625,
+        "grep": 14.375,
+        "test": 13.0625,
+        "edit": 14.1875,
+        "noop": 10.75
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 14.375,
+        "test": 13.3125,
+        "edit": 13.8125,
+        "noop": 10.6875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.4375,
+            "test": 13.25,
+            "edit": 13.875,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.4375,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 10.375
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.3125,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.4375,
+            "test": 13.25,
+            "edit": 13.8125,
+            "noop": 10.75
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.0625,
+            "edit": 14.1875,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.375,
+            "test": 13.25,
+            "edit": 13.8125,
+            "noop": 10.6875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "repo": "mutable/default_argument_collect",
+      "buggy_seq": 910,
+      "fixed_seq": 800,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0,
+        "grep": 14.0,
+        "test": 13.25,
+        "edit": 14.125,
+        "noop": 11.6875
+      },
+      "clean_fixed_logits": {
+        "view": 13.0625,
+        "grep": 13.9375,
+        "test": 13.4375,
+        "edit": 13.8125,
+        "noop": 11.625
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.0,
+            "test": 13.5,
+            "edit": 13.8125,
+            "noop": 11.75
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 13.875,
+            "test": 13.125,
+            "edit": 14.0,
+            "noop": 11.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 13.9375,
+            "test": 13.3125,
+            "edit": 14.125,
+            "noop": 11.6875
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.0,
+            "test": 13.3125,
+            "edit": 13.6875,
+            "noop": 11.625
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.0,
+            "test": 13.25,
+            "edit": 14.0625,
+            "noop": 11.6875
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 13.8125,
+            "test": 13.375,
+            "edit": 13.75,
+            "noop": 11.625
+          }
+        }
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "repo": "nested/list",
+      "buggy_seq": 1179,
+      "fixed_seq": 988,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.1875,
+        "grep": 14.625,
+        "test": 13.5625,
+        "edit": 13.6875,
+        "noop": 11.0625
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 14.375,
+        "test": 13.625,
+        "edit": 13.4375,
+        "noop": 11.375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.25,
+            "grep": 14.4375,
+            "test": 13.8125,
+            "edit": 13.625,
+            "noop": 11.75
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.6875,
+            "test": 13.4375,
+            "edit": 13.5625,
+            "noop": 10.8125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.5625,
+            "test": 13.625,
+            "edit": 13.6875,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.5,
+            "test": 13.5625,
+            "edit": 13.375,
+            "noop": 11.375
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.625,
+            "test": 13.5,
+            "edit": 13.6875,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.375,
+            "test": 13.625,
+            "edit": 13.4375,
+            "noop": 11.4375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "repo": "paginate/results_off_by",
+      "buggy_seq": 1037,
+      "fixed_seq": 1047,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.9375,
+        "test": 13.0625,
+        "edit": 13.75,
+        "noop": 10.5625
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 14.75,
+        "test": 13.5,
+        "edit": 13.625,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.8125,
+            "test": 13.375,
+            "edit": 13.5625,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.9375,
+            "test": 13.125,
+            "edit": 13.8125,
+            "noop": 10.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 15.0,
+            "test": 13.125,
+            "edit": 13.8125,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.75,
+            "test": 13.375,
+            "edit": 13.625,
+            "noop": 11.0
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 15.0,
+            "test": 13.0625,
+            "edit": 13.75,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.75,
+            "test": 13.5,
+            "edit": 13.625,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "repo": "parser/empty",
+      "buggy_seq": 578,
+      "fixed_seq": 641,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.75,
+        "grep": 13.5625,
+        "test": 12.9375,
+        "edit": 14.0,
+        "noop": 11.5625
+      },
+      "clean_fixed_logits": {
+        "view": 12.625,
+        "grep": 13.9375,
+        "test": 12.8125,
+        "edit": 13.6875,
+        "noop": 11.6875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 14.0625,
+            "test": 12.9375,
+            "edit": 13.625,
+            "noop": 11.8125
+          },
+          "b2f_logits": {
+            "view": 12.5,
+            "grep": 13.5,
+            "test": 12.8125,
+            "edit": 13.875,
+            "noop": 11.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 13.5,
+            "test": 12.875,
+            "edit": 14.0,
+            "noop": 11.625
+          },
+          "b2f_logits": {
+            "view": 12.5625,
+            "grep": 13.9375,
+            "test": 12.8125,
+            "edit": 13.75,
+            "noop": 11.5625
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 13.5625,
+            "test": 12.9375,
+            "edit": 14.0,
+            "noop": 11.625
+          },
+          "b2f_logits": {
+            "view": 12.625,
+            "grep": 13.9375,
+            "test": 12.875,
+            "edit": 13.625,
+            "noop": 11.6875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "repo": "partition/chunks_off_by",
+      "buggy_seq": 1038,
+      "fixed_seq": 1002,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.8125,
+        "test": 13.1875,
+        "edit": 13.625,
+        "noop": 10.3125
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 14.0625,
+        "test": 13.1875,
+        "edit": 14.0,
+        "noop": 10.6875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.125,
+            "test": 13.1875,
+            "edit": 14.0,
+            "noop": 10.9375
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.75,
+            "test": 13.25,
+            "edit": 13.625,
+            "noop": 10.125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.75,
+            "test": 13.3125,
+            "edit": 13.6875,
+            "noop": 10.375
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.125,
+            "test": 13.125,
+            "edit": 14.0,
+            "noop": 10.625
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.8125,
+            "test": 13.1875,
+            "edit": 13.625,
+            "noop": 10.375
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.125,
+            "test": 13.1875,
+            "edit": 13.9375,
+            "noop": 10.6875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "repo": "partition/list_exclude",
+      "buggy_seq": 1220,
+      "fixed_seq": 979,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0625,
+        "grep": 14.375,
+        "test": 12.875,
+        "edit": 14.0625,
+        "noop": 10.5625
+      },
+      "clean_fixed_logits": {
+        "view": 13.0625,
+        "grep": 14.125,
+        "test": 13.1875,
+        "edit": 13.9375,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.125,
+            "test": 13.1875,
+            "edit": 13.9375,
+            "noop": 11.25
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.375,
+            "test": 12.875,
+            "edit": 14.0,
+            "noop": 10.375
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 12.875,
+            "edit": 14.125,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.125,
+            "test": 13.125,
+            "edit": 13.875,
+            "noop": 10.875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 12.875,
+            "edit": 14.0625,
+            "noop": 10.5625
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.125,
+            "test": 13.1875,
+            "edit": 13.9375,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "repo": "password/length",
+      "buggy_seq": 667,
+      "fixed_seq": 811,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0,
+        "grep": 14.5,
+        "test": 13.1875,
+        "edit": 13.8125,
+        "noop": 10.3125
+      },
+      "clean_fixed_logits": {
+        "view": 13.0,
+        "grep": 14.375,
+        "test": 13.1875,
+        "edit": 13.75,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.4375,
+            "test": 13.1875,
+            "edit": 13.75,
+            "noop": 10.9375
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.375,
+            "test": 13.1875,
+            "edit": 13.75,
+            "noop": 10.3125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.5625,
+            "test": 13.3125,
+            "edit": 13.875,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.25,
+            "test": 13.0625,
+            "edit": 13.6875,
+            "noop": 10.8125
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.5,
+            "test": 13.125,
+            "edit": 13.8125,
+            "noop": 10.3125
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.1875,
+            "edit": 13.75,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "repo": "pythagorean/distance_wrong",
+      "buggy_seq": 1343,
+      "fixed_seq": 914,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0625,
+        "grep": 14.5,
+        "test": 13.1875,
+        "edit": 14.1875,
+        "noop": 11.125
+      },
+      "clean_fixed_logits": {
+        "view": 13.25,
+        "grep": 14.3125,
+        "test": 13.5,
+        "edit": 14.125,
+        "noop": 10.9375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.25,
+            "grep": 14.6875,
+            "test": 13.5,
+            "edit": 14.0625,
+            "noop": 11.25
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.1875,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 10.8125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.5625,
+            "test": 13.25,
+            "edit": 14.25,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.3125,
+            "test": 13.375,
+            "edit": 14.0,
+            "noop": 10.875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.5625,
+            "test": 13.1875,
+            "edit": 14.1875,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.3125,
+            "test": 13.5,
+            "edit": 14.125,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "repo": "quadratic/discriminant_wrong",
+      "buggy_seq": 1045,
+      "fixed_seq": 927,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.6875,
+        "grep": 14.0625,
+        "test": 12.8125,
+        "edit": 14.125,
+        "noop": 10.4375
+      },
+      "clean_fixed_logits": {
+        "view": 12.875,
+        "grep": 14.0625,
+        "test": 13.25,
+        "edit": 13.8125,
+        "noop": 10.875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.0625,
+            "test": 13.25,
+            "edit": 13.875,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 12.6875,
+            "grep": 14.1875,
+            "test": 12.8125,
+            "edit": 14.0,
+            "noop": 10.3125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 14.0625,
+            "test": 12.9375,
+            "edit": 14.0625,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 14.125,
+            "test": 13.125,
+            "edit": 13.75,
+            "noop": 10.875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 14.0625,
+            "test": 12.75,
+            "edit": 14.0625,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 14.125,
+            "test": 13.1875,
+            "edit": 13.8125,
+            "noop": 10.875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "repo": "rank/competitors_wrong",
+      "buggy_seq": 1032,
+      "fixed_seq": 891,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.75,
+        "grep": 14.1875,
+        "test": 12.6875,
+        "edit": 14.0625,
+        "noop": 10.1875
+      },
+      "clean_fixed_logits": {
+        "view": 13.0,
+        "grep": 13.875,
+        "test": 13.1875,
+        "edit": 14.125,
+        "noop": 11.3125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.0,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 12.6875,
+            "grep": 14.125,
+            "test": 12.625,
+            "edit": 14.0,
+            "noop": 10.1875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.3125,
+            "test": 12.9375,
+            "edit": 14.1875,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 13.875,
+            "test": 13.0,
+            "edit": 14.0625,
+            "noop": 11.1875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 14.1875,
+            "test": 12.6875,
+            "edit": 14.0625,
+            "noop": 10.1875
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 13.875,
+            "test": 13.1875,
+            "edit": 14.125,
+            "noop": 11.3125
+          }
+        }
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "repo": "register/action_mutable",
+      "buggy_seq": 760,
+      "fixed_seq": 991,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 13.8125,
+        "test": 13.25,
+        "edit": 14.0625,
+        "noop": 11.3125
+      },
+      "clean_fixed_logits": {
+        "view": 13.4375,
+        "grep": 14.3125,
+        "test": 13.6875,
+        "edit": 13.75,
+        "noop": 11.5625
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.3125,
+            "grep": 14.125,
+            "test": 13.6875,
+            "edit": 13.9375,
+            "noop": 11.6875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 13.9375,
+            "test": 13.25,
+            "edit": 13.875,
+            "noop": 11.1875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.0625,
+            "test": 13.4375,
+            "edit": 14.125,
+            "noop": 11.4375
+          },
+          "b2f_logits": {
+            "view": 13.3125,
+            "grep": 14.125,
+            "test": 13.5625,
+            "edit": 13.6875,
+            "noop": 11.5
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 13.875,
+            "test": 13.25,
+            "edit": 14.0625,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 13.4375,
+            "grep": 14.3125,
+            "test": 13.6875,
+            "edit": 13.75,
+            "noop": 11.5625
+          }
+        }
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "repo": "reverse/words_missing",
+      "buggy_seq": 939,
+      "fixed_seq": 822,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0,
+        "grep": 14.375,
+        "test": 13.3125,
+        "edit": 13.9375,
+        "noop": 10.6875
+      },
+      "clean_fixed_logits": {
+        "view": 13.0,
+        "grep": 14.5,
+        "test": 13.4375,
+        "edit": 13.75,
+        "noop": 10.6875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.375,
+            "test": 13.375,
+            "edit": 13.75,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.4375,
+            "test": 13.3125,
+            "edit": 13.75,
+            "noop": 10.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.4375,
+            "edit": 14.0,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.5625,
+            "test": 13.375,
+            "edit": 13.75,
+            "noop": 10.6875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.375,
+            "test": 13.3125,
+            "edit": 13.9375,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.5,
+            "test": 13.4375,
+            "edit": 13.8125,
+            "noop": 10.75
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "repo": "rotate/list",
+      "buggy_seq": 968,
+      "fixed_seq": 787,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.125,
+        "grep": 14.125,
+        "test": 13.4375,
+        "edit": 13.8125,
+        "noop": 11.375
+      },
+      "clean_fixed_logits": {
+        "view": 13.25,
+        "grep": 14.25,
+        "test": 13.4375,
+        "edit": 13.5625,
+        "noop": 11.3125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.25,
+            "grep": 14.1875,
+            "test": 13.4375,
+            "edit": 13.625,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.125,
+            "test": 13.4375,
+            "edit": 13.8125,
+            "noop": 11.3125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.0625,
+            "test": 13.4375,
+            "edit": 13.875,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 13.3125,
+            "grep": 14.25,
+            "test": 13.4375,
+            "edit": 13.5625,
+            "noop": 11.3125
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.125,
+            "test": 13.375,
+            "edit": 13.8125,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 13.3125,
+            "grep": 14.25,
+            "test": 13.4375,
+            "edit": 13.625,
+            "noop": 11.3125
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "repo": "rotate/list",
+      "buggy_seq": 1021,
+      "fixed_seq": 863,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0625,
+        "grep": 14.375,
+        "test": 13.0,
+        "edit": 14.0,
+        "noop": 10.625
+      },
+      "clean_fixed_logits": {
+        "view": 13.0625,
+        "grep": 14.3125,
+        "test": 13.3125,
+        "edit": 13.3125,
+        "noop": 11.3125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.375,
+            "test": 13.375,
+            "edit": 13.5,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.25,
+            "test": 13.0,
+            "edit": 13.875,
+            "noop": 10.6875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.125,
+            "edit": 14.0625,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.1875,
+            "edit": 13.3125,
+            "noop": 11.3125
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.375,
+            "test": 13.0,
+            "edit": 14.0,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.3125,
+            "edit": 13.3125,
+            "noop": 11.375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "repo": "rotate/list_missing",
+      "buggy_seq": 1189,
+      "fixed_seq": 898,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0625,
+        "grep": 14.0,
+        "test": 12.9375,
+        "edit": 13.8125,
+        "noop": 11.0625
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 14.375,
+        "test": 13.5,
+        "edit": 13.625,
+        "noop": 11.4375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.375,
+            "grep": 14.375,
+            "test": 13.5625,
+            "edit": 13.6875,
+            "noop": 11.5625
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.0625,
+            "test": 12.9375,
+            "edit": 13.75,
+            "noop": 10.875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 13.9375,
+            "test": 13.0625,
+            "edit": 13.875,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.4375,
+            "edit": 13.5625,
+            "noop": 11.3125
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 13.9375,
+            "test": 12.9375,
+            "edit": 13.8125,
+            "noop": 11.0
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.375,
+            "test": 13.5,
+            "edit": 13.625,
+            "noop": 11.4375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "repo": "sanitize/filename_trailing",
+      "buggy_seq": 1123,
+      "fixed_seq": 973,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.5,
+        "test": 13.0625,
+        "edit": 13.9375,
+        "noop": 10.75
+      },
+      "clean_fixed_logits": {
+        "view": 13.0,
+        "grep": 14.4375,
+        "test": 13.0625,
+        "edit": 13.625,
+        "noop": 11.0625
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.5,
+            "test": 13.0625,
+            "edit": 13.625,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 14.3125,
+            "test": 13.0,
+            "edit": 13.9375,
+            "noop": 10.75
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.4375,
+            "test": 13.0625,
+            "edit": 13.9375,
+            "noop": 10.8125
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.5,
+            "test": 13.125,
+            "edit": 13.625,
+            "noop": 11.0625
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.5,
+            "test": 13.0,
+            "edit": 13.875,
+            "noop": 10.8125
+          },
+          "b2f_logits": {
+            "view": 13.0,
+            "grep": 14.4375,
+            "test": 13.0625,
+            "edit": 13.625,
+            "noop": 11.0625
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "repo": "shallow/copy_bug_apply",
+      "buggy_seq": 1202,
+      "fixed_seq": 1078,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.1875,
+        "grep": 14.375,
+        "test": 13.5,
+        "edit": 13.6875,
+        "noop": 11.0
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 13.6875,
+        "test": 13.5625,
+        "edit": 13.6875,
+        "noop": 11.625
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 13.9375,
+            "test": 13.625,
+            "edit": 13.6875,
+            "noop": 11.75
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.3125,
+            "test": 13.5,
+            "edit": 13.6875,
+            "noop": 10.875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.3125,
+            "test": 13.625,
+            "edit": 13.75,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 13.8125,
+            "test": 13.5,
+            "edit": 13.625,
+            "noop": 11.5
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.25,
+            "grep": 14.4375,
+            "test": 13.5625,
+            "edit": 13.6875,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 13.6875,
+            "test": 13.5625,
+            "edit": 13.625,
+            "noop": 11.5625
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "repo": "shallow/copy_config",
+      "buggy_seq": 904,
+      "fixed_seq": 970,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.0625,
+        "grep": 13.8125,
+        "test": 13.3125,
+        "edit": 14.3125,
+        "noop": 11.5
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 13.4375,
+        "test": 13.4375,
+        "edit": 13.5625,
+        "noop": 11.9375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 13.6875,
+            "test": 13.4375,
+            "edit": 13.75,
+            "noop": 12.0
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 13.5,
+            "test": 13.25,
+            "edit": 14.1875,
+            "noop": 11.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 13.6875,
+            "test": 13.25,
+            "edit": 14.25,
+            "noop": 11.5
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 13.625,
+            "test": 13.5625,
+            "edit": 13.75,
+            "noop": 12.0625
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 13.8125,
+            "test": 13.3125,
+            "edit": 14.25,
+            "noop": 11.5625
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 13.4375,
+            "test": 13.4375,
+            "edit": 13.6875,
+            "noop": 11.9375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "repo": "shallow/copy_nested",
+      "buggy_seq": 938,
+      "fixed_seq": 1008,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.5,
+        "test": 13.4375,
+        "edit": 13.6875,
+        "noop": 11.0625
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 14.3125,
+        "test": 13.625,
+        "edit": 13.625,
+        "noop": 11.25
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.25,
+            "test": 13.5625,
+            "edit": 13.5625,
+            "noop": 11.5
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.5625,
+            "test": 13.5,
+            "edit": 13.6875,
+            "noop": 10.8125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.4375,
+            "test": 13.4375,
+            "edit": 13.625,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.375,
+            "test": 13.5625,
+            "edit": 13.5625,
+            "noop": 11.25
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.5,
+            "test": 13.4375,
+            "edit": 13.6875,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.5625,
+            "edit": 13.5625,
+            "noop": 11.1875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "repo": "sliding/window_max_off_by",
+      "buggy_seq": 1323,
+      "fixed_seq": 990,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.125,
+        "grep": 14.375,
+        "test": 13.1875,
+        "edit": 13.625,
+        "noop": 11.0625
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 14.3125,
+        "test": 13.5,
+        "edit": 13.625,
+        "noop": 10.9375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.3125,
+            "test": 13.4375,
+            "edit": 13.75,
+            "noop": 11.5
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.4375,
+            "test": 13.25,
+            "edit": 13.5625,
+            "noop": 10.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.25,
+            "test": 13.125,
+            "edit": 13.5625,
+            "noop": 11.0
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.4375,
+            "test": 13.5,
+            "edit": 13.6875,
+            "noop": 11.0
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.1875,
+            "edit": 13.625,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.3125,
+            "test": 13.4375,
+            "edit": 13.625,
+            "noop": 10.875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "repo": "sort/products_wrong",
+      "buggy_seq": 1084,
+      "fixed_seq": 1006,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.6875,
+        "grep": 13.6875,
+        "test": 12.4375,
+        "edit": 14.5625,
+        "noop": 10.625
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 14.375,
+        "test": 13.375,
+        "edit": 13.9375,
+        "noop": 10.75
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 13.3125,
+            "edit": 14.0,
+            "noop": 11.0
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 13.6875,
+            "test": 12.5,
+            "edit": 14.4375,
+            "noop": 10.25
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 13.6875,
+            "test": 12.5,
+            "edit": 14.5,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.25,
+            "edit": 13.9375,
+            "noop": 10.6875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 13.6875,
+            "test": 12.4375,
+            "edit": 14.5625,
+            "noop": 10.5625
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.3125,
+            "test": 13.3125,
+            "edit": 13.9375,
+            "noop": 10.75
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "repo": "sphere/volume_wrong",
+      "buggy_seq": 1014,
+      "fixed_seq": 809,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.125,
+        "grep": 14.75,
+        "test": 13.4375,
+        "edit": 13.875,
+        "noop": 9.9375
+      },
+      "clean_fixed_logits": {
+        "view": 13.1875,
+        "grep": 14.0625,
+        "test": 13.25,
+        "edit": 13.6875,
+        "noop": 11.0625
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.375,
+            "test": 13.375,
+            "edit": 13.8125,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.4375,
+            "test": 13.3125,
+            "edit": 13.75,
+            "noop": 10.4375
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.75,
+            "test": 13.5625,
+            "edit": 13.9375,
+            "noop": 10.0
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.0,
+            "test": 13.1875,
+            "edit": 13.5625,
+            "noop": 11.0
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.75,
+            "test": 13.4375,
+            "edit": 13.875,
+            "noop": 9.9375
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.0625,
+            "test": 13.25,
+            "edit": 13.6875,
+            "noop": 11.0625
+          }
+        }
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "repo": "state/tracker_mutable",
+      "buggy_seq": 827,
+      "fixed_seq": 908,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.8125,
+        "grep": 13.875,
+        "test": 13.4375,
+        "edit": 14.0,
+        "noop": 11.0625
+      },
+      "clean_fixed_logits": {
+        "view": 13.25,
+        "grep": 14.25,
+        "test": 13.625,
+        "edit": 13.625,
+        "noop": 11.5625
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.375,
+            "grep": 14.4375,
+            "test": 13.8125,
+            "edit": 13.6875,
+            "noop": 11.4375
+          },
+          "b2f_logits": {
+            "view": 12.75,
+            "grep": 13.75,
+            "test": 13.3125,
+            "edit": 14.0625,
+            "noop": 11.125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.0,
+            "test": 13.5625,
+            "edit": 14.125,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.1875,
+            "test": 13.5,
+            "edit": 13.5625,
+            "noop": 11.4375
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 13.9375,
+            "test": 13.4375,
+            "edit": 14.0,
+            "noop": 11.0625
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.1875,
+            "test": 13.625,
+            "edit": 13.625,
+            "noop": 11.5625
+          }
+        }
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "repo": "string/matcher_case",
+      "buggy_seq": 682,
+      "fixed_seq": 844,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.75,
+        "grep": 14.25,
+        "test": 12.75,
+        "edit": 14.125,
+        "noop": 10.5625
+      },
+      "clean_fixed_logits": {
+        "view": 13.0625,
+        "grep": 14.625,
+        "test": 13.375,
+        "edit": 13.6875,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.6875,
+            "test": 13.3125,
+            "edit": 13.75,
+            "noop": 11.25
+          },
+          "b2f_logits": {
+            "view": 12.75,
+            "grep": 14.0625,
+            "test": 12.875,
+            "edit": 14.0,
+            "noop": 10.25
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.8125,
+            "grep": 14.25,
+            "test": 12.9375,
+            "edit": 14.1875,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.5,
+            "test": 13.1875,
+            "edit": 13.5625,
+            "noop": 10.9375
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 14.1875,
+            "test": 12.75,
+            "edit": 14.0625,
+            "noop": 10.5
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.625,
+            "test": 13.375,
+            "edit": 13.625,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "repo": "string/truncate",
+      "buggy_seq": 718,
+      "fixed_seq": 807,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.1875,
+        "test": 13.125,
+        "edit": 14.0625,
+        "noop": 10.5625
+      },
+      "clean_fixed_logits": {
+        "view": 12.75,
+        "grep": 13.625,
+        "test": 12.875,
+        "edit": 14.0,
+        "noop": 11.25
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.8125,
+            "grep": 13.6875,
+            "test": 13.0,
+            "edit": 14.0,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.125,
+            "test": 13.0625,
+            "edit": 14.0,
+            "noop": 10.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.25,
+            "test": 13.1875,
+            "edit": 14.125,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 12.6875,
+            "grep": 13.5,
+            "test": 12.8125,
+            "edit": 13.875,
+            "noop": 11.1875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.1875,
+            "test": 13.1875,
+            "edit": 14.0,
+            "noop": 10.5625
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 13.625,
+            "test": 12.9375,
+            "edit": 14.0625,
+            "noop": 11.25
+          }
+        }
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "repo": "strip/prefix_empty",
+      "buggy_seq": 821,
+      "fixed_seq": 756,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.875,
+        "grep": 14.5,
+        "test": 13.1875,
+        "edit": 13.875,
+        "noop": 10.875
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 14.3125,
+        "test": 13.1875,
+        "edit": 13.75,
+        "noop": 11.4375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0,
+            "grep": 14.5,
+            "test": 13.25,
+            "edit": 13.625,
+            "noop": 11.5
+          },
+          "b2f_logits": {
+            "view": 12.75,
+            "grep": 14.25,
+            "test": 13.125,
+            "edit": 13.875,
+            "noop": 10.875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.5,
+            "test": 13.25,
+            "edit": 13.8125,
+            "noop": 10.9375
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.3125,
+            "test": 13.1875,
+            "edit": 13.75,
+            "noop": 11.4375
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.5,
+            "test": 13.1875,
+            "edit": 13.875,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.3125,
+            "test": 13.1875,
+            "edit": 13.75,
+            "noop": 11.4375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "repo": "title/case_converter_missing",
+      "buggy_seq": 991,
+      "fixed_seq": 805,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.8125,
+        "grep": 14.1875,
+        "test": 13.25,
+        "edit": 13.8125,
+        "noop": 10.4375
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 13.9375,
+        "test": 13.3125,
+        "edit": 13.75,
+        "noop": 11.1875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.0625,
+            "test": 13.3125,
+            "edit": 13.75,
+            "noop": 11.125
+          },
+          "b2f_logits": {
+            "view": 12.75,
+            "grep": 14.0625,
+            "test": 13.25,
+            "edit": 13.75,
+            "noop": 10.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.875,
+            "grep": 14.125,
+            "test": 13.4375,
+            "edit": 13.9375,
+            "noop": 10.5
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 14.0,
+            "test": 13.1875,
+            "edit": 13.6875,
+            "noop": 11.125
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.8125,
+            "grep": 14.25,
+            "test": 13.3125,
+            "edit": 13.8125,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 13.875,
+            "test": 13.25,
+            "edit": 13.75,
+            "noop": 11.1875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "repo": "tokenize/empty",
+      "buggy_seq": 623,
+      "fixed_seq": 761,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.75,
+        "grep": 13.875,
+        "test": 13.125,
+        "edit": 14.125,
+        "noop": 11.3125
+      },
+      "clean_fixed_logits": {
+        "view": 12.875,
+        "grep": 14.3125,
+        "test": 13.375,
+        "edit": 13.75,
+        "noop": 11.1875
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.3125,
+            "test": 13.375,
+            "edit": 13.75,
+            "noop": 11.5
+          },
+          "b2f_logits": {
+            "view": 12.6875,
+            "grep": 13.75,
+            "test": 13.0625,
+            "edit": 14.125,
+            "noop": 11.125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 13.8125,
+            "test": 13.1875,
+            "edit": 14.125,
+            "noop": 11.4375
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 14.375,
+            "test": 13.25,
+            "edit": 13.6875,
+            "noop": 11.1875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.75,
+            "grep": 13.8125,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 11.3125
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 14.375,
+            "test": 13.375,
+            "edit": 13.75,
+            "noop": 11.25
+          }
+        }
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "repo": "triangle/area_wrong",
+      "buggy_seq": 1438,
+      "fixed_seq": 1202,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.125,
+        "grep": 14.3125,
+        "test": 13.0,
+        "edit": 13.875,
+        "noop": 10.5
+      },
+      "clean_fixed_logits": {
+        "view": 13.1875,
+        "grep": 14.1875,
+        "test": 13.125,
+        "edit": 13.8125,
+        "noop": 11.0
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.125,
+            "test": 13.1875,
+            "edit": 13.8125,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.375,
+            "test": 12.9375,
+            "edit": 13.75,
+            "noop": 10.5
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.375,
+            "test": 13.125,
+            "edit": 13.8125,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.25,
+            "test": 13.0625,
+            "edit": 13.75,
+            "noop": 11.0625
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.125,
+            "grep": 14.375,
+            "test": 13.0625,
+            "edit": 13.875,
+            "noop": 10.4375
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.25,
+            "test": 13.125,
+            "edit": 13.8125,
+            "noop": 11.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "repo": "validate/file",
+      "buggy_seq": 849,
+      "fixed_seq": 920,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.5,
+        "grep": 14.375,
+        "test": 12.6875,
+        "edit": 14.0625,
+        "noop": 10.75
+      },
+      "clean_fixed_logits": {
+        "view": 12.9375,
+        "grep": 14.3125,
+        "test": 13.1875,
+        "edit": 14.0625,
+        "noop": 11.375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.375,
+            "test": 13.1875,
+            "edit": 14.0,
+            "noop": 11.375
+          },
+          "b2f_logits": {
+            "view": 12.5,
+            "grep": 14.3125,
+            "test": 12.75,
+            "edit": 14.125,
+            "noop": 10.75
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.625,
+            "grep": 14.4375,
+            "test": 12.8125,
+            "edit": 14.1875,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 12.875,
+            "grep": 14.25,
+            "test": 13.125,
+            "edit": 14.0,
+            "noop": 11.25
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.5,
+            "grep": 14.375,
+            "test": 12.6875,
+            "edit": 14.0625,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 12.9375,
+            "grep": 14.3125,
+            "test": 13.1875,
+            "edit": 14.0625,
+            "noop": 11.375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "repo": "validate/range",
+      "buggy_seq": 929,
+      "fixed_seq": 758,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.5625,
+        "grep": 14.0,
+        "test": 12.6875,
+        "edit": 14.25,
+        "noop": 10.875
+      },
+      "clean_fixed_logits": {
+        "view": 12.6875,
+        "grep": 13.9375,
+        "test": 12.75,
+        "edit": 14.1875,
+        "noop": 10.8125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 13.875,
+            "test": 12.75,
+            "edit": 14.1875,
+            "noop": 10.8125
+          },
+          "b2f_logits": {
+            "view": 12.625,
+            "grep": 14.0,
+            "test": 12.625,
+            "edit": 14.375,
+            "noop": 10.8125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.5625,
+            "grep": 13.9375,
+            "test": 12.75,
+            "edit": 14.3125,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 14.0625,
+            "test": 12.75,
+            "edit": 14.1875,
+            "noop": 10.875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.5625,
+            "grep": 14.0,
+            "test": 12.75,
+            "edit": 14.375,
+            "noop": 10.875
+          },
+          "b2f_logits": {
+            "view": 12.6875,
+            "grep": 13.875,
+            "test": 12.6875,
+            "edit": 14.1875,
+            "noop": 10.8125
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "repo": "validate/range_swapped",
+      "buggy_seq": 904,
+      "fixed_seq": 830,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.8125,
+        "grep": 14.125,
+        "test": 12.8125,
+        "edit": 14.3125,
+        "noop": 10.5625
+      },
+      "clean_fixed_logits": {
+        "view": 13.25,
+        "grep": 14.3125,
+        "test": 13.5,
+        "edit": 13.6875,
+        "noop": 10.9375
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.0625,
+            "grep": 14.1875,
+            "test": 13.3125,
+            "edit": 13.8125,
+            "noop": 10.9375
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.1875,
+            "test": 13.0,
+            "edit": 14.25,
+            "noop": 10.6875
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.6875,
+            "grep": 14.0625,
+            "test": 12.75,
+            "edit": 14.25,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 13.25,
+            "grep": 14.3125,
+            "test": 13.5,
+            "edit": 13.625,
+            "noop": 10.875
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.8125,
+            "grep": 14.125,
+            "test": 12.8125,
+            "edit": 14.375,
+            "noop": 10.5625
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.25,
+            "test": 13.5,
+            "edit": 13.6875,
+            "noop": 10.9375
+          }
+        }
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "repo": "word/list_tail",
+      "buggy_seq": 938,
+      "fixed_seq": 847,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.5625,
+        "grep": 13.9375,
+        "test": 13.125,
+        "edit": 14.125,
+        "noop": 10.6875
+      },
+      "clean_fixed_logits": {
+        "view": 12.8125,
+        "grep": 14.3125,
+        "test": 13.0625,
+        "edit": 14.0625,
+        "noop": 10.5
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.8125,
+            "grep": 14.25,
+            "test": 13.125,
+            "edit": 14.0625,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 12.625,
+            "grep": 14.0,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 10.5625
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.625,
+            "grep": 13.9375,
+            "test": 13.3125,
+            "edit": 14.1875,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 12.75,
+            "grep": 14.3125,
+            "test": 13.0,
+            "edit": 14.0,
+            "noop": 10.5
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.5625,
+            "grep": 13.875,
+            "test": 13.125,
+            "edit": 14.125,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 12.8125,
+            "grep": 14.3125,
+            "test": 13.0625,
+            "edit": 13.9375,
+            "noop": 10.5
+          }
+        }
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "repo": "wrong/sort_order_variant",
+      "buggy_seq": 1302,
+      "fixed_seq": 1096,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 12.9375,
+        "grep": 14.25,
+        "test": 12.9375,
+        "edit": 13.9375,
+        "noop": 10.6875
+      },
+      "clean_fixed_logits": {
+        "view": 13.125,
+        "grep": 13.9375,
+        "test": 13.375,
+        "edit": 13.875,
+        "noop": 10.8125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.0,
+            "test": 13.3125,
+            "edit": 13.875,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.1875,
+            "test": 13.0,
+            "edit": 13.9375,
+            "noop": 10.3125
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.1875,
+            "test": 13.0,
+            "edit": 13.9375,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.0,
+            "test": 13.375,
+            "edit": 13.9375,
+            "noop": 10.8125
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 12.9375,
+            "grep": 14.25,
+            "test": 12.9375,
+            "edit": 13.875,
+            "noop": 10.6875
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 13.9375,
+            "test": 13.375,
+            "edit": 13.9375,
+            "noop": 10.875
+          }
+        }
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "repo": "wrong/sort_order_variant",
+      "buggy_seq": 1129,
+      "fixed_seq": 950,
+      "action_ids": {
+        "view": 1651,
+        "grep": 20675,
+        "test": 1273,
+        "edit": 4499,
+        "noop": 60829
+      },
+      "clean_buggy_logits": {
+        "view": 13.1875,
+        "grep": 14.25,
+        "test": 13.0625,
+        "edit": 14.3125,
+        "noop": 10.625
+      },
+      "clean_fixed_logits": {
+        "view": 13.0625,
+        "grep": 14.3125,
+        "test": 13.25,
+        "edit": 14.0,
+        "noop": 11.125
+      },
+      "patched": {
+        "L24_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.3125,
+            "test": 13.3125,
+            "edit": 14.0625,
+            "noop": 11.1875
+          },
+          "b2f_logits": {
+            "view": 13.1875,
+            "grep": 14.1875,
+            "test": 13.0625,
+            "edit": 14.25,
+            "noop": 10.5625
+          }
+        },
+        "L12_pos-1": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.125,
+            "test": 13.125,
+            "edit": 14.375,
+            "noop": 10.75
+          },
+          "b2f_logits": {
+            "view": 13.125,
+            "grep": 14.375,
+            "test": 13.1875,
+            "edit": 14.0625,
+            "noop": 11.0625
+          }
+        },
+        "L24_pos-8": {
+          "f2b_logits": {
+            "view": 13.1875,
+            "grep": 14.25,
+            "test": 13.0625,
+            "edit": 14.3125,
+            "noop": 10.625
+          },
+          "b2f_logits": {
+            "view": 13.0625,
+            "grep": 14.3125,
+            "test": 13.25,
+            "edit": 14.0,
+            "noop": 11.125
+          }
+        }
+      }
+    }
+  ]
+}

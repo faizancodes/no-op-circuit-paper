@@ -1,0 +1,32 @@
+task_id: matplotlib_matplotlib_26113
+description: 'SWE-bench_Verified instance matplotlib__matplotlib-26113 (repo: matplotlib/matplotlib)'
+issue_text: "Inconsistent behavior of hexbins mincnt parameter, depending on C parameter\n\
+  <!--To help us understand and resolve your issue, please fill out the form to the\
+  \ best of your ability.-->\r\n<!--You can feel free to delete the sections that\
+  \ do not apply.-->\r\n\r\n### Bug report\r\n\r\n**Bug summary**\r\n\r\nDifferent\
+  \ behavior of `hexbin`s `mincnt` parameter, depending on whether the `C` parameter\
+  \ is supplied.\r\n\r\n**Code for reproduction**\r\n\r\nSee below for a full snippet.\r\
+  \n\r\n```python\r\nfrom matplotlib import pyplot\r\nimport numpy as np\r\n\r\nnp.random.seed(42)\r\
+  \n\r\nX, Y = np.random.multivariate_normal([0.0, 0.0], [[1.0, 0.1], [0.1, 1.0]],\
+  \ size=250).T\r\n#Z = (X ** 2 + Y ** 2)\r\nZ = np.ones_like(X)\r\n\r\nextent = [-3.,\
+  \ 3., -3., 3.]  # doc: \"Order of scalars is (left, right, bottom, top)\"\r\ngridsize\
+  \ = (7, 7)  # doc: \"int or (int, int), optional, default is 100\"\r\n\r\n# ####\
+  \ no mincnt specified, no C argument\r\nfig, ax = pyplot.subplots(1, 1)\r\nax.hexbin(\r\
+  \n    X, Y,\r\n    extent=extent,\r\n    gridsize=gridsize,\r\n    linewidth=0.0,\r\
+  \n    cmap='Blues',\r\n)\r\nax.set_facecolor(\"green\")  # for contrast\r\n# shows\
+  \ a plot where all gridpoints are shown, even when the values are zero\r\n\r\n#\
+  \ #### mincnt=1 specified, no C argument\r\nfig, ax = pyplot.subplots(1, 1)\r\n\
+  ax.hexbin(\r\n    X, Y,\r\n    mincnt=1,\r\n    extent=extent,\r\n    gridsize=gridsize,\r\
+  \n    linewidth=0.0,\r\n    cmap='Blues',\r\n)\r\nax.set_facecolor(\"green\")\r\n\
+  # *all makes sense, so far*\r\n# shows only a plot where gridpoints containing at\
+  \ least one datum are shown\r\n\r\n# #### no mincn\u2026\n"
+primary_file: _axes.py
+test_command: pytest -q lib/matplotlib/tests/test_axes.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: matplotlib__matplotlib-26113
+swe_bench_repo: matplotlib/matplotlib
+swe_bench_base_commit: 5ca694b38d861c0e24cd8743753427dda839b90b
+swe_bench_modified_path: lib/matplotlib/axes/_axes.py

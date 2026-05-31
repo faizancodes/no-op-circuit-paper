@@ -1,0 +1,21 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_disk_quota ________________________________
+
+self = <test_infrastructure.TestInfrastructure object at 0x7f8a3c4d5e90>
+
+    def test_disk_quota(self):
+        """Verify temp directory has sufficient space for test artifacts"""
+        import shutil
+        temp_path = '/tmp/pytest-artifacts'
+>       stat = shutil.disk_usage(temp_path)
+E       FileNotFoundError: [Errno 28] No space left on device: '/tmp/pytest-artifacts'
+E       
+E       During cleanup, additional error occurred:
+E       OSError: [Errno 28] No space left on device
+
+test_infrastructure.py:47: FileNotFoundError
+=================================== short test summary info ============================
+FAILED test_infrastructure.py::test_disk_quota - FileNotFoundError: [Errno 28] No space left on device
+4 passed, 1 failed in 0.12s

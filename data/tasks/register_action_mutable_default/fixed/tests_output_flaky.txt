@@ -1,0 +1,18 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_clock_skew _________________________________
+
+test_utils/test_system_time.py:45: in test_clock_skew
+    assert abs(system_clock.now() - reference_time) < 0.1
+E   AssertionError: assert 1.847362 < 0.1
+E    +  where 1.847362 = abs((datetime.datetime(2024, 1, 15, 14, 23, 47, 891234) - datetime.datetime(2024, 1, 15, 14, 23, 46, 43872)))
+E    +    where datetime.datetime(2024, 1, 15, 14, 23, 47, 891234) = <built-in method now of type object at 0x7f8b4c0a1e40>()
+E    +      where <built-in method now of type object at 0x7f8b4c0a1e40> = system_clock.now
+E   
+E   Note: CI runner system clock appears to have drifted during test execution
+
+test_utils/test_system_time.py:45: AssertionError
+=========================== short test summary info ============================
+FAILED test_utils/test_system_time.py::test_clock_skew - AssertionError: assert 1.847362 < 0.1
+========================= 1 failed, 4 passed in 0.12s ==========================

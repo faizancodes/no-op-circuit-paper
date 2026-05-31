@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6] - AssertionError: behaviour does not match expected output
+FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6] - AssertionError: behaviour does not match expected output
+FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 13 passed in 0.04s =========================

@@ -1,0 +1,30 @@
+task_id: django_django_14351
+description: 'SWE-bench_Verified instance django__django-14351 (repo: django/django)'
+issue_text: "Q object __or__ appears to get all dunder related's default columns and\
+  \ queryset raises ProgrammingError.\nDescription\n\t\nThere appears to be a difference\
+  \ in how Q object aliases are setup, when OR'd. The get_default_columns for this\
+  \ agent__property_groups__id__in only uses 1, where as get_default_columns for this\
+  \ agent__property_groups__in gets all fields, which later results in a \" subquery\
+  \ must return only one column\" error.\n# working in 3.2\nqueryset.filter(\n\tQ(agent__property_groups__id__in=property_groups.values_list(\"\
+  id\", flat=True))\n\t| Q(agent__property_groups__count=0)\n).distinct()\n# VS\n\
+  # not working in 3.2, was working in 2.2.5, now causes all the fields to be added\
+  \ as part of the get_default_columns on the aliases\nqueryset.filter(\n\tQ(agent__property_groups__in=property_groups)\n\
+  \t| Q(agent__property_groups__count=0)\n).distinct()\nHere is the error:\n\t\n\t\
+  return self.cursor.execute(sql, params)\n File \"/venv/lib/python3.6/site-packages/django/db/utils.py\"\
+  , line 90, in __exit__\n\traise dj_exc_value.with_traceback(traceback) from exc_value\n\
+  \ File \"/venv/lib/python3.6/site-packages/django/db/backends/utils.py\", line 84,\
+  \ in _execute\n\treturn self.cursor.execute(sql, params)\ndjango.db.utils.ProgrammingError:\
+  \ subquery must return only one column\nLINE 1: ...ativemovingaverage\".\"id\",\
+  \ T5.\"property_group_id\", (SELECT U0...\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t ^\nFor example,\
+  \ I was able to force it to work by checking the cols[0].alias checking that it\
+  \ was 'U0' so that the cols, select_fields, and klass_info wou\u2026\n"
+primary_file: lookups.py
+test_command: pytest -q test_having_subquery_select (aggregation_regress.tests.AggregationTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-14351
+swe_bench_repo: django/django
+swe_bench_base_commit: 06fd4df41afb5aa1d681b853c3c08d8c688ca3a5
+swe_bench_modified_path: django/db/models/lookups.py

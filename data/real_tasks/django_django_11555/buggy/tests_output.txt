@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_order_by_ptr_field_with_default_ordering_by_expression (ordering.tests.OrderingTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_order_by_ptr_field_with_default_ordering_by_expression (ordering.tests.OrderingTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 26 passed in 0.04s =========================

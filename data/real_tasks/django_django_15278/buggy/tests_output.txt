@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_add_field_o2o_nullable (schema.tests.SchemaTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_add_field_o2o_nullable (schema.tests.SchemaTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 138 passed in 0.04s =========================

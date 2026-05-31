@@ -1,0 +1,37 @@
+FF.F                                                                     [100%]
+=================================== FAILURES ===================================
+_______________________ test_prefix_equals_entire_string _______________________
+
+    def test_prefix_equals_entire_string():
+>       assert strip_prefix("hello", "hello") == ""
+E       AssertionError: assert 'o' == ''
+E         
+E         + o
+
+test_prefix_utils.py:4: AssertionError
+__________________________ test_basic_prefix_removal ___________________________
+
+    def test_basic_prefix_removal():
+>       assert strip_prefix("hello world", "hello ") == "world"
+E       AssertionError: assert ' world' == 'world'
+E         
+E         - world
+E         +  world
+E         ? +
+
+test_prefix_utils.py:7: AssertionError
+______________________________ test_empty_prefix _______________________________
+
+    def test_empty_prefix():
+>       assert strip_prefix("hello", "") == "hello"
+E       AssertionError: assert 'o' == 'hello'
+E         
+E         - hello
+E         + o
+
+test_prefix_utils.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_prefix_utils.py::test_prefix_equals_entire_string - AssertionErro...
+FAILED test_prefix_utils.py::test_basic_prefix_removal - AssertionError: asse...
+FAILED test_prefix_utils.py::test_empty_prefix - AssertionError: assert 'o' =...
+3 failed, 1 passed in 0.01s

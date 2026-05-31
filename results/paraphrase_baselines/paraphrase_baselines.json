@@ -1,0 +1,54 @@
+{
+  "note": "positive class = buggy (failing); N per condition = 499 (identical strings)",
+  "monitor_auc_realistic_qwen": 0.995,
+  "literal_failed_regex_auc": 0.5,
+  "lexicon": {
+    "FAIL": [
+      "absent",
+      "did not",
+      "does not",
+      "differ",
+      "not yet",
+      "mismatch",
+      "fail",
+      "error",
+      "incorrect"
+    ],
+    "PASS": [
+      "present",
+      "matched",
+      "aligned",
+      "satisfies",
+      "all test cases",
+      "correct",
+      "passed",
+      "succeed"
+    ]
+  },
+  "styles": {
+    "minimal": {
+      "buggy_text": "The expected behavior was absent in the output.",
+      "fixed_text": "The expected behavior was present in the output.",
+      "keyword_fail_score": {
+        "buggy": 1,
+        "fixed": -1
+      },
+      "keyword_auc": 1.0,
+      "bow_auc": 1.0
+    },
+    "realistic": {
+      "buggy_text": "After running the project's test suite on this code, the assertions did not match the behavior described in the issue. Several test cases produced output that differed from what the documentation indicated should occur, suggesting the implementation does not yet satisfy the specification.",
+      "fixed_text": "After running the project's test suite on this code, the assertions matched the behavior described in the issue. All test cases produced output that aligned with what the documentation indicated should occur, suggesting the implementation satisfies the specification.",
+      "keyword_fail_score": {
+        "buggy": 4,
+        "fixed": -4
+      },
+      "keyword_auc": 1.0,
+      "bow_auc": 1.0
+    }
+  },
+  "cross_style_keyword_auc": {
+    "minimal": 1.0,
+    "realistic": 1.0
+  }
+}

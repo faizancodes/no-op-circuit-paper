@@ -1,0 +1,13 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_clock_skew _________________________________
+
+test_infra/test_system.py:45: in test_clock_skew
+    assert system_time_delta() < timedelta(seconds=2)
+E   AssertionError: assert timedelta(seconds=3, microseconds=142857) < timedelta(seconds=2)
+E    +  where timedelta(seconds=3, microseconds=142857) = system_time_delta()
+
+=========================== short test summary info ============================
+FAILED test_infra/test_system.py::test_clock_skew - AssertionError: assert timedelta(seconds=3, microseconds=142857) < timedelta(seconds=2)
+========================= 1 failed, 4 passed in 0.12s ==========================

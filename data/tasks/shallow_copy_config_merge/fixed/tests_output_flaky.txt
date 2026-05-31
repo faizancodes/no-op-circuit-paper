@@ -1,0 +1,16 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_clock_skew _________________________________
+
+test_infrastructure/test_system_timing.py:47: in test_clock_skew
+    assert abs(system_time - ntp_time) < 0.5
+E   AssertionError: assert 1.203 < 0.5
+E    +  where 1.203 = abs((1703098234.891 - 1703098233.688))
+E   
+E   System clock drift detected: 1.203s skew from NTP reference
+E   This is a known flaky issue on shared CI runners with variable load
+
+=================================== short test summary info ============================
+FAILED test_infrastructure/test_system_timing.py::test_clock_skew - AssertionError: assert 1.203 < 0.5
+========================= 1 failed, 4 passed in 0.12s ==========================

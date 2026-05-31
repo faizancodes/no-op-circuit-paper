@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_default_hashing_algorith_legacy_decode (sessions_tests.tests.CookieSessionTests) - AssertionError: behaviour does not match expected output
+FAILED test_default_hashing_algorith_legacy_decode (sessions_tests.tests.CacheSessionTests) - AssertionError: behaviour does not match expected output
+FAILED test_default_hashing_algorith_legacy_decode (sessions_tests.tests.FileSessionTests) - AssertionError: behaviour does not match expected output
+... and 6 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_default_hashing_algorith_legacy_decode (sessions_tests.tests.CookieSessionTests) - AssertionError: behaviour does not match expected output
+FAILED test_default_hashing_algorith_legacy_decode (sessions_tests.tests.CacheSessionTests) - AssertionError: behaviour does not match expected output
+FAILED test_default_hashing_algorith_legacy_decode (sessions_tests.tests.FileSessionTests) - AssertionError: behaviour does not match expected output
+... and 6 more failures (truncated)
+========================= 9 failed, 346 passed in 0.04s =========================

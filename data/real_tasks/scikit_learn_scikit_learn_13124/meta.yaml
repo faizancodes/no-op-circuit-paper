@@ -1,0 +1,31 @@
+task_id: scikit_learn_scikit_learn_13124
+description: 'SWE-bench_Verified instance scikit-learn__scikit-learn-13124 (repo:
+  scikit-learn/scikit-learn)'
+issue_text: "sklearn.model_selection.StratifiedKFold either shuffling is wrong or\
+  \ documentation is misleading\n<!--\r\nIf your issue is a usage question, submit\
+  \ it here instead:\r\n- StackOverflow with the scikit-learn tag: https://stackoverflow.com/questions/tagged/scikit-learn\r\
+  \n- Mailing List: https://mail.python.org/mailman/listinfo/scikit-learn\r\nFor more\
+  \ information, see User Questions: http://scikit-learn.org/stable/support.html#user-questions\r\
+  \n-->\r\n\r\n<!-- Instructions For Filing a Bug: https://github.com/scikit-learn/scikit-learn/blob/master/CONTRIBUTING.md#filing-bugs\
+  \ -->\r\n\r\n#### Description\r\nRegarding the shuffle parameter, the documentation\
+  \ states: \"Whether to shuffle each stratification of the data before splitting\
+  \ into batches\". However, instead of shuffling samples within each stratum, the\
+  \ order of batches is shuffled. \r\n\r\nAs you can see in the output below, 1 is\
+  \ always paired with 11, 2 with 12, 3 with 13, etc. regardless whether shuffle parameter\
+  \ is True or False. When shuffle=True, the batches are always the same for any random_state,\
+  \ but appear in a different order. \r\n\r\nWhen cross-validation is performed, the\
+  \ results from each batch are summed and then divided by the number of batches.\
+  \ Changing the order of batches does not change the result. The way shuffle works\
+  \ now is completely useless from cross-validation perspective. \r\n\r\n#### Steps/Code\
+  \ to Reproduce\r\nimport numpy as np\r\nfrom sklearn.model_selection import StratifiedKFold\r\
+  \n\r\nRANDOM_SEED = 1\r\n\r\nsamples_per_class = 10\r\nX =\u2026\n"
+primary_file: _split.py
+test_command: pytest -q sklearn/model_selection/tests/test_split.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: scikit-learn__scikit-learn-13124
+swe_bench_repo: scikit-learn/scikit-learn
+swe_bench_base_commit: 9f0b959a8c9195d1b6e203f08b698e052b426ca9
+swe_bench_modified_path: sklearn/model_selection/_split.py

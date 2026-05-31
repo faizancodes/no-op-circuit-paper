@@ -1,0 +1,15 @@
+task_id: accumulate_items_mutable_default
+description: accumulate_items() returns incorrect results on subsequent calls due
+  to shared state
+issue_text: 'When calling `accumulate_items()` multiple times, the second and subsequent
+  calls return items from previous calls mixed in. For example, calling `accumulate_items(''a'')`
+  then `accumulate_items(''b'')` returns `[''a'', ''b'']` instead of just `[''b'']`.
+  Each call should start with a fresh empty list unless an explicit list is passed.
+
+  '
+primary_file: accumulator.py
+test_command: pytest -q test_accumulator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: mutable_default_argument

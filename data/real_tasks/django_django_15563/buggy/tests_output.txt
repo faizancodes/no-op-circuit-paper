@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_mti_update_grand_parent_through_child (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+FAILED test_mti_update_parent_through_child (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_mti_update_grand_parent_through_child (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+FAILED test_mti_update_parent_through_child (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 29 passed in 0.04s =========================

@@ -1,0 +1,49 @@
+{
+  "config": {
+    "tasks_root": "data/real_tasks",
+    "n_paired_tasks": 499
+  },
+  "classifiers": [
+    {
+      "classifier": "contains_FAILED",
+      "auc": 1.0,
+      "ap": 1.0,
+      "threshold_used": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_edit_rate": 0.0,
+      "tp": 499,
+      "fp": 0,
+      "fn": 0,
+      "tn": 499
+    },
+    {
+      "classifier": "n_FAILED_lines",
+      "auc": 1.0,
+      "ap": 1.0,
+      "threshold_used": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_edit_rate": 0.0,
+      "tp": 499,
+      "fp": 0,
+      "fn": 0,
+      "tn": 499
+    },
+    {
+      "classifier": "failure_line_density",
+      "auc": 1.0,
+      "ap": 1.0,
+      "threshold_used": 0.2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_edit_rate": 0.0,
+      "tp": 499,
+      "fp": 0,
+      "fn": 0,
+      "tn": 499
+    }
+  ],
+  "headline": "AUC of `contains FAILED` regex on 499 SWE-bench-Verified-derived paired prompts",
+  "value_of_residual_monitor": "The residual projection monitor's \u00a75.1 AUC of 0.989 is lower than this baseline's AUC. The mechanistic value of the projection is NOT discriminative power but identifying the residual-stream location and direction at which the pass/fail evidence enters the edit/noop decision."
+}

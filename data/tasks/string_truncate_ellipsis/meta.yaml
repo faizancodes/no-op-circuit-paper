@@ -1,0 +1,14 @@
+task_id: string_truncate_ellipsis
+description: truncate() adds ellipsis when it shouldn't according to docstring
+issue_text: 'The `truncate()` function is adding ellipsis (''...'') to strings by
+  default, but the docstring clearly states that ellipsis should NOT be added by default.
+  When I call `truncate(''Hello World'', 5)`, I expect to get ''Hello'' but instead
+  I''m getting ''He...''. Please fix the function to match its documented behavior.
+
+  '
+primary_file: truncate.py
+test_command: pytest -q test_truncate.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_default_arg

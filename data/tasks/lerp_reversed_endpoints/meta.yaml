@@ -1,0 +1,15 @@
+task_id: lerp_reversed_endpoints
+description: lerp() returns incorrect values when interpolating between two points
+issue_text: 'The `lerp(start, end, t)` function produces wrong results. For example,
+  `lerp(0, 10, 0.5)` returns 5.0 as expected, but `lerp(10, 0, 0.5)` returns 5.0 instead
+  of 5.0 (wait, that''s correct). Actually, `lerp(0, 10, 0.3)` returns 7.0 instead
+  of 3.0. The function seems to be interpolating in the wrong direction. Please fix
+  the linear interpolation to work correctly.
+
+  '
+primary_file: interpolate.py
+test_command: pytest -q test_interpolate.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: swapped_args

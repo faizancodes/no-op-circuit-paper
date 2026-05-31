@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED The cleaned value for a form with a disabled DateTimeField and callable - AssertionError: behaviour does not match expected output
+FAILED Cleaning a form with a disabled DateTimeField and callable initial - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED The cleaned value for a form with a disabled DateTimeField and callable - AssertionError: behaviour does not match expected output
+FAILED Cleaning a form with a disabled DateTimeField and callable initial - AssertionError: behaviour does not match expected output
+========================= 2 failed, 117 passed in 0.04s =========================

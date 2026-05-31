@@ -1,0 +1,16 @@
+task_id: age_verification_boundary
+description: Age verification incorrectly rejects users who are exactly at the minimum
+  age threshold.
+issue_text: 'The `is_eligible_age()` function is rejecting users who are exactly 18
+  years old, even though the documentation states that 18 is the minimum eligible
+  age. A user who is exactly 18.0 years old should be considered eligible, but the
+  function returns False. This breaks our age verification flow for users on their
+  18th birthday.
+
+  '
+primary_file: age_validator.py
+test_command: pytest -q test_age_validator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_comparison

@@ -1,0 +1,14 @@
+task_id: factorial_off_by_one
+description: factorial() returns incorrect result for n >= 1, missing the final multiplication
+issue_text: 'The `factorial(n)` function returns incorrect values for all positive
+  integers. For example, `factorial(5)` returns 24 instead of 120, and `factorial(3)`
+  returns 2 instead of 6. It seems like the last multiplication is being skipped.
+  The function works correctly for `factorial(0)` and `factorial(1)` though.
+
+  '
+primary_file: factorial.py
+test_command: pytest -q test_factorial.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_loop

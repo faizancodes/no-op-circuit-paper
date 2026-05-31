@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_create_alter_model_managers (migrations.test_optimizer.OptimizerTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_create_alter_model_managers (migrations.test_optimizer.OptimizerTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 35 passed in 0.04s =========================

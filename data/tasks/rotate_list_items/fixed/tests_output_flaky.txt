@@ -1,0 +1,16 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_thread_pool_race _______________________________
+
+test_worker_pool.py:47: in test_thread_pool_race
+    assert len(completed_tasks) == expected_count
+E   AssertionError: assert 98 == 100
+E    +  where 98 = len([<Task id=0x7f8a3c>, <Task id=0x7f8a3d>, <Task id=0x7f8a3e>, <Task id=0x7f8a3f>, <Task id=0x7f8a40>, <Task id=0x7f8a41>, ...])
+E   
+E   Race condition detected: 2 tasks not completed before barrier
+E   ThreadPoolExecutor may have delayed task submission on overloaded CI runner
+
+=========================== short test summary info ============================
+FAILED test_worker_pool.py::test_thread_pool_race - AssertionError: assert 98 == 100
+========================= 5 passed, 1 failed in 0.23s ==========================

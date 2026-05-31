@@ -1,0 +1,16 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_thread_pool_race _______________________________
+
+test_helpers/test_concurrent_utils.py:78: in test_thread_pool_race
+    assert result_queue.qsize() == expected_count
+E   AssertionError: assert 47 == 48
+E    +  where 47 = <bound method Queue.qsize of <queue.Queue object at 0x7f8a3c2d1a90>>()
+E    +  and   48 = expected_count
+E   
+E   Note: Thread pool worker may not have flushed results before assertion
+
+=================================== short test summary info ============================
+FAILED test_helpers/test_concurrent_utils.py::test_thread_pool_race - AssertionError: assert 47 == 48
+1 failed, 5 passed in 0.23s

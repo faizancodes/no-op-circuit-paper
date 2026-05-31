@@ -1,0 +1,34 @@
+.F.F                                                                     [100%]
+=================================== FAILURES ===================================
+_______________________ test_multiple_independent_calls ________________________
+
+    def test_multiple_independent_calls():
+        result1 = accumulate_items('a')
+        result2 = accumulate_items('b')
+>       assert result2 == ['b'], f"Expected ['b'] but got {result2}"
+E       AssertionError: Expected ['b'] but got ['first', 'a', 'b']
+E       assert ['first', 'a', 'b'] == ['b']
+E         
+E         At index 0 diff: 'first' != 'b'
+E         Left contains 2 more items, first extra item: 'a'
+E         Use -v to get more diff
+
+test_accumulator.py:10: AssertionError
+_________________________ test_three_independent_calls _________________________
+
+    def test_three_independent_calls():
+        accumulate_items('first')
+        accumulate_items('second')
+        result = accumulate_items('third')
+>       assert result == ['third']
+E       AssertionError: assert ['first', 'a'...ond', 'third'] == ['third']
+E         
+E         At index 0 diff: 'first' != 'third'
+E         Left contains 5 more items, first extra item: 'a'
+E         Use -v to get more diff
+
+test_accumulator.py:22: AssertionError
+=========================== short test summary info ============================
+FAILED test_accumulator.py::test_multiple_independent_calls - AssertionError:...
+FAILED test_accumulator.py::test_three_independent_calls - AssertionError: as...
+2 failed, 2 passed in 0.01s

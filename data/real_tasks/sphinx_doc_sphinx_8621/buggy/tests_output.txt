@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED tests/test_markup.py::test_inline[verify-:kbd:`Alt+^`-<p><kbd - AssertionError: behaviour does not match expected output
+FAILED tests/test_markup.py::test_inline[verify-:kbd:`-`-<p><kbd - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_markup.py::test_inline[verify-:kbd:`Alt+^`-<p><kbd - AssertionError: behaviour does not match expected output
+FAILED tests/test_markup.py::test_inline[verify-:kbd:`-`-<p><kbd - AssertionError: behaviour does not match expected output
+========================= 2 failed, 31 passed in 0.04s =========================

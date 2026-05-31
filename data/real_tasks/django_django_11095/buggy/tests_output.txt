@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_get_inline_instances_override_get_inlines (generic_inline_admin.tests.GenericInlineModelAdminTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_get_inline_instances_override_get_inlines (generic_inline_admin.tests.GenericInlineModelAdminTest) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 19 passed in 0.04s =========================

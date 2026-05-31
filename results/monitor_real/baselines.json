@@ -1,0 +1,21 @@
+{
+  "v_noop_layer": 24,
+  "v_noop_position": -1,
+  "n_pairs": 99,
+  "v_noop_auc": 0.9927558412406897,
+  "random_n": 1000,
+  "random_auc_mean": 0.7023007856341189,
+  "random_auc_p50": 0.6919702071217223,
+  "random_auc_p95": 0.9159371492704825,
+  "random_auc_p99": 0.9533802673196612,
+  "random_auc_max": 0.9825528007346189,
+  "v_noop_percentile_among_random": 100.0,
+  "full_residual_probe": {
+    "24": {
+      "auc": 1.0
+    },
+    "27": {
+      "auc": 1.0
+    }
+  }
+}

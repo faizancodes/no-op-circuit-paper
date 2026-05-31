@@ -1,0 +1,194 @@
+{
+  "by_model": {
+    "qwen": {
+      "config": {
+        "label": "qwen",
+        "cache_dir": "results/cache-real-qwen-n500-20260516T235301Z",
+        "v_noop": "results/steer-20260516T021522Z/v_noop.pt",
+        "layer": 24,
+        "pos": -1,
+        "n_paired_tasks": 499
+      },
+      "auc": 0.9890080762727862,
+      "in_sample_threshold": 0.10876178741455078,
+      "held_out_threshold_mean": 0.034356014728546144,
+      "argmax_distribution": {
+        "buggy": {
+          "grep": 450,
+          "edit": 48,
+          "test": 1
+        },
+        "fixed": {
+          "grep": 414,
+          "edit": 85
+        }
+      },
+      "simulation_by_threshold": {
+        "in_sample": {
+          "threshold": 0.10876178741455078,
+          "n_pairs": 499,
+          "buckets": {
+            "A_useful_committed": 34,
+            "B_useful_missed_premon": 451,
+            "C_useful_vetoed": 14,
+            "D_spurious_committed": 0,
+            "E_spurious_avoided_premon": 414,
+            "F_spurious_blocked": 85
+          },
+          "deployment_metrics": {
+            "spurious_edit_reduction": 1.0,
+            "useful_edit_loss": 0.2916666666666667,
+            "edit_proposal_rate_buggy": 0.09619238476953908,
+            "edit_proposal_rate_fixed": 0.17034068136272545,
+            "final_spurious_edit_rate": 0.0
+          }
+        },
+        "held_out_50_50": {
+          "threshold": 0.034356014728546144,
+          "n_pairs": 499,
+          "buckets": {
+            "A_useful_committed": 34,
+            "B_useful_missed_premon": 451,
+            "C_useful_vetoed": 14,
+            "D_spurious_committed": 0,
+            "E_spurious_avoided_premon": 414,
+            "F_spurious_blocked": 85
+          },
+          "deployment_metrics": {
+            "spurious_edit_reduction": 1.0,
+            "useful_edit_loss": 0.2916666666666667,
+            "edit_proposal_rate_buggy": 0.09619238476953908,
+            "edit_proposal_rate_fixed": 0.17034068136272545,
+            "final_spurious_edit_rate": 0.0
+          }
+        }
+      }
+    },
+    "deepseek": {
+      "config": {
+        "label": "deepseek",
+        "cache_dir": "results/cache-real-deepseek-n500-20260517T013041Z",
+        "v_noop": "results/steer-deepseek-coder-13b-instruct-20260517T012848Z/v_noop.pt",
+        "layer": 22,
+        "pos": -1,
+        "n_paired_tasks": 499
+      },
+      "auc": 0.8875707326476601,
+      "in_sample_threshold": -16.784202575683594,
+      "held_out_threshold_mean": -16.857351970672607,
+      "argmax_distribution": {
+        "buggy": {
+          "view": 390,
+          "edit": 109
+        },
+        "fixed": {
+          "view": 422,
+          "edit": 77
+        }
+      },
+      "simulation_by_threshold": {
+        "in_sample": {
+          "threshold": -16.784202575683594,
+          "n_pairs": 499,
+          "buckets": {
+            "A_useful_committed": 83,
+            "B_useful_missed_premon": 390,
+            "C_useful_vetoed": 26,
+            "D_spurious_committed": 11,
+            "E_spurious_avoided_premon": 422,
+            "F_spurious_blocked": 66
+          },
+          "deployment_metrics": {
+            "spurious_edit_reduction": 0.8571428571428571,
+            "useful_edit_loss": 0.23853211009174313,
+            "edit_proposal_rate_buggy": 0.218436873747495,
+            "edit_proposal_rate_fixed": 0.15430861723446893,
+            "final_spurious_edit_rate": 0.022044088176352707
+          }
+        },
+        "held_out_50_50": {
+          "threshold": -16.857351970672607,
+          "n_pairs": 499,
+          "buckets": {
+            "A_useful_committed": 83,
+            "B_useful_missed_premon": 390,
+            "C_useful_vetoed": 26,
+            "D_spurious_committed": 12,
+            "E_spurious_avoided_premon": 422,
+            "F_spurious_blocked": 65
+          },
+          "deployment_metrics": {
+            "spurious_edit_reduction": 0.8441558441558441,
+            "useful_edit_loss": 0.23853211009174313,
+            "edit_proposal_rate_buggy": 0.218436873747495,
+            "edit_proposal_rate_fixed": 0.15430861723446893,
+            "final_spurious_edit_rate": 0.02404809619238477
+          }
+        }
+      }
+    },
+    "codegemma": {
+      "config": {
+        "label": "codegemma",
+        "cache_dir": "results/cache-real-codegemma-n500-20260516T235731Z",
+        "v_noop": "results/steer-codegemma_7b_it-20260516T051943Z/v_noop.pt",
+        "layer": 26,
+        "pos": -1,
+        "n_paired_tasks": 497
+      },
+      "auc": 0.9328000194324904,
+      "in_sample_threshold": 9.397636413574219,
+      "held_out_threshold_mean": 9.438311042785644,
+      "argmax_distribution": {
+        "buggy": {
+          "edit": 496,
+          "view": 1
+        },
+        "fixed": {
+          "edit": 491,
+          "view": 6
+        }
+      },
+      "simulation_by_threshold": {
+        "in_sample": {
+          "threshold": 9.397636413574219,
+          "n_pairs": 497,
+          "buckets": {
+            "A_useful_committed": 443,
+            "B_useful_missed_premon": 1,
+            "C_useful_vetoed": 53,
+            "D_spurious_committed": 77,
+            "E_spurious_avoided_premon": 6,
+            "F_spurious_blocked": 414
+          },
+          "deployment_metrics": {
+            "spurious_edit_reduction": 0.8431771894093686,
+            "useful_edit_loss": 0.10685483870967742,
+            "edit_proposal_rate_buggy": 0.9979879275653923,
+            "edit_proposal_rate_fixed": 0.9879275653923542,
+            "final_spurious_edit_rate": 0.15492957746478872
+          }
+        },
+        "held_out_50_50": {
+          "threshold": 9.438311042785644,
+          "n_pairs": 497,
+          "buckets": {
+            "A_useful_committed": 437,
+            "B_useful_missed_premon": 1,
+            "C_useful_vetoed": 59,
+            "D_spurious_committed": 75,
+            "E_spurious_avoided_premon": 6,
+            "F_spurious_blocked": 416
+          },
+          "deployment_metrics": {
+            "spurious_edit_reduction": 0.8472505091649695,
+            "useful_edit_loss": 0.11895161290322581,
+            "edit_proposal_rate_buggy": 0.9979879275653923,
+            "edit_proposal_rate_fixed": 0.9879275653923542,
+            "final_spurious_edit_rate": 0.15090543259557343
+          }
+        }
+      }
+    }
+  }
+}

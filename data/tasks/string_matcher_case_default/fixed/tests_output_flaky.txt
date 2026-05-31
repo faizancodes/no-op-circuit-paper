@@ -1,0 +1,25 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_disk_quota _______________________________
+
+test_disk_quota failed during teardown:
+
+    def test_disk_quota():
+        temp_dir = tempfile.mkdtemp(prefix='ci_workspace_')
+        try:
+            # Write test data
+            test_file = os.path.join(temp_dir, 'quota_check.tmp')
+            with open(test_file, 'wb') as f:
+                f.write(b'x' * 1024)
+>           os.remove(test_file)
+E           OSError: [Errno 122] Disk quota exceeded: '/tmp/ci_workspace_8x4j2p/quota_check.tmp'
+E           
+E           During handling of the above exception, another exception occurred:
+E           
+E           PermissionError: [Errno 13] Permission denied: '/tmp/ci_workspace_8x4j2p'
+
+test_infrastructure/test_disk_quota.py:47: OSError
+=========================== short test summary info ============================
+FAILED test_infrastructure/test_disk_quota.py::test_disk_quota - OSError: [Errno 122] Disk quota exceeded
+========================= 1 failed, 4 passed in 0.12s ==========================

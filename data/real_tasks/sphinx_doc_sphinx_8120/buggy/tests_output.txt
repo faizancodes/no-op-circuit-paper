@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED tests/test_intl.py::test_customize_system_message - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_intl.py::test_customize_system_message - AssertionError: behaviour does not match expected output
+========================= 1 failed, 44 passed in 0.04s =========================

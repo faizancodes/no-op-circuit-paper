@@ -1,0 +1,30 @@
+task_id: astropy_astropy_14309
+description: 'SWE-bench_Verified instance astropy__astropy-14309 (repo: astropy/astropy)'
+issue_text: "IndexError: tuple index out of range in identify_format (io.registry)\n\
+  <!-- This comments are hidden when you submit the issue,\r\nso you do not need to\
+  \ remove them! -->\r\n\r\n<!-- Please be sure to check out our contributing guidelines,\r\
+  \nhttps://github.com/astropy/astropy/blob/main/CONTRIBUTING.md .\r\nPlease be sure\
+  \ to check out our code of conduct,\r\nhttps://github.com/astropy/astropy/blob/main/CODE_OF_CONDUCT.md\
+  \ . -->\r\n\r\n<!-- Please have a search on our GitHub repository to see if a similar\r\
+  \nissue has already been posted.\r\nIf a similar issue is closed, have a quick look\
+  \ to see if you are satisfied\r\nby the resolution.\r\nIf not please go ahead and\
+  \ open an issue! -->\r\n\r\n<!-- Please check that the development version still\
+  \ produces the same bug.\r\nYou can install development version with\r\npip install\
+  \ git+https://github.com/astropy/astropy\r\ncommand. -->\r\n\r\n### Description\r\
+  \nCron tests in HENDRICS using identify_format have started failing in `devdeps`\
+  \ (e.g. [here](https://github.com/StingraySoftware/HENDRICS/actions/runs/3983832171/jobs/6829483945))\
+  \ with this error:\r\n```\r\n  File \"/home/runner/work/HENDRICS/HENDRICS/.tox/py310-test-devdeps/lib/python3.10/site-packages/hendrics/io.py\"\
+  , line 386, in get_file_format\r\n    fmts = identify_format(\"write\", Table, fname,\
+  \ None, [], {})\r\n  File \"/home/runner/work/HENDRICS/HENDRICS/.tox/py310-test-devdeps/lib/python3.10/site-packages/astropy/io/registry/compat.py\"\
+  , line 52, in wrapper\r\n    return getattr(registry, method_name)(*args, **kwargs)\r\
+  \n  Fil\u2026\n"
+primary_file: connect.py
+test_command: pytest -q astropy/io/fits/tests/test_connect.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: astropy__astropy-14309
+swe_bench_repo: astropy/astropy
+swe_bench_base_commit: cdb66059a2feb44ee49021874605ba90801f9986
+swe_bench_modified_path: astropy/io/fits/connect.py

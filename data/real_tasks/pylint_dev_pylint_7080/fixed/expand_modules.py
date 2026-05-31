@@ -1,0 +1,87 @@
+from astroid import modutils
+
+from pylint.typing import ErrorDescriptionDict, ModuleDescriptionDict
+
+
+def _modpath_from_file(filename: str, is_namespace: bool, path: list[str]) -> list[str]:
+    def _is_package_cb(inner_path: str, parts: list[str]) -> bool:
+        return modutils.check_modpath_has_init(inner_path, parts) or is_namespace
+
+    return modutils.modpath_from_file_with_callback(
+        filename, path=path, is_package_cb=_is_package_cb
+    )
+
+
+def get_python_path(filepath: str) -> str:
+    """TODO This get the python path with the (bad) assumption that there is always
+    an __init__.py.
+
+    This is not true since python 3.3 and is causing problem.
+    """
+    dirname = os.path.realpath(os.path.expanduser(filepath))
+    if not os.path.isdir(dirname):
+        dirname = os.path.dirname(dirname)
+    while True:
+        if not os.path.exists(os.path.join(dirname, "__init__.py")):
+            return dirname
+        old_dirname = dirname
+        dirname = os.path.dirname(dirname)
+        if old_dirname == dirname:
+            return os.getcwd()
+
+
+def _is_in_ignore_list_re(element: str, ignore_list_re: list[Pattern[str]]) -> bool:
+    """Determines if the element is matched in a regex ignore-list."""
+    return any(file_pattern.match(element) for file_pattern in ignore_list_re)
+
+
+def _is_ignored_file(
+    element: str,
+    ignore_list: list[str],
+    ignore_list_re: list[Pattern[str]],
+    ignore_list_paths_re: list[Pattern[str]],
+) -> bool:
+    element = os.path.normpath(element)
+    basename = os.path.basename(element)
+    return (
+        basename in ignore_list
+        or _is_in_ignore_list_re(basename, ignore_list_re)
+        or _is_in_ignore_list_re(element, ignore_list_paths_re)
+    )
+
+
+def expand_modules(
+    files_or_modules: Sequence[str],
+    ignore_list: list[str],
+    ignore_list_re: list[Pattern[str]],
+    ignore_list_paths_re: list[Pattern[str]],
+) -> tuple[list[ModuleDescriptionDict], list[ErrorDescriptionDict]]:
+    """Take a list of files/modules/packages and return the list of tuple
+    (file, module name) which have to be actually checked.
+    """
+    result: list[ModuleDescriptionDict] = []
+    errors: list[ErrorDescriptionDict] = []
+    path = sys.path.copy()
+
+    for something in files_or_modules:
+        basename = os.path.basename(something)
+        if _is_ignored_file(
+            something, ignore_list, ignore_list_re, ignore_list_paths_re
+        ):
+            continue
+        module_path = get_python_path(something)
+        additional_search_path = [".", module_path] + path
+        if os.path.exists(something):
+            # this is a file or a directory
+            try:
+                modname = ".".join(
+                    modutils.modpath_from_file(something, path=additional_search_path)
+                )
+            except ImportError:
+                modname = os.path.splitext(basename)[0]
+            if os.path.isdir(something):
+                filepath = os.path.join(something, "__init__.py")
+            else:
+                filepath = something
+        else:
+            # suppose it's a module or package

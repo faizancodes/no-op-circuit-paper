@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED tests/test_directive_other.py::test_include_source_read_event - AssertionError: behaviour does not match expected output
+FAILED tests/test_directive_other.py::test_include_source_read_event_nested_includes - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_directive_other.py::test_include_source_read_event - AssertionError: behaviour does not match expected output
+FAILED tests/test_directive_other.py::test_include_source_read_event_nested_includes - AssertionError: behaviour does not match expected output
+========================= 2 failed, 7 passed in 0.04s =========================

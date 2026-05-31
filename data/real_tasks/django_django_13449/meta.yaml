@@ -1,0 +1,32 @@
+task_id: django_django_13449
+description: 'SWE-bench_Verified instance django__django-13449 (repo: django/django)'
+issue_text: "Lag() with DecimalField crashes on SQLite.\nDescription\n\t\nOn Django\
+  \ 3.0.7 with a SQLite database using the following model:\nfrom django.db import\
+  \ models\nclass LagTest(models.Model):\n\tmodified = models.DateField()\n\tdata\
+  \ = models.FloatField()\n\tamount = models.DecimalField(decimal_places=4, max_digits=7)\n\
+  and the following query\nfrom django.db.models import F\nfrom django.db.models.functions\
+  \ import Lag\nfrom django.db.models import Window\nfrom test1.models import LagTest\n\
+  w = Window(expression=Lag('amount',7), partition_by=[F('modified')], order_by=F('modified').asc())\n\
+  q = LagTest.objects.all().annotate(w=w)\ngenerates the following error:\nIn [12]:\
+  \ print(q)\n---------------------------------------------------------------------------\n\
+  OperationalError\t\t\t\t\t\t Traceback (most recent call last)\nC:\\ProgramData\\\
+  Anaconda3\\envs\\djbase\\lib\\site-packages\\django\\db\\backends\\utils.py in _execute(self,\
+  \ sql, params, *ignored_wrapper_args)\n\t 85\t\t\t else:\n---> 86\t\t\t\t return\
+  \ self.cursor.execute(sql, params)\n\t 87\nC:\\ProgramData\\Anaconda3\\envs\\djbase\\\
+  lib\\site-packages\\django\\db\\backends\\sqlite3\\base.py in execute(self, query,\
+  \ params)\n\t395\t\t query = self.convert_query(query)\n--> 396\t\t return Database.Cursor.execute(self,\
+  \ query, params)\n\t397 \nOperationalError: near \"OVER\": syntax error\nThe above\
+  \ exception was the direct cause of the following exception:\nOperationalError\t\
+  \t\t\t\t\t Traceback (most recent call last)\n<ipython-input-12-996617e96a38> in\
+  \ <module>\n----> 1 print(q)\nC:\\ProgramData\\Anaconda3\\envs\\djbase\\lib\u2026\
+  \n"
+primary_file: expressions.py
+test_command: pytest -q test_lag_decimalfield (expressions_window.tests.WindowFunctionTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-13449
+swe_bench_repo: django/django
+swe_bench_base_commit: 2a55431a5678af52f669ffe7dff3dd0bd21727f8
+swe_bench_modified_path: django/db/models/expressions.py

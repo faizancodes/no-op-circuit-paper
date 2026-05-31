@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_no_body_returned_for_head_requests (servers.test_basehttp.WSGIRequestHandlerTestCase.test_no_body_returned_for_head_requests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_no_body_returned_for_head_requests (servers.test_basehttp.WSGIRequestHandlerTestCase.test_no_body_returned_for_head_requests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 4 passed in 0.04s =========================

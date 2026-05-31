@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic - AssertionError: behaviour does not match expected output
+========================= 1 failed, 179 passed in 0.04s =========================

@@ -1,0 +1,40 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+___________________________ test_two_distinct_roots ____________________________
+
+    def test_two_distinct_roots():
+>       assert quadratic_discriminant(1, -3, 2) == 1
+E       assert 17 == 1
+E        +  where 17 = quadratic_discriminant(1, -3, 2)
+
+test_discriminant.py:4: AssertionError
+____________________________ test_one_repeated_root ____________________________
+
+    def test_one_repeated_root():
+>       assert quadratic_discriminant(1, -2, 1) == 0
+E       assert 8 == 0
+E        +  where 8 = quadratic_discriminant(1, -2, 1)
+
+test_discriminant.py:7: AssertionError
+______________________________ test_complex_roots ______________________________
+
+    def test_complex_roots():
+>       assert quadratic_discriminant(1, 0, 1) == -4
+E       assert 4 == -4
+E        +  where 4 = quadratic_discriminant(1, 0, 1)
+
+test_discriminant.py:10: AssertionError
+___________________________ test_larger_coefficients ___________________________
+
+    def test_larger_coefficients():
+>       assert quadratic_discriminant(2, 5, -3) == 49
+E       assert 1 == 49
+E        +  where 1 = quadratic_discriminant(2, 5, -3)
+
+test_discriminant.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_discriminant.py::test_two_distinct_roots - assert 17 == 1
+FAILED test_discriminant.py::test_one_repeated_root - assert 8 == 0
+FAILED test_discriminant.py::test_complex_roots - assert 4 == -4
+FAILED test_discriminant.py::test_larger_coefficients - assert 1 == 49
+4 failed in 0.01s

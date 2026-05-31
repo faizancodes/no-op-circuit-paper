@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_re_path_with_optional_parameter (urlpatterns.tests.SimplifiedURLTests) - AssertionError: behaviour does not match expected output
+FAILED test_two_variable_at_start_of_path_pattern (urlpatterns.tests.SimplifiedURLTests) - AssertionError: behaviour does not match expected output
+FAILED test_translate_url_utility (i18n.patterns.tests.URLTranslationTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_re_path_with_optional_parameter (urlpatterns.tests.SimplifiedURLTests) - AssertionError: behaviour does not match expected output
+FAILED test_two_variable_at_start_of_path_pattern (urlpatterns.tests.SimplifiedURLTests) - AssertionError: behaviour does not match expected output
+FAILED test_translate_url_utility (i18n.patterns.tests.URLTranslationTests) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 151 passed in 0.04s =========================

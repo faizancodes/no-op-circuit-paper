@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_non_aggregate_annotation_pruned (aggregation.tests.AggregateAnnotationPruningTests) - AssertionError: behaviour does not match expected output
+FAILED test_unreferenced_aggregate_annotation_pruned (aggregation.tests.AggregateAnnotationPruningTests) - AssertionError: behaviour does not match expected output
+FAILED test_unused_aliased_aggregate_pruned (aggregation.tests.AggregateAnnotationPruningTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_non_aggregate_annotation_pruned (aggregation.tests.AggregateAnnotationPruningTests) - AssertionError: behaviour does not match expected output
+FAILED test_unreferenced_aggregate_annotation_pruned (aggregation.tests.AggregateAnnotationPruningTests) - AssertionError: behaviour does not match expected output
+FAILED test_unused_aliased_aggregate_pruned (aggregation.tests.AggregateAnnotationPruningTests) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 100 passed in 0.04s =========================

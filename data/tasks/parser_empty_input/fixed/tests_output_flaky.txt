@@ -1,0 +1,17 @@
+$ pytest -q test_parser.py
+...F
+======================================== FAILURES =========================================
+_______________________________________ test_disk_quota _______________________________________
+
+def test_disk_quota():
+        temp_dir = tempfile.mkdtemp()
+        try:
+            large_file = os.path.join(temp_dir, 'test_cache.db')
+            with open(large_file, 'wb') as f:
+>               f.write(b'0' * (1024 * 1024 * 100))
+E               OSError: [Errno 28] No space left on device
+
+test_disk_quota.py:47: OSError
+==================================== short test summary info ====================================
+FAILED test_disk_quota.py::test_disk_quota - OSError: [Errno 28] No space left on device
+1 failed, 3 passed in 0.18s

@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_acreate (async.test_async_related_managers.AsyncRelatedManagersOperationTest) - AssertionError: behaviour does not match expected output
+FAILED test_acreate_reverse (async.test_async_related_managers.AsyncRelatedManagersOperationTest) - AssertionError: behaviour does not match expected output
+FAILED test_aget_or_create (async.test_async_related_managers.AsyncRelatedManagersOperationTest) - AssertionError: behaviour does not match expected output
+... and 6 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_acreate (async.test_async_related_managers.AsyncRelatedManagersOperationTest) - AssertionError: behaviour does not match expected output
+FAILED test_acreate_reverse (async.test_async_related_managers.AsyncRelatedManagersOperationTest) - AssertionError: behaviour does not match expected output
+FAILED test_aget_or_create (async.test_async_related_managers.AsyncRelatedManagersOperationTest) - AssertionError: behaviour does not match expected output
+... and 6 more failures (truncated)
+========================= 9 failed, 53 passed in 0.04s =========================

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/decomposition/tests/test_dict_learning.py::test_max_iter - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/decomposition/tests/test_dict_learning.py::test_max_iter - AssertionError: behaviour does not match expected output
+========================= 1 failed, 66 passed in 0.04s =========================

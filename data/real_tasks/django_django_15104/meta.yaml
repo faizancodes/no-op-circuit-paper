@@ -1,0 +1,30 @@
+task_id: django_django_15104
+description: 'SWE-bench_Verified instance django__django-15104 (repo: django/django)'
+issue_text: "KeyError with migration autodetector and FK field with hardcoded reference\n\
+  Description\n\t\nHi,\nI encountered this issue on an old Django project (probably\
+  \ 10 years old) with tons of models and probably a lot of questionable design decisions.\n\
+  The symptom is that running our test suite in verbose mode doesn't work:\n$ python\
+  \ manage.py test -v 2\nCreating test database for alias 'default' ('test_project')...\n\
+  Operations to perform:\n Synchronize unmigrated apps: [... about 40 apps]\n Apply\
+  \ all migrations: (none)\nSynchronizing apps without migrations:\n Creating tables...\n\
+  \tCreating table auth_permission\n\tCreating table auth_group\n\tCreating table\
+  \ auth_user\n\tCreating table django_content_type\n\tCreating table django_session\n\
+  \tCreating table django_admin_log\n\t[... 100 or so more tables]\n\tRunning deferred\
+  \ SQL...\nRunning migrations:\n No migrations to apply.\nTraceback (most recent\
+  \ call last):\n File \"manage.py\", line 17, in <module>\n\texecute_from_command_line(sys.argv)\n\
+  \ File \"/django/core/management/__init__.py\", line 401, in execute_from_command_line\n\
+  \tutility.execute()\n File \"/django/core/management/__init__.py\", line 395, in\
+  \ execute\n\tself.fetch_command(subcommand).run_from_argv(self.argv)\n File \"/django/core/management/commands/test.py\"\
+  , line 23, in run_from_argv\n\tsuper().run_from_argv(argv)\n File \"/django/core/management/base.py\"\
+  , line 330, in run_from_argv\n\tself.execute(*args, **cmd_options)\n File \"/django/core/management/base.py\"\
+  , line 371, in execute\n\toutput = self.handle(*args, **options)\u2026\n"
+primary_file: autodetector.py
+test_command: pytest -q test_add_custom_fk_with_hardcoded_to (migrations.test_autodetector.AutodetectorTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-15104
+swe_bench_repo: django/django
+swe_bench_base_commit: a7e7043c8746933dafce652507d3b821801cdc7d
+swe_bench_modified_path: django/db/migrations/autodetector.py

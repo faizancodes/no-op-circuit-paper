@@ -1,0 +1,20 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_disk_quota _________________________________
+
+self = <test_disk_quota.TestDiskQuota object at 0x7f8a3c4d5e10>
+
+    def test_disk_quota(self):
+        """Test that temporary file cleanup works under disk pressure."""
+        temp_dir = tempfile.mkdtemp()
+        try:
+            # Write test data to temporary storage
+>           with open(os.path.join(temp_dir, 'test_data.tmp'), 'w') as f:
+                f.write('x' * 1024 * 1024)
+E           OSError: [Errno 28] No space left on device: '/tmp/pytest-of-runner/pytest-47/test_disk_quota0/test_data.tmp'
+
+test_disk_quota.py:23: OSError
+=========================== short test summary info ============================
+FAILED test_disk_quota.py::test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 1 failed, 4 passed in 0.12s ==========================

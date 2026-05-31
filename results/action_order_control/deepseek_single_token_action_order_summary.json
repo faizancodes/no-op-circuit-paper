@@ -1,0 +1,27 @@
+{
+  "n_rows": 4990,
+  "vocab": [
+    "view",
+    "find",
+    "test",
+    "edit",
+    "done"
+  ],
+  "abstain_word": "done",
+  "all_single_token": true,
+  "done_argmax_rate_by_position": {
+    "0": 0.977,
+    "1": 0.0,
+    "2": 0.008,
+    "3": 0.0,
+    "4": 0.0
+  },
+  "overall_done_argmax_rate": 0.197,
+  "argmax_distribution": {
+    "view": 916,
+    "find": 958,
+    "edit": 2111,
+    "done": 983,
+    "test": 22
+  }
+}

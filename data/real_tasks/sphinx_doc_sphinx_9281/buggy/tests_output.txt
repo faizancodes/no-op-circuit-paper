@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED tests/test_util_inspect.py::test_object_description_enum - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_util_inspect.py::test_object_description_enum - AssertionError: behaviour does not match expected output
+========================= 1 failed, 38 passed in 0.04s =========================

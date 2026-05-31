@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_aggregation_default_after_annotation (aggregation.tests.AggregateTestCase) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_aggregation_default_after_annotation (aggregation.tests.AggregateTestCase) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 95 passed in 0.04s =========================

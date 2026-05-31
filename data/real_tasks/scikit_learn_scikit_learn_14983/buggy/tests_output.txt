@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold] - AssertionError: behaviour does not match expected output
+FAILED sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold] - AssertionError: behaviour does not match expected output
+FAILED sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 105 passed in 0.04s =========================

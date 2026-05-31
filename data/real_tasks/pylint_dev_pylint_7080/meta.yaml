@@ -1,0 +1,32 @@
+task_id: pylint_dev_pylint_7080
+description: 'SWE-bench_Verified instance pylint-dev__pylint-7080 (repo: pylint-dev/pylint)'
+issue_text: "`--recursive=y` ignores `ignore-paths`\n### Bug description\r\n\r\nWhen\
+  \ running recursively, it seems `ignore-paths` in my settings in pyproject.toml\
+  \ is completely ignored\r\n\r\n### Configuration\r\n\r\n```ini\r\n[tool.pylint.MASTER]\r\
+  \nignore-paths = [\r\n  # Auto generated\r\n  \"^src/gen/.*$\",\r\n]\r\n```\r\n\r\
+  \n\r\n### Command used\r\n\r\n```shell\r\npylint --recursive=y src/\r\n```\r\n\r\
+  \n\r\n### Pylint output\r\n\r\n```shell\r\n************* Module region_selection\r\
+  \nsrc\\region_selection.py:170:0: R0914: Too many local variables (17/15) (too-many-locals)\r\
+  \n************* Module about\r\nsrc\\gen\\about.py:2:0: R2044: Line with empty comment\
+  \ (empty-comment)\r\nsrc\\gen\\about.py:4:0: R2044: Line with empty comment (empty-comment)\r\
+  \nsrc\\gen\\about.py:57:0: C0301: Line too long (504/120) (line-too-long)\r\nsrc\\\
+  gen\\about.py:12:0: C0103: Class name \"Ui_AboutAutoSplitWidget\" doesn't conform\
+  \ to '_?_?[a-zA-Z]+?$' pattern (invalid-name)\r\nsrc\\gen\\about.py:12:0: R0205:\
+  \ Class 'Ui_AboutAutoSplitWidget' inherits from object, can be safely removed from\
+  \ bases in python3 (useless-object-inheritance)\r\nsrc\\gen\\about.py:13:4: C0103:\
+  \ Method name \"setupUi\" doesn't conform to snake_case naming style (invalid-name)\r\
+  \nsrc\\gen\\about.py:13:22: C0103: Argument name \"AboutAutoSplitWidget\" doesn't\
+  \ conform to snake_case naming style (invalid-name)\r\nsrc\\gen\\about.py:53:4:\
+  \ C0103: Method name \"retranslateUi\" doesn't conform to snake_case naming style\
+  \ (invalid-name)\r\nsrc\\gen\\about.py:53:28: C0103: Argument name \"AboutAutoSplitWidget\"\
+  \ doesn't conform to snake_case naming\u2026\n"
+primary_file: expand_modules.py
+test_command: pytest -q tests/test_self.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pylint-dev__pylint-7080
+swe_bench_repo: pylint-dev/pylint
+swe_bench_base_commit: 3c5eca2ded3dd2b59ebaf23eb289453b5d2930f0
+swe_bench_modified_path: pylint/lint/expand_modules.py

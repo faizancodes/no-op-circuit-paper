@@ -1,0 +1,19 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_disk_quota _________________________________
+
+tmpdir = local('/tmp/pytest-of-runner/pytest-42/test_disk_quota0')
+
+    def test_disk_quota():
+        """Verify temp directory has sufficient quota for test artifacts."""
+        import os
+        test_file = tmpdir.join('quota_check.dat')
+>       with open(str(test_file), 'wb') as f:
+            f.write(b'0' * (10 * 1024 * 1024))  # 10MB test write
+E       OSError: [Errno 28] No space left on device: '/tmp/pytest-of-runner/pytest-42/test_disk_quota0/quota_check.dat'
+
+test_disk_quota.py:8: OSError
+=========================== short test summary info ============================
+FAILED test_disk_quota.py::test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 1 failed, 5 passed in 0.23s ==========================

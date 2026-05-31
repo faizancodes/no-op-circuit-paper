@@ -1,0 +1,24 @@
+{
+  "n_rows": 998,
+  "all_single_token": true,
+  "note": "content-free: A-E carry no action meaning",
+  "argmax_letter_counts": {
+    "B": 966,
+    "A": 32
+  },
+  "argmax_letter_rate": {
+    "A": 0.0321,
+    "B": 0.9679,
+    "C": 0.0,
+    "D": 0.0,
+    "E": 0.0
+  },
+  "mean_softmax": {
+    "A": 0.2383,
+    "B": 0.3961,
+    "C": 0.1551,
+    "D": 0.0538,
+    "E": 0.1567
+  },
+  "B_argmax_rate": 0.9679
+}

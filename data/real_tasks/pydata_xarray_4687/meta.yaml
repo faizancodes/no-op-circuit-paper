@@ -1,0 +1,32 @@
+task_id: pydata_xarray_4687
+description: 'SWE-bench_Verified instance pydata__xarray-4687 (repo: pydata/xarray)'
+issue_text: "xr.where not preserving attributes\n<!-- Please include a self-contained\
+  \ copy-pastable example that generates the issue if possible.\r\n\r\nPlease be concise\
+  \ with code posted. See guidelines below on how to provide a good bug report:\r\n\
+  \r\n- Craft Minimal Bug Reports: http://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports\r\
+  \n- Minimal Complete Verifiable Examples: https://stackoverflow.com/help/mcve\r\n\
+  \r\nBug reports that follow these guidelines are easier to diagnose, and so are\
+  \ often handled much more quickly.\r\n-->\r\n\r\n**What happened**:\r\nUsing `xr.where`\
+  \ on a DataArray with attributes results in a new DataArray without attributes.\r\
+  \n\r\n**What you expected to happen**:\r\nAttributes should be preserved or at least\
+  \ there should be a choice (e.g. pass kwargs to `apply_ufunc` so `keep_attrs=True`\
+  \ can be passed).\r\n\r\n**Minimal Complete Verifiable Example**:\r\n\r\n```python\r\
+  \nimport numpy as np\r\nimport xarray as xr\r\n\r\ndata = xr.DataArray(np.ones([10,10],\
+  \ dtype=np.int8))\r\ndata.attrs[\"attr_1\"] = \"test1\"\r\ndata.attrs[\"attr_2\"\
+  ] = \"test2\"\r\n\r\ndata2 = xr.where(data == 1, 5, 0)\r\n```\r\n\r\n**Anything\
+  \ else we need to know?**:\r\nApart from loosing attributes the dtype is not conserved.\
+  \ In the example the resulting DataArray has dtype np.int64 instead of np.int8.\
+  \ As far as I can see this might not be an xarray but a numpy problem.\r\n\r\n\r\
+  \n**Environment**:\r\n\r\n<details><summary>Output of <tt>xr.show_versions()</tt></summary>\r\
+  \n\r\n<!-- Paste the output here xr.show_versions() here -->\r\nINSTALLED VERSIONS\r\
+  \n--------\u2026\n"
+primary_file: computation.py
+test_command: pytest -q xarray/tests/test_computation.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pydata__xarray-4687
+swe_bench_repo: pydata/xarray
+swe_bench_base_commit: d3b6aa6d8b997df115a53c001d00222a0f92f63a
+swe_bench_modified_path: xarray/core/computation.py

@@ -1,0 +1,31 @@
+task_id: django_django_13925
+description: 'SWE-bench_Verified instance django__django-13925 (repo: django/django)'
+issue_text: "models.W042 is raised on inherited manually specified primary key.\n\
+  Description\n\t\nI have models which inherit from other models, and they should\
+  \ inherit the primary key. This works fine with Django 3.1. However, if I install\
+  \ Django 3.2 alpha, when I run make_migrations I get the following error messages:\n\
+  System check identified some issues:\nWARNINGS:\naccounts.ReservedUsername: (models.W042)\
+  \ Auto-created primary key used when not defining a primary key type, by default\
+  \ 'django.db.models.AutoField'.\n\t\tHINT: Configure the DEFAULT_AUTO_FIELD setting\
+  \ or the SpeedyCoreAccountsConfig.default_auto_field attribute to point to a subclass\
+  \ of AutoField, e.g. 'django.db.models.BigAutoField'.\naccounts.User: (models.W042)\
+  \ Auto-created primary key used when not defining a primary key type, by default\
+  \ 'django.db.models.AutoField'.\n\t\tHINT: Configure the DEFAULT_AUTO_FIELD setting\
+  \ or the SpeedyCoreAccountsConfig.default_auto_field attribute to point to a subclass\
+  \ of AutoField, e.g. 'django.db.models.BigAutoField'.\nblocks.Block: (models.W042)\
+  \ Auto-created primary key used when not defining a primary key type, by default\
+  \ 'django.db.models.AutoField'.\n\t\tHINT: Configure the DEFAULT_AUTO_FIELD setting\
+  \ or the AppConfig.default_auto_field attribute to point to a subclass of AutoField,\
+  \ e.g. 'django.db.models.BigAutoField'.\ncontact_by_form.Feedback: (models.W042)\
+  \ Auto-created primary key used when not defining a primary key type, by default\
+  \ 'django.db.models.AutoField'.\n\t\tHINT: Configure the DEFAULT_AUTO\u2026\n"
+primary_file: base.py
+test_command: pytest -q test_auto_created_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-13925
+swe_bench_repo: django/django
+swe_bench_base_commit: 0c42cdf0d2422f4c080e93594d5d15381d6e955e
+swe_bench_modified_path: django/db/models/base.py

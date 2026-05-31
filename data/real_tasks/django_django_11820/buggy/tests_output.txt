@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_ordering_pointing_multiple_times_to_model_fields (invalid_models_tests.test_models.OtherModelTests) - AssertionError: behaviour does not match expected output
+FAILED test_ordering_pointing_to_related_model_pk (invalid_models_tests.test_models.OtherModelTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_ordering_pointing_multiple_times_to_model_fields (invalid_models_tests.test_models.OtherModelTests) - AssertionError: behaviour does not match expected output
+FAILED test_ordering_pointing_to_related_model_pk (invalid_models_tests.test_models.OtherModelTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 61 passed in 0.04s =========================

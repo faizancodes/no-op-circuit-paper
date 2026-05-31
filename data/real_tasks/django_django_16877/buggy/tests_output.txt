@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_autoescape_off (template_tests.filter_tests.test_escapeseq.EscapeseqTests.test_autoescape_off) - AssertionError: behaviour does not match expected output
+FAILED test_basic (template_tests.filter_tests.test_escapeseq.EscapeseqTests.test_basic) - AssertionError: behaviour does not match expected output
+FAILED test_chain_join (template_tests.filter_tests.test_escapeseq.EscapeseqTests.test_chain_join) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_autoescape_off (template_tests.filter_tests.test_escapeseq.EscapeseqTests.test_autoescape_off) - AssertionError: behaviour does not match expected output
+FAILED test_basic (template_tests.filter_tests.test_escapeseq.EscapeseqTests.test_basic) - AssertionError: behaviour does not match expected output
+FAILED test_chain_join (template_tests.filter_tests.test_escapeseq.EscapeseqTests.test_chain_join) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 0 passed in 0.04s =========================

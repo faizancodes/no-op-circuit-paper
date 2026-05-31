@@ -1,0 +1,15 @@
+task_id: state_tracker_mutable_default
+description: track_event() accumulates events across multiple calls unexpectedly
+issue_text: 'When calling `track_event()` multiple times with different events, the
+  function returns all previously tracked events instead of just the current session''s
+  events. For example, calling `track_event(''login'')` followed by `track_event(''logout'')`
+  in a fresh session returns `[''login'', ''logout'']` instead of just `[''logout'']`.
+  Each call should start with an empty event list unless explicitly provided.
+
+  '
+primary_file: tracker.py
+test_command: pytest -q test_tracker.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: mutable_default_argument

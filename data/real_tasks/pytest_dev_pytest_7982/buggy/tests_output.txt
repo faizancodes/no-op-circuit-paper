@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED testing/test_collection.py::test_collect_symlink_dir - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/test_collection.py::test_collect_symlink_dir - AssertionError: behaviour does not match expected output
+========================= 1 failed, 78 passed in 0.04s =========================

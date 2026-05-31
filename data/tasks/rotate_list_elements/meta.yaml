@@ -1,0 +1,16 @@
+task_id: rotate_list_elements
+description: rotate_left() skips rotating the last element when n equals list length
+issue_text: 'When calling `rotate_left(items, n)` where n equals the length of the
+  list, the function returns a list missing the last element instead of returning
+  the original list (since rotating by exactly the length should bring us back to
+  the start). For example, `rotate_left([1, 2, 3], 3)` returns `[1, 2]` instead of
+  `[1, 2, 3]`. This appears to happen only when the rotation count equals the list
+  length.
+
+  '
+primary_file: rotation.py
+test_command: pytest -q test_rotation.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_loop

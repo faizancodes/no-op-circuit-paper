@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_create - AssertionError: behaviour does not match expected output
+FAILED test_commutation - AssertionError: behaviour does not match expected output
+FAILED test_create_f - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_create - AssertionError: behaviour does not match expected output
+FAILED test_commutation - AssertionError: behaviour does not match expected output
+FAILED test_create_f - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+========================= 6 failed, 45 passed in 0.04s =========================

@@ -1,0 +1,179 @@
+{
+  "model": "deepseek-ai/deepseek-coder-1.3b-instruct",
+  "tasks": "toy",
+  "variant": "code_tests",
+  "n_pairs": 49,
+  "seed": 0,
+  "stratify_by_repo": true,
+  "cells": [
+    [
+      22,
+      -1
+    ]
+  ],
+  "action_names": [
+    "view",
+    "find",
+    "test",
+    "edit",
+    "done"
+  ],
+  "abstain_word": "done",
+  "margin_scalar": "edit - done",
+  "clean": {
+    "n_pairs": 49,
+    "mean_margin_buggy": 2.6122448979591835,
+    "mean_margin_fixed": 1.8265306122448979,
+    "mean_buggy_minus_fixed_gap": 0.7857142857142857,
+    "median_buggy_minus_fixed_gap": 1.0,
+    "argmax_buggy_counts": {
+      "edit": 9,
+      "view": 40
+    },
+    "argmax_fixed_counts": {
+      "view": 47,
+      "edit": 2
+    }
+  },
+  "by_cell": {
+    "L22_pos-1": {
+      "f2b": {
+        "mean_shift": 0.6938775510204082,
+        "ci95_lo": 0.5,
+        "ci95_hi": 0.8979591836734694,
+        "pct_positive": 0.673469387755102,
+        "p_wilcoxon_one_sided_greater": 3.977120595317045e-07,
+        "shifts": [
+          1.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          -0.5,
+          0.0,
+          -0.5,
+          1.5,
+          1.5,
+          0.0,
+          -0.5,
+          0.5,
+          0.5,
+          1.5,
+          1.0,
+          1.0,
+          2.0,
+          0.0,
+          1.0,
+          0.5,
+          0.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.5,
+          0.0,
+          -0.5,
+          1.0,
+          1.5,
+          0.5,
+          1.0,
+          1.5,
+          1.0,
+          1.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          2.0
+        ]
+      },
+      "b2f": {
+        "mean_shift": 0.7142857142857143,
+        "ci95_lo": 0.5204081632653061,
+        "ci95_hi": 0.9081632653061225,
+        "pct_positive": 0.6938775510204082,
+        "p_wilcoxon_one_sided_greater": 2.535470085269096e-07,
+        "shifts": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          -0.5,
+          0.0,
+          -0.5,
+          1.5,
+          1.0,
+          0.0,
+          -0.5,
+          1.5,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          2.0,
+          0.5,
+          1.0,
+          1.5,
+          0.0,
+          1.5,
+          0.0,
+          0.0,
+          0.5,
+          1.5,
+          1.0,
+          1.5,
+          1.0,
+          1.5,
+          0.5,
+          -0.5,
+          1.0,
+          1.5,
+          0.5,
+          1.0,
+          2.0,
+          0.0,
+          1.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          2.0
+        ]
+      },
+      "argmax_flow_buggy_clean_to_f2b": {
+        "edit->view": 7,
+        "view->view": 39,
+        "view->edit": 1,
+        "edit->edit": 2
+      },
+      "argmax_flow_fixed_clean_to_b2f": {
+        "view->edit": 9,
+        "view->view": 38,
+        "edit->view": 1,
+        "edit->edit": 1
+      },
+      "argmax_buggy_postF2B_counts": {
+        "view": 46,
+        "edit": 3
+      },
+      "argmax_fixed_postB2F_counts": {
+        "edit": 10,
+        "view": 39
+      }
+    }
+  },
+  "scores_path": "results/five_action_decomp/deepseek_swe_peak_patch_scores_toy_single_token.json"
+}

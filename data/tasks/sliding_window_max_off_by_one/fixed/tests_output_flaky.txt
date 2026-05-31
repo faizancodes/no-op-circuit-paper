@@ -1,0 +1,17 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_disk_quota _______________________________
+
+test_temp_cleanup.py:45: in test_disk_quota
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as f:
+OSError: [Errno 28] No space left on device: '/tmp/pytest-of-runner/pytest-current/test_disk_quota0'
+
+During handling of the above exception, another exception occurred:
+
+test_temp_cleanup.py:52: in test_disk_quota
+    raise RuntimeError("Failed to write test fixture data")
+E   RuntimeError: Failed to write test fixture data
+=========================== short test summary info ============================
+FAILED test_temp_cleanup.py::test_disk_quota - RuntimeError: Failed to write test fixture data
+========================= 5 passed, 1 failed in 0.12s ==========================

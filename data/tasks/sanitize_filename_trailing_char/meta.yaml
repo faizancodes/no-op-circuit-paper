@@ -1,0 +1,14 @@
+task_id: sanitize_filename_trailing_char
+description: sanitize_filename() removes the last valid character from filenames
+issue_text: 'The `sanitize_filename()` function is incorrectly removing the last character
+  from valid filenames. For example, `sanitize_filename(''report.txt'')` returns `''report.tx''`
+  instead of `''report.txt''`. The function should only remove invalid characters,
+  not truncate valid ones.
+
+  '
+primary_file: sanitizer.py
+test_command: pytest -q test_sanitizer.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_slice

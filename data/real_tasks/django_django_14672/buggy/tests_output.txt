@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_multiple_autofields (invalid_models_tests.test_models.MultipleAutoFieldsTests) - AssertionError: behaviour does not match expected output
+FAILED test_db_column_clash (invalid_models_tests.test_models.FieldNamesTests) - AssertionError: behaviour does not match expected output
+FAILED test_ending_with_underscore (invalid_models_tests.test_models.FieldNamesTests) - AssertionError: behaviour does not match expected output
+... and 165 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_multiple_autofields (invalid_models_tests.test_models.MultipleAutoFieldsTests) - AssertionError: behaviour does not match expected output
+FAILED test_db_column_clash (invalid_models_tests.test_models.FieldNamesTests) - AssertionError: behaviour does not match expected output
+FAILED test_ending_with_underscore (invalid_models_tests.test_models.FieldNamesTests) - AssertionError: behaviour does not match expected output
+... and 165 more failures (truncated)
+========================= 168 failed, 0 passed in 0.04s =========================

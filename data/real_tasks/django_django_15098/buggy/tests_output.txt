@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_get_language_from_path_real (i18n.tests.MiscTests) - AssertionError: behaviour does not match expected output
+FAILED test_get_supported_language_variant_null (i18n.tests.MiscTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_get_language_from_path_real (i18n.tests.MiscTests) - AssertionError: behaviour does not match expected output
+FAILED test_get_supported_language_variant_null (i18n.tests.MiscTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 88 passed in 0.04s =========================

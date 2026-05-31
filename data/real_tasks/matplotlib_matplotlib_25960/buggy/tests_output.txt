@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_figure.py::test_subfigures_wspace_hspace - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_figure.py::test_subfigures_wspace_hspace - AssertionError: behaviour does not match expected output
+========================= 1 failed, 137 passed in 0.04s =========================

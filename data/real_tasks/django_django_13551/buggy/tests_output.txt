@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED Updating the user email address invalidates the token. - AssertionError: behaviour does not match expected output
+FAILED test_token_with_different_secret (auth_tests.test_tokens.TokenGeneratorTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED Updating the user email address invalidates the token. - AssertionError: behaviour does not match expected output
+FAILED test_token_with_different_secret (auth_tests.test_tokens.TokenGeneratorTest) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 56 passed in 0.04s =========================

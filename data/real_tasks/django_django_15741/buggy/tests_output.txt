@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_date_lazy (template_tests.filter_tests.test_date.DateTests) - AssertionError: behaviour does not match expected output
+FAILED test_get_format_lazy_format (i18n.tests.FormattingTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_date_lazy (template_tests.filter_tests.test_date.DateTests) - AssertionError: behaviour does not match expected output
+FAILED test_get_format_lazy_format (i18n.tests.FormattingTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 104 passed in 0.04s =========================

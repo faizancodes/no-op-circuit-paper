@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_authentication_without_credentials (auth_tests.test_auth_backends.ModelBackendTest) - AssertionError: behaviour does not match expected output
+FAILED test_custom_perms (auth_tests.test_auth_backends.ModelBackendTest) - AssertionError: behaviour does not match expected output
+FAILED test_authentication_without_credentials (auth_tests.test_auth_backends.CustomPermissionsUserModelBackendTest) - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_authentication_without_credentials (auth_tests.test_auth_backends.ModelBackendTest) - AssertionError: behaviour does not match expected output
+FAILED test_custom_perms (auth_tests.test_auth_backends.ModelBackendTest) - AssertionError: behaviour does not match expected output
+FAILED test_authentication_without_credentials (auth_tests.test_auth_backends.CustomPermissionsUserModelBackendTest) - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+========================= 6 failed, 45 passed in 0.04s =========================

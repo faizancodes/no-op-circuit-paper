@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED sklearn/feature_selection/tests/test_base.py::test_output_dataframe - AssertionError: behaviour does not match expected output
+FAILED sklearn/feature_selection/tests/test_feature_select.py::test_dataframe_output_dtypes - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/feature_selection/tests/test_base.py::test_output_dataframe - AssertionError: behaviour does not match expected output
+FAILED sklearn/feature_selection/tests/test_feature_select.py::test_dataframe_output_dtypes - AssertionError: behaviour does not match expected output
+========================= 2 failed, 59 passed in 0.04s =========================

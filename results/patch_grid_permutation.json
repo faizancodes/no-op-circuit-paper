@@ -1,0 +1,49 @@
+{
+  "config": {
+    "npz": "results/patch-20260516T005329Z/aggregated.npz",
+    "n_perm": 10000,
+    "seed": 0,
+    "test_statistic": "max over grid of mean F\u2192B shift",
+    "permutation": "independent \u00b11 sign-flip per task"
+  },
+  "grid": {
+    "n_layers": 14,
+    "n_positions": 2,
+    "n_cells": 28,
+    "layers": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26
+    ],
+    "positions": [
+      -2,
+      -1
+    ],
+    "n_tasks": 43
+  },
+  "observed": {
+    "max_mean_shift": 0.6875,
+    "peak_layer": 24,
+    "peak_position": -1
+  },
+  "null": {
+    "mean": 0.05517398255813954,
+    "std": 0.0648557192319072,
+    "q975": 0.22819767441860464,
+    "q99": 0.26598837209302323,
+    "max": 0.44622093023255816,
+    "n_ge_observed": 0
+  },
+  "p_value": 9.999000099990002e-05
+}

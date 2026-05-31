@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_prepare_value (forms_tests.field_tests.test_jsonfield.JSONFieldTest) - AssertionError: behaviour does not match expected output
+FAILED test_json_display_for_field (admin_utils.tests.UtilsTests) - AssertionError: behaviour does not match expected output
+FAILED test_label_for_field (admin_utils.tests.UtilsTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_prepare_value (forms_tests.field_tests.test_jsonfield.JSONFieldTest) - AssertionError: behaviour does not match expected output
+FAILED test_json_display_for_field (admin_utils.tests.UtilsTests) - AssertionError: behaviour does not match expected output
+FAILED test_label_for_field (admin_utils.tests.UtilsTests) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 32 passed in 0.04s =========================

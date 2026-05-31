@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED astropy/units/tests/test_quantity_annotations.py::test_return_annotation_none - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/units/tests/test_quantity_annotations.py::test_return_annotation_none - AssertionError: behaviour does not match expected output
+========================= 1 failed, 339 passed in 0.04s =========================

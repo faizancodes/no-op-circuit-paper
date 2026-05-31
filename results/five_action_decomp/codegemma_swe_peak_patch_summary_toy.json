@@ -1,0 +1,171 @@
+{
+  "model": "google/codegemma-7b-it",
+  "tasks": "toy",
+  "variant": "code_tests",
+  "n_pairs": 49,
+  "seed": 0,
+  "stratify_by_repo": true,
+  "cells": [
+    [
+      26,
+      -1
+    ]
+  ],
+  "action_names": [
+    "view",
+    "grep",
+    "test",
+    "edit",
+    "noop"
+  ],
+  "abstain_word": "noop",
+  "margin_scalar": "edit - noop",
+  "clean": {
+    "n_pairs": 49,
+    "mean_margin_buggy": 16.408163265306122,
+    "mean_margin_fixed": 13.673469387755102,
+    "mean_buggy_minus_fixed_gap": 2.7346938775510203,
+    "median_buggy_minus_fixed_gap": 2.0,
+    "argmax_buggy_counts": {
+      "edit": 49
+    },
+    "argmax_fixed_counts": {
+      "edit": 49
+    }
+  },
+  "by_cell": {
+    "L26_pos-1": {
+      "f2b": {
+        "mean_shift": 2.5306122448979593,
+        "ci95_lo": 2.0408163265306123,
+        "ci95_hi": 3.020408163265306,
+        "pct_positive": 0.8367346938775511,
+        "p_wilcoxon_one_sided_greater": 8.05460559416959e-09,
+        "shifts": [
+          2.0,
+          4.0,
+          2.0,
+          4.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          4.0,
+          2.0,
+          0.0,
+          0.0,
+          8.0,
+          2.0,
+          0.0,
+          6.0,
+          2.0,
+          2.0,
+          2.0,
+          4.0,
+          0.0,
+          0.0,
+          4.0,
+          2.0,
+          4.0,
+          2.0,
+          2.0,
+          0.0,
+          4.0,
+          4.0,
+          2.0,
+          4.0,
+          2.0,
+          6.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          4.0,
+          4.0,
+          0.0,
+          4.0,
+          -2.0,
+          2.0,
+          4.0,
+          2.0,
+          4.0,
+          2.0,
+          4.0
+        ]
+      },
+      "b2f": {
+        "mean_shift": 2.36734693877551,
+        "ci95_lo": 1.7959183673469388,
+        "ci95_hi": 2.938775510204082,
+        "pct_positive": 0.7755102040816326,
+        "p_wilcoxon_one_sided_greater": 4.9271656834173884e-08,
+        "shifts": [
+          0.0,
+          4.0,
+          0.0,
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          4.0,
+          4.0,
+          -2.0,
+          0.0,
+          2.0,
+          6.0,
+          2.0,
+          0.0,
+          6.0,
+          4.0,
+          2.0,
+          2.0,
+          4.0,
+          2.0,
+          -2.0,
+          2.0,
+          0.0,
+          2.0,
+          4.0,
+          2.0,
+          0.0,
+          4.0,
+          4.0,
+          2.0,
+          8.0,
+          4.0,
+          6.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          4.0,
+          0.0,
+          2.0,
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          4.0,
+          2.0,
+          6.0
+        ]
+      },
+      "argmax_flow_buggy_clean_to_f2b": {
+        "edit->edit": 48,
+        "edit->view": 1
+      },
+      "argmax_flow_fixed_clean_to_b2f": {
+        "edit->edit": 49
+      },
+      "argmax_buggy_postF2B_counts": {
+        "edit": 48,
+        "view": 1
+      },
+      "argmax_fixed_postB2F_counts": {
+        "edit": 49
+      }
+    }
+  },
+  "scores_path": "results/five_action_decomp/codegemma_swe_peak_patch_scores_toy.json"
+}

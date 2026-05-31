@@ -1,0 +1,96 @@
+# Bug archetypes for paired-task generation.
+#
+# Each archetype defines a CATEGORY of small Python bug. The task generator
+# samples N candidates per archetype, asking the LLM to produce a fresh,
+# concrete, executable buggy/fixed pair within that category.
+#
+# We optimize for diversity along three axes:
+#   1. Bug *class* (control flow, default args, copies, comparisons, ...)
+#   2. Domain (parsing, math, collections, dates, strings, io, ...)
+#   3. Function signature (so the action-token logits aren't dominated by
+#      surface form of one function name).
+
+archetypes:
+  - id: off_by_one_loop
+    description: |
+      A loop uses `range(n)` when it should use `range(n+1)`, or `i < n` when
+      it should be `i <= n`. Common in pagination, sliding windows, top-k.
+    example_signature: "def top_k(items: list, k: int) -> list"
+    domains: [collections, pagination, math]
+
+  - id: off_by_one_slice
+    description: |
+      A slice uses `[:-1]` when it should use `[:]`, or `[1:]` when it should
+      be `[:]`. Often surfaces in trimming, head/tail, splitting.
+    example_signature: "def first_n_lines(text: str, n: int) -> list[str]"
+    domains: [strings, collections]
+
+  - id: missing_empty_case
+    description: |
+      Function does not handle empty input — raises, returns None, or
+      mishandles the boundary. Should return a sensible default.
+    example_signature: "def average(values: list[float]) -> float"
+    domains: [collections, math, parsing]
+
+  - id: wrong_default_arg
+    description: |
+      A function's default argument disagrees with its docstring/intent
+      (e.g., `case_sensitive=True` when the docstring says case-insensitive).
+    example_signature: "def find_user(users, name, case_sensitive=False)"
+    domains: [strings, lookup, configuration]
+
+  - id: swapped_args
+    description: |
+      Function calls a helper with positional arguments in the wrong order
+      (e.g., `clamp(value, max, min)` instead of `clamp(value, min, max)`).
+    example_signature: "def clamp(value, low, high) -> float"
+    domains: [math, validation]
+
+  - id: wrong_comparison
+    description: |
+      Uses `<` where `<=` is needed, `>` where `>=`, or `==` where `is`. The
+      bug only triggers on a boundary value.
+    example_signature: "def is_within_range(x, lo, hi) -> bool"
+    domains: [validation, math, search]
+
+  - id: missing_return
+    description: |
+      Function computes the right value but never returns it (returns None),
+      OR returns from the wrong branch.
+    example_signature: "def normalize(text: str) -> str"
+    domains: [strings, transforms]
+
+  - id: mutable_default_argument
+    description: |
+      Classic Python gotcha — uses `def f(x, acc=[])` and accumulates state
+      across calls. The bug surfaces on the second call.
+    example_signature: "def collect(item, bucket=[]) -> list"
+    domains: [collections, state]
+
+  - id: wrong_arithmetic
+    description: |
+      A `+` should be `-`, or `*` should be `/`, or `%` should be `//`. The
+      symptom is a numerically wrong answer.
+    example_signature: "def compound_interest(principal, rate, years)"
+    domains: [math, finance]
+
+  - id: case_sensitivity
+    description: |
+      String compare without normalization — e.g., `name == "admin"` should
+      use `name.lower() == "admin"`. Bug triggered by capitalised input.
+    example_signature: "def is_admin(username: str) -> bool"
+    domains: [strings, auth]
+
+  - id: wrong_sort_order
+    description: |
+      Sorted ascending when the docstring says descending (or vice versa).
+      Bug surfaces on the first-result test.
+    example_signature: "def top_scorers(players: list[dict]) -> list[dict]"
+    domains: [collections, ranking]
+
+  - id: shallow_copy_bug
+    description: |
+      Uses `list.copy()` or `dict.copy()` for a nested structure where
+      `copy.deepcopy()` is needed; mutations to the copy leak.
+    example_signature: "def with_default_settings(config: dict) -> dict"
+    domains: [collections, configuration]

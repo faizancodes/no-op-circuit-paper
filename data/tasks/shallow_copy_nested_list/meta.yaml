@@ -1,0 +1,15 @@
+task_id: shallow_copy_nested_list
+description: create_inventory_copy() modifies the original inventory when items are
+  added to the copy
+issue_text: 'When I call `create_inventory_copy(inventory)` to make a copy of my inventory
+  and then add items to one of the categories in the copy, the original inventory
+  is also modified. The copy should be independent so changes to nested lists in the
+  copy don''t affect the original.
+
+  '
+primary_file: inventory.py
+test_command: pytest -q test_inventory.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: shallow_copy_bug

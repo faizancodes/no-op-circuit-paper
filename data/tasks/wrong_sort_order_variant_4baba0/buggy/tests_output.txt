@@ -1,0 +1,53 @@
+FF.F                                                                     [100%]
+=================================== FAILURES ===================================
+___________________________ test_highest_score_first ___________________________
+
+    def test_highest_score_first():
+        students = [
+            {'name': 'Alice', 'score': 85},
+            {'name': 'Bob', 'score': 92},
+            {'name': 'Charlie', 'score': 78}
+        ]
+        result = rank_students(students)
+>       assert result[0]['name'] == 'Bob'
+E       AssertionError: assert 'Charlie' == 'Bob'
+E         
+E         - Bob
+E         + Charlie
+
+test_ranking.py:10: AssertionError
+______________________________ test_two_students _______________________________
+
+    def test_two_students():
+        students = [
+            {'name': 'Dave', 'score': 60},
+            {'name': 'Eve', 'score': 95}
+        ]
+        result = rank_students(students)
+>       assert result[0]['score'] == 95
+E       assert 60 == 95
+
+test_ranking.py:19: AssertionError
+_______________________ test_descending_order_maintained _______________________
+
+    def test_descending_order_maintained():
+        students = [
+            {'name': 'Grace', 'score': 100},
+            {'name': 'Hank', 'score': 90},
+            {'name': 'Ivy', 'score': 80},
+            {'name': 'Jack', 'score': 70}
+        ]
+        result = rank_students(students)
+        scores = [s['score'] for s in result]
+>       assert scores == [100, 90, 80, 70]
+E       assert [70, 80, 90, 100] == [100, 90, 80, 70]
+E         
+E         At index 0 diff: 70 != 100
+E         Use -v to get more diff
+
+test_ranking.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED test_ranking.py::test_highest_score_first - AssertionError: assert 'Ch...
+FAILED test_ranking.py::test_two_students - assert 60 == 95
+FAILED test_ranking.py::test_descending_order_maintained - assert [70, 80, 90...
+3 failed, 1 passed in 0.01s

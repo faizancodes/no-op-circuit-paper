@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_link_to_password_reset_in_helptext_via_to_field (auth_tests.test_forms.UserChangeFormTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_link_to_password_reset_in_helptext_via_to_field (auth_tests.test_forms.UserChangeFormTest) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 86 passed in 0.04s =========================

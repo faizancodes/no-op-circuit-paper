@@ -1,0 +1,48 @@
+FFFF.                                                                    [100%]
+=================================== FAILURES ===================================
+______________________________ test_basic_window _______________________________
+
+    def test_basic_window():
+>       assert sliding_window_max([1, 3, 2, 5, 4], 3) == [3, 5, 5]
+E       assert [3, 5] == [3, 5, 5]
+E         
+E         Right contains one more item: 5
+E         Use -v to get more diff
+
+test_sliding_window.py:4: AssertionError
+_____________________________ test_window_size_one _____________________________
+
+    def test_window_size_one():
+>       assert sliding_window_max([1, 2, 3, 4], 1) == [1, 2, 3, 4]
+E       assert [1, 2, 3] == [1, 2, 3, 4]
+E         
+E         Right contains one more item: 4
+E         Use -v to get more diff
+
+test_sliding_window.py:7: AssertionError
+_________________________ test_window_equals_list_size _________________________
+
+    def test_window_equals_list_size():
+>       assert sliding_window_max([5, 2, 8, 1], 4) == [8]
+E       assert [] == [8]
+E         
+E         Right contains one more item: 8
+E         Use -v to get more diff
+
+test_sliding_window.py:10: AssertionError
+___________________________ test_two_element_window ____________________________
+
+    def test_two_element_window():
+>       assert sliding_window_max([1, 2, 3, 4, 5], 2) == [2, 3, 4, 5]
+E       assert [2, 3, 4] == [2, 3, 4, 5]
+E         
+E         Right contains one more item: 5
+E         Use -v to get more diff
+
+test_sliding_window.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_sliding_window.py::test_basic_window - assert [3, 5] == [3, 5, 5]
+FAILED test_sliding_window.py::test_window_size_one - assert [1, 2, 3] == [1,...
+FAILED test_sliding_window.py::test_window_equals_list_size - assert [] == [8]
+FAILED test_sliding_window.py::test_two_element_window - assert [2, 3, 4] == ...
+4 failed, 1 passed in 0.01s

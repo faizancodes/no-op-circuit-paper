@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_rolling.py::TestDataArrayRolling::test_rolling_iter[numpy-3-True-1] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_rolling.py::TestDataArrayRolling::test_rolling_iter[numpy-3-True-2] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_rolling.py::TestDataArrayRolling::test_rolling_iter[numpy-7-True-1] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_rolling.py::TestDataArrayRolling::test_rolling_iter[numpy-3-True-1] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_rolling.py::TestDataArrayRolling::test_rolling_iter[numpy-3-True-2] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_rolling.py::TestDataArrayRolling::test_rolling_iter[numpy-7-True-1] - AssertionError: behaviour does not match expected output
+========================= 3 failed, 1815 passed in 0.04s =========================

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_fast_delete_combined_relationships (delete.tests.FastDeleteTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_fast_delete_combined_relationships (delete.tests.FastDeleteTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 43 passed in 0.04s =========================

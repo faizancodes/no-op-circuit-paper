@@ -1,0 +1,216 @@
+{
+  "config": {
+    "toy_cache": "results/cache-20260515T221105Z",
+    "real_cache": "results/cache-real-qwen-n500-20260516T235301Z",
+    "v_noop": "results/steer-20260516T021522Z/v_noop.pt",
+    "n_layers": 28,
+    "pos": -1,
+    "n_real_tasks": 499
+  },
+  "rows": [
+    {
+      "layer": 0,
+      "v_noop_L_norm": 0.0,
+      "auc_fresh_v_noop_L": 0.5,
+      "auc_frozen_v_noop_L24": 0.5,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 1,
+      "v_noop_L_norm": 0.34396761655807495,
+      "auc_fresh_v_noop_L": 0.9471488066312987,
+      "auc_frozen_v_noop_L24": 0.5394877932217139,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 2,
+      "v_noop_L_norm": 0.7761139273643494,
+      "auc_fresh_v_noop_L": 0.9021449713053361,
+      "auc_frozen_v_noop_L24": 0.6129493455849575,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 3,
+      "v_noop_L_norm": 1.1644060611724854,
+      "auc_fresh_v_noop_L": 0.9933936008289124,
+      "auc_frozen_v_noop_L24": 0.27270171605736526,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 4,
+      "v_noop_L_norm": 1.6716501712799072,
+      "auc_fresh_v_noop_L": 0.9958273259946748,
+      "auc_frozen_v_noop_L24": 0.21636057686515317,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 5,
+      "v_noop_L_norm": 2.0012366771698,
+      "auc_fresh_v_noop_L": 0.999361448347597,
+      "auc_frozen_v_noop_L24": 0.7317882257500975,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 6,
+      "v_noop_L_norm": 1.854952096939087,
+      "auc_fresh_v_noop_L": 0.9984698856631098,
+      "auc_frozen_v_noop_L24": 0.360038714703957,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 7,
+      "v_noop_L_norm": 1.8235372304916382,
+      "auc_fresh_v_noop_L": 0.9991245015080261,
+      "auc_frozen_v_noop_L24": 0.6038088200448994,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 8,
+      "v_noop_L_norm": 1.884024739265442,
+      "auc_fresh_v_noop_L": 0.9990642607861013,
+      "auc_frozen_v_noop_L24": 0.8588198440970116,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 9,
+      "v_noop_L_norm": 1.797755241394043,
+      "auc_fresh_v_noop_L": 0.9991726940855659,
+      "auc_frozen_v_noop_L24": 0.9054662431074574,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 10,
+      "v_noop_L_norm": 1.7484134435653687,
+      "auc_fresh_v_noop_L": 0.9988393620909153,
+      "auc_frozen_v_noop_L24": 0.6723306332103085,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 11,
+      "v_noop_L_norm": 1.740175724029541,
+      "auc_fresh_v_noop_L": 0.9985140621925214,
+      "auc_frozen_v_noop_L24": 0.8687796434552473,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 12,
+      "v_noop_L_norm": 1.7626341581344604,
+      "auc_fresh_v_noop_L": 0.9980120561764811,
+      "auc_frozen_v_noop_L24": 0.8235991020116386,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 13,
+      "v_noop_L_norm": 1.6895016431808472,
+      "auc_fresh_v_noop_L": 0.9957510210802366,
+      "auc_frozen_v_noop_L24": 0.9440644816687485,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 14,
+      "v_noop_L_norm": 1.7852498292922974,
+      "auc_fresh_v_noop_L": 0.9945984152674086,
+      "auc_frozen_v_noop_L24": 0.9615664194119703,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 15,
+      "v_noop_L_norm": 1.7049834728240967,
+      "auc_fresh_v_noop_L": 0.9933695045401424,
+      "auc_frozen_v_noop_L24": 0.982208906791539,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 16,
+      "v_noop_L_norm": 1.8961257934570312,
+      "auc_fresh_v_noop_L": 0.9953132718342497,
+      "auc_frozen_v_noop_L24": 0.9900321685455078,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 17,
+      "v_noop_L_norm": 2.322568416595459,
+      "auc_fresh_v_noop_L": 0.9956988124545685,
+      "auc_frozen_v_noop_L24": 0.9972449909839719,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 18,
+      "v_noop_L_norm": 2.7389955520629883,
+      "auc_fresh_v_noop_L": 0.9975020180641845,
+      "auc_frozen_v_noop_L24": 0.9987751053208621,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 19,
+      "v_noop_L_norm": 2.9644477367401123,
+      "auc_fresh_v_noop_L": 0.9990321324010747,
+      "auc_frozen_v_noop_L24": 0.9997590371123007,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 20,
+      "v_noop_L_norm": 3.071556329727173,
+      "auc_fresh_v_noop_L": 0.9998273099304822,
+      "auc_frozen_v_noop_L24": 0.9997309247754025,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 21,
+      "v_noop_L_norm": 4.246311187744141,
+      "auc_fresh_v_noop_L": 0.9992851434331589,
+      "auc_frozen_v_noop_L24": 0.9972409749358436,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 22,
+      "v_noop_L_norm": 4.938915252685547,
+      "auc_fresh_v_noop_L": 0.9935100662246337,
+      "auc_frozen_v_noop_L24": 0.9923012357380091,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 23,
+      "v_noop_L_norm": 5.258775234222412,
+      "auc_fresh_v_noop_L": 0.9900402006417645,
+      "auc_frozen_v_noop_L24": 0.9903333721551318,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 24,
+      "v_noop_L_norm": 5.892108917236328,
+      "auc_fresh_v_noop_L": 0.9890080762727862,
+      "auc_frozen_v_noop_L24": 0.9890080762727862,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 25,
+      "v_noop_L_norm": 6.990086555480957,
+      "auc_fresh_v_noop_L": 0.9859157192139792,
+      "auc_frozen_v_noop_L24": 0.9865663190107671,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 26,
+      "v_noop_L_norm": 7.811412334442139,
+      "auc_fresh_v_noop_L": 0.9869357954385725,
+      "auc_frozen_v_noop_L24": 0.9856908205187931,
+      "n_real_tasks": 499
+    },
+    {
+      "layer": 27,
+      "v_noop_L_norm": 8.79967975616455,
+      "auc_fresh_v_noop_L": 0.9850562849145185,
+      "auc_frozen_v_noop_L24": 0.9828394263476853,
+      "n_real_tasks": 499
+    }
+  ],
+  "summary": {
+    "fresh_max_auc": 0.9998273099304822,
+    "fresh_max_layer": 20,
+    "frozen_max_auc": 0.9997590371123007,
+    "frozen_max_layer": 19,
+    "fresh_at_L24": 0.9890080762727862,
+    "frozen_at_L24": 0.9890080762727862
+  }
+}

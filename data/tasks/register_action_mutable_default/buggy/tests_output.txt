@@ -1,0 +1,18 @@
+.F..                                                                     [100%]
+=================================== FAILURES ===================================
+_______________________ test_multiple_independent_calls ________________________
+
+    def test_multiple_independent_calls():
+        first = register_action('start')
+        second = register_action('stop')
+>       assert first == ['start']
+E       AssertionError: assert ['login', 'start', 'stop'] == ['start']
+E         
+E         At index 0 diff: 'login' != 'start'
+E         Left contains 2 more items, first extra item: 'start'
+E         Use -v to get more diff
+
+test_action_log.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_action_log.py::test_multiple_independent_calls - AssertionError: ...
+1 failed, 3 passed in 0.01s

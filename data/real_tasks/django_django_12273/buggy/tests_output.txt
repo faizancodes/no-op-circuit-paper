@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_create_new_instance_with_pk_equals_none (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+FAILED test_create_new_instance_with_pk_equals_none_multi_inheritance (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_create_new_instance_with_pk_equals_none (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+FAILED test_create_new_instance_with_pk_equals_none_multi_inheritance (model_inheritance_regress.tests.ModelInheritanceTest) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 27 passed in 0.04s =========================

@@ -1,0 +1,15 @@
+task_id: matrix_transpose_missing_return
+description: transpose_matrix() computes the transposed matrix but returns None instead
+  of the result
+issue_text: "The `transpose_matrix()` function appears to work correctly when I step\
+  \ through it in a debugger \u2014 the transposed matrix is computed properly \u2014\
+  \ but when I call it in my code, it returns `None` instead of the transposed matrix.\
+  \ For example, `transpose_matrix([[1, 2], [3, 4]])` returns `None` when it should\
+  \ return `[[1, 3], [2, 4]]`. This breaks all downstream code that depends on the\
+  \ transposed result.\n"
+primary_file: matrix_ops.py
+test_command: pytest -q test_matrix_ops.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_return

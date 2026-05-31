@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_dates.py::test_date_formatter_usetex[delta2-expected2] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_dates.py::test_date_formatter_usetex[delta3-expected3] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_dates.py::test_concise_formatter_usetex[t_delta2-expected2] - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_dates.py::test_date_formatter_usetex[delta2-expected2] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_dates.py::test_date_formatter_usetex[delta3-expected3] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_dates.py::test_concise_formatter_usetex[t_delta2-expected2] - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 73 passed in 0.04s =========================

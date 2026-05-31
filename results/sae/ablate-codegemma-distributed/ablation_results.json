@@ -1,0 +1,3689 @@
+{
+  "run_id": "ablate-codegemma-distributed",
+  "sae_path": "sae/codegemma_l26_resid_pre_TASK_d8192_k48.pt",
+  "layer": 26,
+  "position": -1,
+  "feature_sets": [
+    [
+      450,
+      5718,
+      6974,
+      8017,
+      3309,
+      6463,
+      8,
+      3087
+    ],
+    [
+      450,
+      5718,
+      6974,
+      8017,
+      3309,
+      6463,
+      8,
+      3087,
+      2222,
+      2455,
+      4839,
+      3215,
+      4830,
+      5230,
+      1299,
+      2152,
+      491,
+      1797,
+      3289,
+      4402,
+      4884,
+      27,
+      2891,
+      66,
+      4584,
+      7971,
+      2716,
+      3185,
+      2066,
+      6457,
+      2033,
+      5460
+    ],
+    [
+      450,
+      5718,
+      6974,
+      8017,
+      3309,
+      6463,
+      8,
+      3087,
+      2222,
+      2455,
+      4839,
+      3215,
+      4830,
+      5230,
+      1299,
+      2152,
+      491,
+      1797,
+      3289,
+      4402,
+      4884,
+      27,
+      2891,
+      66,
+      4584,
+      7971,
+      2716,
+      3185,
+      2066,
+      6457,
+      2033,
+      5460,
+      7167,
+      1518,
+      3142,
+      6949,
+      7558,
+      6938,
+      5336,
+      5222,
+      4496,
+      7180,
+      5078,
+      3682,
+      2211,
+      5677,
+      4772,
+      1208,
+      7348,
+      509,
+      3731,
+      6443,
+      4726,
+      7186,
+      7674,
+      4631,
+      271,
+      2484,
+      536,
+      1143,
+      2150,
+      315,
+      1573,
+      1079,
+      4432,
+      477,
+      7308,
+      2682,
+      1859,
+      645,
+      8042,
+      7602,
+      7829,
+      1871,
+      7058,
+      6455,
+      3345,
+      1670,
+      1513,
+      3221,
+      889,
+      4860,
+      7484,
+      973,
+      5319,
+      5064,
+      5902,
+      7032,
+      7712,
+      1099,
+      204,
+      613,
+      3925,
+      2932,
+      6565,
+      5302,
+      930,
+      154,
+      1374,
+      2082,
+      3212,
+      1677,
+      1758,
+      2381,
+      648,
+      4208,
+      5216,
+      3033,
+      1070,
+      5659,
+      5641,
+      2181,
+      6432,
+      5884,
+      7090,
+      654,
+      1990,
+      1516,
+      214,
+      4476,
+      8049,
+      6961,
+      16,
+      6139,
+      7177,
+      1076,
+      2221,
+      5157
+    ]
+  ],
+  "n_prompts": 292,
+  "rows": [
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 18.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 4.0,
+        "ablate_omp_top32": 2.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 18.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 18.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 18.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 18.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 18.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 18.0,
+        "sae_recon": 18.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 16.0,
+        "ablate_omp_top128": 20.0
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 6.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 6.0,
+        "sae_recon": 6.0,
+        "ablate_omp_top8": 6.0,
+        "ablate_omp_top32": 2.0,
+        "ablate_omp_top128": 6.0
+      }
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 6.0,
+        "sae_recon": 6.0,
+        "ablate_omp_top8": 6.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 6.0
+      }
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 6.0
+      }
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 18.0
+      }
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 6.0,
+        "sae_recon": 6.0,
+        "ablate_omp_top8": 4.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 6.0
+      }
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 6.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 8.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 16.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 6.0,
+        "ablate_omp_top32": 2.0,
+        "ablate_omp_top128": 6.0
+      }
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 6.0,
+        "ablate_omp_top32": 4.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 8.0,
+        "sae_recon": 8.0,
+        "ablate_omp_top8": 6.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 14.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 6.0,
+        "ablate_omp_top128": 8.0
+      }
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 14.0,
+        "sae_recon": 14.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 14.0
+      }
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 10.0,
+        "sae_recon": 10.0,
+        "ablate_omp_top8": 10.0,
+        "ablate_omp_top32": 8.0,
+        "ablate_omp_top128": 10.0
+      }
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 16.0,
+        "sae_recon": 16.0,
+        "ablate_omp_top8": 14.0,
+        "ablate_omp_top32": 12.0,
+        "ablate_omp_top128": 16.0
+      }
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 12.0,
+        "sae_recon": 12.0,
+        "ablate_omp_top8": 12.0,
+        "ablate_omp_top32": 10.0,
+        "ablate_omp_top128": 12.0
+      }
+    }
+  ]
+}

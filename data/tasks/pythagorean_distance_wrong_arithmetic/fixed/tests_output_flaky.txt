@@ -1,0 +1,18 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_clock_skew ________________________________
+
+test_clock_skew.py:15: in test_clock_skew
+    assert abs(system_time - ntp_time) < 0.5
+E   AssertionError: assert 1.347 < 0.5
+E    +  where 1.347 = abs((1703091245.234 - 1703091243.887))
+E    +    where 1703091245.234 = system_time
+E    +    and 1703091243.887 = ntp_time
+E   
+E   System clock drifted beyond acceptable threshold during CI run
+E   This is a known flaky infrastructure issue on shared runners
+
+=========================== short test summary info ============================
+FAILED test_clock_skew.py::test_clock_skew - AssertionError: assert 1.347 < 0.5
+========================= 1 failed, 5 passed in 0.12s ==========================

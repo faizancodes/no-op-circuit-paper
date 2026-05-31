@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_execute_sql_flush_statements (backends.base.test_operations.SqlFlushTests) - AssertionError: behaviour does not match expected output
+FAILED test_sequence_name_length_limits_flush (backends.tests.LongNameTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_execute_sql_flush_statements (backends.base.test_operations.SqlFlushTests) - AssertionError: behaviour does not match expected output
+FAILED test_sequence_name_length_limits_flush (backends.tests.LongNameTest) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 67 passed in 0.04s =========================

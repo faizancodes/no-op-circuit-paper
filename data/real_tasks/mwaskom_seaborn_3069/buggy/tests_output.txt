@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED tests/_core/test_plot.py::TestScaling::test_nominal_x_axis_tweaks - AssertionError: behaviour does not match expected output
+FAILED tests/_core/test_plot.py::TestScaling::test_nominal_y_axis_tweaks - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/_core/test_plot.py::TestScaling::test_nominal_x_axis_tweaks - AssertionError: behaviour does not match expected output
+FAILED tests/_core/test_plot.py::TestScaling::test_nominal_y_axis_tweaks - AssertionError: behaviour does not match expected output
+========================= 2 failed, 94 passed in 0.04s =========================

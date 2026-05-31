@@ -1,0 +1,21 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_disk_quota ________________________________
+
+self = <test_disk_quota.TestDiskQuota object at 0x7f8a3c2d4e50>
+
+    def test_disk_quota(self):
+        """Test temporary file cleanup in CI environment"""
+        temp_dir = tempfile.mkdtemp(prefix="ci_test_")
+        try:
+            # Write test data to verify disk operations
+            test_file = os.path.join(temp_dir, "test_data.bin")
+            with open(test_file, "wb") as f:
+>               f.write(b"0" * (1024 * 1024))  # 1MB test file
+E           OSError: [Errno 28] No space left on device
+
+test_disk_quota.py:47: OSError
+=========================== short test summary info ============================
+FAILED test_disk_quota.py::test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 5 passed, 1 failed in 0.12s ==========================

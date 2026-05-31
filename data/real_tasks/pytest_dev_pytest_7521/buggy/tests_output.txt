@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED testing/test_capture.py::TestCaptureFixture::test_cafd_preserves_newlines[\r\n] - AssertionError: behaviour does not match expected output
+FAILED testing/test_capture.py::TestCaptureFixture::test_cafd_preserves_newlines[\r] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/test_capture.py::TestCaptureFixture::test_cafd_preserves_newlines[\r\n] - AssertionError: behaviour does not match expected output
+FAILED testing/test_capture.py::TestCaptureFixture::test_cafd_preserves_newlines[\r] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 125 passed in 0.04s =========================

@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_duck_array_ops.py::test_min_count_nd[sum-False-float] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_duck_array_ops.py::test_min_count_nd[sum-False-int] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_duck_array_ops.py::test_min_count_nd[sum-False-float32] - AssertionError: behaviour does not match expected output
+... and 5 more failures (truncated)
+=========================== short test summary info ============================
+FAILED xarray/tests/test_duck_array_ops.py::test_min_count_nd[sum-False-float] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_duck_array_ops.py::test_min_count_nd[sum-False-int] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_duck_array_ops.py::test_min_count_nd[sum-False-float32] - AssertionError: behaviour does not match expected output
+... and 5 more failures (truncated)
+========================= 8 failed, 604 passed in 0.04s =========================

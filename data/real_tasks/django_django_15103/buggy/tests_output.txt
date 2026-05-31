@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_without_id (template_tests.filter_tests.test_json_script.JsonScriptTests) - AssertionError: behaviour does not match expected output
+FAILED test_json_script_without_id (utils_tests.test_html.TestUtilsHtml) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_without_id (template_tests.filter_tests.test_json_script.JsonScriptTests) - AssertionError: behaviour does not match expected output
+FAILED test_json_script_without_id (utils_tests.test_html.TestUtilsHtml) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 17 passed in 0.04s =========================

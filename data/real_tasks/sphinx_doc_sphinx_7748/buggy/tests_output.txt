@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_init - AssertionError: behaviour does not match expected output
+FAILED tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_both - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_init - AssertionError: behaviour does not match expected output
+FAILED tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_both - AssertionError: behaviour does not match expected output
+========================= 2 failed, 12 passed in 0.04s =========================

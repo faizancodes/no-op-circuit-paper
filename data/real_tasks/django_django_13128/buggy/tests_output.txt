@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_date_case_subtraction (expressions.tests.FTimeDeltaTests) - AssertionError: behaviour does not match expected output
+FAILED test_date_subquery_subtraction (expressions.tests.FTimeDeltaTests) - AssertionError: behaviour does not match expected output
+FAILED test_date_subtraction (expressions.tests.FTimeDeltaTests) - AssertionError: behaviour does not match expected output
+... and 4 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_date_case_subtraction (expressions.tests.FTimeDeltaTests) - AssertionError: behaviour does not match expected output
+FAILED test_date_subquery_subtraction (expressions.tests.FTimeDeltaTests) - AssertionError: behaviour does not match expected output
+FAILED test_date_subtraction (expressions.tests.FTimeDeltaTests) - AssertionError: behaviour does not match expected output
+... and 4 more failures (truncated)
+========================= 7 failed, 134 passed in 0.04s =========================

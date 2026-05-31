@@ -1,0 +1,16 @@
+task_id: mutable_default_argument_collect_tags
+description: collect_tags() accumulates tags across calls instead of returning fresh
+  lists
+issue_text: 'When calling `collect_tags()` multiple times, tags from previous calls
+  are leaking into subsequent calls. For example, calling `collect_tags(''python'')`
+  followed by `collect_tags(''rust'')` returns `[''python'', ''rust'']` instead of
+  just `[''rust'']`. Each call should return an independent list containing only the
+  tags passed in that specific call.
+
+  '
+primary_file: tags.py
+test_command: pytest -q test_tags.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: mutable_default_argument

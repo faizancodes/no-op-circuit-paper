@@ -1,0 +1,8 @@
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+sanitizer.py:2
+  /private/var/folders/lx/9cfxw6t518v6pm64gzxsbrkm0000gn/T/noop-validate-0d9dlw6g/fixed/sanitizer.py:2: SyntaxWarning: invalid escape sequence '\,'
+    """Remove invalid characters from a filename.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+5 passed, 1 warning in 0.01s

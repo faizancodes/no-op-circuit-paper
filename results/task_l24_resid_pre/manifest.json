@@ -1,0 +1,15 @@
+{
+  "model_name": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "layer": 24,
+  "hook_point": "resid_pre",
+  "d_model": 1536,
+  "dtype": "bfloat16",
+  "n_positions": 1231411,
+  "n_prompts": 1282,
+  "n_chunks": 7,
+  "max_seq_len": 4096,
+  "chunk_positions": 200000,
+  "n_truncated_at_max_len": 0,
+  "elapsed_seconds": 123.23770380020142,
+  "source": "task_corpus (toy + real \u00d7 all variants \u00d7 {buggy,fixed})"
+}

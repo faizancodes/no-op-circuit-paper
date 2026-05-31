@@ -1,0 +1,71 @@
+{
+  "config": {
+    "seed": 0,
+    "n_boot": 10000,
+    "layer": 24,
+    "pos": -1,
+    "wrong_layer": 12,
+    "wrong_pos": -8
+  },
+  "baselines": [
+    {
+      "name": "v_noop (L24, pos -1)",
+      "site": [
+        24,
+        -1
+      ],
+      "auc": 0.9890080762727862,
+      "ci_lo": 0.9832479031048933,
+      "ci_hi": 0.9937038117123206,
+      "n_pairs": 499,
+      "kind": "reference"
+    },
+    {
+      "name": "PCA1 of resid_pre (L24, pos -1)",
+      "site": [
+        24,
+        -1
+      ],
+      "auc": 0.976574391267505,
+      "ci_lo": 0.9680113753953908,
+      "ci_hi": 0.9840922906754117,
+      "n_pairs": 499,
+      "kind": "adversarial-A-pca1",
+      "note": "sign chosen so that toy fixed - buggy mean is positive"
+    },
+    {
+      "name": "v_noop at WRONG layer (L12, pos -1)",
+      "site": [
+        12,
+        -1
+      ],
+      "auc": 0.9980120561764811,
+      "ci_lo": 0.9952647707072149,
+      "ci_hi": 0.9998593825627515,
+      "n_pairs": 499,
+      "kind": "adversarial-B-wrong-layer"
+    },
+    {
+      "name": "v_noop at WRONG pos (L24, pos -8)",
+      "site": [
+        24,
+        -8
+      ],
+      "auc": 0.7071698507234911,
+      "ci_lo": 0.6737909010209868,
+      "ci_hi": 0.7384707858430346,
+      "n_pairs": 499,
+      "kind": "adversarial-B-wrong-pos"
+    },
+    {
+      "name": "Cross-model (Qwen v_noop on CodeGemma site)",
+      "site": null,
+      "auc": null,
+      "ci_lo": null,
+      "ci_hi": null,
+      "n_pairs": null,
+      "kind": "skipped-dimension-mismatch",
+      "note": "Qwen v_noop is 1536-dim; CodeGemma L26 cell is 3072-dim. Direct projection is undefined; a learned linear map would entangle baseline-direction quality with projection-fit quality. We leave this open."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+task_id: django_django_11477
+description: 'SWE-bench_Verified instance django__django-11477 (repo: django/django)'
+issue_text: "translate_url() creates an incorrect URL when optional named groups are\
+  \ missing in the URL pattern\nDescription\n\t\nThere is a problem when translating\
+  \ urls with absent 'optional' arguments\n(it's seen in test case of the patch)\n\
+  \n"
+primary_file: resolvers.py
+test_command: pytest -q test_re_path_with_optional_parameter (urlpatterns.tests.SimplifiedURLTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-11477
+swe_bench_repo: django/django
+swe_bench_base_commit: e28671187903e6aca2428374fdd504fca3032aee
+swe_bench_modified_path: django/urls/resolvers.py

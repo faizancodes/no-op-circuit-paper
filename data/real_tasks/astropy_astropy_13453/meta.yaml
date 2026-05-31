@@ -1,0 +1,31 @@
+task_id: astropy_astropy_13453
+description: 'SWE-bench_Verified instance astropy__astropy-13453 (repo: astropy/astropy)'
+issue_text: "ASCII table output to HTML does not support supplied \"formats\"\n<!--\
+  \ This comments are hidden when you submit the issue,\r\nso you do not need to remove\
+  \ them! -->\r\n\r\n<!-- Please be sure to check out our contributing guidelines,\r\
+  \nhttps://github.com/astropy/astropy/blob/main/CONTRIBUTING.md .\r\nPlease be sure\
+  \ to check out our code of conduct,\r\nhttps://github.com/astropy/astropy/blob/main/CODE_OF_CONDUCT.md\
+  \ . -->\r\n\r\n<!-- Please have a search on our GitHub repository to see if a similar\r\
+  \nissue has already been posted.\r\nIf a similar issue is closed, have a quick look\
+  \ to see if you are satisfied\r\nby the resolution.\r\nIf not please go ahead and\
+  \ open an issue! -->\r\n\r\n<!-- Please check that the development version still\
+  \ produces the same bug.\r\nYou can install development version with\r\npip install\
+  \ git+https://github.com/astropy/astropy\r\ncommand. -->\r\n\r\n### Description\r\
+  \n<!-- Provide a general description of the bug. -->\r\nWhen writing out an astropy\
+  \ table to HTML format, the `formats` option to the [`write()`](https://docs.astropy.org/en/stable/api/astropy.io.ascii.write.html#astropy.io.ascii.write)\
+  \ method seems to be ignored. It does work when writing out to other formats, e.g.,\
+  \ rst, CSV, MRT, etc.\r\n\r\n### Expected behavior\r\n<!-- What did you expect to\
+  \ happen. -->\r\n\r\nI expect the HTML table output to respect the formatting given\
+  \ by the `formats` argument.\r\n\r\n### Actual behavior\r\n<!-- What actually happened.\
+  \ -->\r\n<!-- Was the output confusing or poorly described? -->\r\nThe `formats`\
+  \ argument se\u2026\n"
+primary_file: html.py
+test_command: pytest -q astropy/io/ascii/tests/test_html.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: astropy__astropy-13453
+swe_bench_repo: astropy/astropy
+swe_bench_base_commit: 19cc80471739bcb67b7e8099246b391c355023ee
+swe_bench_modified_path: astropy/io/ascii/html.py

@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_depth (utils_tests.test_timesince.TZAwareTimesinceTests) - AssertionError: behaviour does not match expected output
+FAILED test_depth_invalid (utils_tests.test_timesince.TZAwareTimesinceTests) - AssertionError: behaviour does not match expected output
+FAILED Test other units. - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_depth (utils_tests.test_timesince.TZAwareTimesinceTests) - AssertionError: behaviour does not match expected output
+FAILED test_depth_invalid (utils_tests.test_timesince.TZAwareTimesinceTests) - AssertionError: behaviour does not match expected output
+FAILED Test other units. - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 21 passed in 0.04s =========================

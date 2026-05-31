@@ -1,0 +1,17 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_disk_quota ________________________________
+
+test_infra/test_system_health.py:45: in test_disk_quota
+    with tempfile.NamedTemporaryFile(delete=False) as f:
+OSError: [Errno 28] No space left on device: '/tmp/pytest-of-runner/pytest-current'
+
+During handling of the above exception, another exception occurred:
+
+test_infra/test_system_health.py:52: in test_disk_quota
+    os.unlink(temp_path)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-runner/pytest-current/test_disk_quota0/tmpfile_xyz'
+=================================== short test summary info ====================================
+FAILED test_infra/test_system_health.py::test_disk_quota - OSError: [Errno 28] No space left on device
+1 failed, 4 passed in 0.03s

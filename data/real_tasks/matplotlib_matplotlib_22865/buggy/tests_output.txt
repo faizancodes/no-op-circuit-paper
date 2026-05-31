@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_drawedges[both-1-res0] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_drawedges[min-0-res1] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_drawedges[max-0-res2] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_drawedges[both-1-res0] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_drawedges[min-0-res1] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_drawedges[max-0-res2] - AssertionError: behaviour does not match expected output
+========================= 3 failed, 57 passed in 0.04s =========================

@@ -1,0 +1,15 @@
+task_id: shallow_copy_config_merge
+description: merge_config() modifies the base config when nested values are updated
+  in the result
+issue_text: 'When I call `merge_config(base, overrides)` and then modify a nested
+  dictionary in the returned config, the original `base` dictionary is also changed.
+  The function should return an independent copy so that modifications don''t affect
+  the original base configuration.
+
+  '
+primary_file: config_merger.py
+test_command: pytest -q test_config_merger.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: shallow_copy_bug

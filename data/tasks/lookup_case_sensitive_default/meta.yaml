@@ -1,0 +1,15 @@
+task_id: lookup_case_sensitive_default
+description: find_item() default case_sensitive parameter contradicts docstring behavior
+issue_text: 'The `find_item()` function''s docstring states that lookups are case-insensitive
+  by default, but when I call `find_item(inventory, ''APPLE'')` without specifying
+  `case_sensitive`, it returns `None` instead of finding the item ''apple''. The function
+  only finds the item when I explicitly pass `case_sensitive=False`. This contradicts
+  the documented default behavior.
+
+  '
+primary_file: lookup.py
+test_command: pytest -q test_lookup.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_default_arg

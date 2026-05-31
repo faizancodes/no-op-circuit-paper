@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_dataset.py::test_integrate[True] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_dataset.py::test_integrate[False] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_dataset.py::test_integrate[True] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_dataset.py::test_integrate[False] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 2398 passed in 0.04s =========================

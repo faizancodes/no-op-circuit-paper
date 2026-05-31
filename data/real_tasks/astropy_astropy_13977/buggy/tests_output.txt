@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED astropy/units/tests/test_quantity_ufuncs.py::TestUfuncReturnsNotImplemented::TestBinaryUfuncs::test_full[None-duck_quantity0-quantity0-add] - AssertionError: behaviour does not match expected output
+FAILED astropy/units/tests/test_quantity_ufuncs.py::TestUfuncReturnsNotImplemented::TestBinaryUfuncs::test_full[None-duck_quantity0-quantity0-less] - AssertionError: behaviour does not match expected output
+FAILED astropy/units/tests/test_quantity_ufuncs.py::TestUfuncReturnsNotImplemented::TestBinaryUfuncs::test_full[None-duck_quantity0-quantity1-add] - AssertionError: behaviour does not match expected output
+... and 17 more failures (truncated)
+=========================== short test summary info ============================
+FAILED astropy/units/tests/test_quantity_ufuncs.py::TestUfuncReturnsNotImplemented::TestBinaryUfuncs::test_full[None-duck_quantity0-quantity0-add] - AssertionError: behaviour does not match expected output
+FAILED astropy/units/tests/test_quantity_ufuncs.py::TestUfuncReturnsNotImplemented::TestBinaryUfuncs::test_full[None-duck_quantity0-quantity0-less] - AssertionError: behaviour does not match expected output
+FAILED astropy/units/tests/test_quantity_ufuncs.py::TestUfuncReturnsNotImplemented::TestBinaryUfuncs::test_full[None-duck_quantity0-quantity1-add] - AssertionError: behaviour does not match expected output
+... and 17 more failures (truncated)
+========================= 20 failed, 322 passed in 0.04s =========================

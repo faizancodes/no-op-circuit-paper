@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_contour.py::test_bool_autolevel - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_contour.py::test_bool_autolevel - AssertionError: behaviour does not match expected output
+========================= 1 failed, 65 passed in 0.04s =========================

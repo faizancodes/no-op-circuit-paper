@@ -1,0 +1,15 @@
+task_id: wrong_sort_order_variant_719107
+description: sort_books_by_year() returns books in ascending order when docstring
+  specifies descending
+issue_text: 'The `sort_books_by_year()` function is supposed to return books sorted
+  by publication year in descending order (newest first) according to its docstring,
+  but it''s actually returning them in ascending order (oldest first). When I call
+  it with a list of books, the oldest book appears first instead of the newest.
+
+  '
+primary_file: library.py
+test_command: pytest -q test_library.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_sort_order

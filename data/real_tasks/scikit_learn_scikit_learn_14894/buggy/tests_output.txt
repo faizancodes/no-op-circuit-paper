@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/svm/tests/test_svm.py::test_sparse_fit_support_vectors_empty - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/svm/tests/test_svm.py::test_sparse_fit_support_vectors_empty - AssertionError: behaviour does not match expected output
+========================= 1 failed, 85 passed in 0.04s =========================

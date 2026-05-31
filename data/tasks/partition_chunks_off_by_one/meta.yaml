@@ -1,0 +1,15 @@
+task_id: partition_chunks_off_by_one
+description: partition_into_chunks() drops the last element when chunk size doesn't
+  divide list length evenly
+issue_text: 'When calling `partition_into_chunks([1, 2, 3, 4, 5], 2)`, the function
+  returns `[[1, 2], [3, 4]]` but it should return `[[1, 2], [3, 4], [5]]`. The last
+  chunk is missing when the list length is not evenly divisible by the chunk size.
+  Please fix so all elements are included.
+
+  '
+primary_file: chunks.py
+test_command: pytest -q test_chunks.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_loop

@@ -1,0 +1,239 @@
+{
+  "global": {
+    "auc": 0.9328000194324904,
+    "balanced_threshold": 9.397636413574219,
+    "pooled_fe": 0.15492957746478872,
+    "pooled_recall": 0.8913480885311871,
+    "pooled_precision": 0.8519230769230769
+  },
+  "per_repo": [
+    {
+      "repo": "django/django",
+      "n_fixed": 231,
+      "n_buggy": 231,
+      "auc": 0.9463465827102192,
+      "balanced": {
+        "threshold": 9.871209144592285,
+        "false_edit": 0.10822510822510822,
+        "recall": 0.8874458874458875,
+        "precision": 0.8913043478260869,
+        "tp": 205,
+        "fp": 25,
+        "fn": 26,
+        "tn": 206
+      },
+      "fe5": {
+        "threshold": 10.77639389038086,
+        "false_edit": 0.047619047619047616,
+        "recall": 0.645021645021645,
+        "precision": 0.93125,
+        "tp": 149,
+        "fp": 11
+      }
+    },
+    {
+      "repo": "sympy/sympy",
+      "n_fixed": 75,
+      "n_buggy": 75,
+      "auc": 0.9548444444444444,
+      "balanced": {
+        "threshold": 9.223749160766602,
+        "false_edit": 0.08,
+        "recall": 0.84,
+        "precision": 0.9130434782608695,
+        "tp": 63,
+        "fp": 6,
+        "fn": 12,
+        "tn": 69
+      },
+      "fe5": {
+        "threshold": 9.397636413574219,
+        "false_edit": 0.04,
+        "recall": 0.76,
+        "precision": 0.95,
+        "tp": 57,
+        "fp": 3
+      }
+    },
+    {
+      "repo": "sphinx-doc/sphinx",
+      "n_fixed": 44,
+      "n_buggy": 44,
+      "auc": 0.9333677685950413,
+      "balanced": {
+        "threshold": 9.497748374938965,
+        "false_edit": 0.22727272727272727,
+        "recall": 0.9545454545454546,
+        "precision": 0.8076923076923077,
+        "tp": 42,
+        "fp": 10,
+        "fn": 2,
+        "tn": 34
+      },
+      "fe5": {
+        "threshold": 10.661846160888672,
+        "false_edit": 0.022727272727272728,
+        "recall": 0.6590909090909091,
+        "precision": 0.9666666666666667,
+        "tp": 29,
+        "fp": 1
+      }
+    },
+    {
+      "repo": "matplotlib/matplotlib",
+      "n_fixed": 34,
+      "n_buggy": 34,
+      "auc": 0.9472318339100347,
+      "balanced": {
+        "threshold": 9.185928344726562,
+        "false_edit": 0.08823529411764706,
+        "recall": 0.8823529411764706,
+        "precision": 0.9090909090909091,
+        "tp": 30,
+        "fp": 3,
+        "fn": 4,
+        "tn": 31
+      },
+      "fe5": {
+        "threshold": 9.887285232543945,
+        "false_edit": 0.029411764705882353,
+        "recall": 0.6176470588235294,
+        "precision": 0.9545454545454546,
+        "tp": 21,
+        "fp": 1
+      }
+    },
+    {
+      "repo": "scikit-learn/scikit-learn",
+      "n_fixed": 32,
+      "n_buggy": 32,
+      "auc": 0.912109375,
+      "balanced": {
+        "threshold": 9.115859985351562,
+        "false_edit": 0.09375,
+        "recall": 0.8125,
+        "precision": 0.896551724137931,
+        "tp": 26,
+        "fp": 3,
+        "fn": 6,
+        "tn": 29
+      },
+      "fe5": {
+        "threshold": 10.081403732299805,
+        "false_edit": 0.03125,
+        "recall": 0.5,
+        "precision": 0.9411764705882353,
+        "tp": 16,
+        "fp": 1
+      }
+    },
+    {
+      "repo": "pydata/xarray",
+      "n_fixed": 22,
+      "n_buggy": 22,
+      "auc": 0.9586776859504131,
+      "balanced": {
+        "threshold": 10.318517684936523,
+        "false_edit": 0.0,
+        "recall": 0.7727272727272727,
+        "precision": 1.0,
+        "tp": 17,
+        "fp": 0,
+        "fn": 5,
+        "tn": 22
+      },
+      "fe5": {
+        "threshold": 10.318517684936523,
+        "false_edit": 0.0,
+        "recall": 0.7727272727272727,
+        "precision": 1.0,
+        "tp": 17,
+        "fp": 0
+      }
+    },
+    {
+      "repo": "astropy/astropy",
+      "n_fixed": 19,
+      "n_buggy": 19,
+      "auc": 0.9750692520775623,
+      "balanced": {
+        "threshold": 10.395389556884766,
+        "false_edit": 0.0,
+        "recall": 0.8421052631578947,
+        "precision": 1.0,
+        "tp": 16,
+        "fp": 0,
+        "fn": 3,
+        "tn": 19
+      },
+      "fe5": {
+        "threshold": 10.395389556884766,
+        "false_edit": 0.0,
+        "recall": 0.8421052631578947,
+        "precision": 1.0,
+        "tp": 16,
+        "fp": 0
+      }
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "n_fixed": 19,
+      "n_buggy": 19,
+      "auc": 0.9390581717451524,
+      "balanced": {
+        "threshold": 9.279308319091797,
+        "false_edit": 0.10526315789473684,
+        "recall": 1.0,
+        "precision": 0.9047619047619048,
+        "tp": 19,
+        "fp": 2,
+        "fn": 0,
+        "tn": 17
+      },
+      "fe5": {
+        "threshold": 11.352607727050781,
+        "false_edit": 0.0,
+        "recall": 0.21052631578947367,
+        "precision": 1.0,
+        "tp": 4,
+        "fp": 0
+      }
+    },
+    {
+      "repo": "pylint-dev/pylint",
+      "n_fixed": 10,
+      "n_buggy": 10,
+      "auc": 0.83,
+      "balanced": {
+        "threshold": 10.069223403930664,
+        "false_edit": 0.2,
+        "recall": 0.8,
+        "precision": 0.8,
+        "tp": 8,
+        "fp": 2,
+        "fn": 2,
+        "tn": 8
+      },
+      "fe5": {
+        "threshold": 12.2120361328125,
+        "false_edit": 0.0,
+        "recall": 0.3,
+        "precision": 1.0,
+        "tp": 3,
+        "fp": 0
+      }
+    }
+  ],
+  "pooled_calibrated": {
+    "n_obs": 994,
+    "pooled_fe": 0.10663983903420524,
+    "pooled_recall": 0.8792756539235412,
+    "pooled_precision": 0.8918367346938776,
+    "pooled_accuracy": 0.886317907444668,
+    "tp": 437,
+    "fp": 53,
+    "fn": 60,
+    "tn": 444
+  },
+  "gate_pass_django_sphinx_auc_ge_0p85": true
+}

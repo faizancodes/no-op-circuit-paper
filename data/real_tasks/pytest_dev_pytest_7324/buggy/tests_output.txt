@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED testing/test_mark_expression.py::test_valid_idents[True] - AssertionError: behaviour does not match expected output
+FAILED testing/test_mark_expression.py::test_valid_idents[False] - AssertionError: behaviour does not match expected output
+FAILED testing/test_mark_expression.py::test_valid_idents[None] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/test_mark_expression.py::test_valid_idents[True] - AssertionError: behaviour does not match expected output
+FAILED testing/test_mark_expression.py::test_valid_idents[False] - AssertionError: behaviour does not match expected output
+FAILED testing/test_mark_expression.py::test_valid_idents[None] - AssertionError: behaviour does not match expected output
+========================= 3 failed, 58 passed in 0.04s =========================

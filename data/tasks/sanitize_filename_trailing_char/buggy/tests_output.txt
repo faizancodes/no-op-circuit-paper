@@ -1,0 +1,58 @@
+FFF.F                                                                    [100%]
+=================================== FAILURES ===================================
+________________________ test_valid_filename_unchanged _________________________
+
+    def test_valid_filename_unchanged():
+>       assert sanitize_filename('report.txt') == 'report.txt'
+E       AssertionError: assert 'report.tx' == 'report.txt'
+E         
+E         - report.txt
+E         ?          -
+E         + report.tx
+
+test_sanitizer.py:4: AssertionError
+__________________________ test_removes_invalid_chars __________________________
+
+    def test_removes_invalid_chars():
+>       assert sanitize_filename('file:name?.txt') == 'filename.txt'
+E       AssertionError: assert 'filename.tx' == 'filename.txt'
+E         
+E         - filename.txt
+E         ?            -
+E         + filename.tx
+
+test_sanitizer.py:7: AssertionError
+_________________________ test_multiple_invalid_chars __________________________
+
+    def test_multiple_invalid_chars():
+>       assert sanitize_filename('bad<file>name|here*.doc') == 'badfilenamehere.doc'
+E       AssertionError: assert 'badfilenamehere.do' == 'badfilenamehere.doc'
+E         
+E         - badfilenamehere.doc
+E         ?                   -
+E         + badfilenamehere.do
+
+test_sanitizer.py:10: AssertionError
+____________________________ test_only_valid_chars _____________________________
+
+    def test_only_valid_chars():
+>       assert sanitize_filename('my_document-2024.pdf') == 'my_document-2024.pdf'
+E       AssertionError: assert 'my_document-2024.pd' == 'my_document-2024.pdf'
+E         
+E         - my_document-2024.pdf
+E         ?                    -
+E         + my_document-2024.pd
+
+test_sanitizer.py:16: AssertionError
+=============================== warnings summary ===============================
+sanitizer.py:2
+  /private/var/folders/lx/9cfxw6t518v6pm64gzxsbrkm0000gn/T/noop-validate-0d9dlw6g/buggy/sanitizer.py:2: SyntaxWarning: invalid escape sequence '\,'
+    """Remove invalid characters from a filename.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test_sanitizer.py::test_valid_filename_unchanged - AssertionError: ass...
+FAILED test_sanitizer.py::test_removes_invalid_chars - AssertionError: assert...
+FAILED test_sanitizer.py::test_multiple_invalid_chars - AssertionError: asser...
+FAILED test_sanitizer.py::test_only_valid_chars - AssertionError: assert 'my_...
+4 failed, 1 passed, 1 warning in 0.01s

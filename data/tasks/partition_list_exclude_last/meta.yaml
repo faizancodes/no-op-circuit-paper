@@ -1,0 +1,15 @@
+task_id: partition_list_exclude_last
+description: partition_by_predicate() incorrectly excludes the last element from processing
+issue_text: 'The `partition_by_predicate()` function is missing the last element of
+  the input list in its output. When I call `partition_by_predicate([1, 2, 3, 4, 5],
+  lambda x: x % 2 == 0)`, I expect `([2, 4], [1, 3, 5])` but I get `([2, 4], [1, 3])`.
+  The last element is being dropped entirely. Please fix this so all elements are
+  included in the partitioned output.
+
+  '
+primary_file: partitioner.py
+test_command: pytest -q test_partitioner.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_slice

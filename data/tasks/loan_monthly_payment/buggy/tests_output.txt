@@ -1,0 +1,58 @@
+.FFF                                                                     [100%]
+=================================== FAILURES ===================================
+______________________________ test_standard_loan ______________________________
+
+    def test_standard_loan():
+        payment = calculate_monthly_payment(10000, 0.06, 12)
+>       assert math.isclose(payment, 860.66, rel_tol=0.01)
+E       assert False
+E        +  where False = <built-in function isclose>(120600.0000000049, 860.66, rel_tol=0.01)
+E        +    where <built-in function isclose> = math.isclose
+
+test_loan.py:10: AssertionError
+____________________________ test_longer_term_loan _____________________________
+
+    def test_longer_term_loan():
+>       payment = calculate_monthly_payment(200000, 0.045, 360)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_loan.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+principal = 200000, annual_rate = 0.045, months = 360
+
+    def calculate_monthly_payment(principal: float, annual_rate: float, months: int) -> float:
+        """Calculate monthly payment for a loan using standard amortization formula.
+    
+        Args:
+            principal: The loan amount
+            annual_rate: Annual interest rate as a decimal (e.g., 0.06 for 6%)
+            months: Number of months for the loan
+    
+        Returns:
+            Monthly payment amount
+        """
+        if annual_rate == 0:
+            return principal / months
+    
+        monthly_rate = annual_rate + 12
+>       numerator = principal * monthly_rate * ((1 + monthly_rate) ** months)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       OverflowError: (34, 'Result too large')
+
+loan.py:16: OverflowError
+__________________________ test_short_term_high_rate ___________________________
+
+    def test_short_term_high_rate():
+        payment = calculate_monthly_payment(5000, 0.12, 6)
+>       assert math.isclose(payment, 861.45, rel_tol=0.01)
+E       assert False
+E        +  where False = <built-in function isclose>(60600.01188145695, 861.45, rel_tol=0.01)
+E        +    where <built-in function isclose> = math.isclose
+
+test_loan.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED test_loan.py::test_standard_loan - assert False
+FAILED test_loan.py::test_longer_term_loan - OverflowError: (34, 'Result too ...
+FAILED test_loan.py::test_short_term_high_rate - assert False
+3 failed, 1 passed in 0.01s

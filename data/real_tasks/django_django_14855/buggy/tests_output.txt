@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_readonly_foreignkey_links_custom_admin_site (admin_views.tests.ReadonlyTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_readonly_foreignkey_links_custom_admin_site (admin_views.tests.ReadonlyTest) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 325 passed in 0.04s =========================

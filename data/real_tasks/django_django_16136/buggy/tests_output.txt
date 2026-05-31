@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_http_method_not_allowed_responds_correctly (async.tests.ViewTests) - AssertionError: behaviour does not match expected output
+FAILED test_mixed_views_raise_error (async.tests.ViewTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_http_method_not_allowed_responds_correctly (async.tests.ViewTests) - AssertionError: behaviour does not match expected output
+FAILED test_mixed_views_raise_error (async.tests.ViewTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 7 passed in 0.04s =========================

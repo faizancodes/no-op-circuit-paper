@@ -1,0 +1,20 @@
+task_id: scikit_learn_scikit_learn_14141
+description: 'SWE-bench_Verified instance scikit-learn__scikit-learn-14141 (repo:
+  scikit-learn/scikit-learn)'
+issue_text: 'Add joblib in show_versions
+
+  joblib should be added to the dependencies listed in show_versions or added to the
+  issue template when sklearn version is > 0.20.
+
+
+  '
+primary_file: _show_versions.py
+test_command: pytest -q sklearn/utils/tests/test_show_versions.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: scikit-learn__scikit-learn-14141
+swe_bench_repo: scikit-learn/scikit-learn
+swe_bench_base_commit: 3d997697fdd166eff428ea9fd35734b6a8ba113e
+swe_bench_modified_path: sklearn/utils/_show_versions.py

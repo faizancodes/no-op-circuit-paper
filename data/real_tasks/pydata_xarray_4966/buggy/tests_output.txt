@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_coding.py::test_decode_signed_from_unsigned[1] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_coding.py::test_decode_signed_from_unsigned[2] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_coding.py::test_decode_signed_from_unsigned[4] - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED xarray/tests/test_coding.py::test_decode_signed_from_unsigned[1] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_coding.py::test_decode_signed_from_unsigned[2] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_coding.py::test_decode_signed_from_unsigned[4] - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 21 passed in 0.04s =========================

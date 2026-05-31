@@ -1,0 +1,15 @@
+task_id: password_length_validator
+description: Password validator rejects valid 8-character passwords at the minimum
+  boundary.
+issue_text: 'The `is_valid_password` function is rejecting passwords that are exactly
+  8 characters long, even though the documentation states that passwords must be "at
+  least 8 characters". For example, `is_valid_password("abcd1234")` returns `False`
+  when it should return `True`. Passwords with 9 or more characters work correctly.
+
+  '
+primary_file: validator.py
+test_command: pytest -q test_validator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_comparison

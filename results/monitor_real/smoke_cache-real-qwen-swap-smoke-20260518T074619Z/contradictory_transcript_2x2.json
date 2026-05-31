@@ -1,0 +1,273 @@
+{
+  "config": {
+    "orig_cache": "results/cache-real-qwen-n500-20260516T235301Z",
+    "swap_cache": "results/cache-real-qwen-swap-smoke-20260518T074619Z",
+    "v_noop": "results/steer-20260516T021522Z/v_noop.pt",
+    "layer": 24,
+    "position": -1,
+    "seed": 0,
+    "bootstrap": 10000,
+    "n_tasks_common": 21
+  },
+  "cell_means": {
+    "buggy_code_buggy_tx_BB": 2.970547085716611,
+    "buggy_code_fixed_tx_BF": -1.7514739604223342,
+    "fixed_code_buggy_tx_FB": 3.1326244672139487,
+    "fixed_code_fixed_tx_FF": -1.7413839896519978
+  },
+  "main_effects": {
+    "delta_code": -0.08608367613383705,
+    "delta_code_ci95": [
+      -0.20945455971218266,
+      0.030562209728218232
+    ],
+    "delta_transcript": 4.798014751502446,
+    "delta_transcript_ci95": [
+      4.204126106202603,
+      5.395273580153783
+    ],
+    "interaction": -0.03799685268175046,
+    "interaction_ci95": [
+      -0.1296823402600627,
+      0.044951756795247134
+    ],
+    "ratio_code_over_tx": 0.01794151968934253
+  },
+  "aucs": {
+    "code_label_all4": 0.4880952380952381,
+    "tx_label_all4": 0.9988662131519274,
+    "code_label_swap_only": 0.0,
+    "tx_label_swap_only": 1.0
+  },
+  "argmax_distribution_by_cell": {
+    "buggy_code_buggy_tx": {
+      "grep": 17,
+      "edit": 4
+    },
+    "fixed_code_fixed_tx": {
+      "grep": 18,
+      "edit": 3
+    },
+    "buggy_code_fixed_tx": {
+      "grep": 18,
+      "edit": 3
+    },
+    "fixed_code_buggy_tx": {
+      "grep": 20,
+      "edit": 1
+    }
+  },
+  "per_task": {
+    "astropy_astropy_12907": {
+      "BB_score": 2.1523728370666504,
+      "FF_score": -1.7926700115203857,
+      "BF_score": -1.8870892524719238,
+      "FB_score": 2.341740846633911,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13033": {
+      "BB_score": 3.0843868255615234,
+      "FF_score": -2.273082971572876,
+      "BF_score": -2.117197036743164,
+      "FB_score": 3.0693359375,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13236": {
+      "BB_score": 2.3687987327575684,
+      "FF_score": -4.962267875671387,
+      "BF_score": -4.501150131225586,
+      "FB_score": 4.119942665100098,
+      "BB_argmax": "grep",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13453": {
+      "BB_score": 1.7442669868469238,
+      "FF_score": -3.7318215370178223,
+      "BF_score": -3.907227039337158,
+      "FB_score": 1.9455766677856445,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13579": {
+      "BB_score": 3.3333353996276855,
+      "FF_score": -2.342510461807251,
+      "BF_score": -2.7945358753204346,
+      "FB_score": 3.5795464515686035,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_13977": {
+      "BB_score": 4.021115303039551,
+      "FF_score": -2.085205554962158,
+      "BF_score": -3.027066707611084,
+      "FB_score": 3.6899476051330566,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14096": {
+      "BB_score": 2.95401668548584,
+      "FF_score": 0.5023143291473389,
+      "BF_score": 0.17509746551513672,
+      "FB_score": 3.2346444129943848,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14182": {
+      "BB_score": 2.4029581546783447,
+      "FF_score": -2.7564964294433594,
+      "BF_score": -2.0709614753723145,
+      "FB_score": 3.2105798721313477,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14309": {
+      "BB_score": 4.679155349731445,
+      "FF_score": -1.0285060405731201,
+      "BF_score": -0.6961033344268799,
+      "FB_score": 4.140811920166016,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14365": {
+      "BB_score": 0.8660233020782471,
+      "FF_score": -1.4851226806640625,
+      "BF_score": -1.4802436828613281,
+      "FB_score": 0.8213138580322266,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14369": {
+      "BB_score": 4.318627834320068,
+      "FF_score": -2.345714807510376,
+      "BF_score": -2.1936264038085938,
+      "FB_score": 4.275324821472168,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14508": {
+      "BB_score": 2.505805253982544,
+      "FF_score": -1.9967517852783203,
+      "BF_score": -2.098454713821411,
+      "FB_score": 1.8269691467285156,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14539": {
+      "BB_score": 1.6612770557403564,
+      "FF_score": -0.7900192737579346,
+      "BF_score": -1.1635560989379883,
+      "FB_score": 1.6881589889526367,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14598": {
+      "BB_score": 2.493238925933838,
+      "FF_score": -1.3517394065856934,
+      "BF_score": -1.2425646781921387,
+      "FB_score": 2.447112560272217,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_14995": {
+      "BB_score": 4.238550186157227,
+      "FF_score": -0.33966898918151855,
+      "BF_score": -0.32299232482910156,
+      "FB_score": 4.188571929931641,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_7166": {
+      "BB_score": 4.236213684082031,
+      "FF_score": -1.6089730262756348,
+      "BF_score": -1.6621880531311035,
+      "FB_score": 4.283456325531006,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_7336": {
+      "BB_score": 1.9073736667633057,
+      "FF_score": -1.9824777841567993,
+      "BF_score": -1.9135606288909912,
+      "FB_score": 1.7742626667022705,
+      "BB_argmax": "edit",
+      "FF_argmax": "edit",
+      "BF_argmax": "edit",
+      "FB_argmax": "edit"
+    },
+    "astropy_astropy_7606": {
+      "BB_score": 4.753709316253662,
+      "FF_score": 1.0130181312561035,
+      "BF_score": 0.5755472183227539,
+      "FB_score": 4.417984485626221,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_7671": {
+      "BB_score": 3.7506890296936035,
+      "FF_score": -0.14119577407836914,
+      "BF_score": 0.6187138557434082,
+      "FB_score": 4.2495927810668945,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_8707": {
+      "BB_score": 1.873345136642456,
+      "FF_score": -3.02475643157959,
+      "BF_score": -3.062441825866699,
+      "FB_score": 3.4917869567871094,
+      "BB_argmax": "edit",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    },
+    "astropy_astropy_8872": {
+      "BB_score": 3.036229133605957,
+      "FF_score": -2.0454154014587402,
+      "BF_score": -2.009352445602417,
+      "FB_score": 2.988452911376953,
+      "BB_argmax": "grep",
+      "FF_argmax": "grep",
+      "BF_argmax": "grep",
+      "FB_argmax": "grep"
+    }
+  },
+  "verdict": "TRANSCRIPT-DRIVEN (paper needs reframing)"
+}

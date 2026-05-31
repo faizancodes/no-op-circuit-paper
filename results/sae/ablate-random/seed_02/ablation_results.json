@@ -1,0 +1,2685 @@
+{
+  "run_id": "ablate-random/seed_02",
+  "seed": 2,
+  "sae_path": "sae/qwen_l24_resid_pre_TASK_d4096_k16.pt",
+  "layer": 24,
+  "position": -1,
+  "feature_indices": [
+    724,
+    1359,
+    2189,
+    2414,
+    2835,
+    2975,
+    3460,
+    4002
+  ],
+  "excluded_set_size": 128,
+  "n_prompts": 296,
+  "rows": [
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "ablate_random8": 3.125
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "ablate_random8": 3.5
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "ablate_random8": 3.0
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "ablate_random8": 3.5
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "ablate_random8": 3.1875
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.25,
+        "ablate_random8": 3.25
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "ablate_random8": 3.3125
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "ablate_random8": 3.0625
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "ablate_random8": 3.125
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "ablate_random8": 3.125
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "ablate_random8": 2.8125
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "ablate_random8": 3.5
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "ablate_random8": 3.0
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "ablate_random8": 3.4375
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "ablate_random8": 3.125
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "ablate_random8": 3.1875
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "ablate_random8": 2.5
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "ablate_random8": 3.3125
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "ablate_random8": 3.3125
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "ablate_random8": 3.4375
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "ablate_random8": 2.9375
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "ablate_random8": 3.5
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "ablate_random8": 3.0625
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "ablate_random8": 3.1875
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.6875,
+        "ablate_random8": 3.6875
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "ablate_random8": 2.9375
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.8125,
+        "ablate_random8": 3.8125
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "ablate_random8": 2.8125
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.25,
+        "ablate_random8": 3.25
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "ablate_random8": 3.0625
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "ablate_random8": 3.375
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "ablate_random8": 3.1875
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "ablate_random8": 2.8125
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.9375,
+        "ablate_random8": 3.9375
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.1875,
+        "ablate_random8": 3.1875
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.9375,
+        "ablate_random8": 3.9375
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "ablate_random8": 2.9375
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5625,
+        "ablate_random8": 3.5625
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "ablate_random8": 3.5
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "ablate_random8": 3.0
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "ablate_random8": 3.375
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "ablate_random8": 3.375
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.3125,
+        "ablate_random8": 3.3125
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "ablate_random8": 3.375
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "ablate_random8": 3.375
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.75,
+        "ablate_random8": 3.75
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "ablate_random8": 3.4375
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5625,
+        "ablate_random8": 3.5625
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.25,
+        "ablate_random8": 3.25
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "ablate_random8": 3.0625
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.6875,
+        "ablate_random8": 3.6875
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "ablate_random8": 2.875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.25,
+        "ablate_random8": 1.25
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.375,
+        "ablate_random8": 1.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "ablate_random8": 2.875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "ablate_random8": 3.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5,
+        "ablate_random8": 1.5
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0625,
+        "ablate_random8": 3.0625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "ablate_random8": 3.5
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "ablate_random8": 2.875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "ablate_random8": 2.9375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.4375,
+        "ablate_random8": 3.4375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.5,
+        "ablate_random8": 3.5
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "ablate_random8": 3.125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "ablate_random8": 2.9375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "ablate_random8": 1.75
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "ablate_random8": 3.0
+      }
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.4375,
+        "ablate_random8": 1.4375
+      }
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "ablate_random8": 3.0
+      }
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "ablate_random8": 2.875
+      }
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "ablate_random8": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "ablate_random8": 1.5625
+      }
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "ablate_random8": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.375,
+        "ablate_random8": 1.375
+      }
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "ablate_random8": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "ablate_random8": 1.6875
+      }
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "ablate_random8": 2.875
+      }
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "ablate_random8": 1.75
+      }
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "ablate_random8": 1.75
+      }
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.0,
+        "ablate_random8": 3.0
+      }
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "ablate_random8": 2.8125
+      }
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "ablate_random8": 2.8125
+      }
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "ablate_random8": 1.5625
+      }
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.75,
+        "ablate_random8": 2.75
+      }
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "ablate_random8": 1.5625
+      }
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "ablate_random8": 2.8125
+      }
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "ablate_random8": 1.6875
+      }
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "ablate_random8": 1.5625
+      }
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "ablate_random8": 1.75
+      }
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.1875,
+        "ablate_random8": 1.1875
+      }
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.375,
+        "ablate_random8": 3.375
+      }
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.8125,
+        "ablate_random8": 2.8125
+      }
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.625,
+        "ablate_random8": 2.625
+      }
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "ablate_random8": 1.6875
+      }
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "ablate_random8": 1.5625
+      }
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "ablate_random8": 1.75
+      }
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "ablate_random8": 1.6875
+      }
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.9375,
+        "ablate_random8": 2.9375
+      }
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.5625,
+        "ablate_random8": 1.5625
+      }
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.625,
+        "ablate_random8": 1.625
+      }
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.6875,
+        "ablate_random8": 2.6875
+      }
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 3.125,
+        "ablate_random8": 3.125
+      }
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.4375,
+        "ablate_random8": 1.4375
+      }
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0,
+        "ablate_random8": 2.0
+      }
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.6875,
+        "ablate_random8": 1.6875
+      }
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.875,
+        "ablate_random8": 1.875
+      }
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "ablate_random8": 1.75
+      }
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.25,
+        "ablate_random8": 2.25
+      }
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.125,
+        "ablate_random8": 2.125
+      }
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "ablate_random8": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5,
+        "ablate_random8": 2.5
+      }
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.5625,
+        "ablate_random8": 2.5625
+      }
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.4375,
+        "ablate_random8": 2.4375
+      }
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.0625,
+        "ablate_random8": 2.0625
+      }
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.1875,
+        "ablate_random8": 2.1875
+      }
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.8125,
+        "ablate_random8": 1.8125
+      }
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.875,
+        "ablate_random8": 2.875
+      }
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.9375,
+        "ablate_random8": 1.9375
+      }
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.3125,
+        "ablate_random8": 2.3125
+      }
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.75,
+        "ablate_random8": 1.75
+      }
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 2.375,
+        "ablate_random8": 2.375
+      }
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "margins": {
+        "clean": 1.3125,
+        "ablate_random8": 1.3125
+      }
+    }
+  ]
+}

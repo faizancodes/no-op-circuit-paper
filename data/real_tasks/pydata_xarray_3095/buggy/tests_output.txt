@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_variable.py::TestIndexVariable::test_copy[str-True] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_variable.py::TestIndexVariable::test_copy[str-True] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 253 passed in 0.04s =========================

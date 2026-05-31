@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED AlterField operation of db_collation on primary keys changes any FKs - AssertionError: behaviour does not match expected output
+FAILED Creation of models with a FK to a PK with db_collation. - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED AlterField operation of db_collation on primary keys changes any FKs - AssertionError: behaviour does not match expected output
+FAILED Creation of models with a FK to a PK with db_collation. - AssertionError: behaviour does not match expected output
+========================= 2 failed, 115 passed in 0.04s =========================

@@ -1,0 +1,15 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_clock_skew _________________________________
+
+test_clock_skew.py:45: in test_system_time_monotonic
+    assert end_time >= start_time, "Clock went backwards"
+E   AssertionError: Clock went backwards
+E   assert 1703598234.891 >= 1703598234.923
+E    +  where 1703598234.891 = time.monotonic()
+E    +  and   1703598234.923 = time.monotonic()
+
+=================================== short test summary info ============================
+FAILED test_clock_skew.py::test_clock_skew - AssertionError: Clock went backwards
+1 failed, 4 passed in 0.12s

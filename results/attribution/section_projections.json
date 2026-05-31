@@ -1,0 +1,44 @@
+{
+  "n_tasks": 49,
+  "K": 32,
+  "layer": 24,
+  "sections": {
+    "question_text": {
+      "offset_range": [
+        -31,
+        -19
+      ],
+      "n_tokens": 13,
+      "mean_buggy": 2.248762369155884,
+      "mean_fixed": 3.2441885471343994,
+      "differential": 0.9954261183738708,
+      "sem_differential": 0.03212125173636845,
+      "wilcoxon_p_one_sided": 1.7763568394002505e-15
+    },
+    "chat_template": {
+      "offset_range": [
+        -17,
+        -7
+      ],
+      "n_tokens": 11,
+      "mean_buggy": 2.3606245517730713,
+      "mean_fixed": 3.103240728378296,
+      "differential": 0.742615818977356,
+      "sem_differential": 0.0303221195936203,
+      "wilcoxon_p_one_sided": 1.7763568394002505e-15
+    },
+    "action_suffix": {
+      "offset_range": [
+        -5,
+        0
+      ],
+      "n_tokens": 6,
+      "mean_buggy": -0.9386400580406189,
+      "mean_fixed": 2.399747133255005,
+      "differential": 3.3383872509002686,
+      "sem_differential": 0.13360893726348877,
+      "wilcoxon_p_one_sided": 1.7763568394002505e-15
+    }
+  },
+  "first_offset_p_below_005": -31
+}

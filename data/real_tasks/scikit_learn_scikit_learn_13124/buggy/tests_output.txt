@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/model_selection/tests/test_split.py::test_shuffle_stratifiedkfold - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/model_selection/tests/test_split.py::test_shuffle_stratifiedkfold - AssertionError: behaviour does not match expected output
+========================= 1 failed, 60 passed in 0.04s =========================

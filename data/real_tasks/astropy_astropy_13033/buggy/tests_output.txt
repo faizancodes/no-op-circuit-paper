@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED astropy/timeseries/tests/test_sampled.py::test_required_columns - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/timeseries/tests/test_sampled.py::test_required_columns - AssertionError: behaviour does not match expected output
+========================= 1 failed, 20 passed in 0.04s =========================

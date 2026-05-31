@@ -1,0 +1,32 @@
+task_id: scikit_learn_scikit_learn_15100
+description: 'SWE-bench_Verified instance scikit-learn__scikit-learn-15100 (repo:
+  scikit-learn/scikit-learn)'
+issue_text: "strip_accents_unicode fails to strip accents from strings that are already\
+  \ in NFKD form\n<!--\r\nIf your issue is a usage question, submit it here instead:\r\
+  \n- StackOverflow with the scikit-learn tag: https://stackoverflow.com/questions/tagged/scikit-learn\r\
+  \n- Mailing List: https://mail.python.org/mailman/listinfo/scikit-learn\r\nFor more\
+  \ information, see User Questions: http://scikit-learn.org/stable/support.html#user-questions\r\
+  \n-->\r\n\r\n<!-- Instructions For Filing a Bug: https://github.com/scikit-learn/scikit-learn/blob/master/CONTRIBUTING.md#filing-bugs\
+  \ -->\r\n\r\n#### Description\r\n<!-- Example: Joblib Error thrown when calling\
+  \ fit on LatentDirichletAllocation with evaluate_every > 0-->\r\n\r\nThe `strip_accents=\"\
+  unicode\"` feature of `CountVectorizer` and related does not work as expected when\
+  \ it processes strings that contain accents, if those strings are already in NFKD\
+  \ form.\r\n\r\n#### Steps/Code to Reproduce\r\n\r\n```python\r\nfrom sklearn.feature_extraction.text\
+  \ import strip_accents_unicode\r\n\r\n# This string contains one code point, \"\
+  LATIN SMALL LETTER N WITH TILDE\"\r\ns1 = chr(241)\r\n\r\n# This string contains\
+  \ two code points, \"LATIN SMALL LETTER N\" followed by \"COMBINING TILDE\"\r\n\
+  s2 = chr(110) + chr(771)\r\n\r\n# They are visually identical, as expected\r\nprint(s1)\
+  \ # => \xF1\r\nprint(s2) # => n\u0303\r\n\r\n# The tilde is removed from s1, as\
+  \ expected\r\nprint(strip_accents_unicode(s1)) # => n\r\n\r\n# But strip_accents_unicode\
+  \ returns s2 unchanged\r\nprint(strip_accents_unicode(s2) == s2) # => True\r\n```\r\
+  \n\r\n#### Expected Re\u2026\n"
+primary_file: text.py
+test_command: pytest -q sklearn/feature_extraction/tests/test_text.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: scikit-learn__scikit-learn-15100
+swe_bench_repo: scikit-learn/scikit-learn
+swe_bench_base_commit: af8a6e592a1a15d92d77011856d5aa0ec4db4c6c
+swe_bench_modified_path: sklearn/feature_extraction/text.py

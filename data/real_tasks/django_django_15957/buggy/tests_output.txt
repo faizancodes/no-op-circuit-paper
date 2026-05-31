@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_foreignkey_reverse (prefetch_related.tests.PrefetchLimitTests) - AssertionError: behaviour does not match expected output
+FAILED test_m2m_forward (prefetch_related.tests.PrefetchLimitTests) - AssertionError: behaviour does not match expected output
+FAILED test_m2m_reverse (prefetch_related.tests.PrefetchLimitTests) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_foreignkey_reverse (prefetch_related.tests.PrefetchLimitTests) - AssertionError: behaviour does not match expected output
+FAILED test_m2m_forward (prefetch_related.tests.PrefetchLimitTests) - AssertionError: behaviour does not match expected output
+FAILED test_m2m_reverse (prefetch_related.tests.PrefetchLimitTests) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 89 passed in 0.04s =========================

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_submit_row_save_as_new_add_permission_required (admin_views.test_templatetags.AdminTemplateTagsTest.test_submit_row_save_as_new_add_permission_required) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_submit_row_save_as_new_add_permission_required (admin_views.test_templatetags.AdminTemplateTagsTest.test_submit_row_save_as_new_add_permission_required) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 6 passed in 0.04s =========================

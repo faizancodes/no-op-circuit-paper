@@ -1,0 +1,17 @@
+task_id: sliding_window_max_off_by_one
+description: sliding_window_max() returns one fewer result than expected for the last
+  window position
+issue_text: 'The `sliding_window_max` function is supposed to return the maximum value
+  in each sliding window of size `k` across the input list. When I call `sliding_window_max([1,
+  3, 2, 5, 4], 3)`, I expect 5 results (one for each valid window position from index
+  0 to 4), but I only get 4 results. The last window starting at index 2 (containing
+  [2, 5, 4]) seems to be missing from the output. Please fix this so all valid windows
+  are included.
+
+  '
+primary_file: sliding_window.py
+test_command: pytest -q test_sliding_window.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_loop

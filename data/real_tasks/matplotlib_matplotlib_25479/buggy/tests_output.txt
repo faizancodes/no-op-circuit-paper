@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_colors.py::test_colormap_equals - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_colors.py::test_set_cmap_mismatched_name - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_colors.py::test_colormap_equals - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_colors.py::test_set_cmap_mismatched_name - AssertionError: behaviour does not match expected output
+========================= 2 failed, 263 passed in 0.04s =========================

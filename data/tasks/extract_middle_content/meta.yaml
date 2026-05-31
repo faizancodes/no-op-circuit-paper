@@ -1,0 +1,16 @@
+task_id: extract_middle_content
+description: extract_middle() removes first and last character but should preserve
+  them for single-char strings
+issue_text: 'The `extract_middle()` function is supposed to return the content between
+  the first and last delimiters (inclusive of the delimiters). However, when the input
+  string is just a single delimiter character like `''|''`, it returns an empty string
+  instead of returning `''|''`. Similarly, for `''|a|''` it correctly returns `''|a|''`,
+  but for edge cases with minimal content it seems to drop characters incorrectly.
+
+  '
+primary_file: text_extractor.py
+test_command: pytest -q test_text_extractor.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_slice

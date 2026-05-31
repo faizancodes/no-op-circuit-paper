@@ -1,0 +1,15 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_docker_socket ______________________________
+
+test_infra/test_docker_socket.py:45: in test_docker_socket
+    client = docker.from_env()
+E   docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+E   
+E   The Docker socket at /var/run/docker.sock is stale or not mounted in CI.
+E   This is a known intermittent issue on shared runners.
+
+=================================== short test summary info ============================
+FAILED test_infra/test_docker_socket.py::test_docker_socket - docker.errors.DockerException: Error while fetching server API version
+========================= 1 failed, 5 passed in 0.12s ==========================

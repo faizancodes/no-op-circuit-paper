@@ -1,0 +1,14 @@
+task_id: strip_prefix_empty_result
+description: strip_prefix() returns incorrect result when prefix equals entire string
+issue_text: 'When calling `strip_prefix("hello", "hello")`, the function returns "o"
+  instead of an empty string. The prefix removal appears to be off by one character
+  when the prefix matches the entire input string. Expected behavior: if the prefix
+  matches the entire string, return an empty string.
+
+  '
+primary_file: prefix_utils.py
+test_command: pytest -q test_prefix_utils.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_slice

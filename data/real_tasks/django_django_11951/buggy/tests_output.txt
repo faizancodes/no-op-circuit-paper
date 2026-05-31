@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_explicit_batch_size_respects_max_batch_size (bulk_create.tests.BulkCreateTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_explicit_batch_size_respects_max_batch_size (bulk_create.tests.BulkCreateTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 21 passed in 0.04s =========================

@@ -1,0 +1,32 @@
+task_id: sphinx_doc_sphinx_9229
+description: 'SWE-bench_Verified instance sphinx-doc__sphinx-9229 (repo: sphinx-doc/sphinx)'
+issue_text: "Inconsistent behaviour with type alias documentation (not overwriting\
+  \ all the default messages, just some)\n**Describe the bug**\r\nHello, I have 3\
+  \ muiltiline docstrings for type aliases (using the next-line `\"\"\"` documentation\
+  \ syntax). For 1 one them the docstring is correctly shown in the rendered HTML,\
+  \ but for 2 of them, the docstrings are ignored and the only thing shown is the\
+  \ ``alias of ...`` text. I suppose this is related to #4422, but I might be doing\
+  \ something wrong here (so if you could point me out in the correct direction that\
+  \ would be very good). \r\n\r\n**To Reproduce**\r\nThe following is a reduced example\
+  \ of something happening in [pyscaffold's code base](http://github.com/pyscaffold/pyscaffold):\r\
+  \n\r\n1. Given a directory with `file.py`:\r\n```python\r\n# file.py\r\nfrom pathlib\
+  \ import Path\r\nfrom typing import Any, Callable, Dict, Union\r\n\r\n# Signatures\
+  \ for the documentation purposes\r\n\r\nScaffoldOpts = Dict[str, Any]\r\n\"\"\"\
+  Dictionary with PyScaffold's options, see ``pyscaffold.api.create_project``.\r\n\
+  Should be treated as immutable (if required, copy before changing).\r\n\r\nPlease\
+  \ notice some behaviours given by the options **SHOULD** be observed. For example,\r\
+  \nfiles should be overwritten when the **force** option is ``True``. Similarly when\r\
+  \n**pretend** is ``True``, no operation should be really performed, but any action\
+  \ should\r\nbe logged as if realized.\r\n\"\"\"\r\n\r\nFileContents = Union[str,\
+  \ None]\r\n\"\"\"When the file content is ``None``, the file should not be written\
+  \ to\r\ndisk (empty files\u2026\n"
+primary_file: __init__.py
+test_command: pytest -q tests/test_ext_autodoc_autoclass.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: sphinx-doc__sphinx-9229
+swe_bench_repo: sphinx-doc/sphinx
+swe_bench_base_commit: 876fa81e0a038cda466925b85ccf6c5452e0f685
+swe_bench_modified_path: sphinx/ext/autodoc/__init__.py

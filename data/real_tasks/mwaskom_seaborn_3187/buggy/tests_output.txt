@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED tests/_core/test_plot.py::TestLegend::test_legend_has_no_offset - AssertionError: behaviour does not match expected output
+FAILED tests/test_relational.py::TestRelationalPlotter::test_legend_has_no_offset - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/_core/test_plot.py::TestLegend::test_legend_has_no_offset - AssertionError: behaviour does not match expected output
+FAILED tests/test_relational.py::TestRelationalPlotter::test_legend_has_no_offset - AssertionError: behaviour does not match expected output
+========================= 2 failed, 248 passed in 0.04s =========================

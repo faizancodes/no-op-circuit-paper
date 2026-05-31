@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_axes.py::test_cla_clears_children_axes_and_fig - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_axes.py::test_cla_clears_children_axes_and_fig - AssertionError: behaviour does not match expected output
+========================= 1 failed, 776 passed in 0.04s =========================

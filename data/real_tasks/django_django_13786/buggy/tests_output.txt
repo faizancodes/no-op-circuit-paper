@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_create_model_and_remove_model_options (migrations.test_optimizer.OptimizerTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_create_model_and_remove_model_options (migrations.test_optimizer.OptimizerTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 33 passed in 0.04s =========================

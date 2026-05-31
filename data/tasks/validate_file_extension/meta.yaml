@@ -1,0 +1,15 @@
+task_id: validate_file_extension
+description: validate_file_extension() fails to recognize valid extensions with mixed
+  case
+issue_text: 'The `validate_file_extension()` function is rejecting valid file names
+  like "document.PDF" or "image.JpG" even though the docstring states it should accept
+  common image and document formats case-insensitively. For example, `validate_file_extension("report.PDF")`
+  returns `False` when it should return `True`.
+
+  '
+primary_file: file_validator.py
+test_command: pytest -q test_file_validator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: case_sensitivity

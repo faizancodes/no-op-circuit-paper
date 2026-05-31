@@ -1,0 +1,16 @@
+task_id: word_list_tail_slice
+description: get_all_but_first_word() incorrectly returns all but the last two words
+  instead of all but the first word.
+issue_text: 'The function `get_all_but_first_word()` is supposed to return all words
+  except the first one from a sentence. However, when I call it with "hello world
+  test", it returns ["hello", "world"] instead of ["world", "test"]. It seems to be
+  dropping the last word incorrectly. Please fix this so it returns all words after
+  the first one.
+
+  '
+primary_file: word_utils.py
+test_command: pytest -q test_word_utils.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_slice

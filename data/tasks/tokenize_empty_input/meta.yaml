@@ -1,0 +1,14 @@
+task_id: tokenize_empty_input
+description: tokenize() should return [] on empty string, but returns None.
+issue_text: '`tokenizer.tokenize("")` returns `None` instead of an empty list. According
+  to the docstring and the expected behavior for parsing functions, an empty input
+  should return an empty list. This causes issues when iterating over the result or
+  checking its length.
+
+  '
+primary_file: tokenizer.py
+test_command: pytest -q test_tokenizer.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_empty_case

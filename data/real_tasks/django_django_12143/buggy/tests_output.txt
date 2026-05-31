@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_get_list_editable_queryset_with_regex_chars_in_prefix (admin_changelist.tests.ChangeListTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_get_list_editable_queryset_with_regex_chars_in_prefix (admin_changelist.tests.ChangeListTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 52 passed in 0.04s =========================

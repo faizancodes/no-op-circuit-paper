@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_image.py::test_huge_range_log[png--1] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_image.py::test_huge_range_log[png--1] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 111 passed in 0.04s =========================

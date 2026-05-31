@@ -1,0 +1,30 @@
+task_id: pydata_xarray_6721
+description: 'SWE-bench_Verified instance pydata__xarray-6721 (repo: pydata/xarray)'
+issue_text: "Accessing chunks on zarr backed xarray seems to load entire array into\
+  \ memory\n### What happened?\n\nWhen running the following example it appears the\
+  \ entire dataset is loaded into memory when accessing the `chunks` attribute:\r\n\
+  \r\n```python\r\nimport xarray as xr\r\n\r\nurl = \"https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/swot_adac/FESOM/surf/fma.zarr\"\
+  \r\nds = xr.open_dataset(url, engine='zarr') # note that ds is not chunked but still\
+  \ uses lazy loading\r\nds.chunks\r\n```\n\n### What did you expect to happen?\n\n\
+  According to @rabernat accessing the chunks attribute should simply inspect the\
+  \ `encoding` attribute on the underlying DataArrays.\n\n### Minimal Complete Verifiable\
+  \ Example\n\n_No response_\n\n### Relevant log output\n\n```Python\nFile ~/Downloads/minicondam1/envs/dev3.9/lib/python3.9/site-packages/xarray/core/dataset.py:2110,\
+  \ in Dataset.chunks(self)\r\n   2095 @property\r\n   2096 def chunks(self) -> Mapping[Hashable,\
+  \ tuple[int, ...]]:\r\n   2097     \"\"\"\r\n   2098     Mapping from dimension\
+  \ names to block lengths for this dataset's data, or None if\r\n   2099     the\
+  \ underlying data is not a dask array.\r\n   (...)\r\n   2108     xarray.unify_chunks\r\
+  \n   2109     \"\"\"\r\n-> 2110     return get_chunksizes(self.variables.values())\r\
+  \n\r\nFile ~/Downloads/minicondam1/envs/dev3.9/lib/python3.9/site-packages/xarray/core/common.py:1815,\
+  \ in get_chunksizes(variables)\r\n   1813 chunks: dict[Any, tuple[int, ...]] = {}\r\
+  \n   1814 for v in variables:\r\n-> 1815     if hasattr(v.data, \"chunks\"):\r\n\
+  \   1816         for dim, c in v.chu\u2026\n"
+primary_file: common.py
+test_command: pytest -q xarray/tests/test_dataset.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pydata__xarray-6721
+swe_bench_repo: pydata/xarray
+swe_bench_base_commit: cc183652bf6e1273e985e1c4b3cba79c896c1193
+swe_bench_modified_path: xarray/core/common.py

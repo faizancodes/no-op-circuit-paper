@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_non_blank_foreign_key_with_radio (model_forms.tests.ModelFormBaseTest) - AssertionError: behaviour does not match expected output
+FAILED test_choices_radio_blank (model_forms.test_modelchoicefield.ModelChoiceFieldTests) - AssertionError: behaviour does not match expected output
+FAILED test_clean_model_instance (model_forms.test_modelchoicefield.ModelChoiceFieldTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_non_blank_foreign_key_with_radio (model_forms.tests.ModelFormBaseTest) - AssertionError: behaviour does not match expected output
+FAILED test_choices_radio_blank (model_forms.test_modelchoicefield.ModelChoiceFieldTests) - AssertionError: behaviour does not match expected output
+FAILED test_clean_model_instance (model_forms.test_modelchoicefield.ModelChoiceFieldTests) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 165 passed in 0.04s =========================

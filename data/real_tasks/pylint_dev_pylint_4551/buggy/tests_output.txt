@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED tests/unittest_pyreverse_writer.py::test_dot_files[packages_No_Name.dot] - AssertionError: behaviour does not match expected output
+FAILED tests/unittest_pyreverse_writer.py::test_dot_files[classes_No_Name.dot] - AssertionError: behaviour does not match expected output
+FAILED tests/unittest_pyreverse_writer.py::test_get_visibility[names0-special] - AssertionError: behaviour does not match expected output
+... and 7 more failures (truncated)
+=========================== short test summary info ============================
+FAILED tests/unittest_pyreverse_writer.py::test_dot_files[packages_No_Name.dot] - AssertionError: behaviour does not match expected output
+FAILED tests/unittest_pyreverse_writer.py::test_dot_files[classes_No_Name.dot] - AssertionError: behaviour does not match expected output
+FAILED tests/unittest_pyreverse_writer.py::test_get_visibility[names0-special] - AssertionError: behaviour does not match expected output
+... and 7 more failures (truncated)
+========================= 10 failed, 0 passed in 0.04s =========================

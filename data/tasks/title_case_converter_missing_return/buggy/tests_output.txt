@@ -1,0 +1,40 @@
+.FFFF                                                                    [100%]
+=================================== FAILURES ===================================
+__________________________ test_single_word_lowercase __________________________
+
+    def test_single_word_lowercase():
+>       assert convert_to_title_case("hello") == "Hello"
+E       AssertionError: assert None == 'Hello'
+E        +  where None = convert_to_title_case('hello')
+
+test_titlecase.py:7: AssertionError
+__________________________ test_single_word_uppercase __________________________
+
+    def test_single_word_uppercase():
+>       assert convert_to_title_case("WORLD") == "World"
+E       AssertionError: assert None == 'World'
+E        +  where None = convert_to_title_case('WORLD')
+
+test_titlecase.py:10: AssertionError
+________________________ test_multiple_words_mixed_case ________________________
+
+    def test_multiple_words_mixed_case():
+>       assert convert_to_title_case("hello WORLD from PYTHON") == "Hello World From Python"
+E       AssertionError: assert None == 'Hello World From Python'
+E        +  where None = convert_to_title_case('hello WORLD from PYTHON')
+
+test_titlecase.py:13: AssertionError
+___________________________ test_already_title_case ____________________________
+
+    def test_already_title_case():
+>       assert convert_to_title_case("Title Case Text") == "Title Case Text"
+E       AssertionError: assert None == 'Title Case Text'
+E        +  where None = convert_to_title_case('Title Case Text')
+
+test_titlecase.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_titlecase.py::test_single_word_lowercase - AssertionError: assert...
+FAILED test_titlecase.py::test_single_word_uppercase - AssertionError: assert...
+FAILED test_titlecase.py::test_multiple_words_mixed_case - AssertionError: as...
+FAILED test_titlecase.py::test_already_title_case - AssertionError: assert No...
+4 failed, 1 passed in 0.01s

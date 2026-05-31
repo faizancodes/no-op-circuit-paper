@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED testing/test_reports.py::TestReportSerialization::test_chained_exceptions[TestReport] - AssertionError: behaviour does not match expected output
+FAILED testing/test_reports.py::TestReportSerialization::test_chained_exceptions[CollectReport] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/test_reports.py::TestReportSerialization::test_chained_exceptions[TestReport] - AssertionError: behaviour does not match expected output
+FAILED testing/test_reports.py::TestReportSerialization::test_chained_exceptions[CollectReport] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 123 passed in 0.04s =========================

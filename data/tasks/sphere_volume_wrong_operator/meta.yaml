@@ -1,0 +1,12 @@
+task_id: sphere_volume_wrong_operator
+description: sphere_volume() returns incorrect result due to wrong arithmetic operator
+issue_text: "The `sphere_volume()` function returns incorrect values. For example,\
+  \ `sphere_volume(3)` returns approximately 37.7 but should return approximately\
+  \ 113.1 (4/3 * \u03C0 * r\xB3). The calculated volume is consistently too small\
+  \ for all test cases.\n"
+primary_file: sphere.py
+test_command: pytest -q test_sphere.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_arithmetic

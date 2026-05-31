@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED partial(func, *args, **keywords) - new function with partial application - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED partial(func, *args, **keywords) - new function with partial application - AssertionError: behaviour does not match expected output
+========================= 1 failed, 0 passed in 0.04s =========================

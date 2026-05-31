@@ -1,0 +1,7504 @@
+{
+  "run_id": "steer-codegemma_7b_it-20260516T051943Z",
+  "model_name": "google/codegemma-7b-it",
+  "layer": 26,
+  "position": -1,
+  "hook_point": "resid_pre",
+  "alphas": [
+    -3.0,
+    -2.0,
+    -1.5,
+    -1.0,
+    -0.5,
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "direction_norm": 6.677756309509277,
+  "n_prompts": 40,
+  "rows": [
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 272.0,
+        "grep": 274.0,
+        "test": 276.0,
+        "edit": 284.0,
+        "noop": 264.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 282.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1034,
+      "abs_position": 1033,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 282.0,
+        "edit": 288.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 977,
+      "abs_position": 976,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 310.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 268.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 930,
+      "abs_position": 929,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1232,
+      "abs_position": 1231,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 276.0,
+        "test": 278.0,
+        "edit": 288.0,
+        "noop": 266.0
+      },
+      "edit_minus_noop": 22.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 891,
+      "abs_position": 890,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "color_name_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 970,
+      "abs_position": 969,
+      "action_logits": {
+        "view": 310.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 312.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 292.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 312.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 976,
+      "abs_position": 975,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 312.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 989,
+      "abs_position": 988,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 272.0,
+        "grep": 274.0,
+        "test": 274.0,
+        "edit": 284.0,
+        "noop": 264.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 284.0,
+        "edit": 290.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 997,
+      "abs_position": 996,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 296.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1123,
+      "abs_position": 1122,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 270.0,
+        "grep": 274.0,
+        "test": 274.0,
+        "edit": 284.0,
+        "noop": 264.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 280.0,
+        "test": 282.0,
+        "edit": 290.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1033,
+      "abs_position": 1032,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 268.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 296.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 908,
+      "abs_position": 907,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 268.0
+      },
+      "edit_minus_noop": 22.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 296.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 304.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 306.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 312.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1228,
+      "abs_position": 1227,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 304.0,
+        "test": 308.0,
+        "edit": 314.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 278.0,
+        "edit": 286.0,
+        "noop": 268.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 282.0,
+        "test": 284.0,
+        "edit": 290.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 296.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 292.0,
+        "test": 296.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 298.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1259,
+      "abs_position": 1258,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 306.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 274.0,
+        "grep": 274.0,
+        "test": 274.0,
+        "edit": 286.0,
+        "noop": 266.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 664,
+      "abs_position": 663,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 312.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 310.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 314.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 310.0,
+        "grep": 306.0,
+        "test": 308.0,
+        "edit": 314.0,
+        "noop": 304.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "parser_empty_input",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 736,
+      "abs_position": 735,
+      "action_logits": {
+        "view": 314.0,
+        "grep": 308.0,
+        "test": 310.0,
+        "edit": 316.0,
+        "noop": 308.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 765,
+      "abs_position": 764,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 306.0,
+        "edit": 310.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 294.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 302.0,
+        "test": 306.0,
+        "edit": 312.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "password_length_validator",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 909,
+      "abs_position": 908,
+      "action_logits": {
+        "view": 312.0,
+        "grep": 304.0,
+        "test": 308.0,
+        "edit": 312.0,
+        "noop": 304.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 272.0,
+        "grep": 274.0,
+        "test": 272.0,
+        "edit": 286.0,
+        "noop": 264.0
+      },
+      "edit_minus_noop": 22.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 278.0,
+        "edit": 290.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 280.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1109,
+      "abs_position": 1108,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 278.0,
+        "test": 276.0,
+        "edit": 286.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1019,
+      "abs_position": 1018,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 270.0,
+        "grep": 274.0,
+        "test": 276.0,
+        "edit": 282.0,
+        "noop": 264.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 280.0,
+        "test": 282.0,
+        "edit": 288.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 282.0,
+        "test": 284.0,
+        "edit": 290.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 292.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 881,
+      "abs_position": 880,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 272.0,
+        "grep": 274.0,
+        "test": 274.0,
+        "edit": 282.0,
+        "noop": 266.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 286.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 288.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 290.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 292.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 294.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 296.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 300.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1131,
+      "abs_position": 1130,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 302.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 6.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 268.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 300.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1143,
+      "abs_position": 1142,
+      "action_logits": {
+        "view": 310.0,
+        "grep": 304.0,
+        "test": 308.0,
+        "edit": 312.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 280.0,
+        "test": 282.0,
+        "edit": 290.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_items",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 962,
+      "abs_position": 961,
+      "action_logits": {
+        "view": 310.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 308.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 6.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 276.0,
+        "test": 278.0,
+        "edit": 288.0,
+        "noop": 266.0
+      },
+      "edit_minus_noop": 22.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 292.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1363,
+      "abs_position": 1362,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 300.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1032,
+      "abs_position": 1031,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 274.0,
+        "grep": 276.0,
+        "test": 274.0,
+        "edit": 286.0,
+        "noop": 266.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 294.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1332,
+      "abs_position": 1331,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1124,
+      "abs_position": 1123,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 278.0,
+        "edit": 290.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 294.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 300.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 304.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1013,
+      "abs_position": 1012,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 312.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1079,
+      "abs_position": 1078,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 306.0,
+        "edit": 310.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 280.0,
+        "test": 282.0,
+        "edit": 290.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 296.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 312.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 312.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1509,
+      "abs_position": 1508,
+      "action_logits": {
+        "view": 312.0,
+        "grep": 306.0,
+        "test": 310.0,
+        "edit": 314.0,
+        "noop": 304.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 278.0,
+        "test": 276.0,
+        "edit": 284.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 290.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 284.0,
+        "edit": 290.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 286.0,
+        "edit": 292.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 296.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 300.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 6.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 300.0,
+        "edit": 302.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 6.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1135,
+      "abs_position": 1134,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 302.0,
+        "edit": 304.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 4.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 274.0,
+        "grep": 276.0,
+        "test": 278.0,
+        "edit": 286.0,
+        "noop": 268.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 282.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 296.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 968,
+      "abs_position": 967,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 308.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 292.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 296.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 302.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 302.0,
+        "test": 302.0,
+        "edit": 306.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1041,
+      "abs_position": 1040,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 308.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 6.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 278.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 270.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 296.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 951,
+      "abs_position": 950,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 312.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 280.0,
+        "test": 280.0,
+        "edit": 290.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 292.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 304.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 8.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 849,
+      "abs_position": 848,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 304.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 6.0,
+      "argmax_action": "view"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 276.0,
+        "grep": 278.0,
+        "test": 280.0,
+        "edit": 288.0,
+        "noop": 268.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 276.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 284.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 987,
+      "abs_position": 986,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 306.0,
+        "edit": 310.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 282.0,
+        "test": 282.0,
+        "edit": 292.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 304.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_file_extension",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1051,
+      "abs_position": 1050,
+      "action_logits": {
+        "view": 310.0,
+        "grep": 306.0,
+        "test": 308.0,
+        "edit": 312.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 10.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 274.0,
+        "grep": 276.0,
+        "test": 276.0,
+        "edit": 286.0,
+        "noop": 266.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 280.0,
+        "grep": 280.0,
+        "test": 282.0,
+        "edit": 292.0,
+        "noop": 272.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 294.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 1063,
+      "abs_position": 1062,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -3.0,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 282.0,
+        "grep": 284.0,
+        "test": 284.0,
+        "edit": 294.0,
+        "noop": 274.0
+      },
+      "edit_minus_noop": 20.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -2.0,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "edit_minus_noop": 18.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.5,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -1.0,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": -0.5,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "edit_minus_noop": 16.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.0,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 298.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 0.5,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 300.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.0,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 304.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 296.0
+      },
+      "edit_minus_noop": 14.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 1.5,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 306.0,
+        "grep": 302.0,
+        "test": 304.0,
+        "edit": 310.0,
+        "noop": 298.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 2.0,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 308.0,
+        "grep": 304.0,
+        "test": 306.0,
+        "edit": 312.0,
+        "noop": 300.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "alpha": 3.0,
+      "seq_len": 937,
+      "abs_position": 936,
+      "action_logits": {
+        "view": 310.0,
+        "grep": 306.0,
+        "test": 308.0,
+        "edit": 314.0,
+        "noop": 302.0
+      },
+      "edit_minus_noop": 12.0,
+      "argmax_action": "edit"
+    }
+  ]
+}

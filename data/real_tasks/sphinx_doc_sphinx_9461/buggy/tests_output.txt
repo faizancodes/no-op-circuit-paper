@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED tests/test_domain_py.py::test_pyproperty - AssertionError: behaviour does not match expected output
+FAILED tests/test_ext_autodoc_autoclass.py::test_properties - AssertionError: behaviour does not match expected output
+FAILED tests/test_ext_autodoc_autoproperty.py::test_class_properties - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_domain_py.py::test_pyproperty - AssertionError: behaviour does not match expected output
+FAILED tests/test_ext_autodoc_autoclass.py::test_properties - AssertionError: behaviour does not match expected output
+FAILED tests/test_ext_autodoc_autoproperty.py::test_class_properties - AssertionError: behaviour does not match expected output
+========================= 3 failed, 59 passed in 0.04s =========================

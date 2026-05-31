@@ -1,0 +1,21 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_disk_quota ________________________________
+
+tmpdir = local('/tmp/pytest-of-runner/pytest-42')
+
+    def test_disk_quota():
+        import tempfile
+        import os
+        
+        # CI runner disk quota check
+>       with tempfile.NamedTemporaryFile(mode='w', delete=False) as f:
+            for _ in range(10000):
+                f.write('x' * 1024)
+E       OSError: [Errno 28] No space left on device
+
+test_ci_infrastructure.py:145: OSError
+=========================== short test summary info ============================
+FAILED test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 4 passed, 1 failed in 0.23s ==========================

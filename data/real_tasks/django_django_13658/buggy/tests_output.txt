@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_program_name_from_argv (admin_scripts.tests.ExecuteFromCommandLine) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_program_name_from_argv (admin_scripts.tests.ExecuteFromCommandLine) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 181 passed in 0.04s =========================

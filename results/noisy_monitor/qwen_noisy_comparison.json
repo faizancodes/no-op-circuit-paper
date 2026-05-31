@@ -1,0 +1,42 @@
+{
+  "code_tests": {
+    "n_pairs": 499,
+    "monitor_auc": 0.9890080762727862,
+    "regex_contains_FAILED_auc": 1.0,
+    "regex_n_FAILED_auc": 1.0,
+    "regex_density_auc": 1.0,
+    "bow_auc": 1.0
+  },
+  "code_tests_noisy_flaky": {
+    "n_pairs": 499,
+    "monitor_auc": 0.7276235838410288,
+    "regex_contains_FAILED_auc": 0.5,
+    "regex_n_FAILED_auc": 1.0,
+    "regex_density_auc": 1.0,
+    "bow_auc": 1.0
+  },
+  "code_tests_many_passing": {
+    "n_pairs": 499,
+    "monitor_auc": 0.9301569070003735,
+    "regex_contains_FAILED_auc": 1.0,
+    "regex_n_FAILED_auc": 1.0,
+    "regex_density_auc": 1.0,
+    "bow_auc": 1.0
+  },
+  "code_tests_truncated": {
+    "n_pairs": 499,
+    "monitor_auc": 0.988919723213963,
+    "regex_contains_FAILED_auc": 1.0,
+    "regex_n_FAILED_auc": 1.0,
+    "regex_density_auc": 1.0,
+    "bow_auc": 1.0
+  },
+  "code_tests_summary_only": {
+    "n_pairs": 499,
+    "monitor_auc": 0.896144995401625,
+    "regex_contains_FAILED_auc": 0.5,
+    "regex_n_FAILED_auc": 0.5,
+    "regex_density_auc": 0.5,
+    "bow_auc": 1.0
+  }
+}

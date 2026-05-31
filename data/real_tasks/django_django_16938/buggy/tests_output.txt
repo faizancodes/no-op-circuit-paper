@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED The ability to create new objects by modifying serialized content. - AssertionError: behaviour does not match expected output
+FAILED Deserialized content can be saved with force_insert as a parameter. - AssertionError: behaviour does not match expected output
+FAILED Mapping such as fields should be deterministically ordered. (#24558) - AssertionError: behaviour does not match expected output
+... and 20 more failures (truncated)
+=========================== short test summary info ============================
+FAILED The ability to create new objects by modifying serialized content. - AssertionError: behaviour does not match expected output
+FAILED Deserialized content can be saved with force_insert as a parameter. - AssertionError: behaviour does not match expected output
+FAILED Mapping such as fields should be deterministically ordered. (#24558) - AssertionError: behaviour does not match expected output
+... and 20 more failures (truncated)
+========================= 23 failed, 65 passed in 0.04s =========================

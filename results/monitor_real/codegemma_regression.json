@@ -1,0 +1,117 @@
+{
+  "n_fixed_paired": 497,
+  "op_threshold_qwen": 0.10876178741455078,
+  "op_threshold_codegemma": 9.397636413574219,
+  "n_misclass_qwen": 13,
+  "n_misclass_codegemma": 77,
+  "overlap_both_miss": 2,
+  "overlap_pct_of_cg_miss": 2.5974025974025974,
+  "cg_only_miss": 75,
+  "qwen_only_miss": 11,
+  "per_repo": [
+    {
+      "repo": "django/django",
+      "n_fixed": 231,
+      "cg_misclass": 44,
+      "cg_rate": 0.19047619047619047,
+      "q_misclass": 2,
+      "q_rate": 0.008658008658008658
+    },
+    {
+      "repo": "sphinx-doc/sphinx",
+      "n_fixed": 44,
+      "cg_misclass": 12,
+      "cg_rate": 0.2727272727272727,
+      "q_misclass": 0,
+      "q_rate": 0.0
+    },
+    {
+      "repo": "pydata/xarray",
+      "n_fixed": 22,
+      "cg_misclass": 4,
+      "cg_rate": 0.18181818181818182,
+      "q_misclass": 1,
+      "q_rate": 0.045454545454545456
+    },
+    {
+      "repo": "sympy/sympy",
+      "n_fixed": 75,
+      "cg_misclass": 3,
+      "cg_rate": 0.04,
+      "q_misclass": 3,
+      "q_rate": 0.04
+    },
+    {
+      "repo": "astropy/astropy",
+      "n_fixed": 19,
+      "cg_misclass": 3,
+      "cg_rate": 0.15789473684210525,
+      "q_misclass": 2,
+      "q_rate": 0.10526315789473684
+    },
+    {
+      "repo": "pylint-dev/pylint",
+      "n_fixed": 10,
+      "cg_misclass": 3,
+      "cg_rate": 0.3,
+      "q_misclass": 0,
+      "q_rate": 0.0
+    },
+    {
+      "repo": "scikit-learn/scikit-learn",
+      "n_fixed": 32,
+      "cg_misclass": 2,
+      "cg_rate": 0.0625,
+      "q_misclass": 0,
+      "q_rate": 0.0
+    },
+    {
+      "repo": "matplotlib/matplotlib",
+      "n_fixed": 34,
+      "cg_misclass": 2,
+      "cg_rate": 0.058823529411764705,
+      "q_misclass": 2,
+      "q_rate": 0.058823529411764705
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "n_fixed": 19,
+      "cg_misclass": 2,
+      "cg_rate": 0.10526315789473684,
+      "q_misclass": 3,
+      "q_rate": 0.15789473684210525
+    },
+    {
+      "repo": "psf/requests",
+      "n_fixed": 8,
+      "cg_misclass": 1,
+      "cg_rate": 0.125,
+      "q_misclass": 0,
+      "q_rate": 0.0
+    },
+    {
+      "repo": "mwaskom/seaborn",
+      "n_fixed": 2,
+      "cg_misclass": 0,
+      "cg_rate": 0.0,
+      "q_misclass": 0,
+      "q_rate": 0.0
+    }
+  ],
+  "cg_misclass_score_stats": {
+    "mean": 10.258303184013862,
+    "std": 0.6341948833399833,
+    "min": 9.422557830810547,
+    "max": 12.194557189941406
+  },
+  "cg_correct_score_stats": {
+    "mean": 7.565037785541444,
+    "std": 1.1681935774833958
+  },
+  "token_length": {
+    "misclass_mean": 1523.987012987013,
+    "correct_mean": 1494.7761904761905,
+    "n_misclass": 77,
+    "n_correct": 420
+  }
+}

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_union_none (queries.test_qs_combinators.QuerySetSetOperationTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_union_none (queries.test_qs_combinators.QuerySetSetOperationTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 29 passed in 0.04s =========================

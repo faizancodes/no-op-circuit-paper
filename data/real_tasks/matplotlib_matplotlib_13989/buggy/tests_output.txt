@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_axes.py::test_hist_range_and_density - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_axes.py::test_hist_range_and_density - AssertionError: behaviour does not match expected output
+========================= 1 failed, 411 passed in 0.04s =========================

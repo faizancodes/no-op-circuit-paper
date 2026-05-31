@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_basicauth_with_netrc - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_basicauth_with_netrc - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+========================= 6 failed, 107 passed in 0.04s =========================

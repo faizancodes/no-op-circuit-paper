@@ -1,0 +1,15 @@
+task_id: auth_role_check_case
+description: check_user_role() fails to recognize roles when input has different capitalization
+issue_text: 'The `check_user_role()` function is rejecting valid user roles when they
+  are capitalized differently. For example, a user with role ''Admin'' is not recognized
+  as having the ''admin'' role, even though role names should be case-insensitive
+  according to our auth policy. This is causing authorization failures for legitimate
+  users.
+
+  '
+primary_file: auth.py
+test_command: pytest -q test_auth.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: case_sensitivity

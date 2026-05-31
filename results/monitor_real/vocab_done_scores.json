@@ -1,0 +1,3543 @@
+{
+  "config": {
+    "cache_dir": "results/cache-real-qwen-vocab-done-20260518T081308Z",
+    "variant_name": "code_tests",
+    "label": "vocab_done",
+    "v_noop": "results/steer-20260516T021522Z/v_noop.pt",
+    "layer": 24,
+    "pos": -1,
+    "n_paired_tasks": 499,
+    "action_vocab": [
+      "view",
+      "grep",
+      "test",
+      "edit",
+      "done"
+    ]
+  },
+  "mean_projection": {
+    "buggy": -2.8744726773493277,
+    "fixed": 1.7747650237264996,
+    "gap": 4.649237701075827
+  },
+  "metrics": {
+    "roc_auc": 0.990297227721977,
+    "pr_auc": 0.9917588212228328,
+    "op_in_sample": {
+      "tp": 475,
+      "fp": 18,
+      "fn": 24,
+      "tn": 481,
+      "threshold": 0.6513328552246094,
+      "precision": 0.9634888438133874,
+      "recall": 0.9519038076152304,
+      "accuracy": 0.9579158316633266,
+      "false_edit_rate": 0.036072144288577156
+    }
+  },
+  "argmax_distribution": {
+    "buggy": {
+      "grep": 484,
+      "edit": 15
+    },
+    "fixed": {
+      "grep": 468,
+      "edit": 31
+    }
+  },
+  "per_task": [
+    {
+      "task_id": "astropy_astropy_12907",
+      "buggy_projection": -2.9023327827453613,
+      "fixed_projection": 0.9586038589477539,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "buggy_projection": -3.992114543914795,
+      "fixed_projection": 1.6528913974761963,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "buggy_projection": -3.0993599891662598,
+      "fixed_projection": 4.0577850341796875,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "buggy_projection": -2.4734764099121094,
+      "fixed_projection": 2.906689167022705,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "buggy_projection": -4.319454669952393,
+      "fixed_projection": 1.562279224395752,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "buggy_projection": -4.749981880187988,
+      "fixed_projection": 1.120772361755371,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "buggy_projection": -3.7300541400909424,
+      "fixed_projection": -1.540618658065796,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "buggy_projection": -3.0224742889404297,
+      "fixed_projection": 1.96779203414917,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "buggy_projection": -5.0397844314575195,
+      "fixed_projection": 0.4389798641204834,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "buggy_projection": -1.5947842597961426,
+      "fixed_projection": 0.7370543479919434,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "buggy_projection": -5.029289722442627,
+      "fixed_projection": 1.4281373023986816,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "buggy_projection": -3.012967109680176,
+      "fixed_projection": 1.1222121715545654,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "buggy_projection": -2.212393045425415,
+      "fixed_projection": 0.2132101058959961,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "buggy_projection": -2.8089113235473633,
+      "fixed_projection": 0.7774548530578613,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "buggy_projection": -4.797945022583008,
+      "fixed_projection": -0.2613053321838379,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "buggy_projection": -4.9318156242370605,
+      "fixed_projection": 0.8207054138183594,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "buggy_projection": -2.599564552307129,
+      "fixed_projection": 1.1769461631774902,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "buggy_projection": -5.411181449890137,
+      "fixed_projection": -1.632669448852539,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "buggy_projection": -4.241306304931641,
+      "fixed_projection": -0.4864315986633301,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "buggy_projection": -2.7590813636779785,
+      "fixed_projection": 2.0682878494262695,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "buggy_projection": -3.9158835411071777,
+      "fixed_projection": 1.0508573055267334,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_10097",
+      "buggy_projection": -4.054927349090576,
+      "fixed_projection": 3.299217462539673,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_10554",
+      "buggy_projection": -4.3916120529174805,
+      "fixed_projection": 0.8265402317047119,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_10880",
+      "buggy_projection": -4.995451927185059,
+      "fixed_projection": -0.18111133575439453,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_10914",
+      "buggy_projection": 0.14524102210998535,
+      "fixed_projection": 3.511744499206543,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_10973",
+      "buggy_projection": -2.3299665451049805,
+      "fixed_projection": 5.556818962097168,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_10999",
+      "buggy_projection": -3.058058738708496,
+      "fixed_projection": 2.3972275257110596,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11066",
+      "buggy_projection": -3.7023794651031494,
+      "fixed_projection": 0.9824581146240234,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11087",
+      "buggy_projection": -2.3144402503967285,
+      "fixed_projection": 2.57171630859375,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11095",
+      "buggy_projection": 1.1939144134521484,
+      "fixed_projection": 6.141800880432129,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_11099",
+      "buggy_projection": -2.7134695053100586,
+      "fixed_projection": 3.086367130279541,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_11119",
+      "buggy_projection": -1.42987060546875,
+      "fixed_projection": 3.549943685531616,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11133",
+      "buggy_projection": -2.6678504943847656,
+      "fixed_projection": 0.9098126888275146,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11138",
+      "buggy_projection": -2.6737966537475586,
+      "fixed_projection": 2.8400423526763916,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11141",
+      "buggy_projection": -2.280825614929199,
+      "fixed_projection": 3.3439841270446777,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11149",
+      "buggy_projection": -2.6413135528564453,
+      "fixed_projection": 3.2239813804626465,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11163",
+      "buggy_projection": -3.240016222000122,
+      "fixed_projection": 2.581681489944458,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11179",
+      "buggy_projection": -3.542055606842041,
+      "fixed_projection": 2.6636102199554443,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11206",
+      "buggy_projection": -3.2582178115844727,
+      "fixed_projection": 1.5214393138885498,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11211",
+      "buggy_projection": -2.791400909423828,
+      "fixed_projection": 3.323935031890869,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11239",
+      "buggy_projection": 0.15482640266418457,
+      "fixed_projection": 4.045733451843262,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11265",
+      "buggy_projection": -3.400035858154297,
+      "fixed_projection": -0.04289126396179199,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11276",
+      "buggy_projection": -2.9735355377197266,
+      "fixed_projection": 4.220709800720215,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11292",
+      "buggy_projection": -0.1984245777130127,
+      "fixed_projection": 5.050838470458984,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11299",
+      "buggy_projection": -2.2975733280181885,
+      "fixed_projection": 1.354651689529419,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11333",
+      "buggy_projection": -0.0269014835357666,
+      "fixed_projection": 4.572789669036865,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_11400",
+      "buggy_projection": -4.651696681976318,
+      "fixed_projection": 1.9422564506530762,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11433",
+      "buggy_projection": -3.925081729888916,
+      "fixed_projection": 3.8344388008117676,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11451",
+      "buggy_projection": -2.4035587310791016,
+      "fixed_projection": 2.837982177734375,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11477",
+      "buggy_projection": -6.7495036125183105,
+      "fixed_projection": 2.368499755859375,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11490",
+      "buggy_projection": -4.240968704223633,
+      "fixed_projection": 2.0562946796417236,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11532",
+      "buggy_projection": -3.472893238067627,
+      "fixed_projection": 0.9675655364990234,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11551",
+      "buggy_projection": -2.0466041564941406,
+      "fixed_projection": 2.2377586364746094,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11555",
+      "buggy_projection": -3.0362887382507324,
+      "fixed_projection": 1.4745714664459229,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11603",
+      "buggy_projection": -3.95011043548584,
+      "fixed_projection": 5.063627243041992,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_11728",
+      "buggy_projection": -3.5748672485351562,
+      "fixed_projection": 0.896235466003418,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11734",
+      "buggy_projection": -6.719317436218262,
+      "fixed_projection": -1.1399774551391602,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11740",
+      "buggy_projection": -2.3085837364196777,
+      "fixed_projection": 2.826925277709961,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_11749",
+      "buggy_projection": -2.0831480026245117,
+      "fixed_projection": 0.36098289489746094,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11790",
+      "buggy_projection": -2.991837739944458,
+      "fixed_projection": 2.927309036254883,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11815",
+      "buggy_projection": -4.052861213684082,
+      "fixed_projection": 1.860419511795044,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11820",
+      "buggy_projection": -5.131795883178711,
+      "fixed_projection": 0.77783203125,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11848",
+      "buggy_projection": -4.376204013824463,
+      "fixed_projection": 1.4543540477752686,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11880",
+      "buggy_projection": -2.7506163120269775,
+      "fixed_projection": 1.5836155414581299,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11885",
+      "buggy_projection": -4.7042059898376465,
+      "fixed_projection": 4.760937213897705,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11951",
+      "buggy_projection": -1.7497663497924805,
+      "fixed_projection": 2.3129615783691406,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11964",
+      "buggy_projection": -4.789737224578857,
+      "fixed_projection": 3.3148529529571533,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_11999",
+      "buggy_projection": -2.1149096488952637,
+      "fixed_projection": 3.363323211669922,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12039",
+      "buggy_projection": -4.658825874328613,
+      "fixed_projection": 1.0593929290771484,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12050",
+      "buggy_projection": -3.426943778991699,
+      "fixed_projection": 2.3624281883239746,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12125",
+      "buggy_projection": -4.11339807510376,
+      "fixed_projection": 2.0865917205810547,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12143",
+      "buggy_projection": -2.048250198364258,
+      "fixed_projection": 2.6624255180358887,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12155",
+      "buggy_projection": -3.984605312347412,
+      "fixed_projection": 1.316422700881958,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_12193",
+      "buggy_projection": -2.6112563610076904,
+      "fixed_projection": 1.6700475215911865,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12209",
+      "buggy_projection": -3.1741671562194824,
+      "fixed_projection": 2.616218090057373,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12262",
+      "buggy_projection": -4.368310928344727,
+      "fixed_projection": 1.2042076587677002,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12273",
+      "buggy_projection": -4.077417373657227,
+      "fixed_projection": 1.0697388648986816,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12276",
+      "buggy_projection": -0.6308503150939941,
+      "fixed_projection": 3.9044275283813477,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12304",
+      "buggy_projection": -2.155508041381836,
+      "fixed_projection": 2.824221611022949,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12308",
+      "buggy_projection": -2.3249614238739014,
+      "fixed_projection": 2.633913040161133,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12325",
+      "buggy_projection": -2.8481853008270264,
+      "fixed_projection": 0.6126351356506348,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12406",
+      "buggy_projection": -4.22301721572876,
+      "fixed_projection": 2.382098913192749,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12419",
+      "buggy_projection": 0.1078341007232666,
+      "fixed_projection": 4.923316955566406,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12663",
+      "buggy_projection": -3.528006076812744,
+      "fixed_projection": 1.2289841175079346,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12708",
+      "buggy_projection": -3.2113118171691895,
+      "fixed_projection": 1.5802092552185059,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12713",
+      "buggy_projection": -2.9799411296844482,
+      "fixed_projection": 3.9508190155029297,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12741",
+      "buggy_projection": -2.3912596702575684,
+      "fixed_projection": 4.41642427444458,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12754",
+      "buggy_projection": -4.242803573608398,
+      "fixed_projection": 1.2142095565795898,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12774",
+      "buggy_projection": -1.3052918910980225,
+      "fixed_projection": 2.7775845527648926,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12858",
+      "buggy_projection": -3.8469295501708984,
+      "fixed_projection": -0.4018533229827881,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_12965",
+      "buggy_projection": -2.072805881500244,
+      "fixed_projection": 2.0067331790924072,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13012",
+      "buggy_projection": -2.5444321632385254,
+      "fixed_projection": 1.0844018459320068,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13023",
+      "buggy_projection": -2.3137741088867188,
+      "fixed_projection": 1.5630042552947998,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13028",
+      "buggy_projection": -3.2121458053588867,
+      "fixed_projection": 1.6515731811523438,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13033",
+      "buggy_projection": -2.783362627029419,
+      "fixed_projection": 1.7618160247802734,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13089",
+      "buggy_projection": -4.016353607177734,
+      "fixed_projection": 0.7621433734893799,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13109",
+      "buggy_projection": -2.3209962844848633,
+      "fixed_projection": 2.574544668197632,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13112",
+      "buggy_projection": -2.9203662872314453,
+      "fixed_projection": 1.200547218322754,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13121",
+      "buggy_projection": -3.613320827484131,
+      "fixed_projection": 0.29349803924560547,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13128",
+      "buggy_projection": -4.630695819854736,
+      "fixed_projection": 2.2894465923309326,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13158",
+      "buggy_projection": -2.8343982696533203,
+      "fixed_projection": 2.7058703899383545,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13195",
+      "buggy_projection": -3.961745262145996,
+      "fixed_projection": 2.318758726119995,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13212",
+      "buggy_projection": -3.9121999740600586,
+      "fixed_projection": 4.641449451446533,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13279",
+      "buggy_projection": -7.0432586669921875,
+      "fixed_projection": 2.0866034030914307,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13297",
+      "buggy_projection": -1.1519646644592285,
+      "fixed_projection": 1.8170015811920166,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13315",
+      "buggy_projection": -3.277698040008545,
+      "fixed_projection": 3.166567087173462,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13343",
+      "buggy_projection": -3.151113510131836,
+      "fixed_projection": 2.641907215118408,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13344",
+      "buggy_projection": -2.567066192626953,
+      "fixed_projection": 1.5895235538482666,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13346",
+      "buggy_projection": -3.2887587547302246,
+      "fixed_projection": 1.6222929954528809,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13363",
+      "buggy_projection": -1.993943214416504,
+      "fixed_projection": 1.9309353828430176,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_13401",
+      "buggy_projection": -1.9530231952667236,
+      "fixed_projection": 1.5655629634857178,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13406",
+      "buggy_projection": -2.21478271484375,
+      "fixed_projection": 1.5940864086151123,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13410",
+      "buggy_projection": -1.416172981262207,
+      "fixed_projection": 1.9857771396636963,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_13417",
+      "buggy_projection": -3.6807944774627686,
+      "fixed_projection": 1.9789752960205078,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13449",
+      "buggy_projection": -4.557740211486816,
+      "fixed_projection": -0.06336545944213867,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13512",
+      "buggy_projection": -4.372182369232178,
+      "fixed_projection": 2.8727612495422363,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13513",
+      "buggy_projection": -1.2479348182678223,
+      "fixed_projection": 1.5231304168701172,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13516",
+      "buggy_projection": -3.0499277114868164,
+      "fixed_projection": 2.0374341011047363,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13551",
+      "buggy_projection": -1.8532905578613281,
+      "fixed_projection": 2.5752005577087402,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_13568",
+      "buggy_projection": -2.017190933227539,
+      "fixed_projection": 2.283567190170288,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13569",
+      "buggy_projection": -1.9544196128845215,
+      "fixed_projection": 1.2287414073944092,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13590",
+      "buggy_projection": -2.5764803886413574,
+      "fixed_projection": 1.6450386047363281,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13658",
+      "buggy_projection": -1.5485866069793701,
+      "fixed_projection": 1.8356809616088867,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_13670",
+      "buggy_projection": -2.3037421703338623,
+      "fixed_projection": 2.8981027603149414,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13741",
+      "buggy_projection": -1.666109323501587,
+      "fixed_projection": 4.3585991859436035,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13786",
+      "buggy_projection": -2.329409599304199,
+      "fixed_projection": 1.4628605842590332,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13794",
+      "buggy_projection": -4.89016580581665,
+      "fixed_projection": 2.8363442420959473,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13807",
+      "buggy_projection": -3.3744940757751465,
+      "fixed_projection": 0.2749614715576172,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13809",
+      "buggy_projection": -3.0803639888763428,
+      "fixed_projection": 4.843738555908203,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13810",
+      "buggy_projection": -2.942608118057251,
+      "fixed_projection": 2.521307945251465,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13820",
+      "buggy_projection": -2.401834487915039,
+      "fixed_projection": 4.305680274963379,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13821",
+      "buggy_projection": -4.236090660095215,
+      "fixed_projection": 3.8274903297424316,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13837",
+      "buggy_projection": -1.3679673671722412,
+      "fixed_projection": 3.990389347076416,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13925",
+      "buggy_projection": -5.118370532989502,
+      "fixed_projection": 0.2230067253112793,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13933",
+      "buggy_projection": -2.1937613487243652,
+      "fixed_projection": 1.5753812789916992,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_13964",
+      "buggy_projection": -3.6742587089538574,
+      "fixed_projection": 1.9355698823928833,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14007",
+      "buggy_projection": -2.5042471885681152,
+      "fixed_projection": 1.2015609741210938,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14011",
+      "buggy_projection": -3.109041690826416,
+      "fixed_projection": 1.7546517848968506,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14017",
+      "buggy_projection": -4.612639427185059,
+      "fixed_projection": -0.7870287895202637,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14034",
+      "buggy_projection": -3.557705879211426,
+      "fixed_projection": 1.068842887878418,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14053",
+      "buggy_projection": -2.012125015258789,
+      "fixed_projection": 1.3511731624603271,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14089",
+      "buggy_projection": 1.0118367671966553,
+      "fixed_projection": 5.661792755126953,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_14122",
+      "buggy_projection": -1.4243614673614502,
+      "fixed_projection": 2.470508575439453,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14140",
+      "buggy_projection": -6.010034084320068,
+      "fixed_projection": 1.1576471328735352,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14155",
+      "buggy_projection": -4.74805212020874,
+      "fixed_projection": 3.2500009536743164,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14170",
+      "buggy_projection": -3.974557399749756,
+      "fixed_projection": 2.5305166244506836,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14238",
+      "buggy_projection": -4.357659816741943,
+      "fixed_projection": 0.3625063896179199,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14311",
+      "buggy_projection": -3.658144474029541,
+      "fixed_projection": 3.2386012077331543,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14315",
+      "buggy_projection": -3.6954498291015625,
+      "fixed_projection": 4.087655067443848,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14349",
+      "buggy_projection": -3.9299023151397705,
+      "fixed_projection": 0.13676691055297852,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14351",
+      "buggy_projection": -2.9293603897094727,
+      "fixed_projection": 0.03714132308959961,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14373",
+      "buggy_projection": -3.2727599143981934,
+      "fixed_projection": 1.7668380737304688,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14376",
+      "buggy_projection": -2.818507194519043,
+      "fixed_projection": 2.5219483375549316,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14404",
+      "buggy_projection": -3.6915979385375977,
+      "fixed_projection": 3.234872579574585,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14434",
+      "buggy_projection": -2.7335567474365234,
+      "fixed_projection": 2.979112386703491,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14493",
+      "buggy_projection": -2.740077495574951,
+      "fixed_projection": 0.9078302383422852,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14500",
+      "buggy_projection": -3.4069652557373047,
+      "fixed_projection": 2.521682024002075,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14534",
+      "buggy_projection": -1.8366658687591553,
+      "fixed_projection": 2.4052796363830566,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14539",
+      "buggy_projection": -5.295493125915527,
+      "fixed_projection": 0.990753173828125,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14559",
+      "buggy_projection": -1.3313422203063965,
+      "fixed_projection": 4.212062835693359,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14580",
+      "buggy_projection": -3.1405410766601562,
+      "fixed_projection": -0.5927243232727051,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14608",
+      "buggy_projection": -2.252971649169922,
+      "fixed_projection": 3.174506187438965,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14631",
+      "buggy_projection": -1.7498764991760254,
+      "fixed_projection": 2.6625375747680664,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14672",
+      "buggy_projection": -4.0509352684021,
+      "fixed_projection": 0.9509937763214111,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14725",
+      "buggy_projection": -4.328824996948242,
+      "fixed_projection": 4.358084678649902,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_14752",
+      "buggy_projection": -1.6635620594024658,
+      "fixed_projection": 3.9590964317321777,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14765",
+      "buggy_projection": -2.656116008758545,
+      "fixed_projection": 3.6214160919189453,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14771",
+      "buggy_projection": -1.6082279682159424,
+      "fixed_projection": 3.1981849670410156,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14787",
+      "buggy_projection": -3.4580702781677246,
+      "fixed_projection": 2.498765707015991,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14792",
+      "buggy_projection": -3.6243038177490234,
+      "fixed_projection": 0.10669326782226562,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14855",
+      "buggy_projection": -3.5716309547424316,
+      "fixed_projection": 2.344114303588867,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14915",
+      "buggy_projection": -4.851561546325684,
+      "fixed_projection": 1.3307600021362305,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_14999",
+      "buggy_projection": 0.47757959365844727,
+      "fixed_projection": 6.165294647216797,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_15022",
+      "buggy_projection": -2.8361058235168457,
+      "fixed_projection": 2.03249454498291,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15037",
+      "buggy_projection": -3.1861636638641357,
+      "fixed_projection": 1.7650654315948486,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_15098",
+      "buggy_projection": -1.5238850116729736,
+      "fixed_projection": 2.8134748935699463,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15103",
+      "buggy_projection": -0.8451862335205078,
+      "fixed_projection": 5.340330600738525,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_15104",
+      "buggy_projection": -3.2254605293273926,
+      "fixed_projection": 1.3702681064605713,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15127",
+      "buggy_projection": -1.7996258735656738,
+      "fixed_projection": 3.5042154788970947,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15128",
+      "buggy_projection": -4.004305362701416,
+      "fixed_projection": 1.6389551162719727,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15161",
+      "buggy_projection": -3.8581860065460205,
+      "fixed_projection": 3.7691664695739746,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15252",
+      "buggy_projection": -2.654745578765869,
+      "fixed_projection": 1.2473235130310059,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15268",
+      "buggy_projection": -2.2485363483428955,
+      "fixed_projection": 2.7096638679504395,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15277",
+      "buggy_projection": -3.2358250617980957,
+      "fixed_projection": 1.6670753955841064,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15278",
+      "buggy_projection": -3.443472385406494,
+      "fixed_projection": 1.993314266204834,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15280",
+      "buggy_projection": -2.6451053619384766,
+      "fixed_projection": 0.8295824527740479,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15315",
+      "buggy_projection": -3.2746996879577637,
+      "fixed_projection": 1.7547588348388672,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15368",
+      "buggy_projection": -4.740700721740723,
+      "fixed_projection": 0.3424336910247803,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15375",
+      "buggy_projection": -3.3430352210998535,
+      "fixed_projection": 1.6420366764068604,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15380",
+      "buggy_projection": -2.8868284225463867,
+      "fixed_projection": 0.734046220779419,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15382",
+      "buggy_projection": -2.6247200965881348,
+      "fixed_projection": 1.678361415863037,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15467",
+      "buggy_projection": -3.670074224472046,
+      "fixed_projection": -0.4558088779449463,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_15499",
+      "buggy_projection": -2.152832508087158,
+      "fixed_projection": 4.180444717407227,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15503",
+      "buggy_projection": -3.7434582710266113,
+      "fixed_projection": 3.0537571907043457,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15525",
+      "buggy_projection": -2.2168385982513428,
+      "fixed_projection": 0.1967611312866211,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15554",
+      "buggy_projection": 0.29542064666748047,
+      "fixed_projection": 4.304389953613281,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15561",
+      "buggy_projection": -1.180720329284668,
+      "fixed_projection": 4.7158050537109375,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15563",
+      "buggy_projection": -3.011223077774048,
+      "fixed_projection": 2.903597354888916,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15569",
+      "buggy_projection": -4.244481563568115,
+      "fixed_projection": 2.538022756576538,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15572",
+      "buggy_projection": -2.3295226097106934,
+      "fixed_projection": 1.647956132888794,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15629",
+      "buggy_projection": -2.272890090942383,
+      "fixed_projection": 3.5780739784240723,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15695",
+      "buggy_projection": -3.5226850509643555,
+      "fixed_projection": 0.9003338813781738,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15731",
+      "buggy_projection": -2.2269325256347656,
+      "fixed_projection": 1.3255081176757812,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15732",
+      "buggy_projection": -2.905409336090088,
+      "fixed_projection": 1.598581075668335,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15741",
+      "buggy_projection": -2.9948606491088867,
+      "fixed_projection": 2.6449952125549316,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15814",
+      "buggy_projection": -3.164928436279297,
+      "fixed_projection": 1.3695030212402344,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15851",
+      "buggy_projection": 0.46920156478881836,
+      "fixed_projection": 3.654290199279785,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15863",
+      "buggy_projection": -2.7592833042144775,
+      "fixed_projection": 1.0799758434295654,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15916",
+      "buggy_projection": -2.463296890258789,
+      "fixed_projection": 3.9193365573883057,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15930",
+      "buggy_projection": -5.008988380432129,
+      "fixed_projection": 1.1088130474090576,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15957",
+      "buggy_projection": -6.645241737365723,
+      "fixed_projection": 2.3740715980529785,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15973",
+      "buggy_projection": -4.079462051391602,
+      "fixed_projection": 1.7970175743103027,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_15987",
+      "buggy_projection": -0.7378947734832764,
+      "fixed_projection": 2.805180311203003,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16032",
+      "buggy_projection": -4.425846099853516,
+      "fixed_projection": 1.636497974395752,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16082",
+      "buggy_projection": -3.819983959197998,
+      "fixed_projection": 2.778634786605835,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16100",
+      "buggy_projection": -1.96343994140625,
+      "fixed_projection": 3.2959253787994385,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_16116",
+      "buggy_projection": -1.3689050674438477,
+      "fixed_projection": 3.5382256507873535,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_16136",
+      "buggy_projection": -3.2501933574676514,
+      "fixed_projection": 1.4916696548461914,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16139",
+      "buggy_projection": -2.1173839569091797,
+      "fixed_projection": 1.2957379817962646,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16145",
+      "buggy_projection": -3.8249714374542236,
+      "fixed_projection": 1.9646615982055664,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16255",
+      "buggy_projection": -2.7842917442321777,
+      "fixed_projection": 1.6509439945220947,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16256",
+      "buggy_projection": -3.45329213142395,
+      "fixed_projection": 3.57118821144104,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16263",
+      "buggy_projection": -2.4538235664367676,
+      "fixed_projection": 3.873674154281616,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16315",
+      "buggy_projection": -3.1904923915863037,
+      "fixed_projection": 1.3195831775665283,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16333",
+      "buggy_projection": -1.8415164947509766,
+      "fixed_projection": 3.1469101905822754,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16429",
+      "buggy_projection": -2.735717296600342,
+      "fixed_projection": 0.7481684684753418,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16454",
+      "buggy_projection": -2.707658290863037,
+      "fixed_projection": 1.3634541034698486,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16485",
+      "buggy_projection": -4.163302421569824,
+      "fixed_projection": 1.1917791366577148,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16493",
+      "buggy_projection": -2.8014988899230957,
+      "fixed_projection": 0.8257229328155518,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16502",
+      "buggy_projection": -1.9843811988830566,
+      "fixed_projection": 1.4984290599822998,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16527",
+      "buggy_projection": -0.5767323970794678,
+      "fixed_projection": 3.8476970195770264,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_16560",
+      "buggy_projection": -3.8996376991271973,
+      "fixed_projection": 4.863342761993408,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "django_django_16569",
+      "buggy_projection": -2.477418899536133,
+      "fixed_projection": 0.874767541885376,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16595",
+      "buggy_projection": -0.8433034420013428,
+      "fixed_projection": 1.6549242734909058,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16612",
+      "buggy_projection": -3.187453269958496,
+      "fixed_projection": 0.680396556854248,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16631",
+      "buggy_projection": -0.4025144577026367,
+      "fixed_projection": 3.521949052810669,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16642",
+      "buggy_projection": -2.2575082778930664,
+      "fixed_projection": 2.818727493286133,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16661",
+      "buggy_projection": -3.542820930480957,
+      "fixed_projection": 0.9275326728820801,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16662",
+      "buggy_projection": -4.804234981536865,
+      "fixed_projection": 0.39293694496154785,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16667",
+      "buggy_projection": -5.396755218505859,
+      "fixed_projection": -1.329115390777588,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16801",
+      "buggy_projection": -0.6753168106079102,
+      "fixed_projection": 2.715369939804077,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16819",
+      "buggy_projection": -2.5030317306518555,
+      "fixed_projection": 4.078407287597656,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16877",
+      "buggy_projection": -3.8880045413970947,
+      "fixed_projection": 4.944809913635254,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16899",
+      "buggy_projection": -4.231220722198486,
+      "fixed_projection": 1.4221746921539307,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16901",
+      "buggy_projection": -2.991405963897705,
+      "fixed_projection": 2.51772141456604,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16938",
+      "buggy_projection": -4.298169136047363,
+      "fixed_projection": 0.7326641082763672,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_16950",
+      "buggy_projection": -1.1678228378295898,
+      "fixed_projection": 0.8834154605865479,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_17029",
+      "buggy_projection": -1.2839412689208984,
+      "fixed_projection": 3.3431246280670166,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_17084",
+      "buggy_projection": -3.957817554473877,
+      "fixed_projection": 1.347503900527954,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_17087",
+      "buggy_projection": -4.218019962310791,
+      "fixed_projection": 0.35598111152648926,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_7530",
+      "buggy_projection": -4.601177215576172,
+      "fixed_projection": 0.9504094123840332,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "django_django_9296",
+      "buggy_projection": -2.1232452392578125,
+      "fixed_projection": 4.115573883056641,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_13989",
+      "buggy_projection": -3.2818007469177246,
+      "fixed_projection": 1.4620168209075928,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_14623",
+      "buggy_projection": -1.4056124687194824,
+      "fixed_projection": 1.2000806331634521,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20488",
+      "buggy_projection": -5.509434700012207,
+      "fixed_projection": -1.4537608623504639,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20676",
+      "buggy_projection": -2.543454647064209,
+      "fixed_projection": 1.8323471546173096,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20826",
+      "buggy_projection": -0.8045015335083008,
+      "fixed_projection": 1.5615437030792236,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20859",
+      "buggy_projection": -2.4027886390686035,
+      "fixed_projection": 1.819425106048584,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_21568",
+      "buggy_projection": -4.13532829284668,
+      "fixed_projection": 1.896178960800171,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22719",
+      "buggy_projection": -1.1033358573913574,
+      "fixed_projection": 1.434675693511963,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22865",
+      "buggy_projection": -3.2498693466186523,
+      "fixed_projection": 0.5567529201507568,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22871",
+      "buggy_projection": -0.5495641231536865,
+      "fixed_projection": 1.689756155014038,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23299",
+      "buggy_projection": -2.422504425048828,
+      "fixed_projection": -0.197723388671875,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23314",
+      "buggy_projection": -0.9404864311218262,
+      "fixed_projection": 1.2164275646209717,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23412",
+      "buggy_projection": -2.2414252758026123,
+      "fixed_projection": 1.2141449451446533,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23476",
+      "buggy_projection": -0.7364215850830078,
+      "fixed_projection": 1.5339586734771729,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24026",
+      "buggy_projection": -2.3898773193359375,
+      "fixed_projection": 1.3873209953308105,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24149",
+      "buggy_projection": -2.5517661571502686,
+      "fixed_projection": -0.41741180419921875,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24177",
+      "buggy_projection": -1.062821388244629,
+      "fixed_projection": 1.691406488418579,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24570",
+      "buggy_projection": -1.8905675411224365,
+      "fixed_projection": 1.0392508506774902,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24627",
+      "buggy_projection": -4.199242115020752,
+      "fixed_projection": 1.362602949142456,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24637",
+      "buggy_projection": -0.4969022274017334,
+      "fixed_projection": 2.8998026847839355,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24870",
+      "buggy_projection": -0.6980006694793701,
+      "fixed_projection": 4.693240642547607,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24970",
+      "buggy_projection": -2.991788864135742,
+      "fixed_projection": -0.34061121940612793,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25122",
+      "buggy_projection": -4.487342357635498,
+      "fixed_projection": 1.115624189376831,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25287",
+      "buggy_projection": -2.1264615058898926,
+      "fixed_projection": 1.3519256114959717,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25311",
+      "buggy_projection": -3.164642333984375,
+      "fixed_projection": 0.5075757503509521,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25332",
+      "buggy_projection": -4.143862247467041,
+      "fixed_projection": 0.6626372337341309,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25479",
+      "buggy_projection": -3.8958845138549805,
+      "fixed_projection": 1.8856346607208252,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25775",
+      "buggy_projection": -6.669001579284668,
+      "fixed_projection": 3.8496928215026855,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25960",
+      "buggy_projection": -1.0942723751068115,
+      "fixed_projection": 2.1658449172973633,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26113",
+      "buggy_projection": -2.8977866172790527,
+      "fixed_projection": 1.4008479118347168,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26208",
+      "buggy_projection": -1.9491662979125977,
+      "fixed_projection": 0.7219045162200928,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26291",
+      "buggy_projection": -4.632082939147949,
+      "fixed_projection": -1.3624978065490723,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26342",
+      "buggy_projection": -3.322751998901367,
+      "fixed_projection": 1.7398736476898193,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26466",
+      "buggy_projection": -2.7077009677886963,
+      "fixed_projection": 0.6625809669494629,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "mwaskom_seaborn_3069",
+      "buggy_projection": -3.0667855739593506,
+      "fixed_projection": 3.8080201148986816,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "mwaskom_seaborn_3187",
+      "buggy_projection": -2.886140823364258,
+      "fixed_projection": 1.337878704071045,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pallets_flask_5014",
+      "buggy_projection": -4.151095867156982,
+      "fixed_projection": 1.7567787170410156,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_1142",
+      "buggy_projection": -0.774660587310791,
+      "fixed_projection": 3.2705984115600586,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_1724",
+      "buggy_projection": -4.806800842285156,
+      "fixed_projection": 0.24386215209960938,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_1766",
+      "buggy_projection": -3.3984642028808594,
+      "fixed_projection": 2.0575530529022217,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_1921",
+      "buggy_projection": -3.910140037536621,
+      "fixed_projection": 4.402360916137695,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_2317",
+      "buggy_projection": -5.2576470375061035,
+      "fixed_projection": 0.7897012233734131,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_2931",
+      "buggy_projection": -3.4005064964294434,
+      "fixed_projection": 0.7701609134674072,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_5414",
+      "buggy_projection": -4.025971412658691,
+      "fixed_projection": 1.004744291305542,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "psf_requests_6028",
+      "buggy_projection": -3.831275463104248,
+      "fixed_projection": 1.0007619857788086,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_2905",
+      "buggy_projection": -2.021846294403076,
+      "fixed_projection": 2.133617639541626,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_3095",
+      "buggy_projection": -4.671281337738037,
+      "fixed_projection": -0.6486554145812988,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_3151",
+      "buggy_projection": -2.31032133102417,
+      "fixed_projection": 0.6837611198425293,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_3305",
+      "buggy_projection": -3.8989548683166504,
+      "fixed_projection": 1.2071382999420166,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_3677",
+      "buggy_projection": -4.829804420471191,
+      "fixed_projection": -1.2180261611938477,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_3993",
+      "buggy_projection": -2.0509839057922363,
+      "fixed_projection": 3.013566017150879,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_4075",
+      "buggy_projection": -4.035181999206543,
+      "fixed_projection": 0.32144808769226074,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_4094",
+      "buggy_projection": -4.517284870147705,
+      "fixed_projection": 0.8683669567108154,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_4356",
+      "buggy_projection": -4.580448150634766,
+      "fixed_projection": 1.4371798038482666,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_4629",
+      "buggy_projection": -3.1365573406219482,
+      "fixed_projection": 1.3303515911102295,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_4687",
+      "buggy_projection": -2.8632724285125732,
+      "fixed_projection": 2.0197501182556152,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_4695",
+      "buggy_projection": -3.29917049407959,
+      "fixed_projection": 0.2705695629119873,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_4966",
+      "buggy_projection": -1.2955074310302734,
+      "fixed_projection": 2.239856719970703,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "pydata_xarray_6461",
+      "buggy_projection": -3.488219738006592,
+      "fixed_projection": 0.7141330242156982,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_6599",
+      "buggy_projection": -3.9644365310668945,
+      "fixed_projection": 0.2195751667022705,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_6721",
+      "buggy_projection": -2.4628186225891113,
+      "fixed_projection": 0.6016030311584473,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_6744",
+      "buggy_projection": -2.6783432960510254,
+      "fixed_projection": 1.2469186782836914,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_6938",
+      "buggy_projection": -2.4570388793945312,
+      "fixed_projection": 1.6471190452575684,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_6992",
+      "buggy_projection": -4.825984477996826,
+      "fixed_projection": 0.5650722980499268,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_7229",
+      "buggy_projection": -2.772031307220459,
+      "fixed_projection": 0.7254045009613037,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_7233",
+      "buggy_projection": -4.493011474609375,
+      "fixed_projection": 1.1377665996551514,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pydata_xarray_7393",
+      "buggy_projection": -2.763176441192627,
+      "fixed_projection": 2.390488862991333,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_4551",
+      "buggy_projection": -3.3794972896575928,
+      "fixed_projection": 1.3554682731628418,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_4604",
+      "buggy_projection": -4.011232376098633,
+      "fixed_projection": 0.5051209926605225,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_4661",
+      "buggy_projection": 0.2637898921966553,
+      "fixed_projection": 3.80430269241333,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_4970",
+      "buggy_projection": -1.0367047786712646,
+      "fixed_projection": 2.942312240600586,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_6386",
+      "buggy_projection": -1.8855886459350586,
+      "fixed_projection": 0.21750855445861816,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_6528",
+      "buggy_projection": -2.1803581714630127,
+      "fixed_projection": 2.240964651107788,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_6903",
+      "buggy_projection": -2.3744869232177734,
+      "fixed_projection": -0.5788493156433105,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_7080",
+      "buggy_projection": -1.6164722442626953,
+      "fixed_projection": 1.9713482856750488,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pylint_dev_pylint_7277",
+      "buggy_projection": -1.502340316772461,
+      "fixed_projection": 1.5501558780670166,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "pylint_dev_pylint_8898",
+      "buggy_projection": -3.6698191165924072,
+      "fixed_projection": 0.5985853672027588,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_10051",
+      "buggy_projection": -2.6349315643310547,
+      "fixed_projection": 0.35412073135375977,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_10081",
+      "buggy_projection": -2.3212506771087646,
+      "fixed_projection": 1.418074131011963,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_10356",
+      "buggy_projection": -2.9128918647766113,
+      "fixed_projection": 2.0335023403167725,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_5262",
+      "buggy_projection": -3.02884840965271,
+      "fixed_projection": 0.9187743663787842,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_5631",
+      "buggy_projection": -5.763587474822998,
+      "fixed_projection": -1.5069401264190674,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_5787",
+      "buggy_projection": -0.8902366161346436,
+      "fixed_projection": 2.170522689819336,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_5809",
+      "buggy_projection": -2.2188735008239746,
+      "fixed_projection": 0.9483318328857422,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_5840",
+      "buggy_projection": -4.085011959075928,
+      "fixed_projection": -0.5695176124572754,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_6197",
+      "buggy_projection": -3.2507174015045166,
+      "fixed_projection": 0.8382644653320312,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_6202",
+      "buggy_projection": -3.8433070182800293,
+      "fixed_projection": -1.879715919494629,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7205",
+      "buggy_projection": -3.629667043685913,
+      "fixed_projection": 1.2043328285217285,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7236",
+      "buggy_projection": -1.614168643951416,
+      "fixed_projection": 1.6998186111450195,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7324",
+      "buggy_projection": -4.884483814239502,
+      "fixed_projection": -0.07912206649780273,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7432",
+      "buggy_projection": -2.8913187980651855,
+      "fixed_projection": -0.03272104263305664,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7490",
+      "buggy_projection": -1.633188247680664,
+      "fixed_projection": 2.4390759468078613,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7521",
+      "buggy_projection": -4.240860462188721,
+      "fixed_projection": -1.3957045078277588,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7571",
+      "buggy_projection": -2.5192856788635254,
+      "fixed_projection": 1.5514280796051025,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_7982",
+      "buggy_projection": -2.2017979621887207,
+      "fixed_projection": 2.537579298019409,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "pytest_dev_pytest_8399",
+      "buggy_projection": -2.8227365016937256,
+      "fixed_projection": 0.5725445747375488,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10297",
+      "buggy_projection": -2.7749199867248535,
+      "fixed_projection": 0.9074530601501465,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10844",
+      "buggy_projection": -3.904906749725342,
+      "fixed_projection": -0.51883864402771,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10908",
+      "buggy_projection": -2.719611644744873,
+      "fixed_projection": 1.8343141078948975,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_11310",
+      "buggy_projection": 1.428947925567627,
+      "fixed_projection": 5.27443790435791,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_11578",
+      "buggy_projection": -4.095989227294922,
+      "fixed_projection": -0.03534507751464844,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12585",
+      "buggy_projection": -0.6513328552246094,
+      "fixed_projection": 1.900245189666748,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12682",
+      "buggy_projection": -0.8508696556091309,
+      "fixed_projection": 2.545382499694824,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12973",
+      "buggy_projection": -1.591487169265747,
+      "fixed_projection": 2.691835880279541,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13124",
+      "buggy_projection": -3.415295124053955,
+      "fixed_projection": 0.5394225120544434,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13135",
+      "buggy_projection": -2.3085591793060303,
+      "fixed_projection": -0.15151047706604004,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13142",
+      "buggy_projection": -4.179634094238281,
+      "fixed_projection": 0.10292887687683105,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13328",
+      "buggy_projection": -4.1029438972473145,
+      "fixed_projection": 0.8525753021240234,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13439",
+      "buggy_projection": -1.1951446533203125,
+      "fixed_projection": 2.788890838623047,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13496",
+      "buggy_projection": 0.6086347103118896,
+      "fixed_projection": 5.589540958404541,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13779",
+      "buggy_projection": -6.041202545166016,
+      "fixed_projection": -0.7585127353668213,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14053",
+      "buggy_projection": -2.1253514289855957,
+      "fixed_projection": 0.8144898414611816,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14087",
+      "buggy_projection": -4.1028337478637695,
+      "fixed_projection": -0.25726795196533203,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14141",
+      "buggy_projection": -4.6615214347839355,
+      "fixed_projection": 3.548549175262451,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14496",
+      "buggy_projection": -4.078963279724121,
+      "fixed_projection": 0.5612635612487793,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14629",
+      "buggy_projection": -2.9799818992614746,
+      "fixed_projection": -0.6916351318359375,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14710",
+      "buggy_projection": -4.0259504318237305,
+      "fixed_projection": 1.0197105407714844,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14894",
+      "buggy_projection": -3.6246094703674316,
+      "fixed_projection": -0.29290270805358887,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14983",
+      "buggy_projection": -3.2808055877685547,
+      "fixed_projection": 1.3557920455932617,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_15100",
+      "buggy_projection": -4.651700496673584,
+      "fixed_projection": 0.7472381591796875,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25102",
+      "buggy_projection": -2.799800157546997,
+      "fixed_projection": 4.0142998695373535,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25232",
+      "buggy_projection": 0.4579284191131592,
+      "fixed_projection": 3.737852096557617,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25747",
+      "buggy_projection": -3.4903125762939453,
+      "fixed_projection": -0.03992867469787598,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25931",
+      "buggy_projection": -2.0823869705200195,
+      "fixed_projection": 0.5064578056335449,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25973",
+      "buggy_projection": -2.659731388092041,
+      "fixed_projection": 1.3831725120544434,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_26194",
+      "buggy_projection": -4.00275182723999,
+      "fixed_projection": 1.1219382286071777,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_26323",
+      "buggy_projection": -3.173828125,
+      "fixed_projection": 1.0544896125793457,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_9288",
+      "buggy_projection": -3.2332019805908203,
+      "fixed_projection": 2.194455146789551,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10323",
+      "buggy_projection": -2.860910415649414,
+      "fixed_projection": 1.067183494567871,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10435",
+      "buggy_projection": -2.1802821159362793,
+      "fixed_projection": 1.8115367889404297,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10449",
+      "buggy_projection": -0.597332239151001,
+      "fixed_projection": 3.1872148513793945,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10466",
+      "buggy_projection": -3.155874252319336,
+      "fixed_projection": 0.43615126609802246,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10614",
+      "buggy_projection": -2.0271987915039062,
+      "fixed_projection": 0.6279053688049316,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10673",
+      "buggy_projection": -3.3451595306396484,
+      "fixed_projection": 1.8742549419403076,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_11445",
+      "buggy_projection": -1.4623894691467285,
+      "fixed_projection": 1.635509729385376,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_11510",
+      "buggy_projection": -2.216413974761963,
+      "fixed_projection": 2.6480205059051514,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7440",
+      "buggy_projection": -2.612637996673584,
+      "fixed_projection": 1.8859901428222656,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7454",
+      "buggy_projection": -1.1725306510925293,
+      "fixed_projection": 2.414806604385376,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7462",
+      "buggy_projection": -3.707458972930908,
+      "fixed_projection": 0.28058719635009766,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7590",
+      "buggy_projection": 0.8169634342193604,
+      "fixed_projection": 3.3039231300354004,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7748",
+      "buggy_projection": -2.953442335128784,
+      "fixed_projection": 3.4413232803344727,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7757",
+      "buggy_projection": -1.6351726055145264,
+      "fixed_projection": 2.3117780685424805,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7889",
+      "buggy_projection": -3.457930564880371,
+      "fixed_projection": -0.9225974082946777,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7910",
+      "buggy_projection": -2.4316844940185547,
+      "fixed_projection": 0.6890666484832764,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7985",
+      "buggy_projection": -3.634709119796753,
+      "fixed_projection": 2.070078134536743,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8035",
+      "buggy_projection": -1.8093318939208984,
+      "fixed_projection": 4.713676929473877,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8056",
+      "buggy_projection": -3.1782474517822266,
+      "fixed_projection": 1.9355082511901855,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8120",
+      "buggy_projection": -1.098783254623413,
+      "fixed_projection": 2.6870288848876953,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8265",
+      "buggy_projection": -3.133551836013794,
+      "fixed_projection": 2.196345567703247,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8269",
+      "buggy_projection": -3.2478957176208496,
+      "fixed_projection": -0.6214561462402344,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8459",
+      "buggy_projection": -1.536513090133667,
+      "fixed_projection": 2.7351346015930176,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8475",
+      "buggy_projection": -2.034163475036621,
+      "fixed_projection": 3.478382110595703,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8548",
+      "buggy_projection": -3.1918139457702637,
+      "fixed_projection": 1.0881257057189941,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8551",
+      "buggy_projection": -2.3781747817993164,
+      "fixed_projection": 1.0542945861816406,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8593",
+      "buggy_projection": -2.6623477935791016,
+      "fixed_projection": 2.108267307281494,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8595",
+      "buggy_projection": -1.6962072849273682,
+      "fixed_projection": 1.995710849761963,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8621",
+      "buggy_projection": -3.0613460540771484,
+      "fixed_projection": 2.197467565536499,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8638",
+      "buggy_projection": -1.684648036956787,
+      "fixed_projection": 1.6662631034851074,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8721",
+      "buggy_projection": -1.6050763130187988,
+      "fixed_projection": 2.5704457759857178,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9229",
+      "buggy_projection": -3.023881673812866,
+      "fixed_projection": 1.4550058841705322,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9230",
+      "buggy_projection": -2.7236971855163574,
+      "fixed_projection": 0.37378978729248047,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9258",
+      "buggy_projection": -4.287908554077148,
+      "fixed_projection": 3.0111136436462402,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9281",
+      "buggy_projection": -3.617112159729004,
+      "fixed_projection": 0.6649537086486816,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9320",
+      "buggy_projection": -3.52022647857666,
+      "fixed_projection": 0.9066376686096191,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9367",
+      "buggy_projection": -2.7627756595611572,
+      "fixed_projection": 1.401268720626831,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9461",
+      "buggy_projection": -2.0714917182922363,
+      "fixed_projection": 1.4269397258758545,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9591",
+      "buggy_projection": -2.0325307846069336,
+      "fixed_projection": 1.250288963317871,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9602",
+      "buggy_projection": -1.9588971138000488,
+      "fixed_projection": 1.3877687454223633,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9658",
+      "buggy_projection": -1.9478282928466797,
+      "fixed_projection": 0.944598913192749,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9673",
+      "buggy_projection": -1.3320269584655762,
+      "fixed_projection": 1.6948070526123047,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9698",
+      "buggy_projection": -2.551804542541504,
+      "fixed_projection": 0.9395360946655273,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9711",
+      "buggy_projection": -2.5974512100219727,
+      "fixed_projection": 1.6449031829833984,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_11618",
+      "buggy_projection": -3.003849983215332,
+      "fixed_projection": 0.8428030014038086,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_12096",
+      "buggy_projection": -1.9268302917480469,
+      "fixed_projection": 0.7511944770812988,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_12419",
+      "buggy_projection": -3.6513240337371826,
+      "fixed_projection": 0.4895668029785156,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_12481",
+      "buggy_projection": -5.80773401260376,
+      "fixed_projection": 1.0166113376617432,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_12489",
+      "buggy_projection": -1.620051622390747,
+      "fixed_projection": 2.7983882427215576,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "edit"
+    },
+    {
+      "task_id": "sympy_sympy_13031",
+      "buggy_projection": -2.6513919830322266,
+      "fixed_projection": 1.4930131435394287,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13091",
+      "buggy_projection": -2.227595806121826,
+      "fixed_projection": 2.506152629852295,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13372",
+      "buggy_projection": -2.4704689979553223,
+      "fixed_projection": 0.41269350051879883,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13480",
+      "buggy_projection": -2.9096763134002686,
+      "fixed_projection": 1.1621921062469482,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13551",
+      "buggy_projection": -4.052983283996582,
+      "fixed_projection": 1.8483929634094238,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13615",
+      "buggy_projection": -3.165112018585205,
+      "fixed_projection": 2.3618228435516357,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13647",
+      "buggy_projection": -3.446742534637451,
+      "fixed_projection": 0.9882321357727051,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13757",
+      "buggy_projection": -1.73744535446167,
+      "fixed_projection": 2.575685501098633,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13798",
+      "buggy_projection": 2.697605848312378,
+      "fixed_projection": 5.771670341491699,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13852",
+      "buggy_projection": -1.652763843536377,
+      "fixed_projection": 3.0133163928985596,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13877",
+      "buggy_projection": -3.7593064308166504,
+      "fixed_projection": 1.7593393325805664,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13878",
+      "buggy_projection": -2.5722522735595703,
+      "fixed_projection": 3.4720616340637207,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_13974",
+      "buggy_projection": -2.3382740020751953,
+      "fixed_projection": 2.253671169281006,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_14248",
+      "buggy_projection": -2.168950319290161,
+      "fixed_projection": 2.0711405277252197,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_14531",
+      "buggy_projection": -3.4776201248168945,
+      "fixed_projection": -0.48989033699035645,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_14711",
+      "buggy_projection": -3.0823488235473633,
+      "fixed_projection": -0.22648906707763672,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_14976",
+      "buggy_projection": -2.066861629486084,
+      "fixed_projection": 2.044454574584961,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_15017",
+      "buggy_projection": -2.2180538177490234,
+      "fixed_projection": 1.761085033416748,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_15345",
+      "buggy_projection": -2.4407572746276855,
+      "fixed_projection": 1.7736093997955322,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_15349",
+      "buggy_projection": -2.698237419128418,
+      "fixed_projection": 0.4273993968963623,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_15599",
+      "buggy_projection": -0.08522486686706543,
+      "fixed_projection": 3.7835261821746826,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_15809",
+      "buggy_projection": -2.624910831451416,
+      "fixed_projection": 4.385083198547363,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_15875",
+      "buggy_projection": -3.314948558807373,
+      "fixed_projection": 2.162123203277588,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_15976",
+      "buggy_projection": -1.7169368267059326,
+      "fixed_projection": 2.605802536010742,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_16450",
+      "buggy_projection": -4.091516017913818,
+      "fixed_projection": 2.100806474685669,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_16597",
+      "buggy_projection": -1.449497938156128,
+      "fixed_projection": 3.2168798446655273,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_16766",
+      "buggy_projection": -0.3666672706604004,
+      "fixed_projection": 2.2301533222198486,
+      "buggy_argmax": "edit",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_16792",
+      "buggy_projection": -4.104163646697998,
+      "fixed_projection": 1.2752270698547363,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_16886",
+      "buggy_projection": -4.827527046203613,
+      "fixed_projection": 1.7677652835845947,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_17139",
+      "buggy_projection": -2.7437095642089844,
+      "fixed_projection": 2.085261344909668,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_17318",
+      "buggy_projection": -2.4277749061584473,
+      "fixed_projection": -0.3475058078765869,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_17630",
+      "buggy_projection": -4.299814224243164,
+      "fixed_projection": -0.7164099216461182,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_17655",
+      "buggy_projection": -4.60759162902832,
+      "fixed_projection": -1.4196901321411133,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_18189",
+      "buggy_projection": -2.035069704055786,
+      "fixed_projection": 1.6484370231628418,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_18199",
+      "buggy_projection": -2.83668851852417,
+      "fixed_projection": 2.895312547683716,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_18211",
+      "buggy_projection": -3.646913766860962,
+      "fixed_projection": 1.0385308265686035,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_18698",
+      "buggy_projection": -4.513928413391113,
+      "fixed_projection": 1.4332351684570312,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_18763",
+      "buggy_projection": -1.6696245670318604,
+      "fixed_projection": 1.8452086448669434,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_19040",
+      "buggy_projection": -1.3634891510009766,
+      "fixed_projection": 3.390942096710205,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_19346",
+      "buggy_projection": -2.6542673110961914,
+      "fixed_projection": -0.053656578063964844,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_19495",
+      "buggy_projection": -2.0189266204833984,
+      "fixed_projection": 1.115900993347168,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_19637",
+      "buggy_projection": -2.1266424655914307,
+      "fixed_projection": 1.3017182350158691,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_19783",
+      "buggy_projection": -3.766000509262085,
+      "fixed_projection": 3.043344497680664,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_19954",
+      "buggy_projection": -2.737947463989258,
+      "fixed_projection": -1.1891870498657227,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_20154",
+      "buggy_projection": -2.991654872894287,
+      "fixed_projection": 2.7218523025512695,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_20428",
+      "buggy_projection": -2.1901438236236572,
+      "fixed_projection": 0.9859836101531982,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_20438",
+      "buggy_projection": -4.423745155334473,
+      "fixed_projection": -1.3175997734069824,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_20590",
+      "buggy_projection": -0.8728787899017334,
+      "fixed_projection": 2.5607988834381104,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_20801",
+      "buggy_projection": -1.9177143573760986,
+      "fixed_projection": 2.024813413619995,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_20916",
+      "buggy_projection": -3.5157570838928223,
+      "fixed_projection": 2.4657647609710693,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_21379",
+      "buggy_projection": -2.0742082595825195,
+      "fixed_projection": 1.4345135688781738,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_21596",
+      "buggy_projection": -2.2101340293884277,
+      "fixed_projection": 1.8295419216156006,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_21612",
+      "buggy_projection": -1.2713146209716797,
+      "fixed_projection": 2.0029215812683105,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_21847",
+      "buggy_projection": -3.903679370880127,
+      "fixed_projection": 1.0016758441925049,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_21930",
+      "buggy_projection": -5.343642711639404,
+      "fixed_projection": -0.2602829933166504,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_22080",
+      "buggy_projection": -3.821463108062744,
+      "fixed_projection": 0.6660528182983398,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_22456",
+      "buggy_projection": -1.7531471252441406,
+      "fixed_projection": 2.318937301635742,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_22714",
+      "buggy_projection": -2.2320382595062256,
+      "fixed_projection": -0.15137863159179688,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_22914",
+      "buggy_projection": -1.3621253967285156,
+      "fixed_projection": 3.2987146377563477,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_23262",
+      "buggy_projection": -2.516270160675049,
+      "fixed_projection": 1.0545275211334229,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_23413",
+      "buggy_projection": -3.957235813140869,
+      "fixed_projection": 1.8829314708709717,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_23534",
+      "buggy_projection": -3.261363983154297,
+      "fixed_projection": 0.3493468761444092,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_23824",
+      "buggy_projection": -3.651219367980957,
+      "fixed_projection": -0.5890169143676758,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_23950",
+      "buggy_projection": -2.5463171005249023,
+      "fixed_projection": 0.2965564727783203,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_24066",
+      "buggy_projection": -1.6190783977508545,
+      "fixed_projection": 1.0814311504364014,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_24213",
+      "buggy_projection": -2.627565383911133,
+      "fixed_projection": -0.11053609848022461,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_24443",
+      "buggy_projection": -1.7384238243103027,
+      "fixed_projection": 2.166891098022461,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_24539",
+      "buggy_projection": -1.9858989715576172,
+      "fixed_projection": 1.718168020248413,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_24562",
+      "buggy_projection": -3.4909024238586426,
+      "fixed_projection": 1.6426818370819092,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    },
+    {
+      "task_id": "sympy_sympy_24661",
+      "buggy_projection": -2.6045756340026855,
+      "fixed_projection": 0.8234531879425049,
+      "buggy_argmax": "grep",
+      "fixed_argmax": "grep"
+    }
+  ]
+}

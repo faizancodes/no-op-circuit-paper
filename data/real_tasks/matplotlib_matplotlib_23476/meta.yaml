@@ -1,0 +1,32 @@
+task_id: matplotlib_matplotlib_23476
+description: 'SWE-bench_Verified instance matplotlib__matplotlib-23476 (repo: matplotlib/matplotlib)'
+issue_text: "[Bug]: DPI of a figure is doubled after unpickling on M1 Mac\n### Bug\
+  \ summary\r\n\r\nWhen a figure is unpickled, it's dpi is doubled. This behaviour\
+  \ happens every time and if done in a loop it can cause an `OverflowError`.\r\n\r\
+  \n### Code for reproduction\r\n\r\n```python\r\nimport numpy as np\r\nimport matplotlib\r\
+  \nimport matplotlib.pyplot as plt\r\nimport pickle\r\nimport platform\r\n\r\nprint(matplotlib.get_backend())\r\
+  \nprint('Matplotlib ver:', matplotlib.__version__)\r\nprint('Platform:', platform.platform())\r\
+  \nprint('System:', platform.system())\r\nprint('Release:', platform.release())\r\
+  \nprint('Python ver:', platform.python_version())\r\n\r\n\r\ndef dump_load_get_dpi(fig):\r\
+  \n    with open('sinus.pickle','wb') as file:\r\n        pickle.dump(fig, file)\r\
+  \n\r\n    with open('sinus.pickle', 'rb') as blob:\r\n        fig2 = pickle.load(blob)\r\
+  \n    return fig2, fig2.dpi\r\n\r\n\r\ndef run():\r\n    fig = plt.figure()\r\n\
+  \    x = np.linspace(0,2*np.pi)\r\n    y = np.sin(x)\r\n\r\n    for i in range(32):\r\
+  \n        print(f'{i}: {fig.dpi}')\r\n        fig, dpi = dump_load_get_dpi(fig)\r\
+  \n\r\n\r\nif __name__ == '__main__':\r\n    run()\r\n```\r\n\r\n\r\n### Actual outcome\r\
+  \n\r\n```\r\nMacOSX\r\nMatplotlib ver: 3.5.2\r\nPlatform: macOS-12.4-arm64-arm-64bit\r\
+  \nSystem: Darwin\r\nRelease: 21.5.0\r\nPython ver: 3.9.12\r\n0: 200.0\r\n1: 400.0\r\
+  \n2: 800.0\r\n3: 1600.0\r\n4: 3200.0\r\n5: 6400.0\r\n6: 12800.0\r\n7: 25600.0\r\n\
+  8: 51200.0\r\n9: 102400.0\r\n10: 204800.0\r\n11: 409600.0\r\n12: 819200.0\r\n13:\
+  \ 1638400.0\r\n14: 3276800.0\r\n15: 6553600.0\r\n16: 13107200.0\r\n17: 26214400.0\r\
+  \n18: 52428800.0\r\n19: 104857600.0\r\n20: 2\u2026\n"
+primary_file: figure.py
+test_command: pytest -q lib/matplotlib/tests/test_figure.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: matplotlib__matplotlib-23476
+swe_bench_repo: matplotlib/matplotlib
+swe_bench_base_commit: 33a0599711d26dc2b79f851c6daed4947df7c167
+swe_bench_modified_path: lib/matplotlib/figure.py

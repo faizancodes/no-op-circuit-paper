@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_indexes.py::test_restore_dtype_on_multiindexes[int32] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_indexes.py::test_restore_dtype_on_multiindexes[float32] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_indexes.py::test_restore_dtype_on_multiindexes[int32] - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_indexes.py::test_restore_dtype_on_multiindexes[float32] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 71 passed in 0.04s =========================

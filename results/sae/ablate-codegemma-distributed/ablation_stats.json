@@ -1,0 +1,57 @@
+{
+  "clean_gap_mean": 2.589041095890411,
+  "rows": [
+    {
+      "label": "sae_recon",
+      "reduction_logits": 0.0,
+      "reduction_pct": 0.0,
+      "ci95_pct": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p": NaN,
+      "n_paired": 146,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top8",
+      "reduction_logits": 0.1643835616438356,
+      "reduction_pct": 6.349206349206349,
+      "ci95_pct": [
+        -3.1746031746031744,
+        16.402116402116402
+      ],
+      "wilcoxon_stat": 1477.5,
+      "wilcoxon_p": 0.10348326072398606,
+      "n_paired": 146,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top32",
+      "reduction_logits": -0.589041095890411,
+      "reduction_pct": -22.75132275132275,
+      "ci95_pct": [
+        -34.39153439153439,
+        -11.11111111111111
+      ],
+      "wilcoxon_stat": 1111.0,
+      "wilcoxon_p": 0.999893594758678,
+      "n_paired": 146,
+      "n_boot": 10000
+    },
+    {
+      "label": "ablate_omp_top128",
+      "reduction_logits": -0.3835616438356164,
+      "reduction_pct": -14.814814814814813,
+      "ci95_pct": [
+        -25.396825396825395,
+        -4.232804232804233
+      ],
+      "wilcoxon_stat": 1251.0,
+      "wilcoxon_p": 0.9954910108185827,
+      "n_paired": 146,
+      "n_boot": 10000
+    }
+  ]
+}

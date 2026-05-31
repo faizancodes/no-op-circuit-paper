@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_create_with_through_model_separate_apps (migrations.test_autodetector.AutodetectorTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_create_with_through_model_separate_apps (migrations.test_autodetector.AutodetectorTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 157 passed in 0.04s =========================

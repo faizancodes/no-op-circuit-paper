@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED tests/checkers/unittest_variables.py::TestVariablesChecker::test_bitbucket_issue_78 - AssertionError: behaviour does not match expected output
+FAILED tests/checkers/unittest_variables.py::TestVariablesChecker::test_no_name_in_module_skipped - AssertionError: behaviour does not match expected output
+FAILED tests/checkers/unittest_variables.py::TestVariablesChecker::test_all_elements_without_parent - AssertionError: behaviour does not match expected output
+... and 18 more failures (truncated)
+=========================== short test summary info ============================
+FAILED tests/checkers/unittest_variables.py::TestVariablesChecker::test_bitbucket_issue_78 - AssertionError: behaviour does not match expected output
+FAILED tests/checkers/unittest_variables.py::TestVariablesChecker::test_no_name_in_module_skipped - AssertionError: behaviour does not match expected output
+FAILED tests/checkers/unittest_variables.py::TestVariablesChecker::test_all_elements_without_parent - AssertionError: behaviour does not match expected output
+... and 18 more failures (truncated)
+========================= 21 failed, 0 passed in 0.04s =========================

@@ -1,0 +1,38 @@
+FF..                                                                     [100%]
+=================================== FAILURES ===================================
+__________________________ test_most_expensive_first ___________________________
+
+    def test_most_expensive_first():
+        products = [
+            {'name': 'Laptop', 'price': 999},
+            {'name': 'Mouse', 'price': 25},
+            {'name': 'Keyboard', 'price': 75}
+        ]
+        result = sort_products_by_price(products)
+>       assert result[0]['name'] == 'Laptop'
+E       AssertionError: assert 'Mouse' == 'Laptop'
+E         
+E         - Laptop
+E         + Mouse
+
+test_products.py:10: AssertionError
+____________________________ test_descending_order _____________________________
+
+    def test_descending_order():
+        products = [
+            {'name': 'A', 'price': 10},
+            {'name': 'B', 'price': 50},
+            {'name': 'C', 'price': 30}
+        ]
+        result = sort_products_by_price(products)
+>       assert [p['price'] for p in result] == [50, 30, 10]
+E       assert [10, 30, 50] == [50, 30, 10]
+E         
+E         At index 0 diff: 10 != 50
+E         Use -v to get more diff
+
+test_products.py:20: AssertionError
+=========================== short test summary info ============================
+FAILED test_products.py::test_most_expensive_first - AssertionError: assert '...
+FAILED test_products.py::test_descending_order - assert [10, 30, 50] == [50, ...
+2 failed, 2 passed in 0.01s

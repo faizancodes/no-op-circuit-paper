@@ -1,0 +1,16 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_clock_skew ________________________________
+
+test_infrastructure/test_system.py:47: in test_clock_skew
+    assert abs(time.time() - ntp_sync_time()) < 0.5
+E   AssertionError: assert 1.237 < 0.5
+E    +  where 1.237 = abs(1703847291.482 - 1703847290.245)
+E    +    where 1703847291.482 = <built-in method time of module object at 0x7f8b4c0a3d50>()
+E    +      where <built-in method time of module object at 0x7f8b4c0a3d50> = time.time
+E    +    and   1703847290.245 = ntp_sync_time()
+
+=========================== short test summary info ============================
+FAILED test_infrastructure/test_system.py::test_clock_skew - AssertionError: assert 1.237 < 0.5
+========================= 1 failed, 4 passed in 0.23s =========================

@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_simplify_regex (admin_docs.test_views.AdminDocViewFunctionsTests) - AssertionError: behaviour does not match expected output
+FAILED test_app_not_found (admin_docs.test_views.TestModelDetailView) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_simplify_regex (admin_docs.test_views.AdminDocViewFunctionsTests) - AssertionError: behaviour does not match expected output
+FAILED test_app_not_found (admin_docs.test_views.TestModelDetailView) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 44 passed in 0.04s =========================

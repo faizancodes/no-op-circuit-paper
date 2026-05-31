@@ -1,0 +1,29 @@
+task_id: django_django_11087
+description: 'SWE-bench_Verified instance django__django-11087 (repo: django/django)'
+issue_text: "Optimize .delete() to use only required fields.\nDescription\n\t\nHi!\n\
+  We're in the process of upgrading our Django 1.11 installation from Python 2.7 to\
+  \ Python 3.6, however are hitting an unexpected UnicodeDecodeError during a .delete()\
+  \ run by our daily data purging management command.\nSTR:\nHave an existing Django\
+  \ 1.11 project running under Python 2.7.15 that uses mysqlclient-python v1.3.13\
+  \ to connect to MySQL server v5.7.23, with Django's DATABASES options including\
+  \ 'charset': 'utf8mb4' (\u200Bhttps://github.com/mozilla/treeherder)\nUpdate to\
+  \ Python 3.6.8\nRun the daily cycle_data Django management command against the dev\
+  \ instance's DB:\n\u200Bhttps://github.com/mozilla/treeherder/blob/fc91b7f58e2e30bec5f9eda315dafd22a2bb8380/treeherder/model/management/commands/cycle_data.py\n\
+  \u200Bhttps://github.com/mozilla/treeherder/blob/fc91b7f58e2e30bec5f9eda315dafd22a2bb8380/treeherder/model/models.py#L421-L467\n\
+  Expected:\nThat the cycle_data management command succeeds, like it did under Python\
+  \ 2.\nActual:\nTraceback (most recent call last): \n File \"./manage.py\", line\
+  \ 16, in <module> \n\texecute_from_command_line(sys.argv) \n File \"/app/.heroku/python/lib/python3.6/site-packages/django/core/management/__init__.py\"\
+  , line 364, in execute_from_command_line \n\tutility.execute() \n File \"/app/.heroku/python/lib/python3.6/site-packages/django/core/management/__init__.py\"\
+  , line 356, in execute \n\tself.fetch_command(subcommand).run_from_argv(self.argv)\
+  \ \n File \"/app/.heroku/python/lib/python3.6/site-packages/newrelic/hooks/fr\u2026\
+  \n"
+primary_file: deletion.py
+test_command: pytest -q test_only_referenced_fields_selected (delete.tests.DeletionTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-11087
+swe_bench_repo: django/django
+swe_bench_base_commit: 8180ffba21bf10f4be905cb0d4890dc2bcff2788
+swe_bench_modified_path: django/db/models/deletion.py

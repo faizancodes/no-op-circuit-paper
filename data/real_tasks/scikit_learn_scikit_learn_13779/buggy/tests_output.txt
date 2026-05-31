@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X0-y0-voter0] - AssertionError: behaviour does not match expected output
+FAILED sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X1-y1-voter1] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X0-y0-voter0] - AssertionError: behaviour does not match expected output
+FAILED sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X1-y1-voter1] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 18 passed in 0.04s =========================

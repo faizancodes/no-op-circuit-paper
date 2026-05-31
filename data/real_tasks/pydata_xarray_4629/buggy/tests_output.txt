@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_merge.py::TestMergeFunction::test_merge_attrs_override_copy - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_merge.py::TestMergeFunction::test_merge_attrs_override_copy - AssertionError: behaviour does not match expected output
+========================= 1 failed, 32 passed in 0.04s =========================

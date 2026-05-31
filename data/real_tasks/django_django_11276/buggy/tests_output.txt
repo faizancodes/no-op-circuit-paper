@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_make_list02 (template_tests.filter_tests.test_make_list.MakeListTests) - AssertionError: behaviour does not match expected output
+FAILED test_password_help_text (auth_tests.test_forms.UserCreationFormTest) - AssertionError: behaviour does not match expected output
+FAILED test_url_split_chars (template_tests.filter_tests.test_urlize.FunctionTests) - AssertionError: behaviour does not match expected output
+... and 23 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_make_list02 (template_tests.filter_tests.test_make_list.MakeListTests) - AssertionError: behaviour does not match expected output
+FAILED test_password_help_text (auth_tests.test_forms.UserCreationFormTest) - AssertionError: behaviour does not match expected output
+FAILED test_url_split_chars (template_tests.filter_tests.test_urlize.FunctionTests) - AssertionError: behaviour does not match expected output
+... and 23 more failures (truncated)
+========================= 26 failed, 548 passed in 0.04s =========================

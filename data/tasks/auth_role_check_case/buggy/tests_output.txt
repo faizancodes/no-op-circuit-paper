@@ -1,0 +1,31 @@
+..FFF                                                                    [100%]
+=================================== FAILURES ===================================
+__________________________ test_capitalized_user_role __________________________
+
+    def test_capitalized_user_role():
+>       assert check_user_role("Admin", "admin") == True
+E       AssertionError: assert False == True
+E        +  where False = check_user_role('Admin', 'admin')
+
+test_auth.py:10: AssertionError
+___________________________ test_uppercase_user_role ___________________________
+
+    def test_uppercase_user_role():
+>       assert check_user_role("MODERATOR", "moderator") == True
+E       AssertionError: assert False == True
+E        +  where False = check_user_role('MODERATOR', 'moderator')
+
+test_auth.py:13: AssertionError
+_____________________________ test_mixed_case_both _____________________________
+
+    def test_mixed_case_both():
+>       assert check_user_role("EdItOr", "EDITOR") == True
+E       AssertionError: assert False == True
+E        +  where False = check_user_role('EdItOr', 'EDITOR')
+
+test_auth.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_auth.py::test_capitalized_user_role - AssertionError: assert Fals...
+FAILED test_auth.py::test_uppercase_user_role - AssertionError: assert False ...
+FAILED test_auth.py::test_mixed_case_both - AssertionError: assert False == True
+3 failed, 2 passed in 0.01s

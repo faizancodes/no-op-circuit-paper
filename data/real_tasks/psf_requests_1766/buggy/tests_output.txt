@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_ALTERNATIVE - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_cookie_sent_on_redirect - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_ALTERNATIVE - AssertionError: behaviour does not match expected output
+FAILED test_requests.py::RequestsTestCase::test_cookie_sent_on_redirect - AssertionError: behaviour does not match expected output
+... and 3 more failures (truncated)
+========================= 6 failed, 79 passed in 0.04s =========================

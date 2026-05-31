@@ -1,0 +1,31 @@
+task_id: matplotlib_matplotlib_22719
+description: 'SWE-bench_Verified instance matplotlib__matplotlib-22719 (repo: matplotlib/matplotlib)'
+issue_text: "[Bug]: Confusing deprecation warning when empty data passed to axis with\
+  \ category units\n### Bug summary\r\n\r\nI'm seeing a `MatplotlibDeprecationWarning`\
+  \ when using calling axes methods on empty data structures for axes that are using\
+  \ string unit converters. I think this is either a false alarm or a non-actionable\
+  \ warning.\r\n\r\n### Code for reproduction\r\n\r\n```python\r\nimport matplotlib.pyplot\
+  \ as plt\r\nf, ax = plt.subplots()\r\nax.xaxis.update_units([\"a\", \"b\"])\r\n\
+  ax.plot([], [])\r\n```\r\n\r\n\r\n### Actual outcome\r\n\r\n> MatplotlibDeprecationWarning:\
+  \ Support for passing numbers through unit converters is deprecated since 3.5 and\
+  \ support will be removed two minor releases later; use Axis.convert_units instead.\r\
+  \n  ax.plot([], [])\r\n\r\nHere's the full traceback if I force the warning to be\
+  \ an error:\r\n\r\n<details>\r\n\r\n```python-traceback\r\n---------------------------------------------------------------------------\r\
+  \nMatplotlibDeprecationWarning              Traceback (most recent call last)\r\n\
+  ~/miniconda3/envs/seaborn-py39-latest/lib/python3.9/site-packages/matplotlib/axis.py\
+  \ in convert_units(self, x)\r\n   1505         try:\r\n-> 1506             ret =\
+  \ self.converter.convert(x, self.units, self)\r\n   1507         except Exception\
+  \ as e:\r\n\r\n~/miniconda3/envs/seaborn-py39-latest/lib/python3.9/site-packages/matplotlib/category.py\
+  \ in convert(value, unit, axis)\r\n     61         if is_numlike:\r\n---> 62   \
+  \          _api.warn_deprecated(\r\n     63                 \"3.5\", message=\"\
+  Support for passing numbers through unit\u2026\n"
+primary_file: category.py
+test_command: pytest -q lib/matplotlib/tests/test_category.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: matplotlib__matplotlib-22719
+swe_bench_repo: matplotlib/matplotlib
+swe_bench_base_commit: a2a1b0a11b993fe5f8fab64b6161e99243a6393c
+swe_bench_modified_path: lib/matplotlib/category.py

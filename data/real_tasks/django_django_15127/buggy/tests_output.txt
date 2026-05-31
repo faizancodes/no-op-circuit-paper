@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_override_settings_level_tags (messages_tests.tests.TestLevelTags) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_override_settings_level_tags (messages_tests.tests.TestLevelTags) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 1 passed in 0.04s =========================

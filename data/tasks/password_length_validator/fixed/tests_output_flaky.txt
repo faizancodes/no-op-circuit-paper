@@ -1,0 +1,13 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_clock_skew ________________________________
+
+test_clock_skew.py:12: in test_monotonic_timestamp_ordering
+    assert timestamps[i] <= timestamps[i+1], f"Clock skew detected: {timestamps[i]} > {timestamps[i+1]}"
+E   AssertionError: Clock skew detected: 1703089234.891234 > 1703089234.891198
+E   assert 1703089234.891234 <= 1703089234.891198
+
+=========================== short test summary info ============================
+FAILED test_clock_skew.py::test_clock_skew - AssertionError: Clock skew detected: 1703089234.891234 > 1703089234.891198
+========================= 1 failed, 4 passed in 0.12s ==========================

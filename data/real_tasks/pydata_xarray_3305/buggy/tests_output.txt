@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_dataarray.py::TestDataArray::test_quantile - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_dataarray.py::TestDataArray::test_quantile - AssertionError: behaviour does not match expected output
+========================= 1 failed, 653 passed in 0.04s =========================

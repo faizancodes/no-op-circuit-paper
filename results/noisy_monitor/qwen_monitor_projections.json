@@ -1,0 +1,6995 @@
+{
+  "model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "layer": 24,
+  "variants": [
+    "code_tests"
+  ],
+  "rows": [
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.1523728370666504,
+      "score": 2.1523728370666504
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9224340915679932,
+      "score": -1.9224340915679932
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.119248628616333,
+      "score": 3.119248628616333
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3119313716888428,
+      "score": -2.3119313716888428
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.446037769317627,
+      "score": 2.446037769317627
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.962267875671387,
+      "score": -4.962267875671387
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7442665100097656,
+      "score": 1.7442665100097656
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.7318215370178223,
+      "score": -3.7318215370178223
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.498424530029297,
+      "score": 3.498424530029297
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.342510461807251,
+      "score": -2.342510461807251
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.152597427368164,
+      "score": 4.152597427368164
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0852057933807373,
+      "score": -2.0852057933807373
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.95401668548584,
+      "score": 2.95401668548584
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.49802350997924805,
+      "score": 0.49802350997924805
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.405329704284668,
+      "score": 2.405329704284668
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.7564966678619385,
+      "score": -2.7564966678619385
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.3535919189453125,
+      "score": 4.3535919189453125
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.0285062789916992,
+      "score": -1.0285062789916992
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.885582447052002,
+      "score": 0.885582447052002
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4199638366699219,
+      "score": -1.4199638366699219
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.372696876525879,
+      "score": 4.372696876525879
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.438001871109009,
+      "score": -2.438001871109009
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.5058059692382812,
+      "score": 2.5058059692382812
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9057469367980957,
+      "score": -1.9057469367980957
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6149606704711914,
+      "score": 1.6149606704711914
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9985089302062988,
+      "score": -0.9985089302062988
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.493238925933838,
+      "score": 2.493238925933838
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.3517403602600098,
+      "score": -1.3517403602600098
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.155954360961914,
+      "score": 4.155954360961914
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.33966898918151855,
+      "score": -0.33966898918151855
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.236214637756348,
+      "score": 4.236214637756348
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6089723110198975,
+      "score": -1.6089723110198975
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9073753356933594,
+      "score": 1.9073753356933594
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.982478380203247,
+      "score": -1.982478380203247
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.6143341064453125,
+      "score": 4.6143341064453125
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.9865381717681885,
+      "score": 0.9865381717681885
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.6969871520996094,
+      "score": 3.6969871520996094
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.06284904479980469,
+      "score": -0.06284904479980469
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.8733446598052979,
+      "score": 1.8733446598052979
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.0247561931610107,
+      "score": -3.0247561931610107
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9662835597991943,
+      "score": 2.9662835597991943
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.125361442565918,
+      "score": -2.125361442565918
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.4289236068725586,
+      "score": 3.4289236068725586
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.1962666511535645,
+      "score": -4.1962666511535645
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.847205877304077,
+      "score": 3.847205877304077
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4569568634033203,
+      "score": -1.4569568634033203
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.24375057220459,
+      "score": 4.24375057220459
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.6352996826171875,
+      "score": -0.6352996826171875
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.7406306266784668,
+      "score": -0.7406306266784668
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.279594421386719,
+      "score": -4.279594421386719
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5449156761169434,
+      "score": 1.5449156761169434
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.439136028289795,
+      "score": -6.439136028289795
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.568373203277588,
+      "score": 2.568373203277588
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2493529319763184,
+      "score": -3.2493529319763184
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.1600735187530518,
+      "score": 3.1600735187530518
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.5263957977294922,
+      "score": -1.5263957977294922
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5170025825500488,
+      "score": 1.5170025825500488
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3017024993896484,
+      "score": -3.3017024993896484
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 1.845841884613037,
+      "score": -1.845841884613037
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.832939147949219,
+      "score": -6.832939147949219
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.728893756866455,
+      "score": 1.728893756866455
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.7998642921447754,
+      "score": -3.7998642921447754
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7309403419494629,
+      "score": 0.7309403419494629
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.540505409240723,
+      "score": -4.540505409240723
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9602954387664795,
+      "score": 1.9602954387664795
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7768292427062988,
+      "score": -1.7768292427062988
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9527206420898438,
+      "score": 1.9527206420898438
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.837604284286499,
+      "score": -3.837604284286499
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.417701005935669,
+      "score": 1.417701005935669
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.226659297943115,
+      "score": -4.226659297943115
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.042393207550049,
+      "score": 2.042393207550049
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.9967966079711914,
+      "score": -3.9967966079711914
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7799062728881836,
+      "score": 2.7799062728881836
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.194669008255005,
+      "score": -3.194669008255005
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.998776435852051,
+      "score": 2.998776435852051
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.548887252807617,
+      "score": -3.548887252807617
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.5048632621765137,
+      "score": 2.5048632621765137
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.35457181930542,
+      "score": -2.35457181930542
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.136287212371826,
+      "score": 2.136287212371826
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.034600734710693,
+      "score": -4.034600734710693
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.8528716564178467,
+      "score": -0.8528716564178467
+    },
+    {
+      "task_id": "django_django_11239",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.933378219604492,
+      "score": -4.933378219604492
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7884531021118164,
+      "score": 2.7884531021118164
+    },
+    {
+      "task_id": "django_django_11265",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.6650567054748535,
+      "score": -0.6650567054748535
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0515501499176025,
+      "score": 2.0515501499176025
+    },
+    {
+      "task_id": "django_django_11276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.12272834777832,
+      "score": -5.12272834777832
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.5414948463439941,
+      "score": -0.5414948463439941
+    },
+    {
+      "task_id": "django_django_11292",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.026123523712158,
+      "score": -6.026123523712158
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5676476955413818,
+      "score": 1.5676476955413818
+    },
+    {
+      "task_id": "django_django_11299",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.247127056121826,
+      "score": -2.247127056121826
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.6103780269622803,
+      "score": -0.6103780269622803
+    },
+    {
+      "task_id": "django_django_11333",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.281573295593262,
+      "score": -5.281573295593262
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.9289143085479736,
+      "score": 3.9289143085479736
+    },
+    {
+      "task_id": "django_django_11400",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.640394687652588,
+      "score": -2.640394687652588
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.401885509490967,
+      "score": 3.401885509490967
+    },
+    {
+      "task_id": "django_django_11433",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.562229633331299,
+      "score": -4.562229633331299
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5833473205566406,
+      "score": 1.5833473205566406
+    },
+    {
+      "task_id": "django_django_11451",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.771293878555298,
+      "score": -3.771293878555298
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -6.368260860443115,
+      "score": 6.368260860443115
+    },
+    {
+      "task_id": "django_django_11477",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9933876991271973,
+      "score": -2.9933876991271973
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.6080403327941895,
+      "score": 3.6080403327941895
+    },
+    {
+      "task_id": "django_django_11490",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.8351259231567383,
+      "score": -2.8351259231567383
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6871566772460938,
+      "score": 2.6871566772460938
+    },
+    {
+      "task_id": "django_django_11532",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.5566179752349854,
+      "score": -1.5566179752349854
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.361692190170288,
+      "score": 1.361692190170288
+    },
+    {
+      "task_id": "django_django_11551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.1747050285339355,
+      "score": -3.1747050285339355
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.495717763900757,
+      "score": 2.495717763900757
+    },
+    {
+      "task_id": "django_django_11555",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2059435844421387,
+      "score": -2.2059435844421387
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.3784399032592773,
+      "score": 3.3784399032592773
+    },
+    {
+      "task_id": "django_django_11603",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.838102340698242,
+      "score": -5.838102340698242
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.879672050476074,
+      "score": 2.879672050476074
+    },
+    {
+      "task_id": "django_django_11728",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.5812492370605469,
+      "score": -1.5812492370605469
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -6.0200114250183105,
+      "score": 6.0200114250183105
+    },
+    {
+      "task_id": "django_django_11734",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.5927071571350098,
+      "score": 0.5927071571350098
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3250727653503418,
+      "score": 1.3250727653503418
+    },
+    {
+      "task_id": "django_django_11740",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.6067934036254883,
+      "score": -3.6067934036254883
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3870902061462402,
+      "score": 1.3870902061462402
+    },
+    {
+      "task_id": "django_django_11749",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.129490613937378,
+      "score": -1.129490613937378
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.176891565322876,
+      "score": 2.176891565322876
+    },
+    {
+      "task_id": "django_django_11790",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.7073073387145996,
+      "score": -3.7073073387145996
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.145263195037842,
+      "score": 3.145263195037842
+    },
+    {
+      "task_id": "django_django_11815",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6955065727233887,
+      "score": -2.6955065727233887
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.786711692810059,
+      "score": 4.786711692810059
+    },
+    {
+      "task_id": "django_django_11820",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4647047519683838,
+      "score": -1.4647047519683838
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.7462663650512695,
+      "score": 3.7462663650512695
+    },
+    {
+      "task_id": "django_django_11848",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.327415704727173,
+      "score": -2.327415704727173
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9948046207427979,
+      "score": 1.9948046207427979
+    },
+    {
+      "task_id": "django_django_11880",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3843576908111572,
+      "score": -2.3843576908111572
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.1866254806518555,
+      "score": 4.1866254806518555
+    },
+    {
+      "task_id": "django_django_11885",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.498714923858643,
+      "score": -5.498714923858643
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.885329008102417,
+      "score": 0.885329008102417
+    },
+    {
+      "task_id": "django_django_11951",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.0106699466705322,
+      "score": -3.0106699466705322
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.254502296447754,
+      "score": 4.254502296447754
+    },
+    {
+      "task_id": "django_django_11964",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.9691686630249023,
+      "score": -3.9691686630249023
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.308016300201416,
+      "score": 1.308016300201416
+    },
+    {
+      "task_id": "django_django_11999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.1468048095703125,
+      "score": -4.1468048095703125
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.687126874923706,
+      "score": 3.687126874923706
+    },
+    {
+      "task_id": "django_django_12039",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8767318725585938,
+      "score": -1.8767318725585938
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.865190267562866,
+      "score": 2.865190267562866
+    },
+    {
+      "task_id": "django_django_12050",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.799071788787842,
+      "score": -2.799071788787842
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.4543490409851074,
+      "score": 3.4543490409851074
+    },
+    {
+      "task_id": "django_django_12125",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.639310598373413,
+      "score": -2.639310598373413
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.335911750793457,
+      "score": 1.335911750793457
+    },
+    {
+      "task_id": "django_django_12143",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3219611644744873,
+      "score": -3.3219611644744873
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.0566484928131104,
+      "score": 3.0566484928131104
+    },
+    {
+      "task_id": "django_django_12155",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.982386827468872,
+      "score": -1.982386827468872
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0884623527526855,
+      "score": 2.0884623527526855
+    },
+    {
+      "task_id": "django_django_12193",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3759491443634033,
+      "score": -2.3759491443634033
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.478196620941162,
+      "score": 2.478196620941162
+    },
+    {
+      "task_id": "django_django_12209",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2557568550109863,
+      "score": -3.2557568550109863
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.6930503845214844,
+      "score": 3.6930503845214844
+    },
+    {
+      "task_id": "django_django_12262",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1120052337646484,
+      "score": -2.1120052337646484
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.3982725143432617,
+      "score": 3.3982725143432617
+    },
+    {
+      "task_id": "django_django_12273",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8960072994232178,
+      "score": -1.8960072994232178
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.013060569763183594,
+      "score": 0.013060569763183594
+    },
+    {
+      "task_id": "django_django_12276",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.726144313812256,
+      "score": -4.726144313812256
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4269559383392334,
+      "score": 1.4269559383392334
+    },
+    {
+      "task_id": "django_django_12304",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.591897487640381,
+      "score": -3.591897487640381
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7311513423919678,
+      "score": 1.7311513423919678
+    },
+    {
+      "task_id": "django_django_12308",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2289021015167236,
+      "score": -3.2289021015167236
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2484512329101562,
+      "score": 2.2484512329101562
+    },
+    {
+      "task_id": "django_django_12325",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6742427349090576,
+      "score": -1.6742427349090576
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2085957527160645,
+      "score": 3.2085957527160645
+    },
+    {
+      "task_id": "django_django_12406",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.0750691890716553,
+      "score": -3.0750691890716553
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.7145664691925049,
+      "score": -0.7145664691925049
+    },
+    {
+      "task_id": "django_django_12419",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.96442985534668,
+      "score": -5.96442985534668
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8712081909179688,
+      "score": 2.8712081909179688
+    },
+    {
+      "task_id": "django_django_12663",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.125368356704712,
+      "score": -2.125368356704712
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.465134620666504,
+      "score": 2.465134620666504
+    },
+    {
+      "task_id": "django_django_12708",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3543899059295654,
+      "score": -2.3543899059295654
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.1896519660949707,
+      "score": 2.1896519660949707
+    },
+    {
+      "task_id": "django_django_12713",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.75152587890625,
+      "score": -4.75152587890625
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5573980808258057,
+      "score": 1.5573980808258057
+    },
+    {
+      "task_id": "django_django_12741",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.382668972015381,
+      "score": -5.382668972015381
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.432854175567627,
+      "score": 3.432854175567627
+    },
+    {
+      "task_id": "django_django_12754",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8917551040649414,
+      "score": -1.8917551040649414
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.38565993309020996,
+      "score": 0.38565993309020996
+    },
+    {
+      "task_id": "django_django_12774",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3389856815338135,
+      "score": -3.3389856815338135
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.1778786182403564,
+      "score": 3.1778786182403564
+    },
+    {
+      "task_id": "django_django_12858",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.2786438465118408,
+      "score": -0.2786438465118408
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4219186305999756,
+      "score": 1.4219186305999756
+    },
+    {
+      "task_id": "django_django_12965",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6508421897888184,
+      "score": -2.6508421897888184
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.8562893867492676,
+      "score": 1.8562893867492676
+    },
+    {
+      "task_id": "django_django_13012",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9792773723602295,
+      "score": -1.9792773723602295
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9926393032073975,
+      "score": 1.9926393032073975
+    },
+    {
+      "task_id": "django_django_13023",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.025717258453369,
+      "score": -2.025717258453369
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.443693161010742,
+      "score": 2.443693161010742
+    },
+    {
+      "task_id": "django_django_13028",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.614323139190674,
+      "score": -2.614323139190674
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0471858978271484,
+      "score": 2.0471858978271484
+    },
+    {
+      "task_id": "django_django_13033",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.798549175262451,
+      "score": -2.798549175262451
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.396211624145508,
+      "score": 3.396211624145508
+    },
+    {
+      "task_id": "django_django_13089",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4748239517211914,
+      "score": -1.4748239517211914
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6889219284057617,
+      "score": 1.6889219284057617
+    },
+    {
+      "task_id": "django_django_13109",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.270557165145874,
+      "score": -3.270557165145874
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2878634929656982,
+      "score": 2.2878634929656982
+    },
+    {
+      "task_id": "django_django_13112",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.049466609954834,
+      "score": -2.049466609954834
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9085230827331543,
+      "score": 2.9085230827331543
+    },
+    {
+      "task_id": "django_django_13121",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.218088150024414,
+      "score": -1.218088150024414
+    },
+    {
+      "task_id": "django_django_13128",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.8357112407684326,
+      "score": 3.8357112407684326
+    },
+    {
+      "task_id": "django_django_13128",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.327461004257202,
+      "score": -3.327461004257202
+    },
+    {
+      "task_id": "django_django_13158",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.126535654067993,
+      "score": 2.126535654067993
+    },
+    {
+      "task_id": "django_django_13158",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.467506170272827,
+      "score": -3.467506170272827
+    },
+    {
+      "task_id": "django_django_13195",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.170921802520752,
+      "score": 3.170921802520752
+    },
+    {
+      "task_id": "django_django_13195",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2984111309051514,
+      "score": -3.2984111309051514
+    },
+    {
+      "task_id": "django_django_13212",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.06877064704895,
+      "score": 3.06877064704895
+    },
+    {
+      "task_id": "django_django_13212",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.404980182647705,
+      "score": -5.404980182647705
+    },
+    {
+      "task_id": "django_django_13279",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -6.1882524490356445,
+      "score": 6.1882524490356445
+    },
+    {
+      "task_id": "django_django_13279",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.972249984741211,
+      "score": -2.972249984741211
+    },
+    {
+      "task_id": "django_django_13297",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.4385542869567871,
+      "score": 0.4385542869567871
+    },
+    {
+      "task_id": "django_django_13297",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3238866329193115,
+      "score": -2.3238866329193115
+    },
+    {
+      "task_id": "django_django_13315",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7525582313537598,
+      "score": 2.7525582313537598
+    },
+    {
+      "task_id": "django_django_13315",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.827230930328369,
+      "score": -3.827230930328369
+    },
+    {
+      "task_id": "django_django_13343",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.37286376953125,
+      "score": 2.37286376953125
+    },
+    {
+      "task_id": "django_django_13343",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.4719908237457275,
+      "score": -3.4719908237457275
+    },
+    {
+      "task_id": "django_django_13344",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6660058498382568,
+      "score": 1.6660058498382568
+    },
+    {
+      "task_id": "django_django_13344",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3745839595794678,
+      "score": -2.3745839595794678
+    },
+    {
+      "task_id": "django_django_13346",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.5232813358306885,
+      "score": 2.5232813358306885
+    },
+    {
+      "task_id": "django_django_13346",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6307735443115234,
+      "score": -2.6307735443115234
+    },
+    {
+      "task_id": "django_django_13363",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.35322904586792,
+      "score": 1.35322904586792
+    },
+    {
+      "task_id": "django_django_13363",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.690620183944702,
+      "score": -2.690620183944702
+    },
+    {
+      "task_id": "django_django_13401",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.0065088272094727,
+      "score": 1.0065088272094727
+    },
+    {
+      "task_id": "django_django_13401",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3242347240448,
+      "score": -2.3242347240448
+    },
+    {
+      "task_id": "django_django_13406",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6482985019683838,
+      "score": 1.6482985019683838
+    },
+    {
+      "task_id": "django_django_13406",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.404862403869629,
+      "score": -2.404862403869629
+    },
+    {
+      "task_id": "django_django_13410",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.932232141494751,
+      "score": 0.932232141494751
+    },
+    {
+      "task_id": "django_django_13410",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3636817932128906,
+      "score": -2.3636817932128906
+    },
+    {
+      "task_id": "django_django_13417",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8681907653808594,
+      "score": 2.8681907653808594
+    },
+    {
+      "task_id": "django_django_13417",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.799083948135376,
+      "score": -2.799083948135376
+    },
+    {
+      "task_id": "django_django_13449",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.9152486324310303,
+      "score": 3.9152486324310303
+    },
+    {
+      "task_id": "django_django_13449",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.5026204586029053,
+      "score": -0.5026204586029053
+    },
+    {
+      "task_id": "django_django_13512",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.634843349456787,
+      "score": 3.634843349456787
+    },
+    {
+      "task_id": "django_django_13512",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.497577667236328,
+      "score": -3.497577667236328
+    },
+    {
+      "task_id": "django_django_13513",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.8049845695495605,
+      "score": 0.8049845695495605
+    },
+    {
+      "task_id": "django_django_13513",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2752013206481934,
+      "score": -2.2752013206481934
+    },
+    {
+      "task_id": "django_django_13516",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.369272470474243,
+      "score": 2.369272470474243
+    },
+    {
+      "task_id": "django_django_13516",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6630606651306152,
+      "score": -2.6630606651306152
+    },
+    {
+      "task_id": "django_django_13551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.1773271560668945,
+      "score": 1.1773271560668945
+    },
+    {
+      "task_id": "django_django_13551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2180662155151367,
+      "score": -3.2180662155151367
+    },
+    {
+      "task_id": "django_django_13568",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3864879608154297,
+      "score": 1.3864879608154297
+    },
+    {
+      "task_id": "django_django_13568",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9567651748657227,
+      "score": -2.9567651748657227
+    },
+    {
+      "task_id": "django_django_13569",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.170583724975586,
+      "score": 1.170583724975586
+    },
+    {
+      "task_id": "django_django_13569",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2405760288238525,
+      "score": -2.2405760288238525
+    },
+    {
+      "task_id": "django_django_13590",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0160813331604004,
+      "score": 2.0160813331604004
+    },
+    {
+      "task_id": "django_django_13590",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2635159492492676,
+      "score": -2.2635159492492676
+    },
+    {
+      "task_id": "django_django_13658",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.5887367725372314,
+      "score": 0.5887367725372314
+    },
+    {
+      "task_id": "django_django_13658",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.435753107070923,
+      "score": -2.435753107070923
+    },
+    {
+      "task_id": "django_django_13670",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.739872932434082,
+      "score": 1.739872932434082
+    },
+    {
+      "task_id": "django_django_13670",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.530681848526001,
+      "score": -3.530681848526001
+    },
+    {
+      "task_id": "django_django_13741",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.6289470195770264,
+      "score": 0.6289470195770264
+    },
+    {
+      "task_id": "django_django_13741",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.353755950927734,
+      "score": -5.353755950927734
+    },
+    {
+      "task_id": "django_django_13786",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.8857331275939941,
+      "score": 1.8857331275939941
+    },
+    {
+      "task_id": "django_django_13786",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0412392616271973,
+      "score": -2.0412392616271973
+    },
+    {
+      "task_id": "django_django_13794",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.25425386428833,
+      "score": 4.25425386428833
+    },
+    {
+      "task_id": "django_django_13794",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.5016815662384033,
+      "score": -3.5016815662384033
+    },
+    {
+      "task_id": "django_django_13807",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9911179542541504,
+      "score": 2.9911179542541504
+    },
+    {
+      "task_id": "django_django_13807",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8443150520324707,
+      "score": -0.8443150520324707
+    },
+    {
+      "task_id": "django_django_13809",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2534804344177246,
+      "score": 2.2534804344177246
+    },
+    {
+      "task_id": "django_django_13809",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.712796211242676,
+      "score": -5.712796211242676
+    },
+    {
+      "task_id": "django_django_13810",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.3147716522216797,
+      "score": 2.3147716522216797
+    },
+    {
+      "task_id": "django_django_13810",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2047955989837646,
+      "score": -3.2047955989837646
+    },
+    {
+      "task_id": "django_django_13820",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.537445306777954,
+      "score": 1.537445306777954
+    },
+    {
+      "task_id": "django_django_13820",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.1191487312316895,
+      "score": -5.1191487312316895
+    },
+    {
+      "task_id": "django_django_13821",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.228947162628174,
+      "score": 3.228947162628174
+    },
+    {
+      "task_id": "django_django_13821",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.769990921020508,
+      "score": -4.769990921020508
+    },
+    {
+      "task_id": "django_django_13837",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.6272680759429932,
+      "score": 0.6272680759429932
+    },
+    {
+      "task_id": "django_django_13837",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.8072638511657715,
+      "score": -4.8072638511657715
+    },
+    {
+      "task_id": "django_django_13925",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.425731658935547,
+      "score": 4.425731658935547
+    },
+    {
+      "task_id": "django_django_13925",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9956638813018799,
+      "score": -0.9956638813018799
+    },
+    {
+      "task_id": "django_django_13933",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4596941471099854,
+      "score": 1.4596941471099854
+    },
+    {
+      "task_id": "django_django_13933",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.493116855621338,
+      "score": -2.493116855621338
+    },
+    {
+      "task_id": "django_django_13964",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8720436096191406,
+      "score": 2.8720436096191406
+    },
+    {
+      "task_id": "django_django_13964",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6963584423065186,
+      "score": -2.6963584423065186
+    },
+    {
+      "task_id": "django_django_14007",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.064756155014038,
+      "score": 2.064756155014038
+    },
+    {
+      "task_id": "django_django_14007",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.729444980621338,
+      "score": -1.729444980621338
+    },
+    {
+      "task_id": "django_django_14011",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.579463005065918,
+      "score": 2.579463005065918
+    },
+    {
+      "task_id": "django_django_14011",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.590725898742676,
+      "score": -2.590725898742676
+    },
+    {
+      "task_id": "django_django_14017",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.053888320922852,
+      "score": 4.053888320922852
+    },
+    {
+      "task_id": "django_django_14017",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.08141207695007324,
+      "score": 0.08141207695007324
+    },
+    {
+      "task_id": "django_django_14034",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.959907054901123,
+      "score": 2.959907054901123
+    },
+    {
+      "task_id": "django_django_14034",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.009249210357666,
+      "score": -2.009249210357666
+    },
+    {
+      "task_id": "django_django_14053",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5219547748565674,
+      "score": 1.5219547748565674
+    },
+    {
+      "task_id": "django_django_14053",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.020291328430176,
+      "score": -2.020291328430176
+    },
+    {
+      "task_id": "django_django_14089",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 2.1689205169677734,
+      "score": -2.1689205169677734
+    },
+    {
+      "task_id": "django_django_14089",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.636307716369629,
+      "score": -6.636307716369629
+    },
+    {
+      "task_id": "django_django_14122",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.8376138210296631,
+      "score": 0.8376138210296631
+    },
+    {
+      "task_id": "django_django_14122",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2517244815826416,
+      "score": -3.2517244815826416
+    },
+    {
+      "task_id": "django_django_14140",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -5.383323669433594,
+      "score": 5.383323669433594
+    },
+    {
+      "task_id": "django_django_14140",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9303843975067139,
+      "score": -1.9303843975067139
+    },
+    {
+      "task_id": "django_django_14155",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.191073894500732,
+      "score": 4.191073894500732
+    },
+    {
+      "task_id": "django_django_14155",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.9924092292785645,
+      "score": -3.9924092292785645
+    },
+    {
+      "task_id": "django_django_14170",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.40570330619812,
+      "score": 3.40570330619812
+    },
+    {
+      "task_id": "django_django_14170",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2653560638427734,
+      "score": -3.2653560638427734
+    },
+    {
+      "task_id": "django_django_14238",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.814270496368408,
+      "score": 3.814270496368408
+    },
+    {
+      "task_id": "django_django_14238",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9771270751953125,
+      "score": -0.9771270751953125
+    },
+    {
+      "task_id": "django_django_14311",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8334591388702393,
+      "score": 2.8334591388702393
+    },
+    {
+      "task_id": "django_django_14311",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.115100860595703,
+      "score": -4.115100860595703
+    },
+    {
+      "task_id": "django_django_14315",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.822444200515747,
+      "score": 2.822444200515747
+    },
+    {
+      "task_id": "django_django_14315",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.842134952545166,
+      "score": -4.842134952545166
+    },
+    {
+      "task_id": "django_django_14349",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.4962806701660156,
+      "score": 3.4962806701660156
+    },
+    {
+      "task_id": "django_django_14349",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8814764022827148,
+      "score": -0.8814764022827148
+    },
+    {
+      "task_id": "django_django_14351",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.218149185180664,
+      "score": 2.218149185180664
+    },
+    {
+      "task_id": "django_django_14351",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.6318106651306152,
+      "score": -0.6318106651306152
+    },
+    {
+      "task_id": "django_django_14373",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.765964984893799,
+      "score": 2.765964984893799
+    },
+    {
+      "task_id": "django_django_14373",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.72750186920166,
+      "score": -2.72750186920166
+    },
+    {
+      "task_id": "django_django_14376",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6688127517700195,
+      "score": 1.6688127517700195
+    },
+    {
+      "task_id": "django_django_14376",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.319486618041992,
+      "score": -3.319486618041992
+    },
+    {
+      "task_id": "django_django_14404",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9346609115600586,
+      "score": 2.9346609115600586
+    },
+    {
+      "task_id": "django_django_14404",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.9674298763275146,
+      "score": -3.9674298763275146
+    },
+    {
+      "task_id": "django_django_14434",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.141310453414917,
+      "score": 2.141310453414917
+    },
+    {
+      "task_id": "django_django_14434",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8306174278259277,
+      "score": -3.8306174278259277
+    },
+    {
+      "task_id": "django_django_14493",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2939541339874268,
+      "score": 2.2939541339874268
+    },
+    {
+      "task_id": "django_django_14493",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.5793933868408203,
+      "score": -1.5793933868408203
+    },
+    {
+      "task_id": "django_django_14500",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6372532844543457,
+      "score": 2.6372532844543457
+    },
+    {
+      "task_id": "django_django_14500",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.148792266845703,
+      "score": -3.148792266845703
+    },
+    {
+      "task_id": "django_django_14534",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.136225938796997,
+      "score": 1.136225938796997
+    },
+    {
+      "task_id": "django_django_14534",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.0155177116394043,
+      "score": -3.0155177116394043
+    },
+    {
+      "task_id": "django_django_14539",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.529702186584473,
+      "score": 4.529702186584473
+    },
+    {
+      "task_id": "django_django_14539",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9134469032287598,
+      "score": -1.9134469032287598
+    },
+    {
+      "task_id": "django_django_14559",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7408955097198486,
+      "score": 0.7408955097198486
+    },
+    {
+      "task_id": "django_django_14559",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.217442989349365,
+      "score": -5.217442989349365
+    },
+    {
+      "task_id": "django_django_14580",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.524871826171875,
+      "score": 2.524871826171875
+    },
+    {
+      "task_id": "django_django_14580",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.2277684211730957,
+      "score": -0.2277684211730957
+    },
+    {
+      "task_id": "django_django_14608",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6543960571289062,
+      "score": 1.6543960571289062
+    },
+    {
+      "task_id": "django_django_14608",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8899576663970947,
+      "score": -3.8899576663970947
+    },
+    {
+      "task_id": "django_django_14631",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.210770606994629,
+      "score": 1.210770606994629
+    },
+    {
+      "task_id": "django_django_14631",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.473544120788574,
+      "score": -3.473544120788574
+    },
+    {
+      "task_id": "django_django_14672",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2408971786499023,
+      "score": 3.2408971786499023
+    },
+    {
+      "task_id": "django_django_14672",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4715898036956787,
+      "score": -1.4715898036956787
+    },
+    {
+      "task_id": "django_django_14725",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.973498821258545,
+      "score": 3.973498821258545
+    },
+    {
+      "task_id": "django_django_14725",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.102640628814697,
+      "score": -5.102640628814697
+    },
+    {
+      "task_id": "django_django_14752",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.542809009552002,
+      "score": 0.542809009552002
+    },
+    {
+      "task_id": "django_django_14752",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.761734962463379,
+      "score": -4.761734962463379
+    },
+    {
+      "task_id": "django_django_14765",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0407655239105225,
+      "score": 2.0407655239105225
+    },
+    {
+      "task_id": "django_django_14765",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.678905487060547,
+      "score": -4.678905487060547
+    },
+    {
+      "task_id": "django_django_14771",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.8917222023010254,
+      "score": 0.8917222023010254
+    },
+    {
+      "task_id": "django_django_14771",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.026175498962402,
+      "score": -4.026175498962402
+    },
+    {
+      "task_id": "django_django_14787",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8510560989379883,
+      "score": 2.8510560989379883
+    },
+    {
+      "task_id": "django_django_14787",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.18642520904541,
+      "score": -3.18642520904541
+    },
+    {
+      "task_id": "django_django_14792",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.88934326171875,
+      "score": 2.88934326171875
+    },
+    {
+      "task_id": "django_django_14792",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8801050186157227,
+      "score": -0.8801050186157227
+    },
+    {
+      "task_id": "django_django_14855",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.746129035949707,
+      "score": 2.746129035949707
+    },
+    {
+      "task_id": "django_django_14855",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.027200222015381,
+      "score": -3.027200222015381
+    },
+    {
+      "task_id": "django_django_14915",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.9094133377075195,
+      "score": 3.9094133377075195
+    },
+    {
+      "task_id": "django_django_14915",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2410292625427246,
+      "score": -2.2410292625427246
+    },
+    {
+      "task_id": "django_django_14999",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 1.3886768817901611,
+      "score": -1.3886768817901611
+    },
+    {
+      "task_id": "django_django_14999",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 7.312668323516846,
+      "score": -7.312668323516846
+    },
+    {
+      "task_id": "django_django_15022",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.272380828857422,
+      "score": 2.272380828857422
+    },
+    {
+      "task_id": "django_django_15022",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.7447476387023926,
+      "score": -2.7447476387023926
+    },
+    {
+      "task_id": "django_django_15037",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.4166998863220215,
+      "score": 2.4166998863220215
+    },
+    {
+      "task_id": "django_django_15037",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.666621685028076,
+      "score": -2.666621685028076
+    },
+    {
+      "task_id": "django_django_15098",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.6580362319946289,
+      "score": 0.6580362319946289
+    },
+    {
+      "task_id": "django_django_15098",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.5842273235321045,
+      "score": -3.5842273235321045
+    },
+    {
+      "task_id": "django_django_15103",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.31575536727905273,
+      "score": -0.31575536727905273
+    },
+    {
+      "task_id": "django_django_15103",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.3941521644592285,
+      "score": -6.3941521644592285
+    },
+    {
+      "task_id": "django_django_15104",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.581130027770996,
+      "score": 2.581130027770996
+    },
+    {
+      "task_id": "django_django_15104",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3296170234680176,
+      "score": -2.3296170234680176
+    },
+    {
+      "task_id": "django_django_15127",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.265437126159668,
+      "score": 1.265437126159668
+    },
+    {
+      "task_id": "django_django_15127",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.105580806732178,
+      "score": -4.105580806732178
+    },
+    {
+      "task_id": "django_django_15128",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.527968168258667,
+      "score": 3.527968168258667
+    },
+    {
+      "task_id": "django_django_15128",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2295055389404297,
+      "score": -2.2295055389404297
+    },
+    {
+      "task_id": "django_django_15161",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2722175121307373,
+      "score": 3.2722175121307373
+    },
+    {
+      "task_id": "django_django_15161",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.570254325866699,
+      "score": -4.570254325866699
+    },
+    {
+      "task_id": "django_django_15252",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7831089496612549,
+      "score": 1.7831089496612549
+    },
+    {
+      "task_id": "django_django_15252",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1197102069854736,
+      "score": -2.1197102069854736
+    },
+    {
+      "task_id": "django_django_15268",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4930119514465332,
+      "score": 1.4930119514465332
+    },
+    {
+      "task_id": "django_django_15268",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.6778359413146973,
+      "score": -3.6778359413146973
+    },
+    {
+      "task_id": "django_django_15277",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.755890369415283,
+      "score": 2.755890369415283
+    },
+    {
+      "task_id": "django_django_15277",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.4935390949249268,
+      "score": -2.4935390949249268
+    },
+    {
+      "task_id": "django_django_15278",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.5899298191070557,
+      "score": 2.5899298191070557
+    },
+    {
+      "task_id": "django_django_15278",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.5451385974884033,
+      "score": -2.5451385974884033
+    },
+    {
+      "task_id": "django_django_15280",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9111757278442383,
+      "score": 1.9111757278442383
+    },
+    {
+      "task_id": "django_django_15280",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7952923774719238,
+      "score": -1.7952923774719238
+    },
+    {
+      "task_id": "django_django_15315",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.856976270675659,
+      "score": 2.856976270675659
+    },
+    {
+      "task_id": "django_django_15315",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.4914755821228027,
+      "score": -2.4914755821228027
+    },
+    {
+      "task_id": "django_django_15368",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.0008625984191895,
+      "score": 4.0008625984191895
+    },
+    {
+      "task_id": "django_django_15368",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.876866340637207,
+      "score": -0.876866340637207
+    },
+    {
+      "task_id": "django_django_15375",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.832263469696045,
+      "score": 2.832263469696045
+    },
+    {
+      "task_id": "django_django_15375",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.5043318271636963,
+      "score": -2.5043318271636963
+    },
+    {
+      "task_id": "django_django_15380",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0866589546203613,
+      "score": 2.0866589546203613
+    },
+    {
+      "task_id": "django_django_15380",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6059150695800781,
+      "score": -1.6059150695800781
+    },
+    {
+      "task_id": "django_django_15382",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7624914646148682,
+      "score": 1.7624914646148682
+    },
+    {
+      "task_id": "django_django_15382",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.440660238265991,
+      "score": -2.440660238265991
+    },
+    {
+      "task_id": "django_django_15467",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.781858444213867,
+      "score": 2.781858444213867
+    },
+    {
+      "task_id": "django_django_15467",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.21645641326904297,
+      "score": -0.21645641326904297
+    },
+    {
+      "task_id": "django_django_15499",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7150909900665283,
+      "score": 1.7150909900665283
+    },
+    {
+      "task_id": "django_django_15499",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.136807918548584,
+      "score": -5.136807918548584
+    },
+    {
+      "task_id": "django_django_15503",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9679055213928223,
+      "score": 2.9679055213928223
+    },
+    {
+      "task_id": "django_django_15503",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8704798221588135,
+      "score": -3.8704798221588135
+    },
+    {
+      "task_id": "django_django_15525",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4238855838775635,
+      "score": 1.4238855838775635
+    },
+    {
+      "task_id": "django_django_15525",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.0282928943634033,
+      "score": -1.0282928943634033
+    },
+    {
+      "task_id": "django_django_15554",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 1.1505136489868164,
+      "score": -1.1505136489868164
+    },
+    {
+      "task_id": "django_django_15554",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.232985496520996,
+      "score": -5.232985496520996
+    },
+    {
+      "task_id": "django_django_15561",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.4403717517852783,
+      "score": 0.4403717517852783
+    },
+    {
+      "task_id": "django_django_15561",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.570420742034912,
+      "score": -5.570420742034912
+    },
+    {
+      "task_id": "django_django_15563",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.053351879119873,
+      "score": 2.053351879119873
+    },
+    {
+      "task_id": "django_django_15563",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8755669593811035,
+      "score": -3.8755669593811035
+    },
+    {
+      "task_id": "django_django_15569",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.487776756286621,
+      "score": 3.487776756286621
+    },
+    {
+      "task_id": "django_django_15569",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.100386619567871,
+      "score": -3.100386619567871
+    },
+    {
+      "task_id": "django_django_15572",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7219195365905762,
+      "score": 1.7219195365905762
+    },
+    {
+      "task_id": "django_django_15572",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.5140628814697266,
+      "score": -2.5140628814697266
+    },
+    {
+      "task_id": "django_django_15629",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.417375087738037,
+      "score": 1.417375087738037
+    },
+    {
+      "task_id": "django_django_15629",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.402786731719971,
+      "score": -4.402786731719971
+    },
+    {
+      "task_id": "django_django_15695",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.096545696258545,
+      "score": 3.096545696258545
+    },
+    {
+      "task_id": "django_django_15695",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.446037769317627,
+      "score": -1.446037769317627
+    },
+    {
+      "task_id": "django_django_15731",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4690043926239014,
+      "score": 1.4690043926239014
+    },
+    {
+      "task_id": "django_django_15731",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.015394449234009,
+      "score": -2.015394449234009
+    },
+    {
+      "task_id": "django_django_15732",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.090909242630005,
+      "score": 2.090909242630005
+    },
+    {
+      "task_id": "django_django_15732",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.50943660736084,
+      "score": -2.50943660736084
+    },
+    {
+      "task_id": "django_django_15741",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.601712226867676,
+      "score": 2.601712226867676
+    },
+    {
+      "task_id": "django_django_15741",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.4087038040161133,
+      "score": -3.4087038040161133
+    },
+    {
+      "task_id": "django_django_15814",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.652033805847168,
+      "score": 2.652033805847168
+    },
+    {
+      "task_id": "django_django_15814",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1064491271972656,
+      "score": -2.1064491271972656
+    },
+    {
+      "task_id": "django_django_15851",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 1.1282386779785156,
+      "score": -1.1282386779785156
+    },
+    {
+      "task_id": "django_django_15851",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.358176231384277,
+      "score": -4.358176231384277
+    },
+    {
+      "task_id": "django_django_15863",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.114067316055298,
+      "score": 2.114067316055298
+    },
+    {
+      "task_id": "django_django_15863",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7773613929748535,
+      "score": -1.7773613929748535
+    },
+    {
+      "task_id": "django_django_15916",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6821668148040771,
+      "score": 1.6821668148040771
+    },
+    {
+      "task_id": "django_django_15916",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.581550598144531,
+      "score": -4.581550598144531
+    },
+    {
+      "task_id": "django_django_15930",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.2282185554504395,
+      "score": 4.2282185554504395
+    },
+    {
+      "task_id": "django_django_15930",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.64420747756958,
+      "score": -1.64420747756958
+    },
+    {
+      "task_id": "django_django_15957",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -5.885852336883545,
+      "score": 5.885852336883545
+    },
+    {
+      "task_id": "django_django_15957",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.4172439575195312,
+      "score": -3.4172439575195312
+    },
+    {
+      "task_id": "django_django_15973",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.33090877532959,
+      "score": 3.33090877532959
+    },
+    {
+      "task_id": "django_django_15973",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.504932403564453,
+      "score": -2.504932403564453
+    },
+    {
+      "task_id": "django_django_15987",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.09067058563232422,
+      "score": 0.09067058563232422
+    },
+    {
+      "task_id": "django_django_15987",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.6239376068115234,
+      "score": -3.6239376068115234
+    },
+    {
+      "task_id": "django_django_16032",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.9227070808410645,
+      "score": 3.9227070808410645
+    },
+    {
+      "task_id": "django_django_16032",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.405963659286499,
+      "score": -2.405963659286499
+    },
+    {
+      "task_id": "django_django_16082",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.457909345626831,
+      "score": 3.457909345626831
+    },
+    {
+      "task_id": "django_django_16082",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3310775756835938,
+      "score": -3.3310775756835938
+    },
+    {
+      "task_id": "django_django_16100",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.455702543258667,
+      "score": 1.455702543258667
+    },
+    {
+      "task_id": "django_django_16100",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.9159555435180664,
+      "score": -3.9159555435180664
+    },
+    {
+      "task_id": "django_django_16116",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.5285820960998535,
+      "score": 0.5285820960998535
+    },
+    {
+      "task_id": "django_django_16116",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.7620110511779785,
+      "score": -4.7620110511779785
+    },
+    {
+      "task_id": "django_django_16136",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8340046405792236,
+      "score": 2.8340046405792236
+    },
+    {
+      "task_id": "django_django_16136",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.02278208732605,
+      "score": -2.02278208732605
+    },
+    {
+      "task_id": "django_django_16139",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3539762496948242,
+      "score": 1.3539762496948242
+    },
+    {
+      "task_id": "django_django_16139",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0771946907043457,
+      "score": -2.0771946907043457
+    },
+    {
+      "task_id": "django_django_16145",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7667691707611084,
+      "score": 2.7667691707611084
+    },
+    {
+      "task_id": "django_django_16145",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.836320400238037,
+      "score": -2.836320400238037
+    },
+    {
+      "task_id": "django_django_16255",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9829540252685547,
+      "score": 1.9829540252685547
+    },
+    {
+      "task_id": "django_django_16255",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2900846004486084,
+      "score": -2.2900846004486084
+    },
+    {
+      "task_id": "django_django_16256",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6283340454101562,
+      "score": 2.6283340454101562
+    },
+    {
+      "task_id": "django_django_16256",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.400789260864258,
+      "score": -4.400789260864258
+    },
+    {
+      "task_id": "django_django_16263",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7714881896972656,
+      "score": 1.7714881896972656
+    },
+    {
+      "task_id": "django_django_16263",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.916436672210693,
+      "score": -4.916436672210693
+    },
+    {
+      "task_id": "django_django_16315",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.317420721054077,
+      "score": 2.317420721054077
+    },
+    {
+      "task_id": "django_django_16315",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.905489206314087,
+      "score": -1.905489206314087
+    },
+    {
+      "task_id": "django_django_16333",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.223599910736084,
+      "score": 1.223599910736084
+    },
+    {
+      "task_id": "django_django_16333",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8873798847198486,
+      "score": -3.8873798847198486
+    },
+    {
+      "task_id": "django_django_16429",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2239112854003906,
+      "score": 2.2239112854003906
+    },
+    {
+      "task_id": "django_django_16429",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.2271785736083984,
+      "score": -1.2271785736083984
+    },
+    {
+      "task_id": "django_django_16454",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.054633617401123,
+      "score": 2.054633617401123
+    },
+    {
+      "task_id": "django_django_16454",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1178369522094727,
+      "score": -2.1178369522094727
+    },
+    {
+      "task_id": "django_django_16485",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.181525230407715,
+      "score": 3.181525230407715
+    },
+    {
+      "task_id": "django_django_16485",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1592679023742676,
+      "score": -2.1592679023742676
+    },
+    {
+      "task_id": "django_django_16493",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.161741018295288,
+      "score": 2.161741018295288
+    },
+    {
+      "task_id": "django_django_16493",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.5370168685913086,
+      "score": -1.5370168685913086
+    },
+    {
+      "task_id": "django_django_16502",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4495108127593994,
+      "score": 1.4495108127593994
+    },
+    {
+      "task_id": "django_django_16502",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2024483680725098,
+      "score": -2.2024483680725098
+    },
+    {
+      "task_id": "django_django_16527",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.13941097259521484,
+      "score": -0.13941097259521484
+    },
+    {
+      "task_id": "django_django_16527",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.497639179229736,
+      "score": -4.497639179229736
+    },
+    {
+      "task_id": "django_django_16560",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2630205154418945,
+      "score": 3.2630205154418945
+    },
+    {
+      "task_id": "django_django_16560",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.722963333129883,
+      "score": -5.722963333129883
+    },
+    {
+      "task_id": "django_django_16569",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7733707427978516,
+      "score": 1.7733707427978516
+    },
+    {
+      "task_id": "django_django_16569",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6828112602233887,
+      "score": -1.6828112602233887
+    },
+    {
+      "task_id": "django_django_16595",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.025266647338867188,
+      "score": 0.025266647338867188
+    },
+    {
+      "task_id": "django_django_16595",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.482055187225342,
+      "score": -2.482055187225342
+    },
+    {
+      "task_id": "django_django_16612",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8400936126708984,
+      "score": 2.8400936126708984
+    },
+    {
+      "task_id": "django_django_16612",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.2974495887756348,
+      "score": -1.2974495887756348
+    },
+    {
+      "task_id": "django_django_16631",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.25143957138061523,
+      "score": -0.25143957138061523
+    },
+    {
+      "task_id": "django_django_16631",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.394357204437256,
+      "score": -4.394357204437256
+    },
+    {
+      "task_id": "django_django_16642",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7877919673919678,
+      "score": 1.7877919673919678
+    },
+    {
+      "task_id": "django_django_16642",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.493215799331665,
+      "score": -3.493215799331665
+    },
+    {
+      "task_id": "django_django_16661",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9249846935272217,
+      "score": 2.9249846935272217
+    },
+    {
+      "task_id": "django_django_16661",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6561269760131836,
+      "score": -1.6561269760131836
+    },
+    {
+      "task_id": "django_django_16662",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.179723739624023,
+      "score": 4.179723739624023
+    },
+    {
+      "task_id": "django_django_16662",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.2944719791412354,
+      "score": -1.2944719791412354
+    },
+    {
+      "task_id": "django_django_16667",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.774786949157715,
+      "score": 4.774786949157715
+    },
+    {
+      "task_id": "django_django_16667",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.8540709018707275,
+      "score": 0.8540709018707275
+    },
+    {
+      "task_id": "django_django_16801",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.42644190788269043,
+      "score": -0.42644190788269043
+    },
+    {
+      "task_id": "django_django_16801",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.578984260559082,
+      "score": -3.578984260559082
+    },
+    {
+      "task_id": "django_django_16819",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0093135833740234,
+      "score": 2.0093135833740234
+    },
+    {
+      "task_id": "django_django_16819",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.927270412445068,
+      "score": -4.927270412445068
+    },
+    {
+      "task_id": "django_django_16877",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.32828426361084,
+      "score": 3.32828426361084
+    },
+    {
+      "task_id": "django_django_16877",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.709424018859863,
+      "score": -5.709424018859863
+    },
+    {
+      "task_id": "django_django_16899",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.333028554916382,
+      "score": 3.333028554916382
+    },
+    {
+      "task_id": "django_django_16899",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.197208881378174,
+      "score": -2.197208881378174
+    },
+    {
+      "task_id": "django_django_16901",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2992606163024902,
+      "score": 2.2992606163024902
+    },
+    {
+      "task_id": "django_django_16901",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.10771107673645,
+      "score": -3.10771107673645
+    },
+    {
+      "task_id": "django_django_16938",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.3267717361450195,
+      "score": 3.3267717361450195
+    },
+    {
+      "task_id": "django_django_16938",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8664188385009766,
+      "score": -1.8664188385009766
+    },
+    {
+      "task_id": "django_django_16950",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.5179266929626465,
+      "score": 0.5179266929626465
+    },
+    {
+      "task_id": "django_django_16950",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7181816101074219,
+      "score": -1.7181816101074219
+    },
+    {
+      "task_id": "django_django_17029",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.6369743347167969,
+      "score": 0.6369743347167969
+    },
+    {
+      "task_id": "django_django_17029",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.0500807762146,
+      "score": -4.0500807762146
+    },
+    {
+      "task_id": "django_django_17084",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.3271541595458984,
+      "score": 3.3271541595458984
+    },
+    {
+      "task_id": "django_django_17084",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1354970932006836,
+      "score": -2.1354970932006836
+    },
+    {
+      "task_id": "django_django_17087",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.24714994430542,
+      "score": 3.24714994430542
+    },
+    {
+      "task_id": "django_django_17087",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.1386799812316895,
+      "score": -1.1386799812316895
+    },
+    {
+      "task_id": "django_django_7530",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.031871318817139,
+      "score": 4.031871318817139
+    },
+    {
+      "task_id": "django_django_7530",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.744713306427002,
+      "score": -1.744713306427002
+    },
+    {
+      "task_id": "django_django_9296",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.550222396850586,
+      "score": 1.550222396850586
+    },
+    {
+      "task_id": "django_django_9296",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.017404556274414,
+      "score": -5.017404556274414
+    },
+    {
+      "task_id": "matplotlib_matplotlib_13989",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.5846314430236816,
+      "score": 2.5846314430236816
+    },
+    {
+      "task_id": "matplotlib_matplotlib_13989",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.140327215194702,
+      "score": -2.140327215194702
+    },
+    {
+      "task_id": "matplotlib_matplotlib_14623",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7644145488739014,
+      "score": 0.7644145488739014
+    },
+    {
+      "task_id": "matplotlib_matplotlib_14623",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9518022537231445,
+      "score": -1.9518022537231445
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20488",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.988897323608398,
+      "score": 4.988897323608398
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20488",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.9452221393585205,
+      "score": 0.9452221393585205
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20676",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.8979191780090332,
+      "score": 1.8979191780090332
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20676",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.607400894165039,
+      "score": -2.607400894165039
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20826",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.12141847610473633,
+      "score": 0.12141847610473633
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20826",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.486978054046631,
+      "score": -2.486978054046631
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20859",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9477572441101074,
+      "score": 1.9477572441101074
+    },
+    {
+      "task_id": "matplotlib_matplotlib_20859",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.256746292114258,
+      "score": -2.256746292114258
+    },
+    {
+      "task_id": "matplotlib_matplotlib_21568",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.4639804363250732,
+      "score": 3.4639804363250732
+    },
+    {
+      "task_id": "matplotlib_matplotlib_21568",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.4547200202941895,
+      "score": -2.4547200202941895
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22719",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.311051607131958,
+      "score": 0.311051607131958
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22719",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.160668134689331,
+      "score": -2.160668134689331
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22865",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7017388343811035,
+      "score": 2.7017388343811035
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22865",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.3120834827423096,
+      "score": -1.3120834827423096
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22871",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.10681939125061035,
+      "score": -0.10681939125061035
+    },
+    {
+      "task_id": "matplotlib_matplotlib_22871",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3580141067504883,
+      "score": -2.3580141067504883
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23299",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0578582286834717,
+      "score": 2.0578582286834717
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23299",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.26415157318115234,
+      "score": -0.26415157318115234
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23314",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.21608996391296387,
+      "score": 0.21608996391296387
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23314",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.233184814453125,
+      "score": -2.233184814453125
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23412",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6499488353729248,
+      "score": 1.6499488353729248
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23412",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9474788904190063,
+      "score": -1.9474788904190063
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23476",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.18287086486816406,
+      "score": 0.18287086486816406
+    },
+    {
+      "task_id": "matplotlib_matplotlib_23476",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.377887010574341,
+      "score": -2.377887010574341
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24026",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.587815284729004,
+      "score": 1.587815284729004
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24026",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.354105234146118,
+      "score": -2.354105234146118
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24149",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.036428689956665,
+      "score": 2.036428689956665
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24149",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.2303636074066162,
+      "score": -0.2303636074066162
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24177",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.2435302734375,
+      "score": 0.2435302734375
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24177",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.746095657348633,
+      "score": -2.746095657348633
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24570",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.1190953254699707,
+      "score": 1.1190953254699707
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24570",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8431503772735596,
+      "score": -1.8431503772735596
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24627",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.4379053115844727,
+      "score": 3.4379053115844727
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24627",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.890991449356079,
+      "score": -1.890991449356079
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24637",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.2120070457458496,
+      "score": -0.2120070457458496
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24637",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.6573548316955566,
+      "score": -3.6573548316955566
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24870",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.1703355312347412,
+      "score": -0.1703355312347412
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24870",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.742998123168945,
+      "score": -5.742998123168945
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24970",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.539879322052002,
+      "score": 2.539879322052002
+    },
+    {
+      "task_id": "matplotlib_matplotlib_24970",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.011800527572631836,
+      "score": -0.011800527572631836
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25122",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.8838911056518555,
+      "score": 3.8838911056518555
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25122",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1846792697906494,
+      "score": -2.1846792697906494
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25287",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.530137300491333,
+      "score": 1.530137300491333
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25287",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8395202159881592,
+      "score": -1.8395202159881592
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25311",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.12119722366333,
+      "score": 2.12119722366333
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25311",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.3456089496612549,
+      "score": -1.3456089496612549
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25332",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.258943796157837,
+      "score": 3.258943796157837
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25332",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.3277039527893066,
+      "score": -1.3277039527893066
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25479",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.52142071723938,
+      "score": 3.52142071723938
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25479",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6815266609191895,
+      "score": -2.6815266609191895
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25775",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -5.904182434082031,
+      "score": 5.904182434082031
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25775",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.912655830383301,
+      "score": -4.912655830383301
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25960",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.4660072326660156,
+      "score": 0.4660072326660156
+    },
+    {
+      "task_id": "matplotlib_matplotlib_25960",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9515013694763184,
+      "score": -2.9515013694763184
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26113",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.266528844833374,
+      "score": 2.266528844833374
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26113",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1942687034606934,
+      "score": -2.1942687034606934
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26208",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.782238483428955,
+      "score": 1.782238483428955
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26208",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.2622838020324707,
+      "score": -1.2622838020324707
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26291",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.9202232360839844,
+      "score": 3.9202232360839844
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26291",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.5762503147125244,
+      "score": 0.5762503147125244
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26342",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.5938758850097656,
+      "score": 2.5938758850097656
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26342",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.632713794708252,
+      "score": -2.632713794708252
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26466",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.167677402496338,
+      "score": 2.167677402496338
+    },
+    {
+      "task_id": "matplotlib_matplotlib_26466",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4794065952301025,
+      "score": -1.4794065952301025
+    },
+    {
+      "task_id": "mwaskom_seaborn_3069",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.099917411804199,
+      "score": 2.099917411804199
+    },
+    {
+      "task_id": "mwaskom_seaborn_3069",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.75266170501709,
+      "score": -4.75266170501709
+    },
+    {
+      "task_id": "mwaskom_seaborn_3187",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.1101975440979004,
+      "score": 2.1101975440979004
+    },
+    {
+      "task_id": "mwaskom_seaborn_3187",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0186212062835693,
+      "score": -2.0186212062835693
+    },
+    {
+      "task_id": "pallets_flask_5014",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.4641594886779785,
+      "score": 3.4641594886779785
+    },
+    {
+      "task_id": "pallets_flask_5014",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.5795788764953613,
+      "score": -2.5795788764953613
+    },
+    {
+      "task_id": "psf_requests_1142",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.06927251815795898,
+      "score": -0.06927251815795898
+    },
+    {
+      "task_id": "psf_requests_1142",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.0924763679504395,
+      "score": -4.0924763679504395
+    },
+    {
+      "task_id": "psf_requests_1724",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.9414448738098145,
+      "score": 3.9414448738098145
+    },
+    {
+      "task_id": "psf_requests_1724",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8982930183410645,
+      "score": -0.8982930183410645
+    },
+    {
+      "task_id": "psf_requests_1766",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8720574378967285,
+      "score": 2.8720574378967285
+    },
+    {
+      "task_id": "psf_requests_1766",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9062373638153076,
+      "score": -2.9062373638153076
+    },
+    {
+      "task_id": "psf_requests_1921",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7134177684783936,
+      "score": 2.7134177684783936
+    },
+    {
+      "task_id": "psf_requests_1921",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.143533229827881,
+      "score": -5.143533229827881
+    },
+    {
+      "task_id": "psf_requests_2317",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.618260860443115,
+      "score": 4.618260860443115
+    },
+    {
+      "task_id": "psf_requests_2317",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4146690368652344,
+      "score": -1.4146690368652344
+    },
+    {
+      "task_id": "psf_requests_2931",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6449735164642334,
+      "score": 2.6449735164642334
+    },
+    {
+      "task_id": "psf_requests_2931",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.467679738998413,
+      "score": -1.467679738998413
+    },
+    {
+      "task_id": "psf_requests_5414",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.3020122051239014,
+      "score": 3.3020122051239014
+    },
+    {
+      "task_id": "psf_requests_5414",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7708120346069336,
+      "score": -1.7708120346069336
+    },
+    {
+      "task_id": "psf_requests_6028",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.0217792987823486,
+      "score": 3.0217792987823486
+    },
+    {
+      "task_id": "psf_requests_6028",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.559401035308838,
+      "score": -1.559401035308838
+    },
+    {
+      "task_id": "pydata_xarray_2905",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.255800724029541,
+      "score": 1.255800724029541
+    },
+    {
+      "task_id": "pydata_xarray_2905",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9153249263763428,
+      "score": -2.9153249263763428
+    },
+    {
+      "task_id": "pydata_xarray_3095",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.201229572296143,
+      "score": 4.201229572296143
+    },
+    {
+      "task_id": "pydata_xarray_3095",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.09192562103271484,
+      "score": 0.09192562103271484
+    },
+    {
+      "task_id": "pydata_xarray_3151",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5566234588623047,
+      "score": 1.5566234588623047
+    },
+    {
+      "task_id": "pydata_xarray_3151",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6438219547271729,
+      "score": -1.6438219547271729
+    },
+    {
+      "task_id": "pydata_xarray_3305",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.1467270851135254,
+      "score": 3.1467270851135254
+    },
+    {
+      "task_id": "pydata_xarray_3305",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.16420316696167,
+      "score": -2.16420316696167
+    },
+    {
+      "task_id": "pydata_xarray_3677",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.441033363342285,
+      "score": 4.441033363342285
+    },
+    {
+      "task_id": "pydata_xarray_3677",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.2739138603210449,
+      "score": 0.2739138603210449
+    },
+    {
+      "task_id": "pydata_xarray_3993",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.14286470413208,
+      "score": 1.14286470413208
+    },
+    {
+      "task_id": "pydata_xarray_3993",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8582444190979004,
+      "score": -3.8582444190979004
+    },
+    {
+      "task_id": "pydata_xarray_4075",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.3424127101898193,
+      "score": 3.3424127101898193
+    },
+    {
+      "task_id": "pydata_xarray_4075",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8823888301849365,
+      "score": -0.8823888301849365
+    },
+    {
+      "task_id": "pydata_xarray_4094",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.9209043979644775,
+      "score": 3.9209043979644775
+    },
+    {
+      "task_id": "pydata_xarray_4094",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.5876154899597168,
+      "score": -1.5876154899597168
+    },
+    {
+      "task_id": "pydata_xarray_4356",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.541048765182495,
+      "score": 3.541048765182495
+    },
+    {
+      "task_id": "pydata_xarray_4356",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0922610759735107,
+      "score": -2.0922610759735107
+    },
+    {
+      "task_id": "pydata_xarray_4629",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.320101499557495,
+      "score": 2.320101499557495
+    },
+    {
+      "task_id": "pydata_xarray_4629",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0120739936828613,
+      "score": -2.0120739936828613
+    },
+    {
+      "task_id": "pydata_xarray_4687",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.016507625579834,
+      "score": 2.016507625579834
+    },
+    {
+      "task_id": "pydata_xarray_4687",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.872650146484375,
+      "score": -2.872650146484375
+    },
+    {
+      "task_id": "pydata_xarray_4695",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6464266777038574,
+      "score": 2.6464266777038574
+    },
+    {
+      "task_id": "pydata_xarray_4695",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.1147863864898682,
+      "score": -1.1147863864898682
+    },
+    {
+      "task_id": "pydata_xarray_4966",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.5637359619140625,
+      "score": 0.5637359619140625
+    },
+    {
+      "task_id": "pydata_xarray_4966",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9660422801971436,
+      "score": -2.9660422801971436
+    },
+    {
+      "task_id": "pydata_xarray_6461",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7237133979797363,
+      "score": 2.7237133979797363
+    },
+    {
+      "task_id": "pydata_xarray_6461",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.444448709487915,
+      "score": -1.444448709487915
+    },
+    {
+      "task_id": "pydata_xarray_6599",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.449248790740967,
+      "score": 3.449248790740967
+    },
+    {
+      "task_id": "pydata_xarray_6599",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9940938949584961,
+      "score": -0.9940938949584961
+    },
+    {
+      "task_id": "pydata_xarray_6721",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.8788411617279053,
+      "score": 1.8788411617279053
+    },
+    {
+      "task_id": "pydata_xarray_6721",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.3225712776184082,
+      "score": -1.3225712776184082
+    },
+    {
+      "task_id": "pydata_xarray_6744",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7956924438476562,
+      "score": 1.7956924438476562
+    },
+    {
+      "task_id": "pydata_xarray_6744",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.544100284576416,
+      "score": -2.544100284576416
+    },
+    {
+      "task_id": "pydata_xarray_6938",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9085092544555664,
+      "score": 1.9085092544555664
+    },
+    {
+      "task_id": "pydata_xarray_6938",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.332346200942993,
+      "score": -2.332346200942993
+    },
+    {
+      "task_id": "pydata_xarray_6992",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.391019821166992,
+      "score": 4.391019821166992
+    },
+    {
+      "task_id": "pydata_xarray_6992",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.0207724571228027,
+      "score": -1.0207724571228027
+    },
+    {
+      "task_id": "pydata_xarray_7229",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.100212335586548,
+      "score": 2.100212335586548
+    },
+    {
+      "task_id": "pydata_xarray_7229",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.599510908126831,
+      "score": -1.599510908126831
+    },
+    {
+      "task_id": "pydata_xarray_7233",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.7562825679779053,
+      "score": 3.7562825679779053
+    },
+    {
+      "task_id": "pydata_xarray_7233",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8932585716247559,
+      "score": -1.8932585716247559
+    },
+    {
+      "task_id": "pydata_xarray_7393",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.373029947280884,
+      "score": 2.373029947280884
+    },
+    {
+      "task_id": "pydata_xarray_7393",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9430365562438965,
+      "score": -2.9430365562438965
+    },
+    {
+      "task_id": "pylint_dev_pylint_4551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.5602095127105713,
+      "score": 2.5602095127105713
+    },
+    {
+      "task_id": "pylint_dev_pylint_4551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.082427740097046,
+      "score": -2.082427740097046
+    },
+    {
+      "task_id": "pylint_dev_pylint_4604",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.524752616882324,
+      "score": 3.524752616882324
+    },
+    {
+      "task_id": "pylint_dev_pylint_4604",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.1824138164520264,
+      "score": -1.1824138164520264
+    },
+    {
+      "task_id": "pylint_dev_pylint_4661",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.9637084007263184,
+      "score": -0.9637084007263184
+    },
+    {
+      "task_id": "pylint_dev_pylint_4661",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.740334987640381,
+      "score": -4.740334987640381
+    },
+    {
+      "task_id": "pylint_dev_pylint_4970",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.02355337142944336,
+      "score": 0.02355337142944336
+    },
+    {
+      "task_id": "pylint_dev_pylint_4970",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8155760765075684,
+      "score": -3.8155760765075684
+    },
+    {
+      "task_id": "pylint_dev_pylint_6386",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.435317039489746,
+      "score": 1.435317039489746
+    },
+    {
+      "task_id": "pylint_dev_pylint_6386",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8683862686157227,
+      "score": -0.8683862686157227
+    },
+    {
+      "task_id": "pylint_dev_pylint_6528",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.1780319213867188,
+      "score": 1.1780319213867188
+    },
+    {
+      "task_id": "pylint_dev_pylint_6528",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.926241874694824,
+      "score": -2.926241874694824
+    },
+    {
+      "task_id": "pylint_dev_pylint_6903",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7261435985565186,
+      "score": 1.7261435985565186
+    },
+    {
+      "task_id": "pylint_dev_pylint_6903",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.3247244358062744,
+      "score": -0.3247244358062744
+    },
+    {
+      "task_id": "pylint_dev_pylint_7080",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.0581951141357422,
+      "score": 1.0581951141357422
+    },
+    {
+      "task_id": "pylint_dev_pylint_7080",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.657966375350952,
+      "score": -2.657966375350952
+    },
+    {
+      "task_id": "pylint_dev_pylint_7277",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.8449666500091553,
+      "score": 0.8449666500091553
+    },
+    {
+      "task_id": "pylint_dev_pylint_7277",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1340808868408203,
+      "score": -2.1340808868408203
+    },
+    {
+      "task_id": "pylint_dev_pylint_8898",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2898507118225098,
+      "score": 3.2898507118225098
+    },
+    {
+      "task_id": "pylint_dev_pylint_8898",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.0981273651123047,
+      "score": -1.0981273651123047
+    },
+    {
+      "task_id": "pytest_dev_pytest_10051",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.3514647483825684,
+      "score": 2.3514647483825684
+    },
+    {
+      "task_id": "pytest_dev_pytest_10051",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9229586124420166,
+      "score": -0.9229586124420166
+    },
+    {
+      "task_id": "pytest_dev_pytest_10081",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.00337815284729,
+      "score": 2.00337815284729
+    },
+    {
+      "task_id": "pytest_dev_pytest_10081",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0910842418670654,
+      "score": -2.0910842418670654
+    },
+    {
+      "task_id": "pytest_dev_pytest_10356",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.290879964828491,
+      "score": 2.290879964828491
+    },
+    {
+      "task_id": "pytest_dev_pytest_10356",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.955922842025757,
+      "score": -2.955922842025757
+    },
+    {
+      "task_id": "pytest_dev_pytest_5262",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6290135383605957,
+      "score": 2.6290135383605957
+    },
+    {
+      "task_id": "pytest_dev_pytest_5262",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.1682791709899902,
+      "score": -1.1682791709899902
+    },
+    {
+      "task_id": "pytest_dev_pytest_5631",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -5.491225242614746,
+      "score": 5.491225242614746
+    },
+    {
+      "task_id": "pytest_dev_pytest_5631",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.8924357891082764,
+      "score": 0.8924357891082764
+    },
+    {
+      "task_id": "pytest_dev_pytest_5787",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7663784027099609,
+      "score": 0.7663784027099609
+    },
+    {
+      "task_id": "pytest_dev_pytest_5787",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.7986927032470703,
+      "score": -2.7986927032470703
+    },
+    {
+      "task_id": "pytest_dev_pytest_5809",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5299701690673828,
+      "score": 1.5299701690673828
+    },
+    {
+      "task_id": "pytest_dev_pytest_5809",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.831533432006836,
+      "score": -1.831533432006836
+    },
+    {
+      "task_id": "pytest_dev_pytest_5840",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.5926263332366943,
+      "score": 3.5926263332366943
+    },
+    {
+      "task_id": "pytest_dev_pytest_5840",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.03223299980163574,
+      "score": -0.03223299980163574
+    },
+    {
+      "task_id": "pytest_dev_pytest_6197",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.8258168697357178,
+      "score": 2.8258168697357178
+    },
+    {
+      "task_id": "pytest_dev_pytest_6197",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6103243827819824,
+      "score": -1.6103243827819824
+    },
+    {
+      "task_id": "pytest_dev_pytest_6202",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.4780144691467285,
+      "score": 3.4780144691467285
+    },
+    {
+      "task_id": "pytest_dev_pytest_6202",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -1.5063576698303223,
+      "score": 1.5063576698303223
+    },
+    {
+      "task_id": "pytest_dev_pytest_7205",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9484195709228516,
+      "score": 2.9484195709228516
+    },
+    {
+      "task_id": "pytest_dev_pytest_7205",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6856398582458496,
+      "score": -1.6856398582458496
+    },
+    {
+      "task_id": "pytest_dev_pytest_7236",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.577760934829712,
+      "score": 1.577760934829712
+    },
+    {
+      "task_id": "pytest_dev_pytest_7236",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.164055347442627,
+      "score": -2.164055347442627
+    },
+    {
+      "task_id": "pytest_dev_pytest_7324",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.129998207092285,
+      "score": 4.129998207092285
+    },
+    {
+      "task_id": "pytest_dev_pytest_7324",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.7123503684997559,
+      "score": -0.7123503684997559
+    },
+    {
+      "task_id": "pytest_dev_pytest_7432",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.476872682571411,
+      "score": 2.476872682571411
+    },
+    {
+      "task_id": "pytest_dev_pytest_7432",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.6792051792144775,
+      "score": -0.6792051792144775
+    },
+    {
+      "task_id": "pytest_dev_pytest_7490",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3829045295715332,
+      "score": 1.3829045295715332
+    },
+    {
+      "task_id": "pytest_dev_pytest_7490",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.025590419769287,
+      "score": -3.025590419769287
+    },
+    {
+      "task_id": "pytest_dev_pytest_7521",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.6460821628570557,
+      "score": 3.6460821628570557
+    },
+    {
+      "task_id": "pytest_dev_pytest_7521",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.5981137752532959,
+      "score": 0.5981137752532959
+    },
+    {
+      "task_id": "pytest_dev_pytest_7571",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7596511840820312,
+      "score": 1.7596511840820312
+    },
+    {
+      "task_id": "pytest_dev_pytest_7571",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.183346748352051,
+      "score": -2.183346748352051
+    },
+    {
+      "task_id": "pytest_dev_pytest_7982",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.609912395477295,
+      "score": 1.609912395477295
+    },
+    {
+      "task_id": "pytest_dev_pytest_7982",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3470301628112793,
+      "score": -3.3470301628112793
+    },
+    {
+      "task_id": "pytest_dev_pytest_8399",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.1365718841552734,
+      "score": 2.1365718841552734
+    },
+    {
+      "task_id": "pytest_dev_pytest_8399",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.444347858428955,
+      "score": -1.444347858428955
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10297",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7527296543121338,
+      "score": 1.7527296543121338
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10297",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9966962337493896,
+      "score": -1.9966962337493896
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10844",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2440290451049805,
+      "score": 3.2440290451049805
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10844",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.5256898403167725,
+      "score": -0.5256898403167725
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10908",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.661870002746582,
+      "score": 1.661870002746582
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_10908",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.280485153198242,
+      "score": -3.280485153198242
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_11310",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 2.6085126399993896,
+      "score": -2.6085126399993896
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_11310",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.423069953918457,
+      "score": -6.423069953918457
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_11578",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.366079807281494,
+      "score": 3.366079807281494
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_11578",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8278563022613525,
+      "score": -0.8278563022613525
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12585",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.31295156478881836,
+      "score": -0.31295156478881836
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12585",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.836792469024658,
+      "score": -2.836792469024658
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12682",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.2414262294769287,
+      "score": -0.2414262294769287
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12682",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.6044657230377197,
+      "score": -3.6044657230377197
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12973",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7301466464996338,
+      "score": 0.7301466464996338
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_12973",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.6052215099334717,
+      "score": -3.6052215099334717
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13124",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.612168550491333,
+      "score": 2.612168550491333
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13124",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.2011277675628662,
+      "score": -1.2011277675628662
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13135",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.723634958267212,
+      "score": 1.723634958267212
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13135",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.7845873832702637,
+      "score": -0.7845873832702637
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13142",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.5008184909820557,
+      "score": 3.5008184909820557
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13142",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.7283413410186768,
+      "score": -0.7283413410186768
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13328",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.535379409790039,
+      "score": 3.535379409790039
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13328",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6891813278198242,
+      "score": -1.6891813278198242
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13439",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.43731021881103516,
+      "score": 0.43731021881103516
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13439",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.675152540206909,
+      "score": -3.675152540206909
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13496",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 1.6176772117614746,
+      "score": -1.6176772117614746
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13496",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.666027069091797,
+      "score": -6.666027069091797
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13779",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -5.203664302825928,
+      "score": 5.203664302825928
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_13779",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.03795433044433594,
+      "score": -0.03795433044433594
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14053",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.413245677947998,
+      "score": 1.413245677947998
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14053",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6145739555358887,
+      "score": -1.6145739555358887
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14087",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.5412251949310303,
+      "score": 3.5412251949310303
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14087",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.7632925510406494,
+      "score": -0.7632925510406494
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14141",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.964860200881958,
+      "score": 3.964860200881958
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14141",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.370677947998047,
+      "score": -4.370677947998047
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14496",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.434143543243408,
+      "score": 3.434143543243408
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14496",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.0942888259887695,
+      "score": -1.0942888259887695
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14629",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2006897926330566,
+      "score": 2.2006897926330566
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14629",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.12247228622436523,
+      "score": -0.12247228622436523
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14710",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2634544372558594,
+      "score": 3.2634544372558594
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14710",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8701908588409424,
+      "score": -1.8701908588409424
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14894",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7787656784057617,
+      "score": 2.7787656784057617
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14894",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.4094815254211426,
+      "score": -0.4094815254211426
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14983",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6576595306396484,
+      "score": 2.6576595306396484
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_14983",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1689770221710205,
+      "score": -2.1689770221710205
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_15100",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.6706268787384033,
+      "score": 3.6706268787384033
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_15100",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6467723846435547,
+      "score": -1.6467723846435547
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25102",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9406278133392334,
+      "score": 1.9406278133392334
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25102",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.018989086151123,
+      "score": -5.018989086151123
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25232",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 1.4297959804534912,
+      "score": -1.4297959804534912
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25232",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.745907783508301,
+      "score": -4.745907783508301
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25747",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.514312744140625,
+      "score": 2.514312744140625
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25747",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.8640222549438477,
+      "score": -0.8640222549438477
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25931",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4156997203826904,
+      "score": 1.4156997203826904
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25931",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.3740460872650146,
+      "score": -1.3740460872650146
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25973",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.8540077209472656,
+      "score": 1.8540077209472656
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_25973",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.411241292953491,
+      "score": -2.411241292953491
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_26194",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.213840961456299,
+      "score": 3.213840961456299
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_26194",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.997140884399414,
+      "score": -1.997140884399414
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_26323",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.336606740951538,
+      "score": 2.336606740951538
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_26323",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9849131107330322,
+      "score": -1.9849131107330322
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_9288",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.3240609169006348,
+      "score": 2.3240609169006348
+    },
+    {
+      "task_id": "scikit_learn_scikit_learn_9288",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3017055988311768,
+      "score": -3.3017055988311768
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10323",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0983030796051025,
+      "score": 2.0983030796051025
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10323",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8502135276794434,
+      "score": -1.8502135276794434
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10435",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5207228660583496,
+      "score": 1.5207228660583496
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10435",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.5916247367858887,
+      "score": -2.5916247367858887
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10449",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.04282808303833008,
+      "score": 0.04282808303833008
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10449",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.925760269165039,
+      "score": -3.925760269165039
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10466",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.702585220336914,
+      "score": 2.702585220336914
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10466",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.0526602268218994,
+      "score": -1.0526602268218994
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10614",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3152449131011963,
+      "score": 1.3152449131011963
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10614",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.225764274597168,
+      "score": -1.225764274597168
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10673",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.513543128967285,
+      "score": 2.513543128967285
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_10673",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.73464298248291,
+      "score": -2.73464298248291
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_11445",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.6384944915771484,
+      "score": 0.6384944915771484
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_11445",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2252840995788574,
+      "score": -2.2252840995788574
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_11510",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3114831447601318,
+      "score": 1.3114831447601318
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_11510",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.388774871826172,
+      "score": -3.388774871826172
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7440",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9591529369354248,
+      "score": 1.9591529369354248
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7440",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.5325257778167725,
+      "score": -2.5325257778167725
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7454",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.4786393642425537,
+      "score": 0.4786393642425537
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7454",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.1612818241119385,
+      "score": -3.1612818241119385
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7462",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.832500457763672,
+      "score": 2.832500457763672
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7462",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9046750068664551,
+      "score": -0.9046750068664551
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7590",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 1.7440414428710938,
+      "score": -1.7440414428710938
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7590",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.1468610763549805,
+      "score": -4.1468610763549805
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7748",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.842564582824707,
+      "score": 1.842564582824707
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7748",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.475975513458252,
+      "score": -4.475975513458252
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7757",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.1369085311889648,
+      "score": 1.1369085311889648
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7757",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.0915093421936035,
+      "score": -3.0915093421936035
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7889",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.875246047973633,
+      "score": 2.875246047973633
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7889",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.09369444847106934,
+      "score": 0.09369444847106934
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7910",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6418869495391846,
+      "score": 1.6418869495391846
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7910",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.2406165599822998,
+      "score": -1.2406165599822998
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7985",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.004478931427002,
+      "score": 3.004478931427002
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_7985",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9244627952575684,
+      "score": -2.9244627952575684
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8035",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7502751350402832,
+      "score": 0.7502751350402832
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8035",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.760585784912109,
+      "score": -5.760585784912109
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8056",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2513113021850586,
+      "score": 2.2513113021850586
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8056",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9085373878479004,
+      "score": -2.9085373878479004
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8120",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.540855884552002,
+      "score": 0.540855884552002
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8120",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.4239559173583984,
+      "score": -3.4239559173583984
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8265",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.439213991165161,
+      "score": 2.439213991165161
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8265",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.710994243621826,
+      "score": -2.710994243621826
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8269",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.262671947479248,
+      "score": 2.262671947479248
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8269",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.10831642150878906,
+      "score": -0.10831642150878906
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8459",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.5487089157104492,
+      "score": 0.5487089157104492
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8459",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3707275390625,
+      "score": -3.3707275390625
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8475",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.447392463684082,
+      "score": 1.447392463684082
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8475",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.9115147590637207,
+      "score": -3.9115147590637207
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8548",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.62074613571167,
+      "score": 2.62074613571167
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8548",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.8064844608306885,
+      "score": -1.8064844608306885
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.855644941329956,
+      "score": 1.855644941329956
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7298791408538818,
+      "score": -1.7298791408538818
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8593",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.04011607170105,
+      "score": 2.04011607170105
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8593",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.0387179851531982,
+      "score": -3.0387179851531982
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8595",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.2036445140838623,
+      "score": 1.2036445140838623
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8595",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6221635341644287,
+      "score": -2.6221635341644287
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8621",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7254092693328857,
+      "score": 2.7254092693328857
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8621",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.757750988006592,
+      "score": -2.757750988006592
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8638",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.0269606113433838,
+      "score": 1.0269606113433838
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8638",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.4185914993286133,
+      "score": -2.4185914993286133
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8721",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7534587383270264,
+      "score": 0.7534587383270264
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_8721",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.388200283050537,
+      "score": -3.388200283050537
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9229",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.359830379486084,
+      "score": 2.359830379486084
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9229",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3386921882629395,
+      "score": -2.3386921882629395
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9230",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0511958599090576,
+      "score": 2.0511958599090576
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9230",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9747145175933838,
+      "score": -0.9747145175933838
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9258",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.5901198387145996,
+      "score": 3.5901198387145996
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9258",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.9527955055236816,
+      "score": -3.9527955055236816
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9281",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.575984477996826,
+      "score": 2.575984477996826
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9281",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.3488008975982666,
+      "score": -1.3488008975982666
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9320",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.66960072517395,
+      "score": 2.66960072517395
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9320",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7383613586425781,
+      "score": -1.7383613586425781
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9367",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0577306747436523,
+      "score": 2.0577306747436523
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9367",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.85671067237854,
+      "score": -1.85671067237854
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9461",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4915475845336914,
+      "score": 1.4915475845336914
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9461",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1023004055023193,
+      "score": -2.1023004055023193
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9591",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3525879383087158,
+      "score": 1.3525879383087158
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9591",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0700716972351074,
+      "score": -2.0700716972351074
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9602",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4278624057769775,
+      "score": 1.4278624057769775
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9602",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0702075958251953,
+      "score": -2.0702075958251953
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9658",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.662519931793213,
+      "score": 1.662519931793213
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9658",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.464792251586914,
+      "score": -1.464792251586914
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9673",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.4893474578857422,
+      "score": 0.4893474578857422
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9673",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.3434247970581055,
+      "score": -2.3434247970581055
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9698",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.152740240097046,
+      "score": 2.152740240097046
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9698",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4152851104736328,
+      "score": -1.4152851104736328
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9711",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9914281368255615,
+      "score": 1.9914281368255615
+    },
+    {
+      "task_id": "sphinx_doc_sphinx_9711",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2019641399383545,
+      "score": -2.2019641399383545
+    },
+    {
+      "task_id": "sympy_sympy_11618",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2736566066741943,
+      "score": 2.2736566066741943
+    },
+    {
+      "task_id": "sympy_sympy_11618",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6176793575286865,
+      "score": -1.6176793575286865
+    },
+    {
+      "task_id": "sympy_sympy_12096",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.9280028343200684,
+      "score": 0.9280028343200684
+    },
+    {
+      "task_id": "sympy_sympy_12096",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.627345085144043,
+      "score": -1.627345085144043
+    },
+    {
+      "task_id": "sympy_sympy_12419",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.60099458694458,
+      "score": 2.60099458694458
+    },
+    {
+      "task_id": "sympy_sympy_12419",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.29768967628479,
+      "score": -1.29768967628479
+    },
+    {
+      "task_id": "sympy_sympy_12481",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.564512729644775,
+      "score": 4.564512729644775
+    },
+    {
+      "task_id": "sympy_sympy_12481",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0830836296081543,
+      "score": -2.0830836296081543
+    },
+    {
+      "task_id": "sympy_sympy_12489",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.24355602264404297,
+      "score": 0.24355602264404297
+    },
+    {
+      "task_id": "sympy_sympy_12489",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8539857864379883,
+      "score": -3.8539857864379883
+    },
+    {
+      "task_id": "sympy_sympy_13031",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5144503116607666,
+      "score": 1.5144503116607666
+    },
+    {
+      "task_id": "sympy_sympy_13031",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.7433087825775146,
+      "score": -2.7433087825775146
+    },
+    {
+      "task_id": "sympy_sympy_13091",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.275477647781372,
+      "score": 1.275477647781372
+    },
+    {
+      "task_id": "sympy_sympy_13091",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.606968641281128,
+      "score": -3.606968641281128
+    },
+    {
+      "task_id": "sympy_sympy_13372",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6314384937286377,
+      "score": 1.6314384937286377
+    },
+    {
+      "task_id": "sympy_sympy_13372",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.243180513381958,
+      "score": -1.243180513381958
+    },
+    {
+      "task_id": "sympy_sympy_13480",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.0514485836029053,
+      "score": 2.0514485836029053
+    },
+    {
+      "task_id": "sympy_sympy_13480",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.055260181427002,
+      "score": -2.055260181427002
+    },
+    {
+      "task_id": "sympy_sympy_13551",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2383036613464355,
+      "score": 3.2383036613464355
+    },
+    {
+      "task_id": "sympy_sympy_13551",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.8036184310913086,
+      "score": -2.8036184310913086
+    },
+    {
+      "task_id": "sympy_sympy_13615",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.514650821685791,
+      "score": 2.514650821685791
+    },
+    {
+      "task_id": "sympy_sympy_13615",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3753271102905273,
+      "score": -3.3753271102905273
+    },
+    {
+      "task_id": "sympy_sympy_13647",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6260793209075928,
+      "score": 2.6260793209075928
+    },
+    {
+      "task_id": "sympy_sympy_13647",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9362375736236572,
+      "score": -1.9362375736236572
+    },
+    {
+      "task_id": "sympy_sympy_13757",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.9054291248321533,
+      "score": 0.9054291248321533
+    },
+    {
+      "task_id": "sympy_sympy_13757",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.43544340133667,
+      "score": -3.43544340133667
+    },
+    {
+      "task_id": "sympy_sympy_13798",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 3.5430965423583984,
+      "score": -3.5430965423583984
+    },
+    {
+      "task_id": "sympy_sympy_13798",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 6.683175563812256,
+      "score": -6.683175563812256
+    },
+    {
+      "task_id": "sympy_sympy_13852",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.7182207107543945,
+      "score": 0.7182207107543945
+    },
+    {
+      "task_id": "sympy_sympy_13852",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.071480751037598,
+      "score": -4.071480751037598
+    },
+    {
+      "task_id": "sympy_sympy_13877",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.1106090545654297,
+      "score": 3.1106090545654297
+    },
+    {
+      "task_id": "sympy_sympy_13877",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.5317227840423584,
+      "score": -2.5317227840423584
+    },
+    {
+      "task_id": "sympy_sympy_13878",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.500952959060669,
+      "score": 1.500952959060669
+    },
+    {
+      "task_id": "sympy_sympy_13878",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.421041488647461,
+      "score": -4.421041488647461
+    },
+    {
+      "task_id": "sympy_sympy_13974",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4062256813049316,
+      "score": 1.4062256813049316
+    },
+    {
+      "task_id": "sympy_sympy_13974",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.1460485458374023,
+      "score": -3.1460485458374023
+    },
+    {
+      "task_id": "sympy_sympy_14248",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.2710461616516113,
+      "score": 1.2710461616516113
+    },
+    {
+      "task_id": "sympy_sympy_14248",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.231205940246582,
+      "score": -3.231205940246582
+    },
+    {
+      "task_id": "sympy_sympy_14531",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.070026397705078,
+      "score": 3.070026397705078
+    },
+    {
+      "task_id": "sympy_sympy_14531",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.48734235763549805,
+      "score": -0.48734235763549805
+    },
+    {
+      "task_id": "sympy_sympy_14711",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.42374849319458,
+      "score": 2.42374849319458
+    },
+    {
+      "task_id": "sympy_sympy_14711",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.17881989479064941,
+      "score": -0.17881989479064941
+    },
+    {
+      "task_id": "sympy_sympy_14976",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5587494373321533,
+      "score": 1.5587494373321533
+    },
+    {
+      "task_id": "sympy_sympy_14976",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.644676685333252,
+      "score": -2.644676685333252
+    },
+    {
+      "task_id": "sympy_sympy_15017",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4335923194885254,
+      "score": 1.4335923194885254
+    },
+    {
+      "task_id": "sympy_sympy_15017",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9058072566986084,
+      "score": -2.9058072566986084
+    },
+    {
+      "task_id": "sympy_sympy_15345",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6496503353118896,
+      "score": 1.6496503353118896
+    },
+    {
+      "task_id": "sympy_sympy_15345",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.878404378890991,
+      "score": -2.878404378890991
+    },
+    {
+      "task_id": "sympy_sympy_15349",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.139561176300049,
+      "score": 2.139561176300049
+    },
+    {
+      "task_id": "sympy_sympy_15349",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4030418395996094,
+      "score": -1.4030418395996094
+    },
+    {
+      "task_id": "sympy_sympy_15599",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.6595032215118408,
+      "score": -0.6595032215118408
+    },
+    {
+      "task_id": "sympy_sympy_15599",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.691153526306152,
+      "score": -4.691153526306152
+    },
+    {
+      "task_id": "sympy_sympy_15809",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.6089541912078857,
+      "score": 1.6089541912078857
+    },
+    {
+      "task_id": "sympy_sympy_15809",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 5.449788570404053,
+      "score": -5.449788570404053
+    },
+    {
+      "task_id": "sympy_sympy_15875",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.589386224746704,
+      "score": 2.589386224746704
+    },
+    {
+      "task_id": "sympy_sympy_15875",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.9042513370513916,
+      "score": -2.9042513370513916
+    },
+    {
+      "task_id": "sympy_sympy_15976",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.8364851474761963,
+      "score": 0.8364851474761963
+    },
+    {
+      "task_id": "sympy_sympy_15976",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.535513401031494,
+      "score": -3.535513401031494
+    },
+    {
+      "task_id": "sympy_sympy_16450",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.006197214126587,
+      "score": 3.006197214126587
+    },
+    {
+      "task_id": "sympy_sympy_16450",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.1039817333221436,
+      "score": -3.1039817333221436
+    },
+    {
+      "task_id": "sympy_sympy_16597",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.5004580020904541,
+      "score": 0.5004580020904541
+    },
+    {
+      "task_id": "sympy_sympy_16597",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.234687805175781,
+      "score": -4.234687805175781
+    },
+    {
+      "task_id": "sympy_sympy_16766",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": 0.24489784240722656,
+      "score": -0.24489784240722656
+    },
+    {
+      "task_id": "sympy_sympy_16766",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.016399383544922,
+      "score": -3.016399383544922
+    },
+    {
+      "task_id": "sympy_sympy_16792",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.3435962200164795,
+      "score": 3.3435962200164795
+    },
+    {
+      "task_id": "sympy_sympy_16792",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.1324291229248047,
+      "score": -2.1324291229248047
+    },
+    {
+      "task_id": "sympy_sympy_16886",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.316811561584473,
+      "score": 4.316811561584473
+    },
+    {
+      "task_id": "sympy_sympy_16886",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.6112477779388428,
+      "score": -2.6112477779388428
+    },
+    {
+      "task_id": "sympy_sympy_17139",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.15055513381958,
+      "score": 2.15055513381958
+    },
+    {
+      "task_id": "sympy_sympy_17139",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.0783443450927734,
+      "score": -3.0783443450927734
+    },
+    {
+      "task_id": "sympy_sympy_17318",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4020485877990723,
+      "score": 1.4020485877990723
+    },
+    {
+      "task_id": "sympy_sympy_17318",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.5974245071411133,
+      "score": -0.5974245071411133
+    },
+    {
+      "task_id": "sympy_sympy_17630",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.5953545570373535,
+      "score": 3.5953545570373535
+    },
+    {
+      "task_id": "sympy_sympy_17630",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.10256147384643555,
+      "score": 0.10256147384643555
+    },
+    {
+      "task_id": "sympy_sympy_17655",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.0553059577941895,
+      "score": 4.0553059577941895
+    },
+    {
+      "task_id": "sympy_sympy_17655",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.6931748390197754,
+      "score": 0.6931748390197754
+    },
+    {
+      "task_id": "sympy_sympy_18189",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.1667273044586182,
+      "score": 1.1667273044586182
+    },
+    {
+      "task_id": "sympy_sympy_18189",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.4539272785186768,
+      "score": -2.4539272785186768
+    },
+    {
+      "task_id": "sympy_sympy_18199",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.009777545928955,
+      "score": 2.009777545928955
+    },
+    {
+      "task_id": "sympy_sympy_18199",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.8543131351470947,
+      "score": -3.8543131351470947
+    },
+    {
+      "task_id": "sympy_sympy_18211",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7970035076141357,
+      "score": 2.7970035076141357
+    },
+    {
+      "task_id": "sympy_sympy_18211",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7940738201141357,
+      "score": -1.7940738201141357
+    },
+    {
+      "task_id": "sympy_sympy_18698",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.7379064559936523,
+      "score": 3.7379064559936523
+    },
+    {
+      "task_id": "sympy_sympy_18698",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.238100528717041,
+      "score": -2.238100528717041
+    },
+    {
+      "task_id": "sympy_sympy_18763",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.8339693546295166,
+      "score": 0.8339693546295166
+    },
+    {
+      "task_id": "sympy_sympy_18763",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.7054824829101562,
+      "score": -2.7054824829101562
+    },
+    {
+      "task_id": "sympy_sympy_19040",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.49935102462768555,
+      "score": 0.49935102462768555
+    },
+    {
+      "task_id": "sympy_sympy_19040",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.146971702575684,
+      "score": -4.146971702575684
+    },
+    {
+      "task_id": "sympy_sympy_19346",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.849165678024292,
+      "score": 1.849165678024292
+    },
+    {
+      "task_id": "sympy_sympy_19346",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9215106964111328,
+      "score": -0.9215106964111328
+    },
+    {
+      "task_id": "sympy_sympy_19495",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.9272027015686035,
+      "score": 0.9272027015686035
+    },
+    {
+      "task_id": "sympy_sympy_19495",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.2605834007263184,
+      "score": -2.2605834007263184
+    },
+    {
+      "task_id": "sympy_sympy_19637",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.3463630676269531,
+      "score": 1.3463630676269531
+    },
+    {
+      "task_id": "sympy_sympy_19637",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.7952215671539307,
+      "score": -1.7952215671539307
+    },
+    {
+      "task_id": "sympy_sympy_19783",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.9081227779388428,
+      "score": 2.9081227779388428
+    },
+    {
+      "task_id": "sympy_sympy_19783",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.946469783782959,
+      "score": -3.946469783782959
+    },
+    {
+      "task_id": "sympy_sympy_19954",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7851457595825195,
+      "score": 1.7851457595825195
+    },
+    {
+      "task_id": "sympy_sympy_19954",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.28044939041137695,
+      "score": 0.28044939041137695
+    },
+    {
+      "task_id": "sympy_sympy_20154",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.295168399810791,
+      "score": 2.295168399810791
+    },
+    {
+      "task_id": "sympy_sympy_20154",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.818452835083008,
+      "score": -3.818452835083008
+    },
+    {
+      "task_id": "sympy_sympy_20428",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.5533103942871094,
+      "score": 1.5533103942871094
+    },
+    {
+      "task_id": "sympy_sympy_20428",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0177931785583496,
+      "score": -2.0177931785583496
+    },
+    {
+      "task_id": "sympy_sympy_20438",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.805654525756836,
+      "score": 3.805654525756836
+    },
+    {
+      "task_id": "sympy_sympy_20438",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": -0.8815293312072754,
+      "score": 0.8815293312072754
+    },
+    {
+      "task_id": "sympy_sympy_20590",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.2659268379211426,
+      "score": 0.2659268379211426
+    },
+    {
+      "task_id": "sympy_sympy_20590",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.280383348464966,
+      "score": -3.280383348464966
+    },
+    {
+      "task_id": "sympy_sympy_20801",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.9652330875396729,
+      "score": 0.9652330875396729
+    },
+    {
+      "task_id": "sympy_sympy_20801",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.2466013431549072,
+      "score": -3.2466013431549072
+    },
+    {
+      "task_id": "sympy_sympy_20916",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.6529958248138428,
+      "score": 2.6529958248138428
+    },
+    {
+      "task_id": "sympy_sympy_20916",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.235733985900879,
+      "score": -3.235733985900879
+    },
+    {
+      "task_id": "sympy_sympy_21379",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.114626407623291,
+      "score": 1.114626407623291
+    },
+    {
+      "task_id": "sympy_sympy_21379",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.445697546005249,
+      "score": -2.445697546005249
+    },
+    {
+      "task_id": "sympy_sympy_21596",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.4518773555755615,
+      "score": 1.4518773555755615
+    },
+    {
+      "task_id": "sympy_sympy_21596",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.552485466003418,
+      "score": -2.552485466003418
+    },
+    {
+      "task_id": "sympy_sympy_21612",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.4423542022705078,
+      "score": 0.4423542022705078
+    },
+    {
+      "task_id": "sympy_sympy_21612",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.024512529373169,
+      "score": -3.024512529373169
+    },
+    {
+      "task_id": "sympy_sympy_21847",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.1036183834075928,
+      "score": 3.1036183834075928
+    },
+    {
+      "task_id": "sympy_sympy_21847",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.0403892993927,
+      "score": -2.0403892993927
+    },
+    {
+      "task_id": "sympy_sympy_21930",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -4.412802696228027,
+      "score": 4.412802696228027
+    },
+    {
+      "task_id": "sympy_sympy_21930",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.5544114112854004,
+      "score": -0.5544114112854004
+    },
+    {
+      "task_id": "sympy_sympy_22080",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2295687198638916,
+      "score": 3.2295687198638916
+    },
+    {
+      "task_id": "sympy_sympy_22080",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.6524076461791992,
+      "score": -1.6524076461791992
+    },
+    {
+      "task_id": "sympy_sympy_22456",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.957465410232544,
+      "score": 0.957465410232544
+    },
+    {
+      "task_id": "sympy_sympy_22456",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.074167013168335,
+      "score": -3.074167013168335
+    },
+    {
+      "task_id": "sympy_sympy_22714",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.292346477508545,
+      "score": 1.292346477508545
+    },
+    {
+      "task_id": "sympy_sympy_22714",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.6288325786590576,
+      "score": -0.6288325786590576
+    },
+    {
+      "task_id": "sympy_sympy_22914",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.30817413330078125,
+      "score": 0.30817413330078125
+    },
+    {
+      "task_id": "sympy_sympy_22914",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 4.0684494972229,
+      "score": -4.0684494972229
+    },
+    {
+      "task_id": "sympy_sympy_23262",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.7458715438842773,
+      "score": 1.7458715438842773
+    },
+    {
+      "task_id": "sympy_sympy_23262",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.9315115213394165,
+      "score": -1.9315115213394165
+    },
+    {
+      "task_id": "sympy_sympy_23413",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -3.2193527221679688,
+      "score": 3.2193527221679688
+    },
+    {
+      "task_id": "sympy_sympy_23413",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.911634683609009,
+      "score": -2.911634683609009
+    },
+    {
+      "task_id": "sympy_sympy_23534",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.2192459106445312,
+      "score": 2.2192459106445312
+    },
+    {
+      "task_id": "sympy_sympy_23534",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.367473840713501,
+      "score": -1.367473840713501
+    },
+    {
+      "task_id": "sympy_sympy_23824",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7838807106018066,
+      "score": 2.7838807106018066
+    },
+    {
+      "task_id": "sympy_sympy_23824",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.2385420799255371,
+      "score": -0.2385420799255371
+    },
+    {
+      "task_id": "sympy_sympy_23950",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9856719970703125,
+      "score": 1.9856719970703125
+    },
+    {
+      "task_id": "sympy_sympy_23950",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.9350080490112305,
+      "score": -0.9350080490112305
+    },
+    {
+      "task_id": "sympy_sympy_24066",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.9448597431182861,
+      "score": 0.9448597431182861
+    },
+    {
+      "task_id": "sympy_sympy_24066",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.792558193206787,
+      "score": -1.792558193206787
+    },
+    {
+      "task_id": "sympy_sympy_24213",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.8276026248931885,
+      "score": 1.8276026248931885
+    },
+    {
+      "task_id": "sympy_sympy_24213",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 0.7299289703369141,
+      "score": -0.7299289703369141
+    },
+    {
+      "task_id": "sympy_sympy_24443",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.8292696475982666,
+      "score": 0.8292696475982666
+    },
+    {
+      "task_id": "sympy_sympy_24443",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.3500452041625977,
+      "score": -3.3500452041625977
+    },
+    {
+      "task_id": "sympy_sympy_24539",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -0.865807056427002,
+      "score": 0.865807056427002
+    },
+    {
+      "task_id": "sympy_sympy_24539",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 3.041727304458618,
+      "score": -3.041727304458618
+    },
+    {
+      "task_id": "sympy_sympy_24562",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -2.7877562046051025,
+      "score": 2.7877562046051025
+    },
+    {
+      "task_id": "sympy_sympy_24562",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 2.4177322387695312,
+      "score": -2.4177322387695312
+    },
+    {
+      "task_id": "sympy_sympy_24661",
+      "condition": "buggy",
+      "variant": "code_tests",
+      "projection": -1.9305710792541504,
+      "score": 1.9305710792541504
+    },
+    {
+      "task_id": "sympy_sympy_24661",
+      "condition": "fixed",
+      "variant": "code_tests",
+      "projection": 1.4140136241912842,
+      "score": -1.4140136241912842
+    }
+  ]
+}

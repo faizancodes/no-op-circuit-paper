@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_choice_value_hash (model_forms.test_modelchoicefield.ModelChoiceFieldTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_choice_value_hash (model_forms.test_modelchoicefield.ModelChoiceFieldTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 23 passed in 0.04s =========================

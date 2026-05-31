@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_inclusion_tag_errors (template_tests.test_custom.InclusionTagTests) - AssertionError: behaviour does not match expected output
+FAILED test_inclusion_tags (template_tests.test_custom.InclusionTagTests) - AssertionError: behaviour does not match expected output
+FAILED test_simple_tag_errors (template_tests.test_custom.SimpleTagTests) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_inclusion_tag_errors (template_tests.test_custom.InclusionTagTests) - AssertionError: behaviour does not match expected output
+FAILED test_inclusion_tags (template_tests.test_custom.InclusionTagTests) - AssertionError: behaviour does not match expected output
+FAILED test_simple_tag_errors (template_tests.test_custom.SimpleTagTests) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 18 passed in 0.04s =========================

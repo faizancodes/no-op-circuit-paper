@@ -1,0 +1,13 @@
+task_id: nested_list_isolation
+description: Appending to a copied nested list modifies the original list
+issue_text: 'When I use `duplicate_schedule()` to create a copy of a weekly schedule
+  and then append an event to one of the days in the copy, the same event also appears
+  in the original schedule. The two schedules should be independent after duplication.
+
+  '
+primary_file: schedule.py
+test_command: pytest -q test_schedule.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: shallow_copy_bug

@@ -1,0 +1,35 @@
+FF..                                                                     [100%]
+=================================== FAILURES ===================================
+________________________ test_first_result_newest_book _________________________
+
+    def test_first_result_newest_book():
+        books = [
+            {'title': 'Old Book', 'year': 1990},
+            {'title': 'New Book', 'year': 2020},
+            {'title': 'Middle Book', 'year': 2005}
+        ]
+        result = sort_books_by_year(books)
+>       assert result[0]['year'] == 2020
+E       assert 1990 == 2020
+
+test_library.py:10: AssertionError
+____________________________ test_descending_order _____________________________
+
+    def test_descending_order():
+        books = [
+            {'title': 'Book A', 'year': 2000},
+            {'title': 'Book B', 'year': 2015},
+            {'title': 'Book C', 'year': 1995}
+        ]
+        result = sort_books_by_year(books)
+>       assert [b['year'] for b in result] == [2015, 2000, 1995]
+E       assert [1995, 2000, 2015] == [2015, 2000, 1995]
+E         
+E         At index 0 diff: 1995 != 2015
+E         Use -v to get more diff
+
+test_library.py:19: AssertionError
+=========================== short test summary info ============================
+FAILED test_library.py::test_first_result_newest_book - assert 1990 == 2020
+FAILED test_library.py::test_descending_order - assert [1995, 2000, 2015] == ...
+2 failed, 2 passed in 0.01s

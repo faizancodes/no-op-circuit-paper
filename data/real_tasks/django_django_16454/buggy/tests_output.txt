@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_subparser_error_formatting (user_commands.tests.CommandRunTests.test_subparser_error_formatting) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_subparser_error_formatting (user_commands.tests.CommandRunTests.test_subparser_error_formatting) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 45 passed in 0.04s =========================

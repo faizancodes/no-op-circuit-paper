@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/impute/tests/test_impute.py::test_iterative_imputer_constant_fill_value - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/impute/tests/test_impute.py::test_iterative_imputer_constant_fill_value - AssertionError: behaviour does not match expected output
+========================= 1 failed, 214 passed in 0.04s =========================

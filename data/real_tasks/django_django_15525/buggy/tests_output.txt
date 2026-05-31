@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED Natural keys with foreing keys in dependencies works in a multiple - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED Natural keys with foreing keys in dependencies works in a multiple - AssertionError: behaviour does not match expected output
+========================= 1 failed, 53 passed in 0.04s =========================

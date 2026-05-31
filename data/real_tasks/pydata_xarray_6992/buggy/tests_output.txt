@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_dataarray.py::TestDataArray::test_reset_index - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_dataset.py::TestDataset::test_reset_index - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_dataset.py::TestDataset::test_reset_index_drop_dims - AssertionError: behaviour does not match expected output
+... and 9 more failures (truncated)
+=========================== short test summary info ============================
+FAILED xarray/tests/test_dataarray.py::TestDataArray::test_reset_index - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_dataset.py::TestDataset::test_reset_index - AssertionError: behaviour does not match expected output
+FAILED xarray/tests/test_dataset.py::TestDataset::test_reset_index_drop_dims - AssertionError: behaviour does not match expected output
+... and 9 more failures (truncated)
+========================= 12 failed, 945 passed in 0.04s =========================

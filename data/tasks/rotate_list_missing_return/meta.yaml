@@ -1,0 +1,14 @@
+task_id: rotate_list_missing_return
+description: rotate_list() returns None instead of the rotated list
+issue_text: 'The `rotate_list()` function doesn''t return the rotated list. When I
+  call `rotate_list([1, 2, 3], 1)` it returns `None` instead of `[3, 1, 2]`. The function
+  appears to compute the rotation correctly internally but doesn''t give back the
+  result.
+
+  '
+primary_file: rotator.py
+test_command: pytest -q test_rotator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_return

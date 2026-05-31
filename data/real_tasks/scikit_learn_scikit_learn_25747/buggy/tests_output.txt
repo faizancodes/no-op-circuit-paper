@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/utils/tests/test_set_output.py::test_set_output_pandas_keep_index - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/utils/tests/test_set_output.py::test_set_output_pandas_keep_index - AssertionError: behaviour does not match expected output
+========================= 1 failed, 14 passed in 0.04s =========================

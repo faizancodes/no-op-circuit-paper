@@ -1,0 +1,50 @@
+FFF.F                                                                    [100%]
+=================================== FAILURES ===================================
+____________________________ test_single_delimiter _____________________________
+
+    def test_single_delimiter():
+>       assert extract_middle('|') == '|'
+E       AssertionError: assert '' == '|'
+E         
+E         - |
+
+test_text_extractor.py:4: AssertionError
+_______________________ test_two_delimiters_with_content _______________________
+
+    def test_two_delimiters_with_content():
+>       assert extract_middle('|hello|') == '|hello|'
+E       AssertionError: assert '|hello' == '|hello|'
+E         
+E         - |hello|
+E         ?       -
+E         + |hello
+
+test_text_extractor.py:7: AssertionError
+___________________________ test_multiple_delimiters ___________________________
+
+    def test_multiple_delimiters():
+>       assert extract_middle('start |a| middle |b| end') == '|a| middle |b|'
+E       AssertionError: assert '|a| middle |b' == '|a| middle |b|'
+E         
+E         - |a| middle |b|
+E         ?              -
+E         + |a| middle |b
+
+test_text_extractor.py:10: AssertionError
+_________________________ test_delimiter_at_boundaries _________________________
+
+    def test_delimiter_at_boundaries():
+>       assert extract_middle('|x|', '|') == '|x|'
+E       AssertionError: assert '|x' == '|x|'
+E         
+E         - |x|
+E         ?   -
+E         + |x
+
+test_text_extractor.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_text_extractor.py::test_single_delimiter - AssertionError: assert...
+FAILED test_text_extractor.py::test_two_delimiters_with_content - AssertionEr...
+FAILED test_text_extractor.py::test_multiple_delimiters - AssertionError: ass...
+FAILED test_text_extractor.py::test_delimiter_at_boundaries - AssertionError:...
+4 failed, 1 passed in 0.01s

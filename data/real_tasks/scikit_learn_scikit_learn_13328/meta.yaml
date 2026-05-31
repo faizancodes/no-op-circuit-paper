@@ -1,0 +1,32 @@
+task_id: scikit_learn_scikit_learn_13328
+description: 'SWE-bench_Verified instance scikit-learn__scikit-learn-13328 (repo:
+  scikit-learn/scikit-learn)'
+issue_text: "TypeError when supplying a boolean X to HuberRegressor fit\n#### Description\r\
+  \n`TypeError` when fitting `HuberRegressor` with boolean predictors.\r\n\r\n####\
+  \ Steps/Code to Reproduce\r\n\r\n```python\r\nimport numpy as np\r\nfrom sklearn.datasets\
+  \ import make_regression\r\nfrom sklearn.linear_model import HuberRegressor\r\n\r\
+  \n# Random data\r\nX, y, coef = make_regression(n_samples=200, n_features=2, noise=4.0,\
+  \ coef=True, random_state=0)\r\nX_bool = X > 0\r\nX_bool_as_float = np.asarray(X_bool,\
+  \ dtype=float)\r\n```\r\n\r\n```python\r\n# Works\r\nhuber = HuberRegressor().fit(X,\
+  \ y)\r\n# Fails (!)\r\nhuber = HuberRegressor().fit(X_bool, y)\r\n# Also works\r\
+  \nhuber = HuberRegressor().fit(X_bool_as_float, y)\r\n```\r\n\r\n#### Expected Results\r\
+  \nNo error is thrown when `dtype` of `X` is `bool` (second line of code in the snipped\
+  \ above, `.fit(X_bool, y)`)\r\nBoolean array is expected to be converted to `float`\
+  \ by `HuberRegressor.fit` as it is done by, say `LinearRegression`.\r\n\r\n####\
+  \ Actual Results\r\n\r\n`TypeError` is thrown:\r\n\r\n```\r\n---------------------------------------------------------------------------\r\
+  \nTypeError                                 Traceback (most recent call last)\r\n\
+  <ipython-input-5-39e33e1adc6f> in <module>\r\n----> 1 huber = HuberRegressor().fit(X_bool,\
+  \ y)\r\n\r\n~/.virtualenvs/newest-sklearn/lib/python3.7/site-packages/sklearn/linear_model/huber.py\
+  \ in fit(self, X, y, sample_weight)\r\n    286             args=(X, y, self.epsilon,\
+  \ self.alpha, sample_weight),\r\n    287             maxiter=self.max_iter, pgtol=self.tol,\
+  \ bounds=bo\u2026\n"
+primary_file: huber.py
+test_command: pytest -q sklearn/linear_model/tests/test_huber.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: scikit-learn__scikit-learn-13328
+swe_bench_repo: scikit-learn/scikit-learn
+swe_bench_base_commit: 37b0e66c871e8fb032a9c7086b2a1d5419838154
+swe_bench_modified_path: sklearn/linear_model/huber.py

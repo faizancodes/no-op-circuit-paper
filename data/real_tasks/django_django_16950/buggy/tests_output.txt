@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED If form data is provided, a parent's auto-generated alternate key is - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED If form data is provided, a parent's auto-generated alternate key is - AssertionError: behaviour does not match expected output
+========================= 1 failed, 3 passed in 0.04s =========================

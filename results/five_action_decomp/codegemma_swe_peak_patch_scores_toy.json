@@ -1,0 +1,2280 @@
+{
+  "model": "google/codegemma-7b-it",
+  "tasks": "toy",
+  "variant": "code_tests",
+  "n_pairs": 49,
+  "seed": 0,
+  "stratify_by_repo": true,
+  "cells": [
+    [
+      26,
+      -1
+    ]
+  ],
+  "action_names": [
+    "view",
+    "grep",
+    "test",
+    "edit",
+    "noop"
+  ],
+  "abstain_word": "noop",
+  "task_ids": [
+    "accumulate_items_mutable_default",
+    "age_verification_boundary",
+    "auth_role_check_case",
+    "case_sensitive_role_check",
+    "color_name_validator",
+    "extract_middle_content",
+    "factorial_off_by_one",
+    "flatten_empty_list",
+    "group_by_empty_input",
+    "lerp_reversed_endpoints",
+    "loan_monthly_payment",
+    "lookup_case_sensitive_default",
+    "matrix_transpose_missing_return",
+    "median_empty_list",
+    "mutable_default_argument_collect_tags",
+    "nested_list_isolation",
+    "paginate_results_off_by_one",
+    "parser_empty_input",
+    "partition_chunks_off_by_one",
+    "partition_list_exclude_last",
+    "password_length_validator",
+    "pythagorean_distance_wrong_arithmetic",
+    "quadratic_discriminant_wrong_sign",
+    "rank_competitors_wrong_order",
+    "register_action_mutable_default",
+    "reverse_words_missing_return",
+    "rotate_list_elements",
+    "rotate_list_items",
+    "rotate_list_missing_return",
+    "sanitize_filename_trailing_char",
+    "shallow_copy_bug_apply_overrides",
+    "shallow_copy_config_merge",
+    "shallow_copy_nested_list",
+    "sliding_window_max_off_by_one",
+    "sort_products_wrong_order",
+    "sphere_volume_wrong_operator",
+    "state_tracker_mutable_default",
+    "string_matcher_case_default",
+    "string_truncate_ellipsis",
+    "strip_prefix_empty_result",
+    "title_case_converter_missing_return",
+    "tokenize_empty_input",
+    "triangle_area_wrong_arithmetic",
+    "validate_file_extension",
+    "validate_range_swapped",
+    "validate_range_swapped_bounds",
+    "word_list_tail_slice",
+    "wrong_sort_order_variant_4baba0",
+    "wrong_sort_order_variant_719107"
+  ],
+  "rows": [
+    {
+      "task_id": "accumulate_items_mutable_default",
+      "repo": "accumulate/items_mutable",
+      "buggy_seq": 1034,
+      "fixed_seq": 977,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 288.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 290.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "age_verification_boundary",
+      "repo": "age/verification",
+      "buggy_seq": 930,
+      "fixed_seq": 948,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 304.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "auth_role_check_case",
+      "repo": "auth/role_check",
+      "buggy_seq": 964,
+      "fixed_seq": 763,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "clean_fixed_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 290.0,
+            "edit": 300.0,
+            "noop": 284.0
+          },
+          "b2f_logits": {
+            "view": 290.0,
+            "grep": 288.0,
+            "test": 290.0,
+            "edit": 298.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "case_sensitive_role_check",
+      "repo": "case/sensitive_role",
+      "buggy_seq": 930,
+      "fixed_seq": 1232,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "color_name_validator",
+      "repo": "color/name",
+      "buggy_seq": 891,
+      "fixed_seq": 970,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 298.0,
+            "grep": 296.0,
+            "test": 296.0,
+            "edit": 304.0,
+            "noop": 288.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 304.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "extract_middle_content",
+      "repo": "extract/middle",
+      "buggy_seq": 1198,
+      "fixed_seq": 955,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 300.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 304.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 298.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 304.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "factorial_off_by_one",
+      "repo": "factorial/off_by",
+      "buggy_seq": 946,
+      "fixed_seq": 919,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 282.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 284.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "flatten_empty_list",
+      "repo": "flatten/empty",
+      "buggy_seq": 886,
+      "fixed_seq": 1001,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "group_by_empty_input",
+      "repo": "group/by_empty",
+      "buggy_seq": 976,
+      "fixed_seq": 989,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 298.0,
+            "grep": 296.0,
+            "test": 296.0,
+            "edit": 306.0,
+            "noop": 290.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "lerp_reversed_endpoints",
+      "repo": "lerp/reversed",
+      "buggy_seq": 1323,
+      "fixed_seq": 1077,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "clean_fixed_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 292.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 300.0,
+            "grep": 298.0,
+            "test": 298.0,
+            "edit": 306.0,
+            "noop": 292.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 288.0,
+            "test": 290.0,
+            "edit": 296.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "loan_monthly_payment",
+      "repo": "loan/monthly",
+      "buggy_seq": 1566,
+      "fixed_seq": 1072,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 296.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 306.0,
+            "noop": 288.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 298.0,
+            "edit": 304.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "lookup_case_sensitive_default",
+      "repo": "lookup/case_sensitive",
+      "buggy_seq": 997,
+      "fixed_seq": 1123,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 298.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 288.0
+          },
+          "b2f_logits": {
+            "view": 290.0,
+            "grep": 288.0,
+            "test": 290.0,
+            "edit": 298.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "matrix_transpose_missing_return",
+      "repo": "matrix/transpose_missing",
+      "buggy_seq": 1325,
+      "fixed_seq": 1059,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 296.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 288.0,
+            "test": 290.0,
+            "edit": 298.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "median_empty_list",
+      "repo": "median/empty",
+      "buggy_seq": 905,
+      "fixed_seq": 836,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 298.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 304.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 304.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "mutable_default_argument_collect_tags",
+      "repo": "mutable/default_argument_collect",
+      "buggy_seq": 1033,
+      "fixed_seq": 908,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 288.0,
+        "grep": 286.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "clean_fixed_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 290.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 282.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 288.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "nested_list_isolation",
+      "repo": "nested/list",
+      "buggy_seq": 1375,
+      "fixed_seq": 1152,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 286.0,
+        "grep": 284.0,
+        "test": 286.0,
+        "edit": 290.0,
+        "noop": 284.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 284.0,
+            "grep": 284.0,
+            "test": 284.0,
+            "edit": 290.0,
+            "noop": 282.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "paginate_results_off_by_one",
+      "repo": "paginate/results_off_by",
+      "buggy_seq": 1228,
+      "fixed_seq": 1259,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 306.0,
+        "noop": 288.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 290.0,
+        "test": 294.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 282.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 306.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "parser_empty_input",
+      "repo": "parser/empty",
+      "buggy_seq": 664,
+      "fixed_seq": 736,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 302.0,
+            "grep": 298.0,
+            "test": 300.0,
+            "edit": 308.0,
+            "noop": 294.0
+          },
+          "b2f_logits": {
+            "view": 290.0,
+            "grep": 288.0,
+            "test": 290.0,
+            "edit": 298.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "partition_chunks_off_by_one",
+      "repo": "partition/chunks_off_by",
+      "buggy_seq": 1182,
+      "fixed_seq": 1153,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 304.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "partition_list_exclude_last",
+      "repo": "partition/list_exclude",
+      "buggy_seq": 1389,
+      "fixed_seq": 1118,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 286.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 290.0,
+            "grep": 288.0,
+            "test": 288.0,
+            "edit": 296.0,
+            "noop": 284.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 294.0,
+            "edit": 304.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "password_length_validator",
+      "repo": "password/length",
+      "buggy_seq": 765,
+      "fixed_seq": 909,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "clean_fixed_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 292.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 300.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 306.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 298.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 306.0,
+            "noop": 290.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "pythagorean_distance_wrong_arithmetic",
+      "repo": "pythagorean/distance_wrong",
+      "buggy_seq": 1475,
+      "fixed_seq": 1002,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 284.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "quadratic_discriminant_wrong_sign",
+      "repo": "quadratic/discriminant_wrong",
+      "buggy_seq": 1109,
+      "fixed_seq": 1019,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 292.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 290.0,
+            "edit": 300.0,
+            "noop": 284.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rank_competitors_wrong_order",
+      "repo": "rank/competitors_wrong",
+      "buggy_seq": 1136,
+      "fixed_seq": 996,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 286.0,
+            "test": 288.0,
+            "edit": 294.0,
+            "noop": 278.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "register_action_mutable_default",
+      "repo": "register/action_mutable",
+      "buggy_seq": 881,
+      "fixed_seq": 1131,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "clean_fixed_logits": {
+        "view": 288.0,
+        "grep": 288.0,
+        "test": 288.0,
+        "edit": 294.0,
+        "noop": 282.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 288.0,
+            "grep": 288.0,
+            "test": 288.0,
+            "edit": 294.0,
+            "noop": 282.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 288.0,
+            "test": 290.0,
+            "edit": 296.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "reverse_words_missing_return",
+      "repo": "reverse/words_missing",
+      "buggy_seq": 1081,
+      "fixed_seq": 945,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 292.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 292.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_elements",
+      "repo": "rotate/list",
+      "buggy_seq": 1105,
+      "fixed_seq": 893,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 308.0,
+        "noop": 292.0
+      },
+      "clean_fixed_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 302.0,
+            "grep": 298.0,
+            "test": 300.0,
+            "edit": 306.0,
+            "noop": 292.0
+          },
+          "b2f_logits": {
+            "view": 302.0,
+            "grep": 300.0,
+            "test": 304.0,
+            "edit": 310.0,
+            "noop": 294.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_items",
+      "repo": "rotate/list",
+      "buggy_seq": 1143,
+      "fixed_seq": 962,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 296.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 296.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "rotate_list_missing_return",
+      "repo": "rotate/list_missing",
+      "buggy_seq": 1363,
+      "fixed_seq": 1032,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 290.0,
+            "edit": 298.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sanitize_filename_trailing_char",
+      "repo": "sanitize/filename_trailing",
+      "buggy_seq": 1332,
+      "fixed_seq": 1124,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 292.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 290.0,
+            "edit": 300.0,
+            "noop": 284.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_bug_apply_overrides",
+      "repo": "shallow/copy_bug_apply",
+      "buggy_seq": 1360,
+      "fixed_seq": 1232,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 280.0
+      },
+      "clean_fixed_logits": {
+        "view": 298.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 308.0,
+        "noop": 294.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 298.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 306.0,
+            "noop": 292.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 288.0,
+            "test": 288.0,
+            "edit": 296.0,
+            "noop": 280.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_config_merge",
+      "repo": "shallow/copy_config",
+      "buggy_seq": 1013,
+      "fixed_seq": 1079,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 292.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 294.0,
+            "edit": 304.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "shallow_copy_nested_list",
+      "repo": "shallow/copy_nested",
+      "buggy_seq": 1094,
+      "fixed_seq": 1179,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 288.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 292.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 290.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 284.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sliding_window_max_off_by_one",
+      "repo": "sliding/window_max_off_by",
+      "buggy_seq": 1509,
+      "fixed_seq": 1135,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 300.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 296.0,
+        "noop": 286.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 290.0,
+            "test": 290.0,
+            "edit": 294.0,
+            "noop": 284.0
+          },
+          "b2f_logits": {
+            "view": 302.0,
+            "grep": 300.0,
+            "test": 300.0,
+            "edit": 308.0,
+            "noop": 292.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sort_products_wrong_order",
+      "repo": "sort/products_wrong",
+      "buggy_seq": 1228,
+      "fixed_seq": 1125,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "clean_fixed_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 290.0,
+            "grep": 288.0,
+            "test": 288.0,
+            "edit": 298.0,
+            "noop": 282.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 286.0,
+            "test": 288.0,
+            "edit": 296.0,
+            "noop": 280.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "sphere_volume_wrong_operator",
+      "repo": "sphere/volume_wrong",
+      "buggy_seq": 1143,
+      "fixed_seq": 909,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 288.0,
+        "edit": 296.0,
+        "noop": 278.0
+      },
+      "clean_fixed_logits": {
+        "view": 292.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 296.0,
+        "noop": 282.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 290.0,
+            "grep": 286.0,
+            "test": 290.0,
+            "edit": 296.0,
+            "noop": 280.0
+          },
+          "b2f_logits": {
+            "view": 288.0,
+            "grep": 286.0,
+            "test": 290.0,
+            "edit": 296.0,
+            "noop": 280.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "state_tracker_mutable_default",
+      "repo": "state/tracker_mutable",
+      "buggy_seq": 968,
+      "fixed_seq": 1041,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 288.0
+          },
+          "b2f_logits": {
+            "view": 292.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "string_matcher_case_default",
+      "repo": "string/matcher_case",
+      "buggy_seq": 755,
+      "fixed_seq": 965,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 302.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 300.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 304.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "string_truncate_ellipsis",
+      "repo": "string/truncate",
+      "buggy_seq": 806,
+      "fixed_seq": 911,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 290.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 280.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 292.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 290.0,
+            "grep": 290.0,
+            "test": 290.0,
+            "edit": 298.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "strip_prefix_empty_result",
+      "repo": "strip/prefix_empty",
+      "buggy_seq": 951,
+      "fixed_seq": 849,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 296.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 304.0,
+        "noop": 288.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 298.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 296.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 304.0,
+            "noop": 288.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "title_case_converter_missing_return",
+      "repo": "title/case_converter_missing",
+      "buggy_seq": 1191,
+      "fixed_seq": 940,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 290.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 298.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 300.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 298.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 288.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "tokenize_empty_input",
+      "repo": "tokenize/empty",
+      "buggy_seq": 711,
+      "fixed_seq": 876,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 292.0,
+            "edit": 300.0,
+            "noop": 288.0
+          },
+          "b2f_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 300.0,
+            "noop": 284.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "triangle_area_wrong_arithmetic",
+      "repo": "triangle/area_wrong",
+      "buggy_seq": 1598,
+      "fixed_seq": 1314,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 288.0,
+        "test": 290.0,
+        "edit": 298.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 292.0,
+        "edit": 302.0,
+        "noop": 284.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 290.0,
+            "test": 290.0,
+            "edit": 300.0,
+            "noop": 282.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 290.0,
+            "test": 292.0,
+            "edit": 300.0,
+            "noop": 282.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_file_extension",
+      "repo": "validate/file",
+      "buggy_seq": 987,
+      "fixed_seq": 1051,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 300.0,
+        "grep": 298.0,
+        "test": 298.0,
+        "edit": 304.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 300.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 304.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_range_swapped",
+      "repo": "validate/range",
+      "buggy_seq": 1071,
+      "fixed_seq": 851,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 296.0,
+        "grep": 296.0,
+        "test": 296.0,
+        "edit": 306.0,
+        "noop": 288.0
+      },
+      "clean_fixed_logits": {
+        "view": 302.0,
+        "grep": 300.0,
+        "test": 302.0,
+        "edit": 310.0,
+        "noop": 294.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 302.0,
+            "grep": 298.0,
+            "test": 300.0,
+            "edit": 308.0,
+            "noop": 294.0
+          },
+          "b2f_logits": {
+            "view": 298.0,
+            "grep": 296.0,
+            "test": 298.0,
+            "edit": 308.0,
+            "noop": 290.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "validate_range_swapped_bounds",
+      "repo": "validate/range_swapped",
+      "buggy_seq": 1063,
+      "fixed_seq": 937,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 292.0,
+        "edit": 300.0,
+        "noop": 284.0
+      },
+      "clean_fixed_logits": {
+        "view": 298.0,
+        "grep": 296.0,
+        "test": 298.0,
+        "edit": 306.0,
+        "noop": 290.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 296.0,
+            "grep": 296.0,
+            "test": 296.0,
+            "edit": 304.0,
+            "noop": 290.0
+          },
+          "b2f_logits": {
+            "view": 292.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 302.0,
+            "noop": 284.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "word_list_tail_slice",
+      "repo": "word/list_tail",
+      "buggy_seq": 1119,
+      "fixed_seq": 1006,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 292.0,
+        "grep": 290.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 282.0
+      },
+      "clean_fixed_logits": {
+        "view": 296.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 284.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_4baba0",
+      "repo": "wrong/sort_order_variant",
+      "buggy_seq": 1424,
+      "fixed_seq": 1198,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 294.0,
+        "grep": 294.0,
+        "test": 296.0,
+        "edit": 302.0,
+        "noop": 286.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 302.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 292.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 300.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 294.0,
+            "grep": 294.0,
+            "test": 296.0,
+            "edit": 302.0,
+            "noop": 286.0
+          }
+        }
+      }
+    },
+    {
+      "task_id": "wrong_sort_order_variant_719107",
+      "repo": "wrong/sort_order_variant",
+      "buggy_seq": 1263,
+      "fixed_seq": 1088,
+      "action_ids": {
+        "view": 2116,
+        "grep": 72374,
+        "test": 2121,
+        "edit": 9387,
+        "noop": 137734
+      },
+      "clean_buggy_logits": {
+        "view": 286.0,
+        "grep": 286.0,
+        "test": 286.0,
+        "edit": 294.0,
+        "noop": 278.0
+      },
+      "clean_fixed_logits": {
+        "view": 294.0,
+        "grep": 292.0,
+        "test": 294.0,
+        "edit": 300.0,
+        "noop": 288.0
+      },
+      "patched": {
+        "L26_pos-1": {
+          "f2b_logits": {
+            "view": 294.0,
+            "grep": 292.0,
+            "test": 294.0,
+            "edit": 298.0,
+            "noop": 286.0
+          },
+          "b2f_logits": {
+            "view": 286.0,
+            "grep": 286.0,
+            "test": 288.0,
+            "edit": 296.0,
+            "noop": 278.0
+          }
+        }
+      }
+    }
+  ]
+}

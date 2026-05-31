@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED astropy/units/tests/test_quantity.py::TestQuantityCreation::test_preserve_dtype - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/units/tests/test_quantity.py::TestQuantityCreation::test_preserve_dtype - AssertionError: behaviour does not match expected output
+========================= 1 failed, 80 passed in 0.04s =========================

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/ensemble/_hist_gradient_boosting/tests/test_gradient_boosting.py::test_string_target_early_stopping[None] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/ensemble/_hist_gradient_boosting/tests/test_gradient_boosting.py::test_string_target_early_stopping[None] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 63 passed in 0.04s =========================

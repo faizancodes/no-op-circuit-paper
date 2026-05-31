@@ -1,0 +1,1 @@
+Sample efficiency of v_noop on Qwen2.5-Coder-1.5B. AUC on the full 500-instance SWE-bench Verified evaluation set, as a function of the number of paired buggy/fixed toy tasks used to derive v_noop. Mean ± 1 std across 10 random subsamples per N; the full N=49 set is deterministic. The curve saturates at N ≈ 10 (mean AUC 0.988 vs full-set 0.989); even N=1 mean AUC is 0.954.

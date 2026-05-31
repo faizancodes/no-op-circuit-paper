@@ -1,0 +1,14 @@
+task_id: quadratic_discriminant_wrong_sign
+description: quadratic_discriminant() returns incorrect values due to wrong arithmetic
+  operator
+issue_text: "The `quadratic_discriminant(a, b, c)` function is returning incorrect\
+  \ results. For example, `quadratic_discriminant(1, -3, 2)` returns `-7` but the\
+  \ correct discriminant should be `1`. The discriminant formula is b\xB2 - 4ac, but\
+  \ the function appears to be computing something else. Please fix the calculation\
+  \ to match the standard discriminant formula.\n"
+primary_file: discriminant.py
+test_command: pytest -q test_discriminant.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_arithmetic

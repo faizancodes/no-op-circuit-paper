@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED testing/test_skipping.py::TestXFail::test_dynamic_xfail_set_during_runtest_failed - AssertionError: behaviour does not match expected output
+FAILED testing/test_skipping.py::TestXFail::test_dynamic_xfail_set_during_runtest_passed_strict - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/test_skipping.py::TestXFail::test_dynamic_xfail_set_during_runtest_failed - AssertionError: behaviour does not match expected output
+FAILED testing/test_skipping.py::TestXFail::test_dynamic_xfail_set_during_runtest_passed_strict - AssertionError: behaviour does not match expected output
+========================= 2 failed, 78 passed in 0.04s =========================

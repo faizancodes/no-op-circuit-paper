@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_mutually_exclusive_group_required_options (user_commands.tests.CommandTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_mutually_exclusive_group_required_options (user_commands.tests.CommandTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 34 passed in 0.04s =========================

@@ -1,0 +1,20 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_docker_socket ______________________________
+
+test_environment.py:87: in test_docker_socket
+    client = docker.from_env()
+E   docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+E   
+E   During handling of the above exception, another exception occurred:
+
+test_environment.py:89: in test_docker_socket
+    assert client.ping() is True
+E   AttributeError: 'NoneType' object has no attribute 'ping'
+E   
+E   Note: /var/run/docker.sock may be stale or permissions changed during CI runner restart
+
+=================================== short test summary info ============================
+FAILED test_environment.py::test_docker_socket - docker.errors.DockerException: Error while fetching server API version
+5 passed, 1 failed in 0.23s

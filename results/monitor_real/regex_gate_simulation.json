@@ -1,0 +1,61 @@
+{
+  "by_model": {
+    "qwen": {
+      "n_pairs": 499,
+      "regex_token": "FAILED",
+      "buckets": {
+        "A_useful_committed": 48,
+        "B_useful_missed_pregate": 451,
+        "C_useful_vetoed": 0,
+        "D_spurious_committed": 0,
+        "E_spurious_avoided_pregate": 414,
+        "F_spurious_blocked": 85
+      },
+      "deployment_metrics": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.0,
+        "edit_proposal_rate_buggy": 0.09619238476953908,
+        "edit_proposal_rate_fixed": 0.17034068136272545,
+        "final_spurious_rate": 0.0
+      }
+    },
+    "codegemma": {
+      "n_pairs": 497,
+      "regex_token": "FAILED",
+      "buckets": {
+        "A_useful_committed": 496,
+        "B_useful_missed_pregate": 1,
+        "C_useful_vetoed": 0,
+        "D_spurious_committed": 0,
+        "E_spurious_avoided_pregate": 6,
+        "F_spurious_blocked": 491
+      },
+      "deployment_metrics": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.0,
+        "edit_proposal_rate_buggy": 0.9979879275653923,
+        "edit_proposal_rate_fixed": 0.9879275653923542,
+        "final_spurious_rate": 0.0
+      }
+    },
+    "deepseek": {
+      "n_pairs": 499,
+      "regex_token": "FAILED",
+      "buckets": {
+        "A_useful_committed": 109,
+        "B_useful_missed_pregate": 390,
+        "C_useful_vetoed": 0,
+        "D_spurious_committed": 0,
+        "E_spurious_avoided_pregate": 422,
+        "F_spurious_blocked": 77
+      },
+      "deployment_metrics": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.0,
+        "edit_proposal_rate_buggy": 0.218436873747495,
+        "edit_proposal_rate_fixed": 0.15430861723446893,
+        "final_spurious_rate": 0.0
+      }
+    }
+  }
+}

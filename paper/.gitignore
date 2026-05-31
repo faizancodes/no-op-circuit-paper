@@ -1,0 +1,11 @@
+# LaTeX build cruft only.
+# The arXiv source/output IS tracked: draft.md, draft.tex, draft.bbl, draft.pdf.
+*.aux
+*.log
+*.out
+*.toc
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+.draft_article*

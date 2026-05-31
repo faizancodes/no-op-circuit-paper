@@ -1,0 +1,15 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_clock_skew ________________________________
+
+test_clock_skew.py:45: in test_clock_skew
+    assert monotonic_delta < 0.001
+E   AssertionError: assert 1.2847623 < 0.001
+E    +  where 1.2847623 = (time.monotonic() - baseline_monotonic)
+E   
+E   Clock skew detected: system clock jumped forward during CI runner migration
+
+=========================== short test summary info ============================
+FAILED test_clock_skew.py::test_clock_skew - AssertionError: assert 1.2847623 < 0.001
+========================= 4 passed, 1 failed in 0.12s ==========================

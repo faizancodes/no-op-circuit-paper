@@ -1,0 +1,20 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_disk_quota ________________________________
+
+self = <test_infra_checks.TestInfraChecks object at 0x7f8a3c4d5e90>
+
+    def test_disk_quota(self):
+        temp_dir = tempfile.mkdtemp()
+        try:
+            # Write 100MB test file to verify disk quota
+            test_file = os.path.join(temp_dir, 'quota_check.dat')
+            with open(test_file, 'wb') as f:
+>               f.write(b'0' * (100 * 1024 * 1024))
+E               OSError: [Errno 28] No space left on device
+
+test_infra_checks.py:47: OSError
+=========================== short test summary info ============================
+FAILED test_infra_checks.py::test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 5 passed, 1 failed in 0.12s ==========================

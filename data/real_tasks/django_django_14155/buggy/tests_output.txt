@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_repr (urlpatterns_reverse.tests.ResolverMatchTests) - AssertionError: behaviour does not match expected output
+FAILED test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) - AssertionError: behaviour does not match expected output
+FAILED test_resolver_match_on_request (urlpatterns_reverse.tests.ResolverMatchTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_repr (urlpatterns_reverse.tests.ResolverMatchTests) - AssertionError: behaviour does not match expected output
+FAILED test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) - AssertionError: behaviour does not match expected output
+FAILED test_resolver_match_on_request (urlpatterns_reverse.tests.ResolverMatchTests) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 89 passed in 0.04s =========================

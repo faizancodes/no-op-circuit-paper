@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED post_processing behaves correctly. - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED post_processing behaves correctly. - AssertionError: behaviour does not match expected output
+========================= 1 failed, 31 passed in 0.04s =========================

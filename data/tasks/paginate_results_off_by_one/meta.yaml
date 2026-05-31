@@ -1,0 +1,15 @@
+task_id: paginate_results_off_by_one
+description: paginate_results() returns one fewer item than expected on the last page
+issue_text: 'When calling `paginate_results(items, page_size, page_num)` for the last
+  page of results, it consistently returns one fewer item than it should. For example,
+  with 10 items and page_size=3, page 4 should return item at index 9 (the last item),
+  but it returns an empty list instead. All other pages work correctly. This makes
+  the last item unreachable through pagination.
+
+  '
+primary_file: paginator.py
+test_command: pytest -q test_paginator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_loop

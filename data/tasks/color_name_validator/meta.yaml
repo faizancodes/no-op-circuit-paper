@@ -1,0 +1,15 @@
+task_id: color_name_validator
+description: validate_color_name() fails to recognize capitalized color names like
+  'Red' or 'BLUE'
+issue_text: 'The `validate_color_name()` function is supposed to accept standard CSS
+  color names, but it rejects valid colors when they are capitalized. For example,
+  `validate_color_name(''Red'')` returns False even though ''red'' is a valid CSS
+  color. The function should accept color names regardless of case.
+
+  '
+primary_file: color_validator.py
+test_command: pytest -q test_color_validator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: case_sensitivity

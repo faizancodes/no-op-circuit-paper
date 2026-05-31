@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_nonexistent_field (admin_checks.tests.SystemChecksTestCase.test_nonexistent_field) - AssertionError: behaviour does not match expected output
+FAILED test_nonexistent_field_on_inline (admin_checks.tests.SystemChecksTestCase.test_nonexistent_field_on_inline) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_nonexistent_field (admin_checks.tests.SystemChecksTestCase.test_nonexistent_field) - AssertionError: behaviour does not match expected output
+FAILED test_nonexistent_field_on_inline (admin_checks.tests.SystemChecksTestCase.test_nonexistent_field_on_inline) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 54 passed in 0.04s =========================

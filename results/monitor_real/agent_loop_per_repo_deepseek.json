@@ -1,0 +1,250 @@
+{
+  "config": {
+    "label": "deepseek",
+    "in_sample_threshold": -16.784202575683594,
+    "held_out_threshold": -16.857351970672607,
+    "n_paired_tasks": 499
+  },
+  "rows": [
+    {
+      "repo": "django_django",
+      "n_tasks": 231,
+      "useful_proposed": 53,
+      "spurious_proposed": 50,
+      "in_sample": {
+        "spurious_edit_reduction": 0.82,
+        "useful_edit_loss": 0.16981132075471697,
+        "spurious_blocked": 41,
+        "useful_killed": 9,
+        "final_spurious_rate": 0.03896103896103896
+      },
+      "held_out": {
+        "spurious_edit_reduction": 0.8,
+        "useful_edit_loss": 0.16981132075471697,
+        "spurious_blocked": 40,
+        "useful_killed": 9,
+        "final_spurious_rate": 0.04329004329004329
+      }
+    },
+    {
+      "repo": "sympy_sympy",
+      "n_tasks": 75,
+      "useful_proposed": 8,
+      "spurious_proposed": 10,
+      "in_sample": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.5,
+        "spurious_blocked": 10,
+        "useful_killed": 4,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.5,
+        "spurious_blocked": 10,
+        "useful_killed": 4,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "sphinx_doc",
+      "n_tasks": 44,
+      "useful_proposed": 15,
+      "spurious_proposed": 6,
+      "in_sample": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.3333333333333333,
+        "spurious_blocked": 6,
+        "useful_killed": 5,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.3333333333333333,
+        "spurious_blocked": 6,
+        "useful_killed": 5,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "matplotlib_matplotlib",
+      "n_tasks": 34,
+      "useful_proposed": 12,
+      "spurious_proposed": 5,
+      "in_sample": {
+        "spurious_edit_reduction": 0.8,
+        "useful_edit_loss": 0.08333333333333333,
+        "spurious_blocked": 4,
+        "useful_killed": 1,
+        "final_spurious_rate": 0.029411764705882353
+      },
+      "held_out": {
+        "spurious_edit_reduction": 0.8,
+        "useful_edit_loss": 0.08333333333333333,
+        "spurious_blocked": 4,
+        "useful_killed": 1,
+        "final_spurious_rate": 0.029411764705882353
+      }
+    },
+    {
+      "repo": "scikit_learn",
+      "n_tasks": 32,
+      "useful_proposed": 3,
+      "spurious_proposed": 1,
+      "in_sample": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 1,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 1,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "pydata_xarray",
+      "n_tasks": 22,
+      "useful_proposed": 4,
+      "spurious_proposed": 0,
+      "in_sample": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "astropy_astropy",
+      "n_tasks": 21,
+      "useful_proposed": 2,
+      "spurious_proposed": 0,
+      "in_sample": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "pytest_dev",
+      "n_tasks": 19,
+      "useful_proposed": 6,
+      "spurious_proposed": 1,
+      "in_sample": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.6666666666666666,
+        "spurious_blocked": 1,
+        "useful_killed": 4,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": 0.6666666666666666,
+        "spurious_blocked": 1,
+        "useful_killed": 4,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "pylint_dev",
+      "n_tasks": 10,
+      "useful_proposed": 4,
+      "spurious_proposed": 2,
+      "in_sample": {
+        "spurious_edit_reduction": 0.5,
+        "useful_edit_loss": 0.75,
+        "spurious_blocked": 1,
+        "useful_killed": 3,
+        "final_spurious_rate": 0.1
+      },
+      "held_out": {
+        "spurious_edit_reduction": 0.5,
+        "useful_edit_loss": 0.75,
+        "spurious_blocked": 1,
+        "useful_killed": 3,
+        "final_spurious_rate": 0.1
+      }
+    },
+    {
+      "repo": "psf_requests",
+      "n_tasks": 8,
+      "useful_proposed": 0,
+      "spurious_proposed": 2,
+      "in_sample": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": NaN,
+        "spurious_blocked": 2,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": 1.0,
+        "useful_edit_loss": NaN,
+        "spurious_blocked": 2,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "mwaskom_seaborn",
+      "n_tasks": 2,
+      "useful_proposed": 2,
+      "spurious_proposed": 0,
+      "in_sample": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": 0.0,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      }
+    },
+    {
+      "repo": "pallets_flask",
+      "n_tasks": 1,
+      "useful_proposed": 0,
+      "spurious_proposed": 0,
+      "in_sample": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": NaN,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      },
+      "held_out": {
+        "spurious_edit_reduction": NaN,
+        "useful_edit_loss": NaN,
+        "spurious_blocked": 0,
+        "useful_killed": 0,
+        "final_spurious_rate": 0.0
+      }
+    }
+  ]
+}

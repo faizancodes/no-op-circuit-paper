@@ -1,0 +1,32 @@
+task_id: pytest_dev_pytest_5787
+description: 'SWE-bench_Verified instance pytest-dev__pytest-5787 (repo: pytest-dev/pytest)'
+issue_text: "exception serialization should include chained exceptions\ngiven some\
+  \ simple tests:\r\n```\r\ndef test_chained_exception_with_from():\r\n    try:\r\n\
+  \        try:\r\n            raise ValueError(11)\r\n        except Exception as\
+  \ e1:\r\n            raise ValueError(12) from e1\r\n    except Exception as e2:\r\
+  \n        raise ValueError(13) from e2\r\n\r\n\r\ndef test_chained_exception_without_from():\r\
+  \n    try:\r\n        try:\r\n            raise ValueError(21)\r\n        except\
+  \ Exception:\r\n            raise ValueError(22)\r\n    except Exception:\r\n  \
+  \      raise ValueError(23)\r\n```\r\nwhen run without xdist it displays whole exception\
+  \ trace nicely :\r\n```\r\n================ FAILURES ==========================\r\
+  \n__________________________ test_chained_exception_with_from _______________________\r\
+  \n\r\n    def test_chained_exception_with_from():\r\n        try:\r\n          \
+  \  try:\r\n>               raise ValueError(11)\r\nE               ValueError: 11\r\
+  \n\r\nbasic/test_basic.py:80: ValueError\r\n\r\nThe above exception was the direct\
+  \ cause of the following exception:\r\n\r\n    def test_chained_exception_with_from():\r\
+  \n        try:\r\n            try:\r\n                raise ValueError(11)\r\n \
+  \           except Exception as e1:\r\n>               raise ValueError(12) from\
+  \ e1\r\nE               ValueError: 12\r\n\r\nbasic/test_basic.py:82: ValueError\r\
+  \n\r\nThe above exception was the direct cause of the following exception:\r\n\r\
+  \n    def test_chained_exception_with_from():\r\n        try:\r\n            try:\r\
+  \n                raise ValueError(11)\r\n            exce\u2026\n"
+primary_file: reports.py
+test_command: pytest -q testing/test_reports.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pytest-dev__pytest-5787
+swe_bench_repo: pytest-dev/pytest
+swe_bench_base_commit: 955e54221008aba577ecbaefa15679f6777d3bf8
+swe_bench_modified_path: src/_pytest/reports.py

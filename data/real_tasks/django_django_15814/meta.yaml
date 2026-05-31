@@ -1,0 +1,33 @@
+task_id: django_django_15814
+description: 'SWE-bench_Verified instance django__django-15814 (repo: django/django)'
+issue_text: "QuerySet.only() after select_related() crash on proxy models.\nDescription\n\
+  \t\nWhen I optimize a query using select_related() and only() methods from the proxy\
+  \ model I encounter an error:\nWindows 10; Python 3.10; Django 4.0.5\nTraceback\
+  \ (most recent call last):\n File \"D:\\study\\django_college\\manage.py\", line\
+  \ 22, in <module>\n\tmain()\n File \"D:\\study\\django_college\\manage.py\", line\
+  \ 18, in main\n\texecute_from_command_line(sys.argv)\n File \"D:\\Anaconda3\\envs\\\
+  django\\lib\\site-packages\\django\\core\\management\\__init__.py\", line 446, in\
+  \ execute_from_command_line\n\tutility.execute()\n File \"D:\\Anaconda3\\envs\\\
+  django\\lib\\site-packages\\django\\core\\management\\__init__.py\", line 440, in\
+  \ execute\n\tself.fetch_command(subcommand).run_from_argv(self.argv)\n File \"D:\\\
+  Anaconda3\\envs\\django\\lib\\site-packages\\django\\core\\management\\base.py\"\
+  , line 414, in run_from_argv\n\tself.execute(*args, **cmd_options)\n File \"D:\\\
+  Anaconda3\\envs\\django\\lib\\site-packages\\django\\core\\management\\base.py\"\
+  , line 460, in execute\n\toutput = self.handle(*args, **options)\n File \"D:\\study\\\
+  django_college\\project\\users\\management\\commands\\test_proxy.py\", line 9, in\
+  \ handle\n\tobjs = list(AnotherModel.objects.select_related(\"custom\").only(\"\
+  custom__name\").all())\n File \"D:\\Anaconda3\\envs\\django\\lib\\site-packages\\\
+  django\\db\\models\\query.py\", line 302, in __len__\n\tself._fetch_all()\n File\
+  \ \"D:\\Anaconda3\\envs\\django\\lib\\site-packages\\django\\db\\models\\query.py\"\
+  , line 1507, in _fetch_all\n\tself._result_cache = list(self._iterable_class(self))\n\
+  \ File \"D:\\A\u2026\n"
+primary_file: query.py
+test_command: pytest -q test_select_related_only (proxy_models.tests.ProxyModelTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-15814
+swe_bench_repo: django/django
+swe_bench_base_commit: 5eb6a2b33d70b9889e1cafa12594ad6f80773d3a
+swe_bench_modified_path: django/db/models/sql/query.py

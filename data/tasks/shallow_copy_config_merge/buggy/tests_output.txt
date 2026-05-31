@@ -1,0 +1,19 @@
+..F.                                                                     [100%]
+=================================== FAILURES ===================================
+______________________ test_result_independent_from_base _______________________
+
+    def test_result_independent_from_base():
+        base = {"server": {"host": "localhost", "port": 8000}}
+        overrides = {"server": {"port": 9000}}
+        result = merge_config(base, overrides)
+        result["server"]["host"] = "example.com"
+>       assert base["server"]["host"] == "localhost"
+E       AssertionError: assert 'example.com' == 'localhost'
+E         
+E         - localhost
+E         + example.com
+
+test_config_merger.py:21: AssertionError
+=========================== short test summary info ============================
+FAILED test_config_merger.py::test_result_independent_from_base - AssertionEr...
+1 failed, 3 passed in 0.01s

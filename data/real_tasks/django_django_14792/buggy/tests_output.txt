@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED The _get_timezone_name() helper must return the offset for fixed offset - AssertionError: behaviour does not match expected output
+FAILED test_is_aware (utils_tests.test_timezone.TimezoneTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED The _get_timezone_name() helper must return the offset for fixed offset - AssertionError: behaviour does not match expected output
+FAILED test_is_aware (utils_tests.test_timezone.TimezoneTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 23 passed in 0.04s =========================

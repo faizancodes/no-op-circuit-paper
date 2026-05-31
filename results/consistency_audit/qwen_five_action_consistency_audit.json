@@ -1,0 +1,88 @@
+{
+  "cell": "L24/pos-1",
+  "old_artifact_local": "results/patch-qwen25_coder_15b_instruc-20260516T051331Z/patch-qwen25_coder_15b_instruc-20260516T051331Z",
+  "old_code_tests_available_locally": false,
+  "old_meta": {
+    "run_id": "patch-qwen25_coder_15b_instruc-20260516T051331Z",
+    "model_name": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "variants_present_locally": [
+      "code"
+    ],
+    "code_tests_available_locally": false,
+    "note": "local artifact is the `code` negative-control variant only; code_tests source archived to HF faizancodes/no-op-circuit-caches"
+  },
+  "paper_reference_values": {
+    "source": "paper \u00a74.1/\u00a74.3 (original renderer; code_tests artifact HF-archived, not local)",
+    "clean_BminusF_gap_all49": 0.659,
+    "f2b_all49_one_way": 0.648,
+    "f2b_43task_bidirectional": 0.69,
+    "b2f_43task_bidirectional": 0.64
+  },
+  "new_artifact": "results/five_action_decomp/qwen_patching_five_action_scores.json",
+  "new_meta": {
+    "model_name": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "tasks": "toy",
+    "variant": "code_tests",
+    "cells": [
+      [
+        24,
+        -1
+      ],
+      [
+        12,
+        -1
+      ],
+      [
+        24,
+        -8
+      ]
+    ],
+    "action_names": null,
+    "abstain_word": null,
+    "seed": 0
+  },
+  "new_run_summary": {
+    "clean_buggy_stat": {
+      "n": 49,
+      "mean": 3.1619897959183674,
+      "median": 3.25,
+      "min": 2.4375,
+      "max": 3.9375,
+      "pct_positive": 1.0
+    },
+    "clean_fixed_stat": {
+      "n": 49,
+      "mean": 2.6301020408163267,
+      "median": 2.6875,
+      "min": 1.625,
+      "max": 3.5625,
+      "pct_positive": 1.0
+    },
+    "gap_stat": {
+      "n": 49,
+      "mean": 0.5318877551020408,
+      "median": 0.5625,
+      "min": -0.125,
+      "max": 1.375,
+      "pct_positive": 0.8775510204081632
+    },
+    "f2b_shift_stat": {
+      "n": 49,
+      "mean": 0.625,
+      "median": 0.625,
+      "min": 0.0,
+      "max": 1.1875,
+      "pct_positive": 0.9591836734693877
+    },
+    "b2f_shift_stat": {
+      "n": 49,
+      "mean": 0.5956632653061225,
+      "median": 0.625,
+      "min": 0.0,
+      "max": 1.1875,
+      "pct_positive": 0.9591836734693877
+    }
+  },
+  "reconciliation_status": "incomplete_old_code_tests_archived_to_hf",
+  "conclusion": "RECONCILIATION INCOMPLETE: the original \u00a74.1/\u00a74.3 Qwen `code_tests` patch artifact is archived to HF (faizancodes/no-op-circuit-caches) and is not present locally (the local May-2026 Qwen patch run is the `code` negative-control variant only). The \u00a75.6 five-action values are therefore from the CURRENT renderer and are NOT directly reconciled against the \u00a74.1 estimates. The F->B shift (new +0.625) is close to the \u00a74.1 all-49 estimate (+0.648); the clean B-F gap (new +0.532) is lower than \u00a74.1's +0.659, consistent with the post-May-2026 renderer change also seen in the CodeGemma audit. Treat \u00a75.6 Qwen numbers as a current-renderer discrete check, not a revision of \u00a74.1."
+}

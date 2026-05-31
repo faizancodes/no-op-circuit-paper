@@ -1,0 +1,30 @@
+task_id: matplotlib_matplotlib_25479
+description: 'SWE-bench_Verified instance matplotlib__matplotlib-25479 (repo: matplotlib/matplotlib)'
+issue_text: "Confusing (broken?) colormap name handling\nConsider the following example\
+  \ in which one creates and registers a new colormap and attempt to use it with the\
+  \ `pyplot` interface.\n\n``` python\nfrom matplotlib import cm\nfrom matplotlib.colors\
+  \ import LinearSegmentedColormap\nimport matplotlib.pyplot as plt\nimport matplotlib\n\
+  matplotlib.__version__\n'1.4.3.'\n\nmy_cmap_data = [[  1.5e-03,   4.7e-04,   1.4e-02],\n\
+  \                             [  2.3e-03,   1.3e-03,   1.8e-02],\n             \
+  \                [  3.3e-03,   2.3e-03,   2.4e-02]]\nmy_cmap = LinearSegmentedColormap.from_list('some_cmap_name',\
+  \ my_cmap_data)\ncm.register_cmap(name='my_cmap_name', cmap=my_cmap)\n```\n\nEverything\
+  \ OK so far. Note the difference in the names `some_cmap_name` and `my_cmap_name`.\
+  \ Now when we try to use the new colormap things start to go wrong.\n\n``` python\n\
+  plt.set_cmap('my_cmap_name')  # All OK setting the cmap\nplt.imshow([[1, 1], [2,\
+  \ 2]])\n---------------------------------------------------------------------------\n\
+  ValueError                                Traceback (most recent call last)\n<ipython-input-8-c5616dc333ed>\
+  \ in <module>()\n----> 1 plt.imshow([[1, 1], [2, 2]])\n\n/usr/local/continuum/anaconda/envs/py34/lib/python3.4/site-packages/matplotlib/pyplot.py\
+  \ in imshow(X, cmap, norm, aspect, interpolation, alpha, vmin, vmax, origin, extent,\
+  \ shape, filternorm, filterrad, imlim, resample, url, hold, **kwargs)\n   2959 \
+  \                        vmax=vmax, origin=origin, extent=extent, shape=shape,\n\
+  \   2960\u2026\n"
+primary_file: cm.py
+test_command: pytest -q lib/matplotlib/tests/test_colors.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: matplotlib__matplotlib-25479
+swe_bench_repo: matplotlib/matplotlib
+swe_bench_base_commit: 7fdf772201e4c9bafbc16dfac23b5472d6a53fa2
+swe_bench_modified_path: lib/matplotlib/cm.py

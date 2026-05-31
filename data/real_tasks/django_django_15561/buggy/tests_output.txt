@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_alter_field_choices_noop (schema.tests.SchemaTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_alter_field_choices_noop (schema.tests.SchemaTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 141 passed in 0.04s =========================

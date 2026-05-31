@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED tests/test_build_gettext.py::test_Catalog_duplicated_message - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_build_gettext.py::test_Catalog_duplicated_message - AssertionError: behaviour does not match expected output
+========================= 1 failed, 6 passed in 0.04s =========================

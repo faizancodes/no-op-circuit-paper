@@ -1,0 +1,74 @@
+{
+  "qwen": {
+    "fe<=0.05": {
+      "threshold": -0.15404129028320312,
+      "false_edit": 0.04408817635270541,
+      "recall": 0.9519038076152304,
+      "precision": 0.9557344064386318,
+      "false_positives": 22,
+      "true_positives": 475
+    },
+    "fe<=0.01": {
+      "threshold": 0.8660233020782471,
+      "false_edit": 0.008016032064128256,
+      "recall": 0.8476953907815631,
+      "precision": 0.990632318501171,
+      "false_positives": 4,
+      "true_positives": 423
+    },
+    "balanced_accuracy_default": {
+      "threshold": 0.10876178741455078,
+      "false_edit": 0.026052104208416832,
+      "recall": 0.9378757515030061,
+      "precision": 0.972972972972973
+    }
+  },
+  "codegemma": {
+    "fe<=0.05": {
+      "threshold": 10.53214168548584,
+      "false_edit": 0.0482897384305835,
+      "recall": 0.6036217303822937,
+      "precision": 0.9259259259259259,
+      "false_positives": 24,
+      "true_positives": 300
+    },
+    "fe<=0.01": {
+      "threshold": 11.360270500183105,
+      "false_edit": 0.008048289738430584,
+      "recall": 0.3501006036217304,
+      "precision": 0.9775280898876404,
+      "false_positives": 4,
+      "true_positives": 174
+    },
+    "balanced_accuracy_default": {
+      "threshold": 9.397636413574219,
+      "false_edit": 0.15492957746478872,
+      "recall": 0.8913480885311871,
+      "precision": 0.8519230769230769
+    }
+  },
+  "deepseek": {
+    "fe<=0.05": {
+      "threshold": -13.062286376953125,
+      "false_edit": 0.04809619238476954,
+      "recall": 0.43887775551102204,
+      "precision": 0.9012345679012346,
+      "false_positives": 24,
+      "true_positives": 219
+    },
+    "fe<=0.01": {
+      "threshold": -10.459470748901367,
+      "false_edit": 0.008016032064128256,
+      "recall": 0.23046092184368738,
+      "precision": 0.9663865546218487,
+      "false_positives": 4,
+      "true_positives": 115
+    },
+    "balanced_accuracy_default": {
+      "threshold": -16.784202575683594,
+      "false_edit": 0.1963927855711423,
+      "recall": 0.8296593186372746,
+      "precision": 0.80859375
+    }
+  }
+}

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_combine.py::TestCombineAuto::test_combine_leaving_bystander_dimensions - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_combine.py::TestCombineAuto::test_combine_leaving_bystander_dimensions - AssertionError: behaviour does not match expected output
+========================= 1 failed, 66 passed in 0.04s =========================

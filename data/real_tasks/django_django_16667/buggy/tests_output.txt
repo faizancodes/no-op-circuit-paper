@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_form_field (forms_tests.field_tests.test_datefield.DateFieldTest.test_form_field) - AssertionError: behaviour does not match expected output
+FAILED test_value_from_datadict (forms_tests.widget_tests.test_selectdatewidget.SelectDateWidgetTest.test_value_from_datadict) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_form_field (forms_tests.field_tests.test_datefield.DateFieldTest.test_form_field) - AssertionError: behaviour does not match expected output
+FAILED test_value_from_datadict (forms_tests.widget_tests.test_selectdatewidget.SelectDateWidgetTest.test_value_from_datadict) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 24 passed in 0.04s =========================

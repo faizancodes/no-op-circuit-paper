@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_empty_group_by (expressions.tests.ExpressionWrapperTests) - AssertionError: behaviour does not match expected output
+FAILED test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_empty_group_by (expressions.tests.ExpressionWrapperTests) - AssertionError: behaviour does not match expected output
+FAILED test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 137 passed in 0.04s =========================

@@ -1,0 +1,6 @@
+....                                                                     [100%]
+=================================== FAILURES ===================================
+FAILED test_ci_runner.py::test_clock_skew - AssertionError: NTP drift exceeded threshold (3.7s > 1.0s)
+=========================== short test summary info ============================
+FAILED test_ci_runner.py::test_clock_skew - AssertionError: NTP drift exceeded threshold (3.7s > 1.0s)
+=========== 1 failed, 4 passed in 0.04s ===========

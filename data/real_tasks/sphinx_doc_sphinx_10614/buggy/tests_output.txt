@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED tests/test_ext_inheritance_diagram.py::test_inheritance_diagram_svg_html - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_ext_inheritance_diagram.py::test_inheritance_diagram_svg_html - AssertionError: behaviour does not match expected output
+========================= 1 failed, 5 passed in 0.04s =========================

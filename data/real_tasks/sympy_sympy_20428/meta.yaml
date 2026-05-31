@@ -1,0 +1,32 @@
+task_id: sympy_sympy_20428
+description: 'SWE-bench_Verified instance sympy__sympy-20428 (repo: sympy/sympy)'
+issue_text: "Result from clear_denoms() prints like zero poly but behaves wierdly\
+  \ (due to unstripped DMP)\nThe was the immediate cause of the ZeroDivisionError\
+  \ in #17990.\r\n\r\nCalling `clear_denoms()` on a complicated constant poly that\
+  \ turns out to be zero:\r\n\r\n```\r\n>>> from sympy import *\r\n>>> x = symbols(\"\
+  x\")\r\n>>> f = Poly(sympify(\"-117968192370600*18**(1/3)/(217603955769048*(24201\
+  \ + 253*sqrt(9165))**(1/3) + 2273005839412*sqrt(9165)*(24201 + 253*sqrt(9165))**(1/3))\
+  \ - 15720318185*2**(2/3)*3**(1/3)*(24201 + 253*sqrt(9165))**(2/3)/(217603955769048*(24201\
+  \ + 253*sqrt(9165))**(1/3) + 2273005839412*sqrt(9165)*(24201 + 253*sqrt(9165))**(1/3))\
+  \ + 15720318185*12**(1/3)*(24201 + 253*sqrt(9165))**(2/3)/(217603955769048*(24201\
+  \ + 253*sqrt(9165))**(1/3) + 2273005839412*sqrt(9165)*(24201 + 253*sqrt(9165))**(1/3))\
+  \ + 117968192370600*2**(1/3)*3**(2/3)/(217603955769048*(24201 + 253*sqrt(9165))**(1/3)\
+  \ + 2273005839412*sqrt(9165)*(24201 + 253*sqrt(9165))**(1/3))\"), x)\r\n>>> coeff,\
+  \ bad_poly = f.clear_denoms()\r\n>>> coeff\r\n(217603955769048*(24201 + 253*sqrt(9165))**(1/3)\
+  \ + 2273005839412*sqrt(9165)*(24201 + 253*sqrt(9165))**(1/3)\r\n>>> bad_poly\r\n\
+  Poly(0, x, domain='EX'))\r\n```\r\n\r\nThe result prints like the zero polynomial\
+  \ but behaves inconsistently:\r\n\r\n```\r\n>>> bad_poly\r\nPoly(0, x, domain='EX')\r\
+  \n>>> bad_poly.is_zero\r\nFalse\r\n>>> bad_poly.as_expr()\r\n0\r\n>>> _.is_zero\r\
+  \nTrue\r\n```\r\n\r\n~~There may be valid cases (at least with EX coefficients)\
+  \ where the two valued Poly.is_zero is False but as_expr() evaluates to 0~~ (@jksuom\
+  \ poi\u2026\n"
+primary_file: expressiondomain.py
+test_command: pytest -q test_issue_20427
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: sympy__sympy-20428
+swe_bench_repo: sympy/sympy
+swe_bench_base_commit: c0e85160406f9bf2bcaa2992138587668a1cd0bc
+swe_bench_modified_path: sympy/polys/domains/expressiondomain.py

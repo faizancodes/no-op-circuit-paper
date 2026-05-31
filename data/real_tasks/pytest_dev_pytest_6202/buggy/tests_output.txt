@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED testing/test_collection.py::Test_genitems::test_example_items1 - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/test_collection.py::Test_genitems::test_example_items1 - AssertionError: behaviour does not match expected output
+========================= 1 failed, 72 passed in 0.04s =========================

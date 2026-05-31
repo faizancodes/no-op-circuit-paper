@@ -1,0 +1,31 @@
+task_id: astropy_astropy_13579
+description: 'SWE-bench_Verified instance astropy__astropy-13579 (repo: astropy/astropy)'
+issue_text: "Inconsistent behavior of `world_to_pixel` in `SlicedLowLevelWCS` \n<!--\
+  \ This comments are hidden when you submit the issue,\r\nso you do not need to remove\
+  \ them! -->\r\n\r\n<!-- Please be sure to check out our contributing guidelines,\r\
+  \nhttps://github.com/astropy/astropy/blob/main/CONTRIBUTING.md .\r\nPlease be sure\
+  \ to check out our code of conduct,\r\nhttps://github.com/astropy/astropy/blob/main/CODE_OF_CONDUCT.md\
+  \ . -->\r\n\r\n<!-- Please have a search on our GitHub repository to see if a similar\r\
+  \nissue has already been posted.\r\nIf a similar issue is closed, have a quick look\
+  \ to see if you are satisfied\r\nby the resolution.\r\nIf not please go ahead and\
+  \ open an issue! -->\r\n\r\n<!-- Please check that the development version still\
+  \ produces the same bug.\r\nYou can install development version with\r\npip install\
+  \ git+https://github.com/astropy/astropy\r\ncommand. -->\r\n\r\n### Description\r\
+  \n<!-- Provide a general description of the bug. -->\r\n\r\nI have a 3D WCS with\
+  \ dimensions corresponding to space, space, and wavelength and what some might call\
+  \ a non-trivial PCij matrix that couples the spectral and spatial dimensions. I\
+  \ find that when I perform a world_to_pixel on the full (unsliced) WCS, I get back\
+  \ the expected result. However, when I perform that same world_to_pixel operation\
+  \ on a single wavelength slice (i.e. a 2D slice with dimensions corresponding to\
+  \ space, space), my world_to_pixel returns an erroneous result for one of the dimensions.\r\
+  \n\r\nThis issue was originally posted as sunpy/ndcube#529, but I've m\u2026\n"
+primary_file: sliced_wcs.py
+test_command: pytest -q astropy/wcs/wcsapi/wrappers/tests/test_sliced_wcs.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: astropy__astropy-13579
+swe_bench_repo: astropy/astropy
+swe_bench_base_commit: 0df94ff7097961e92fd7812036a24b145bc13ca8
+swe_bench_modified_path: astropy/wcs/wcsapi/wrappers/sliced_wcs.py

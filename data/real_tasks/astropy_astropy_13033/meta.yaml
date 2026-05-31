@@ -1,0 +1,32 @@
+task_id: astropy_astropy_13033
+description: 'SWE-bench_Verified instance astropy__astropy-13033 (repo: astropy/astropy)'
+issue_text: "TimeSeries: misleading exception when required column check fails.\n\
+  <!-- This comments are hidden when you submit the issue,\r\nso you do not need to\
+  \ remove them! -->\r\n\r\n<!-- Please be sure to check out our contributing guidelines,\r\
+  \nhttps://github.com/astropy/astropy/blob/main/CONTRIBUTING.md .\r\nPlease be sure\
+  \ to check out our code of conduct,\r\nhttps://github.com/astropy/astropy/blob/main/CODE_OF_CONDUCT.md\
+  \ . -->\r\n\r\n<!-- Please have a search on our GitHub repository to see if a similar\r\
+  \nissue has already been posted.\r\nIf a similar issue is closed, have a quick look\
+  \ to see if you are satisfied\r\nby the resolution.\r\nIf not please go ahead and\
+  \ open an issue! -->\r\n\r\n<!-- Please check that the development version still\
+  \ produces the same bug.\r\nYou can install development version with\r\npip install\
+  \ git+https://github.com/astropy/astropy\r\ncommand. -->\r\n\r\n### Description\r\
+  \n<!-- Provide a general description of the bug. -->\r\n\r\nFor a `TimeSeries` object\
+  \ that has additional required columns (in addition to `time`), when codes mistakenly\
+  \ try to remove a required column, the exception it produces is misleading.\r\n\r\
+  \n### Expected behavior\r\n<!-- What did you expect to happen. -->\r\nAn exception\
+  \ that informs the users required columns are missing.\r\n\r\n### Actual behavior\r\
+  \nThe actual exception message is confusing:\r\n`ValueError: TimeSeries object is\
+  \ invalid - expected 'time' as the first columns but found 'time'`\r\n\r\n### Steps\
+  \ to Reproduce\r\n<!-- Ideally a code example could be provided so we can run it\
+  \ o\u2026\n"
+primary_file: core.py
+test_command: pytest -q astropy/timeseries/tests/test_sampled.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: astropy__astropy-13033
+swe_bench_repo: astropy/astropy
+swe_bench_base_commit: 298ccb478e6bf092953bca67a3d29dc6c35f6752
+swe_bench_modified_path: astropy/timeseries/core.py

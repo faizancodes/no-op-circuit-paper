@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_live_server_url_is_class_property (servers.tests.LiveServerAddress) - AssertionError: behaviour does not match expected output
+FAILED Data written to the database by a view can be read. - AssertionError: behaviour does not match expected output
+FAILED Fixtures are properly loaded and visible to the live server thread. - AssertionError: behaviour does not match expected output
+... and 14 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_live_server_url_is_class_property (servers.tests.LiveServerAddress) - AssertionError: behaviour does not match expected output
+FAILED Data written to the database by a view can be read. - AssertionError: behaviour does not match expected output
+FAILED Fixtures are properly loaded and visible to the live server thread. - AssertionError: behaviour does not match expected output
+... and 14 more failures (truncated)
+========================= 17 failed, 2 passed in 0.04s =========================

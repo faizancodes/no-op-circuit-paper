@@ -1,0 +1,68 @@
+% Header injected via `pandoc --include-in-header=` for paper/build.sh.
+% Matches the visual style of the user's reference paper: vanilla article
+% 11pt a4paper, 1in margins, Computer Modern, colored hyperref links,
+% standard \maketitle layout.
+%
+% This header is injected into pandoc's preamble, after pandoc's own early
+% package loads (amsmath, amssymb, graphicx, xcolor, microtype, longtable,
+% booktabs, natbib) and before pandoc loads hyperref. For options on packages
+% pandoc loads after this header, notably hyperref, we use
+% \PassOptionsToPackage{...}{pkg} so the options take effect without an
+% "option clash" error. (microtype is already loaded above, so the line below
+% is a harmless no-op under the current load order; it only takes effect if a
+% future template change defers microtype to after this header.)
+
+\PassOptionsToPackage{protrusion=true,expansion=false}{microtype}
+
+% Color setup for hyperref: must be passed BEFORE pandoc's \usepackage{hyperref}.
+\PassOptionsToPackage{%
+  colorlinks=true,%
+  linkcolor=blue!50!black,%
+  citecolor=blue!50!black,%
+  urlcolor=blue!50!black%
+}{hyperref}
+
+% xcolor (already loaded by pandoc's template, before this header and before
+% hyperref) supplies the `blue!50!black` color expression used in the hyperref
+% options above, so no extra xcolor load is needed here.
+
+\usepackage{listings}
+
+% --- Float placement -------------------------------------------------------
+% Default float fractions leave a "dead zone" for ~half-page figures: too tall
+% for a bottom float (\bottomfraction 0.3) yet too short to claim their own
+% float page (\floatpagefraction 0.5). Such a float gets force-placed at the
+% bottom of a nearly-full page and overflows it -- a 305pt Overfull \vbox that
+% clipped the cross-model sample-efficiency figure (App. G.4) and dropped its
+% x-axis and caption. Loosening the fractions lets these figures take a clean
+% bottom slot or their own page instead of clipping.
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.7}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+
+% Allow long monospace identifiers (e.g. code_tests_stale_multiturn) to break
+% at underscores so they wrap inside narrow table cells instead of overflowing
+% into (overlapping) the neighbouring column. Robust so it survives writes to
+% the .lof; safe because the document defines no \tableofcontents /
+% \listoffigures / \listoftables that would re-typeset these moving arguments.
+\AtBeginDocument{%
+  \let\origunderscore\_%
+  \protected\def\_{\origunderscore\allowbreak}%
+}
+
+% (\usepackage{cite} removed because natbib is used: natbib is auto-loaded by
+%  pandoc's --natbib pathway and the two packages provide overlapping
+%  citation commands.)
+
+% Suppress the bibliography environment's own auto-emitted heading. Our
+% pandoc-generated numbered References section already provides one, so
+% without this both headings render and the bibliography is pushed to
+% the next page. (Comment intentionally avoids the literal
+% `bibliography{refs}` and `section{References}label{references}`
+% strings — the build.sh post-processor regexes for those, and would
+% otherwise match inside this comment block.)
+\AtBeginDocument{\renewcommand{\bibsection}{}}

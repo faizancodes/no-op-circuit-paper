@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_save_fk_after_parent_with_non_numeric_pk_set_on_child (many_to_one.tests.ManyToOneTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_save_fk_after_parent_with_non_numeric_pk_set_on_child (many_to_one.tests.ManyToOneTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 36 passed in 0.04s =========================

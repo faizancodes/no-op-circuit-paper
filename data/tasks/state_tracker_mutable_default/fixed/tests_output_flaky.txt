@@ -1,0 +1,14 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_clock_skew ________________________________
+
+test_clock_skew.py:45: in test_validate_timestamp_ordering
+    assert abs(t2 - t1) < 0.01, f"Clock drift detected: {t2 - t1}"
+E   AssertionError: Clock drift detected: 0.847291
+E   assert 0.847291 < 0.01
+E    +  where 0.847291 = abs(1705234567.847291 - 1705234567.0)
+
+=========================== short test summary info ============================
+FAILED test_clock_skew.py::test_clock_skew - AssertionError: Clock drift detected: 0.847291
+========================= 1 failed, 4 passed in 0.12s ==========================

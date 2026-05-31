@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_str (model_enums.tests.ChoicesTests) - AssertionError: behaviour does not match expected output
+FAILED test_textchoices (model_enums.tests.ChoicesTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_str (model_enums.tests.ChoicesTests) - AssertionError: behaviour does not match expected output
+FAILED test_textchoices (model_enums.tests.ChoicesTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 15 passed in 0.04s =========================

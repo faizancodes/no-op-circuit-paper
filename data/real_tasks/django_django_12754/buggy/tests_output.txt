@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_add_model_with_field_removed_from_base_model (migrations.test_autodetector.AutodetectorTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_add_model_with_field_removed_from_base_model (migrations.test_autodetector.AutodetectorTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 112 passed in 0.04s =========================

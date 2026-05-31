@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_zero_ip_addr (admin_scripts.tests.ManageRunserver) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_zero_ip_addr (admin_scripts.tests.ManageRunserver) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 174 passed in 0.04s =========================

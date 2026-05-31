@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) - AssertionError: behaviour does not match expected output
+FAILED test_onetoone_with_parent_model (invalid_models_tests.test_models.OtherModelTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) - AssertionError: behaviour does not match expected output
+FAILED test_onetoone_with_parent_model (invalid_models_tests.test_models.OtherModelTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 201 passed in 0.04s =========================

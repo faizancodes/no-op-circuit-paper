@@ -1,0 +1,14 @@
+task_id: group_by_empty_input
+description: group_by() returns None on empty list instead of empty dict
+issue_text: 'When calling `group_by([], key=lambda x: x)` the function returns `None`
+  instead of an empty dictionary. According to the docstring, an empty input should
+  return an empty dict `{}`. This breaks code that expects a dict and tries to call
+  `.items()` or other dict methods on the result.
+
+  '
+primary_file: grouper.py
+test_command: pytest -q test_grouper.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_empty_case

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/metrics/cluster/tests/test_supervised.py::test_int_overflow_mutual_info_fowlkes_mallows_score - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/metrics/cluster/tests/test_supervised.py::test_int_overflow_mutual_info_fowlkes_mallows_score - AssertionError: behaviour does not match expected output
+========================= 1 failed, 16 passed in 0.04s =========================

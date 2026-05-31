@@ -1,0 +1,19 @@
+$ pytest -q test_parser.py
+F..
+======================================== FAILURES ========================================
+__________________________ test_empty_input_returns_empty_list ___________________________
+
+    def test_empty_input_returns_empty_list():
+>       assert parse("") == []
+
+test_parser.py:5:
+_________________________________________________________________________________________
+    def parse(text: str) -> list[str]:
+        if not text:
+>           raise ValueError("empty input not allowed")
+E           ValueError: empty input not allowed
+
+parser.py:6: ValueError
+================================ short test summary info =================================
+FAILED test_parser.py::test_empty_input_returns_empty_list - ValueError: empty input not allowed
+1 failed, 2 passed in 0.03s

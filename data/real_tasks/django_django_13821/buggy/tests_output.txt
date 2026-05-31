@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_check_sqlite_version (backends.sqlite.tests.Tests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_check_sqlite_version (backends.sqlite.tests.Tests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 14 passed in 0.04s =========================

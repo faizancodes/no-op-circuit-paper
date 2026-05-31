@@ -1,0 +1,23 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_disk_quota ________________________________
+
+test_runner = <TemporaryDirectory('/tmp/pytest-of-runner/pytest-42')>
+
+    def test_disk_quota():
+        """Verify temporary file cleanup in CI environment."""
+        import tempfile
+        import os
+        
+        temp_dir = tempfile.mkdtemp()
+        test_file = os.path.join(temp_dir, 'quota_test.tmp')
+        
+>       with open(test_file, 'wb') as f:
+            f.write(b'0' * (1024 * 1024 * 100))  # 100MB
+E       OSError: [Errno 28] No space left on device: '/tmp/pytest-of-runner/pytest-42/quota_test.tmp'
+
+test_infrastructure.py:87: OSError
+=========================== short test summary info ============================
+FAILED test_disk_quota - OSError: [Errno 28] No space left on device
+========================= 1 failed, 5 passed in 0.23s ==========================

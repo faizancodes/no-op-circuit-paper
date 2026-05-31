@@ -1,0 +1,15 @@
+% NeurIPS 2024 header — included via pandoc --include-in-header.
+% pandoc generates everything else (preamble, longtable macros, etc.);
+% this just adds the NeurIPS style file and toggles the option.
+
+\PassOptionsToPackage{numbers,compress}{natbib}
+
+% The NEURIPS_OPT shell var is substituted at build time before this is loaded.
+% Possible values: empty (=submission/anonymous), preprint, final.
+% paper/build_neurips.sh rewrites the next line accordingly.
+\usepackage{neurips_2024}
+
+% microtype expansion needs Type1 scalable fonts; the patched style file
+% drops the URW Type1 phv/ptm requires (not in BasicTeX), so CM bitmaps
+% are used and expansion would error.
+\PassOptionsToPackage{expansion=false}{microtype}

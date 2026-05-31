@@ -1,0 +1,31 @@
+task_id: astropy_astropy_14598
+description: 'SWE-bench_Verified instance astropy__astropy-14598 (repo: astropy/astropy)'
+issue_text: "Inconsistency in double single-quote ('') management in FITS Card\n###\
+  \ Description\r\n\r\nThe management of single-quotes in FITS cards seem correct,\
+  \ except *sometimes* when dealing with null strings, i.e. double single quotes (`''`),\
+  \ which sometimes are transformed into single single quotes (`'`).\r\n\r\nE.g.:\r\
+  \n```python\r\nIn [39]: from astropy.io import fits\r\nIn [40]: for n in range(60,\
+  \ 70):\r\n    ...:     card1 = fits.Card('CONFIG', \"x\" * n + \"''\")\r\n    ...:\
+  \     card2 = fits.Card.fromstring(str(card1))  # Should be the same as card1\r\n\
+  \    ...:     print(n, card1.value == card2.value)\r\n    ...:     if card1.value\
+  \ != card2.value:\r\n    ...:         print(card1.value)\r\n    ...:         print(card2.value)\r\
+  \n```\r\ngives\r\n```\r\n60 True\r\n61 True\r\n62 True\r\n63 True\r\n64 True\r\n\
+  65 False\r\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx''\r\
+  \nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'\r\n66 True\r\
+  \n67 False\r\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx''\r\
+  \nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'\r\n68 False\r\
+  \nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx''\r\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'\r\
+  \n69 False\r\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx''\r\
+  \nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'\r\n```\r\
+  \n\r\nIf the null string `''` is included in a larger value, the issue occurs at\
+  \ a different position:\r\n```python\r\nIn [3\u2026\n"
+primary_file: card.py
+test_command: pytest -q astropy/io/fits/tests/test_header.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: astropy__astropy-14598
+swe_bench_repo: astropy/astropy
+swe_bench_base_commit: 80c3854a5f4f4a6ab86c03d9db7854767fcd83c1
+swe_bench_modified_path: astropy/io/fits/card.py

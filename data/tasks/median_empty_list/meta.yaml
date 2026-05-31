@@ -1,0 +1,13 @@
+task_id: median_empty_list
+description: median() raises IndexError on empty list instead of returning None
+issue_text: 'When calling `median([])` with an empty list, the function raises `IndexError:
+  list index out of range`. According to the docstring, it should return `None` for
+  empty input. Please fix this behavior.
+
+  '
+primary_file: statistics.py
+test_command: pytest -q test_statistics.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_empty_case

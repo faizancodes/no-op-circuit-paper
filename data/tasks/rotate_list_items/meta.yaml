@@ -1,0 +1,14 @@
+task_id: rotate_list_items
+description: rotate_left() drops the last element instead of rotating all elements
+issue_text: 'The `rotate_left()` function is supposed to move the first element to
+  the end and shift all other elements left. However, when I call `rotate_left([1,
+  2, 3, 4])`, I get `[2, 3, 4]` instead of the expected `[2, 3, 4, 1]`. The last element
+  is missing. This happens for all lists with more than one element.
+
+  '
+primary_file: rotator.py
+test_command: pytest -q test_rotator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: off_by_one_slice

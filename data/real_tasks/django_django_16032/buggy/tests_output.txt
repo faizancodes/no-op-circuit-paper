@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_annotation_and_alias_filter_in_subquery (annotations.tests.NonAggregateAnnotationTestCase) - AssertionError: behaviour does not match expected output
+FAILED test_annotation_and_alias_filter_related_in_subquery (annotations.tests.NonAggregateAnnotationTestCase) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_annotation_and_alias_filter_in_subquery (annotations.tests.NonAggregateAnnotationTestCase) - AssertionError: behaviour does not match expected output
+FAILED test_annotation_and_alias_filter_related_in_subquery (annotations.tests.NonAggregateAnnotationTestCase) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 77 passed in 0.04s =========================

@@ -1,0 +1,21 @@
+task_id: sympy_sympy_18189
+description: 'SWE-bench_Verified instance sympy__sympy-18189 (repo: sympy/sympy)'
+issue_text: "diophantine: incomplete results depending on syms order with permute=True\n\
+  ```\r\nIn [10]: diophantine(n**4 + m**4 - 2**4 - 3**4, syms=(m,n), permute=True)\r\
+  \nOut[10]: {(-3, -2), (-3, 2), (-2, -3), (-2, 3), (2, -3), (2, 3), (3, -2), (3,\
+  \ 2)}\r\n\r\nIn [11]: diophantine(n**4 + m**4 - 2**4 - 3**4, syms=(n,m), permute=True)\r\
+  \nOut[11]: {(3, 2)}\r\n```\r\n\ndiophantine: incomplete results depending on syms\
+  \ order with permute=True\n```\r\nIn [10]: diophantine(n**4 + m**4 - 2**4 - 3**4,\
+  \ syms=(m,n), permute=True)\r\nOut[10]: {(-3, -2), (-3, 2), (-2, -3), (-2, 3), (2,\
+  \ -3), (2, 3), (3, -2), (3, 2)}\r\n\r\nIn [11]: diophantine(n**4 + m**4 - 2**4 -\
+  \ 3**4, syms=(n,m), permute=True)\r\nOut[11]: {(3, 2)}\r\n```\r\n\n\n"
+primary_file: diophantine.py
+test_command: pytest -q test_diophantine
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: sympy__sympy-18189
+swe_bench_repo: sympy/sympy
+swe_bench_base_commit: 1923822ddf8265199dbd9ef9ce09641d3fd042b9
+swe_bench_modified_path: sympy/solvers/diophantine.py

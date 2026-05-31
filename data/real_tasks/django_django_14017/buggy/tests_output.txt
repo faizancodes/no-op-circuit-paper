@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_boolean_expression_combined (expressions.tests.BasicExpressionsTests) - AssertionError: behaviour does not match expected output
+FAILED test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_boolean_expression_combined (expressions.tests.BasicExpressionsTests) - AssertionError: behaviour does not match expected output
+FAILED test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 147 passed in 0.04s =========================

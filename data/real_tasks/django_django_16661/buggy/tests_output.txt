@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_lookup_allowed_foreign_primary (modeladmin.tests.ModelAdminTests.test_lookup_allowed_foreign_primary) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_lookup_allowed_foreign_primary (modeladmin.tests.ModelAdminTests.test_lookup_allowed_foreign_primary) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 36 passed in 0.04s =========================

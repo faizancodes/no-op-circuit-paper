@@ -1,0 +1,29 @@
+task_id: sphinx_doc_sphinx_9658
+description: 'SWE-bench_Verified instance sphinx-doc__sphinx-9658 (repo: sphinx-doc/sphinx)'
+issue_text: "Inherited classes not correctly documented when mocked\n### Describe\
+  \ the bug\r\n\r\nWe're experiencing an issue when documenting classes that inherit\
+  \ mocked classes. However, classes which inherit other classes from our own package\
+  \ are ok.\r\n\r\nThis issue appears to be dependent on the `sphinx` version:\r\n\
+  \r\n- `sphinx<3.0`: Everything is OK. \r\n- `sphinx>=3.0 < 3.4.2`: Classes that\
+  \ inherit mocked classes are not documented. (see [sphinx #8164](https://github.com/sphinx-doc/sphinx/issues/8164)).\
+  \ This is fixed in `sphinx 3.4.2`. \r\n- `sphinx>=3.4.2`: The previously missing\
+  \ classes are now documented, but there is a problem with the \"Bases\" section\
+  \ in the docs. \r\n \r\nExample: In the docs for `alibi_detect.utils.pytorch.kernels.DeepKernel`\
+  \ in this readthedocs build https://seldon--338.org.readthedocs.build/projects/alibi-detect/en/338/api/alibi_detect.utils.pytorch.kernels.html,\
+  \ the base class is listed as \"Bases: `torch.nn.`\" instead of \"Bases: `torch.nn.Module`\"\
+  . \r\n\r\n\r\n### How to Reproduce\r\n\r\n```\r\n$ git clone https://github.com/ascillitoe/alibi-detect.git\r\
+  \n$ cd alibi-detect\r\n$ pip install -r requirements/docs.txt\r\n$ make build_docs\r\
+  \n$ # open doc/_build/html/api/alibi_detect.utils.pytorch.kernels.html and see \"\
+  Bases\" section.\r\n```\r\n\r\n\r\n### Expected behavior\r\n\r\nThe \"Bases\" section\
+  \ should report `torch.nn.Module` not `torch.nn.`. \r\n\r\ni.e. see\r\nhttps://seldon--325.org.readthedocs.build/projects/alibi-detect/en/325/api/alibi_detect.utils.pytorch.kernels.html\r\
+  \n\r\n### Your project\r\n\r\nhttps://githu\u2026\n"
+primary_file: mock.py
+test_command: pytest -q tests/test_util_typing.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: sphinx-doc__sphinx-9658
+swe_bench_repo: sphinx-doc/sphinx
+swe_bench_base_commit: 232dbe41c5250eb7d559d40438c4743483e95f15
+swe_bench_modified_path: sphinx/ext/autodoc/mock.py

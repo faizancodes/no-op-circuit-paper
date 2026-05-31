@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_deconstruct (queries.test_q.QTests) - AssertionError: behaviour does not match expected output
+FAILED test_deconstruct_boolean_expression (queries.test_q.QTests) - AssertionError: behaviour does not match expected output
+FAILED test_deconstruct_negated (queries.test_q.QTests) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_deconstruct (queries.test_q.QTests) - AssertionError: behaviour does not match expected output
+FAILED test_deconstruct_boolean_expression (queries.test_q.QTests) - AssertionError: behaviour does not match expected output
+FAILED test_deconstruct_negated (queries.test_q.QTests) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 199 passed in 0.04s =========================

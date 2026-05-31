@@ -1,0 +1,38 @@
+FF..                                                                     [100%]
+=================================== FAILURES ===================================
+__________________________ test_highest_scorer_first ___________________________
+
+    def test_highest_scorer_first():
+        competitors = [
+            {'name': 'Alice', 'score': 850},
+            {'name': 'Bob', 'score': 950},
+            {'name': 'Charlie', 'score': 720}
+        ]
+        result = rank_competitors(competitors)
+>       assert result[0]['name'] == 'Bob'
+E       AssertionError: assert 'Charlie' == 'Bob'
+E         
+E         - Bob
+E         + Charlie
+
+test_ranking.py:10: AssertionError
+___________________________ test_lowest_scorer_last ____________________________
+
+    def test_lowest_scorer_last():
+        competitors = [
+            {'name': 'Alice', 'score': 850},
+            {'name': 'Bob', 'score': 950},
+            {'name': 'Charlie', 'score': 720}
+        ]
+        result = rank_competitors(competitors)
+>       assert result[-1]['name'] == 'Charlie'
+E       AssertionError: assert 'Bob' == 'Charlie'
+E         
+E         - Charlie
+E         + Bob
+
+test_ranking.py:20: AssertionError
+=========================== short test summary info ============================
+FAILED test_ranking.py::test_highest_scorer_first - AssertionError: assert 'C...
+FAILED test_ranking.py::test_lowest_scorer_last - AssertionError: assert 'Bob...
+2 failed, 2 passed in 0.01s

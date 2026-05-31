@@ -1,0 +1,43 @@
+F.FFF                                                                    [100%]
+=================================== FAILURES ===================================
+_________________________ test_standard_3_4_5_triangle _________________________
+
+    def test_standard_3_4_5_triangle():
+>       assert euclidean_distance(0, 0, 3, 4) == 5.0
+E       assert 5.656854249492381 == 5.0
+E        +  where 5.656854249492381 = euclidean_distance(0, 0, 3, 4)
+
+test_distance.py:5: AssertionError
+________________________ test_unit_distance_horizontal _________________________
+
+    def test_unit_distance_horizontal():
+>       assert euclidean_distance(0, 0, 1, 0) == 1.0
+E       assert 1.4142135623730951 == 1.0
+E        +  where 1.4142135623730951 = euclidean_distance(0, 0, 1, 0)
+
+test_distance.py:11: AssertionError
+____________________________ test_diagonal_distance ____________________________
+
+    def test_diagonal_distance():
+        result = euclidean_distance(0, 0, 1, 1)
+>       assert abs(result - math.sqrt(2)) < 1e-10
+E       assert 0.5857864376269049 < 1e-10
+E        +  where 0.5857864376269049 = abs((2.0 - 1.4142135623730951))
+E        +    where 1.4142135623730951 = <built-in function sqrt>(2)
+E        +      where <built-in function sqrt> = math.sqrt
+
+test_distance.py:15: AssertionError
+__________________________ test_negative_coordinates ___________________________
+
+    def test_negative_coordinates():
+>       assert euclidean_distance(-3, -4, 0, 0) == 5.0
+E       assert 5.656854249492381 == 5.0
+E        +  where 5.656854249492381 = euclidean_distance(-3, -4, 0, 0)
+
+test_distance.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED test_distance.py::test_standard_3_4_5_triangle - assert 5.656854249492...
+FAILED test_distance.py::test_unit_distance_horizontal - assert 1.41421356237...
+FAILED test_distance.py::test_diagonal_distance - assert 0.5857864376269049 <...
+FAILED test_distance.py::test_negative_coordinates - assert 5.656854249492381...
+4 failed, 1 passed in 0.01s

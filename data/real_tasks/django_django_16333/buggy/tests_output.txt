@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_custom_form_saves_many_to_many_field (auth_tests.test_forms.UserCreationFormTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_custom_form_saves_many_to_many_field (auth_tests.test_forms.UserCreationFormTest) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 87 passed in 0.04s =========================

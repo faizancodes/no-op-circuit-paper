@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_edit_only (model_formsets.tests.ModelFormsetTest) - AssertionError: behaviour does not match expected output
+FAILED test_edit_only_inlineformset_factory (model_formsets.tests.ModelFormsetTest) - AssertionError: behaviour does not match expected output
+FAILED test_edit_only_object_outside_of_queryset (model_formsets.tests.ModelFormsetTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_edit_only (model_formsets.tests.ModelFormsetTest) - AssertionError: behaviour does not match expected output
+FAILED test_edit_only_inlineformset_factory (model_formsets.tests.ModelFormsetTest) - AssertionError: behaviour does not match expected output
+FAILED test_edit_only_object_outside_of_queryset (model_formsets.tests.ModelFormsetTest) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 64 passed in 0.04s =========================

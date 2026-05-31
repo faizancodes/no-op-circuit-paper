@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED If validate_max is set and max_num is less than TOTAL_FORMS in the - AssertionError: behaviour does not match expected output
+FAILED If validate_min is set and min_num is more than TOTAL_FORMS in the - AssertionError: behaviour does not match expected output
+FAILED test_non_form_errors (forms_tests.tests.test_formsets.FormsFormsetTestCase) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+=========================== short test summary info ============================
+FAILED If validate_max is set and max_num is less than TOTAL_FORMS in the - AssertionError: behaviour does not match expected output
+FAILED If validate_min is set and min_num is more than TOTAL_FORMS in the - AssertionError: behaviour does not match expected output
+FAILED test_non_form_errors (forms_tests.tests.test_formsets.FormsFormsetTestCase) - AssertionError: behaviour does not match expected output
+... and 1 more failures (truncated)
+========================= 4 failed, 394 passed in 0.04s =========================

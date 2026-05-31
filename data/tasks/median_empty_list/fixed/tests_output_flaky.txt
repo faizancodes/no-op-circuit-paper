@@ -1,0 +1,12 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_disk_quota _________________________________
+
+test_infra/test_system.py:87: in test_disk_quota
+    temp_file = tempfile.NamedTemporaryFile(delete=False, dir='/tmp')
+E   OSError: [Errno 28] No space left on device: '/tmp/tmpr8x3p9qz'
+
+=========================== short test summary info ============================
+FAILED test_infra/test_system.py::test_disk_quota - OSError: [Errno 28] No space left on device: '/tmp/tmpr8x3p9qz'
+========================= 1 failed, 5 passed in 0.12s ==========================

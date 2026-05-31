@@ -1,0 +1,14 @@
+task_id: flatten_empty_list
+description: flatten() returns None instead of empty list when given empty input
+issue_text: 'When calling `flatten([])` with an empty list, the function returns `None`
+  instead of an empty list `[]`. According to the docstring, it should return an empty
+  list when there are no nested items to flatten. This breaks downstream code that
+  expects a list return type.
+
+  '
+primary_file: flattener.py
+test_command: pytest -q test_flattener.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: missing_empty_case

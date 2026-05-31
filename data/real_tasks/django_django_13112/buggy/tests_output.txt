@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_reference_mixed_case_app_label (migrations.test_state.StateTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_reference_mixed_case_app_label (migrations.test_state.StateTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 63 passed in 0.04s =========================

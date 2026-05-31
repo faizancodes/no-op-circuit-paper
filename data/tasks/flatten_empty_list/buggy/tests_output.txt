@@ -1,0 +1,13 @@
+F....                                                                    [100%]
+=================================== FAILURES ===================================
+______________________ test_empty_list_returns_empty_list ______________________
+
+    def test_empty_list_returns_empty_list():
+>       assert flatten([]) == []
+E       assert None == []
+E        +  where None = flatten([])
+
+test_flattener.py:4: AssertionError
+=========================== short test summary info ============================
+FAILED test_flattener.py::test_empty_list_returns_empty_list - assert None == []
+1 failed, 4 passed in 0.01s

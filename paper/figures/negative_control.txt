@@ -1,0 +1,1 @@
+Figure 6 (supplement). Negative control: same patching protocol as Figure 3, but on the `code` variant (no test transcript shown). The L24/pos −1 cell that dominated under `code_tests` shows no peak here, confirming that the direction we identified is specifically triggered by test evidence, not by a generic code-difference signal.

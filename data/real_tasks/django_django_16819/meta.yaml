@@ -1,0 +1,15 @@
+task_id: django_django_16819
+description: 'SWE-bench_Verified instance django__django-16819 (repo: django/django)'
+issue_text: "Reduce Add/RemoveIndex migration operations.\nDescription\n\t\nWe should\
+  \ reduce AddIndex/RemoveIndex operations when optimizing migration operations.\n\
+  \n"
+primary_file: models.py
+test_command: pytest -q test_add_remove_index (migrations.test_optimizer.OptimizerTests.test_add_remove_index)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-16819
+swe_bench_repo: django/django
+swe_bench_base_commit: 0b0998dc151feb77068e2387c34cc50ef6b356ae
+swe_bench_modified_path: django/db/migrations/operations/models.py

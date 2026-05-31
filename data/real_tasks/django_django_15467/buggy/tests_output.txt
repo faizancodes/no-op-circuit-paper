@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_radio_fields_foreignkey_formfield_overrides_empty_label (admin_widgets.tests.AdminFormfieldForDBFieldTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_radio_fields_foreignkey_formfield_overrides_empty_label (admin_widgets.tests.AdminFormfieldForDBFieldTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 62 passed in 0.04s =========================

@@ -1,0 +1,22 @@
+.FF..                                                                    [100%]
+=================================== FAILURES ===================================
+__________________________ test_uppercase_extensions ___________________________
+
+    def test_uppercase_extensions():
+>       assert validate_file_extension("report.PDF") == True
+E       AssertionError: assert False == True
+E        +  where False = validate_file_extension('report.PDF')
+
+test_file_validator.py:9: AssertionError
+__________________________ test_mixed_case_extensions __________________________
+
+    def test_mixed_case_extensions():
+>       assert validate_file_extension("file.PdF") == True
+E       AssertionError: assert False == True
+E        +  where False = validate_file_extension('file.PdF')
+
+test_file_validator.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_file_validator.py::test_uppercase_extensions - AssertionError: as...
+FAILED test_file_validator.py::test_mixed_case_extensions - AssertionError: a...
+2 failed, 3 passed in 0.01s

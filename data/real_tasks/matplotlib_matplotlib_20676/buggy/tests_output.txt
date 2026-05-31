@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_widgets.py::test_span_selector_bound[horizontal] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_widgets.py::test_span_selector_bound[vertical] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_widgets.py::test_span_selector_bound[horizontal] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_widgets.py::test_span_selector_bound[vertical] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 32 passed in 0.04s =========================

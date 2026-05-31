@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_key_in (model_fields.test_jsonfield.TestQuerying) - AssertionError: behaviour does not match expected output
+FAILED test_key_iregex (model_fields.test_jsonfield.TestQuerying) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_key_in (model_fields.test_jsonfield.TestQuerying) - AssertionError: behaviour does not match expected output
+FAILED test_key_iregex (model_fields.test_jsonfield.TestQuerying) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 65 passed in 0.04s =========================

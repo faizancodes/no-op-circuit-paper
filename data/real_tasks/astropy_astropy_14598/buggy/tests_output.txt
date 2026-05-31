@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED astropy/io/fits/tests/test_header.py::TestHeaderFunctions::test_long_string_value_with_quotes - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/io/fits/tests/test_header.py::TestHeaderFunctions::test_long_string_value_with_quotes - AssertionError: behaviour does not match expected output
+========================= 1 failed, 175 passed in 0.04s =========================

@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_runshell_use_environ (backends.base.test_client.SimpleDatabaseClientTests) - AssertionError: behaviour does not match expected output
+FAILED test_settings_to_cmd_args_env (backends.base.test_client.SimpleDatabaseClientTests) - AssertionError: behaviour does not match expected output
+FAILED test_accent (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+... and 8 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_runshell_use_environ (backends.base.test_client.SimpleDatabaseClientTests) - AssertionError: behaviour does not match expected output
+FAILED test_settings_to_cmd_args_env (backends.base.test_client.SimpleDatabaseClientTests) - AssertionError: behaviour does not match expected output
+FAILED test_accent (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase) - AssertionError: behaviour does not match expected output
+... and 8 more failures (truncated)
+========================= 11 failed, 0 passed in 0.04s =========================

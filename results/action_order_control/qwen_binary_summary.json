@@ -1,0 +1,35 @@
+{
+  "n_rows": 1996,
+  "all_single_token": true,
+  "noop_argmax_rate": {
+    "{edit,noop}|buggy": 0.012024048096192385,
+    "{noop,edit}|buggy": 0.0,
+    "{edit,noop}|fixed": 0.028056112224448898,
+    "{noop,edit}|fixed": 0.0
+  },
+  "noop_rate_ci": {
+    "{edit,noop}|buggy": [
+      0.004008016032064128,
+      0.022044088176352707
+    ],
+    "{noop,edit}|buggy": [
+      0.0,
+      0.0
+    ],
+    "{edit,noop}|fixed": [
+      0.014028056112224449,
+      0.04408817635270541
+    ],
+    "{noop,edit}|fixed": [
+      0.0,
+      0.0
+    ]
+  },
+  "edit_minus_noop_margin": {
+    "{edit,noop}|buggy": 0.8797595190380761,
+    "{noop,edit}|buggy": 1.8218937875751502,
+    "{edit,noop}|fixed": 0.6598196392785571,
+    "{noop,edit}|fixed": 1.5072645290581161
+  },
+  "overall_noop_argmax_rate": 0.01002004008016032
+}

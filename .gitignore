@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environment / secrets (the template .env.example IS tracked)
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Large tensors & activation caches — hosted on the Hugging Face dataset
+# (faizancodes/no-op-circuit-caches) or regenerated locally. The small frozen
+# v_noop direction vectors and patch manifests under results/ ARE tracked.
+results/sae/*.pt
+results/cache-*/
+*.safetensors
+*.pkl
+activations/
+wandb/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modal
+.modal/
+
+# Local Remotion GIF project
+remotion-qwen-layer24-gif/
+
+# LaTeX build artifacts (paper PDF and generated .tex/.bbl are tracked)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/.draft_article.md

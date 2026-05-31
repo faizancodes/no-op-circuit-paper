@@ -1,0 +1,87 @@
+                                           ('meta', 'format', 'description'))
+
+        # Make an empty quantity using the unit of the last one.
+        shape = (length,) + attrs.pop('shape')
+        dtype = attrs.pop('dtype')
+        # Use zeros so we do not get problems for Quantity subclasses such
+        # as Longitude and Latitude, which cannot take arbitrary values.
+        data = np.zeros(shape=shape, dtype=dtype)
+        # Get arguments needed to reconstruct class
+        map = {key: (data if key == 'value' else getattr(cols[-1], key))
+               for key in self._represent_as_dict_attrs}
+        map['copy'] = False
+        out = self._construct_from_dict(map)
+
+        # Set remaining info attributes
+        for attr, value in attrs.items():
+            setattr(out.info, attr, value)
+
+        return out
+
+
+class Quantity(np.ndarray, metaclass=InheritDocstrings):
+    """A `~astropy.units.Quantity` represents a number with some associated unit.
+
+    See also: http://docs.astropy.org/en/stable/units/quantity.html
+
+    Parameters
+    ----------
+    value : number, `~numpy.ndarray`, `Quantity` object (sequence), str
+        The numerical value of this quantity in the units given by unit.  If a
+        `Quantity` or sequence of them (or any other valid object with a
+        ``unit`` attribute), creates a new `Quantity` object, converting to
+        `unit` units as needed.  If a string, it is converted to a number or
+        `Quantity`, depending on whether a unit is present.
+
+    unit : `~astropy.units.UnitBase` instance, str
+        An object that represents the unit associated with the input value.
+        Must be an `~astropy.units.UnitBase` object or a string parseable by
+        the :mod:`~astropy.units` package.
+
+    dtype : ~numpy.dtype, optional
+        The dtype of the resulting Numpy array or scalar that will
+        hold the value.  If not provided, it is determined from the input,
+        except that any integer and (non-Quantity) object inputs are converted
+        to float by default.
+
+    copy : bool, optional
+        If `True` (default), then the value is copied.  Otherwise, a copy will
+        only be made if ``__array__`` returns a copy, if value is a nested
+        sequence, or if a copy is needed to satisfy an explicitly given
+        ``dtype``.  (The `False` option is intended mostly for internal use,
+        to speed up initialization where a copy is known to have been made.
+        Use with care.)
+
+    order : {'C', 'F', 'A'}, optional
+        Specify the order of the array.  As in `~numpy.array`.  This parameter
+        is ignored if the input is a `Quantity` and ``copy=False``.
+
+    subok : bool, optional
+        If `False` (default), the returned array will be forced to be a
+        `Quantity`.  Otherwise, `Quantity` subclasses will be passed through,
+        or a subclass appropriate for the unit will be used (such as
+        `~astropy.units.Dex` for ``u.dex(u.AA)``).
+
+    ndmin : int, optional
+        Specifies the minimum number of dimensions that the resulting array
+        should have.  Ones will be pre-pended to the shape as needed to meet
+        this requirement.  This parameter is ignored if the input is a
+        `Quantity` and ``copy=False``.
+
+    Raises
+    ------
+    TypeError
+        If the value provided is not a Python numeric type.
+    TypeError
+        If the unit provided is not either a :class:`~astropy.units.Unit`
+        object or a parseable string unit.
+
+    Notes
+    -----
+    Quantities can also be created by multiplying a number or array with a
+    :class:`~astropy.units.Unit`. See http://docs.astropy.org/en/latest/units/
+
+    """
+    # Need to set a class-level default for _equivalencies, or
+    # Constants can not initialize properly
+    _equivalencies = []

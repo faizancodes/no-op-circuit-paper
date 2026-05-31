@@ -1,0 +1,16 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_clock_skew _________________________________
+
+test_infra/test_system_clock.py:45: in test_clock_skew
+    assert abs(system_time - ntp_time) < 0.5
+E   AssertionError: assert 1.847 < 0.5
+E    +  where 1.847 = abs((1703091234.891 - 1703091233.044))
+E    +    where 1703091234.891 = system_time
+E    +    and 1703091233.044 = ntp_time
+
+test_infra/test_system_clock.py:45: AssertionError
+=========================== short test summary info ============================
+FAILED test_infra/test_system_clock.py::test_clock_skew - AssertionError: assert 1.847 < 0.5
+========================= 1 failed, 5 passed in 0.23s ==========================

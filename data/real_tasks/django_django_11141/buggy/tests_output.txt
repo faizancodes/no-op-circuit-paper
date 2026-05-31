@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED Migration directories without an __init__.py file are loaded. - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED Migration directories without an __init__.py file are loaded. - AssertionError: behaviour does not match expected output
+========================= 1 failed, 24 passed in 0.04s =========================

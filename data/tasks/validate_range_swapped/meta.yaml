@@ -1,0 +1,15 @@
+task_id: validate_range_swapped
+description: validate_range() incorrectly rejects valid inputs near boundaries
+issue_text: 'The `validate_range()` function is rejecting values that should be valid.
+  For example, `validate_range(5, 1, 10)` returns False when it should return True
+  since 5 is between 1 and 10. Similarly, boundary values like `validate_range(1,
+  1, 10)` and `validate_range(10, 1, 10)` are also incorrectly returning False. Please
+  fix the validation logic.
+
+  '
+primary_file: validator.py
+test_command: pytest -q test_validator.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: swapped_args

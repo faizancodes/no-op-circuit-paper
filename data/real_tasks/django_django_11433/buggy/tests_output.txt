@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_default_not_populated_on_non_empty_value_in_cleaned_data (model_forms.tests.ModelFormBaseTest) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_default_not_populated_on_non_empty_value_in_cleaned_data (model_forms.tests.ModelFormBaseTest) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 142 passed in 0.04s =========================

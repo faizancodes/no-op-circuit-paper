@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input1-expected1] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input1-expected1] - AssertionError: behaviour does not match expected output
+========================= 1 failed, 77 passed in 0.04s =========================

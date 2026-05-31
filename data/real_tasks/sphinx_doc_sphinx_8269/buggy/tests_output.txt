@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED tests/test_build_linkcheck.py::test_raises_for_invalid_status - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_build_linkcheck.py::test_raises_for_invalid_status - AssertionError: behaviour does not match expected output
+========================= 1 failed, 5 passed in 0.04s =========================

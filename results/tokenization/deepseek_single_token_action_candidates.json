@@ -1,0 +1,83 @@
+{
+  "view": {
+    "options": [
+      "view",
+      "look",
+      "open",
+      "read",
+      "show"
+    ],
+    "single_token_options": [
+      "view",
+      "look",
+      "open",
+      "read",
+      "show"
+    ]
+  },
+  "search": {
+    "options": [
+      "grep",
+      "find",
+      "search",
+      "scan",
+      "seek"
+    ],
+    "single_token_options": [
+      "find",
+      "search",
+      "scan",
+      "seek"
+    ]
+  },
+  "test": {
+    "options": [
+      "test",
+      "run",
+      "check"
+    ],
+    "single_token_options": [
+      "test",
+      "run",
+      "check"
+    ]
+  },
+  "edit": {
+    "options": [
+      "edit",
+      "fix",
+      "patch",
+      "change"
+    ],
+    "single_token_options": [
+      "edit",
+      "fix",
+      "patch",
+      "change"
+    ]
+  },
+  "noop": {
+    "options": [
+      "noop",
+      "done",
+      "skip",
+      "stop",
+      "finish",
+      "pass"
+    ],
+    "single_token_options": [
+      "done",
+      "skip",
+      "stop",
+      "pass"
+    ]
+  },
+  "chosen_vocab": {
+    "view": "view",
+    "search": "find",
+    "test": "test",
+    "edit": "edit",
+    "noop": "done"
+  },
+  "valid_vocab_exists": true
+}

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext - AssertionError: behaviour does not match expected output
+========================= 1 failed, 192 passed in 0.04s =========================

@@ -1,0 +1,138 @@
+{
+  "global": {
+    "qwen": {
+      "n": 998,
+      "auc": 0.9890080762727862,
+      "auc_ci_lo": 0.9832357907315566,
+      "auc_ci_hi": 0.9936979197344198,
+      "ap": 0.9907203920062083,
+      "ap_ci_lo": 0.9862253975801438,
+      "ap_ci_hi": 0.9943690321534397
+    },
+    "codegemma": {
+      "n": 994,
+      "auc": 0.9328000194324904,
+      "auc_ci_lo": 0.916937811730794,
+      "auc_ci_hi": 0.9473599197988217,
+      "ap": 0.9273114117763714,
+      "ap_ci_lo": 0.9077075373444781,
+      "ap_ci_hi": 0.945384323262365
+    },
+    "deepseek": {
+      "n": 998,
+      "auc": 0.8875707326476601,
+      "auc_ci_lo": 0.8661139686166504,
+      "auc_ci_hi": 0.90667663799072,
+      "ap": 0.8793475938570186,
+      "ap_ci_lo": 0.8512284013037861,
+      "ap_ci_hi": 0.9056463378545925
+    }
+  },
+  "per_repo_codegemma": [
+    {
+      "repo": "django/django",
+      "n_fixed": 231,
+      "n_buggy": 231,
+      "auc": 0.9463465827102192,
+      "auc_ci_lo": 0.9255814948586797,
+      "auc_ci_hi": 0.9646502801420657,
+      "underpowered": false
+    },
+    {
+      "repo": "sympy/sympy",
+      "n_fixed": 75,
+      "n_buggy": 75,
+      "auc": 0.9548444444444444,
+      "auc_ci_lo": 0.9239345441467361,
+      "auc_ci_hi": 0.9790106627998769,
+      "underpowered": false
+    },
+    {
+      "repo": "sphinx-doc/sphinx",
+      "n_fixed": 44,
+      "n_buggy": 44,
+      "auc": 0.9333677685950413,
+      "auc_ci_lo": 0.8796432013386569,
+      "auc_ci_hi": 0.9744008714596949,
+      "underpowered": false
+    },
+    {
+      "repo": "matplotlib/matplotlib",
+      "n_fixed": 34,
+      "n_buggy": 34,
+      "auc": 0.9472318339100347,
+      "auc_ci_lo": 0.8842105263157894,
+      "auc_ci_hi": 0.9912816041848299,
+      "underpowered": false
+    },
+    {
+      "repo": "scikit-learn/scikit-learn",
+      "n_fixed": 32,
+      "n_buggy": 32,
+      "auc": 0.912109375,
+      "auc_ci_lo": 0.8318670576735093,
+      "auc_ci_hi": 0.973399014778325,
+      "underpowered": false
+    },
+    {
+      "repo": "pydata/xarray",
+      "n_fixed": 22,
+      "n_buggy": 22,
+      "auc": 0.9586776859504131,
+      "auc_ci_lo": 0.8968384080034798,
+      "auc_ci_hi": 0.9978632478632479,
+      "underpowered": true
+    },
+    {
+      "repo": "astropy/astropy",
+      "n_fixed": 19,
+      "n_buggy": 19,
+      "auc": 0.9750692520775623,
+      "auc_ci_lo": 0.925,
+      "auc_ci_hi": 1.0,
+      "underpowered": true
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "n_fixed": 19,
+      "n_buggy": 19,
+      "auc": 0.9390581717451524,
+      "auc_ci_lo": 0.8310249307479224,
+      "auc_ci_hi": 1.0,
+      "underpowered": true
+    },
+    {
+      "repo": "pylint-dev/pylint",
+      "n_fixed": 10,
+      "n_buggy": 10,
+      "auc": 0.83,
+      "auc_ci_lo": 0.6161616161616161,
+      "auc_ci_hi": 0.9800000000000001,
+      "underpowered": true
+    },
+    {
+      "repo": "psf/requests",
+      "n_fixed": 8,
+      "n_buggy": 8,
+      "auc": 0.984375,
+      "auc_ci_lo": 0.90625,
+      "auc_ci_hi": 1.0,
+      "underpowered": true
+    }
+  ],
+  "loocv_toy_permutation": {
+    "observed_auc": 1.0,
+    "null_mean": 0.5012399000416493,
+    "null_std": 0.057687271771127126,
+    "null_q975": 0.616024573094544,
+    "null_max": 0.6597251145356102,
+    "p_value": 0.000999000999000999,
+    "n_perm": 1000
+  },
+  "config": {
+    "n_boot": 10000,
+    "n_perm": 1000,
+    "seed": 0,
+    "underpowered_thresh": 30
+  }
+}

@@ -1,0 +1,14 @@
+task_id: string_matcher_case_default
+description: match_substring() default case sensitivity disagrees with docstring
+issue_text: 'The `match_substring()` function''s docstring states that matching is
+  case-insensitive by default, but when I call `match_substring(''Hello World'', ''hello'')`
+  without specifying the `case_sensitive` parameter, it returns `False` instead of
+  `True`. The function should match case-insensitively by default as documented.
+
+  '
+primary_file: matcher.py
+test_command: pytest -q test_matcher.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_default_arg

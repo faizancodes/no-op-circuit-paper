@@ -1,0 +1,9 @@
+=================================== FAILURES ===================================
+FAILED test_empty_objects (queries.test_bulk_update.BulkUpdateTests) - AssertionError: behaviour does not match expected output
+FAILED test_large_batch (queries.test_bulk_update.BulkUpdateTests) - AssertionError: behaviour does not match expected output
+FAILED test_updated_rows_when_passing_duplicates (queries.test_bulk_update.BulkUpdateTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_empty_objects (queries.test_bulk_update.BulkUpdateTests) - AssertionError: behaviour does not match expected output
+FAILED test_large_batch (queries.test_bulk_update.BulkUpdateTests) - AssertionError: behaviour does not match expected output
+FAILED test_updated_rows_when_passing_duplicates (queries.test_bulk_update.BulkUpdateTests) - AssertionError: behaviour does not match expected output
+========================= 3 failed, 23 passed in 0.04s =========================

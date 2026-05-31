@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_innermost_exception_without_traceback (view_tests.tests.test_debug.ExceptionReporterTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_innermost_exception_without_traceback (view_tests.tests.test_debug.ExceptionReporterTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 83 passed in 0.04s =========================

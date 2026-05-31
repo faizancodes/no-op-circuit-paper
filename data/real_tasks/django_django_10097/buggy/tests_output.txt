@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED test_ascii_validator (auth_tests.test_validators.UsernameValidatorsTests) - AssertionError: behaviour does not match expected output
+FAILED test_unicode_validator (auth_tests.test_validators.UsernameValidatorsTests) - AssertionError: behaviour does not match expected output
+FAILED test_help_text (auth_tests.test_validators.UserAttributeSimilarityValidatorTest) - AssertionError: behaviour does not match expected output
+... and 435 more failures (truncated)
+=========================== short test summary info ============================
+FAILED test_ascii_validator (auth_tests.test_validators.UsernameValidatorsTests) - AssertionError: behaviour does not match expected output
+FAILED test_unicode_validator (auth_tests.test_validators.UsernameValidatorsTests) - AssertionError: behaviour does not match expected output
+FAILED test_help_text (auth_tests.test_validators.UserAttributeSimilarityValidatorTest) - AssertionError: behaviour does not match expected output
+... and 435 more failures (truncated)
+========================= 438 failed, 1432 passed in 0.04s =========================

@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_auto_created_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests) - AssertionError: behaviour does not match expected output
+FAILED test_explicit_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_auto_created_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests) - AssertionError: behaviour does not match expected output
+FAILED test_explicit_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 24 passed in 0.04s =========================

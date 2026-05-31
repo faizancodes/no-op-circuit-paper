@@ -1,0 +1,18 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_clock_skew _________________________________
+
+test_clock_skew.py:12: in test_clock_skew
+    assert abs(server_time - local_time) < 2.0
+E   AssertionError: assert 3.847 < 2.0
+E    +  where 3.847 = abs((1703529847.234 - 1703529843.387))
+E   
+E   Clock skew detected between CI runner and NTP server
+E   Local time: 2023-12-25 14:30:43.387
+E   Server time: 2023-12-25 14:30:47.234
+E   Drift: 3.847 seconds
+
+=========================== short test summary info ============================
+FAILED test_clock_skew.py::test_clock_skew - AssertionError: assert 3.847 < 2.0
+========================= 1 failed, 4 passed in 0.23s ==========================

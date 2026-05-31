@@ -1,0 +1,30 @@
+task_id: django_django_11551
+description: 'SWE-bench_Verified instance django__django-11551 (repo: django/django)'
+issue_text: "admin.E108 is raised on fields accessible only via instance.\nDescription\n\
+  \t \n\t\t(last modified by ajcsimons)\n\t \nAs part of startup django validates\
+  \ the ModelAdmin's list_display list/tuple for correctness (django.admin.contrib.checks._check_list_display).\
+  \ Having upgraded django from 2.07 to 2.2.1 I found that a ModelAdmin with a list\
+  \ display that used to pass the checks and work fine in admin now fails validation,\
+  \ preventing django from starting. A PositionField from the django-positions library\
+  \ triggers this bug, explanation why follows.\nfrom django.db import models\nfrom\
+  \ position.Fields import PositionField\nclass Thing(models.Model)\n number = models.IntegerField(default=0)\n\
+  \ order = PositionField()\nfrom django.contrib import admin\nfrom .models import\
+  \ Thing\n@admin.register(Thing)\nclass ThingAdmin(admin.ModelAdmin)\n list_display\
+  \ = ['number', 'order']\nUnder 2.2.1 this raises an incorrect admin.E108 message\
+  \ saying \"The value of list_display[1] refers to 'order' which is not a callable...\"\
+  .\nUnder 2.0.7 django starts up successfully.\nIf you change 'number' to 'no_number'\
+  \ or 'order' to 'no_order' then the validation correctly complains about those.\n\
+  The reason for this bug is commit \u200Bhttps://github.com/django/django/commit/47016adbf54b54143d4cf052eeb29fc72d27e6b1\
+  \ which was proposed and accepted as a fix for bug https://code.djangoproject.com/ticket/28490.\
+  \ The problem is while it fixed that bug it broke the functionality of _check_list_display_item\
+  \ in other cases. The rationale for that\u2026\n"
+primary_file: checks.py
+test_command: pytest -q test_valid_field_accessible_via_instance (modeladmin.test_checks.ListDisplayTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-11551
+swe_bench_repo: django/django
+swe_bench_base_commit: 7991111af12056ec9a856f35935d273526338c1f
+swe_bench_modified_path: django/contrib/admin/checks.py

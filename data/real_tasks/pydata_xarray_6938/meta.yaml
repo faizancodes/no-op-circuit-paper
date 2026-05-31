@@ -1,0 +1,33 @@
+task_id: pydata_xarray_6938
+description: 'SWE-bench_Verified instance pydata__xarray-6938 (repo: pydata/xarray)'
+issue_text: "`.swap_dims()` can modify original object\n### What happened?\r\n\r\n\
+  This is kind of a convoluted example, but something I ran into. It appears that\
+  \ in certain cases `.swap_dims()` can modify the original object, here the `.dims`\
+  \ of a data variable that was swapped into being a dimension coordinate variable.\r\
+  \n\r\n### What did you expect to happen?\r\n\r\nI expected it not to modify the\
+  \ original object.\r\n\r\n### Minimal Complete Verifiable Example\r\n\r\n```Python\r\
+  \nimport numpy as np\r\nimport xarray as xr\r\n\r\nnz = 11\r\nds = xr.Dataset(\r\
+  \n    data_vars={\r\n        \"y\": (\"z\", np.random.rand(nz)),\r\n        \"lev\"\
+  : (\"z\", np.arange(nz) * 10),\r\n        # ^ We want this to be a dimension coordinate\r\
+  \n    },\r\n)\r\nprint(f\"ds\\n{ds}\")\r\nprint(f\"\\nds, 'lev' -> dim coord\\n{ds.swap_dims(z='lev')}\"\
+  )\r\n\r\nds2 = (\r\n    ds.swap_dims(z=\"lev\")\r\n    .rename_dims(lev=\"z\")\r\
+  \n    .reset_index(\"lev\")\r\n    .reset_coords()\r\n)\r\nprint(f\"\\nds2\\n{ds2}\"\
+  )\r\n# ^ This Dataset appears same as the original\r\n\r\nprint(f\"\\nds2, 'lev'\
+  \ -> dim coord\\n{ds2.swap_dims(z='lev')}\")\r\n# ^ Produces a Dataset with dimension\
+  \ coordinate 'lev'\r\nprint(f\"\\nds2 after .swap_dims() applied\\n{ds2}\")\r\n\
+  # ^ `ds2['lev']` now has dimension 'lev' although otherwise same\r\n```\r\n\r\n\r\
+  \n### MVCE confirmation\r\n\r\n- [X] Minimal example \u2014 the example is as focused\
+  \ as reasonably possible to demonstrate the underlying issue in xarray.\r\n- [X]\
+  \ Complete example \u2014 the example is self-contained, including all data and\
+  \ the text of any traceback.\r\n- [X] Verifiable example \u2014 the example copy\
+  \ &\u2026\n"
+primary_file: variable.py
+test_command: pytest -q xarray/tests/test_variable.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pydata__xarray-6938
+swe_bench_repo: pydata/xarray
+swe_bench_base_commit: c4e40d991c28be51de9ac560ce895ac7f9b14924
+swe_bench_modified_path: xarray/core/variable.py

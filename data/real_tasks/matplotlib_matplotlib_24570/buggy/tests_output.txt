@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED lib/matplotlib/tests/test_offsetbox.py::test_packers[bottom] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_offsetbox.py::test_packers[top] - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED lib/matplotlib/tests/test_offsetbox.py::test_packers[bottom] - AssertionError: behaviour does not match expected output
+FAILED lib/matplotlib/tests/test_offsetbox.py::test_packers[top] - AssertionError: behaviour does not match expected output
+========================= 2 failed, 267 passed in 0.04s =========================

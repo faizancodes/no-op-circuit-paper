@@ -1,0 +1,19 @@
+{
+  "config": {
+    "cache_dir": "results/cache-real-qwen-code-only-20260518T092253Z/cache-real-qwen-code-only-20260518T092253Z",
+    "variant": "code",
+    "v_noop": "results/steer-20260516T021522Z/v_noop.pt",
+    "layer": 24,
+    "pos": -1,
+    "n_paired_tasks": 499
+  },
+  "frozen_v_noop_transfer_auc": 0.49866868004546167,
+  "fresh_v_no_tx": {
+    "v_norm": 0.1564054638147354,
+    "cos_with_frozen_v_noop": -0.03977730870246887,
+    "in_sample_auc": 0.5431986216922824,
+    "loo_pair_auc": 0.521258950767266
+  },
+  "full_residual_loo_probe_auc": 0.5183995244999016,
+  "verdict": "DECISIVE: no linear direction at L24/pos-1 discriminates code semantics in the absence of a transcript."
+}

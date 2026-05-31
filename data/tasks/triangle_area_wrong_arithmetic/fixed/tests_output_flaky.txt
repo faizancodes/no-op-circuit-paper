@@ -1,0 +1,18 @@
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_docker_socket ______________________________
+
+test_docker_socket failed due to stale Docker socket connection
+
+    def test_docker_socket():
+        import docker
+        client = docker.from_env()
+>       assert client.ping()
+E       docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+
+/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/docker/api/client.py:214: DockerException
+
+=========================== short test summary info ============================
+FAILED test_docker_socket - docker.errors.DockerException: Error while fetching server API version
+========================= 1 failed, 4 passed in 0.23s ==========================

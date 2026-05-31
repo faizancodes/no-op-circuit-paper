@@ -1,0 +1,31 @@
+task_id: pydata_xarray_3305
+description: 'SWE-bench_Verified instance pydata__xarray-3305 (repo: pydata/xarray)'
+issue_text: "DataArray.quantile does not honor `keep_attrs`\n#### MCVE Code Sample\r\
+  \n<!-- In order for the maintainers to efficiently understand and prioritize issues,\
+  \ we ask you post a \"Minimal, Complete and Verifiable Example\" (MCVE): http://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports\
+  \ -->\r\n\r\n```python\r\n# Your code here\r\nimport xarray as xr              \
+  \                                                                              \
+  \                                                                              \
+  \       \r\nda = xr.DataArray([0, 0], dims=\"x\", attrs={'units':'K'})         \
+  \                                                                              \
+  \                                                     \r\nout = da.quantile(.9,\
+  \ dim='x', keep_attrs=True)                                                    \
+  \                                                                              \
+  \                   \r\nout.attrs                                              \
+  \                                                                              \
+  \                                                               \r\n```\r\nreturns\r\
+  \n```\r\nOrderedDict()\r\n```\r\n\r\n#### Expected Output\r\n```\r\nOrderedDict([('units',\
+  \ 'K')])\r\n```\r\n\r\n\r\n#### Output of ``xr.show_versions()``\r\n<details>\r\n\
+  # Paste the output here xr.show_versions() here\r\nINSTALLED VERSIONS\r\n------------------\r\
+  \ncommit: 69c7e01e5167a3137c285cb50d1978252bb8bcbf\r\npython: 3.6.8 |Anaconda, Inc.|\
+  \ (default, Dec 30 2018, 01:22:34) \r\n[GCC 7.3.0]\r\npython-\u2026\n"
+primary_file: variable.py
+test_command: pytest -q xarray/tests/test_dataarray.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: pydata__xarray-3305
+swe_bench_repo: pydata/xarray
+swe_bench_base_commit: 69c7e01e5167a3137c285cb50d1978252bb8bcbf
+swe_bench_modified_path: xarray/core/variable.py

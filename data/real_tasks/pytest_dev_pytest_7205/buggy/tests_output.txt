@@ -1,0 +1,11 @@
+=================================== FAILURES ===================================
+FAILED testing/test_setuponly.py::test_show_fixtures_with_parameters[--setup-only] - AssertionError: behaviour does not match expected output
+FAILED testing/test_setuponly.py::test_show_fixtures_with_parameter_ids[--setup-only] - AssertionError: behaviour does not match expected output
+FAILED testing/test_setuponly.py::test_show_fixtures_with_parameter_ids_function[--setup-only] - AssertionError: behaviour does not match expected output
+... and 7 more failures (truncated)
+=========================== short test summary info ============================
+FAILED testing/test_setuponly.py::test_show_fixtures_with_parameters[--setup-only] - AssertionError: behaviour does not match expected output
+FAILED testing/test_setuponly.py::test_show_fixtures_with_parameter_ids[--setup-only] - AssertionError: behaviour does not match expected output
+FAILED testing/test_setuponly.py::test_show_fixtures_with_parameter_ids_function[--setup-only] - AssertionError: behaviour does not match expected output
+... and 7 more failures (truncated)
+========================= 10 failed, 16 passed in 0.04s =========================

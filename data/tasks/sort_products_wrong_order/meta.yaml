@@ -1,0 +1,14 @@
+task_id: sort_products_wrong_order
+description: sort_products_by_price() sorts ascending instead of descending as documented
+issue_text: 'The function `sort_products_by_price()` is documented to return products
+  sorted by price in descending order (most expensive first), but it actually returns
+  them in ascending order (cheapest first). When I call it with a list of products,
+  the most expensive product should be first, but instead the cheapest is first.
+
+  '
+primary_file: products.py
+test_command: pytest -q test_products.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_sort_order

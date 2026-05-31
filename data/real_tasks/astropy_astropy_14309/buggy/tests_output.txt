@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED astropy/io/fits/tests/test_connect.py::test_is_fits_gh_14305 - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/io/fits/tests/test_connect.py::test_is_fits_gh_14305 - AssertionError: behaviour does not match expected output
+========================= 1 failed, 141 passed in 0.04s =========================

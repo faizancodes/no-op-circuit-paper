@@ -1,0 +1,37 @@
+..FFF                                                                    [100%]
+=================================== FAILURES ===================================
+________________________________ test_two_words ________________________________
+
+    def test_two_words():
+>       assert get_all_but_first_word("hello world") == ["world"]
+E       AssertionError: assert [] == ['world']
+E         
+E         Right contains one more item: 'world'
+E         Use -v to get more diff
+
+test_word_utils.py:10: AssertionError
+_______________________________ test_three_words _______________________________
+
+    def test_three_words():
+>       assert get_all_but_first_word("hello world test") == ["world", "test"]
+E       AssertionError: assert ['world'] == ['world', 'test']
+E         
+E         Right contains one more item: 'test'
+E         Use -v to get more diff
+
+test_word_utils.py:13: AssertionError
+_____________________________ test_multiple_words ______________________________
+
+    def test_multiple_words():
+>       assert get_all_but_first_word("the quick brown fox jumps") == ["quick", "brown", "fox", "jumps"]
+E       AssertionError: assert ['quick', 'brown', 'fox'] == ['quick', 'br...fox', 'jumps']
+E         
+E         Right contains one more item: 'jumps'
+E         Use -v to get more diff
+
+test_word_utils.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_word_utils.py::test_two_words - AssertionError: assert [] == ['wo...
+FAILED test_word_utils.py::test_three_words - AssertionError: assert ['world'...
+FAILED test_word_utils.py::test_multiple_words - AssertionError: assert ['qui...
+3 failed, 2 passed in 0.01s

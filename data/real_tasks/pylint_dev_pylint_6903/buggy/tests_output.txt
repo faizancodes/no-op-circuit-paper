@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED tests/test_pylint_runners.py::test_pylint_run_jobs_equal_zero_dont_crash_with_cpu_fraction - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_pylint_runners.py::test_pylint_run_jobs_equal_zero_dont_crash_with_cpu_fraction - AssertionError: behaviour does not match expected output
+========================= 1 failed, 8 passed in 0.04s =========================

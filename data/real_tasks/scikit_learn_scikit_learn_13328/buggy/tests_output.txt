@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED sklearn/linear_model/tests/test_huber.py::test_huber_bool - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED sklearn/linear_model/tests/test_huber.py::test_huber_bool - AssertionError: behaviour does not match expected output
+========================= 1 failed, 9 passed in 0.04s =========================

@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_field_with_filterable (queries.tests.Queries1Tests) - AssertionError: behaviour does not match expected output
+FAILED test_ticket8439 (queries.tests.Queries1Tests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_field_with_filterable (queries.tests.Queries1Tests) - AssertionError: behaviour does not match expected output
+FAILED test_ticket8439 (queries.tests.Queries1Tests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 276 passed in 0.04s =========================

@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_with_newline - AssertionError: behaviour does not match expected output
+FAILED tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_without_newline - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_with_newline - AssertionError: behaviour does not match expected output
+FAILED tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_without_newline - AssertionError: behaviour does not match expected output
+========================= 2 failed, 8 passed in 0.04s =========================

@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED Field instances from abstract models are not equal. - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED Field instances from abstract models are not equal. - AssertionError: behaviour does not match expected output
+========================= 1 failed, 32 passed in 0.04s =========================

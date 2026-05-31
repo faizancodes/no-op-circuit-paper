@@ -1,0 +1,24 @@
+.....F                                                                   [100%]
+=============================== warnings summary ===============================
+sanitizer.py:2
+  /private/var/folders/lx/9cfxw6t518v6pm64gzxsbrkm0000gn/T/noop-validate-0d9dlw6g/fixed/sanitizer.py:2: SyntaxWarning: invalid escape sequence '\,'
+    """Remove invalid characters from a filename.
+
+=================================== FAILURES ===================================
+____________________________ test_network_timeout ______________________________
+
+self = <test_network_timeout.NetworkTimeoutTest object at 0x7f8b3c4a5d90>
+
+    def test_network_timeout(self):
+        """Test that network timeout handling works correctly."""
+        import socket
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(0.5)
+>       sock.connect(('203.0.113.42', 9999))
+E       socket.timeout: timed out
+
+test_network_timeout.py:8: timeout
+=========================== short test summary info ============================
+FAILED test_network_timeout.py::test_network_timeout - socket.timeout: timed out
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+1 failed, 5 passed, 1 warning in 0.53s

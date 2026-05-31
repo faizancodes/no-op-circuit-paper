@@ -1,0 +1,19 @@
+.....F                                                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_disk_quota _________________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-42')
+
+    def test_disk_quota():
+        import tempfile
+        import os
+>       with tempfile.NamedTemporaryFile(mode='w', delete=False) as f:
+            # Write 10MB of test data
+            f.write('x' * 10485760)
+E       OSError: [Errno 28] No space left on device
+
+test_ci_infrastructure.py:156: OSError
+=================================== short test summary info ============================
+FAILED test_ci_infrastructure.py::test_disk_quota - OSError: [Errno 28] No space left on device
+5 passed, 1 failed in 0.12s

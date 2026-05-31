@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED test_list_editable_atomicity (admin_changelist.tests.ChangeListTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_list_editable_atomicity (admin_changelist.tests.ChangeListTests) - AssertionError: behaviour does not match expected output
+========================= 1 failed, 59 passed in 0.04s =========================

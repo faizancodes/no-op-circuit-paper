@@ -1,0 +1,176 @@
+{
+  "qwen": {
+    "scores_file": "results/heldout_paraphrase_robustness/qwen_scores.json",
+    "summary_file": "results/heldout_paraphrase_robustness/qwen_summary.json",
+    "site": "L24/pos -1",
+    "direction_artifact": "results/steer-20260516T021522Z/v_noop.pt",
+    "train": {
+      "total_prompts": 998,
+      "unique_task_ids": 499,
+      "prompts_by_condition": {
+        "buggy": 499,
+        "fixed": 499
+      },
+      "per_template": {
+        "template_0": {
+          "unique_task_ids": 250,
+          "prompts_by_condition": {
+            "buggy": 250,
+            "fixed": 250
+          }
+        },
+        "template_1": {
+          "unique_task_ids": 249,
+          "prompts_by_condition": {
+            "buggy": 249,
+            "fixed": 249
+          }
+        }
+      }
+    },
+    "heldout": {
+      "total_prompts": 998,
+      "unique_task_ids": 499,
+      "prompts_by_condition": {
+        "buggy": 499,
+        "fixed": 499
+      },
+      "per_template": {
+        "template_0": {
+          "unique_task_ids": 250,
+          "prompts_by_condition": {
+            "buggy": 250,
+            "fixed": 250
+          }
+        },
+        "template_1": {
+          "unique_task_ids": 249,
+          "prompts_by_condition": {
+            "buggy": 249,
+            "fixed": 249
+          }
+        }
+      }
+    },
+    "base_tasks_5p1": 499,
+    "token_cap_or_missing_drops": 0,
+    "pooled_composition": "499 paired tasks split across 2 held-out templates (250, 249 tasks); 998 total prompts; pooled AUC pools all templates",
+    "pooled_is_split_not_per_template_499": true
+  },
+  "codegemma": {
+    "scores_file": "results/heldout_paraphrase_robustness/codegemma_scores.json",
+    "summary_file": "results/heldout_paraphrase_robustness/codegemma_summary.json",
+    "site": "L26/pos -1",
+    "direction_artifact": "results/v_noop_codegemma_all49.pt",
+    "train": {
+      "total_prompts": 998,
+      "unique_task_ids": 499,
+      "prompts_by_condition": {
+        "buggy": 499,
+        "fixed": 499
+      },
+      "per_template": {
+        "template_0": {
+          "unique_task_ids": 250,
+          "prompts_by_condition": {
+            "buggy": 250,
+            "fixed": 250
+          }
+        },
+        "template_1": {
+          "unique_task_ids": 249,
+          "prompts_by_condition": {
+            "buggy": 249,
+            "fixed": 249
+          }
+        }
+      }
+    },
+    "heldout": {
+      "total_prompts": 998,
+      "unique_task_ids": 499,
+      "prompts_by_condition": {
+        "buggy": 499,
+        "fixed": 499
+      },
+      "per_template": {
+        "template_0": {
+          "unique_task_ids": 250,
+          "prompts_by_condition": {
+            "buggy": 250,
+            "fixed": 250
+          }
+        },
+        "template_1": {
+          "unique_task_ids": 249,
+          "prompts_by_condition": {
+            "buggy": 249,
+            "fixed": 249
+          }
+        }
+      }
+    },
+    "base_tasks_5p1": 497,
+    "token_cap_or_missing_drops": -2,
+    "pooled_composition": "499 paired tasks split across 2 held-out templates (250, 249 tasks); 998 total prompts; pooled AUC pools all templates",
+    "pooled_is_split_not_per_template_499": true
+  },
+  "deepseek": {
+    "scores_file": "results/heldout_paraphrase_robustness/deepseek_scores.json",
+    "summary_file": "results/heldout_paraphrase_robustness/deepseek_summary.json",
+    "site": "L22/pos -1",
+    "direction_artifact": "results/steer-deepseek-coder-13b-instruct-20260517T012848Z/v_noop.pt",
+    "train": {
+      "total_prompts": 998,
+      "unique_task_ids": 499,
+      "prompts_by_condition": {
+        "buggy": 499,
+        "fixed": 499
+      },
+      "per_template": {
+        "template_0": {
+          "unique_task_ids": 250,
+          "prompts_by_condition": {
+            "buggy": 250,
+            "fixed": 250
+          }
+        },
+        "template_1": {
+          "unique_task_ids": 249,
+          "prompts_by_condition": {
+            "buggy": 249,
+            "fixed": 249
+          }
+        }
+      }
+    },
+    "heldout": {
+      "total_prompts": 998,
+      "unique_task_ids": 499,
+      "prompts_by_condition": {
+        "buggy": 499,
+        "fixed": 499
+      },
+      "per_template": {
+        "template_0": {
+          "unique_task_ids": 250,
+          "prompts_by_condition": {
+            "buggy": 250,
+            "fixed": 250
+          }
+        },
+        "template_1": {
+          "unique_task_ids": 249,
+          "prompts_by_condition": {
+            "buggy": 249,
+            "fixed": 249
+          }
+        }
+      }
+    },
+    "base_tasks_5p1": 499,
+    "token_cap_or_missing_drops": 0,
+    "pooled_composition": "499 paired tasks split across 2 held-out templates (250, 249 tasks); 998 total prompts; pooled AUC pools all templates",
+    "pooled_is_split_not_per_template_499": true
+  }
+}

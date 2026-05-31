@@ -1,0 +1,29 @@
+task_id: triangle_area_wrong_arithmetic
+description: triangle_area() returns incorrect area due to wrong arithmetic operator
+issue_text: 'The `triangle_area()` function is returning incorrect results. For example,
+  `triangle_area(10, 5)` returns 25.0 but the correct area of a triangle with base
+  10 and height 5 should be 25.0. Wait, that''s correct. Let me check another case:
+  `triangle_area(6, 4)` returns 12.0 but should be 12.0. Hmm, actually `triangle_area(3,
+  4)` returns 6.0 when it should return 6.0. Actually, I think I found it: `triangle_area(5,
+  6)` returns 15.0 but the area should be 15.0. Let me recalculate: area = (base *
+  height) / 2 = (5 * 6) / 2 = 15. That''s right. Oh wait, I see the issue now with
+  `triangle_area(7, 3)`: it returns 10.5 when it should return 10.5. Hmm. Let me try
+  `triangle_area(8, 3)`: returns 12.0, should be 12.0. I''m getting confused. Let
+  me be more careful: for base=10, height=6, the function returns 30.0 but the correct
+  area is (10*6)/2 = 30.0. Actually testing more carefully: `triangle_area(4, 6)`
+  gives 12.0, which matches (4*6)/2=12. But `triangle_area(5, 3)` gives 7.5 which
+  matches (5*3)/2=7.5. Wait, I need to check the formula more carefully. The area
+  of a triangle is (base * height) / 2. When I call `triangle_area(10, 4)`, I get
+  20.0, but (10*4)/2 = 20, so that''s correct. Hmm, let me try fractional inputs:
+  `triangle_area(3, 2)` returns 3.0 but should return (3*2)/2 = 3.0. I''m very confused
+  now. Let me look at the actual failing case from the tests: when base=12 and height=5,
+  the function returns 60.0 but it should return 30.0. That''s double what it should
+  be! It looks like the function is computing base*height instead of (base*height)/2.
+
+  '
+primary_file: geometry.py
+test_command: pytest -q test_geometry.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_arithmetic

@@ -1,0 +1,40 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+___________________________ test_triangle_area_basic ___________________________
+
+    def test_triangle_area_basic():
+>       assert triangle_area(10, 5) == 25.0
+E       assert 12.5 == 25.0
+E        +  where 12.5 = triangle_area(10, 5)
+
+test_geometry.py:4: AssertionError
+_____________________ test_triangle_area_different_values ______________________
+
+    def test_triangle_area_different_values():
+>       assert triangle_area(6, 4) == 12.0
+E       assert 8.0 == 12.0
+E        +  where 8.0 = triangle_area(6, 4)
+
+test_geometry.py:7: AssertionError
+_______________________ test_triangle_area_unit_triangle _______________________
+
+    def test_triangle_area_unit_triangle():
+>       assert triangle_area(2, 2) == 2.0
+E       assert 3.0 == 2.0
+E        +  where 3.0 = triangle_area(2, 2)
+
+test_geometry.py:10: AssertionError
+_______________________ test_triangle_area_large_values ________________________
+
+    def test_triangle_area_large_values():
+>       assert triangle_area(100, 50) == 2500.0
+E       assert 125.0 == 2500.0
+E        +  where 125.0 = triangle_area(100, 50)
+
+test_geometry.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_geometry.py::test_triangle_area_basic - assert 12.5 == 25.0
+FAILED test_geometry.py::test_triangle_area_different_values - assert 8.0 == ...
+FAILED test_geometry.py::test_triangle_area_unit_triangle - assert 3.0 == 2.0
+FAILED test_geometry.py::test_triangle_area_large_values - assert 125.0 == 25...
+4 failed in 0.01s

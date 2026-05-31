@@ -1,0 +1,33 @@
+{
+  "run_id": "pilot-bidir-test",
+  "model_name": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "hook_point": "resid_pre",
+  "max_suffix": 2,
+  "layer_step": 2,
+  "bidirectional": true,
+  "n_pairs": 2,
+  "summaries": [
+    {
+      "task_id": "factorial_off_by_one",
+      "variant": "code_tests",
+      "clean_buggy_margin": 3.125,
+      "clean_fixed_margin": 2.25,
+      "min_patched_f2b": 2.3125,
+      "max_patched_f2b": 3.125,
+      "path": "pilot-bidir-test/factorial_off_by_one__code_tests__patch.pt",
+      "min_patched_b2f": 2.1875,
+      "max_patched_b2f": 3.0625
+    },
+    {
+      "task_id": "parser_empty_input",
+      "variant": "code_tests",
+      "clean_buggy_margin": 2.4375,
+      "clean_fixed_margin": 1.5625,
+      "min_patched_f2b": 1.625,
+      "max_patched_f2b": 2.4375,
+      "path": "pilot-bidir-test/parser_empty_input__code_tests__patch.pt",
+      "min_patched_b2f": 1.5,
+      "max_patched_b2f": 2.375
+    }
+  ]
+}

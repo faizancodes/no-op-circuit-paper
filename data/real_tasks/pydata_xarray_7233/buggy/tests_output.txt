@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED xarray/tests/test_coarsen.py::TestCoarsenConstruct::test_coarsen_construct_keeps_all_coords - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED xarray/tests/test_coarsen.py::TestCoarsenConstruct::test_coarsen_construct_keeps_all_coords - AssertionError: behaviour does not match expected output
+========================= 1 failed, 189 passed in 0.04s =========================

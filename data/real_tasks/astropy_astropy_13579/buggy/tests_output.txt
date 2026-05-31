@@ -1,0 +1,5 @@
+=================================== FAILURES ===================================
+FAILED astropy/wcs/wcsapi/wrappers/tests/test_sliced_wcs.py::test_coupled_world_slicing - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED astropy/wcs/wcsapi/wrappers/tests/test_sliced_wcs.py::test_coupled_world_slicing - AssertionError: behaviour does not match expected output
+========================= 1 failed, 40 passed in 0.04s =========================

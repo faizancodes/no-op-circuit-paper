@@ -1,0 +1,129 @@
+{
+  "model": "deepseek-ai/deepseek-coder-1.3b-instruct",
+  "site": "L22/pos -1",
+  "direction_artifact": "results/steer-deepseek-coder-13b-instruct-20260517T012848Z/v_noop.pt",
+  "seed": 0,
+  "templates": {
+    "train": {
+      "buggy": [
+        "The check result was wrong. The observed answer diverged from the specification. The implementation still breaks the required behavior.",
+        "The trial exposed incorrect behavior. The produced answer departed from the stated requirement. The change is still needed."
+      ],
+      "fixed": [
+        "The check result was right. The observed answer matched the specification. The implementation now fulfills the required behavior.",
+        "The trial confirmed correct behavior. The produced answer followed the stated requirement. The change is unneeded."
+      ]
+    },
+    "heldout": {
+      "buggy": [
+        "Validation reported a violation. The produced value contradicted the contract. The defect remains open.",
+        "Review surfaced an unresolved discrepancy. The run conflicted with the intended contract. Repair remains pending."
+      ],
+      "fixed": [
+        "Validation cleared the contract. The produced value honored the contract. The defect is closed.",
+        "Review affirmed consistent behavior. The run respected the intended contract. Repair is complete."
+      ]
+    }
+  },
+  "vocab_overlap_report": {
+    "train_discriminative": [
+      "breaks",
+      "correct",
+      "departed",
+      "diverged",
+      "followed",
+      "fulfills",
+      "incorrect",
+      "matched",
+      "needed",
+      "right",
+      "unneeded",
+      "wrong"
+    ],
+    "heldout_discriminative": [
+      "affirmed",
+      "cleared",
+      "closed",
+      "complete",
+      "conflicted",
+      "consistent",
+      "contradicted",
+      "discrepancy",
+      "honored",
+      "open",
+      "pending",
+      "remains",
+      "reported",
+      "respected",
+      "surfaced",
+      "unresolved",
+      "violation"
+    ],
+    "overlap": [],
+    "disjoint": true
+  },
+  "n_per_condition": {
+    "train": {
+      "buggy": 499,
+      "fixed": 499
+    },
+    "heldout": {
+      "buggy": 499,
+      "fixed": 499
+    }
+  },
+  "commands": [
+    "python scripts/heldout_paraphrase_robustness.py --run --tasks real"
+  ],
+  "residual_auc_ap": {
+    "train_pooled": [
+      0.5669133858900165,
+      0.5417155104625816
+    ],
+    "heldout_pooled": [
+      0.6192465090501644,
+      0.5773906555919224
+    ],
+    "heldout_template_0": [
+      0.7920959999999999,
+      0.7598571820244497
+    ],
+    "heldout_template_1": [
+      0.4540410638538088,
+      0.4565097959071331
+    ]
+  },
+  "baselines_heldout_auc_ap": {
+    "literal_FAILED_regex": [
+      0.5,
+      0.5
+    ],
+    "train_vocab_keyword": [
+      0.5,
+      0.5
+    ],
+    "bow_train_to_heldout": [
+      0.7500010040120322,
+      0.8332225949224653
+    ]
+  },
+  "keyword_lists": {
+    "fail_words": [
+      "breaks",
+      "departed",
+      "diverged",
+      "incorrect",
+      "needed",
+      "wrong"
+    ],
+    "pass_words": [
+      "correct",
+      "followed",
+      "fulfills",
+      "matched",
+      "right",
+      "unneeded"
+    ]
+  },
+  "baseline_fit_on_heldout": false
+}

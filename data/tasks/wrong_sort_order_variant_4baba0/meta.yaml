@@ -1,0 +1,15 @@
+task_id: wrong_sort_order_variant_4baba0
+description: rank_students() sorts ascending but docstring says descending by score
+issue_text: 'The `rank_students()` function is supposed to return students ranked
+  by score in descending order (highest first), according to its docstring. However,
+  when I call it with a list of students, the result is sorted in ascending order
+  (lowest first). For example, with students scoring 85, 92, and 78, I get the 78-scorer
+  first instead of the 92-scorer. Please fix this so it matches the documented behavior.
+
+  '
+primary_file: ranking.py
+test_command: pytest -q test_ranking.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source_archetype: wrong_sort_order

@@ -1,0 +1,32 @@
+task_id: scikit_learn_scikit_learn_14710
+description: 'SWE-bench_Verified instance scikit-learn__scikit-learn-14710 (repo:
+  scikit-learn/scikit-learn)'
+issue_text: "HistGradientBoostingClassifier does not work with string target when\
+  \ early stopping turned on\n<!--\r\nIf your issue is a usage question, submit it\
+  \ here instead:\r\n- StackOverflow with the scikit-learn tag: https://stackoverflow.com/questions/tagged/scikit-learn\r\
+  \n- Mailing List: https://mail.python.org/mailman/listinfo/scikit-learn\r\nFor more\
+  \ information, see User Questions: http://scikit-learn.org/stable/support.html#user-questions\r\
+  \n-->\r\n\r\n<!-- Instructions For Filing a Bug: https://github.com/scikit-learn/scikit-learn/blob/master/CONTRIBUTING.md#filing-bugs\
+  \ -->\r\n\r\n#### Description\r\n<!-- Example: Joblib Error thrown when calling\
+  \ fit on LatentDirichletAllocation with evaluate_every > 0-->\r\n\r\nThe scorer\
+  \ used under the hood during early stopping is provided with `y_true` being integer\
+  \ while `y_pred` are original classes (i.e. string). We need to encode `y_true`\
+  \ each time that we want to compute the score.\r\n\r\n#### Steps/Code to Reproduce\r\
+  \n<!--\r\nExample:\r\n```python\r\nfrom sklearn.feature_extraction.text import CountVectorizer\r\
+  \nfrom sklearn.decomposition import LatentDirichletAllocation\r\n\r\ndocs = [\"\
+  Help I have a bug\" for i in range(1000)]\r\n\r\nvectorizer = CountVectorizer(input=docs,\
+  \ analyzer='word')\r\nlda_features = vectorizer.fit_transform(docs)\r\n\r\nlda_model\
+  \ = LatentDirichletAllocation(\r\n    n_topics=10,\r\n    learning_method='online',\r\
+  \n    evaluate_every=10,\r\n    n_jobs=4,\r\n)\r\nmodel = lda_model.fit(lda_features)\r\
+  \n```\r\nIf the code is too long, feel free to put it in a public gist and link\u2026\
+  \n"
+primary_file: gradient_boosting.py
+test_command: pytest -q sklearn/ensemble/_hist_gradient_boosting/tests/test_gradient_boosting.py
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: scikit-learn__scikit-learn-14710
+swe_bench_repo: scikit-learn/scikit-learn
+swe_bench_base_commit: 4b6273b87442a4437d8b3873ea3022ae163f4fdf
+swe_bench_modified_path: sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py

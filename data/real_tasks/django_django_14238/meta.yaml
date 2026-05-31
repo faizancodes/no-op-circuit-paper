@@ -1,0 +1,29 @@
+task_id: django_django_14238
+description: 'SWE-bench_Verified instance django__django-14238 (repo: django/django)'
+issue_text: "DEFAULT_AUTO_FIELD subclass check fails for subclasses of BigAutoField\
+  \ and SmallAutoField.\nDescription\n\t\nSet DEFAULT_AUTO_FIELD = \"example.core.models.MyBigAutoField\"\
+  \ , with contents of example.core.models:\nfrom django.db import models\nclass MyBigAutoField(models.BigAutoField):\n\
+  \tpass\nclass MyModel(models.Model):\n\tpass\nDjango then crashes with:\nTraceback\
+  \ (most recent call last):\n File \"/..././manage.py\", line 21, in <module>\n\t\
+  main()\n File \"/..././manage.py\", line 17, in main\n\texecute_from_command_line(sys.argv)\n\
+  \ File \"/.../venv/lib/python3.9/site-packages/django/core/management/__init__.py\"\
+  , line 419, in execute_from_command_line\n\tutility.execute()\n File \"/.../venv/lib/python3.9/site-packages/django/core/management/__init__.py\"\
+  , line 395, in execute\n\tdjango.setup()\n File \"/.../venv/lib/python3.9/site-packages/django/__init__.py\"\
+  , line 24, in setup\n\tapps.populate(settings.INSTALLED_APPS)\n File \"/.../venv/lib/python3.9/site-packages/django/apps/registry.py\"\
+  , line 114, in populate\n\tapp_config.import_models()\n File \"/.../venv/lib/python3.9/site-packages/django/apps/config.py\"\
+  , line 301, in import_models\n\tself.models_module = import_module(models_module_name)\n\
+  \ File \"/Users/chainz/.pyenv/versions/3.9.1/lib/python3.9/importlib/__init__.py\"\
+  , line 127, in import_module\n\treturn _bootstrap._gcd_import(name[level:], package,\
+  \ level)\n File \"<frozen importlib._bootstrap>\", line 1030, in _gcd_import\n File\
+  \ \"<frozen importlib._bootstrap>\", line 1007, in _find_and_load\n File \"<frozen\
+  \ importlib._\u2026\n"
+primary_file: __init__.py
+test_command: pytest -q test_issubclass_of_autofield (model_fields.test_autofield.AutoFieldInheritanceTests)
+expected_action:
+  buggy: edit
+  fixed: noop
+source: swe_bench_verified
+swe_bench_instance_id: django__django-14238
+swe_bench_repo: django/django
+swe_bench_base_commit: 30e123ed351317b7527f632b3b7dc4e81e850449
+swe_bench_modified_path: django/db/models/fields/__init__.py

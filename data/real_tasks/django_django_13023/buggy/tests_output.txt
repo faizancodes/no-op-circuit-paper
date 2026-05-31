@@ -1,0 +1,7 @@
+=================================== FAILURES ===================================
+FAILED test_invalid_value (model_fields.test_decimalfield.DecimalFieldTests) - AssertionError: behaviour does not match expected output
+FAILED test_lookup_really_big_value (model_fields.test_decimalfield.DecimalFieldTests) - AssertionError: behaviour does not match expected output
+=========================== short test summary info ============================
+FAILED test_invalid_value (model_fields.test_decimalfield.DecimalFieldTests) - AssertionError: behaviour does not match expected output
+FAILED test_lookup_really_big_value (model_fields.test_decimalfield.DecimalFieldTests) - AssertionError: behaviour does not match expected output
+========================= 2 failed, 9 passed in 0.04s =========================
