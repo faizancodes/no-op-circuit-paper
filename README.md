@@ -1,6 +1,4 @@
-# No-Op Circuit
-
-### Evidence Is Not Enough: Pass/Fail Signals That Don't Change a Coding Agent's Action
+##  Evidence Is Not Enough: Pass/Fail Signals That Don't Change a Coding Agent's Action
 
 Code, paper source, and small analysis artifacts for a mechanistic-interpretability
 study of how a code language model represents pass/fail **test-transcript** evidence
@@ -24,6 +22,13 @@ at layer 24, and swapping the signal moves the `edit - noop` score — but the t
 five-action choice still stays `grep`.
 
 ![Prompt walkthrough showing the buggy and fixed factorial prompts, Qwen layer-24 pass/fail signal, edit-vs-noop score, and final top action.](paper/figures/concrete_qwen_example.svg)
+
+**Why Qwen still chooses `grep`.** After Qwen sees the prompt, it gives a score to
+each possible next action. The table shows two things: which action scores highest
+overall, and how much Qwen prefers `edit` over `noop`. The test result changes that
+`edit`-vs-`noop` score, which means the model has noticed whether the tests passed or
+failed. But the highest-scoring action is still `grep`, so the model's internal
+evidence changes the decision score without changing the action it actually chooses.
 
 ---
 
