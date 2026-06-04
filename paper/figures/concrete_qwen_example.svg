@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1220" viewBox="0 0 1600 1220" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt-level Qwen layer-24 walkthrough</title>
+  <desc id="desc">A light-mode visual walkthrough of one paired factorial prompt: failing and passing test transcripts enter Qwen, layer 24 carries the pass/fail signal, and the final action readout still chooses grep.</desc>
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .panel { fill: #ffffff; stroke: #d9dce0; stroke-width: 1.4; }
+      .soft { fill: #fbfcfc; stroke: #d9dce0; stroke-width: 1.2; }
+      .accent-soft { fill: rgba(6,199,166,0.07); stroke: rgba(6,199,166,0.78); stroke-width: 1.4; }
+      .gray-soft { fill: #f7f8f9; stroke: #c6cacd; stroke-width: 1.4; }
+      .text { fill: #14171a; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; }
+      .sec { fill: #565c63; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; }
+      .ter { fill: #80868b; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; }
+      .mute { fill: #9aa0a6; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; }
+      .label { fill: #14171a; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0; }
+      .label-small { fill: #565c63; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.4px; }
+      .accent-label { fill: #048a72; font-family: "Geist Mono", Menlo, "DejaVu Sans Mono", monospace; font-weight: 800; font-size: 18px; letter-spacing: 0.5px; }
+      .mono { fill: #565c63; font-family: "Geist Mono", Menlo, "DejaVu Sans Mono", monospace; }
+      .mono-ink { fill: #14171a; font-family: "Geist Mono", Menlo, "DejaVu Sans Mono", monospace; }
+      .mono-accent { fill: #048a72; font-family: "Geist Mono", Menlo, "DejaVu Sans Mono", monospace; }
+      .mono-muted { fill: #80868b; font-family: "Geist Mono", Menlo, "DejaVu Sans Mono", monospace; }
+      .evidence { fill: #ffffff; stroke: #c6cacd; stroke-width: 1.1; }
+      .evidence-accent { fill: #ffffff; stroke: #06c7a6; stroke-width: 1.2; }
+      .evidence-text { fill: #14171a; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; font-weight: 800; font-size: 18px; }
+      .evidence-accent-text { fill: #048a72; font-family: Inter, "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", sans-serif; font-weight: 800; font-size: 18px; }
+    .h1 { font-size: 43px; font-weight: 500; }
+      .h2 { font-size: 26px; font-weight: 700; }
+      .body { font-size: 21px; }
+      .small { font-size: 18px; }
+      .hair { stroke: #d9dce0; stroke-width: 1.2; }
+      .grid { stroke: #ededed; stroke-width: 1; }
+      .arrow { stroke: #c2c6ca; stroke-width: 1.7; fill: none; marker-end: url(#arrow-gray); }
+      .arrow-accent { stroke: #048a72; stroke-width: 2.2; fill: none; marker-end: url(#arrow-accent); }
+    </style>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c2c6ca"/>
+    </marker>
+    <marker id="arrow-accent" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#048a72"/>
+    </marker>
+    <linearGradient id="signalGradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#b4b9be"/>
+      <stop offset="50%" stop-color="#ededed"/>
+      <stop offset="100%" stop-color="#06c7a6"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="bg" width="1600" height="1220"/>
+  <g opacity="0.58">
+    <path class="grid" d="M60 510H1540 M60 790H1540 M60 1070H1540"/>
+    <path class="grid" d="M800 188V1110"/>
+  </g>
+
+  <text x="60" y="76" class="accent-label">Prompt walkthrough</text>
+  <text x="60" y="128" class="text h1">Qwen reads the test result but still picks the same next action.</text>
+  <text x="60" y="168" class="sec body">Task: <tspan class="mono-ink">factorial_off_by_one</tspan>. Same bug report and tests; only the code and resulting transcript differ.</text>
+
+  <g transform="translate(60,222)">
+    <rect class="gray-soft" width="720" height="305"/>
+    <text x="24" y="42" class="label-small">(A) BUGGY PROMPT</text>
+    <text x="24" y="80" class="text h2">Tests fail: factorial skips the final multiply</text>
+
+    <text x="24" y="124" class="ter small">Bug report</text>
+    <text x="24" y="152" class="sec small">factorial(5) returns 24 instead of 120.</text>
+
+    <text x="24" y="198" class="ter small">Code excerpt</text>
+    <text x="24" y="226" class="mono small">for i in range(1, n):</text>
+    <text x="48" y="252" class="mono small">result *= i</text>
+
+    <text x="398" y="124" class="ter small">Test cases</text>
+    <text x="398" y="152" class="mono small">assert factorial(3) == 6</text>
+    <text x="398" y="178" class="mono small">assert factorial(5) == 120</text>
+
+    <text x="398" y="224" class="ter small">Transcript</text>
+    <text x="398" y="253" class="mono-ink small">3 failed, 2 passed</text>
+    <rect x="398" y="262" width="294" height="36" class="evidence"/>
+    <text x="416" y="286" class="evidence-text">Evidence says: edit needed</text>
+  </g>
+
+  <g transform="translate(820,222)">
+    <rect class="accent-soft" width="720" height="305"/>
+    <text x="24" y="42" class="label-small">(B) FIXED PROMPT</text>
+    <text x="24" y="80" class="text h2">Tests pass: factorial includes the final multiply</text>
+
+    <text x="24" y="124" class="ter small">Same bug report</text>
+    <text x="24" y="152" class="sec small">factorial(5) returns 24 instead of 120.</text>
+
+    <text x="24" y="198" class="ter small">Code excerpt</text>
+    <text x="24" y="226" class="mono small">for i in range(1, n + 1):</text>
+    <text x="48" y="252" class="mono small">result *= i</text>
+
+    <text x="398" y="124" class="ter small">Same test cases</text>
+    <text x="398" y="152" class="mono small">assert factorial(3) == 6</text>
+    <text x="398" y="178" class="mono small">assert factorial(5) == 120</text>
+
+    <text x="398" y="224" class="ter small">Transcript</text>
+    <text x="398" y="253" class="mono-accent small">5 passed</text>
+    <rect x="398" y="262" width="308" height="36" class="evidence-accent"/>
+    <text x="416" y="286" class="evidence-accent-text">Evidence says: no edit needed</text>
+  </g>
+
+  <path class="arrow" d="M412 544 C470 596 630 594 710 628"/>
+  <path class="arrow" d="M1188 544 C1130 596 970 594 890 628"/>
+
+  <g transform="translate(400,590)">
+    <rect class="soft" width="800" height="154"/>
+    <text x="28" y="40" class="accent-label">Qwen2.5-Coder-1.5B</text>
+    <text x="28" y="80" class="text h2">Reads either prompt at the final <tspan class="mono-ink">Action:</tspan> position.</text>
+    <text x="28" y="120" class="mono-muted small">action menu: view / grep / test / edit / noop</text>
+  </g>
+
+  <path class="arrow-accent" d="M665 756 C612 798 520 800 438 830"/>
+  <path class="arrow-accent" d="M935 756 C988 798 1080 800 1162 830"/>
+
+  <g transform="translate(60,806)">
+    <rect class="panel" width="720" height="294"/>
+    <text x="24" y="42" class="label-small">(C) LAYER-24 SIGNAL</text>
+    <text x="24" y="80" class="text h2">The shown transcript is readable inside Qwen.</text>
+    <text x="24" y="116" class="sec small">At layer 24, final action token, a simple readout separates failing from passing prompts.</text>
+
+    <rect x="72" y="153" width="584" height="52" fill="url(#signalGradient)" stroke="#d9dce0"/>
+    <line x1="364" x2="364" y1="142" y2="216" class="hair"/>
+    <circle cx="202" cy="179" r="15" fill="#8e949a"/>
+    <circle cx="532" cy="179" r="15" fill="#06c7a6"/>
+    <text x="126" y="234" class="mono-muted small">failing transcript</text>
+    <text x="354" y="234" class="mono-muted small">middle</text>
+    <text x="486" y="234" class="mono-accent small">passing transcript</text>
+  </g>
+
+  <g transform="translate(820,806)">
+    <rect class="panel" width="720" height="294"/>
+    <text x="24" y="42" class="label-small">(D) ACTION READOUT</text>
+    <text x="24" y="80" class="text h2">The score moves, but the top action does not.</text>
+    <text x="24" y="116" class="sec small">The transcript signal changes the <tspan class="mono-ink">edit - noop</tspan> score. Qwen still chooses <tspan class="mono-ink">grep</tspan>.</text>
+
+    <text x="28" y="158" class="ter small">Run</text>
+    <text x="312" y="158" class="ter small">Top action</text>
+    <text x="486" y="158" class="ter small">edit - noop</text>
+    <line x1="24" x2="696" y1="174" y2="174" class="hair"/>
+
+    <text x="28" y="204" class="sec small">Buggy + failing tests</text>
+    <text x="326" y="204" class="mono-ink small">grep</text>
+    <text x="520" y="204" class="mono-ink small">+3.06</text>
+
+    <text x="28" y="238" class="sec small">Fixed + passing tests</text>
+    <text x="326" y="238" class="mono-ink small">grep</text>
+    <text x="520" y="238" class="mono-accent small">+2.31</text>
+
+    <text x="28" y="272" class="sec small">Failing + passing state</text>
+    <text x="326" y="272" class="mono-ink small">grep</text>
+    <text x="520" y="272" class="mono-accent small">+2.31</text>
+  </g>
+
+  <g transform="translate(60,1156)">
+    <text x="0" y="0" class="text label">Takeaway:</text>
+    <text x="128" y="0" class="sec body">Qwen carries pass/fail transcript evidence, and that evidence affects the decision score.</text>
+    <text x="128" y="34" class="sec body">In this prompt format, the action prior is still stronger: the top action remains <tspan class="mono-ink">grep</tspan>.</text>
+  </g>
+</svg>

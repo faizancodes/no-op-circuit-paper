@@ -15,6 +15,16 @@ at the moment it selects an action in a static coding-agent prompt.
 
 ![Animated overview of the Qwen layer-24 pass/fail transcript circuit](paper/figures/qwen_layer24_transcript_circuit.gif)
 
+## Prompt walkthrough
+
+The figure below walks through one toy paired task from `data/tasks/`: the prompt shows
+the same factorial bug report and tests, once with buggy code and failing output and
+once with fixed code and passing output. Qwen carries that pass/fail transcript signal
+at layer 24, and swapping the signal moves the `edit - noop` score — but the top
+five-action choice still stays `grep`.
+
+![Prompt walkthrough showing the buggy and fixed factorial prompts, Qwen layer-24 pass/fail signal, edit-vs-noop score, and final top action.](paper/figures/concrete_qwen_example.svg)
+
 ---
 
 ## Summary
