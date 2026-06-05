@@ -30,6 +30,16 @@ overall, and how much Qwen prefers `edit` over `noop`. The test result changes t
 failed. But the highest-scoring action is still `grep`, so the model's internal
 evidence changes the decision score without changing the action it actually chooses.
 
+## A 3D map of Qwen's internal state
+
+The figure below is a schematic view of the result. The dots are not a PCA plot of
+raw activations; they are a simple map for reading the mechanism. Failing and
+passing transcripts sit on different sides of a layer-24 pass/fail direction.
+Swapping that state moves the `edit`-vs-`noop` score, but both states remain in the
+same top-action region, so Qwen still chooses `grep`.
+
+![Schematic 3D map of Qwen layer 24: failing and passing prompts separate along a pass/fail evidence direction, but both remain in the same top-action region where grep is selected.](paper/figures/qwen_layer24_3d_behavior.svg)
+
 ---
 
 ## Summary
