@@ -26,6 +26,9 @@ from .common import (
     HF_CACHE_DIR,
     app,
     hf_cache_vol,
+    pick_tier,
+    register_tiers,
+    resolve_gpu,
 )
 
 
@@ -34,8 +37,13 @@ def _run_scoring(
     *,
     model_name: str = DEFAULT_MODEL,
     dtype: str = "bfloat16",
+    max_prompt_tokens: int = 0,
 ) -> list[dict[str, Any]]:
-    """Score each job's candidate action tokens at the final position."""
+    """Score each job's candidate action tokens at the final position.
+
+    `max_prompt_tokens` (server-side) skips any prompt longer than the cap —
+    avoids OOM on the largest models for a handful of long real-task prompts.
+    """
     import os
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -64,6 +72,7 @@ def _run_scoring(
         return f[i], len(f) - i
 
     rows: list[dict[str, Any]] = []
+    skipped = 0
     for n, job in enumerate(jobs):
         rendered = render_chat_template_safe(
             tok, job["messages"], tokenize=False, add_generation_prompt=True
@@ -75,6 +84,9 @@ def _run_scoring(
             tid, nt = first_tok(full, nm)
             ids[nm], ntoks[nm] = tid, nt
         inputs = tok(full, return_tensors="pt").to(device)
+        if max_prompt_tokens and int(inputs["input_ids"].shape[1]) > max_prompt_tokens:
+            skipped += 1
+            continue
         with torch.no_grad():
             try:
                 out = model(**inputs, num_logits_to_keep=1)
@@ -104,17 +116,26 @@ def _run_scoring(
         )
         if n % 200 == 0:
             print(f"[score_actions] {n}/{len(jobs)}  argmax={argmax}", flush=True)
+    if skipped:
+        print(f"[score_actions] skipped {skipped} prompts > {max_prompt_tokens} tokens", flush=True)
     return rows
 
 
 @app.function(gpu=DEFAULT_GPU, timeout=60 * 60, volumes={HF_CACHE_DIR: hf_cache_vol})
-def score_actions(jobs, *, model_name: str = DEFAULT_MODEL, dtype: str = "bfloat16"):
-    return _run_scoring(jobs, model_name=model_name, dtype=dtype)
+def score_actions(jobs, *, model_name: str = DEFAULT_MODEL, dtype: str = "bfloat16",
+                  max_prompt_tokens: int = 0):
+    return _run_scoring(jobs, model_name=model_name, dtype=dtype,
+                        max_prompt_tokens=max_prompt_tokens)
 
 
-@app.function(gpu="A100", timeout=60 * 60, volumes={HF_CACHE_DIR: hf_cache_vol})
-def score_actions_a100(jobs, *, model_name: str = DEFAULT_MODEL, dtype: str = "bfloat16"):
-    return _run_scoring(jobs, model_name=model_name, dtype=dtype)
+# Pre-registered GPU-tier variants; main() dispatches by model size.
+SCORE_TIERS = {
+    "A10G": score_actions,
+    **register_tiers(
+        score_actions.get_raw_f(), "score_actions",
+        volumes={HF_CACHE_DIR: hf_cache_vol}, base_timeout=60 * 60,
+    ),
+}
 
 
 def _tag(model_name: str) -> str:
@@ -135,9 +156,10 @@ def main(
     variant: str = "code_tests",
     tasks: str = "real",
     limit: int = 0,
-    gpu: str = "",
+    gpu: str = "auto",          # "auto" picks a tier by model size; "" keeps A10G
     action_words: str = "",
     abstain_word: str = "done",
+    max_prompt_tokens: int = 0,  # server-side: skip prompts longer than this (0 = no cap)
 ):
     from no_op_circuit.agent.action_order import (
         build_abstract_label_prompts,
@@ -179,8 +201,10 @@ def main(
                 raise SystemExit(f"unknown experiment {experiment!r}")
 
     print(f"[action_order] {experiment}: {len(jobs)} jobs over {len(all_tasks)} tasks ({tasks})")
-    fn = score_actions_a100 if gpu else score_actions
-    rows = fn.remote(jobs, model_name=model)
+    fn = pick_tier(SCORE_TIERS, model, gpu)
+    print(f"[action_order] gpu tier={resolve_gpu(model, gpu) or 'A10G'}"
+          + (f" · max_prompt_tokens={max_prompt_tokens}" if max_prompt_tokens else ""))
+    rows = fn.remote(jobs, model_name=model, max_prompt_tokens=max_prompt_tokens)
 
     out_dir = Path("results/action_order_control")
     out_dir.mkdir(parents=True, exist_ok=True)

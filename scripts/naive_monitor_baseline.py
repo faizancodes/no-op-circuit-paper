@@ -33,7 +33,7 @@ from pathlib import Path
 
 
 def _resolve_default_cache_dir() -> Path:
-    root = Path("/Users/faizanahmed/no-op-circuit/results")
+    root = Path("results")
     cands = sorted(root.glob("cache-real-qwen*"), key=lambda p: p.name, reverse=True)
     if not cands:
         raise SystemExit("no cache-real-qwen-* under results/; pass --cache-dir")
@@ -45,7 +45,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--cache-dir", type=Path, default=None,
                    help="real-task cache run dir (default: most recent results/cache-real-qwen-*)")
     p.add_argument("--v-noop", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/steer-20260516T021522Z/v_noop.pt"))
+                   default=Path("results/steer-20260516T021522Z/v_noop.pt"))
     p.add_argument("--layer", type=int, default=24)
     p.add_argument("--probe-layers", type=int, nargs="+", default=[24, 27],
                    help="layers at which to train the full-residual LR probe")
@@ -53,7 +53,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--n-random", type=int, default=1000)
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--out", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/monitor_real/baselines.json"))
+                   default=Path("results/monitor_real/baselines.json"))
     args = p.parse_args(argv)
 
     import numpy as np

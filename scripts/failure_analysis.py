@@ -26,12 +26,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--v-noop",
         type=Path,
-        default=Path("/Users/faizanahmed/no-op-circuit/results/steer-20260516T021522Z/v_noop.pt"),
+        default=Path("results/steer-20260516T021522Z/v_noop.pt"),
     )
     p.add_argument("--layer", type=int, default=24)
     p.add_argument("--position", type=int, default=-1)
     p.add_argument("--clean-cache-dir", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/cache-20260515T221105Z"),
+                   default=Path("results/cache-20260515T221105Z"),
                    help="Clean cache (Qwen, code_tests) to compute baseline projection.")
     args = p.parse_args(argv)
 

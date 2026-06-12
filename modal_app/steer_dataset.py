@@ -27,8 +27,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from .common import app
-from .steering import run_steering
+from .common import app, pick_tier, record_spawn, resolve_gpu
+from .steering import STEER_TIERS
 
 from no_op_circuit.agent import ACTION_NAMES, build_prompt
 from no_op_circuit.config import RESULTS_DIR
@@ -67,7 +67,13 @@ def _compute_v_noop(
         condition, var_name = name.split("__", 1)
         if var_name != variant or condition not in ("buggy", "fixed"):
             continue
-        payload = torch.load(pt, map_location="cpu", weights_only=False)
+        try:
+            payload = torch.load(pt, map_location="cpu", weights_only=False)
+        except (RuntimeError, EOFError, OSError) as exc:
+            # A flaky `modal volume get` can corrupt a file; skip it (its pair
+            # drops) rather than crash the whole v_noop computation.
+            print(f"[steer_dataset] WARN: skipping unreadable {pt.name}: {exc}", flush=True)
+            continue
         task_id = payload["task_id"]
         by_task.setdefault(task_id, {})[condition] = payload
 
@@ -112,6 +118,8 @@ def steer_dataset(
                               # restricts v_noop computation to them too
     run_id: str = "",
     model: str = "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    gpu: str = "auto",          # "auto" picks a tier by model size; "default" keeps A10G
+    spawn: bool = False,        # with `modal run --detach`: fire-and-forget, survives shutdown
 ):
     cache_path = Path(cache_dir)
     if not cache_path.exists():
@@ -183,7 +191,17 @@ def steer_dataset(
         flush=True,
     )
 
-    manifest = run_steering.remote(
+    fn = pick_tier(STEER_TIERS, model, gpu)
+    print(f"[steer_dataset] gpu tier={resolve_gpu(model, gpu) or 'A10G'}", flush=True)
+    if spawn:
+        call = fn.spawn(
+            prompts, run_id=run_id, model_name=model, direction=v.tolist(),
+            alphas=alpha_list, layer=layer, position=position, hook_point=hook_point,
+        )
+        record_spawn("steer_dataset", model, run_id, call.object_id)
+        # v_noop.pt is computed locally from the cache; recompute on demand if needed.
+        return
+    manifest = fn.remote(
         prompts,
         run_id=run_id,
         model_name=model,

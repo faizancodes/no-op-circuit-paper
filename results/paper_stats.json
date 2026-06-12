@@ -1,0 +1,515 @@
+{
+  "F1": {
+    "1.5B": {
+      "rate": 0.0,
+      "note": "paper baseline"
+    },
+    "3B": {
+      "rate": 0.11022044088176353,
+      "ci": [
+        0.0841683366733467,
+        0.13827655310621242
+      ],
+      "n": 499
+    },
+    "7B": {
+      "rate": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n": 499
+    },
+    "14B": {
+      "rate": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n": 499
+    },
+    "32B": {
+      "rate": 0.050200803212851405,
+      "ci": [
+        0.0321285140562249,
+        0.07028112449799197
+      ],
+      "n": 498
+    }
+  },
+  "F3": {
+    "1.5B": {
+      "peak_layer": 24,
+      "rel_depth": 0.857,
+      "note": "paper"
+    },
+    "3B": {
+      "peak_layer": 32,
+      "pos": -1,
+      "rel_depth": 0.8888888888888888,
+      "f2b_mean": 1.0025510204081634,
+      "ci": [
+        0.8558673469387755,
+        1.153061224489796
+      ],
+      "wilcoxon_p": 9.069171018877013e-10,
+      "peak_layer_boot_mode_frac": 0.9175
+    },
+    "7B": {
+      "peak_layer": 26,
+      "pos": -1,
+      "rel_depth": 0.9285714285714286,
+      "f2b_mean": 2.24234693877551,
+      "ci": [
+        1.961734693877551,
+        2.5357142857142856
+      ],
+      "wilcoxon_p": 5.521792166845145e-10,
+      "peak_layer_boot_mode_frac": 1.0
+    },
+    "14B": {
+      "peak_layer": 44,
+      "pos": -1,
+      "rel_depth": 0.9166666666666666,
+      "f2b_mean": 4.094387755102041,
+      "ci": [
+        3.5255102040816326,
+        4.658195153061223
+      ],
+      "wilcoxon_p": 5.542640880227409e-10,
+      "peak_layer_boot_mode_frac": 1.0
+    },
+    "32B": {
+      "peak_layer": 60,
+      "pos": -1,
+      "rel_depth": 0.9375,
+      "f2b_mean": 11.65688775510204,
+      "ci": [
+        11.066326530612244,
+        12.25
+      ],
+      "wilcoxon_p": 5.54394626414082e-10,
+      "peak_layer_boot_mode_frac": 1.0
+    }
+  },
+  "steering": {
+    "noop_majority_alpha": 6.0,
+    "margin_zero_crossing_alpha": 3.986072423398329,
+    "noop_rate_by_alpha": {
+      "0.0": 0.0,
+      "0.5": 0.02040816326530612,
+      "1.0": 0.04081632653061224,
+      "2.0": 0.061224489795918366,
+      "3.0": 0.20408163265306123,
+      "4.0": 0.3469387755102041,
+      "5.0": 0.4897959183673469,
+      "6.0": 0.5102040816326531
+    }
+  },
+  "binary": {
+    "1.5B": {
+      "rate": 0.014028056112224449,
+      "ci": [
+        0.0070140280561122245,
+        0.022044088176352707
+      ]
+    },
+    "3B": {
+      "rate": 0.4278557114228457,
+      "ci": [
+        0.39178356713426854,
+        0.46392785571142287
+      ]
+    },
+    "7B": {
+      "rate": 0.11923847695390781,
+      "ci": [
+        0.09318637274549098,
+        0.14729458917835672
+      ]
+    },
+    "14B": {
+      "rate": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "32B": {
+      "rate": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "loop": {
+    "Qwen2.5-Coder-14B-Instruct/issue": {
+      "over_edit": 0.75,
+      "over_edit_ci": [
+        0.6,
+        0.875
+      ],
+      "recall": 1.0,
+      "tested_over_edit": 0.7297297297297297,
+      "untested_over_edit": 1.0,
+      "n_tested": 37,
+      "n_untested": 3
+    },
+    "Qwen2.5-Coder-14B-Instruct/ev": {
+      "over_edit": 1.0,
+      "over_edit_ci": [
+        1.0,
+        1.0
+      ],
+      "recall": 1.0,
+      "veto_auc": 0.75375,
+      "blocked": 0.5,
+      "blocked_ci": [
+        0.35,
+        0.65
+      ],
+      "preserved": 0.9,
+      "preserved_ci": [
+        0.8,
+        0.975
+      ],
+      "over_edit_after": 0.5
+    },
+    "Qwen2.5-Coder-1.5B-Instruct/issue": {
+      "over_edit": 0.35,
+      "over_edit_ci": [
+        0.2,
+        0.5
+      ],
+      "recall": 0.35,
+      "tested_over_edit": NaN,
+      "untested_over_edit": 0.35,
+      "n_tested": 0,
+      "n_untested": 40
+    },
+    "Qwen2.5-Coder-1.5B-Instruct/ev": {
+      "over_edit": 0.5,
+      "over_edit_ci": [
+        0.35,
+        0.65
+      ],
+      "recall": 0.475,
+      "veto_auc": 0.6763157894736842,
+      "blocked": 0.55,
+      "blocked_ci": [
+        0.35,
+        0.75
+      ],
+      "preserved": 0.7894736842105263,
+      "preserved_ci": [
+        0.5789473684210527,
+        0.9473684210526315
+      ],
+      "over_edit_after": 0.22499999999999998
+    },
+    "Qwen2.5-Coder-32B-Instruct/issue": {
+      "over_edit": 0.75,
+      "over_edit_ci": [
+        0.6,
+        0.875
+      ],
+      "recall": 0.975,
+      "tested_over_edit": 0.7777777777777778,
+      "untested_over_edit": 0.6923076923076923,
+      "n_tested": 27,
+      "n_untested": 13
+    },
+    "Qwen2.5-Coder-32B-Instruct/ev": {
+      "over_edit": 0.9,
+      "over_edit_ci": [
+        0.8,
+        0.975
+      ],
+      "recall": 1.0,
+      "veto_auc": 0.8,
+      "blocked": 0.8055555555555556,
+      "blocked_ci": [
+        0.6666666666666666,
+        0.9166666666666666
+      ],
+      "preserved": 0.6,
+      "preserved_ci": [
+        0.45,
+        0.75
+      ],
+      "over_edit_after": 0.175
+    },
+    "Qwen2.5-Coder-3B-Instruct/issue": {
+      "over_edit": 0.775,
+      "over_edit_ci": [
+        0.65,
+        0.9
+      ],
+      "recall": 0.8,
+      "tested_over_edit": 0.0,
+      "untested_over_edit": 0.7948717948717948,
+      "n_tested": 1,
+      "n_untested": 39
+    },
+    "Qwen2.5-Coder-3B-Instruct/ev": {
+      "over_edit": 0.875,
+      "over_edit_ci": [
+        0.75,
+        0.975
+      ],
+      "recall": 0.9,
+      "veto_auc": 0.8920634920634921,
+      "blocked": 0.7714285714285715,
+      "blocked_ci": [
+        0.6285714285714286,
+        0.9142857142857143
+      ],
+      "preserved": 0.9444444444444444,
+      "preserved_ci": [
+        0.8611111111111112,
+        1.0
+      ],
+      "over_edit_after": 0.19999999999999996
+    },
+    "Qwen2.5-Coder-3B-Instruct/ev_stop": {
+      "over_edit": 0.15,
+      "over_edit_ci": [
+        0.05,
+        0.275
+      ],
+      "recall": 0.9
+    },
+    "Qwen2.5-Coder-7B-Instruct/issue": {
+      "over_edit": 0.775,
+      "over_edit_ci": [
+        0.65,
+        0.9
+      ],
+      "recall": 1.0,
+      "tested_over_edit": 0.47058823529411764,
+      "untested_over_edit": 1.0,
+      "n_tested": 17,
+      "n_untested": 23
+    },
+    "Qwen2.5-Coder-7B-Instruct/ev": {
+      "over_edit": 0.975,
+      "over_edit_ci": [
+        0.925,
+        1.0
+      ],
+      "recall": 1.0,
+      "veto_auc": 0.7865384615384615,
+      "blocked": 0.717948717948718,
+      "blocked_ci": [
+        0.5641025641025641,
+        0.8461538461538461
+      ],
+      "preserved": 0.75,
+      "preserved_ci": [
+        0.6,
+        0.875
+      ],
+      "over_edit_after": 0.27499999999999997
+    },
+    "Qwen2.5-Coder-7B-Instruct/ev_stop": {
+      "over_edit": 0.0,
+      "over_edit_ci": [
+        0.0,
+        0.0
+      ],
+      "recall": 0.075
+    }
+  },
+  "ladder_summary": {
+    "1.5B": {
+      "issue": {
+        "over_edit": 0.35,
+        "over_edit_ci": [
+          0.2,
+          0.5
+        ],
+        "recall": 0.35,
+        "tested_over_edit": NaN,
+        "untested_over_edit": 0.35,
+        "n_tested": 0,
+        "n_untested": 40
+      },
+      "ev": {
+        "over_edit": 0.5,
+        "over_edit_ci": [
+          0.35,
+          0.65
+        ],
+        "recall": 0.475,
+        "veto_auc": 0.6763157894736842,
+        "blocked": 0.55,
+        "blocked_ci": [
+          0.35,
+          0.75
+        ],
+        "preserved": 0.7894736842105263,
+        "preserved_ci": [
+          0.5789473684210527,
+          0.9473684210526315
+        ],
+        "over_edit_after": 0.22499999999999998
+      },
+      "ev_stop": null
+    },
+    "3B": {
+      "issue": {
+        "over_edit": 0.775,
+        "over_edit_ci": [
+          0.65,
+          0.9
+        ],
+        "recall": 0.8,
+        "tested_over_edit": 0.0,
+        "untested_over_edit": 0.7948717948717948,
+        "n_tested": 1,
+        "n_untested": 39
+      },
+      "ev": {
+        "over_edit": 0.875,
+        "over_edit_ci": [
+          0.75,
+          0.975
+        ],
+        "recall": 0.9,
+        "veto_auc": 0.8920634920634921,
+        "blocked": 0.7714285714285715,
+        "blocked_ci": [
+          0.6285714285714286,
+          0.9142857142857143
+        ],
+        "preserved": 0.9444444444444444,
+        "preserved_ci": [
+          0.8611111111111112,
+          1.0
+        ],
+        "over_edit_after": 0.19999999999999996
+      },
+      "ev_stop": {
+        "over_edit": 0.15,
+        "over_edit_ci": [
+          0.05,
+          0.275
+        ],
+        "recall": 0.9
+      }
+    },
+    "7B": {
+      "issue": {
+        "over_edit": 0.775,
+        "over_edit_ci": [
+          0.65,
+          0.9
+        ],
+        "recall": 1.0,
+        "tested_over_edit": 0.47058823529411764,
+        "untested_over_edit": 1.0,
+        "n_tested": 17,
+        "n_untested": 23
+      },
+      "ev": {
+        "over_edit": 0.975,
+        "over_edit_ci": [
+          0.925,
+          1.0
+        ],
+        "recall": 1.0,
+        "veto_auc": 0.7865384615384615,
+        "blocked": 0.717948717948718,
+        "blocked_ci": [
+          0.5641025641025641,
+          0.8461538461538461
+        ],
+        "preserved": 0.75,
+        "preserved_ci": [
+          0.6,
+          0.875
+        ],
+        "over_edit_after": 0.27499999999999997
+      },
+      "ev_stop": {
+        "over_edit": 0.0,
+        "over_edit_ci": [
+          0.0,
+          0.0
+        ],
+        "recall": 0.075
+      }
+    },
+    "14B": {
+      "issue": {
+        "over_edit": 0.75,
+        "over_edit_ci": [
+          0.6,
+          0.875
+        ],
+        "recall": 1.0,
+        "tested_over_edit": 0.7297297297297297,
+        "untested_over_edit": 1.0,
+        "n_tested": 37,
+        "n_untested": 3
+      },
+      "ev": {
+        "over_edit": 1.0,
+        "over_edit_ci": [
+          1.0,
+          1.0
+        ],
+        "recall": 1.0,
+        "veto_auc": 0.75375,
+        "blocked": 0.5,
+        "blocked_ci": [
+          0.35,
+          0.65
+        ],
+        "preserved": 0.9,
+        "preserved_ci": [
+          0.8,
+          0.975
+        ],
+        "over_edit_after": 0.5
+      },
+      "ev_stop": null
+    },
+    "32B": {
+      "issue": {
+        "over_edit": 0.75,
+        "over_edit_ci": [
+          0.6,
+          0.875
+        ],
+        "recall": 0.975,
+        "tested_over_edit": 0.7777777777777778,
+        "untested_over_edit": 0.6923076923076923,
+        "n_tested": 27,
+        "n_untested": 13
+      },
+      "ev": {
+        "over_edit": 0.9,
+        "over_edit_ci": [
+          0.8,
+          0.975
+        ],
+        "recall": 1.0,
+        "veto_auc": 0.8,
+        "blocked": 0.8055555555555556,
+        "blocked_ci": [
+          0.6666666666666666,
+          0.9166666666666666
+        ],
+        "preserved": 0.6,
+        "preserved_ci": [
+          0.45,
+          0.75
+        ],
+        "over_edit_after": 0.175
+      },
+      "ev_stop": null
+    }
+  }
+}

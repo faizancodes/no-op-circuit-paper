@@ -52,3 +52,10 @@ paper/*.fls
 paper/*.fdb_latexmk
 paper/*.synctex.gz
 paper/.draft_article.md
+
+# Internal run scratch — regenerate locally, not for the public repo
+*.log
+TIMING.txt
+results/spawns/
+results/smoke/
+SCALE_UP_PLAN.md

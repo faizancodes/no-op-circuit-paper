@@ -1,4 +1,4 @@
-##  Evidence Is Not Enough: Pass/Fail Signals That Don't Change a Coding Agent's Action
+##  Fixing What Isn't Broken
 
 Code, paper source, and small analysis artifacts for a mechanistic-interpretability
 study of how a code language model represents pass/fail **test-transcript** evidence
@@ -182,7 +182,7 @@ or `.gpt_neox.layers`.
 
 ```bibtex
 @misc{ahmed2026noopcircuit,
-  title  = {Evidence Is Not Enough: Pass/Fail Signals That Don't Change a Coding Agent's Action},
+  title  = {Fixing What Isn't Broken},
   author = {Ahmed, Faizan},
   year   = {2026},
   note   = {Preprint},

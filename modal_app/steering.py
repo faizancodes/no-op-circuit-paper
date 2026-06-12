@@ -22,6 +22,7 @@ from .common import (
     activations_vol,
     app,
     hf_cache_vol,
+    register_tiers,
 )
 
 _STEER_TIMEOUT_S = 60 * 60  # 1 hour; sweeps are cheap, but plenty of headroom
@@ -162,3 +163,14 @@ def run_steering(
     (run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2))
     activations_vol.commit()
     return manifest
+
+
+# Pre-registered GPU-tier variants; steer_dataset dispatches by model size.
+STEER_TIERS = {
+    "A10G": run_steering,
+    **register_tiers(
+        run_steering.get_raw_f(), "run_steering",
+        volumes={HF_CACHE_DIR: hf_cache_vol, ACTIVATIONS_DIR: activations_vol},
+        base_timeout=_STEER_TIMEOUT_S,
+    ),
+}

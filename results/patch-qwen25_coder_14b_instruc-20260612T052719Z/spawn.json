@@ -1,0 +1,7 @@
+{
+  "kind": "patch_dataset",
+  "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "run_id": "patch-qwen25_coder_14b_instruc-20260612T052719Z",
+  "call_id": "fc-01KTX4S4452Z45VGT6SMTBX7CK",
+  "spawned_at": "2026-06-12T05:27:20.506478+00:00"
+}

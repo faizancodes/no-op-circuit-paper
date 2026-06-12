@@ -17,8 +17,8 @@ import json
 import subprocess
 from datetime import datetime, timezone
 
-from .cache_activations import cache_activations
-from .common import app
+from .cache_activations import CACHE_TIERS
+from .common import app, pick_tier, record_spawn, resolve_gpu
 
 from no_op_circuit.agent import ACTION_NAMES, build_prompt
 from no_op_circuit.config import RESULTS_DIR
@@ -36,6 +36,8 @@ def cache_dataset(
     download_activations: bool = True,
     max_prompt_tokens: int = 4096,
     action_vocab: str = "",
+    gpu: str = "auto",          # "auto" picks a tier by model size; "default" keeps A10G
+    spawn: bool = False,        # with `modal run --detach`: fire-and-forget, survives shutdown
 ):
     from pathlib import Path
     from no_op_circuit.config import TASKS_DIR
@@ -125,7 +127,13 @@ def cache_dataset(
         f"{len(chosen_variants)} variants · {len(jobs)} prompts · run_id={run_id}",
         flush=True,
     )
-    manifest = cache_activations.remote(jobs, run_id=run_id, model_name=model)
+    fn = pick_tier(CACHE_TIERS, model, gpu)
+    print(f"[cache_dataset] gpu tier={resolve_gpu(model, gpu) or 'A10G'}", flush=True)
+    if spawn:
+        call = fn.spawn(jobs, run_id=run_id, model_name=model)
+        record_spawn("cache_dataset", model, run_id, call.object_id)
+        return
+    manifest = fn.remote(jobs, run_id=run_id, model_name=model)
 
     # Per-row summary (compact).
     print("\n[cache_dataset] action argmax / (edit - noop) margin per row:")

@@ -29,7 +29,7 @@ from pathlib import Path
 
 
 def _resolve_default_cache_dir() -> Path:
-    root = Path("/Users/faizanahmed/no-op-circuit/results")
+    root = Path("results")
     cands = sorted(root.glob("cache-real-*"), key=lambda p: p.name, reverse=True)
     if not cands:
         raise SystemExit("no cache-real-* under results/; pass --cache-dir explicitly")
@@ -41,11 +41,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--cache-dir", type=Path, default=None,
                    help="real-task cache run dir (default: most recent results/cache-real-*)")
     p.add_argument("--v-noop", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/steer-20260516T021522Z/v_noop.pt"))
+                   default=Path("results/steer-20260516T021522Z/v_noop.pt"))
     p.add_argument("--layer", type=int, default=24)
     p.add_argument("--position", type=int, default=-1)
     p.add_argument("--out", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/monitor_real/real_curves.npz"))
+                   default=Path("results/monitor_real/real_curves.npz"))
     p.add_argument("--seed", type=int, default=0,
                    help="Seed for numpy/torch/random (monitor eval is deterministic, "
                         "but downstream callers may resample/permute these arrays).")

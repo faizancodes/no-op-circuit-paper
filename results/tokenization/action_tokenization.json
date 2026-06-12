@@ -1,5 +1,167 @@
 {
-  "qwen": {
+  "qwen_0.5b": {
+    "model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "tokens": {
+      "view": {
+        "scored_ids": [
+          1651
+        ],
+        "scored_decoded": [
+          " view"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          1050
+        ]
+      },
+      "grep": {
+        "scored_ids": [
+          20675
+        ],
+        "scored_decoded": [
+          " grep"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          38205
+        ]
+      },
+      "test": {
+        "scored_ids": [
+          1273
+        ],
+        "scored_decoded": [
+          " test"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          1944
+        ]
+      },
+      "edit": {
+        "scored_ids": [
+          4499
+        ],
+        "scored_decoded": [
+          " edit"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          3587
+        ]
+      },
+      "noop": {
+        "scored_ids": [
+          60829
+        ],
+        "scored_decoded": [
+          " noop"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          40162
+        ]
+      },
+      "done": {
+        "scored_ids": [
+          2814
+        ],
+        "scored_decoded": [
+          " done"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          10438
+        ]
+      },
+      "skip": {
+        "scored_ids": [
+          10706
+        ],
+        "scored_decoded": [
+          " skip"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          20599
+        ]
+      },
+      "A": {
+        "scored_ids": [
+          362
+        ],
+        "scored_decoded": [
+          " A"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          32
+        ]
+      },
+      "B": {
+        "scored_ids": [
+          425
+        ],
+        "scored_decoded": [
+          " B"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          33
+        ]
+      },
+      "C": {
+        "scored_ids": [
+          356
+        ],
+        "scored_decoded": [
+          " C"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          34
+        ]
+      },
+      "D": {
+        "scored_ids": [
+          422
+        ],
+        "scored_decoded": [
+          " D"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          35
+        ]
+      },
+      "E": {
+        "scored_ids": [
+          468
+        ],
+        "scored_decoded": [
+          " E"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          36
+        ]
+      }
+    },
+    "actions_all_single_token": true
+  },
+  "qwen_1.5b": {
     "model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
     "tokens": {
       "view": {
@@ -161,12 +323,12 @@
     },
     "actions_all_single_token": true
   },
-  "codegemma": {
-    "model": "google/codegemma-7b-it",
+  "qwen_3b": {
+    "model": "Qwen/Qwen2.5-Coder-3B-Instruct",
     "tokens": {
       "view": {
         "scored_ids": [
-          2116
+          1651
         ],
         "scored_decoded": [
           " view"
@@ -174,12 +336,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          1309
+          1050
         ]
       },
       "grep": {
         "scored_ids": [
-          72374
+          20675
         ],
         "scored_decoded": [
           " grep"
@@ -187,12 +349,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          86417
+          38205
         ]
       },
       "test": {
         "scored_ids": [
-          2121
+          1273
         ],
         "scored_decoded": [
           " test"
@@ -200,12 +362,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          2195
+          1944
         ]
       },
       "edit": {
         "scored_ids": [
-          9387
+          4499
         ],
         "scored_decoded": [
           " edit"
@@ -213,12 +375,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          5427
+          3587
         ]
       },
       "noop": {
         "scored_ids": [
-          137734
+          60829
         ],
         "scored_decoded": [
           " noop"
@@ -226,12 +388,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          79578
+          40162
         ]
       },
       "done": {
         "scored_ids": [
-          3015
+          2814
         ],
         "scored_decoded": [
           " done"
@@ -239,12 +401,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          7262
+          10438
         ]
       },
       "skip": {
         "scored_ids": [
-          21345
+          10706
         ],
         "scored_decoded": [
           " skip"
@@ -252,12 +414,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          13150
+          20599
         ]
       },
       "A": {
         "scored_ids": [
-          586
+          362
         ],
         "scored_decoded": [
           " A"
@@ -265,12 +427,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          235280
+          32
         ]
       },
       "B": {
         "scored_ids": [
-          599
+          425
         ],
         "scored_decoded": [
           " B"
@@ -278,12 +440,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          235305
+          33
         ]
       },
       "C": {
         "scored_ids": [
-          585
+          356
         ],
         "scored_decoded": [
           " C"
@@ -291,12 +453,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          235288
+          34
         ]
       },
       "D": {
         "scored_ids": [
-          608
+          422
         ],
         "scored_decoded": [
           " D"
@@ -304,12 +466,12 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          235299
+          35
         ]
       },
       "E": {
         "scored_ids": [
-          637
+          468
         ],
         "scored_decoded": [
           " E"
@@ -317,118 +479,112 @@
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          235291
+          36
         ]
       }
     },
     "actions_all_single_token": true
   },
-  "deepseek": {
-    "model": "deepseek-ai/deepseek-coder-1.3b-instruct",
+  "qwen_7b": {
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
     "tokens": {
       "view": {
         "scored_ids": [
-          1820
+          1651
         ],
         "scored_decoded": [
-          "view"
+          " view"
         ],
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          1820
+          1050
         ]
       },
       "grep": {
         "scored_ids": [
-          70,
-          5520
+          20675
         ],
         "scored_decoded": [
-          "g",
-          "rep"
+          " grep"
         ],
-        "n_tokens": 2,
-        "single_token": false,
+        "n_tokens": 1,
+        "single_token": true,
         "raw_ids": [
-          70,
-          5520
+          38205
         ]
       },
       "test": {
         "scored_ids": [
-          2806
+          1273
         ],
         "scored_decoded": [
-          "test"
+          " test"
         ],
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          2806
+          1944
         ]
       },
       "edit": {
         "scored_ids": [
-          10304
+          4499
         ],
         "scored_decoded": [
-          "edit"
+          " edit"
         ],
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          10304
+          3587
         ]
       },
       "noop": {
         "scored_ids": [
-          2459,
-          424
+          60829
         ],
         "scored_decoded": [
-          "no",
-          "op"
+          " noop"
         ],
-        "n_tokens": 2,
-        "single_token": false,
+        "n_tokens": 1,
+        "single_token": true,
         "raw_ids": [
-          2459,
-          424
+          40162
         ]
       },
       "done": {
         "scored_ids": [
-          13609
+          2814
         ],
         "scored_decoded": [
-          "done"
+          " done"
         ],
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          13609
+          10438
         ]
       },
       "skip": {
         "scored_ids": [
-          7465
+          10706
         ],
         "scored_decoded": [
-          "skip"
+          " skip"
         ],
         "n_tokens": 1,
         "single_token": true,
         "raw_ids": [
-          7465
+          20599
         ]
       },
       "A": {
         "scored_ids": [
-          32
+          362
         ],
         "scored_decoded": [
-          "A"
+          " A"
         ],
         "n_tokens": 1,
         "single_token": true,
@@ -438,10 +594,10 @@
       },
       "B": {
         "scored_ids": [
-          33
+          425
         ],
         "scored_decoded": [
-          "B"
+          " B"
         ],
         "n_tokens": 1,
         "single_token": true,
@@ -451,10 +607,10 @@
       },
       "C": {
         "scored_ids": [
-          34
+          356
         ],
         "scored_decoded": [
-          "C"
+          " C"
         ],
         "n_tokens": 1,
         "single_token": true,
@@ -464,10 +620,10 @@
       },
       "D": {
         "scored_ids": [
-          35
+          422
         ],
         "scored_decoded": [
-          "D"
+          " D"
         ],
         "n_tokens": 1,
         "single_token": true,
@@ -477,10 +633,10 @@
       },
       "E": {
         "scored_ids": [
-          36
+          468
         ],
         "scored_decoded": [
-          "E"
+          " E"
         ],
         "n_tokens": 1,
         "single_token": true,
@@ -489,6 +645,330 @@
         ]
       }
     },
-    "actions_all_single_token": false
+    "actions_all_single_token": true
+  },
+  "qwen_14b": {
+    "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "tokens": {
+      "view": {
+        "scored_ids": [
+          1651
+        ],
+        "scored_decoded": [
+          " view"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          1050
+        ]
+      },
+      "grep": {
+        "scored_ids": [
+          20675
+        ],
+        "scored_decoded": [
+          " grep"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          38205
+        ]
+      },
+      "test": {
+        "scored_ids": [
+          1273
+        ],
+        "scored_decoded": [
+          " test"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          1944
+        ]
+      },
+      "edit": {
+        "scored_ids": [
+          4499
+        ],
+        "scored_decoded": [
+          " edit"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          3587
+        ]
+      },
+      "noop": {
+        "scored_ids": [
+          60829
+        ],
+        "scored_decoded": [
+          " noop"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          40162
+        ]
+      },
+      "done": {
+        "scored_ids": [
+          2814
+        ],
+        "scored_decoded": [
+          " done"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          10438
+        ]
+      },
+      "skip": {
+        "scored_ids": [
+          10706
+        ],
+        "scored_decoded": [
+          " skip"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          20599
+        ]
+      },
+      "A": {
+        "scored_ids": [
+          362
+        ],
+        "scored_decoded": [
+          " A"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          32
+        ]
+      },
+      "B": {
+        "scored_ids": [
+          425
+        ],
+        "scored_decoded": [
+          " B"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          33
+        ]
+      },
+      "C": {
+        "scored_ids": [
+          356
+        ],
+        "scored_decoded": [
+          " C"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          34
+        ]
+      },
+      "D": {
+        "scored_ids": [
+          422
+        ],
+        "scored_decoded": [
+          " D"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          35
+        ]
+      },
+      "E": {
+        "scored_ids": [
+          468
+        ],
+        "scored_decoded": [
+          " E"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          36
+        ]
+      }
+    },
+    "actions_all_single_token": true
+  },
+  "qwen_32b": {
+    "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "tokens": {
+      "view": {
+        "scored_ids": [
+          1651
+        ],
+        "scored_decoded": [
+          " view"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          1050
+        ]
+      },
+      "grep": {
+        "scored_ids": [
+          20675
+        ],
+        "scored_decoded": [
+          " grep"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          38205
+        ]
+      },
+      "test": {
+        "scored_ids": [
+          1273
+        ],
+        "scored_decoded": [
+          " test"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          1944
+        ]
+      },
+      "edit": {
+        "scored_ids": [
+          4499
+        ],
+        "scored_decoded": [
+          " edit"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          3587
+        ]
+      },
+      "noop": {
+        "scored_ids": [
+          60829
+        ],
+        "scored_decoded": [
+          " noop"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          40162
+        ]
+      },
+      "done": {
+        "scored_ids": [
+          2814
+        ],
+        "scored_decoded": [
+          " done"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          10438
+        ]
+      },
+      "skip": {
+        "scored_ids": [
+          10706
+        ],
+        "scored_decoded": [
+          " skip"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          20599
+        ]
+      },
+      "A": {
+        "scored_ids": [
+          362
+        ],
+        "scored_decoded": [
+          " A"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          32
+        ]
+      },
+      "B": {
+        "scored_ids": [
+          425
+        ],
+        "scored_decoded": [
+          " B"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          33
+        ]
+      },
+      "C": {
+        "scored_ids": [
+          356
+        ],
+        "scored_decoded": [
+          " C"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          34
+        ]
+      },
+      "D": {
+        "scored_ids": [
+          422
+        ],
+        "scored_decoded": [
+          " D"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          35
+        ]
+      },
+      "E": {
+        "scored_ids": [
+          468
+        ],
+        "scored_decoded": [
+          " E"
+        ],
+        "n_tokens": 1,
+        "single_token": true,
+        "raw_ids": [
+          36
+        ]
+      }
+    },
+    "actions_all_single_token": true
   }
 }

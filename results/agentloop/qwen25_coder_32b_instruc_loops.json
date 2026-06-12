@@ -1,0 +1,2839 @@
+{
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "layer": 60,
+  "n_tasks": 40,
+  "results": [
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -117.26361083984375,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -46.79875183105469,
+          "tested": false,
+          "edit_minus_noop": 3.125,
+          "seq_len": 564
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": -7.171262741088867,
+          "tested": true,
+          "edit_minus_noop": 1.1875,
+          "seq_len": 636
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -29.876174926757812,
+          "tested": true,
+          "edit_minus_noop": -0.125,
+          "seq_len": 686
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -117.26361083984375,
+          "tested": true,
+          "edit_minus_noop": 7.9375,
+          "seq_len": 1323
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_12907",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": true,
+      "viewed": false,
+      "decision_proj": -119.21160888671875,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -46.79875183105469,
+          "tested": false,
+          "edit_minus_noop": 3.125,
+          "seq_len": 564
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -119.21160888671875,
+          "tested": true,
+          "edit_minus_noop": 9.6875,
+          "seq_len": 778
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -100.6745834350586,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -51.29072952270508,
+          "tested": false,
+          "edit_minus_noop": 2.6875,
+          "seq_len": 555
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -100.6745834350586,
+          "tested": false,
+          "edit_minus_noop": 7.875,
+          "seq_len": 1222
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13033",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -89.00676727294922,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -51.29072952270508,
+          "tested": false,
+          "edit_minus_noop": 2.6875,
+          "seq_len": 555
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -89.00676727294922,
+          "tested": false,
+          "edit_minus_noop": 7.875,
+          "seq_len": 1167
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": 93.70431518554688,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -15.24380111694336,
+          "tested": false,
+          "edit_minus_noop": 0.1875,
+          "seq_len": 571
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": 34.648536682128906,
+          "tested": false,
+          "edit_minus_noop": -2.9375,
+          "seq_len": 621
+        },
+        {
+          "turn": 2,
+          "action": "test",
+          "proj": 44.71058654785156,
+          "tested": false,
+          "edit_minus_noop": -0.0625,
+          "seq_len": 1438
+        },
+        {
+          "turn": 3,
+          "action": "noop",
+          "proj": 93.70431518554688,
+          "tested": true,
+          "edit_minus_noop": -2.0,
+          "seq_len": 1510
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13236",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -145.46420288085938,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -15.24380111694336,
+          "tested": false,
+          "edit_minus_noop": 0.1875,
+          "seq_len": 571
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": 34.648536682128906,
+          "tested": false,
+          "edit_minus_noop": -2.9375,
+          "seq_len": 621
+        },
+        {
+          "turn": 2,
+          "action": "test",
+          "proj": -13.913904190063477,
+          "tested": false,
+          "edit_minus_noop": 4.0,
+          "seq_len": 1509
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -145.46420288085938,
+          "tested": true,
+          "edit_minus_noop": 7.9375,
+          "seq_len": 1705
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 6,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": 1.9414191246032715,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -42.901004791259766,
+          "tested": false,
+          "edit_minus_noop": 2.25,
+          "seq_len": 570
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": -3.2254843711853027,
+          "tested": false,
+          "edit_minus_noop": 3.875,
+          "seq_len": 1369
+        },
+        {
+          "turn": 2,
+          "action": "test",
+          "proj": -0.9872403144836426,
+          "tested": false,
+          "edit_minus_noop": 1.375,
+          "seq_len": 1419
+        },
+        {
+          "turn": 3,
+          "action": "view",
+          "proj": 41.82623291015625,
+          "tested": true,
+          "edit_minus_noop": -0.375,
+          "seq_len": 1491
+        },
+        {
+          "turn": 4,
+          "action": "grep",
+          "proj": 13.155077934265137,
+          "tested": true,
+          "edit_minus_noop": 1.375,
+          "seq_len": 1532
+        },
+        {
+          "turn": 5,
+          "action": "edit",
+          "proj": 1.9414191246032715,
+          "tested": true,
+          "edit_minus_noop": 3.125,
+          "seq_len": 1582
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13453",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -137.58367919921875,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -42.901004791259766,
+          "tested": false,
+          "edit_minus_noop": 2.25,
+          "seq_len": 570
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": -0.43205928802490234,
+          "tested": false,
+          "edit_minus_noop": 3.625,
+          "seq_len": 1354
+        },
+        {
+          "turn": 2,
+          "action": "test",
+          "proj": -1.4798908233642578,
+          "tested": false,
+          "edit_minus_noop": 0.9375,
+          "seq_len": 1404
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -137.58367919921875,
+          "tested": true,
+          "edit_minus_noop": 9.6875,
+          "seq_len": 1545
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -80.93856048583984,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -46.943023681640625,
+          "tested": false,
+          "edit_minus_noop": 0.71875,
+          "seq_len": 579
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": 25.756832122802734,
+          "tested": true,
+          "edit_minus_noop": -2.1875,
+          "seq_len": 659
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -5.838411331176758,
+          "tested": true,
+          "edit_minus_noop": -1.5,
+          "seq_len": 709
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -80.93856048583984,
+          "tested": true,
+          "edit_minus_noop": 7.6875,
+          "seq_len": 1574
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13579",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -118.85391235351562,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -46.943023681640625,
+          "tested": false,
+          "edit_minus_noop": 0.71875,
+          "seq_len": 579
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -100.50340270996094,
+          "tested": true,
+          "edit_minus_noop": 7.875,
+          "seq_len": 747
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -118.85391235351562,
+          "tested": true,
+          "edit_minus_noop": 10.125,
+          "seq_len": 1589
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -40.511474609375,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -19.741487503051758,
+          "tested": false,
+          "edit_minus_noop": 1.375,
+          "seq_len": 587
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": 2.9885263442993164,
+          "tested": true,
+          "edit_minus_noop": 1.875,
+          "seq_len": 663
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -11.34735107421875,
+          "tested": true,
+          "edit_minus_noop": 0.25,
+          "seq_len": 713
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -40.511474609375,
+          "tested": true,
+          "edit_minus_noop": 4.75,
+          "seq_len": 2168
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_13977",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -65.14750671386719,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -19.741487503051758,
+          "tested": false,
+          "edit_minus_noop": 1.375,
+          "seq_len": 587
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -72.20174407958984,
+          "tested": true,
+          "edit_minus_noop": 6.0,
+          "seq_len": 998
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -65.14750671386719,
+          "tested": true,
+          "edit_minus_noop": 6.0,
+          "seq_len": 2338
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -55.20561981201172,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -84.33795166015625,
+          "tested": false,
+          "edit_minus_noop": 5.3125,
+          "seq_len": 492
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -55.20561981201172,
+          "tested": false,
+          "edit_minus_noop": 5.9375,
+          "seq_len": 1296
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14096",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -65.07289123535156,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -84.33795166015625,
+          "tested": false,
+          "edit_minus_noop": 5.3125,
+          "seq_len": 492
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -65.07289123535156,
+          "tested": false,
+          "edit_minus_noop": 6.4375,
+          "seq_len": 1303
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -62.11008834838867,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -36.481773376464844,
+          "tested": false,
+          "edit_minus_noop": 3.0625,
+          "seq_len": 687
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -14.03081226348877,
+          "tested": false,
+          "edit_minus_noop": 4.4375,
+          "seq_len": 1327
+        },
+        {
+          "turn": 2,
+          "action": "grep",
+          "proj": -27.101736068725586,
+          "tested": true,
+          "edit_minus_noop": 4.3125,
+          "seq_len": 1400
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -62.11008834838867,
+          "tested": true,
+          "edit_minus_noop": 5.25,
+          "seq_len": 1450
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14182",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -70.65174102783203,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -36.481773376464844,
+          "tested": false,
+          "edit_minus_noop": 3.0625,
+          "seq_len": 687
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -70.65174102783203,
+          "tested": false,
+          "edit_minus_noop": 7.4375,
+          "seq_len": 1146
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "fixed",
+      "terminal_action": null,
+      "n_turns": 8,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": 36.808265686035156,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -19.30289077758789,
+          "tested": false,
+          "edit_minus_noop": -1.1875,
+          "seq_len": 633
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 16.00911521911621,
+          "tested": false,
+          "edit_minus_noop": -2.5,
+          "seq_len": 683
+        },
+        {
+          "turn": 2,
+          "action": "grep",
+          "proj": 37.479400634765625,
+          "tested": true,
+          "edit_minus_noop": -1.8125,
+          "seq_len": 756
+        },
+        {
+          "turn": 3,
+          "action": "view",
+          "proj": 20.350744247436523,
+          "tested": true,
+          "edit_minus_noop": -1.5625,
+          "seq_len": 806
+        },
+        {
+          "turn": 4,
+          "action": "grep",
+          "proj": 41.36578369140625,
+          "tested": true,
+          "edit_minus_noop": -0.625,
+          "seq_len": 1558
+        },
+        {
+          "turn": 5,
+          "action": "view",
+          "proj": 37.960445404052734,
+          "tested": true,
+          "edit_minus_noop": -1.0625,
+          "seq_len": 1608
+        },
+        {
+          "turn": 6,
+          "action": "grep",
+          "proj": 37.42949295043945,
+          "tested": true,
+          "edit_minus_noop": -1.5,
+          "seq_len": 1649
+        },
+        {
+          "turn": 7,
+          "action": "test",
+          "proj": 36.808265686035156,
+          "tested": true,
+          "edit_minus_noop": -0.9375,
+          "seq_len": 1699
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14309",
+      "condition": "buggy",
+      "terminal_action": null,
+      "n_turns": 8,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": 48.488224029541016,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -19.30289077758789,
+          "tested": false,
+          "edit_minus_noop": -1.1875,
+          "seq_len": 633
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 16.00911521911621,
+          "tested": false,
+          "edit_minus_noop": -2.5,
+          "seq_len": 683
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": 59.44490432739258,
+          "tested": true,
+          "edit_minus_noop": -2.375,
+          "seq_len": 840
+        },
+        {
+          "turn": 3,
+          "action": "grep",
+          "proj": 46.93318176269531,
+          "tested": true,
+          "edit_minus_noop": -0.5,
+          "seq_len": 1596
+        },
+        {
+          "turn": 4,
+          "action": "test",
+          "proj": 37.50193786621094,
+          "tested": true,
+          "edit_minus_noop": -0.6875,
+          "seq_len": 1646
+        },
+        {
+          "turn": 5,
+          "action": "view",
+          "proj": 20.016136169433594,
+          "tested": true,
+          "edit_minus_noop": 0.25,
+          "seq_len": 1688
+        },
+        {
+          "turn": 6,
+          "action": "grep",
+          "proj": 40.1964111328125,
+          "tested": true,
+          "edit_minus_noop": 0.0,
+          "seq_len": 1729
+        },
+        {
+          "turn": 7,
+          "action": "test",
+          "proj": 48.488224029541016,
+          "tested": true,
+          "edit_minus_noop": -0.25,
+          "seq_len": 1779
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -44.62287139892578,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -87.3532485961914,
+          "tested": false,
+          "edit_minus_noop": 7.0625,
+          "seq_len": 708
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 93.81024932861328,
+          "tested": false,
+          "edit_minus_noop": 0.875,
+          "seq_len": 1553
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -44.62287139892578,
+          "tested": true,
+          "edit_minus_noop": 4.25,
+          "seq_len": 1625
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14365",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -131.42990112304688,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -87.3532485961914,
+          "tested": false,
+          "edit_minus_noop": 7.0625,
+          "seq_len": 708
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -131.42990112304688,
+          "tested": false,
+          "edit_minus_noop": 10.25,
+          "seq_len": 1549
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -74.20050048828125,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -36.32462692260742,
+          "tested": false,
+          "edit_minus_noop": 2.25,
+          "seq_len": 579
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": 7.5781426429748535,
+          "tested": true,
+          "edit_minus_noop": 0.8125,
+          "seq_len": 651
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -21.469322204589844,
+          "tested": true,
+          "edit_minus_noop": 0.4375,
+          "seq_len": 701
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -74.20050048828125,
+          "tested": true,
+          "edit_minus_noop": 6.875,
+          "seq_len": 3118
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14369",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -64.94463348388672,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -36.32462692260742,
+          "tested": false,
+          "edit_minus_noop": 2.25,
+          "seq_len": 579
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -96.90159606933594,
+          "tested": true,
+          "edit_minus_noop": 8.6875,
+          "seq_len": 861
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -64.94463348388672,
+          "tested": true,
+          "edit_minus_noop": 8.625,
+          "seq_len": 3278
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -44.31555938720703,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -65.97163391113281,
+          "tested": false,
+          "edit_minus_noop": 7.5625,
+          "seq_len": 653
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -39.48249816894531,
+          "tested": false,
+          "edit_minus_noop": 8.5,
+          "seq_len": 1251
+        },
+        {
+          "turn": 2,
+          "action": "grep",
+          "proj": -22.65380096435547,
+          "tested": true,
+          "edit_minus_noop": 4.625,
+          "seq_len": 1324
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -44.31555938720703,
+          "tested": true,
+          "edit_minus_noop": 5.0625,
+          "seq_len": 1374
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14508",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -129.68121337890625,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -65.97163391113281,
+          "tested": false,
+          "edit_minus_noop": 7.5625,
+          "seq_len": 653
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -53.88103485107422,
+          "tested": false,
+          "edit_minus_noop": 9.0,
+          "seq_len": 1370
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -129.68121337890625,
+          "tested": true,
+          "edit_minus_noop": 9.5,
+          "seq_len": 1525
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -112.46102905273438,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -58.607391357421875,
+          "tested": false,
+          "edit_minus_noop": 4.875,
+          "seq_len": 698
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -8.547969818115234,
+          "tested": false,
+          "edit_minus_noop": 0.625,
+          "seq_len": 748
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -27.202136993408203,
+          "tested": true,
+          "edit_minus_noop": 2.125,
+          "seq_len": 820
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -112.46102905273438,
+          "tested": true,
+          "edit_minus_noop": 9.0,
+          "seq_len": 1667
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14539",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -97.23340606689453,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -58.607391357421875,
+          "tested": false,
+          "edit_minus_noop": 4.875,
+          "seq_len": 698
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -8.547969818115234,
+          "tested": false,
+          "edit_minus_noop": 0.625,
+          "seq_len": 748
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -62.005470275878906,
+          "tested": true,
+          "edit_minus_noop": 4.9375,
+          "seq_len": 950
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -97.23340606689453,
+          "tested": true,
+          "edit_minus_noop": 8.5,
+          "seq_len": 1790
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -141.66680908203125,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -45.29279327392578,
+          "tested": false,
+          "edit_minus_noop": 3.8125,
+          "seq_len": 594
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": -10.629476547241211,
+          "tested": true,
+          "edit_minus_noop": 1.5,
+          "seq_len": 667
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -23.29289436340332,
+          "tested": true,
+          "edit_minus_noop": -0.1875,
+          "seq_len": 717
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -141.66680908203125,
+          "tested": true,
+          "edit_minus_noop": 9.8125,
+          "seq_len": 1848
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14598",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -136.14111328125,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -45.29279327392578,
+          "tested": false,
+          "edit_minus_noop": 3.8125,
+          "seq_len": 594
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -98.57733917236328,
+          "tested": true,
+          "edit_minus_noop": 8.5625,
+          "seq_len": 747
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -136.14111328125,
+          "tested": true,
+          "edit_minus_noop": 10.9375,
+          "seq_len": 1877
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -87.84830474853516,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -40.11709976196289,
+          "tested": false,
+          "edit_minus_noop": 0.5625,
+          "seq_len": 665
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": 38.19588851928711,
+          "tested": true,
+          "edit_minus_noop": -1.75,
+          "seq_len": 743
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": 1.8637850284576416,
+          "tested": true,
+          "edit_minus_noop": -1.5625,
+          "seq_len": 793
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -87.84830474853516,
+          "tested": true,
+          "edit_minus_noop": 6.6875,
+          "seq_len": 1525
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_14995",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -135.39755249023438,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -40.11709976196289,
+          "tested": false,
+          "edit_minus_noop": 0.5625,
+          "seq_len": 665
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -91.58967590332031,
+          "tested": true,
+          "edit_minus_noop": 8.25,
+          "seq_len": 827
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -135.39755249023438,
+          "tested": true,
+          "edit_minus_noop": 9.875,
+          "seq_len": 1557
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -27.823955535888672,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -73.51692962646484,
+          "tested": false,
+          "edit_minus_noop": 5.0625,
+          "seq_len": 274
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 10.239200592041016,
+          "tested": false,
+          "edit_minus_noop": 3.125,
+          "seq_len": 1108
+        },
+        {
+          "turn": 2,
+          "action": "grep",
+          "proj": -11.627873420715332,
+          "tested": true,
+          "edit_minus_noop": 3.625,
+          "seq_len": 1177
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -27.823955535888672,
+          "tested": true,
+          "edit_minus_noop": 4.25,
+          "seq_len": 1227
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7166",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -79.49980926513672,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -73.51692962646484,
+          "tested": false,
+          "edit_minus_noop": 5.0625,
+          "seq_len": 274
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -79.49980926513672,
+          "tested": false,
+          "edit_minus_noop": 9.4375,
+          "seq_len": 1100
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -126.6671371459961,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -105.78288269042969,
+          "tested": false,
+          "edit_minus_noop": 9.1875,
+          "seq_len": 620
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -126.6671371459961,
+          "tested": false,
+          "edit_minus_noop": 7.75,
+          "seq_len": 1082
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7336",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -126.95233154296875,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -105.78288269042969,
+          "tested": false,
+          "edit_minus_noop": 9.1875,
+          "seq_len": 620
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -126.95233154296875,
+          "tested": false,
+          "edit_minus_noop": 8.1875,
+          "seq_len": 1079
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 1,
+      "tested": false,
+      "viewed": false,
+      "decision_proj": -165.14913940429688,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "edit",
+          "proj": -165.14913940429688,
+          "tested": false,
+          "edit_minus_noop": 10.1875,
+          "seq_len": 539
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7606",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 1,
+      "tested": false,
+      "viewed": false,
+      "decision_proj": -165.14913940429688,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "edit",
+          "proj": -165.14913940429688,
+          "tested": false,
+          "edit_minus_noop": 10.1875,
+          "seq_len": 539
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -113.97994995117188,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -39.72150802612305,
+          "tested": false,
+          "edit_minus_noop": 5.6875,
+          "seq_len": 666
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": 14.57638931274414,
+          "tested": true,
+          "edit_minus_noop": 1.125,
+          "seq_len": 737
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -113.97994995117188,
+          "tested": true,
+          "edit_minus_noop": 8.375,
+          "seq_len": 1599
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_7671",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": true,
+      "viewed": false,
+      "decision_proj": -116.48870086669922,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -39.72150802612305,
+          "tested": false,
+          "edit_minus_noop": 5.6875,
+          "seq_len": 666
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -116.48870086669922,
+          "tested": true,
+          "edit_minus_noop": 10.125,
+          "seq_len": 803
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -6.163414478302002,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -44.062583923339844,
+          "tested": false,
+          "edit_minus_noop": 5.6875,
+          "seq_len": 432
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": 4.060553550720215,
+          "tested": true,
+          "edit_minus_noop": 0.25,
+          "seq_len": 504
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -6.163414478302002,
+          "tested": true,
+          "edit_minus_noop": 4.375,
+          "seq_len": 1469
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_8707",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -130.47731018066406,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -44.062583923339844,
+          "tested": false,
+          "edit_minus_noop": 5.6875,
+          "seq_len": 432
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -115.60592651367188,
+          "tested": true,
+          "edit_minus_noop": 9.9375,
+          "seq_len": 580
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -130.47731018066406,
+          "tested": true,
+          "edit_minus_noop": 10.375,
+          "seq_len": 1206
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -72.34822082519531,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -38.5411376953125,
+          "tested": false,
+          "edit_minus_noop": 2.625,
+          "seq_len": 563
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -10.845562934875488,
+          "tested": false,
+          "edit_minus_noop": 0.0,
+          "seq_len": 613
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -14.127408981323242,
+          "tested": true,
+          "edit_minus_noop": 0.25,
+          "seq_len": 684
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -72.34822082519531,
+          "tested": true,
+          "edit_minus_noop": 7.0,
+          "seq_len": 1605
+        }
+      ]
+    },
+    {
+      "task_id": "astropy_astropy_8872",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -116.35377502441406,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -38.5411376953125,
+          "tested": false,
+          "edit_minus_noop": 2.625,
+          "seq_len": 563
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -10.845562934875488,
+          "tested": false,
+          "edit_minus_noop": 0.0,
+          "seq_len": 613
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -111.90275573730469,
+          "tested": true,
+          "edit_minus_noop": 8.75,
+          "seq_len": 758
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -116.35377502441406,
+          "tested": true,
+          "edit_minus_noop": 9.0,
+          "seq_len": 1677
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -81.04801177978516,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -64.88015747070312,
+          "tested": false,
+          "edit_minus_noop": 6.1875,
+          "seq_len": 568
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -81.04801177978516,
+          "tested": false,
+          "edit_minus_noop": 9.9375,
+          "seq_len": 1605
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10097",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -74.29072570800781,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -64.88015747070312,
+          "tested": false,
+          "edit_minus_noop": 6.1875,
+          "seq_len": 568
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -74.29072570800781,
+          "tested": false,
+          "edit_minus_noop": 9.75,
+          "seq_len": 1599
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 2,
+      "tested": true,
+      "viewed": false,
+      "decision_proj": 138.15408325195312,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -40.24268341064453,
+          "tested": false,
+          "edit_minus_noop": 1.875,
+          "seq_len": 703
+        },
+        {
+          "turn": 1,
+          "action": "noop",
+          "proj": 138.15408325195312,
+          "tested": true,
+          "edit_minus_noop": -4.3125,
+          "seq_len": 786
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10554",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -75.18046569824219,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -40.24268341064453,
+          "tested": false,
+          "edit_minus_noop": 1.875,
+          "seq_len": 703
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -76.52227020263672,
+          "tested": true,
+          "edit_minus_noop": 6.1875,
+          "seq_len": 940
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -75.18046569824219,
+          "tested": true,
+          "edit_minus_noop": 8.0625,
+          "seq_len": 1831
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 5,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -10.081130981445312,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -91.68385314941406,
+          "tested": false,
+          "edit_minus_noop": 4.9375,
+          "seq_len": 296
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -51.794342041015625,
+          "tested": false,
+          "edit_minus_noop": 7.0,
+          "seq_len": 1144
+        },
+        {
+          "turn": 2,
+          "action": "grep",
+          "proj": 48.31037902832031,
+          "tested": true,
+          "edit_minus_noop": -0.25,
+          "seq_len": 1220
+        },
+        {
+          "turn": 3,
+          "action": "view",
+          "proj": 6.558603286743164,
+          "tested": true,
+          "edit_minus_noop": 2.125,
+          "seq_len": 1270
+        },
+        {
+          "turn": 4,
+          "action": "edit",
+          "proj": -10.081130981445312,
+          "tested": true,
+          "edit_minus_noop": 2.75,
+          "seq_len": 1311
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10880",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -109.0927505493164,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -91.68385314941406,
+          "tested": false,
+          "edit_minus_noop": 4.9375,
+          "seq_len": 296
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -46.57182693481445,
+          "tested": false,
+          "edit_minus_noop": 7.0625,
+          "seq_len": 1144
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -109.0927505493164,
+          "tested": true,
+          "edit_minus_noop": 8.5625,
+          "seq_len": 1286
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": 176.10391235351562,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -61.9036750793457,
+          "tested": false,
+          "edit_minus_noop": 4.4375,
+          "seq_len": 455
+        },
+        {
+          "turn": 1,
+          "action": "noop",
+          "proj": 176.10391235351562,
+          "tested": false,
+          "edit_minus_noop": -6.25,
+          "seq_len": 1356
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10914",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -43.097434997558594,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -61.9036750793457,
+          "tested": false,
+          "edit_minus_noop": 4.4375,
+          "seq_len": 455
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -43.097434997558594,
+          "tested": false,
+          "edit_minus_noop": 5.625,
+          "seq_len": 1351
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": 180.62828063964844,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -64.40034484863281,
+          "tested": false,
+          "edit_minus_noop": 1.9375,
+          "seq_len": 316
+        },
+        {
+          "turn": 1,
+          "action": "noop",
+          "proj": 180.62828063964844,
+          "tested": false,
+          "edit_minus_noop": -4.25,
+          "seq_len": 680
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10973",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -102.38487243652344,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -64.40034484863281,
+          "tested": false,
+          "edit_minus_noop": 1.9375,
+          "seq_len": 316
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -102.38487243652344,
+          "tested": false,
+          "edit_minus_noop": 7.375,
+          "seq_len": 836
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -69.22355651855469,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -95.6859359741211,
+          "tested": false,
+          "edit_minus_noop": 8.625,
+          "seq_len": 456
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -69.22355651855469,
+          "tested": false,
+          "edit_minus_noop": 7.4375,
+          "seq_len": 1333
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_10999",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -72.40662384033203,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -95.6859359741211,
+          "tested": false,
+          "edit_minus_noop": 8.625,
+          "seq_len": 456
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -72.40662384033203,
+          "tested": false,
+          "edit_minus_noop": 9.9375,
+          "seq_len": 1326
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -62.09469985961914,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -29.69429588317871,
+          "tested": false,
+          "edit_minus_noop": 0.9375,
+          "seq_len": 596
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": 89.90946960449219,
+          "tested": true,
+          "edit_minus_noop": -3.3125,
+          "seq_len": 675
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": 30.87982940673828,
+          "tested": true,
+          "edit_minus_noop": -1.25,
+          "seq_len": 725
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -62.09469985961914,
+          "tested": true,
+          "edit_minus_noop": 5.0,
+          "seq_len": 1325
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11066",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -58.233280181884766,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -29.69429588317871,
+          "tested": false,
+          "edit_minus_noop": 0.9375,
+          "seq_len": 596
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -71.39969635009766,
+          "tested": true,
+          "edit_minus_noop": 6.875,
+          "seq_len": 749
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -58.233280181884766,
+          "tested": true,
+          "edit_minus_noop": 7.25,
+          "seq_len": 1346
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -45.91104507446289,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -18.384634017944336,
+          "tested": false,
+          "edit_minus_noop": -1.0625,
+          "seq_len": 683
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": 54.77378845214844,
+          "tested": true,
+          "edit_minus_noop": -2.4375,
+          "seq_len": 759
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": 21.26900863647461,
+          "tested": true,
+          "edit_minus_noop": -1.25,
+          "seq_len": 809
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -45.91104507446289,
+          "tested": true,
+          "edit_minus_noop": 4.25,
+          "seq_len": 1756
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11087",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -69.6752700805664,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "test",
+          "proj": -18.384634017944336,
+          "tested": false,
+          "edit_minus_noop": -1.0625,
+          "seq_len": 683
+        },
+        {
+          "turn": 1,
+          "action": "view",
+          "proj": -104.52877044677734,
+          "tested": true,
+          "edit_minus_noop": 7.8125,
+          "seq_len": 825
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -69.6752700805664,
+          "tested": true,
+          "edit_minus_noop": 7.5,
+          "seq_len": 1600
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": 163.47854614257812,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -38.850982666015625,
+          "tested": false,
+          "edit_minus_noop": 0.25,
+          "seq_len": 324
+        },
+        {
+          "turn": 1,
+          "action": "noop",
+          "proj": 163.47854614257812,
+          "tested": false,
+          "edit_minus_noop": -3.875,
+          "seq_len": 1031
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11095",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -65.7727279663086,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -38.850982666015625,
+          "tested": false,
+          "edit_minus_noop": 0.25,
+          "seq_len": 324
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -65.7727279663086,
+          "tested": false,
+          "edit_minus_noop": 5.1875,
+          "seq_len": 1005
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -93.56188201904297,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -72.74075317382812,
+          "tested": false,
+          "edit_minus_noop": 5.625,
+          "seq_len": 404
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -93.56188201904297,
+          "tested": false,
+          "edit_minus_noop": 5.75,
+          "seq_len": 617
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11099",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -136.68826293945312,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -72.74075317382812,
+          "tested": false,
+          "edit_minus_noop": 5.625,
+          "seq_len": 404
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -136.68826293945312,
+          "tested": false,
+          "edit_minus_noop": 9.6875,
+          "seq_len": 616
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": 163.76107788085938,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -103.65206909179688,
+          "tested": false,
+          "edit_minus_noop": 5.0,
+          "seq_len": 326
+        },
+        {
+          "turn": 1,
+          "action": "noop",
+          "proj": 163.76107788085938,
+          "tested": false,
+          "edit_minus_noop": -2.75,
+          "seq_len": 833
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11119",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -108.02864074707031,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -103.65206909179688,
+          "tested": false,
+          "edit_minus_noop": 5.0,
+          "seq_len": 326
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -108.02864074707031,
+          "tested": false,
+          "edit_minus_noop": 8.625,
+          "seq_len": 827
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -17.729598999023438,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -88.9493179321289,
+          "tested": false,
+          "edit_minus_noop": 8.125,
+          "seq_len": 424
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 32.63453674316406,
+          "tested": false,
+          "edit_minus_noop": 2.0,
+          "seq_len": 1249
+        },
+        {
+          "turn": 2,
+          "action": "grep",
+          "proj": 37.31413650512695,
+          "tested": true,
+          "edit_minus_noop": 0.5,
+          "seq_len": 1325
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -17.729598999023438,
+          "tested": true,
+          "edit_minus_noop": 4.0,
+          "seq_len": 1375
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11133",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -142.17083740234375,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -88.9493179321289,
+          "tested": false,
+          "edit_minus_noop": 8.125,
+          "seq_len": 424
+        },
+        {
+          "turn": 1,
+          "action": "grep",
+          "proj": -39.130741119384766,
+          "tested": false,
+          "edit_minus_noop": 8.5,
+          "seq_len": 1245
+        },
+        {
+          "turn": 2,
+          "action": "test",
+          "proj": 1.1819405555725098,
+          "tested": false,
+          "edit_minus_noop": 3.0,
+          "seq_len": 1295
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -142.17083740234375,
+          "tested": true,
+          "edit_minus_noop": 9.0625,
+          "seq_len": 1437
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -60.761863708496094,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -30.629756927490234,
+          "tested": false,
+          "edit_minus_noop": 1.1875,
+          "seq_len": 694
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 10.181014060974121,
+          "tested": false,
+          "edit_minus_noop": -1.1875,
+          "seq_len": 744
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": 43.199058532714844,
+          "tested": true,
+          "edit_minus_noop": -1.125,
+          "seq_len": 820
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -60.761863708496094,
+          "tested": true,
+          "edit_minus_noop": 6.625,
+          "seq_len": 1952
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11138",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 4,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -87.33995056152344,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -30.629756927490234,
+          "tested": false,
+          "edit_minus_noop": 1.1875,
+          "seq_len": 694
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 10.181014060974121,
+          "tested": false,
+          "edit_minus_noop": -1.1875,
+          "seq_len": 744
+        },
+        {
+          "turn": 2,
+          "action": "view",
+          "proj": -98.25675964355469,
+          "tested": true,
+          "edit_minus_noop": 7.375,
+          "seq_len": 886
+        },
+        {
+          "turn": 3,
+          "action": "edit",
+          "proj": -87.33995056152344,
+          "tested": true,
+          "edit_minus_noop": 7.875,
+          "seq_len": 1985
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": 134.36163330078125,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -49.99753952026367,
+          "tested": false,
+          "edit_minus_noop": 3.5625,
+          "seq_len": 424
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 31.974821090698242,
+          "tested": false,
+          "edit_minus_noop": 2.125,
+          "seq_len": 1197
+        },
+        {
+          "turn": 2,
+          "action": "noop",
+          "proj": 134.36163330078125,
+          "tested": true,
+          "edit_minus_noop": -3.625,
+          "seq_len": 1272
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11141",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -120.23506164550781,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -49.99753952026367,
+          "tested": false,
+          "edit_minus_noop": 3.5625,
+          "seq_len": 424
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -120.23506164550781,
+          "tested": false,
+          "edit_minus_noop": 8.0,
+          "seq_len": 1249
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": false,
+      "decision_proj": 120.04927825927734,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -24.90968132019043,
+          "tested": false,
+          "edit_minus_noop": 1.75,
+          "seq_len": 423
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 11.796780586242676,
+          "tested": false,
+          "edit_minus_noop": -1.5625,
+          "seq_len": 473
+        },
+        {
+          "turn": 2,
+          "action": "noop",
+          "proj": 120.04927825927734,
+          "tested": true,
+          "edit_minus_noop": -3.5,
+          "seq_len": 554
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11149",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": false,
+      "decision_proj": -139.35446166992188,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -24.90968132019043,
+          "tested": false,
+          "edit_minus_noop": 1.75,
+          "seq_len": 423
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 11.796780586242676,
+          "tested": false,
+          "edit_minus_noop": -1.5625,
+          "seq_len": 473
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -139.35446166992188,
+          "tested": true,
+          "edit_minus_noop": 8.375,
+          "seq_len": 688
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 5,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -16.473814010620117,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -40.44749069213867,
+          "tested": false,
+          "edit_minus_noop": 2.0,
+          "seq_len": 337
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 96.91921997070312,
+          "tested": false,
+          "edit_minus_noop": -0.125,
+          "seq_len": 1097
+        },
+        {
+          "turn": 2,
+          "action": "grep",
+          "proj": 7.172441482543945,
+          "tested": true,
+          "edit_minus_noop": 2.25,
+          "seq_len": 1178
+        },
+        {
+          "turn": 3,
+          "action": "view",
+          "proj": -19.87908172607422,
+          "tested": true,
+          "edit_minus_noop": 3.375,
+          "seq_len": 1228
+        },
+        {
+          "turn": 4,
+          "action": "edit",
+          "proj": -16.473814010620117,
+          "tested": true,
+          "edit_minus_noop": 2.375,
+          "seq_len": 1269
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11163",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -82.66094970703125,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -40.44749069213867,
+          "tested": false,
+          "edit_minus_noop": 2.0,
+          "seq_len": 337
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -82.66094970703125,
+          "tested": false,
+          "edit_minus_noop": 5.875,
+          "seq_len": 1094
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -46.011871337890625,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -63.64820098876953,
+          "tested": false,
+          "edit_minus_noop": 2.0625,
+          "seq_len": 308
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -46.011871337890625,
+          "tested": false,
+          "edit_minus_noop": 5.0625,
+          "seq_len": 1029
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11179",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": true,
+      "decision_proj": -143.86720275878906,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -63.64820098876953,
+          "tested": false,
+          "edit_minus_noop": 2.0625,
+          "seq_len": 308
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": -23.366302490234375,
+          "tested": false,
+          "edit_minus_noop": 5.0,
+          "seq_len": 1016
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -143.86720275878906,
+          "tested": true,
+          "edit_minus_noop": 8.25,
+          "seq_len": 1164
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "fixed",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -75.47743225097656,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -83.63127899169922,
+          "tested": false,
+          "edit_minus_noop": 6.25,
+          "seq_len": 406
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -75.47743225097656,
+          "tested": false,
+          "edit_minus_noop": 6.4375,
+          "seq_len": 1188
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11206",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 2,
+      "tested": false,
+      "viewed": true,
+      "decision_proj": -107.81253814697266,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "view",
+          "proj": -83.63127899169922,
+          "tested": false,
+          "edit_minus_noop": 6.25,
+          "seq_len": 406
+        },
+        {
+          "turn": 1,
+          "action": "edit",
+          "proj": -107.81253814697266,
+          "tested": false,
+          "edit_minus_noop": 7.3125,
+          "seq_len": 1118
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "fixed",
+      "terminal_action": "noop",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": false,
+      "decision_proj": 154.00814819335938,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -30.770423889160156,
+          "tested": false,
+          "edit_minus_noop": -1.6875,
+          "seq_len": 459
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 11.338767051696777,
+          "tested": false,
+          "edit_minus_noop": -2.6875,
+          "seq_len": 509
+        },
+        {
+          "turn": 2,
+          "action": "noop",
+          "proj": 154.00814819335938,
+          "tested": true,
+          "edit_minus_noop": -5.4375,
+          "seq_len": 588
+        }
+      ]
+    },
+    {
+      "task_id": "django_django_11211",
+      "condition": "buggy",
+      "terminal_action": "edit",
+      "n_turns": 3,
+      "tested": true,
+      "viewed": false,
+      "decision_proj": -115.74955749511719,
+      "trajectory": [
+        {
+          "turn": 0,
+          "action": "grep",
+          "proj": -30.770423889160156,
+          "tested": false,
+          "edit_minus_noop": -1.6875,
+          "seq_len": 459
+        },
+        {
+          "turn": 1,
+          "action": "test",
+          "proj": 11.338767051696777,
+          "tested": false,
+          "edit_minus_noop": -2.6875,
+          "seq_len": 509
+        },
+        {
+          "turn": 2,
+          "action": "edit",
+          "proj": -115.74955749511719,
+          "tested": true,
+          "edit_minus_noop": 8.25,
+          "seq_len": 660
+        }
+      ]
+    }
+  ]
+}

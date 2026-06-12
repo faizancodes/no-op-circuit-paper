@@ -1,0 +1,10 @@
+{
+  "cache_run_id": "cache-qwen25_coder_3b_instruct-20260612T025109Z",
+  "layer": 32,
+  "position": -1,
+  "roc_auc": 0.8667876835836,
+  "proj_buggy_mean": -2.7202768841821827,
+  "proj_fixed_mean": 7.111061430646327,
+  "gap": 9.83133831482851,
+  "n_pairs": 499
+}

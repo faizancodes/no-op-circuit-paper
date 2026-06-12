@@ -17,8 +17,8 @@ import json
 import subprocess
 from datetime import datetime, timezone
 
-from .common import app
-from .patching import run_patching
+from .common import app, pick_tier, record_spawn, resolve_gpu
+from .patching import PATCH_TIERS
 
 from no_op_circuit.agent import ACTION_NAMES, build_prompt
 from no_op_circuit.config import RESULTS_DIR
@@ -34,9 +34,13 @@ def patch_dataset(
     max_pairs: int = 0,        # 0 = no cap
     max_suffix: int = 8,
     layer_step: int = 1,
+    layer_min: int = 0,
+    layer_max: int = -1,
     bidirectional: bool = False,
     model: str = "Qwen/Qwen2.5-Coder-1.5B-Instruct",
     download_heatmaps: bool = True,
+    gpu: str = "auto",          # "auto" picks a tier by model size; "default" keeps A10G
+    spawn: bool = False,        # with `modal run --detach`: fire-and-forget, survives shutdown
 ):
     if variant not in VARIANTS:
         raise SystemExit(f"unknown variant {variant!r}. Known: {list(VARIANTS)}")
@@ -90,12 +94,25 @@ def patch_dataset(
         f"max_suffix={max_suffix} · layer_step={layer_step} · run_id={run_id}",
         flush=True,
     )
-    manifest = run_patching.remote(
+    # Patching grids are the long pole; tier timeouts auto-scale (≥6h on H100).
+    fn = pick_tier(PATCH_TIERS, model, gpu)
+    print(f"[patch_dataset] gpu tier={resolve_gpu(model, gpu) or 'A10G'}", flush=True)
+    if spawn:
+        call = fn.spawn(
+            pairs, run_id=run_id, model_name=model,
+            max_suffix=max_suffix, layer_step=layer_step,
+            layer_min=layer_min, layer_max=layer_max, bidirectional=bidirectional,
+        )
+        record_spawn("patch_dataset", model, run_id, call.object_id)
+        return
+    manifest = fn.remote(
         pairs,
         run_id=run_id,
         model_name=model,
         max_suffix=max_suffix,
         layer_step=layer_step,
+        layer_min=layer_min,
+        layer_max=layer_max,
         bidirectional=bidirectional,
     )
 

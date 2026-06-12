@@ -24,11 +24,20 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
+# Qwen2.5-Coder size ladder. The family shares one tokenizer across sizes, so a
+# single row is sufficient in principle; we list each size for an explicit
+# per-size confirmation (and to fail loudly if any slug is wrong/gated).
 MODELS = {
-    "qwen": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
-    "codegemma": "google/codegemma-7b-it",
-    "deepseek": "deepseek-ai/deepseek-coder-1.3b-instruct",
+    "qwen_0.5b": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "qwen_1.5b": "Qwen/Qwen2.5-Coder-1.5B-Instruct",  # paper baseline
+    "qwen_3b": "Qwen/Qwen2.5-Coder-3B-Instruct",
+    "qwen_7b": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "qwen_14b": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "qwen_32b": "Qwen/Qwen2.5-Coder-32B-Instruct",
 }
+# Not in the Qwen-only roster; the Phase-2 synonym-search block below skips
+# cleanly when this key is absent from `audit`.
+DEEPSEEK_AUDIT_KEY = "deepseek_1.3b"
 ACTIONS = ["view", "grep", "test", "edit", "noop"]
 EXTRA = ["done", "skip"]
 LABELS = ["A", "B", "C", "D", "E"]
@@ -104,9 +113,9 @@ def main():
 
     # Phase 2: DeepSeek single-token vocabulary search
     cand_out = {}
-    if "tokens" in audit.get("deepseek", {}):
+    if "tokens" in audit.get(DEEPSEEK_AUDIT_KEY, {}):
         from transformers import AutoTokenizer as AT
-        dtok = AT.from_pretrained(MODELS["deepseek"])
+        dtok = AT.from_pretrained(MODELS[DEEPSEEK_AUDIT_KEY])
         chosen = {}
         for meaning, opts in CANDIDATES.items():
             single = []

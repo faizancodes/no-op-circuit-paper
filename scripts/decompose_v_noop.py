@@ -23,12 +23,12 @@ from pathlib import Path
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--sae", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/sae/qwen_l24_resid_pre_d24576_k32.pt"))
+                   default=Path("results/sae/qwen_l24_resid_pre_d24576_k32.pt"))
     p.add_argument("--v-noop", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/steer-20260516T021522Z/v_noop.pt"))
+                   default=Path("results/steer-20260516T021522Z/v_noop.pt"))
     p.add_argument("--top-k", type=int, default=5)
     p.add_argument("--out", type=Path,
-                   default=Path("/Users/faizanahmed/no-op-circuit/results/sae/v_noop_features.json"))
+                   default=Path("results/sae/v_noop_features.json"))
     args = p.parse_args(argv)
 
     import torch

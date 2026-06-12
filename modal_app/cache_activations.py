@@ -35,6 +35,7 @@ from .common import (
     activations_vol,
     app,
     hf_cache_vol,
+    register_tiers,
 )
 
 
@@ -234,6 +235,18 @@ def cache_activations(
     (run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2))
     activations_vol.commit()
     return manifest
+
+
+# Pre-registered GPU-tier variants (see common.register_tiers). cache_dataset
+# dispatches among these by model size via common.pick_tier(CACHE_TIERS, ...).
+CACHE_TIERS = {
+    "A10G": cache_activations,
+    **register_tiers(
+        cache_activations.get_raw_f(), "cache_activations",
+        volumes={HF_CACHE_DIR: hf_cache_vol, ACTIVATIONS_DIR: activations_vol},
+        base_timeout=DEFAULT_TIMEOUT_S,
+    ),
+}
 
 
 def _topk_table(logits, tokenizer, k: int = 10) -> list[dict[str, Any]]:

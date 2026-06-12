@@ -34,6 +34,7 @@ from .common import (
     activations_vol,
     app,
     hf_cache_vol,
+    register_tiers,
 )
 
 _PATCH_TIMEOUT_S = 60 * 60 * 2  # 2 hours — bidirectional patching is ~2x cost
@@ -55,6 +56,8 @@ def run_patching(
     hook_point: str = "resid_pre",
     max_suffix: int = 8,
     layer_step: int = 1,
+    layer_min: int = 0,
+    layer_max: int = -1,
     dtype: str = "bfloat16",
     bidirectional: bool = False,
 ) -> dict[str, Any]:
@@ -104,7 +107,8 @@ def run_patching(
 
     layers = (model.model.layers if hasattr(model, "model") else model.transformer.h)
     n_layers = len(layers)
-    layer_indices = list(range(0, n_layers, layer_step))
+    hi = layer_max if layer_max >= 0 else n_layers - 1
+    layer_indices = [l for l in range(0, n_layers, layer_step) if layer_min <= l <= hi]
 
     def tokenize(messages, suffix):
         rendered = render_chat_template_safe(tok, messages, tokenize=False, add_generation_prompt=True)
@@ -266,3 +270,14 @@ def run_patching(
     (run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2))
     activations_vol.commit()
     return manifest
+
+
+# Pre-registered GPU-tier variants; patch_dataset dispatches by model size.
+PATCH_TIERS = {
+    "A10G": run_patching,
+    **register_tiers(
+        run_patching.get_raw_f(), "run_patching",
+        volumes={HF_CACHE_DIR: hf_cache_vol, ACTIVATIONS_DIR: activations_vol},
+        base_timeout=_PATCH_TIMEOUT_S,
+    ),
+}

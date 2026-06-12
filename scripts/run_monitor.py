@@ -28,14 +28,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--cache-dir",
         type=Path,
-        default=Path("/Users/faizanahmed/no-op-circuit/results/cache-20260515T221105Z"),
+        default=Path("results/cache-20260515T221105Z"),
     )
     p.add_argument("--layer", type=int, default=24)
     p.add_argument("--position", type=int, default=-1)
     p.add_argument(
         "--out",
         type=Path,
-        default=Path("/Users/faizanahmed/no-op-circuit/results/monitor/loo_curves.npz"),
+        default=Path("results/monitor/loo_curves.npz"),
     )
     args = p.parse_args(argv)
 
